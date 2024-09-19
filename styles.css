@@ -1,0 +1,255 @@
+/* General body styling */
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px; /* Increased padding for better spacing */
+    gap: 30px; /* Increased gap between logo and heading */
+    border-bottom: none;
+    background-color: transparent; /* No background for a cleaner look */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Enhanced heading styling */
+.header h1 {
+    margin: 0;
+    font-size: 42px; /* Slightly larger font for more emphasis */
+    font-family: 'Fira Code', monospace;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 1.5px; /* Increased letter spacing for clarity */
+    color: #333; /* Neutral text color for clarity */
+    text-shadow: none; /* No shadow for cleaner text */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Heading hover effect */
+.header h1:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.logo {
+    width: 120px; /* Set fixed width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+/* Search bar styling remains the same */
+#searchBar {
+    width: 100%;
+    max-width: 800px;
+    padding: 12px 20px; /* Add more padding to create space inside */
+    font-size: 18px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+.searchbar {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 15px; /* Increase padding to add space around the text */
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+}
+
+/* Add hover and focus states */
+.searchbar:focus {
+    background-color: #edf2fb;
+}
+
+.searchbar:hover {
+    background-color: #c9c9c9;
+}
+
+.searchimg, .closeimg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.searchimg {
+    margin-right: 10px;
+}
+
+.closeimg {
+    margin-right: 10px;
+    display: none;
+}
+
+.closeimg:hover, .searchimg:hover {
+    background-color: #edf2fb;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.table-container {
+    width: 98%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    table-layout: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #0d6efd;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+thead th {
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #f1f5f9;
+    cursor: pointer;
+}
+
+td {
+    padding: 18px 28px;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+td:first-child {
+    padding-left: 35px;
+}
+
+td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+    padding-left: 40px;
+}
+
+.port-entry, .service-entry, .product-version-entry {
+    display: block;
+    padding: 6px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Fira Code', monospace;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Fira Code', monospace;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.predefined-patterns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 4px;
+    overflow-x: auto;
+    margin: 10px auto;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.predefined-patterns button {
+    font-size: 14px;
+    padding: 7px 13px;
+    border-radius: 100px;
+    border: 1px;
+    border-color: #000000;
+    background-color: #a8e783;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: 'Fira Code', monospace;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    white-space: nowrap;
+}
+
+.predefined-patterns button:hover {
+    background-color: #5ae4dd;
+    transform: scale(1.05);
+}
+
+#status {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    font-family: 'Fira Code', monospace;
+}
+
+@media (max-width: 768px) {
+    thead th, tbody td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .predefined-patterns {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .predefined-patterns button {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+}

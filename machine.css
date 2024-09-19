@@ -1,0 +1,93 @@
+/* Add your enhanced CSS styles here */
+
+body {
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Slightly warmer background */
+    color: #444; /* Slightly lighter text color for better readability */
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto; /* Add more margin to give breathing room */
+    padding: 20px;
+    background-color: #ffffff; /* Ensure container background is white */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header {
+    background-color: #f0a418; /* Darker blue for header */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+.machine-content {
+    background-color: #ffffff; /* Keep content area background white */
+    border: 1px solid #e0e0e0; /* Lighter border color */
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+}
+
+h2 {
+    border-bottom: 3px solid #004085; /* Highlighted section header with darker blue */
+    padding-bottom: 10px;
+    color: #222; /* Slightly darker text for headers */
+    margin-bottom: 20px; /* Space between header and content */
+}
+
+pre {
+    background-color: #e8f0fe; /* Light blue background for pre tags */
+    padding: 15px;
+    border: 1px solid #d1e1fc; /* Matching border with background */
+    border-radius: 5px;
+    overflow: auto;
+    font-size: 0.95rem; /* Slightly smaller font for pre tags */
+    color: #333; /* Darker text color for better readability */
+}
+
+pre::before {
+    content: "Data:"; /* Prepend 'Data:' before pre block */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #004085; /* Dark blue for the label */
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #28a745; /* Green for the button */
+    color: #ffffff; /* White text for contrast */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:active {
+    background-color: #1e7e34; /* Even darker when pressed */
+    transform: translateY(0); /* Reset when clicked */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* More responsive for smaller screens */
+    }
+
+    pre {
+        font-size: 0.85rem; /* Smaller text for small screens */
+    }
+}

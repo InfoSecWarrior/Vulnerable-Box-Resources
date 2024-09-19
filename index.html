@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nmap Scanning</title>
+    <link rel="icon" href="https://www.armourinfosec.com/wp-content/uploads/2018/02/ai.png" sizes="192x192">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1>Port Scanning</h1>
+        </header>
+
+        <section class="searchsection">
+            <!-- Search Bar with Icons -->
+            <div class="search">
+                <input type="search" id="searchBar" class="searchbar" placeholder="Search..." aria-label="Search input">
+                <img src="images/round_close_black_24dp.png" class="closeimg" alt="Close Icon">
+            </div>
+        </section>
+
+        <section class="predefined-patterns">
+            <button data-pattern="machine:Kioptrix">machine:Kioptrix</button>
+            <button data-pattern="port:80">port:80</button>
+            <button data-pattern="service:http">service:http</button>
+            <button data-pattern="product:mysql">product:mysql</button>
+            <button data-pattern="version:9">version:9</button>
+        </section>
+
+        <p id="status">Loading...</p>
+
+        <section class="table-container" aria-live="polite">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Machine Name</th>
+                        <th>Ports</th>
+                        <th>Service</th>
+                        <th>Product & Version</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Data will be populated dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
