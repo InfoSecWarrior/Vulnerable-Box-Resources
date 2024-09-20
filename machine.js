@@ -60,7 +60,7 @@ async function fetchMachineData() {
     }
 
     // Remove "-nmap-scan" from the file name for some files
-    const baseFileName = fileName.replace(/-nmap-scan/, '').replace(/\.[^/.]+$/, '');
+    const baseFileName = fileName.replace(/-nmap-version-scan/, '').replace(/\.[^/.]+$/, '');
 
     // Update the <h1> title with the directory name
     const machineTitleElement = document.getElementById('machine-title');
