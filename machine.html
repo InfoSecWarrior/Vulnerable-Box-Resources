@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Enumeration</title>
+    <link rel="icon" href="https://www.armourinfosec.com/wp-content/uploads/2018/02/ai.png" sizes="192x192">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="machine.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="machine-title">Machine Details</h1>
+            <!-- GitHub link placeholder -->
+            <p id="github-link">GitHub Link: <a id="github-url" href="#" target="_blank">View on GitHub</a></p>
+        </header>
+
+        <section class="machine-content">
+            <h2>Nmap</h2>
+            <pre id="nmap-data">Loading Nmap data...</pre>
+            
+            <h2>Web URLs</h2>
+            <pre id="web-urls">Loading Web URLs...</pre>
+            
+            <h2>HTTPX</h2>
+            <pre id="httpx-output">Loading HTTPX data...</pre>
+
+            <h2>Dirsearch Default</h2>
+            <pre id="dirsearch-default">Loading Dirsearch Default data...</pre>
+
+            <h2>Dirsearch Directory 2.3 Medium</h2>
+            <pre id="dirsearch-wordlist">Loading Dirsearch Wordlist data...</pre>
+
+            <h2>WhatWeb</h2>
+            <pre id="whatweb-output">Loading WhatWeb data...</pre>
+
+            <h2>Nikto</h2>
+            <pre id="nikto-output">Loading Nikto data...</pre>
+
+            <h2>Nuclei</h2>
+            <pre id="nuclei-output">Loading Nuclei data...</pre>
+        </section>
+    </div>
+    <script src="machine.js"></script>
+</body>
+</html>
