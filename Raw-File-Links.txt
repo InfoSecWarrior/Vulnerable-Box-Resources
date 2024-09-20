@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/It's%20October/its-october-nmap-version-scan.xml
+https://raw.githubusercontent.com/Mr-Secure-Code/Vulnerable-Box-Resources/refs/heads/main/It's%20October/its-october-nmap-version-scan.xml
