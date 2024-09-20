@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-    background-color: #f0a418; /* Darker blue for header */
+    background-color: #b20002 !important; /* Darker blue for header */
     color: #ffffff; /* White text for contrast */
     padding: 20px;
     text-align: center;
