@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sat Sep 21 15:21:27 2024 as: nmap -v -p- -oA bob-1-0-1-all-ports-scan 192.168.1.7 -->
+<nmaprun scanner="nmap" args="nmap -v -p- -oA bob-1-0-1-all-ports-scan 192.168.1.7" start="1726912287" startstr="Sat Sep 21 15:21:27 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1726912287"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.7" addrtype="ipv4"/>
+<address addr="50:C2:E8:D4:57:D7" addrtype="mac" vendor="Cloud Network Technology Singapore PTE."/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1726912288" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1726912288"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1726912288"/>
+<taskbegin task="SYN Stealth Scan" time="1726912288"/>
+<taskend task="SYN Stealth Scan" time="1726912305" extrainfo="65535 total ports"/>
+<host starttime="1726912288" endtime="1726912305"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.7" addrtype="ipv4"/>
+<address addr="50:C2:E8:D4:57:D7" addrtype="mac" vendor="Cloud Network Technology Singapore PTE."/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="reset" count="65533" proto="tcp" ports="1-79,81-25467,25469-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25468"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+</ports>
+<times srtt="6283" rttvar="5597" to="100000"/>
+</host>
+<runstats><finished time="1726912305" timestr="Sat Sep 21 15:21:45 2024" summary="Nmap done at Sat Sep 21 15:21:45 2024; 1 IP address (1 host up) scanned in 18.15 seconds" elapsed="18.15" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
