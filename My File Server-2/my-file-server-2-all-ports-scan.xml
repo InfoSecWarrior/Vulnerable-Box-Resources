@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sat Sep 21 12:06:52 2024 as: nmap -v -p- -oA my-file-server-2-all-ports-scan 192.168.1.110 -->
+<nmaprun scanner="nmap" args="nmap -v -p- -oA my-file-server-2-all-ports-scan 192.168.1.110" start="1726900612" startstr="Sat Sep 21 12:06:52 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1726900612"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.110" addrtype="ipv4"/>
+<address addr="08:00:27:14:80:4A" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1726900613" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1726900613"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1726900613"/>
+<taskbegin task="SYN Stealth Scan" time="1726900613"/>
+<taskprogress task="SYN Stealth Scan" time="1726900644" percent="26.17" remaining="88" etc="1726900731"/>
+<taskend task="SYN Stealth Scan" time="1726900684" extrainfo="65535 total ports"/>
+<host starttime="1726900613" endtime="1726900684"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.110" addrtype="ipv4"/>
+<address addr="08:00:27:14:80:4A" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+<hostname name="192.168.1.110" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="64523">
+<extrareasons reason="no-response" count="64446" proto="tcp" ports="1-20,24-79,81-110,112-138,140-142,144-442,444,446-516,518-874,876-994,996-1067,1069-1108,1110-2048,2050-2120,2122-4067,4069-4861,4863-4950,4952-4999,6000-6669,6671-7537,7539-8887,8889-9091,9093-9478,9480-11893,11895-12408,12410-12758,12760-12787,12789-14332,14334-15852,15854-16210,16212-16862,16864-17043,17045-17148,17150-18007,18009-18514,18516-18922,18924-20047,20049-22000,22002-22200,22202-23212,23214-23854,23856-24078,24080-26069,26071-26274,26276-27856,27858-31145,31147-31554,31556-31993,31995-32380,32382-33191,33193-33377,33379-33540,33542-34554,34556-34761,34763-38380,38382-38757,38759-39425,39427-39482,39484-40221,40223-41196,41198-41874,41876-42954,42956-43296,43298-43710,43712-45012,45014-46310,46312-46665,46667-49048,49050-50009,50011-51207,51209-53008,53010-53359,53361-53465,53467-54274,54276-54301,54303-54928,54930-55557,55559-57168,57170-57855,57857-58203,58205-58292,58294-59209,59211-59997,59999-60378,60380-61037,61039-61279,61281-62370,62372-64562,64564-65535"/>
+<extrareasons reason="host-prohibited" count="77" proto="tcp" ports="23,139,143,443,517,995,1068,1109,4068,4862,4951,6670,7538,8888,9092,9479,11894,12409,12759,12788,14333,15853,16211,16863,17044,17149,18008,18515,18923,22001,22201,23213,23855,24079,26070,26275,27857,31146,31555,31994,32381,33192,33378,33541,34555,34762,38381,38758,39426,39483,40222,41197,41875,43297,43711,45013,46311,49049,50010,51208,53009,53360,53466,54275,54929,55558,57169,57856,58204,58293,59210,59998,60379,61038,61280,62371,64563"/>
+</extraports>
+<extraports state="closed" count="1004">
+<extrareasons reason="reset" count="1004" proto="tcp" ports="875,5000-5999,42955,46666,54302"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nfs" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2121"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ccproxy-ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20048"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mountd" method="table" conf="3"/></port>
+</ports>
+<times srtt="433" rttvar="80" to="100000"/>
+</host>
+<runstats><finished time="1726900684" timestr="Sat Sep 21 12:08:04 2024" summary="Nmap done at Sat Sep 21 12:08:04 2024; 1 IP address (1 host up) scanned in 71.65 seconds" elapsed="71.65" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,17 @@
+# Nmap 7.94SVN scan initiated Sat Sep 21 12:06:52 2024 as: nmap -v -p- -oA my-file-server-2-all-ports-scan 192.168.1.110
+Nmap scan report for 192.168.1.110 (192.168.1.110)
+Host is up (0.00043s latency).
+Not shown: 64446 filtered tcp ports (no-response), 77 filtered tcp ports (host-prohibited), 1004 closed tcp ports (reset)
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+80/tcp    open  http
+111/tcp   open  rpcbind
+445/tcp   open  microsoft-ds
+2049/tcp  open  nfs
+2121/tcp  open  ccproxy-ftp
+20048/tcp open  mountd
+MAC Address: 08:00:27:14:80:4A (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Sep 21 12:08:04 2024 -- 1 IP address (1 host up) scanned in 71.65 seconds
