@@ -1,0 +1,1 @@
+http://192.168.1.6:80 [200 OK] Apache[2.2.22], Bootstrap, Country[RESERVED][ZZ], Email[feedback@startbootstrap.com,your-email@your-domain.com], HTML5, HTTPServer[Ubuntu Linux][Apache/2.2.22 (Ubuntu)], IP[192.168.1.6], JQuery, Script, Title[Zico's Shop], X-UA-Compatible[IE=edge]
