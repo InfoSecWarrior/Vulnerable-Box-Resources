@@ -1,0 +1,40 @@
+# Nmap 7.94SVN scan initiated Sat Sep 21 15:24:29 2024 as: nmap -v -sT -sV -sC -A -O -p 22,80, -oA joomlu-nmap-scan 192.168.1.10
+Nmap scan report for kioptrix3.com (192.168.1.10)
+Host is up (0.013s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 cd:dc:8f:24:51:73:54:bc:87:62:a2:e6:ed:f1:c1:b4 (RSA)
+|   256 a9:39:a9:bf:b2:f7:01:22:65:07:be:15:48:e8:ef:11 (ECDSA)
+|_  256 77:f5:a9:ff:a6:44:7c:9c:34:41:f1:ec:73:5e:57:bd (ED25519)
+80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+|_http-title: Home
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-generator: Joomla! - Open Source Content Management
+|_http-favicon: Unknown favicon MD5: 1194D7D32448E1F90741A97B42AF91FA
+| http-robots.txt: 15 disallowed entries 
+| /joomla/administrator/ /administrator/ /bin/ /cache/ 
+| /cli/ /components/ /includes/ /installation/ /language/ 
+|_/layouts/ /libraries/ /logs/ /modules/ /plugins/ /tmp/
+MAC Address: 50:C2:E8:D4:57:D7 (Cloud Network Technology Singapore PTE.)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Uptime guess: 43.353 days (since Fri Aug  9 06:56:43 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   12.78 ms kioptrix3.com (192.168.1.10)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Sep 21 15:24:39 2024 -- 1 IP address (1 host up) scanned in 10.35 seconds

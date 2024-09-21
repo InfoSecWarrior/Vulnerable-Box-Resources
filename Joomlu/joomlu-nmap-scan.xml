@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sat Sep 21 15:24:29 2024 as: nmap -v -sT -sV -sC -A -O -p 22,80, -oA joomlu-nmap-scan 192.168.1.10 -->
+<nmaprun scanner="nmap" args="nmap -v -sT -sV -sC -A -O -p 22,80, -oA joomlu-nmap-scan 192.168.1.10" start="1726912469" startstr="Sat Sep 21 15:24:29 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1726912469"/>
+<taskend task="NSE" time="1726912469"/>
+<taskbegin task="NSE" time="1726912469"/>
+<taskend task="NSE" time="1726912469"/>
+<taskbegin task="NSE" time="1726912469"/>
+<taskend task="NSE" time="1726912469"/>
+<taskbegin task="ARP Ping Scan" time="1726912469"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.10" addrtype="ipv4"/>
+<address addr="50:C2:E8:D4:57:D7" addrtype="mac" vendor="Cloud Network Technology Singapore PTE."/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1726912469" extrainfo="1 total hosts"/>
+<taskbegin task="Connect Scan" time="1726912469"/>
+<taskend task="Connect Scan" time="1726912469" extrainfo="2 total ports"/>
+<taskbegin task="Service scan" time="1726912470"/>
+<taskend task="Service scan" time="1726912476" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1726912477"/>
+<taskend task="NSE" time="1726912479"/>
+<taskbegin task="NSE" time="1726912479"/>
+<taskend task="NSE" time="1726912479"/>
+<taskbegin task="NSE" time="1726912479"/>
+<taskend task="NSE" time="1726912479"/>
+<host starttime="1726912469" endtime="1726912479"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.10" addrtype="ipv4"/>
+<address addr="50:C2:E8:D4:57:D7" addrtype="mac" vendor="Cloud Network Technology Singapore PTE."/>
+<hostnames>
+<hostname name="kioptrix3.com" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 cd:dc:8f:24:51:73:54:bc:87:62:a2:e6:ed:f1:c1:b4 (RSA)&#xa;  256 a9:39:a9:bf:b2:f7:01:22:65:07:be:15:48:e8:ef:11 (ECDSA)&#xa;  256 77:f5:a9:ff:a6:44:7c:9c:34:41:f1:ec:73:5e:57:bd (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDpGu8OROct6WsqJC2pF2llWVZCpNUWgxzu/7Qg/wII3+6NDU+WkbnQ7FkLJjzO8+uROg4GpbM0HlrGyXjFHhv/FbeqJJrE4j08gn6QCcpwRgoB2L5E1OJL5bxtaijryXWic4rifesztbXjiUwmKV2m4+4XVxhxFvn8F/Q0tufy9TFwF34V07z6iU4PyX3bpNMZPnW8yw8+RCZNFbvvKFyMKm4t18wUXpCpqMsa+/ZHPheyiICKoq+LqI/GngOeBTuM92tN8FwGKyKdNsVmbj3/fKxA5z/MQFXKJZr+YtUgoTJsGoNoB8ZiX21hAk1EucPrfufPxtj6CQeVidUS6nSt</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">cddc8f24517354bc8762a2e6edf1c1b4</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBD6RKxwQyDEIWiCvOoPyNc196icnZuw5yN+elCF1ylhg5SWkiNC4ENQX4pE8cq3k96Yfn3WZPsN5LSn9yBqQuLI=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">a939a9bfb2f701226507be1548e8ef11</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIGkKJCCZ2wQlS6N171PEVBN+dngA0rYZCBcv1vQx5cTG</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">77f5a9ffa6447c9c3441f1ec735e57bd</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.38" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.38</cpe></service><script id="http-title" output="Home"><elem key="title">Home</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.38 (Debian)"><elem>Apache/2.4.38 (Debian)</elem>
+</script><script id="http-generator" output="Joomla! - Open Source Content Management"/><script id="http-favicon" output="Unknown favicon MD5: 1194D7D32448E1F90741A97B42AF91FA"/><script id="http-robots.txt" output="15 disallowed entries &#xa;/joomla/administrator/ /administrator/ /bin/ /cache/ &#xa;/cli/ /components/ /includes/ /installation/ /language/ &#xa;/layouts/ /libraries/ /logs/ /modules/ /plugins/ /tmp/"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="40859"/>
+<osmatch name="Linux 4.15 - 5.8" accuracy="100" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3745676" lastboot="Fri Aug  9 06:56:43 2024"/>
+<distance value="1"/>
+<tcpsequence index="261" difficulty="Good luck!" values="B9282E9C,578FA0CE,593E0D6E,84D28E40,D77F9ED6,F9C8EE1C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="DF42716A,DF4271CE,DF427232,DF427296,DF4272FA,DF42735E"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.10" rtt="12.78" host="kioptrix3.com"/>
+</trace>
+<times srtt="12777" rttvar="16766" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1726912479"/>
+<taskend task="NSE" time="1726912479"/>
+<taskbegin task="NSE" time="1726912479"/>
+<taskend task="NSE" time="1726912479"/>
+<taskbegin task="NSE" time="1726912479"/>
+<taskend task="NSE" time="1726912479"/>
+<runstats><finished time="1726912479" timestr="Sat Sep 21 15:24:39 2024" summary="Nmap done at Sat Sep 21 15:24:39 2024; 1 IP address (1 host up) scanned in 10.35 seconds" elapsed="10.35" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

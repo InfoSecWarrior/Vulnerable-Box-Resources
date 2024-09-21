@@ -1,0 +1,71 @@
+# Dirsearch started Sat Sep 21 15:25:35 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.10:80 -o joomlu-dirsearch-u1.txt
+
+403   277B   http://192.168.1.10/.htaccess.bak1
+403   277B   http://192.168.1.10/.ht_wsr.txt
+403   277B   http://192.168.1.10/.htaccess.sample
+403   277B   http://192.168.1.10/.htaccess.orig
+403   277B   http://192.168.1.10/.htaccess_extra
+403   277B   http://192.168.1.10/.htaccess.save
+403   277B   http://192.168.1.10/.htaccess_orig
+403   277B   http://192.168.1.10/.htaccessOLD
+403   277B   http://192.168.1.10/.htaccessBAK
+403   277B   http://192.168.1.10/.htaccessOLD2
+403   277B   http://192.168.1.10/.htaccess_sc
+403   277B   http://192.168.1.10/.htm
+403   277B   http://192.168.1.10/.html
+403   277B   http://192.168.1.10/.htpasswd_test
+403   277B   http://192.168.1.10/.htpasswds
+403   277B   http://192.168.1.10/.httr-oauth
+403   277B   http://192.168.1.10/.php
+301   320B   http://192.168.1.10/administrator    -> REDIRECTS TO: http://192.168.1.10/administrator/
+200     2KB  http://192.168.1.10/administrator/
+403   277B   http://192.168.1.10/administrator/includes/
+200    31B   http://192.168.1.10/administrator/cache/
+301   325B   http://192.168.1.10/administrator/logs    -> REDIRECTS TO: http://192.168.1.10/administrator/logs/
+200    31B   http://192.168.1.10/administrator/logs/
+200     2KB  http://192.168.1.10/administrator/index.php
+301   310B   http://192.168.1.10/bin    -> REDIRECTS TO: http://192.168.1.10/bin/
+200    31B   http://192.168.1.10/bin/
+200    31B   http://192.168.1.10/cache/
+301   312B   http://192.168.1.10/cache    -> REDIRECTS TO: http://192.168.1.10/cache/
+200    31B   http://192.168.1.10/cli/
+301   317B   http://192.168.1.10/components    -> REDIRECTS TO: http://192.168.1.10/components/
+200    31B   http://192.168.1.10/components/
+200     0B   http://192.168.1.10/configuration.php
+200     1KB  http://192.168.1.10/htaccess.txt
+200    31B   http://192.168.1.10/images/
+301   313B   http://192.168.1.10/images    -> REDIRECTS TO: http://192.168.1.10/images/
+200    31B   http://192.168.1.10/includes/
+301   315B   http://192.168.1.10/includes    -> REDIRECTS TO: http://192.168.1.10/includes/
+200     3KB  http://192.168.1.10/index.php
+404     4KB  http://192.168.1.10/index.php/login/
+301   315B   http://192.168.1.10/language    -> REDIRECTS TO: http://192.168.1.10/language/
+200    31B   http://192.168.1.10/layouts/
+200    31B   http://192.168.1.10/libraries/
+301   316B   http://192.168.1.10/libraries    -> REDIRECTS TO: http://192.168.1.10/libraries/
+200     7KB  http://192.168.1.10/LICENSE.txt
+301   312B   http://192.168.1.10/media    -> REDIRECTS TO: http://192.168.1.10/media/
+200    31B   http://192.168.1.10/media/
+301   314B   http://192.168.1.10/modules    -> REDIRECTS TO: http://192.168.1.10/modules/
+200    31B   http://192.168.1.10/modules/
+301   317B   http://192.168.1.10/phpmyadmin    -> REDIRECTS TO: http://192.168.1.10/phpmyadmin/
+200     3KB  http://192.168.1.10/phpmyadmin/doc/html/index.html
+200     1KB  http://192.168.1.10/phpmyadmin/README
+200    27KB  http://192.168.1.10/phpmyadmin/ChangeLog
+200     3KB  http://192.168.1.10/phpmyadmin/index.php
+200     3KB  http://192.168.1.10/phpmyadmin/
+301   314B   http://192.168.1.10/plugins    -> REDIRECTS TO: http://192.168.1.10/plugins/
+200    31B   http://192.168.1.10/plugins/
+200     2KB  http://192.168.1.10/README.txt
+200   395B   http://192.168.1.10/robots.txt
+403   277B   http://192.168.1.10/server-status/
+403   277B   http://192.168.1.10/server-status
+200    31B   http://192.168.1.10/templates/
+301   316B   http://192.168.1.10/templates    -> REDIRECTS TO: http://192.168.1.10/templates/
+200     0B   http://192.168.1.10/templates/beez3/
+200     0B   http://192.168.1.10/templates/protostar/
+200    31B   http://192.168.1.10/templates/index.html
+200     0B   http://192.168.1.10/templates/system/
+301   310B   http://192.168.1.10/tmp    -> REDIRECTS TO: http://192.168.1.10/tmp/
+200    31B   http://192.168.1.10/tmp/
+200   567B   http://192.168.1.10/web.config.txt
