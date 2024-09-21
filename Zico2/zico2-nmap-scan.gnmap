@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Sep 21 14:33:48 2024 as: nmap -v -sT -sV -sC -A -O -p 22,80,111,57190, -oA zico2-nmap-scan 192.168.1.6
+# Ports scanned: TCP(4;22,80,111,57190) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.6 ()	Status: Up
+Host: 192.168.1.6 ()	Ports: 22/open/tcp//ssh//OpenSSH 5.9p1 Debian 5ubuntu1.10 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.2.22 ((Ubuntu))/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 57190/open/tcp//status//1 (RPC #100024)/	OS: Linux 2.6.32 - 3.5	Seq Index: 262	IP ID Seq: All zeros
+# Nmap done at Sat Sep 21 14:34:01 2024 -- 1 IP address (1 host up) scanned in 14.14 seconds
