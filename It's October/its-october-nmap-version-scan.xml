@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sun Sep 22 16:17:26 2024 as: nmap -v -sT -sV -sC -A -O -p 22,80,3306,8080 -oA its-october-nmap-version-scan 192.168.1.205 -->
+<nmaprun scanner="nmap" args="nmap -v -sT -sV -sC -A -O -p 22,80,3306,8080 -oA its-october-nmap-version-scan 192.168.1.205" start="1727002046" startstr="Sun Sep 22 16:17:26 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="22,80,3306,8080"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727002046"/>
+<taskend task="NSE" time="1727002046"/>
+<taskbegin task="NSE" time="1727002046"/>
+<taskend task="NSE" time="1727002046"/>
+<taskbegin task="NSE" time="1727002046"/>
+<taskend task="NSE" time="1727002046"/>
+<taskbegin task="ARP Ping Scan" time="1727002046"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.205" addrtype="ipv4"/>
+<address addr="08:00:27:7E:42:4D" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727002046" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727002046"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727002046"/>
+<taskbegin task="Connect Scan" time="1727002046"/>
+<taskend task="Connect Scan" time="1727002046" extrainfo="4 total ports"/>
+<taskbegin task="Service scan" time="1727002047"/>
+<taskend task="Service scan" time="1727002056" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1727002057"/>
+<taskend task="NSE" time="1727002060"/>
+<taskbegin task="NSE" time="1727002060"/>
+<taskend task="NSE" time="1727002060"/>
+<taskbegin task="NSE" time="1727002060"/>
+<taskend task="NSE" time="1727002060"/>
+<host starttime="1727002046" endtime="1727002060"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.205" addrtype="ipv4"/>
+<address addr="08:00:27:7E:42:4D" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+<hostname name="october.lan" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 27:21:9e:b5:39:63:e9:1f:2c:b2:6b:d3:3a:5f:31:7b (RSA)&#xa;  256 bf:90:8a:a5:d7:e5:de:89:e6:1a:36:a1:93:40:18:57 (ECDSA)&#xa;  256 95:1f:32:95:78:08:50:45:cd:8c:7c:71:4a:d4:6c:1c (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDO2NZpyWvmlp9n32GhuHX86ickyFyeoh/ESBEKFDQ2bKtYB5ql158CM+zuXjQsIdmLUFtpbmMjl4nArC3d6Z/IJYgHIhA1wM6NA9ErQsYVdQEJS6Bb6rE1PLPCsF5wNWvTW9PMdQtPuFj4rJM+FWZffzUZGQoHz/YMf5IJxdz7Xf1i/G7BvANctULMC7rKqpXvpjxTcLPfxxuO7ePcsMPco0T8ZDw93k4K65upASBqbdzCS9axTf5JXll3nWGcKO/JfWk3dvDUpRWdcUpXoEf2+afEzW5deUFY6O1dDaGmeWEjTvTG1Bo2qUTLr43T8w234I7qqgiMmnXjP+TVgOPP</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">27219eb53963e91f2cb26bd33a5f317b</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLHPnZ54xfYtmNSBROqyDaS91lnDbroaBWi+KHR0cRbWxYSzW0G5IxmT19UjfBJOiG7lanOJw5dtC1pmeU2/ywI=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">bf908aa5d7e5de89e61a36a193401857</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIGAbYacAnCI/PmYwQeSFp6RcW3ZCCqIAzSIiec9ck725</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">951f329578085045cd8c7c714ad46c1c</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.38" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.38</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Homepage &amp;#124; My new websites"><elem key="title">Homepage &amp;#124; My new websites</elem>
+</script><script id="http-server-header" output="Apache/2.4.38 (Debian)"><elem>Apache/2.4.38 (Debian)</elem>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.38" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.38</cpe></service><script id="http-server-header" output="Apache/2.4.38 (Debian)"><elem>Apache/2.4.38 (Debian)</elem>
+</script><script id="http-title" output="My Note"><elem key="title">My Note</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-open-proxy" output="Proxy might be redirecting requests"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="32454"/>
+<osmatch name="Linux 4.15 - 5.8" accuracy="100" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3619278" lastboot="Sun Aug 11 18:56:22 2024"/>
+<distance value="1"/>
+<tcpsequence index="258" difficulty="Good luck!" values="4B2BFCDE,D1104467,5DD796EF,C9EA1B80,71DA448C,467666E5"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="D7B9C08D,D7B9C0F1,D7B9C155,D7B9C1BA,D7B9C21E,D7B9C282"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.205" rtt="0.44" host="october.lan"/>
+</trace>
+<times srtt="437" rttvar="178" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727002060"/>
+<taskend task="NSE" time="1727002060"/>
+<taskbegin task="NSE" time="1727002060"/>
+<taskend task="NSE" time="1727002060"/>
+<taskbegin task="NSE" time="1727002060"/>
+<taskend task="NSE" time="1727002060"/>
+<runstats><finished time="1727002060" timestr="Sun Sep 22 16:17:40 2024" summary="Nmap done at Sun Sep 22 16:17:40 2024; 1 IP address (1 host up) scanned in 14.34 seconds" elapsed="14.34" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
