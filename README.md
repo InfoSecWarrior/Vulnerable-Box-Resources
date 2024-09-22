@@ -40,13 +40,13 @@ To contribute your scan data to this repository, please follow the steps below:
 
    - Navigate to your directory and copy the **Raw link** of your `{output_filename_prefix}-nmap-scan.xml` file.
    - Example link format:  
-     `https://raw.githubusercontent.com/your-github-username/Vulnerable-Box-Resources/main/Machine-Name/output_filename_prefix-nmap-scan.xml`
+     `https://raw.githubusercontent.com/your-github-username/Vulnerable-Box-Resources/main/Machine-Name/output_directory_prefix-nmap-scan.xml`
      
 5. **Modify the Username in the URL**:
 
    - Change `your-github-username` to `infoSecWarrior` in the raw link.  
      For example,  
-     `https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/Machine-Name/output_filename_prefix-nmap-scan.xml`
+     `https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/Machine-Name/output_directory_prefix-nmap-scan.xml`
 
 6. **Update the Raw-File-Links.txt File**:
 
