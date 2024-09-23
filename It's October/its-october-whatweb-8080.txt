@@ -1,1 +1,0 @@
-http://192.168.1.205:8080 [200 OK] Apache[2.4.38], Country[RESERVED][ZZ], HTML5, HTTPServer[Debian Linux][Apache/2.4.38 (Debian)], IP[192.168.1.205], Title[My Note]
