@@ -53,7 +53,7 @@ function parseXML(xmlText, url) {
         const directoryName = decodeURIComponent(encodedDirectoryName);     // Decode the directory name
 
         const fullFileName = urlSegments[urlSegments.length - 1]; // Full filename with extension
-        const fileBase = fullFileName.replace('-nmap-version-scan.xml', ''); // File base name without '-nmap-scan.xml'
+        const fileBase = fullFileName.replace('-nmap-version-scan-output.xml', ''); // File base name without '-nmap-scan.xml'
 
         const hosts = xmlDoc.querySelectorAll('host');
 
