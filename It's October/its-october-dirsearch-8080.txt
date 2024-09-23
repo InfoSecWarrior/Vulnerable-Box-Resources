@@ -1,21 +1,21 @@
-# Dirsearch started Thu Sep 19 11:09:42 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.205:8080 -o its-october-dirsearch-u1.txt
+# Dirsearch started Sun Sep 22 16:18:38 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.205:8080 -o its-october-dirsearch-8080.txt -q
 
 403   280B   http://192.168.1.205:8080/.ht_wsr.txt
-403   280B   http://192.168.1.205:8080/.htaccess.sample
 403   280B   http://192.168.1.205:8080/.htaccess.bak1
+403   280B   http://192.168.1.205:8080/.htaccess.orig
 403   280B   http://192.168.1.205:8080/.htaccess.save
 403   280B   http://192.168.1.205:8080/.htaccess_orig
-403   280B   http://192.168.1.205:8080/.htaccess.orig
-403   280B   http://192.168.1.205:8080/.htaccessBAK
+403   280B   http://192.168.1.205:8080/.htaccess_sc
+403   280B   http://192.168.1.205:8080/.htaccess.sample
 403   280B   http://192.168.1.205:8080/.htaccessOLD
 403   280B   http://192.168.1.205:8080/.htaccess_extra
+403   280B   http://192.168.1.205:8080/.htaccessOLD2
+403   280B   http://192.168.1.205:8080/.htaccessBAK
 403   280B   http://192.168.1.205:8080/.htm
 403   280B   http://192.168.1.205:8080/.html
-403   280B   http://192.168.1.205:8080/.htaccessOLD2
 403   280B   http://192.168.1.205:8080/.htpasswd_test
 403   280B   http://192.168.1.205:8080/.httr-oauth
 403   280B   http://192.168.1.205:8080/.htpasswds
-403   280B   http://192.168.1.205:8080/.htaccess_sc
 403   280B   http://192.168.1.205:8080/.php
 403   280B   http://192.168.1.205:8080/server-status
 403   280B   http://192.168.1.205:8080/server-status/

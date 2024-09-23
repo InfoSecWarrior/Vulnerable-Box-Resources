@@ -1,6 +1,6 @@
-# Nmap 7.94SVN scan initiated Thu Sep 19 11:08:02 2024 as: nmap -v -sT -sV -sC -A -O -p 22,80,3306,8080, -oA its-october-nmap-scan 192.168.1.205
-Nmap scan report for 192.168.1.205 (192.168.1.205)
-Host is up (0.00034s latency).
+# Nmap 7.94SVN scan initiated Sun Sep 22 16:17:26 2024 as: nmap -v -sT -sV -sC -A -O -p 22,80,3306,8080 -oA its-october-nmap-version-scan 192.168.1.205
+Nmap scan report for october.lan (192.168.1.205)
+Host is up (0.00044s latency).
 
 PORT     STATE SERVICE VERSION
 22/tcp   open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
@@ -9,33 +9,33 @@ PORT     STATE SERVICE VERSION
 |   256 bf:90:8a:a5:d7:e5:de:89:e6:1a:36:a1:93:40:18:57 (ECDSA)
 |_  256 95:1f:32:95:78:08:50:45:cd:8c:7c:71:4a:d4:6c:1c (ED25519)
 80/tcp   open  http    Apache httpd 2.4.38 ((Debian))
-|_http-server-header: Apache/2.4.38 (Debian)
 | http-methods: 
 |_  Supported Methods: GET HEAD POST OPTIONS
 |_http-title: Homepage &#124; My new websites
+|_http-server-header: Apache/2.4.38 (Debian)
 3306/tcp open  mysql   MySQL (unauthorized)
 8080/tcp open  http    Apache httpd 2.4.38 ((Debian))
 |_http-server-header: Apache/2.4.38 (Debian)
-|_http-open-proxy: Proxy might be redirecting requests
 |_http-title: My Note
 | http-methods: 
 |_  Supported Methods: GET POST OPTIONS HEAD
+|_http-open-proxy: Proxy might be redirecting requests
 MAC Address: 08:00:27:7E:42:4D (Oracle VirtualBox virtual NIC)
 Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
 Device type: general purpose
 Running: Linux 4.X|5.X
 OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
 OS details: Linux 4.15 - 5.8
-Uptime guess: 15.687 days (since Tue Sep  3 18:38:35 2024)
+Uptime guess: 41.890 days (since Sun Aug 11 18:56:22 2024)
 Network Distance: 1 hop
-TCP Sequence Prediction: Difficulty=262 (Good luck!)
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
 IP ID Sequence Generation: All zeros
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 TRACEROUTE
 HOP RTT     ADDRESS
-1   0.34 ms 192.168.1.205 (192.168.1.205)
+1   0.44 ms october.lan (192.168.1.205)
 
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Thu Sep 19 11:08:15 2024 -- 1 IP address (1 host up) scanned in 12.41 seconds
+# Nmap done at Sun Sep 22 16:17:40 2024 -- 1 IP address (1 host up) scanned in 14.34 seconds

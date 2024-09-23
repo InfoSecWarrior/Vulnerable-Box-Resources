@@ -1,5 +1,5 @@
-# Nmap 7.94SVN scan initiated Thu Sep 19 11:08:02 2024 as: nmap -v -sT -sV -sC -A -O -p 22,80,3306,8080, -oA its-october-nmap-scan 192.168.1.205
+# Nmap 7.94SVN scan initiated Sun Sep 22 16:17:26 2024 as: nmap -v -sT -sV -sC -A -O -p 22,80,3306,8080 -oA its-october-nmap-version-scan 192.168.1.205
 # Ports scanned: TCP(4;22,80,3306,8080) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 192.168.1.205 (192.168.1.205)	Status: Up
-Host: 192.168.1.205 (192.168.1.205)	Ports: 22/open/tcp//ssh//OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.38 ((Debian))/, 3306/open/tcp//mysql//MySQL (unauthorized)/, 8080/open/tcp//http//Apache httpd 2.4.38 ((Debian))/	OS: Linux 4.15 - 5.8	Seq Index: 262	IP ID Seq: All zeros
-# Nmap done at Thu Sep 19 11:08:15 2024 -- 1 IP address (1 host up) scanned in 12.41 seconds
+Host: 192.168.1.205 (october.lan)	Status: Up
+Host: 192.168.1.205 (october.lan)	Ports: 22/open/tcp//ssh//OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.38 ((Debian))/, 3306/open/tcp//mysql//MySQL (unauthorized)/, 8080/open/tcp//http//Apache httpd 2.4.38 ((Debian))/	OS: Linux 4.15 - 5.8	Seq Index: 258	IP ID Seq: All zeros
+# Nmap done at Sun Sep 22 16:17:40 2024 -- 1 IP address (1 host up) scanned in 14.34 seconds
