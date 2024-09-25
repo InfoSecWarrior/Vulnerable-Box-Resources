@@ -1,0 +1,13 @@
+# Dirsearch started Tue Sep 24 22:43:28 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.3:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o zico2-dirsearch-80-wordlist.txt -q
+
+200     1KB  http://192.168.1.3/tools
+200    20B   http://192.168.1.3/view
+301   244B   http://192.168.1.3/css    -> REDIRECTS TO: http://192.168.1.3/css/
+301   245B   http://192.168.1.3/img    -> REDIRECTS TO: http://192.168.1.3/img/
+301   244B   http://192.168.1.3/js    -> REDIRECTS TO: http://192.168.1.3/js/
+301   246B   http://192.168.1.3/vendor    -> REDIRECTS TO: http://192.168.1.3/vendor/
+200   789B   http://192.168.1.3/package
+200     1KB  http://192.168.1.3/LICENSE
+301   243B   http://192.168.1.3/less    -> REDIRECTS TO: http://192.168.1.3/less/
+403   238B   http://192.168.1.3/server-status
+301   248B   http://192.168.1.3/dbadmin    -> REDIRECTS TO: http://192.168.1.3/dbadmin/

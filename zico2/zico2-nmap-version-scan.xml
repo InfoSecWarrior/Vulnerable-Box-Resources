@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Sep 24 22:33:32 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,111,50395 -oA zico2-nmap-version-scan 192.168.1.3 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80,111,50395 -oA zico2-nmap-version-scan 192.168.1.3" start="1727197412" startstr="Tue Sep 24 22:33:32 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="22,80,111,50395"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727197412"/>
+<taskend task="NSE" time="1727197412"/>
+<taskbegin task="NSE" time="1727197412"/>
+<taskend task="NSE" time="1727197412"/>
+<taskbegin task="NSE" time="1727197412"/>
+<taskend task="NSE" time="1727197412"/>
+<taskbegin task="ARP Ping Scan" time="1727197412"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.3" addrtype="ipv4"/>
+<address addr="08:00:27:A4:39:29" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727197412" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727197413"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727197413"/>
+<taskbegin task="Connect Scan" time="1727197413"/>
+<taskend task="Connect Scan" time="1727197413" extrainfo="4 total ports"/>
+<taskbegin task="Service scan" time="1727197413"/>
+<taskend task="Service scan" time="1727197424" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1727197425"/>
+<taskend task="NSE" time="1727197425"/>
+<taskbegin task="NSE" time="1727197425"/>
+<taskend task="NSE" time="1727197425"/>
+<taskbegin task="NSE" time="1727197425"/>
+<taskend task="NSE" time="1727197425"/>
+<host starttime="1727197413" endtime="1727197425"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.3" addrtype="ipv4"/>
+<address addr="08:00:27:A4:39:29" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="5.9p1 Debian 5ubuntu1.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:5.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 68:60:de:c2:2b:c6:16:d8:5b:88:be:e3:cc:a1:25:75 (DSA)&#xa;  2048 50:db:75:ba:11:2f:43:c9:ab:14:40:6d:7f:a1:ee:e3 (RSA)&#xa;  256 11:5d:55:29:8a:77:d8:08:b4:00:9b:a3:61:93:fe:e5 (ECDSA)"><table>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAJwR6q4VerUDe7bLXRL6ZPTXj5FY66he+WWlRSoQppwDLqrTG73Pa9qUHMDFb1LXN1qgg0p0lyfqvm8ZeN+98rbT0JW6+Wqa7v0K+N82xf87fVkJcXAuU/A8OGR9eVMZmWsIOpabZexd5CHYgLO3k4YpPSdxc6S4zJcOGwXVnmGHAAAAFQDHjsPg0rmkbquTJRdlEZBVJe9+3QAAAIBjYIAiGvKhmJfzDjVfzlxRD1ET7ZhSoMDxU0KadwXQP1uBdlYVEteJQpUTEsA+7kFH7xhtZ/zbK2afEFHriAphTJmz8GqkIR5CJXh3dZspdk2MHCgxkXl5G/iVPLR9UShN+nsAVxfm0gffCqbqZu3Ridt3JwTXQbiDfXO/a6T/eQAAAIEAlsW/i/dUuFbRVO2zaAKwL/CFWT19Al7+njszC5FCJ2deggmF/NIKJUbJwkRZkwL4PY1HYj2xqn7ImhPSyvdCd+IFdw73Pndnjv0luDc8i/a4JUEfna4rzXt1Y5c24J1pEoKA05VicyCBD2z6TodRJEVEFSsa1s8s2p9x6LxwsDw=</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="fingerprint">6860dec22bc616d85b88bee3cca12575</elem>
+<elem key="bits">1024</elem>
+</table>
+<table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDZt46W9slSN3Y6D2f931rijUPCEewhQWmBfGhybuF4qLftfJMuyFcREZkG6UretVI8ZnQn/OMDgbf2DYMzKsRLnz7W5cGy1Mt1pWoG0iCgi2xHzLqOqPYo4mP9/hdZT6pANXapETT55yx8sHAYLAa9NK5Dtyv+QNQ2dUUb1wUTCqgYffLVDgoHvNNDwCwB6biJf6uopqfg2KXvAzcqSa6oaRChJOXjFlM08HebMwkMSzrOXjWbXhFsONy5JuDf3WztCtLMsFrVRHTdDwTh7uL2UQ8Qcky+kP6Wd7G8NlW5RxubYIFpAM0u2SsQIjYOxz+eOfQ8GE3WjvaIBqX05gat</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">50db75ba112f43c9ab14406d7fa1eee3</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFxsiWE3WImfJcjiWS5asOVoMsn+0gFLU5AgPNs2ATokB7kw00IsB0YGrqClwYNauRRddkYMsi0icJSR60mYNSo=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">115d55298a77d808b4009ba36193fee5</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.22" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.22</cpe></service><script id="http-title" output="Zico&apos;s Shop"><elem key="title">Zico&apos;s Shop</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.2.22 (Ubuntu)"><elem>Apache/2.2.22 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2,3,4        111/tcp   rpcbind&#xa;  100000  2,3,4        111/udp   rpcbind&#xa;  100000  3,4          111/tcp6  rpcbind&#xa;  100000  3,4          111/udp6  rpcbind&#xa;  100024  1          49688/udp6  status&#xa;  100024  1          50395/tcp   status&#xa;  100024  1          53071/tcp6  status&#xa;  100024  1          57125/udp   status&#xa;"><table key="100000">
+<table key="udp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">111</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+</table>
+<table key="udp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<elem key="port">111</elem>
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+</table>
+<table key="local">
+<elem key="owner">superuser</elem>
+<elem key="addr">/run/rpcbind.sock</elem>
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+</table>
+<table key="tcp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<elem key="port">111</elem>
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+</table>
+<table key="tcp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">111</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+</table>
+</table>
+<table key="100024">
+<table key="tcp6">
+<elem key="owner">105</elem>
+<elem key="addr">::</elem>
+<elem key="port">53071</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+</table>
+<table key="tcp">
+<elem key="owner">105</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">50395</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+</table>
+<table key="udp">
+<elem key="owner">105</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">57125</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+</table>
+<table key="udp6">
+<elem key="owner">105</elem>
+<elem key="addr">::</elem>
+<elem key="port">49688</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="50395"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="39983"/>
+<osmatch name="Linux 2.6.32 - 3.5" accuracy="100" line="56784">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="17179786" lastboot="Sun Mar 10 02:23:59 2024"/>
+<distance value="1"/>
+<tcpsequence index="263" difficulty="Good luck!" values="4A0D920E,3E2B87C3,95874A33,9B93D9E2,D6EE48EF,4F739441"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="FFFFADDD,FFFFADF6,FFFFAE0F,FFFFAE28,FFFFAE41,FFFFAE5A"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.3" rtt="0.38"/>
+</trace>
+<times srtt="379" rttvar="61" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727197425"/>
+<taskend task="NSE" time="1727197425"/>
+<taskbegin task="NSE" time="1727197425"/>
+<taskend task="NSE" time="1727197425"/>
+<taskbegin task="NSE" time="1727197425"/>
+<taskend task="NSE" time="1727197425"/>
+<runstats><finished time="1727197425" timestr="Tue Sep 24 22:33:45 2024" summary="Nmap done at Tue Sep 24 22:33:45 2024; 1 IP address (1 host up) scanned in 13.66 seconds" elapsed="13.66" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,40 @@
+# Dirsearch started Tue Sep 24 22:34:33 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.3:80 -o zico2-dirsearch-80.txt -q
+
+301   244B   http://192.168.1.3/js    -> REDIRECTS TO: http://192.168.1.3/js/
+403   241B   http://192.168.1.3/.ht_wsr.txt
+403   240B   http://192.168.1.3/.htaccess.orig
+403   241B   http://192.168.1.3/.htaccess.bak1
+403   239B   http://192.168.1.3/.htaccess.save
+403   241B   http://192.168.1.3/.htaccess.sample
+403   239B   http://192.168.1.3/.htaccessOLD
+403   240B   http://192.168.1.3/.htaccessBAK
+403   240B   http://192.168.1.3/.htaccessOLD2
+403   240B   http://192.168.1.3/.htaccess_sc
+403   242B   http://192.168.1.3/.htaccess_orig
+403   236B   http://192.168.1.3/.htm
+403   236B   http://192.168.1.3/.html
+403   244B   http://192.168.1.3/.htpasswd_test
+403   239B   http://192.168.1.3/.htpasswds
+403   242B   http://192.168.1.3/.htaccess_extra
+403   240B   http://192.168.1.3/.httr-oauth
+403   239B   http://192.168.1.3/cgi-bin/
+301   244B   http://192.168.1.3/css    -> REDIRECTS TO: http://192.168.1.3/css/
+301   248B   http://192.168.1.3/dbadmin    -> REDIRECTS TO: http://192.168.1.3/dbadmin/
+200   454B   http://192.168.1.3/dbadmin/
+403   246B   http://192.168.1.3/doc/en/changes.html
+403   242B   http://192.168.1.3/doc/stable.version
+403   238B   http://192.168.1.3/doc/api/
+403   236B   http://192.168.1.3/doc/
+403   244B   http://192.168.1.3/doc/html/index.html
+200   964B   http://192.168.1.3/gulpfile.js
+301   245B   http://192.168.1.3/img    -> REDIRECTS TO: http://192.168.1.3/img/
+200   466B   http://192.168.1.3/js/
+200     1KB  http://192.168.1.3/LICENSE
+200   789B   http://192.168.1.3/package
+200   789B   http://192.168.1.3/package.json
+200     1KB  http://192.168.1.3/README.md
+403   238B   http://192.168.1.3/server-status
+403   239B   http://192.168.1.3/server-status/
+200     1KB  http://192.168.1.3/tools
+200   505B   http://192.168.1.3/vendor/
+200    20B   http://192.168.1.3/view.php
