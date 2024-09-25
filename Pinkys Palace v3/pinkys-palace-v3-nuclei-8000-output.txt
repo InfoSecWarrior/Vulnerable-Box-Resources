@@ -1,0 +1,26 @@
+[missing-sri] [http] [info] http://192.168.29.121:8000 ["http://192.168.29.121:8000/misc/jquery.js?v=1.4.4","http://192.168.29.121:8000/misc/jquery.once.js?v=1.2","http://192.168.29.121:8000/misc/drupal.js?p8e4gv"]
+[waf-detect:nginxgeneric] [http] [info] http://192.168.29.121:8000
+[wordpress-xmlrpc-file] [http] [info] http://192.168.29.121:8000/xmlrpc.php
+[robots-txt] [http] [info] http://192.168.29.121:8000/robots.txt
+[fingerprinthub-web-fingerprints:drupal] [http] [info] http://192.168.29.121:8000
+[metatag-cms] [http] [info] http://192.168.29.121:8000 ["Drupal 7 (http://drupal.org)"]
+[tech-detect:drupal] [http] [info] http://192.168.29.121:8000
+[tech-detect:nginx] [http] [info] http://192.168.29.121:8000
+[editor-exposure] [http] [low] http://192.168.29.121:8000/.editorconfig
+[drupal-detect] [http] [info] http://192.168.29.121:8000
+[drupal-detect] [http] [info] http://192.168.29.121:8000/CHANGELOG.txt
+[web-config] [http] [info] http://192.168.29.121:8000/web.config
+[robots-txt-endpoint] [http] [info] http://192.168.29.121:8000/robots.txt
+[nginx-version] [http] [info] http://192.168.29.121:8000 ["nginx/1.10.3"]
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.29.121:8000
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.29.121:8000
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.29.121:8000
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.29.121:8000
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.29.121:8000
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.29.121:8000
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.29.121:8000
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.29.121:8000
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.29.121:8000
+[mixed-passive-content:img] [http] [info] http://192.168.29.121:8000 ["http://192.168.29.121:8000/themes/bartik/logo.png","http://192.168.29.121:8000/misc/feed.png"]
+[exposed-gitignore] [http] [info] http://192.168.29.121:8000/.gitignore
+[drupal-login] [http] [info] http://192.168.29.121:8000

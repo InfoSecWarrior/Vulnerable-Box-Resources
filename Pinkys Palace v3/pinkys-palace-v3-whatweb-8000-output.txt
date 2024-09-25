@@ -1,0 +1,1 @@
+http://192.168.29.121:8000 [200 OK] Content-Language[en], Country[RESERVED][ZZ], Drupal, HTTPServer[nginx/1.10.3], IP[192.168.29.121], JQuery, MetaGenerator[Drupal 7 (http://drupal.org)], PasswordField[pass], Script[text/javascript], Title[PinkDrup], UncommonHeaders[x-content-type-options,x-generator], X-Frame-Options[SAMEORIGIN], nginx[1.10.3]
