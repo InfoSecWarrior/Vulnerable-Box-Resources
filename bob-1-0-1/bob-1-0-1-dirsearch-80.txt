@@ -1,0 +1,28 @@
+# Dirsearch started Tue Sep 24 23:28:10 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.7:80 -o bob-1-0-1-dirsearch-80.txt -q
+
+403   297B   http://192.168.1.7/.ht_wsr.txt
+403   300B   http://192.168.1.7/.htaccess.bak1
+403   300B   http://192.168.1.7/.htaccess.save
+403   300B   http://192.168.1.7/.htaccess.orig
+403   300B   http://192.168.1.7/.htaccess_orig
+403   301B   http://192.168.1.7/.htaccess_extra
+403   298B   http://192.168.1.7/.htaccessOLD
+403   299B   http://192.168.1.7/.htaccessOLD2
+403   302B   http://192.168.1.7/.htaccess.sample
+403   290B   http://192.168.1.7/.htm
+403   298B   http://192.168.1.7/.htaccess_sc
+403   291B   http://192.168.1.7/.html
+403   298B   http://192.168.1.7/.htaccessBAK
+403   300B   http://192.168.1.7/.htpasswd_test
+403   296B   http://192.168.1.7/.htpasswds
+403   297B   http://192.168.1.7/.httr-oauth
+403   290B   http://192.168.1.7/.php
+403   291B   http://192.168.1.7/.php3
+200     1KB  http://192.168.1.7/about.html
+200   921B   http://192.168.1.7/contact.html
+200   621B   http://192.168.1.7/login.html
+200     1KB  http://192.168.1.7/news.html
+200   406B   http://192.168.1.7/passwords.html
+200    93B   http://192.168.1.7/robots.txt
+403   299B   http://192.168.1.7/server-status
+403   300B   http://192.168.1.7/server-status/
