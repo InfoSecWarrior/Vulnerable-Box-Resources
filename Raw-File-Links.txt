@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/It's%20October/its-october-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/pwnlab_init/pwnlab-scan-results-nmap-version-scan-output.xml
