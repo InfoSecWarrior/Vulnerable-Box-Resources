@@ -1,1 +1,4 @@
 https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/It's%20October/its-october-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/zico2/zico2-nmap-version-scan.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/bob-1-0-1/bob-1-0-1-nmap-version-scan.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/joomlu/joomlu-nmap-version-scan.xml
