@@ -1,0 +1,4 @@
+# Dirsearch started Wed Sep 25 22:26:37 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.209:8000 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o chronos_report-dirsearch-8000-wordlist-output.txt -q
+
+500     1KB  http://192.168.1.209:8000/date
+500     1KB  http://192.168.1.209:8000/Date
