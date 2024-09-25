@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 11:57:53 2024 as: nmap -v -Pn -p- -oA Toppo1-all-ports-scan-output 192.168.1.12
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.12 ()	Status: Up
+Host: 192.168.1.12 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 34397/open/tcp/////	Ignored State: closed (65531)
+# Nmap done at Wed Sep 25 11:57:56 2024 -- 1 IP address (1 host up) scanned in 3.66 seconds

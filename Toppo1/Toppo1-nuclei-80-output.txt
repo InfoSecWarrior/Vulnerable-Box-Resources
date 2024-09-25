@@ -1,0 +1,25 @@
+[options-method] [http] [info] http://192.168.1.12:80 ["POST,OPTIONS,GET,HEAD"]
+[apache-detect] [http] [info] http://192.168.1.12:80 ["Apache/2.4.10 (Debian)"]
+[tech-detect:font-awesome] [http] [info] http://192.168.1.12:80
+[tech-detect:bootstrap] [http] [info] http://192.168.1.12:80
+[tech-detect:google-font-api] [http] [info] http://192.168.1.12:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.12:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.12:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.12:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.12:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.12:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.12:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.12:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.12:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.12:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.12:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.12:80
+[package-json] [http] [info] http://192.168.1.12:80/package.json
+[package-json] [http] [info] http://192.168.1.12:80/package-lock.json
+[build-properties] [http] [info] http://192.168.1.12:80/manual/style/build.properties
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.12:80
+[ssh-server-enumeration] [javascript] [info] 192.168.1.12:22 ["SSH-2.0-OpenSSH_6.7p1 Debian-5+deb8u4"]
+[ssh-auth-methods] [javascript] [info] 192.168.1.12:22 ["["publickey","password"]"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.12:22
+[ssh-password-auth] [javascript] [info] 192.168.1.12:22
+[CVE-2023-48795] [javascript] [medium] 192.168.1.12:22 ["Vulnerable to Terrapin"]
