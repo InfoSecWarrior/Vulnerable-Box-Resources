@@ -1,0 +1,40 @@
+# Nmap 7.94SVN scan initiated Tue Sep 24 22:01:39 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA joomlu-nmap-version-scan 192.168.1.206
+Nmap scan report for 192.168.1.206
+Host is up (0.00043s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 cd:dc:8f:24:51:73:54:bc:87:62:a2:e6:ed:f1:c1:b4 (RSA)
+|   256 a9:39:a9:bf:b2:f7:01:22:65:07:be:15:48:e8:ef:11 (ECDSA)
+|_  256 77:f5:a9:ff:a6:44:7c:9c:34:41:f1:ec:73:5e:57:bd (ED25519)
+80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+|_http-generator: Joomla! - Open Source Content Management
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Home
+| http-robots.txt: 15 disallowed entries 
+| /joomla/administrator/ /administrator/ /bin/ /cache/ 
+| /cli/ /components/ /includes/ /installation/ /language/ 
+|_/layouts/ /libraries/ /logs/ /modules/ /plugins/ /tmp/
+|_http-favicon: Unknown favicon MD5: 1194D7D32448E1F90741A97B42AF91FA
+|_http-server-header: Apache/2.4.38 (Debian)
+MAC Address: 08:00:27:C9:0F:30 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Uptime guess: 36.944 days (since Sun Aug 18 23:22:06 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.43 ms 192.168.1.206
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Sep 24 22:01:53 2024 -- 1 IP address (1 host up) scanned in 14.30 seconds

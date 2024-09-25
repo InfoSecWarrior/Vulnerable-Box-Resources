@@ -1,0 +1,27 @@
+[apache-detect] [http] [info] http://192.168.1.206:80 ["Apache/2.4.38 (Debian)"]
+[cookies-without-secure] [http] [info] http://192.168.1.206:80
+[fingerprinthub-web-fingerprints:joomla] [http] [info] http://192.168.1.206:80
+[metatag-cms] [http] [info] http://192.168.1.206:80 ["Joomla! - Open Source Content Management"]
+[joomla-panel] [http] [info] http://192.168.1.206:80/administrator/
+[phpmyadmin-panel] [http] [info] http://192.168.1.206:80/phpmyadmin/ ["5.0.2"] [paths="/phpmyadmin/"]
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.206:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.206:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.206:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.206:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.206:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.206:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.206:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.206:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.206:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.206:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.206:80
+[joomla-htaccess-file] [http] [info] http://192.168.1.206:80/htaccess.txt
+[robots-txt-endpoint] [http] [info] http://192.168.1.206:80/robots.txt
+[robots-txt] [http] [info] http://192.168.1.206:80/robots.txt
+[joomla-manifest-file] [http] [medium] http://192.168.1.206:80/administrator/manifests/files/joomla.xml
+[phpmyadmin-setup] [http] [medium] http://192.168.1.206:80/phpmyadmin/setup/index.php [paths="/phpmyadmin/setup/index.php"]
+[joomla-detect:version] [http] [info] http://192.168.1.206:80/administrator/manifests/files/joomla.xml ["3.8.3"]
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.206:80
+[host-header-injection] [http] [info] http://192.168.1.206:80
+[ssh-auth-methods] [javascript] [info] 192.168.1.206:22 ["["publickey"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.206:22 ["Vulnerable to Terrapin"]

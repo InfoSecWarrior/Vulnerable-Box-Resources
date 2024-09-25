@@ -1,0 +1,19 @@
+# Dirsearch started Tue Sep 24 22:07:44 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.206:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o joomlu-dirsearch-80-wordlist.txt -q
+
+301   315B   http://192.168.1.206/images    -> REDIRECTS TO: http://192.168.1.206/images/
+301   318B   http://192.168.1.206/templates    -> REDIRECTS TO: http://192.168.1.206/templates/
+301   314B   http://192.168.1.206/media    -> REDIRECTS TO: http://192.168.1.206/media/
+301   316B   http://192.168.1.206/modules    -> REDIRECTS TO: http://192.168.1.206/modules/
+301   312B   http://192.168.1.206/bin    -> REDIRECTS TO: http://192.168.1.206/bin/
+301   316B   http://192.168.1.206/plugins    -> REDIRECTS TO: http://192.168.1.206/plugins/
+301   317B   http://192.168.1.206/includes    -> REDIRECTS TO: http://192.168.1.206/includes/
+301   317B   http://192.168.1.206/language    -> REDIRECTS TO: http://192.168.1.206/language/
+301   319B   http://192.168.1.206/components    -> REDIRECTS TO: http://192.168.1.206/components/
+301   314B   http://192.168.1.206/cache    -> REDIRECTS TO: http://192.168.1.206/cache/
+301   318B   http://192.168.1.206/libraries    -> REDIRECTS TO: http://192.168.1.206/libraries/
+301   312B   http://192.168.1.206/tmp    -> REDIRECTS TO: http://192.168.1.206/tmp/
+301   316B   http://192.168.1.206/layouts    -> REDIRECTS TO: http://192.168.1.206/layouts/
+301   322B   http://192.168.1.206/administrator    -> REDIRECTS TO: http://192.168.1.206/administrator/
+301   319B   http://192.168.1.206/phpmyadmin    -> REDIRECTS TO: http://192.168.1.206/phpmyadmin/
+301   312B   http://192.168.1.206/cli    -> REDIRECTS TO: http://192.168.1.206/cli/
+403   278B   http://192.168.1.206/server-status

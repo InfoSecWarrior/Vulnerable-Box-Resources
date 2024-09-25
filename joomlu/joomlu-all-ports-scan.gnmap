@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Tue Sep 24 22:01:37 2024 as: nmap -v -Pn -p- -oA joomlu-all-ports-scan 192.168.1.206
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.206 ()	Status: Up
+Host: 192.168.1.206 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///	Ignored State: closed (65533)
+# Nmap done at Tue Sep 24 22:01:39 2024 -- 1 IP address (1 host up) scanned in 1.94 seconds
