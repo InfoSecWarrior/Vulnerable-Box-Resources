@@ -25,7 +25,7 @@ To contribute your scan data to this repository, please follow the steps below:
 2. **Install and Execute the Script**: After downloading and setting up the script, run it using the following command, replacing `<target_ip>` with your target machine's IP address and `<output_directory_prefix>` with your desired filename prefix:
 
     ```bash
-    # python box-scanning.py -t <target_ip> -o <output_directory_prefix>
+    # python box-scan.py -t <target_ip> -o <output_directory_prefix>
     ```
 
 3. **Complete the Scanning**: Once the script finishes scanning, follow these steps to submit your results:
