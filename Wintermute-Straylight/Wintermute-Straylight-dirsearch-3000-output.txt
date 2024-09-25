@@ -1,0 +1,7 @@
+# Dirsearch started Wed Sep 25 12:26:21 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.13:3000 -o Wintermute-Straylight-dirsearch-3000-output.txt -q
+
+404    35B   http://192.168.1.13:3000/.css
+404    35B   http://192.168.1.13:3000/adm/style/admin.css
+404    35B   http://192.168.1.13:3000/bundles/kibana.style.css
+404    35B   http://192.168.1.13:3000/resources/.arch-internal-preview.css
+404    35B   http://192.168.1.13:3000/skin1_admin.css

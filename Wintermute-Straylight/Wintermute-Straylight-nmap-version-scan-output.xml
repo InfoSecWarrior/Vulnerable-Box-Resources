@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Sep 25 12:25:22 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 25,80,3000 -oA Wintermute-Straylight-nmap-version-scan-output 192.168.1.13 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 25,80,3000 -oA Wintermute-Straylight-nmap-version-scan-output 192.168.1.13" start="1727281522" startstr="Wed Sep 25 12:25:22 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="25,80,3000"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727281525"/>
+<taskend task="NSE" time="1727281525"/>
+<taskbegin task="NSE" time="1727281525"/>
+<taskend task="NSE" time="1727281525"/>
+<taskbegin task="NSE" time="1727281525"/>
+<taskend task="NSE" time="1727281525"/>
+<taskbegin task="ARP Ping Scan" time="1727281525"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.13" addrtype="ipv4"/>
+<address addr="08:00:27:ED:05:1A" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727281525" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727281525"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727281525"/>
+<taskbegin task="Connect Scan" time="1727281525"/>
+<taskend task="Connect Scan" time="1727281525" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1727281526"/>
+<taskend task="Service scan" time="1727281532" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1727281533"/>
+<taskend task="NSE" time="1727281534"/>
+<taskbegin task="NSE" time="1727281534"/>
+<taskend task="NSE" time="1727281534"/>
+<taskbegin task="NSE" time="1727281534"/>
+<taskend task="NSE" time="1727281534"/>
+<host starttime="1727281525" endtime="1727281534"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.13" addrtype="ipv4"/>
+<address addr="08:00:27:ED:05:1A" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" straylight" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="straylight, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8"/><script id="ssl-cert" output="Subject: commonName=straylight&#xa;Subject Alternative Name: DNS:straylight&#xa;Issuer: commonName=straylight&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2018-05-12T18:08:02&#xa;Not valid after:  2028-05-09T18:08:02&#xa;MD5:   dd86:99b4:ce4d:71c4:d4b3:aa3f:1642:77fd&#xa;SHA-1: 6362:9a8f:6e55:8bee:b71d:eba2:79f9:103f:8f2f:2b8f"><table key="subject">
+<elem key="commonName">straylight</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">straylight</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">A52AEB32392F099F9C629E06B6A3AB4993F50E23029168E13BEE0B1E24546DA16781B4F222B45F01FE2CCF1FB739DBF4FF5835625D40B2142A3C65EE94975916D1FE5FE900430AA381E52EAE27C589F0212C4AE88C3F651142D268F0ABE541593365267A432B62AA63FA9E0DD4FA28AC268D4BE1A6B19C34D9973EDBBF51EADD37B51DBF776CB5B902CE2F71B2C79790299AD6C757B83082146F5AD6272A49C689D3DBC66971BF72ACABDA085A1B38EEA07246AE2E231AE4C8BD78F5D2DEF802CD505FD90B5428E203AC33828F42C154C31D2BCC9CFDE523182A6737D9BA40CAB8FC69CC308EF722DD2CD38CA18D8BFDEA4F38B72BEB3EA3CE2F304E6F269775</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:straylight</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2018-05-12T18:08:02</elem>
+<elem key="notAfter">2028-05-09T18:08:02</elem>
+</table>
+<elem key="md5">dd8699b4ce4d71c4d4b3aa3f164277fd</elem>
+<elem key="sha1">63629a8f6e558beeb71deba279f9103f8f2f2b8f</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC0TCCAbmgAwIBAgIJAJKPyECCoYHZMA0GCSqGSIb3DQEBCwUAMBUxEzARBgNV&#xa;BAMMCnN0cmF5bGlnaHQwHhcNMTgwNTEyMTgwODAyWhcNMjgwNTA5MTgwODAyWjAV&#xa;MRMwEQYDVQQDDApzdHJheWxpZ2h0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB&#xa;CgKCAQEApSrrMjkvCZ+cYp4GtqOrSZP1DiMCkWjhO+4LHiRUbaFngbTyIrRfAf4s&#xa;zx+3Odv0/1g1Yl1AshQqPGXulJdZFtH+X+kAQwqjgeUurifFifAhLErojD9lEULS&#xa;aPCr5UFZM2UmekMrYqpj+p4N1PoorCaNS+GmsZw02Zc+279R6t03tR2/d2y1uQLO&#xa;L3Gyx5eQKZrWx1e4MIIUb1rWJypJxonT28Zpcb9yrKvaCFobOO6gckauLiMa5Mi9&#xa;ePXS3vgCzVBf2QtUKOIDrDOCj0LBVMMdK8yc/eUjGCpnN9m6QMq4/GnMMI73It0s&#xa;04yhjYv96k84tyvrPqPOLzBObyaXdQIDAQABoyQwIjAJBgNVHRMEAjAAMBUGA1Ud&#xa;EQQOMAyCCnN0cmF5bGlnaHQwDQYJKoZIhvcNAQELBQADggEBAJEICcsJoRm8jxSR&#xa;gsoSskINa/K/5//JwXaK1W31fRWr7owpNze9R2nafJLuXkLkeC2Iz9Jf0DFRHf5D&#xa;K+wQAx8cHDyOff4HEJfnbPomdlqfG9+p6fRbY1A4Vi6M9gEtZlpurzTlgpM6WNvU&#xa;FLGoUPGo5qdaiEX60VspyIcqC5hybDM3/aN3DGPiTCcV/MjYMsbAHYCKLZ97wzx1&#xa;Y8gXM41pxCSl4ILSYQoA5fKZhXgwdBCp1cv8bwoGRVJ5h4b+jjJA1pjHTS/7NtxV&#xa;aIVGYH34kLWoODA9i4D29csZ4Wn+NuaAcVF2oMFJH0UYkYCcy3Lw5qzO2Z9jJ+Cm&#xa;UG/Ye9E=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.25" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.25</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS HEAD GET POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-title" output="Night City"><elem key="title">Night City</elem>
+</script><script id="http-server-header" output="Apache/2.4.25 (Debian)"><elem>Apache/2.4.25 (Debian)</elem>
+</script></port>
+<port protocol="tcp" portid="3000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="hadoop-tasktracker" product="Apache Hadoop" method="probed" conf="10"><cpe>cpe:/a:cesanta:mongoose</cpe></service><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="hadoop-datanode-info" output="&#xa;  Logs: submit"><elem key="Logs">submit</elem>
+</script><script id="http-title" output="Welcome to ntopng&#xa;Requested resource was /lua/login.lua?referer=/"><elem key="title">Welcome to ntopng</elem>
+<elem key="redirect_url">/lua/login.lua?referer=/</elem>
+</script><script id="hadoop-tasktracker-info" output="&#xa;  Logs: submit"><elem key="Logs">submit</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: 7FC0953320A93F3BC71770C25A7F4716"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="25"/>
+<portused state="closed" proto="udp" portid="31001"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="17111278" lastboot="Mon Mar 11 11:17:36 2024"/>
+<distance value="1"/>
+<tcpsequence index="260" difficulty="Good luck!" values="CFEB0410,9125EBFC,A5A48406,82E1146C,2A4608F4,98A6A20F"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="FFFF7018,FFFF7032,FFFF704B,FFFF7064,FFFF707D,FFFF7098"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.13" rtt="0.41"/>
+</trace>
+<times srtt="414" rttvar="115" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727281534"/>
+<taskend task="NSE" time="1727281534"/>
+<taskbegin task="NSE" time="1727281534"/>
+<taskend task="NSE" time="1727281534"/>
+<taskbegin task="NSE" time="1727281534"/>
+<taskend task="NSE" time="1727281534"/>
+<runstats><finished time="1727281534" timestr="Wed Sep 25 12:25:34 2024" summary="Nmap done at Wed Sep 25 12:25:34 2024; 1 IP address (1 host up) scanned in 12.21 seconds" elapsed="12.21" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
