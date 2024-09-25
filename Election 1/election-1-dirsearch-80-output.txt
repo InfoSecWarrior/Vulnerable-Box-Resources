@@ -1,0 +1,28 @@
+# Dirsearch started Wed Sep 25 16:48:03 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.13:80 -o election-1-dirsearch-80-output.txt -q
+
+403   278B   http://192.168.29.13/.ht_wsr.txt
+403   278B   http://192.168.29.13/.htaccess.orig
+403   278B   http://192.168.29.13/.htaccess.bak1
+403   278B   http://192.168.29.13/.htaccess.sample
+403   278B   http://192.168.29.13/.htaccess_extra
+403   278B   http://192.168.29.13/.htaccess.save
+403   278B   http://192.168.29.13/.htaccess_orig
+403   278B   http://192.168.29.13/.htaccess_sc
+403   278B   http://192.168.29.13/.htaccessOLD
+403   278B   http://192.168.29.13/.htaccessOLD2
+403   278B   http://192.168.29.13/.htaccessBAK
+403   278B   http://192.168.29.13/.html
+403   278B   http://192.168.29.13/.htm
+403   278B   http://192.168.29.13/.htpasswd_test
+403   278B   http://192.168.29.13/.httr-oauth
+403   278B   http://192.168.29.13/.php
+403   278B   http://192.168.29.13/.htpasswds
+301   319B   http://192.168.29.13/javascript    -> REDIRECTS TO: http://192.168.29.13/javascript/
+200    24KB  http://192.168.29.13/phpinfo.php
+301   319B   http://192.168.29.13/phpmyadmin    -> REDIRECTS TO: http://192.168.29.13/phpmyadmin/
+200     3KB  http://192.168.29.13/phpmyadmin/doc/html/index.html
+200     3KB  http://192.168.29.13/phpmyadmin/
+200     3KB  http://192.168.29.13/phpmyadmin/index.php
+200    30B   http://192.168.29.13/robots.txt
+403   278B   http://192.168.29.13/server-status
+403   278B   http://192.168.29.13/server-status/
