@@ -1,5 +1,0 @@
-# Nmap 7.94SVN scan initiated Sun Sep 22 16:17:22 2024 as: nmap -v -p- -oA its-october-all-ports-scan 192.168.1.205
-# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 192.168.1.205 (october.lan)	Status: Up
-Host: 192.168.1.205 (october.lan)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 3306/open/tcp//mysql///, 8080/open/tcp//http-proxy///	Ignored State: closed (65531)
-# Nmap done at Sun Sep 22 16:17:26 2024 -- 1 IP address (1 host up) scanned in 3.85 seconds

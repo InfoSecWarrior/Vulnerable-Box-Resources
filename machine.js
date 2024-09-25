@@ -2,12 +2,20 @@
 async function fetchFileContent(url, elementId) {
     try {
         const response = await fetch(url);
-        if (!response.ok) throw new Error(`File not found: ${url}`);
+        if (!response.ok) throw new Error(`File not found or inaccessible: ${url}`);
         const data = await response.text();
-        document.getElementById(elementId).textContent = data || 'No data available';
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.textContent = data || 'No data available';
+        } else {
+            console.warn(`Element with ID '${elementId}' not found in the document.`);
+        }
         return data;
     } catch (error) {
-        document.getElementById(elementId).textContent = `Error loading data from ${url}`;
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.textContent = `Error loading data from ${url}: ${error.message}`;
+        }
         console.error(`Error loading data from ${url}:`, error);
         return null;
     }
@@ -19,23 +27,31 @@ async function fetchMultipleFiles(fileUrls, elementId) {
     for (const url of fileUrls) {
         try {
             const response = await fetch(url);
-            if (response.ok) {
-                const data = await response.text();
-                combinedData += data + '\n';
-            }
+            if (!response.ok) throw new Error(`File not found: ${url}`);
+            const data = await response.text();
+            combinedData += data + '\n';
         } catch (error) {
             console.error(`Error loading data from ${url}:`, error);
         }
     }
-    document.getElementById(elementId).textContent = combinedData || 'No data available';
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.textContent = combinedData || 'No data available';
+    } else {
+        console.warn(`Element with ID '${elementId}' not found in the document.`);
+    }
     return combinedData;
 }
 
 // Function to generate URLs based on dynamic number ranges and ports
 function generateFileUrls(baseURL, dirName, baseFileName, type, ports) {
     const urls = [];
+    if (!Array.isArray(ports) || ports.length === 0) {
+        console.warn('No ports available for URL generation.');
+        return urls;
+    }
     for (const port of ports) {
-        let url = `${baseURL}${encodeURIComponent(dirName)}/${baseFileName}-${type.replace('{port}', port)}.txt`;
+        let url = `${baseURL}${encodeURIComponent(dirName)}/${baseFileName}-${type.replace('{port}', port)}`;
         urls.push(url);
     }
     return urls;
@@ -43,11 +59,18 @@ function generateFileUrls(baseURL, dirName, baseFileName, type, ports) {
 
 // Function to fetch open ports from a remote file
 async function fetchOpenPorts(baseURL, dirName, baseFileName) {
-    const openPortsUrl = `${baseURL}${encodeURIComponent(dirName)}/${baseFileName}-open-ports-list.txt`;
-    const data = await fetchFileContent(openPortsUrl, 'open-ports-list');
+    const openPortsUrl = `${baseURL}${encodeURIComponent(dirName)}/${baseFileName}-open-ports-list-output.txt`;
+    const data = await fetchFileContent(openPortsUrl, 'open-ports-list-output');
     if (data) {
-        // Parse the port data
-        return data.split(',').map(port => port.trim()).filter(port => port); // Remove empty strings
+        try {
+            const ports = data.split(',').map(port => port.trim()).filter(port => port);
+            if (!ports.length) {
+                console.warn('No valid ports found in the data.');
+            }
+            return ports;
+        } catch (error) {
+            console.error('Error parsing ports data:', error);
+        }
     }
     return []; // Return an empty array if there's an error
 }
@@ -63,30 +86,39 @@ async function fetchMachineData() {
         return;
     }
 
-    const baseFileName = fileName.replace(/-nmap-version-scan/, '').replace(/\.[^/.]+$/, '');
+    const baseFileName = fileName.replace(/-nmap-version-scan-output/, '').replace(/\.[^.]+$/, '');
+
     const machineTitleElement = document.getElementById('machine-title');
-    machineTitleElement.textContent = decodeURIComponent(dirName) || 'Unknown Machine';
+    if (machineTitleElement) {
+        machineTitleElement.textContent = decodeURIComponent(dirName) || 'Unknown Machine';
+    } else {
+        console.warn("Element with ID 'machine-title' not found in the document.");
+    }
 
-    const githubBaseURL = 'https://github.com/InfoSecWarrior/Vulnerable-Box-Resources/tree/main/';
+    const githubBaseURL = 'https://github.com/infoSecWarrior/Vulnerable-Box-Resources/tree/main/';
     const githubLink = document.getElementById('github-url');
-    githubLink.href = `${githubBaseURL}${encodeURIComponent(dirName)}`;
-    githubLink.textContent = `View ${decodeURIComponent(dirName)} on GitHub`;
+    if (githubLink) {
+        githubLink.href = `${githubBaseURL}${encodeURIComponent(dirName)}`;
+        githubLink.textContent = `View ${decodeURIComponent(dirName)} on GitHub`;
+    } else {
+        console.warn("Element with ID 'github-url' not found in the document.");
+    }
 
-    const baseURL = 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/main/';
+    const baseURL = 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/';
     
     // Fetch open ports
     const ports = await fetchOpenPorts(baseURL, dirName, baseFileName);
 
     const files = {
         nmap: `${baseURL}${encodeURIComponent(dirName)}/${fileName}`,
-        webUrls: `${baseURL}${encodeURIComponent(dirName)}/${baseFileName}-filtered-web-urls.txt`,
+        webUrls: `${baseURL}${encodeURIComponent(dirName)}/${baseFileName}-filtered-web-urls-output.txt`,
         httpx: `${baseURL}${encodeURIComponent(dirName)}/${baseFileName}-httpx-output.json`,
-        dirsearchDefault: await generateFileUrls(baseURL, dirName, baseFileName, 'dirsearch-{port}', ports),
-        dirsearchWordlist: await generateFileUrls(baseURL, dirName, baseFileName, 'dirsearch-{port}-wordlist', ports),
-        whatweb: await generateFileUrls(baseURL, dirName, baseFileName, 'whatweb-{port}', ports),
-        nikto: await generateFileUrls(baseURL, dirName, baseFileName, 'nikto-{port}-output', ports),
-        nuclei: await generateFileUrls(baseURL, dirName, baseFileName, 'nuclei-{port}-output', ports),
-        openPortsList: `${baseURL}${encodeURIComponent(dirName)}/${baseFileName}-open-ports-list.txt` // URL for open-ports-list
+        dirsearchDefault: generateFileUrls(baseURL, dirName, baseFileName, 'dirsearch-{port}-output.txt', ports),
+        dirsearchWordlist: generateFileUrls(baseURL, dirName, baseFileName, 'dirsearch-{port}-wordlist-output.txt', ports),
+        whatweb: generateFileUrls(baseURL, dirName, baseFileName, 'whatweb-{port}-output.txt', ports),
+        nikto: generateFileUrls(baseURL, dirName, baseFileName, 'nikto-{port}-output.txt', ports),
+        nuclei: generateFileUrls(baseURL, dirName, baseFileName, 'nuclei-{port}-output.txt', ports),
+        openPortsList: `${baseURL}${encodeURIComponent(dirName)}/${baseFileName}-open-ports-list-output.txt`
     };
 
     await Promise.all([
@@ -98,7 +130,7 @@ async function fetchMachineData() {
         fetchMultipleFiles(files.whatweb, 'whatweb-output'),
         fetchMultipleFiles(files.nikto, 'nikto-output'),
         fetchMultipleFiles(files.nuclei, 'nuclei-output'),
-        fetchFileContent(files.openPortsList, 'open-ports-list') // Fetching open-ports-list
+        fetchFileContent(files.openPortsList, 'open-ports-list')
     ]);
 }
 

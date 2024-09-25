@@ -1,3 +1,0 @@
-# Dirsearch started Sun Sep 22 16:27:13 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.205:8080 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o its-october-dirsearch-8080-wordlist.txt -q
-
-403   280B   http://192.168.1.205:8080/server-status
