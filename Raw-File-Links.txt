@@ -1,1 +1,5 @@
 https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/It's%20October/its-october-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/infosecWarrior/Vulnerable-Box-Resources/refs/heads/main/MYCMSMS/My-CMSMS-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/infosecWarrior/Vulnerable-Box-Resources/refs/heads/main/Toppo1/Toppo1-nmap-version-scan-output.xml
+https://raw.github.com/infosecWarrior/Vulnerable-Box-Resources/blob/main/Wintermute-Neuromancer/Wintermute-Neuromancer-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/infosecWarrior/Vulnerable-Box-Resources/refs/heads/main/Wintermute-Straylight/Wintermute-Straylight-nmap-version-scan-output.xml
