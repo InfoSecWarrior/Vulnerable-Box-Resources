@@ -1,0 +1,20 @@
+[options-method] [http] [info] http://192.168.1.7:80 ["GET,HEAD,POST,OPTIONS"]
+[apache-detect] [http] [info] http://192.168.1.7:80 ["Apache/2.4.7 (Ubuntu)"]
+[tech-detect:particles.js] [http] [info] http://192.168.1.7:80
+[phpmyadmin-panel] [http] [info] http://192.168.1.7:80/php/phpmyadmin/ [paths="/php/phpmyadmin/"]
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.7:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.7:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.7:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.7:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.7:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.7:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.7:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.7:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.7:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.7:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.7:80
+[robots-txt-endpoint] [http] [info] http://192.168.1.7:80/robots.txt
+[missing-sri] [http] [info] http://192.168.1.7:80 ["http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"]
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.7:80
+[ssh-auth-methods] [javascript] [info] 192.168.1.7:22 ["["publickey"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.7:22 ["Vulnerable to Terrapin"]

@@ -1,0 +1,9 @@
+# Dirsearch started Thu Sep 26 19:51:56 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.7:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o DerpNStink:1-dirsearch-80-wordlist-output.txt -q
+
+301   310B   http://192.168.1.7/weblog    -> REDIRECTS TO: http://192.168.1.7/weblog/
+301   307B   http://192.168.1.7/php    -> REDIRECTS TO: http://192.168.1.7/php/
+301   307B   http://192.168.1.7/css    -> REDIRECTS TO: http://192.168.1.7/css/
+301   306B   http://192.168.1.7/js    -> REDIRECTS TO: http://192.168.1.7/js/
+301   314B   http://192.168.1.7/javascript    -> REDIRECTS TO: http://192.168.1.7/javascript/
+301   313B   http://192.168.1.7/temporary    -> REDIRECTS TO: http://192.168.1.7/temporary/
+403   291B   http://192.168.1.7/server-status
