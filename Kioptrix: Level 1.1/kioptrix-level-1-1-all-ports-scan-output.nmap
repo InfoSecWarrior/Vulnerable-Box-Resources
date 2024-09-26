@@ -1,0 +1,16 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 14:52:07 2024 as: nmap -v -Pn -p- -oA kioptrix-level-1-1-all-ports-scan-output 192.168.56.110
+Nmap scan report for 192.168.56.110
+Host is up (0.00049s latency).
+Not shown: 65528 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+111/tcp  open  rpcbind
+443/tcp  open  https
+631/tcp  open  ipp
+807/tcp  open  unknown
+3306/tcp open  mysql
+MAC Address: 08:00:27:3E:22:8B (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Sep 26 14:52:17 2024 -- 1 IP address (1 host up) scanned in 9.69 seconds

@@ -1,0 +1,14 @@
+[options-method] [http] [info] http://192.168.56.110:631 [GET, HEAD, OPTIONS, POST, PUT]
+[switch-protocol] [http] [info] http://192.168.56.110:631 [TLS/1.0,HTTP/1.1]
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.56.110:631
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.56.110:631
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.56.110:631
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.56.110:631
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.56.110:631
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.56.110:631
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.56.110:631
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.56.110:631
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.56.110:631
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.56.110:631
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.56.110:631
+[waf-detect:apachegeneric] [http] [info] http://192.168.56.110:631/

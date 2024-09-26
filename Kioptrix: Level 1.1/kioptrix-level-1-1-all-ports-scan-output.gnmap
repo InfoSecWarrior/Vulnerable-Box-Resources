@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 14:52:07 2024 as: nmap -v -Pn -p- -oA kioptrix-level-1-1-all-ports-scan-output 192.168.56.110
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.56.110 ()	Status: Up
+Host: 192.168.56.110 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 443/open/tcp//https///, 631/open/tcp//ipp///, 807/open/tcp/////, 3306/open/tcp//mysql///	Ignored State: closed (65528)
+# Nmap done at Thu Sep 26 14:52:17 2024 -- 1 IP address (1 host up) scanned in 9.69 seconds
