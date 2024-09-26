@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 15:45:40 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 53,80,9999 -oA Hacker-kid-nmap-version-scan-output 192.168.1.119
+# Ports scanned: TCP(3;53,80,9999) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.119 (192.168.1.119)	Status: Up
+Host: 192.168.1.119 (192.168.1.119)	Ports: 53/open/tcp//domain//ISC BIND 9.16.1 (Ubuntu Linux)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/, 9999/open/tcp//http//Tornado httpd 6.1/	OS: Linux 4.15 - 5.8	Seq Index: 258	IP ID Seq: All zeros
+# Nmap done at Thu Sep 26 15:45:56 2024 -- 1 IP address (1 host up) scanned in 16.13 seconds
