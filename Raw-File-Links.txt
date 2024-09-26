@@ -1,1 +1,7 @@
 https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/It's%20October/its-october-nmap-version-scan-output.xml
+
+https://raw.githubusercontent.com/infosecWarrior/Vulnerable-Box-Resources/refs/heads/main/Node-1/Node-1-nmap-version-scan-output.xml
+
+https://raw.githubusercontent.com/infosecWarrior/Vulnerable-Box-Resources/refs/heads/main/MytomcatHost/MyTomcatHost%3A1-nmap-version-scan-output.xml
+
+https://raw.githubusercontent.com/infosecWarrior/Vulnerable-Box-Resources/refs/heads/main/DerpNStink%3A%201/DerpNStink%3A1-nmap-version-scan-output.xml
