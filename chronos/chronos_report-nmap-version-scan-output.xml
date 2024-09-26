@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Sep 25 22:26:00 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8000 -oA chronos_report-nmap-version-scan-output 192.168.1.209 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8000 -oA chronos_report-nmap-version-scan-output 192.168.1.209" start="1727283360" startstr="Wed Sep 25 22:26:00 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,80,8000"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727283360"/>
+<taskend task="NSE" time="1727283360"/>
+<taskbegin task="NSE" time="1727283360"/>
+<taskend task="NSE" time="1727283360"/>
+<taskbegin task="NSE" time="1727283360"/>
+<taskend task="NSE" time="1727283360"/>
+<taskbegin task="ARP Ping Scan" time="1727283360"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.209" addrtype="ipv4"/>
+<address addr="10:F6:0A:89:1A:D4" addrtype="mac" vendor="Intel Corporate"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727283361" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727283361"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727283361"/>
+<taskbegin task="Connect Scan" time="1727283361"/>
+<taskend task="Connect Scan" time="1727283361" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1727283361"/>
+<taskend task="Service scan" time="1727283372" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1727283373"/>
+<taskend task="NSE" time="1727283375"/>
+<taskbegin task="NSE" time="1727283375"/>
+<taskend task="NSE" time="1727283375"/>
+<taskbegin task="NSE" time="1727283375"/>
+<taskend task="NSE" time="1727283375"/>
+<host starttime="1727283361" endtime="1727283375"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.209" addrtype="ipv4"/>
+<address addr="10:F6:0A:89:1A:D4" addrtype="mac" vendor="Intel Corporate"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 e4:f2:83:a4:38:89:8d:86:a5:e1:31:76:eb:9d:5f:ea (RSA)&#xa;  256 41:5a:21:c4:58:f2:2b:e4:8a:2f:31:73:ce:fd:37:ad (ECDSA)&#xa;  256 9b:34:28:c2:b9:33:4b:37:d5:01:30:6f:87:c4:6b:23 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDFF8YjHtqC35Tv6qgLJ0kNRdjbf30IJ3vKLgvfu9i0tKcx3+TpxYz91j2DXQazjyUpfbIV+fQJb5uyl1iaXHcuvLcQ/wx2WzqzYCmvwM0UzChbwlIUxBpCgfx8wRYNJSwGbgPRoHnXLFquLf47q5nugN87esyyMM0UIaMYo3rNspZtB8QsdzZD2m5RqqI45ab8ByrQZbp8PP7XxTUXWT1ulcAABUbWnRR6VJDL72IQy3G8gpDoU95p4feodti3EA97jwbuNq9G+XeLK2BX4Y5SLpqgYazTWw8scw71hPea4r2YvtJNv6aQJBjMTzDfUm1CQ7pc1qN1T+1vujcyzO7J</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">e4f283a438898d86a5e13176eb9d5fea</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBO/PvsX6OqdIiLIzv+JlEolWwqi2s/gnJGADk2W0miSvnZNH2CZ/MAz6qxC4tRLsQl1eI2i43+Wd3tw6pyNvmSg=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">415a21c458f22be48a2f3173cefd37ad</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIGOQB+a1NPS+fokbiT0hLgpNOYdGG/5+ZVsOoCCn0TyO</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">9b3428c2b9334b37d501306f87c46b23</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Node.js Express framework" method="probed" conf="10"><cpe>cpe:/a:nodejs:node.js</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-cors" output="HEAD GET POST PUT DELETE PATCH"/><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=UTF-8)."></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="34747"/>
+<osmatch name="Linux 4.15 - 5.8" accuracy="100" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="2742620" lastboot="Sun Aug 25 04:35:55 2024"/>
+<distance value="1"/>
+<tcpsequence index="258" difficulty="Good luck!" values="E02D7176,5C1F9B0C,1ED819A3,52DF9A32,BB4EBE,3899BA47"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="A379075C,A37907C0,A3790824,A3790888,A37908EC,A3790950"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.209" rtt="12.72"/>
+</trace>
+<times srtt="12723" rttvar="21080" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727283375"/>
+<taskend task="NSE" time="1727283375"/>
+<taskbegin task="NSE" time="1727283375"/>
+<taskend task="NSE" time="1727283375"/>
+<taskbegin task="NSE" time="1727283375"/>
+<taskend task="NSE" time="1727283375"/>
+<runstats><finished time="1727283375" timestr="Wed Sep 25 22:26:15 2024" summary="Nmap done at Wed Sep 25 22:26:15 2024; 1 IP address (1 host up) scanned in 14.72 seconds" elapsed="14.72" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
