@@ -11,12 +11,22 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1 id="machine-title">Machine Details</h1>
-            <!-- GitHub link placeholder -->
-            <p id="github-link">GitHub Link: <a id="github-url" href="#" target="_blank">View on GitHub</a></p>
+            <a href="https://infosecwarrior.com/" target="_blank">
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </a>
+            <h1>Vulnerable Box Resources</h1>
+            <a href="https://armourinfosec.com/" target="_blank">
+                <img src="https://www.armourinfosec.com/wp-content/uploads/thegem-logos/logo_3b70cf15afddeb08af9f741446904b90_1x.png" alt="Logo" class="logo armour-logo">
+            </a>            
         </header>
+        
+        <p id="machine-title">Machine Details</p>
+        <p id="github-link"><a id="github-url" href="#" target="_blank">View on GitHub</a></p>
 
         <section class="machine-content">
+            <h2>Open Ports</h2>
+            <pre id="open-ports-list">Loading Open Ports...</pre>
+            
             <h2>Nmap</h2>
             <pre id="nmap-data">Loading Nmap data...</pre>
             
@@ -41,8 +51,6 @@
             <h2>Nuclei</h2>
             <pre id="nuclei-output">Loading Nuclei data...</pre>
 
-            <h2>Open Ports</h2>
-            <pre id="open-ports-list">Loading Open Ports...</pre>
         </section>
     </div>
     <script src="machine.js"></script>
