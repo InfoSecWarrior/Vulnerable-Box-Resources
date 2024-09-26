@@ -1,0 +1,2 @@
+[smb2-server-time] [javascript] [info] 192.168.1.111:139 ["SystemTime: 2024-09-26T06:30:38.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-os-detect] [javascript] [info] 192.168.1.111:139 ["6.1.0"]
