@@ -1,0 +1,59 @@
+# Dirsearch started Wed Sep 25 17:50:06 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.121:8000 -o pinkys-palace-v3-dirsearch-8000-output.txt -q
+
+200   317B   http://192.168.29.121:8000/.editorconfig
+200   174B   http://192.168.29.121:8000/.gitignore
+403   571B   http://192.168.29.121:8000/.ht_wsr.txt
+403   571B   http://192.168.29.121:8000/.htaccess.bak1
+403   571B   http://192.168.29.121:8000/.htaccess.orig
+403   571B   http://192.168.29.121:8000/.htaccess_extra
+403   571B   http://192.168.29.121:8000/.htaccess_orig
+403   571B   http://192.168.29.121:8000/.htaccessBAK
+403   571B   http://192.168.29.121:8000/.htm
+403   571B   http://192.168.29.121:8000/.html
+403   571B   http://192.168.29.121:8000/.htaccess.sample
+403   571B   http://192.168.29.121:8000/.htaccess.save
+403   571B   http://192.168.29.121:8000/.htpasswd_test
+403   571B   http://192.168.29.121:8000/.htaccess_sc
+403   571B   http://192.168.29.121:8000/.htaccessOLD
+403   571B   http://192.168.29.121:8000/.htpasswds
+403   571B   http://192.168.29.121:8000/.htaccessOLD2
+403   571B   http://192.168.29.121:8000/.httr-oauth
+403     3KB  http://192.168.29.121:8000/authorize.php
+200   109KB  http://192.168.29.121:8000/CHANGELOG.txt
+200     1KB  http://192.168.29.121:8000/COPYRIGHT.txt
+403     7KB  http://192.168.29.121:8000/cron.php
+403   571B   http://192.168.29.121:8000/includes/
+301   185B   http://192.168.29.121:8000/includes    -> REDIRECTS TO: http://192.168.29.121:8000/includes/
+200     2KB  http://192.168.29.121:8000/INSTALL.pgsql.txt
+200     2KB  http://192.168.29.121:8000/INSTALL.mysql.txt
+200   132KB  http://192.168.29.121:8000/includes/bootstrap.inc
+200     3KB  http://192.168.29.121:8000/install.php?profile=default
+200     3KB  http://192.168.29.121:8000/install.php
+200    18KB  http://192.168.29.121:8000/INSTALL.txt
+200    18KB  http://192.168.29.121:8000/LICENSE.txt
+200     9KB  http://192.168.29.121:8000/MAINTAINERS.txt
+301   185B   http://192.168.29.121:8000/misc    -> REDIRECTS TO: http://192.168.29.121:8000/misc/
+301   185B   http://192.168.29.121:8000/modules    -> REDIRECTS TO: http://192.168.29.121:8000/modules/
+403   571B   http://192.168.29.121:8000/modules/
+301   185B   http://192.168.29.121:8000/profiles    -> REDIRECTS TO: http://192.168.29.121:8000/profiles/
+200   271B   http://192.168.29.121:8000/profiles/minimal/minimal.info
+200   278B   http://192.168.29.121:8000/profiles/testing/testing.info
+200   743B   http://192.168.29.121:8000/profiles/standard/standard.info
+200     5KB  http://192.168.29.121:8000/README.txt
+301   185B   http://192.168.29.121:8000/rest    -> REDIRECTS TO: http://192.168.29.121:8000/rest/
+403   571B   http://192.168.29.121:8000/rest/
+200     2KB  http://192.168.29.121:8000/robots.txt
+301   185B   http://192.168.29.121:8000/scripts    -> REDIRECTS TO: http://192.168.29.121:8000/scripts/
+403   571B   http://192.168.29.121:8000/scripts/
+301   185B   http://192.168.29.121:8000/sites    -> REDIRECTS TO: http://192.168.29.121:8000/sites/
+200   151B   http://192.168.29.121:8000/sites/all/libraries/README.txt
+200  1020B   http://192.168.29.121:8000/sites/all/themes/README.txt
+200   904B   http://192.168.29.121:8000/sites/README.txt
+200     1KB  http://192.168.29.121:8000/sites/all/modules/README.txt
+200     0B   http://192.168.29.121:8000/sites/example.sites.php
+301   185B   http://192.168.29.121:8000/themes    -> REDIRECTS TO: http://192.168.29.121:8000/themes/
+403   571B   http://192.168.29.121:8000/themes/
+403     4KB  http://192.168.29.121:8000/update.php
+200    10KB  http://192.168.29.121:8000/UPGRADE.txt
+200     2KB  http://192.168.29.121:8000/web.config
+200    42B   http://192.168.29.121:8000/xmlrpc.php
