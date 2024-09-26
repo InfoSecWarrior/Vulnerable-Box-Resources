@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Wed Sep 25 17:26:35 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,111,3306,53472 -oA pwnlab-scan-results-nmap-version-scan-output 192.168.29.172 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 80,111,3306,53472 -oA pwnlab-scan-results-nmap-version-scan-output 192.168.29.172" start="1727265395" startstr="Wed Sep 25 17:26:35 2024" version="7.94" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="80,111,3306,53472"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727265396"/>
+<taskend task="NSE" time="1727265396"/>
+<taskbegin task="NSE" time="1727265396"/>
+<taskend task="NSE" time="1727265396"/>
+<taskbegin task="NSE" time="1727265396"/>
+<taskend task="NSE" time="1727265396"/>
+<taskbegin task="ARP Ping Scan" time="1727265396"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.29.172" addrtype="ipv4"/>
+<address addr="08:00:27:DE:44:DD" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727265396" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727265396"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727265396"/>
+<taskbegin task="Connect Scan" time="1727265396"/>
+<taskend task="Connect Scan" time="1727265396" extrainfo="4 total ports"/>
+<taskbegin task="Service scan" time="1727265396"/>
+<taskend task="Service scan" time="1727265407" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1727265408"/>
+<taskend task="NSE" time="1727265408"/>
+<taskbegin task="NSE" time="1727265408"/>
+<taskend task="NSE" time="1727265408"/>
+<taskbegin task="NSE" time="1727265408"/>
+<taskend task="NSE" time="1727265408"/>
+<host starttime="1727265396" endtime="1727265408"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.29.172" addrtype="ipv4"/>
+<address addr="08:00:27:DE:44:DD" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.10" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.10</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="PwnLab Intranet Image Hosting"><elem key="title">PwnLab Intranet Image Hosting</elem>
+</script><script id="http-server-header" output="Apache/2.4.10 (Debian)"><elem>Apache/2.4.10 (Debian)</elem>
+</script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2,3,4        111/tcp   rpcbind&#xa;  100000  2,3,4        111/udp   rpcbind&#xa;  100000  3,4          111/tcp6  rpcbind&#xa;  100000  3,4          111/udp6  rpcbind&#xa;  100024  1          48521/udp6  status&#xa;  100024  1          48923/udp   status&#xa;  100024  1          53472/tcp   status&#xa;  100024  1          54990/tcp6  status&#xa;"><table key="100024">
+<table key="udp">
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">48923</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="owner">106</elem>
+</table>
+<table key="tcp6">
+<elem key="addr">::</elem>
+<elem key="port">54990</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="owner">106</elem>
+</table>
+<table key="tcp">
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">53472</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="owner">106</elem>
+</table>
+<table key="udp6">
+<elem key="addr">::</elem>
+<elem key="port">48521</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="owner">106</elem>
+</table>
+</table>
+<table key="100000">
+<table key="tcp">
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">111</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+</table>
+<table key="local">
+<elem key="addr">/run/rpcbind.sock</elem>
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+</table>
+<table key="tcp6">
+<elem key="addr">::</elem>
+<elem key="port">111</elem>
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp6">
+<elem key="addr">::</elem>
+<elem key="port">111</elem>
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp">
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">111</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" version="5.5.47-0+deb8u1" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:5.5.47-0%2Bdeb8u1</cpe></service><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 5.5.47-0+deb8u1&#xa;  Thread ID: 40&#xa;  Capabilities flags: 63487&#xa;  Some Capabilities: LongColumnFlag, Support41Auth, Speaks41ProtocolOld, SupportsTransactions, InteractiveClient, Speaks41ProtocolNew, IgnoreSigpipes, IgnoreSpaceBeforeParenthesis, SupportsLoadDataLocal, LongPassword, DontAllowDatabaseTableColumn, ODBCClient, ConnectWithDatabase, FoundRows, SupportsCompression, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins&#xa;  Status: Autocommit&#xa;  Salt: k|LFZrPv&quot;Es6Ng&gt;;P`r&gt;&#xa;  Auth Plugin Name: mysql_native_password"><elem key="Protocol">10</elem>
+<elem key="Version">5.5.47-0+deb8u1</elem>
+<elem key="Thread ID">40</elem>
+<elem key="Capabilities flags">63487</elem>
+<table key="Some Capabilities">
+<elem>LongColumnFlag</elem>
+<elem>Support41Auth</elem>
+<elem>Speaks41ProtocolOld</elem>
+<elem>SupportsTransactions</elem>
+<elem>InteractiveClient</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>IgnoreSigpipes</elem>
+<elem>IgnoreSpaceBeforeParenthesis</elem>
+<elem>SupportsLoadDataLocal</elem>
+<elem>LongPassword</elem>
+<elem>DontAllowDatabaseTableColumn</elem>
+<elem>ODBCClient</elem>
+<elem>ConnectWithDatabase</elem>
+<elem>FoundRows</elem>
+<elem>SupportsCompression</elem>
+<elem>SupportsMultipleResults</elem>
+<elem>SupportsMultipleStatments</elem>
+<elem>SupportsAuthPlugins</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">k|LFZrPv&quot;Es6Ng&gt;;P`r&gt;</elem>
+<elem key="Auth Plugin Name">mysql_native_password</elem>
+</script></port>
+<port protocol="tcp" portid="53472"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="udp" portid="34522"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="238" lastboot="Wed Sep 25 17:22:50 2024"/>
+<distance value="1"/>
+<tcpsequence index="262" difficulty="Good luck!" values="7C724DFA,6528F6DD,9F1FCEC9,4015AC06,C619E6FB,DEF1FC12"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="E84C,E865,E87E,E897,E8B0,E8C9"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.29.172" rtt="0.30"/>
+</trace>
+<times srtt="297" rttvar="77" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727265408"/>
+<taskend task="NSE" time="1727265408"/>
+<taskbegin task="NSE" time="1727265408"/>
+<taskend task="NSE" time="1727265408"/>
+<taskbegin task="NSE" time="1727265408"/>
+<taskend task="NSE" time="1727265408"/>
+<runstats><finished time="1727265408" timestr="Wed Sep 25 17:26:48 2024" summary="Nmap done at Wed Sep 25 17:26:48 2024; 1 IP address (1 host up) scanned in 12.97 seconds" elapsed="12.97" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
