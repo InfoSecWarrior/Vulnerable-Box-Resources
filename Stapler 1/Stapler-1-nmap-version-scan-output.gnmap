@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 10:52:28 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,53,80,139,666,3306,12380 -oA Stapler-1-nmap-version-scan-output 192.168.1.106
+# Ports scanned: TCP(8;21-22,53,80,139,666,3306,12380) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.106 (192.168.1.106)	Status: Up
+Host: 192.168.1.106 (192.168.1.106)	Ports: 21/open/tcp//ftp//vsftpd 2.0.8 or later/, 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 53/open/tcp//domain//dnsmasq 2.75/, 80/open/tcp//http//PHP cli server 5.5 or later/, 139/open/tcp//netbios-ssn//Samba smbd 4.3.9-Ubuntu (workgroup: WORKGROUP)/, 666/open/tcp//tcpwrapped///, 3306/open/tcp//mysql//MySQL 5.7.12-0ubuntu1/, 12380/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/	Seq Index: 263	IP ID Seq: All zeros
+# Nmap done at Thu Sep 26 10:53:14 2024 -- 1 IP address (1 host up) scanned in 46.80 seconds

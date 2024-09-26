@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 15:45:38 2024 as: nmap -v -Pn -p- -oA Hacker-kid-all-ports-scan-output 192.168.1.119
+Nmap scan report for 192.168.1.119 (192.168.1.119)
+Host is up (0.00029s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+9999/tcp open  abyss
+MAC Address: 08:00:27:00:FA:E6 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Sep 26 15:45:40 2024 -- 1 IP address (1 host up) scanned in 2.04 seconds
