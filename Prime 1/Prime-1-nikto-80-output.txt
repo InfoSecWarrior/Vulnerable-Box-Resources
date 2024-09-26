@@ -1,0 +1,15 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.1.116
++ Target Port: 80
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ HEAD Apache/2.4.18 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ OROZVHQX /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ GET /icons/README: Apache default file found. See: https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/: 
++ GET /wordpress/wp-content/plugins/akismet/readme.txt: The WordPress Akismet plugin 'Tested up to' version usually matches the WordPress version.
++ GET /wordpress/wp-links-opml.php: This WordPress script reveals the installed version.
++ GET /wordpress/wp-admin/: Uncommon header 'x-redirect-by' found, with contents: WordPress.
++ GET /wordpress/wp-login.php?action=register: Cookie wordpress_test_cookie created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /wordpress/wp-content/uploads/: Directory indexing found.
++ GET /wordpress/wp-content/uploads/: Wordpress uploads directory is browsable. This may reveal sensitive information.
++ GET /wordpress/wp-login.php: Wordpress login found.
