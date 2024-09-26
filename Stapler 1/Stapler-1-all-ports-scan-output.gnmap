@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 10:50:42 2024 as: nmap -v -Pn -p- -oA Stapler-1-all-ports-scan-output 192.168.1.106
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.106 (192.168.1.106)	Status: Up
+Host: 192.168.1.106 (192.168.1.106)	Ports: 20/closed/tcp//ftp-data///, 21/open/tcp//ftp///, 22/open/tcp//ssh///, 53/open/tcp//domain///, 80/open/tcp//http///, 123/closed/tcp//ntp///, 137/closed/tcp//netbios-ns///, 138/closed/tcp//netbios-dgm///, 139/open/tcp//netbios-ssn///, 666/open/tcp//doom///, 3306/open/tcp//mysql///, 12380/open/tcp/////	Ignored State: filtered (65523)
+# Nmap done at Thu Sep 26 10:52:28 2024 -- 1 IP address (1 host up) scanned in 105.17 seconds

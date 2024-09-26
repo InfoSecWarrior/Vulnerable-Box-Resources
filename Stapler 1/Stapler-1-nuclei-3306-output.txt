@@ -1,0 +1,3 @@
+[mysql-info] [javascript] [info] 192.168.1.106:3306 ["Version:","Transport: tcp"]
+[rsync-list-modules] [javascript] [low] 192.168.1.106:3306 ["k\x00\x00\x00\ufffdi\x04Host  '192.168.1.249'  is  blocked  because  of  many  connection  errors;  unblock  with  'mysqladmin  flush-hosts'"]
+[mysql-detect] [tcp] [info] 192.168.1.106:3306
