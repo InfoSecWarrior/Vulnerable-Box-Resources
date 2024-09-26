@@ -1,0 +1,23 @@
+# Dirsearch started Thu Sep 26 14:53:00 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.56.110:80 -o kioptrix-level-1-1-dirsearch-80-output.txt -q
+
+403   293B   http://192.168.56.110/.ht_wsr.txt
+403   296B   http://192.168.56.110/.htaccess.save
+403   298B   http://192.168.56.110/.htaccess.sample
+403   294B   http://192.168.56.110/.htaccess_sc
+403   296B   http://192.168.56.110/.htaccess.bak1
+403   296B   http://192.168.56.110/.htaccess_orig
+403   294B   http://192.168.56.110/.htaccessOLD
+403   296B   http://192.168.56.110/.htaccess.orig
+403   286B   http://192.168.56.110/.htm
+403   287B   http://192.168.56.110/.html
+403   294B   http://192.168.56.110/.htaccessBAK
+403   292B   http://192.168.56.110/.htpasswds
+403   295B   http://192.168.56.110/.htaccessOLD2
+403   297B   http://192.168.56.110/.htaccess_extra
+403   296B   http://192.168.56.110/.htpasswd_test
+403   293B   http://192.168.56.110/.httr-oauth
+403   290B   http://192.168.56.110/cgi-bin/
+403   288B   http://192.168.56.110/error/
+301   317B   http://192.168.56.110/manual    -> REDIRECTS TO: http://192.168.56.110/manual/
+200     7KB  http://192.168.56.110/manual/index.html
+403   287B   http://192.168.56.110/usage

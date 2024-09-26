@@ -1,0 +1,13 @@
+# Nmap 7.94 scan initiated Wed Sep 25 17:26:34 2024 as: nmap -v -Pn -p- -oA pwnlab-scan-results-all-ports-scan-output 192.168.29.172
+Nmap scan report for 192.168.29.172
+Host is up (0.00020s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT      STATE SERVICE
+80/tcp    open  http
+111/tcp   open  rpcbind
+3306/tcp  open  mysql
+53472/tcp open  unknown
+MAC Address: 08:00:27:DE:44:DD (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Sep 25 17:26:35 2024 -- 1 IP address (1 host up) scanned in 1.28 seconds

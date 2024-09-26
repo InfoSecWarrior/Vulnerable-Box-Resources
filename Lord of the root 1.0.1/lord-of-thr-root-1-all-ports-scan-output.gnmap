@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 11:38:50 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA lord-of-thr-root-1-all-ports-scan-output 192.168.1.110
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.110 (192.168.1.110)	Status: Up
+Host: 192.168.1.110 (192.168.1.110)	Ports: 22/open/tcp//ssh///	Ignored State: filtered (65534)
+# Nmap done at Thu Sep 26 11:40:35 2024 -- 1 IP address (1 host up) scanned in 104.39 seconds

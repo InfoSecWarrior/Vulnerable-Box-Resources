@@ -1,0 +1,4 @@
+# Dirsearch started Thu Sep 26 15:46:58 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.119:9999 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Hacker-kid-dirsearch-9999-wordlist-output.txt -q
+
+200   452B   http://192.168.1.119:9999/login
+302     0B   http://192.168.1.119:9999/logout    -> REDIRECTS TO: /

@@ -1,0 +1,36 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 15:12:26 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,3306 -oA readme-1-nmap-version-scan-output 192.168.56.111
+Nmap scan report for 192.168.56.111
+Host is up (0.00049s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 27:91:ab:b3:09:a0:fe:65:3b:3f:af:f5:73:73:eb:81 (RSA)
+|   256 bb:3e:5a:05:ed:02:6b:e9:33:ef:5b:c5:a3:54:79:e1 (ECDSA)
+|_  256 07:7d:66:e6:f9:e1:90:ea:9e:d5:2a:03:6d:9b:43:aa (ED25519)
+80/tcp   open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+3306/tcp open  mysql   MySQL (unauthorized)
+MAC Address: 08:00:27:1F:21:A4 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|storage-misc
+Running (JUST GUESSING): Linux 3.X|4.X|5.X|2.6.X (97%), Synology DiskStation Manager 5.X (90%), Netgear RAIDiator 4.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5.1 cpe:/o:linux:linux_kernel:2.6.32 cpe:/a:synology:diskstation_manager:5.2 cpe:/o:netgear:raidiator:4.2.28
+Aggressive OS guesses: Linux 3.10 - 4.11 (97%), Linux 3.2 - 4.9 (97%), Linux 5.1 (95%), Linux 3.16 - 4.6 (91%), Linux 4.10 (91%), Linux 4.4 (91%), Linux 2.6.32 (91%), Linux 3.4 - 3.10 (91%), Linux 4.15 - 5.8 (91%), Linux 5.0 - 5.4 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 33.548 days (since Sat Aug 24 02:03:49 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.49 ms 192.168.56.111
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 26 15:12:58 2024 -- 1 IP address (1 host up) scanned in 31.74 seconds

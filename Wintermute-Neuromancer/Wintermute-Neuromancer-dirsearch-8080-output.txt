@@ -1,0 +1,33 @@
+# Dirsearch started Wed Sep 25 12:54:31 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.15:8080 -o Wintermute-Neuromancer-dirsearch-8080-output.txt -q
+
+400     0B   http://192.168.1.15:8080/\..\..\..\..\..\..\..\..\..\etc\passwd
+400     0B   http://192.168.1.15:8080/a%5c.aspx
+302     0B   http://192.168.1.15:8080/docs    -> REDIRECTS TO: /docs/
+200    17KB  http://192.168.1.15:8080/docs/
+302     0B   http://192.168.1.15:8080/examples    -> REDIRECTS TO: /examples/
+200     1KB  http://192.168.1.15:8080/examples/
+200     6KB  http://192.168.1.15:8080/examples/servlets/index.html
+200     1KB  http://192.168.1.15:8080/examples/websocket/index.xhtml
+200    14KB  http://192.168.1.15:8080/examples/jsp/index.html
+200   682B   http://192.168.1.15:8080/examples/jsp/snp/snoop.jsp
+200     1KB  http://192.168.1.15:8080/examples/servlets/servlet/RequestHeaderExample
+200   658B   http://192.168.1.15:8080/examples/servlets/servlet/CookieExample
+200    21KB  http://192.168.1.15:8080/favicon.ico
+403     3KB  http://192.168.1.15:8080/host-manager/html
+403     3KB  http://192.168.1.15:8080/host-manager/
+302     0B   http://192.168.1.15:8080/manager    -> REDIRECTS TO: /manager/
+404     2KB  http://192.168.1.15:8080/manager/admin.asp
+302     0B   http://192.168.1.15:8080/manager/    -> REDIRECTS TO: /manager/html
+401     2KB  http://192.168.1.15:8080/manager/html/
+401     2KB  http://192.168.1.15:8080/manager/html
+401     2KB  http://192.168.1.15:8080/manager/jmxproxy
+401     2KB  http://192.168.1.15:8080/manager/jmxproxy/?get=java.lang:type=Memory&att=HeapMemoryUsage
+401     2KB  http://192.168.1.15:8080/manager/jmxproxy/?invoke=BEANNAME&op=METHODNAME&ps=COMMASEPARATEDPARAMETERS
+401     2KB  http://192.168.1.15:8080/manager/jmxproxy/?get=BEANNAME&att=MYATTRIBUTE&key=MYKEY
+401     2KB  http://192.168.1.15:8080/manager/jmxproxy/?qry=STUFF
+404     2KB  http://192.168.1.15:8080/manager/login.asp
+401     2KB  http://192.168.1.15:8080/manager/status/all
+401     2KB  http://192.168.1.15:8080/manager/jmxproxy/?invoke=Catalina%3Atype%3DService&op=findConnectors&ps=
+401     2KB  http://192.168.1.15:8080/manager/jmxproxy/?set=BEANNAME&att=MYATTRIBUTE&val=NEWVALUE
+404     1KB  http://192.168.1.15:8080/manager/login
+404     2KB  http://192.168.1.15:8080/manager/VERSION
