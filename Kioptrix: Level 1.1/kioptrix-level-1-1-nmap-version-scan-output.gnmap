@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 14:52:17 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,111,443,631,807,3306 -oA kioptrix-level-1-1-nmap-version-scan-output 192.168.56.110
+# Ports scanned: TCP(7;22,80,111,443,631,807,3306) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.56.110 ()	Status: Up
+Host: 192.168.56.110 ()	Ports: 22/open/tcp//ssh//OpenSSH 3.9p1 (protocol 1.99)/, 80/open/tcp//http//Apache httpd 2.0.52 ((CentOS))/, 111/open/tcp//rpcbind//2 (RPC #100000)/, 443/open/tcp//ssl|http//Apache httpd 2.0.52 ((CentOS))/, 631/open/tcp//ipp//CUPS 1.1/, 807/open/tcp//status//1 (RPC #100024)/, 3306/open/tcp//mysql//MySQL (unauthorized)/	OS: Linux 2.6.9 - 2.6.30	Seq Index: 191	IP ID Seq: All zeros
+# Nmap done at Thu Sep 26 14:52:39 2024 -- 1 IP address (1 host up) scanned in 22.77 seconds

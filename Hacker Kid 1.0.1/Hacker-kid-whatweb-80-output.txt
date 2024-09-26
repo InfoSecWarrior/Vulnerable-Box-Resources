@@ -1,0 +1,1 @@
+http://192.168.1.119:80 [200 OK] Apache[2.4.41], Bootstrap[4.3.1], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[192.168.1.119], JQuery, Script, Title[Notorious Kid : A Hacker]

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Sep 26 10:52:28 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,53,80,139,666,3306,12380 -oA Stapler-1-nmap-version-scan-output 192.168.1.106 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 21,22,53,80,139,666,3306,12380 -oA Stapler-1-nmap-version-scan-output 192.168.1.106" start="1727328148" startstr="Thu Sep 26 10:52:28 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="8" services="21-22,53,80,139,666,3306,12380"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727328148"/>
+<taskend task="NSE" time="1727328148"/>
+<taskbegin task="NSE" time="1727328148"/>
+<taskend task="NSE" time="1727328148"/>
+<taskbegin task="NSE" time="1727328148"/>
+<taskend task="NSE" time="1727328148"/>
+<taskbegin task="ARP Ping Scan" time="1727328148"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.106" addrtype="ipv4"/>
+<address addr="08:00:27:83:F9:77" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727328148" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727328148"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727328148"/>
+<taskbegin task="Connect Scan" time="1727328148"/>
+<taskend task="Connect Scan" time="1727328148" extrainfo="8 total ports"/>
+<taskbegin task="Service scan" time="1727328148"/>
+<taskend task="Service scan" time="1727328159" extrainfo="8 services on 1 host"/>
+<taskbegin task="NSE" time="1727328163"/>
+<taskend task="NSE" time="1727328194"/>
+<taskbegin task="NSE" time="1727328194"/>
+<taskend task="NSE" time="1727328194"/>
+<taskbegin task="NSE" time="1727328194"/>
+<taskend task="NSE" time="1727328194"/>
+<host starttime="1727328148" endtime="1727328194"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.106" addrtype="ipv4"/>
+<address addr="08:00:27:83:F9:77" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+<hostname name="192.168.1.106" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="2.0.8 or later" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd</cpe></service><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to 192.168.1.249&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 2&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to 192.168.1.249&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 2&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status</elem>
+</script><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;Can&apos;t get directory listing: PASV failed: 550 Permission denied."/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 81:21:ce:a1:1a:05:b1:69:4f:4d:ed:80:28:e8:99:05 (RSA)&#xa;  256 5b:a5:bb:67:91:1a:51:c2:d3:21:da:c0:ca:f0:db:9e (ECDSA)&#xa;  256 6d:01:b7:73:ac:b0:93:6f:fa:b9:89:e6:ae:3c:ab:d3 (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">8121cea11a05b1694f4ded8028e89905</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDc/xrBbi5hixT2B19dQilbbrCaRllRyNhtJcOzE8x0BM1ow9I80RcU7DtajyqiXXEwHRavQdO+/cHZMyOiMFZG59OCuIouLRNoVO58C91gzDgDZ1fKH6BDg+FaSz+iYZbHg2lzaMPbRje6oqNamPR4QGISNUpxZeAsQTLIiPcRlb5agwurovTd3p0SXe0GknFhZwHHvAZWa2J6lHE2b9K5IsSsDzX2WHQ4vPb+1DzDHV0RTRVUGviFvUX1X5tVFvVZy0TTFc0minD75CYClxLrgc+wFLPcAmE2C030ER/Z+9umbhuhCnLkLN87hlzDSRDPwUjWr+sNA3+7vc/xuZul</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">5ba5bb67911a51c2d321dac0caf0db9e</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNQB5n5kAZPIyHb9lVx1aU0fyOXMPUblpmB8DRjnP8tVIafLIWh54wmTFVd3nCMr1n5IRWiFeX1weTBDSjjz0IY=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">6d01b773acb0936ffab989e6ae3cabd3</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJ9wvrF4tkFMApswOmWKpTymFjkaiIoie4QD0RWOYnny</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" product="dnsmasq" version="2.75" method="probed" conf="10"><cpe>cpe:/a:thekelleys:dnsmasq:2.75</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: dnsmasq-2.75"><elem key="bind.version">dnsmasq-2.75</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="PHP cli server" version="5.5 or later" method="probed" conf="10"><cpe>cpe:/a:php:php</cpe></service><script id="http-title" output="404 Not Found"><elem key="title">404 Not Found</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.3.9-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="RED" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="666"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" version="5.7.12-0ubuntu1" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:5.7.12-0ubuntu1</cpe></service><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 5.7.12-0ubuntu1&#xa;  Thread ID: 9&#xa;  Capabilities flags: 63487&#xa;  Some Capabilities: ConnectWithDatabase, LongPassword, SupportsTransactions, FoundRows, Support41Auth, Speaks41ProtocolOld, ODBCClient, DontAllowDatabaseTableColumn, IgnoreSigpipes, LongColumnFlag, Speaks41ProtocolNew, IgnoreSpaceBeforeParenthesis, SupportsCompression, SupportsLoadDataLocal, InteractiveClient, SupportsAuthPlugins, SupportsMultipleResults, SupportsMultipleStatments&#xa;  Status: Autocommit&#xa;  Salt: \x054\x11^?_&quot;e9\x05&amp;&amp;\x1F.\x13[\x1A\Qe&#xa;  Auth Plugin Name: mysql_native_password"><elem key="Protocol">10</elem>
+<elem key="Version">5.7.12-0ubuntu1</elem>
+<elem key="Thread ID">9</elem>
+<elem key="Capabilities flags">63487</elem>
+<table key="Some Capabilities">
+<elem>ConnectWithDatabase</elem>
+<elem>LongPassword</elem>
+<elem>SupportsTransactions</elem>
+<elem>FoundRows</elem>
+<elem>Support41Auth</elem>
+<elem>Speaks41ProtocolOld</elem>
+<elem>ODBCClient</elem>
+<elem>DontAllowDatabaseTableColumn</elem>
+<elem>IgnoreSigpipes</elem>
+<elem>LongColumnFlag</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>IgnoreSpaceBeforeParenthesis</elem>
+<elem>SupportsCompression</elem>
+<elem>SupportsLoadDataLocal</elem>
+<elem>InteractiveClient</elem>
+<elem>SupportsAuthPlugins</elem>
+<elem>SupportsMultipleResults</elem>
+<elem>SupportsMultipleStatments</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">\x054\x11^?_&quot;e9\x05&amp;&amp;\x1F.\x13[\x1A\Qe</elem>
+<elem key="Auth Plugin Name">mysql_native_password</elem>
+</script></port>
+<port protocol="tcp" portid="12380"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="Tim, we need to-do better next year for Initech"><elem key="title">Tim, we need to-do better next year for Initech</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS GET HEAD POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="udp" portid="41463"/>
+<osmatch name="Linux 3.10 - 4.11" accuracy="97" line="63448">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16 - 4.6" accuracy="97" line="64382">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="97" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="97" line="67361">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="95" line="63862">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.18" accuracy="95" line="64420">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13 - 3.16" accuracy="93" line="63954">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="93" line="64270">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4)" accuracy="93" line="66953">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.10" accuracy="93" line="67166">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4.10</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="240" lastboot="Thu Sep 26 10:49:14 2024"/>
+<distance value="1"/>
+<tcpsequence index="263" difficulty="Good luck!" values="58DA6321,9B1483F9,23AD476F,2E6EAC7B,902CADAE,9EE40579"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="CB34,CB4D,CB66,CB7F,CB98,CBB1"/>
+<hostscript><script id="clock-skew" output="mean: 5h09m59s, deviation: 34m37s, median: 5h29m58s"><elem key="median">19798</elem>
+<elem key="stddev">2077</elem>
+<elem key="mean">18599</elem>
+<elem key="count">3</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="nbstat" output="NetBIOS name: RED, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  RED&lt;00&gt;              Flags: &lt;unique&gt;&lt;active&gt;&#xa;  RED&lt;03&gt;              Flags: &lt;unique&gt;&lt;active&gt;&#xa;  RED&lt;20&gt;              Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1d&gt;        Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1e&gt;        Flags: &lt;group&gt;&lt;active&gt;"/><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.3.9-Ubuntu)&#xa;  Computer name: red&#xa;  NetBIOS computer name: RED\x00&#xa;  Domain name: \x00&#xa;  FQDN: red&#xa;  System time: 2024-09-26T11:52:43+01:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.3.9-Ubuntu</elem>
+<elem key="server">RED\x00</elem>
+<elem key="date">2024-09-26T11:52:43+01:00</elem>
+<elem key="fqdn">red</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb2-time" output="&#xa;  date: 2024-09-26T10:52:43&#xa;  start_date: N/A"><elem key="date">2024-09-26T10:52:43</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.1.106" rtt="1.05" host="192.168.1.106"/>
+</trace>
+<times srtt="1053" rttvar="194" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727328194"/>
+<taskend task="NSE" time="1727328194"/>
+<taskbegin task="NSE" time="1727328194"/>
+<taskend task="NSE" time="1727328194"/>
+<taskbegin task="NSE" time="1727328194"/>
+<taskend task="NSE" time="1727328194"/>
+<runstats><finished time="1727328194" timestr="Thu Sep 26 10:53:14 2024" summary="Nmap done at Thu Sep 26 10:53:14 2024; 1 IP address (1 host up) scanned in 46.80 seconds" elapsed="46.80" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

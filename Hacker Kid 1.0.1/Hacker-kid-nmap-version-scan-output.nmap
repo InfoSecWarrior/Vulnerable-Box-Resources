@@ -1,0 +1,38 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 15:45:40 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 53,80,9999 -oA Hacker-kid-nmap-version-scan-output 192.168.1.119
+Nmap scan report for 192.168.1.119 (192.168.1.119)
+Host is up (0.00066s latency).
+
+PORT     STATE SERVICE VERSION
+53/tcp   open  domain  ISC BIND 9.16.1 (Ubuntu Linux)
+| dns-nsid: 
+|_  bind.version: 9.16.1-Ubuntu
+80/tcp   open  http    Apache httpd 2.4.41 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Notorious Kid : A Hacker 
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+9999/tcp open  http    Tornado httpd 6.1
+| http-title: Please Log In
+|_Requested resource was /login?next=%2F
+|_http-server-header: TornadoServer/6.1
+| http-methods: 
+|_  Supported Methods: GET POST
+MAC Address: 08:00:27:00:FA:E6 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Uptime guess: 42.464 days (since Thu Aug 15 04:37:04 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.66 ms 192.168.1.119 (192.168.1.119)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 26 15:45:56 2024 -- 1 IP address (1 host up) scanned in 16.13 seconds
