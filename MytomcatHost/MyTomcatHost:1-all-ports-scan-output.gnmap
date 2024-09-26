@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 19:07:57 2024 as: nmap -v -Pn -p- -oA MyTomcatHost:1-all-ports-scan-output 192.168.1.203
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.203 ()	Status: Up
+Host: 192.168.1.203 ()	Ports: 22/open/tcp//ssh///, 8080/open/tcp//http-proxy///	Ignored State: filtered (65533)
+# Nmap done at Thu Sep 26 19:10:22 2024 -- 1 IP address (1 host up) scanned in 145.04 seconds
