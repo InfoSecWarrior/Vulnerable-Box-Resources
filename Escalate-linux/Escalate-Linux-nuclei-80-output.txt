@@ -1,0 +1,18 @@
+[options-method] [http] [info] http://192.168.1.111:80 ["OPTIONS,HEAD,GET,POST"]
+[apache-detect] [http] [info] http://192.168.1.111:80 ["Apache/2.4.29 (Ubuntu)"]
+[default-apache-test-all] [http] [info] http://192.168.1.111:80 ["Apache/2.4.29 (Ubuntu)"]
+[default-apache2-ubuntu-page] [http] [info] http://192.168.1.111:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.111:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.111:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.111:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.111:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.111:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.111:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.111:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.111:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.111:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.111:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.111:80
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.111:80
+[smb-enum] [javascript] [info] 192.168.1.111:445 ["NetBIOSDomainName: LINUX","DNSComputerNamen: osboxes","DNSComputerName: osboxes","ForestName:","OSVersion: 6.1.0","NetBIOSComputerName: LINUX"]
+[smb-os-detect] [javascript] [info] 192.168.1.111:445 ["6.1.0"]

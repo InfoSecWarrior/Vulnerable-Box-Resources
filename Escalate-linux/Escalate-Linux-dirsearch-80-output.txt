@@ -1,0 +1,22 @@
+# Dirsearch started Thu Sep 26 11:45:50 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.111:80 -o Escalate-Linux-dirsearch-80-output.txt -q
+
+403   299B   http://192.168.1.111/.ht_wsr.txt
+403   302B   http://192.168.1.111/.htaccess.bak1
+403   304B   http://192.168.1.111/.htaccess.sample
+403   302B   http://192.168.1.111/.htaccess.orig
+403   302B   http://192.168.1.111/.htaccess.save
+403   303B   http://192.168.1.111/.htaccess_extra
+403   300B   http://192.168.1.111/.htaccess_sc
+403   302B   http://192.168.1.111/.htaccess_orig
+403   300B   http://192.168.1.111/.htaccessOLD
+403   300B   http://192.168.1.111/.htaccessBAK
+403   301B   http://192.168.1.111/.htaccessOLD2
+403   293B   http://192.168.1.111/.html
+403   292B   http://192.168.1.111/.htm
+403   298B   http://192.168.1.111/.htpasswds
+403   302B   http://192.168.1.111/.htpasswd_test
+403   299B   http://192.168.1.111/.httr-oauth
+403   292B   http://192.168.1.111/.php
+403   302B   http://192.168.1.111/server-status/
+403   301B   http://192.168.1.111/server-status
+200    29B   http://192.168.1.111/shell.php
