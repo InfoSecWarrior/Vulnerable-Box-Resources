@@ -1,0 +1,27 @@
+# Dirsearch started Thu Sep 26 15:46:47 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.119:80 -o Hacker-kid-dirsearch-80-output.txt -q
+
+403   278B   http://192.168.1.119/.ht_wsr.txt
+403   278B   http://192.168.1.119/.htaccess.orig
+403   278B   http://192.168.1.119/.htaccess.bak1
+403   278B   http://192.168.1.119/.htaccess.sample
+403   278B   http://192.168.1.119/.htaccess.save
+403   278B   http://192.168.1.119/.htaccess_extra
+403   278B   http://192.168.1.119/.htaccessBAK
+403   278B   http://192.168.1.119/.htaccess_orig
+403   278B   http://192.168.1.119/.htaccessOLD
+403   278B   http://192.168.1.119/.htaccess_sc
+403   278B   http://192.168.1.119/.htaccessOLD2
+403   278B   http://192.168.1.119/.htm
+403   278B   http://192.168.1.119/.html
+403   278B   http://192.168.1.119/.htpasswd_test
+403   278B   http://192.168.1.119/.htpasswds
+403   278B   http://192.168.1.119/.httr-oauth
+403   278B   http://192.168.1.119/.php
+200     2KB  http://192.168.1.119/app.html
+403   278B   http://192.168.1.119/cgi-bin/
+301   312B   http://192.168.1.119/css    -> REDIRECTS TO: http://192.168.1.119/css/
+301   315B   http://192.168.1.119/images    -> REDIRECTS TO: http://192.168.1.119/images/
+200   464B   http://192.168.1.119/images/
+301   319B   http://192.168.1.119/javascript    -> REDIRECTS TO: http://192.168.1.119/javascript/
+403   278B   http://192.168.1.119/server-status
+403   278B   http://192.168.1.119/server-status/

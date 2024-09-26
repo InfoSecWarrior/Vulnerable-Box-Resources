@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Sep 26 15:45:40 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 53,80,9999 -oA Hacker-kid-nmap-version-scan-output 192.168.1.119 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 53,80,9999 -oA Hacker-kid-nmap-version-scan-output 192.168.1.119" start="1727345740" startstr="Thu Sep 26 15:45:40 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="53,80,9999"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727345741"/>
+<taskend task="NSE" time="1727345741"/>
+<taskbegin task="NSE" time="1727345741"/>
+<taskend task="NSE" time="1727345741"/>
+<taskbegin task="NSE" time="1727345741"/>
+<taskend task="NSE" time="1727345741"/>
+<taskbegin task="ARP Ping Scan" time="1727345741"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.119" addrtype="ipv4"/>
+<address addr="08:00:27:00:FA:E6" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727345741" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727345741"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727345741"/>
+<taskbegin task="Connect Scan" time="1727345741"/>
+<taskend task="Connect Scan" time="1727345741" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1727345741"/>
+<taskend task="Service scan" time="1727345747" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1727345748"/>
+<taskend task="NSE" time="1727345756"/>
+<taskbegin task="NSE" time="1727345756"/>
+<taskend task="NSE" time="1727345756"/>
+<taskbegin task="NSE" time="1727345756"/>
+<taskend task="NSE" time="1727345756"/>
+<host starttime="1727345741" endtime="1727345756"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.119" addrtype="ipv4"/>
+<address addr="08:00:27:00:FA:E6" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+<hostname name="192.168.1.119" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" product="ISC BIND" version="9.16.1" extrainfo="Ubuntu Linux" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:isc:bind:9.16.1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: 9.16.1-Ubuntu"><elem key="bind.version">9.16.1-Ubuntu</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Notorious Kid : A Hacker "><elem key="title">Notorious Kid : A Hacker </elem>
+</script><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="9999"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Tornado httpd" version="6.1" method="probed" conf="10"><cpe>cpe:/a:tornadoweb:tornado:6.1</cpe></service><script id="http-title" output="Please Log In&#xa;Requested resource was /login?next=%2F"><elem key="title">Please Log In</elem>
+<elem key="redirect_url">/login?next=%2F</elem>
+</script><script id="http-server-header" output="TornadoServer/6.1"><elem>TornadoServer/6.1</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+</table>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="53"/>
+<portused state="closed" proto="udp" portid="43416"/>
+<osmatch name="Linux 4.15 - 5.8" accuracy="100" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3668932" lastboot="Thu Aug 15 04:37:04 2024"/>
+<distance value="1"/>
+<tcpsequence index="258" difficulty="Good luck!" values="FAB827CA,EC0543A7,273D5A8B,33B040BE,74344DBF,24906D35"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="DAAF5545,DAAF55A8,DAAF560D,DAAF5671,DAAF56D5,DAAF5739"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.119" rtt="0.66" host="192.168.1.119"/>
+</trace>
+<times srtt="662" rttvar="151" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727345756"/>
+<taskend task="NSE" time="1727345756"/>
+<taskbegin task="NSE" time="1727345756"/>
+<taskend task="NSE" time="1727345756"/>
+<taskbegin task="NSE" time="1727345756"/>
+<taskend task="NSE" time="1727345756"/>
+<runstats><finished time="1727345756" timestr="Thu Sep 26 15:45:56 2024" summary="Nmap done at Thu Sep 26 15:45:56 2024; 1 IP address (1 host up) scanned in 16.13 seconds" elapsed="16.13" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

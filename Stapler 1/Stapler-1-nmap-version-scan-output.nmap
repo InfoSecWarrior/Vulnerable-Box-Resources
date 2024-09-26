@@ -1,0 +1,97 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 10:52:28 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,53,80,139,666,3306,12380 -oA Stapler-1-nmap-version-scan-output 192.168.1.106
+Nmap scan report for 192.168.1.106 (192.168.1.106)
+Host is up (0.0011s latency).
+
+PORT      STATE SERVICE     VERSION
+21/tcp    open  ftp         vsftpd 2.0.8 or later
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.1.249
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: PASV failed: 550 Permission denied.
+22/tcp    open  ssh         OpenSSH 7.2p2 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 81:21:ce:a1:1a:05:b1:69:4f:4d:ed:80:28:e8:99:05 (RSA)
+|   256 5b:a5:bb:67:91:1a:51:c2:d3:21:da:c0:ca:f0:db:9e (ECDSA)
+|_  256 6d:01:b7:73:ac:b0:93:6f:fa:b9:89:e6:ae:3c:ab:d3 (ED25519)
+53/tcp    open  domain      dnsmasq 2.75
+| dns-nsid: 
+|_  bind.version: dnsmasq-2.75
+80/tcp    open  http        PHP cli server 5.5 or later
+|_http-title: 404 Not Found
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+139/tcp   open  netbios-ssn Samba smbd 4.3.9-Ubuntu (workgroup: WORKGROUP)
+666/tcp   open  tcpwrapped
+3306/tcp  open  mysql       MySQL 5.7.12-0ubuntu1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.7.12-0ubuntu1
+|   Thread ID: 9
+|   Capabilities flags: 63487
+|   Some Capabilities: ConnectWithDatabase, LongPassword, SupportsTransactions, FoundRows, Support41Auth, Speaks41ProtocolOld, ODBCClient, DontAllowDatabaseTableColumn, IgnoreSigpipes, LongColumnFlag, Speaks41ProtocolNew, IgnoreSpaceBeforeParenthesis, SupportsCompression, SupportsLoadDataLocal, InteractiveClient, SupportsAuthPlugins, SupportsMultipleResults, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: \x054\x11^?_"e9\x05&&\x1F.\x13[\x1A\Qe
+|_  Auth Plugin Name: mysql_native_password
+12380/tcp open  http        Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Tim, we need to-do better next year for Initech
+| http-methods: 
+|_  Supported Methods: OPTIONS GET HEAD POST
+MAC Address: 08:00:27:83:F9:77 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 4.11 (97%), Linux 3.16 - 4.6 (97%), Linux 3.2 - 4.9 (97%), Linux 4.4 (97%), Linux 3.13 (95%), Linux 3.18 (95%), Linux 3.13 - 3.16 (93%), Linux 3.16 (93%), OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4) (93%), Linux 4.10 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.003 days (since Thu Sep 26 10:49:14 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: RED; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 5h09m59s, deviation: 34m37s, median: 5h29m58s
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| nbstat: NetBIOS name: RED, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   RED<00>              Flags: <unique><active>
+|   RED<03>              Flags: <unique><active>
+|   RED<20>              Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|_  WORKGROUP<1e>        Flags: <group><active>
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.9-Ubuntu)
+|   Computer name: red
+|   NetBIOS computer name: RED\x00
+|   Domain name: \x00
+|   FQDN: red
+|_  System time: 2024-09-26T11:52:43+01:00
+| smb2-time: 
+|   date: 2024-09-26T10:52:43
+|_  start_date: N/A
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.05 ms 192.168.1.106 (192.168.1.106)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 26 10:53:14 2024 -- 1 IP address (1 host up) scanned in 46.80 seconds

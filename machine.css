@@ -1,93 +1,161 @@
-/* Add your enhanced CSS styles here */
-
 body {
     font-family: 'Fira Code', monospace;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Slightly warmer background */
-    color: #444; /* Slightly lighter text color for better readability */
-}
-
-.container {
-    width: 80%;
-    margin: 40px auto; /* Add more margin to give breathing room */
-    padding: 20px;
-    background-color: #ffffff; /* Ensure container background is white */
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f5f5f5;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 0 20px; /* Adds padding to avoid touching screen edges */
 }
 
 .header {
-    background-color: #b20002; /* Darker blue for header */
-    color: #ffffff; /* White text for contrast */
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    gap: 30px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; /* Centers the header horizontally */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 42px;
+    font-family: 'Fira Code', monospace;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.header h1:hover {
+    color: #b20002;
+}
+
+.logo {
+    max-width: 120px;
+    max-height: 100px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.armour-logo {
+    max-width: 150px;
+    max-height: 120px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+#machine-title, #github-link {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+#github-link a {
+    text-decoration: none;
+    color: #004085;
+}
+
+#github-link a:hover {
+    text-decoration: underline;
 }
 
 .machine-content {
-    background-color: #ffffff; /* Keep content area background white */
-    border: 1px solid #e0e0e0; /* Lighter border color */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 25px;
     margin-top: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1500px;
+    width: 100%;
 }
 
 h2 {
-    border-bottom: 3px solid #004085; /* Highlighted section header with darker blue */
+    border-bottom: 3px solid #004085;
     padding-bottom: 10px;
-    color: #222; /* Slightly darker text for headers */
-    margin-bottom: 20px; /* Space between header and content */
+    color: #222;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 pre {
-    background-color: #e8f0fe; /* Light blue background for pre tags */
+    background-color: #e8f0fe;
     padding: 15px;
-    border: 1px solid #d1e1fc; /* Matching border with background */
+    border: 1px solid #d1e1fc;
     border-radius: 5px;
     overflow: auto;
-    font-size: 0.95rem; /* Slightly smaller font for pre tags */
-    color: #333; /* Darker text color for better readability */
+    font-size: 0.95rem;
+    color: #333;
+    text-align: left;
 }
 
 pre::before {
-    content: "Data:"; /* Prepend 'Data:' before pre block */
+    content: "Data:";
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-    color: #004085; /* Dark blue for the label */
+    color: #004085;
+}
+
+/* Loading Data Alignment */
+.loading-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.2rem;
+    color: #444;
+    font-weight: bold;
 }
 
 button {
     margin-top: 15px;
     padding: 12px 25px;
-    background-color: #28a745; /* Green for the button */
-    color: #ffffff; /* White text for contrast */
+    background-color: #28a745;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s, transform 0.2s ease; /* Smooth transitions */
+    transition: background-color 0.3s, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #218838; /* Darker green on hover */
-    transform: translateY(-2px); /* Slight lift on hover */
+    background-color: #218838;
+    transform: translateY(-2px);
 }
 
 button:active {
-    background-color: #1e7e34; /* Even darker when pressed */
-    transform: translateY(0); /* Reset when clicked */
+    background-color: #1e7e34;
+    transform: translateY(0);
 }
 
 @media (max-width: 768px) {
-    .container {
-        width: 95%; /* More responsive for smaller screens */
+    #machine-title, #github-link {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header, .machine-content {
+        padding: 20px;
     }
 
     pre {
-        font-size: 0.85rem; /* Smaller text for small screens */
+        font-size: 0.85rem;
     }
 }

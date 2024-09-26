@@ -1,0 +1,5 @@
+# Dirsearch started Thu Sep 26 10:53:41 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.106:80 -o Stapler-1-dirsearch-80-output.txt -q
+
+200     4KB  http://192.168.1.106/.bashrc
+200   220B   http://192.168.1.106/.bash_logout
+200   675B   http://192.168.1.106/.profile
