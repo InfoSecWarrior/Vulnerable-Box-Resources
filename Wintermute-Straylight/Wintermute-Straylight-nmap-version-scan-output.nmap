@@ -1,0 +1,53 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 12:25:22 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 25,80,3000 -oA Wintermute-Straylight-nmap-version-scan-output 192.168.1.13
+Nmap scan report for 192.168.1.13
+Host is up (0.00041s latency).
+
+PORT     STATE SERVICE            VERSION
+25/tcp   open  smtp               Postfix smtpd
+|_smtp-commands: straylight, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8
+| ssl-cert: Subject: commonName=straylight
+| Subject Alternative Name: DNS:straylight
+| Issuer: commonName=straylight
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-05-12T18:08:02
+| Not valid after:  2028-05-09T18:08:02
+| MD5:   dd86:99b4:ce4d:71c4:d4b3:aa3f:1642:77fd
+|_SHA-1: 6362:9a8f:6e55:8bee:b71d:eba2:79f9:103f:8f2f:2b8f
+|_ssl-date: TLS randomness does not represent time
+80/tcp   open  http               Apache httpd 2.4.25 ((Debian))
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+|_http-title: Night City
+|_http-server-header: Apache/2.4.25 (Debian)
+3000/tcp open  hadoop-tasktracker Apache Hadoop
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| hadoop-datanode-info: 
+|_  Logs: submit
+| http-title: Welcome to ntopng
+|_Requested resource was /lua/login.lua?referer=/
+| hadoop-tasktracker-info: 
+|_  Logs: submit
+|_http-favicon: Unknown favicon MD5: 7FC0953320A93F3BC71770C25A7F4716
+MAC Address: 08:00:27:ED:05:1A (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 198.047 days (since Mon Mar 11 11:17:36 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host:  straylight
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.41 ms 192.168.1.13
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Sep 25 12:25:34 2024 -- 1 IP address (1 host up) scanned in 12.21 seconds

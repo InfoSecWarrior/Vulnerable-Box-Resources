@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 12:25:22 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 25,80,3000 -oA Wintermute-Straylight-nmap-version-scan-output 192.168.1.13
+# Ports scanned: TCP(3;25,80,3000) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.13 ()	Status: Up
+Host: 192.168.1.13 ()	Ports: 25/open/tcp//smtp//Postfix smtpd/, 80/open/tcp//http//Apache httpd 2.4.25 ((Debian))/, 3000/open/tcp//hadoop-tasktracker//Apache Hadoop/	OS: Linux 3.2 - 4.9	Seq Index: 260	IP ID Seq: All zeros
+# Nmap done at Wed Sep 25 12:25:34 2024 -- 1 IP address (1 host up) scanned in 12.21 seconds

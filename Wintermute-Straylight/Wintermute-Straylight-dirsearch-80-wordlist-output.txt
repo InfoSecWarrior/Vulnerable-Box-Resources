@@ -1,0 +1,5 @@
+# Dirsearch started Wed Sep 25 12:32:54 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.13:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Wintermute-Straylight-dirsearch-80-wordlist-output.txt -q
+
+301   313B   http://192.168.1.13/manual    -> REDIRECTS TO: http://192.168.1.13/manual/
+301   315B   http://192.168.1.13/freeside    -> REDIRECTS TO: http://192.168.1.13/freeside/
+403   300B   http://192.168.1.13/server-status

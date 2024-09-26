@@ -1,0 +1,36 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 12:53:36 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 8009,8080,34483 -oA Wintermute-Neuromancer-nmap-version-scan-output 192.168.1.15
+Nmap scan report for 192.168.1.15
+Host is up (0.00039s latency).
+
+PORT      STATE SERVICE VERSION
+8009/tcp  open  ajp13   Apache Jserv (Protocol v1.3)
+|_ajp-methods: Failed to get a valid response for the OPTION request
+8080/tcp  open  http    Apache Tomcat 9.0.0.M26
+|_http-favicon: Apache Tomcat
+|_http-title: Apache Tomcat/9.0.0.M26
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+34483/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 2e:9b:4a:a9:c0:fc:0b:d8:ef:f1:e3:9d:f4:59:25:32 (RSA)
+|   256 f6:2a:de:07:36:36:00:e9:b5:5d:2f:aa:03:79:91:d1 (ECDSA)
+|_  256 38:3c:a8:ed:91:ea:ce:1d:0d:0f:ab:51:ac:97:c8:fb (ED25519)
+MAC Address: 08:00:27:BF:65:CB (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 198.839 days (since Sun Mar 10 16:46:10 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=240 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.39 ms 192.168.1.15
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Sep 25 12:53:45 2024 -- 1 IP address (1 host up) scanned in 9.33 seconds

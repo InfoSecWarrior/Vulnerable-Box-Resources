@@ -1,0 +1,15 @@
+[options-method] [http] [info] http://192.168.1.13:80 ["OPTIONS,HEAD,HEAD,GET,HEAD,POST"]
+[apache-detect] [http] [info] http://192.168.1.13:80 ["Apache/2.4.25 (Debian)"]
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.13:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.13:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.13:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.13:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.13:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.13:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.13:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.13:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.13:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.13:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.13:80
+[build-properties] [http] [info] http://192.168.1.13:80/manual/style/build.properties
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.13:80
