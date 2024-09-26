@@ -1,1 +1,2 @@
 https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/It's%20October/its-october-nmap-version-scan-output.xml
+https://github.com/InfosecWarrior/Vulnerable-Box-Resources/blob/main/Escalate-linux/Escalate-Linux-nmap-version-scan-output.xml
