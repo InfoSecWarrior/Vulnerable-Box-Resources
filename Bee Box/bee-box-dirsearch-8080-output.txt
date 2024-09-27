@@ -1,0 +1,10 @@
+# Dirsearch started Wed Sep 25 16:00:24 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.229:8080 -o bee-box-dirsearch-8080-output.txt -q
+
+200   325B   http://192.168.1.229:8080/ClientAccessPolicy.xml
+200   200B   http://192.168.1.229:8080/crossdomain.xml
+301   184B   http://192.168.1.229:8080/drupal    -> REDIRECTS TO: http://192.168.1.229:8080/drupal/
+200    45B   http://192.168.1.229:8080/index.bak
+200     3KB  http://192.168.1.229:8080/INSTALL.txt
+401   566B   http://192.168.1.229:8080/phpmyadmin/scripts/setup.php
+200     8KB  http://192.168.1.229:8080/phpmyadmin/index.php
+200     2KB  http://192.168.1.229:8080/README.txt

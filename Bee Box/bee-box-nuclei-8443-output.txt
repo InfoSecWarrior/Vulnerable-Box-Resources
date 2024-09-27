@@ -1,0 +1,7 @@
+[waf-detect:nginxgeneric] [http] [info] https://192.168.1.229:8443
+[samba-detect] [javascript] [info] 192.168.1.229:445 ["Samba detected"]
+[mysql-info] [javascript] [info] 192.168.1.229:3306 ["Version:","Transport: tcp"]
+[CVE-2004-2687] [tcp] [high] 192.168.1.229:3632
+[esmtp-detect] [tcp] [info] 192.168.1.229:25
+[openssh-detect] [tcp] [info] 192.168.1.229:22 ["SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1"]
+[smtp-service-detect] [tcp] [info] 192.168.1.229:25

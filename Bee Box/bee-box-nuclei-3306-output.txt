@@ -1,0 +1,2 @@
+[mysql-info] [javascript] [info] 192.168.1.229:3306 ["Version:","Transport: tcp"]
+[rsync-list-modules] [javascript] [low] 192.168.1.229:3306 ["\x17\x00\x00\x00\ufffd\x10\x04Too  many  connections"]

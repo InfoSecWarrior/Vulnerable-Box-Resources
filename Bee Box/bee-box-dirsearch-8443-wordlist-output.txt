@@ -1,0 +1,5 @@
+# Dirsearch started Wed Sep 25 16:01:32 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://192.168.1.229:8443 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o bee-box-dirsearch-8443-wordlist-output.txt -q
+
+301   184B   https://192.168.1.229:8443/drupal    -> REDIRECTS TO: https://192.168.1.229:8443/drupal/
+301   184B   https://192.168.1.229:8443/evil    -> REDIRECTS TO: https://192.168.1.229:8443/evil/
+301   184B   https://192.168.1.229:8443/sqlite    -> REDIRECTS TO: https://192.168.1.229:8443/sqlite/
