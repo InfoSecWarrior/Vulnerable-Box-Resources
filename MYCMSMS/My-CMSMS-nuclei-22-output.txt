@@ -1,0 +1,3 @@
+[ssh-server-enumeration] [javascript] [info] 192.168.1.11:22 ["SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.11:22
+[openssh-detect] [tcp] [info] 192.168.1.11:22 ["SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2"]

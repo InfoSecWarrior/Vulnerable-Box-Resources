@@ -1,0 +1,10 @@
+# Dirsearch started Wed Sep 25 17:50:20 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.121:8000 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o pinkys-palace-v3-dirsearch-8000-wordlist-output.txt -q
+
+301   185B   http://192.168.29.121:8000/misc    -> REDIRECTS TO: http://192.168.29.121:8000/misc/
+301   185B   http://192.168.29.121:8000/themes    -> REDIRECTS TO: http://192.168.29.121:8000/themes/
+301   185B   http://192.168.29.121:8000/modules    -> REDIRECTS TO: http://192.168.29.121:8000/modules/
+301   185B   http://192.168.29.121:8000/scripts    -> REDIRECTS TO: http://192.168.29.121:8000/scripts/
+301   185B   http://192.168.29.121:8000/sites    -> REDIRECTS TO: http://192.168.29.121:8000/sites/
+301   185B   http://192.168.29.121:8000/includes    -> REDIRECTS TO: http://192.168.29.121:8000/includes/
+301   185B   http://192.168.29.121:8000/profiles    -> REDIRECTS TO: http://192.168.29.121:8000/profiles/
+301   185B   http://192.168.29.121:8000/rest    -> REDIRECTS TO: http://192.168.29.121:8000/rest/

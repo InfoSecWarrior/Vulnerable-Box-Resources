@@ -1,0 +1,10 @@
+[ssh-auth-methods] [javascript] [info] 192.168.1.110:22 ["["publickey","password"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.110:22 ["Vulnerable to Terrapin"]
+[ssh-diffie-hellman-logjam] [javascript] [low] 192.168.1.110:22
+[ssh-password-auth] [javascript] [info] 192.168.1.110:22
+[ssh-server-enumeration] [javascript] [info] 192.168.1.110:22 ["SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.3"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.110:22
+[ssh-cbc-mode-ciphers] [javascript] [low] 192.168.1.110:22
+[ssh-weak-algo-supported] [javascript] [medium] 192.168.1.110:22
+[ssh-weak-mac-algo] [javascript] [low] 192.168.1.110:22
+[ssh-weakkey-exchange-algo] [javascript] [low] 192.168.1.110:22

@@ -1,0 +1,6 @@
+# Dirsearch started Wed Sep 25 16:51:48 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.13:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o election-1-dirsearch-80-wordlist-output.txt -q
+
+301   319B   http://192.168.29.13/javascript    -> REDIRECTS TO: http://192.168.29.13/javascript/
+301   317B   http://192.168.29.13/election    -> REDIRECTS TO: http://192.168.29.13/election/
+301   319B   http://192.168.29.13/phpmyadmin    -> REDIRECTS TO: http://192.168.29.13/phpmyadmin/
+403   278B   http://192.168.29.13/server-status

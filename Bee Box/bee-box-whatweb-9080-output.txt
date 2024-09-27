@@ -1,0 +1,1 @@
+http://192.168.1.229:9080 [200 OK] Country[RESERVED][ZZ], HTML5, HTTPServer[lighttpd/1.4.19], IP[192.168.1.229], lighttpd[1.4.19]

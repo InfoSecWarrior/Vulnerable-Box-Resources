@@ -1,0 +1,9 @@
+# Dirsearch started Thu Sep 26 15:46:48 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.119:9999 -o Hacker-kid-dirsearch-9999-output.txt -q
+
+404   478B   http://192.168.1.119:9999/favicon.ico
+200   452B   http://192.168.1.119:9999/login
+302     0B   http://192.168.1.119:9999/logout    -> REDIRECTS TO: /
+404   478B   http://192.168.1.119:9999/robots.txt
+404   478B   http://192.168.1.119:9999/static/api/swagger.json
+404   478B   http://192.168.1.119:9999/static/dump.sql
+404   478B   http://192.168.1.119:9999/static/api/swagger.yaml

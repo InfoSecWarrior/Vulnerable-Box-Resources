@@ -1,0 +1,24 @@
+[apache-detect] [http] [info] http://192.168.1.11:80 ["Apache/2.4.38 (Debian)"]
+[cookies-without-httponly] [http] [info] http://192.168.1.11:80
+[cookies-without-secure] [http] [info] http://192.168.1.11:80
+[metatag-cms] [http] [info] http://192.168.1.11:80 ["CMS Made Simple - Copyright (C) 2004-2020. All rights reserved."]
+[tech-detect:google-font-api] [http] [info] http://192.168.1.11:80
+[tech-detect:cms-made-simple] [http] [info] http://192.168.1.11:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.11:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.11:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.11:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.11:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.11:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.11:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.11:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.11:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.11:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.11:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.11:80
+[mixed-passive-content:img] [http] [info] http://192.168.1.11:80 ["http://192.168.1.11/uploads/simplex/teaser/palm-logo.png","http://192.168.1.11/uploads/simplex/teaser/mate-zimple.png","http://192.168.1.11/uploads/simplex/teaser/mobile-devices-scene.png","http://192.168.1.11/uploads/simplex/teaser/browser-scene.png","http://192.168.1.11/uploads/simplex/images/cmsmadesimple-logo.png"]
+[phpinfo-files] [http] [low] http://192.168.1.11:80/phpinfo.php ["7.3.14"] [paths="/phpinfo.php"]
+[missing-sri] [http] [info] http://192.168.1.11:80 ["http://192.168.1.11/lib/jquery/js/jquery-1.11.1.min.js"]
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.11:80
+[mysql-info] [javascript] [info] 192.168.1.11:3306 ["Version:","Transport: tcp"]
+[ssh-auth-methods] [javascript] [info] 192.168.1.11:22 ["["publickey"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.11:22 ["Vulnerable to Terrapin"]

@@ -1,0 +1,341 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.29.49
++ Target Port: 80
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /webcgi/: Directory indexing found.
++ GET /cgi/: Directory indexing found.
++ GET /cgi-bin/: Directory indexing found.
++ GET /cgi-sys/: Directory indexing found.
++ GET /cgibin/: Directory indexing found.
++ GET /cgi-win/: Directory indexing found.
++ GET /fcgi-bin/: Directory indexing found.
++ GET /cgi-exe/: Directory indexing found.
++ GET /robots.txt: Entry '/flag-numero-uno.txt' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /lukeiamyourfather/: Directory indexing found.
++ GET /robots.txt: Entry '/lukeiamyourfather/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /lookalivelowbridge/: Directory indexing found.
++ GET /robots.txt: Entry '/lookalivelowbridge/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: contains 4 entries which should be manually viewed. See: https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt: 
++ GET /aspnet_client: The web server may reveal its internal or real IP in the Location header via a request to with HTTP/1.0. The value is "127.0.1.1". See: CVE-2000-0649: 
++ GET /: Server may leak inodes via ETags, header found with file /, inode: 498, size: 5371fb88ff1d8, mtime: gzip. See: CVE-2003-1418: 
++ HEAD Apache/2.4.18 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ OPTIONS OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, OPTIONS .
++ GET /~root/: Directory indexing found.
++ GET /~root/: Allowed to browse root's home directory. See: CVE-2001-1013: 
++ GET /iisadmin/: Directory indexing found.
++ GET /iisadmin/: Access to /iisadmin should be restricted to localhost or allowed hosts only.
++ GET /webmail/: Directory indexing found.
++ GET /webmail/: Web based mail package installed.
++ GET /search/: Directory indexing found.
++ GET /guestbook/: Directory indexing found.
++ GET /guestbook/?number=5&lng=%3Cscript%3Ealert(document.domain);%3C/script%3E: MPM Guestbook 1.2 and previous are vulnreable to XSS attacks. See: OSVDB-2754: 
++ GET /ariadne/: Directory indexing found.
++ GET /ariadne/: Ariadne pre 2.1.2 has several vulnerabilities. The default login/pass to the admin page is admin/muze.
++ GET /manager/: Directory indexing found.
++ GET /admin/: Directory indexing found.
++ GET /web/: Directory indexing found.
++ GET /publisher/: Directory indexing found.
++ GET /publisher/: Netscape Enterprise Server with Web Publishing can allow attackers to edit web pages and/or list arbitrary directories via Java applet. See: CVE-2000-0237: 
++ GET /photo/: Directory indexing found.
++ GET /photo/: My Photo Gallery pre 3.6 contains multiple vulnerabilities including directory traversal, unspecified vulnerabilities and remote management interface access. See: OSVDB-2695: 
++ GET /pdf/: Directory indexing found.
++ GET /acceso/: Directory indexing found.
++ GET /acceso/: This might be interesting.
++ GET /access/: Directory indexing found.
++ GET /access/: This might be interesting.
++ GET /acciones/: Directory indexing found.
++ GET /acciones/: This might be interesting.
++ GET /admin/: This might be interesting.
++ GET /Administration/: Directory indexing found.
++ GET /Administration/: This might be interesting.
++ GET /administrator/: Directory indexing found.
++ GET /administrator/: This might be interesting.
++ GET /analog/: Directory indexing found.
++ GET /analog/: This might be interesting.
++ GET /archivar/: Directory indexing found.
++ GET /archivar/: This might be interesting.
++ GET /archive/: Directory indexing found.
++ GET /archive/: This might be interesting.
++ GET /archivo/: Directory indexing found.
++ GET /archivo/: This might be interesting.
++ GET /backup/: Directory indexing found.
++ GET /backup/: This might be interesting.
++ GET /banca/: Directory indexing found.
++ GET /banca/: This might be interesting.
++ GET /banco/: Directory indexing found.
++ GET /banco/: This might be interesting.
++ GET /bdata/: Directory indexing found.
++ GET /bdata/: This might be interesting.
++ GET /bdatos/: Directory indexing found.
++ GET /bdatos/: This might be interesting.
++ GET /beta/: Directory indexing found.
++ GET /beta/: This might be interesting.
++ GET /c/: Directory indexing found.
++ GET /c/: This might be interesting.
++ GET /caja/: Directory indexing found.
++ GET /caja/: This might be interesting.
++ GET /cards/: Directory indexing found.
++ GET /cards/: This might be interesting.
++ GET /cart/: Directory indexing found.
++ GET /cart/: This might be interesting.
++ GET /cdrom/: Directory indexing found.
++ GET /cdrom/: This might be interesting.
++ GET /cert/: Directory indexing found.
++ GET /cert/: This might be interesting.
++ GET /cliente/: Directory indexing found.
++ GET /cliente/: This might be interesting.
++ GET /compra/: Directory indexing found.
++ GET /compra/: This might be interesting.
++ GET /compras/: Directory indexing found.
++ GET /compras/: This might be interesting.
++ GET /compressed/: Directory indexing found.
++ GET /compressed/: This might be interesting.
++ GET /conecta/: Directory indexing found.
++ GET /conecta/: This might be interesting.
++ GET /counter/: Directory indexing found.
++ GET /cuenta/: Directory indexing found.
++ GET /cuenta/: This might be interesting.
++ GET /cuentas/: Directory indexing found.
++ GET /cuentas/: This might be interesting.
++ GET /dato/: Directory indexing found.
++ GET /dato/: This might be interesting.
++ GET /db/: Directory indexing found.
++ GET /db/: This might be interesting.
++ GET /demo/: Directory indexing found.
++ GET /demo/: This might be interesting.
++ GET /dev/: Directory indexing found.
++ GET /dev/: This might be interesting.
++ GET /devel/: Directory indexing found.
++ GET /devel/: This might be interesting.
++ GET /directory/: Directory indexing found.
++ GET /directory/: This might be interesting.
++ GET /down/: Directory indexing found.
++ GET /down/: This might be interesting.
++ GET /download/: Directory indexing found.
++ GET /download/: This might be interesting.
++ GET /downloads/: Directory indexing found.
++ GET /downloads/: This might be interesting.
++ GET /ejemplo/: Directory indexing found.
++ GET /ejemplo/: This might be interesting.
++ GET /ejemplos/: Directory indexing found.
++ GET /ejemplos/: This might be interesting.
++ GET /envia/: Directory indexing found.
++ GET /envia/: This might be interesting.
++ GET /file/: Directory indexing found.
++ GET /file/: This might be interesting.
++ GET /fileadmin/: Directory indexing found.
++ GET /fileadmin/: This might be interesting.
++ GET /files/: Directory indexing found.
++ GET /files/: This might be interesting.
++ GET /foto/: Directory indexing found.
++ GET /foto/: This might be interesting.
++ GET /graphics/: Directory indexing found.
++ GET /graphics/: This might be interesting.
++ GET /guestbook/: This might be interesting.
++ GET /guests/: Directory indexing found.
++ GET /guests/: This might be interesting.
++ GET /hidden/: Directory indexing found.
++ GET /hidden/: This might be interesting.
++ GET /home/: Directory indexing found.
++ GET /home/: This might be interesting.
++ GET /homepage/: Directory indexing found.
++ GET /homepage/: This might be interesting.
++ GET /import/: Directory indexing found.
++ GET /import/: This might be interesting.
++ GET /includes/: Directory indexing found.
++ GET /includes/: This might be interesting.
++ GET /informacion/: Directory indexing found.
++ GET /informacion/: This might be interesting.
++ GET /ingresa/: Directory indexing found.
++ GET /ingresa/: This might be interesting.
++ GET /ingreso/: Directory indexing found.
++ GET /ingreso/: This might be interesting.
++ GET /internal/: Directory indexing found.
++ GET /internal/: This might be interesting.
++ GET /intranet/: Directory indexing found.
++ GET /intranet/: This might be interesting.
++ GET /invitado/: Directory indexing found.
++ GET /invitado/: This might be interesting.
++ GET /invitados/: Directory indexing found.
++ GET /invitados/: This might be interesting.
++ GET /java/: Directory indexing found.
++ GET /java/: This might be interesting.
++ GET /job/: Directory indexing found.
++ GET /job/: This might be interesting.
++ GET /jrun/: Directory indexing found.
++ GET /jrun/: This might be interesting.
++ GET /lib/: Directory indexing found.
++ GET /lib/: This might be interesting.
++ GET /library/: Directory indexing found.
++ GET /library/: This might be interesting.
++ GET /linux/: Directory indexing found.
++ GET /linux/: This might be interesting.
++ GET /logfiles/: Directory indexing found.
++ GET /logfiles/: This might be interesting.
++ GET /logger/: Directory indexing found.
++ GET /logger/: This might be interesting.
++ GET /login/: Directory indexing found.
++ GET /login/: This might be interesting.
++ GET /movimientos/: Directory indexing found.
++ GET /movimientos/: This might be interesting.
++ GET /mp3/: Directory indexing found.
++ GET /mp3/: This might be interesting.
++ GET /mqseries/: Directory indexing found.
++ GET /mqseries/: This might be interesting.
++ GET /old/: Directory indexing found.
++ GET /old/: This might be interesting.
++ GET /passwords/: Directory indexing found.
++ GET /passwords/: This might be interesting.
++ GET /private/: Directory indexing found.
++ GET /private/: This might be interesting.
++ GET /prueba/: Directory indexing found.
++ GET /prueba/: This might be interesting.
++ GET /pruebas/: Directory indexing found.
++ GET /pruebas/: This might be interesting.
++ GET /publica/: Directory indexing found.
++ GET /publica/: This might be interesting.
++ GET /publico/: Directory indexing found.
++ GET /publico/: This might be interesting.
++ GET /purchase/: Directory indexing found.
++ GET /purchase/: This might be interesting.
++ GET /register/: Directory indexing found.
++ GET /register/: This might be interesting.
++ GET /registered/: Directory indexing found.
++ GET /registered/: This might be interesting.
++ GET /reports/: Directory indexing found.
++ GET /reports/: This might be interesting.
++ GET /root/: Directory indexing found.
++ GET /save/: Directory indexing found.
++ GET /save/: This might be interesting.
++ GET /secure/: Directory indexing found.
++ GET /server_stats/: Directory indexing found.
++ GET /servicio/: Directory indexing found.
++ GET /servicio/: This might be interesting.
++ GET /shop/: Directory indexing found.
++ GET /shop/: This might be interesting.
++ GET /source/: Directory indexing found.
++ GET /sql/: Directory indexing found.
++ GET /ssi/: Directory indexing found.
++ GET /staff/: Directory indexing found.
++ GET /staff/: This might be interesting.
++ GET /stat/: Directory indexing found.
++ GET /stat/: This might be interesting.
++ GET /Statistics/: Directory indexing found.
++ GET /Statistics/: This might be interesting.
++ GET /statistics/: Directory indexing found.
++ GET /statistics/: This might be interesting.
++ GET /Stats/: Directory indexing found.
++ GET /Stats/: This might be interesting.
++ GET /store/: Directory indexing found.
++ GET /store/: This might be interesting.
++ GET /stylesheets/: Directory indexing found.
++ GET /stylesheets/: This might be interesting.
++ GET /subir/: Directory indexing found.
++ GET /subir/: This might be interesting.
++ GET /sys/: Directory indexing found.
++ GET /sys/: This might be interesting.
++ GET /system/: Directory indexing found.
++ GET /system/: This might be interesting.
++ GET /temp/: Directory indexing found.
++ GET /temp/: This might be interesting.
++ GET /template/: Directory indexing found.
++ GET /template/: This might be interesting: could have sensitive files or system information.
++ GET /test/: Directory indexing found.
++ GET /test/: This might be interesting.
++ GET /tests/: Directory indexing found.
++ GET /tests/: This might be interesting.
++ GET /tmp/: Directory indexing found.
++ GET /tmp/: This might be interesting.
++ GET /trabajo/: Directory indexing found.
++ GET /trabajo/: This might be interesting.
++ GET /transito/: Directory indexing found.
++ GET /transito/: This might be interesting.
++ GET /user/: Directory indexing found.
++ GET /user/: This might be interesting.
++ GET /ustats/: Directory indexing found.
++ GET /ustats/: This might be interesting.
++ GET /usuario/: Directory indexing found.
++ GET /usuario/: This might be interesting.
++ GET /vfs/: Directory indexing found.
++ GET /vfs/: This might be interesting.
++ GET /web/: This might be interesting.
++ GET /webadmin/: Directory indexing found.
++ GET /webadmin/: This might be interesting: probably HostingController, www.hostingcontroller.com.
++ GET /webboard/: Directory indexing found.
++ GET /webboard/: This might be interesting.
++ GET /webcart/: Directory indexing found.
++ GET /webcart/: This might be interesting.
++ GET /webdata/: Directory indexing found.
++ GET /webdata/: This might be interesting.
++ GET /work/: Directory indexing found.
++ GET /work/: This might be interesting.
++ GET /wwwlog/: Directory indexing found.
++ GET /wwwlog/: This might be interesting.
++ GET /market/: Directory indexing found.
++ GET /market/: Microsoft Site Server sample files may have SQL injection. See: https://github.com/sullo/advisory-archives/blob/master/RFP2201.txt: 
++ GET /databases/: Directory indexing found.
++ GET /databases/: Databases directy found.
++ GET /manager/: May be a web server or site manager.
++ GET /a/: Directory indexing found.
++ GET /a/: May be Kebi Web Mail administration menu. See: CWE-552: 
++ GET /image/: Directory indexing found.
++ GET /perl/: Directory indexing found.
++ GET /docs/: Directory indexing found.
++ GET /style/: Directory indexing found.
++ GET /jsp-examples/: Directory indexing found.
++ GET /pdfs/: Directory indexing found.
++ GET /icons/README: Apache default file found. See: https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/: 
++ GET /ad/: Directory indexing found.
++ GET /ad/: This might be interesting: potential country code (Andorra).
++ GET /ar/: Directory indexing found.
++ GET /ar/: This might be interesting: potential country code (Argentina).
++ GET /au/: Directory indexing found.
++ GET /au/: This might be interesting: potential country code (Australia).
++ GET /bb/: Directory indexing found.
++ GET /bb/: This might be interesting: potential country code (Barbados).
++ GET /cn/: Directory indexing found.
++ GET /cn/: This might be interesting: potential country code (China).
++ GET /fr/: Directory indexing found.
++ GET /fr/: This might be interesting: potential country code (France).
++ GET /gr/: Directory indexing found.
++ GET /gr/: This might be interesting: potential country code (Greece).
++ GET /in/: Directory indexing found.
++ GET /in/: This might be interesting: potential country code (India).
++ GET /id/: Directory indexing found.
++ GET /id/: This might be interesting: potential country code (Indonesia).
++ GET /im/: Directory indexing found.
++ GET /im/: This might be interesting: potential country code (Isle Of Man).
++ GET /it/: Directory indexing found.
++ GET /it/: This might be interesting: potential country code (Italy).
++ GET /jp/: Directory indexing found.
++ GET /jp/: This might be interesting: potential country code (Japan).
++ GET /my/: Directory indexing found.
++ GET /my/: This might be interesting: potential country code (Malaysia).
++ GET /me/: Directory indexing found.
++ GET /me/: This might be interesting: potential country code (Montenegro).
++ GET /ms/: Directory indexing found.
++ GET /ms/: This might be interesting: potential country code (Montserrat).
++ GET /ps/: Directory indexing found.
++ GET /ps/: This might be interesting: potential country code (Palestinian Territory).
++ GET /bl/: Directory indexing found.
++ GET /bl/: This might be interesting: potential country code (Saint BarthÉlemy).
++ GET /st/: Directory indexing found.
++ GET /st/: This might be interesting: potential country code (Sao Tome And Principe).
++ GET /configuration/: Directory indexing found.
++ GET /configuration/: Admin login page/section found.
++ GET /sysadmin/: Directory indexing found.
++ GET /sysadmin/: Admin login page/section found.
++ GET /servlets-examples/: Directory indexing found.
++ GET /servlets-examples/: Tomcat servlets examples are visible.
++ GET /cms/: Directory indexing found.
++ GET /cms/: This might be interesting.
++ GET /phpMyAdmin/: Directory indexing found.
++ GET /phpMyAdmin/: phpMyAdmin directory found.
++ GET /snoop/: Directory indexing found.
++ GET /debug/: Directory indexing found.
++ GET /debug/: Possible debug directory/program found.
++ GET /~ftp/: Directory indexing found.
++ GET /~ftp/: Allowed to browse ftp user's home directory. See: CVE-2001-1013: 
++ GET /ui/: Directory indexing found.
++ GET /#wp-config.php#: #wp-config.php# file found. This file contains the credentials.

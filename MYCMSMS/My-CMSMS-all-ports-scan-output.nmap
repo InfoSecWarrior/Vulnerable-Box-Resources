@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 10:52:22 2024 as: nmap -v -Pn -p- -oA My-CMSMS-all-ports-scan-output 192.168.1.11
+Nmap scan report for 192.168.1.11
+Host is up (0.00014s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+3306/tcp  open  mysql
+33060/tcp open  mysqlx
+MAC Address: 08:00:27:DD:19:22 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Sep 25 10:52:26 2024 -- 1 IP address (1 host up) scanned in 3.21 seconds

@@ -1,0 +1,50 @@
+# Nmap 7.94 scan initiated Wed Sep 25 17:26:35 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,111,3306,53472 -oA pwnlab-scan-results-nmap-version-scan-output 192.168.29.172
+Nmap scan report for 192.168.29.172
+Host is up (0.00030s latency).
+
+PORT      STATE SERVICE VERSION
+80/tcp    open  http    Apache httpd 2.4.10 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: PwnLab Intranet Image Hosting
+|_http-server-header: Apache/2.4.10 (Debian)
+111/tcp   open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1          48521/udp6  status
+|   100024  1          48923/udp   status
+|   100024  1          53472/tcp   status
+|_  100024  1          54990/tcp6  status
+3306/tcp  open  mysql   MySQL 5.5.47-0+deb8u1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.5.47-0+deb8u1
+|   Thread ID: 40
+|   Capabilities flags: 63487
+|   Some Capabilities: LongColumnFlag, Support41Auth, Speaks41ProtocolOld, SupportsTransactions, InteractiveClient, Speaks41ProtocolNew, IgnoreSigpipes, IgnoreSpaceBeforeParenthesis, SupportsLoadDataLocal, LongPassword, DontAllowDatabaseTableColumn, ODBCClient, ConnectWithDatabase, FoundRows, SupportsCompression, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: k|LFZrPv"Es6Ng>;P`r>
+|_  Auth Plugin Name: mysql_native_password
+53472/tcp open  status  1 (RPC #100024)
+MAC Address: 08:00:27:DE:44:DD (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 0.003 days (since Wed Sep 25 17:22:50 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.30 ms 192.168.29.172
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Sep 25 17:26:48 2024 -- 1 IP address (1 host up) scanned in 12.97 seconds

@@ -1,0 +1,5 @@
+# Nmap 7.94 scan initiated Wed Sep 25 17:26:34 2024 as: nmap -v -Pn -p- -oA pwnlab-scan-results-all-ports-scan-output 192.168.29.172
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.29.172 ()	Status: Up
+Host: 192.168.29.172 ()	Ports: 80/open/tcp//http///, 111/open/tcp//rpcbind///, 3306/open/tcp//mysql///, 53472/open/tcp/////	Ignored State: closed (65531)
+# Nmap done at Wed Sep 25 17:26:35 2024 -- 1 IP address (1 host up) scanned in 1.28 seconds

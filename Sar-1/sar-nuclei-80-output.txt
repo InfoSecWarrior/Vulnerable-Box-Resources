@@ -1,0 +1,2 @@
+[phpinfo-files] [http] [low] http://192.168.1.14:80/phpinfo.php ["7.1.32"] [paths="/phpinfo.php"]
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.14:80

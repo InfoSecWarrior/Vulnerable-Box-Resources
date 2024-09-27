@@ -1,0 +1,20 @@
+[apache-detect] [http] [info] http://192.168.56.110:80 [Apache/2.0.52 (CentOS)]
+[php-detect] [http] [info] http://192.168.56.110:80 [4.3.9]
+[tech-detect:php] [http] [info] http://192.168.56.110:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.56.110:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.56.110:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.56.110:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.56.110:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.56.110:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.56.110:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.56.110:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.56.110:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.56.110:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.56.110:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.56.110:80
+[http-trace:trace-request] [http] [info] http://192.168.56.110:80
+[waf-detect:apachegeneric] [http] [info] http://192.168.56.110:80/
+[mysql-detect] [tcp] [info] 192.168.56.110:3306
+[CVE-2001-1473] [tcp] [high] 192.168.56.110:22
+[openssh-detect] [tcp] [info] 192.168.56.110:22 [SSH-1.99-OpenSSH_3.9p1
+]

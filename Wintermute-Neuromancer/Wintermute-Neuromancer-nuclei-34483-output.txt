@@ -1,0 +1,5 @@
+[ssh-auth-methods] [javascript] [info] 192.168.1.15:34483 ["["publickey","password"]"]
+[ssh-password-auth] [javascript] [info] 192.168.1.15:34483
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.15:34483
+[ssh-server-enumeration] [javascript] [info] 192.168.1.15:34483 ["SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.4"]
+[openssh-detect] [tcp] [info] 192.168.1.15:34483 ["SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.4"]

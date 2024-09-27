@@ -1,0 +1,11 @@
+# Dirsearch started Mon Sep 23 18:22:01 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.205:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o its-oct-dirsearch-80-wordlist-output.txt -q
+
+301   315B   http://192.168.1.205/themes    -> REDIRECTS TO: http://192.168.1.205/themes/
+301   316B   http://192.168.1.205/modules    -> REDIRECTS TO: http://192.168.1.205/modules/
+301   316B   http://192.168.1.205/storage    -> REDIRECTS TO: http://192.168.1.205/storage/
+301   316B   http://192.168.1.205/plugins    -> REDIRECTS TO: http://192.168.1.205/plugins/
+302   410B   http://192.168.1.205/backend    -> REDIRECTS TO: http://192.168.1.205/backend/backend/auth
+301   315B   http://192.168.1.205/vendor    -> REDIRECTS TO: http://192.168.1.205/vendor/
+301   315B   http://192.168.1.205/config    -> REDIRECTS TO: http://192.168.1.205/config/
+404   275B   http://192.168.1.205/http%3A%2F%2Fwww
+301   318B   http://192.168.1.205/bootstrap    -> REDIRECTS TO: http://192.168.1.205/bootstrap/

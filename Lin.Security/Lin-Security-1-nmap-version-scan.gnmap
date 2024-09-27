@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Tue Sep 24 12:45:08 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,111,2049,38663,39129,43147,50153 -oA Lin-Security-1-nmap-version-scan 192.168.1.112
+# Ports scanned: TCP(7;22,111,2049,38663,39129,43147,50153) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.112 (192.168.1.112)	Status: Up
+Host: 192.168.1.112 (192.168.1.112)	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 2049/open/tcp//nfs//3-4 (RPC #100003)/, 38663/open/tcp//mountd//1-3 (RPC #100005)/, 39129/open/tcp//nlockmgr//1-4 (RPC #100021)/, 43147/open/tcp//mountd//1-3 (RPC #100005)/, 50153/open/tcp//mountd//1-3 (RPC #100005)/	OS: Linux 3.2 - 4.9	Seq Index: 260	IP ID Seq: All zeros
+# Nmap done at Tue Sep 24 12:45:16 2024 -- 1 IP address (1 host up) scanned in 8.05 seconds

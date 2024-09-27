@@ -1,0 +1,18 @@
+[options-method] [http] [info] http://192.168.29.49:80 ["GET,HEAD,POST,OPTIONS"]
+[apache-detect] [http] [info] http://192.168.29.49:80 ["Apache/2.4.18 (Ubuntu)"]
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.29.49:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.29.49:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.29.49:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.29.49:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.29.49:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.29.49:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.29.49:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.29.49:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.29.49:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.29.49:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.29.49:80
+[robots-txt-endpoint] [http] [info] http://192.168.29.49:80/robots.txt
+[waf-detect:apachegeneric] [http] [info] http://192.168.29.49:80
+[wordpress-directory-listing] [http] [info] http://192.168.29.49:80/wp-includes/
+[ssh-auth-methods] [javascript] [info] 192.168.29.49:22 ["["publickey","password"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.29.49:22 ["Vulnerable to Terrapin"]

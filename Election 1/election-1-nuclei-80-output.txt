@@ -1,0 +1,5 @@
+[phpmyadmin-panel] [http] [info] http://192.168.29.13:80/phpmyadmin/ ["4.6.6deb5"] [paths="/phpmyadmin/"]
+[phpinfo-files] [http] [low] http://192.168.29.13:80/phpinfo.php ["7.1.33"] [paths="/phpinfo.php"]
+[waf-detect:apachegeneric] [http] [info] http://192.168.29.13:80
+[ssh-auth-methods] [javascript] [info] 192.168.29.13:22 ["["publickey","password"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.29.13:22 ["Vulnerable to Terrapin"]

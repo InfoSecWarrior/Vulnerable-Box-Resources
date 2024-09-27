@@ -1,0 +1,7 @@
+{"timestamp":"2024-09-24T12:45:17.685565473+05:30","url":"http://192.168.1.112:39129","input":"192.168.1.112:39129","error":"EOF","words":0,"lines":0,"status_code":0,"content_length":0,"failed":true}
+{"timestamp":"2024-09-24T12:45:17.685644741+05:30","url":"http://192.168.1.112:2049","input":"192.168.1.112:2049","error":"EOF","words":0,"lines":0,"status_code":0,"content_length":0,"failed":true}
+{"timestamp":"2024-09-24T12:45:17.689226462+05:30","url":"http://192.168.1.112:111","input":"192.168.1.112:111","error":"connection reset by peer","words":0,"lines":0,"status_code":0,"content_length":0,"failed":true}
+{"timestamp":"2024-09-24T12:45:17.689963629+05:30","url":"http://192.168.1.112:50153","input":"192.168.1.112:50153","error":"connection reset by peer","words":0,"lines":0,"status_code":0,"content_length":0,"failed":true}
+{"timestamp":"2024-09-24T12:45:17.690012686+05:30","url":"http://192.168.1.112:43147","input":"192.168.1.112:43147","error":"connection reset by peer","words":0,"lines":0,"status_code":0,"content_length":0,"failed":true}
+{"timestamp":"2024-09-24T12:45:17.690030612+05:30","url":"http://192.168.1.112:38663","input":"192.168.1.112:38663","error":"connection reset by peer","words":0,"lines":0,"status_code":0,"content_length":0,"failed":true}
+{"timestamp":"2024-09-24T12:45:17.694365253+05:30","url":"http://192.168.1.112:22","input":"192.168.1.112:22","error":"malformed HTTP status code \"Ubuntu-4\"","words":0,"lines":0,"status_code":0,"content_length":0,"failed":true}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Sep 26 19:10:22 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,8080 -oA MyTomcatHost:1-nmap-version-scan-output 192.168.1.203 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,8080 -oA MyTomcatHost:1-nmap-version-scan-output 192.168.1.203" start="1727358022" startstr="Thu Sep 26 19:10:22 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,8080"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727358022"/>
+<taskend task="NSE" time="1727358022"/>
+<taskbegin task="NSE" time="1727358022"/>
+<taskend task="NSE" time="1727358022"/>
+<taskbegin task="NSE" time="1727358022"/>
+<taskend task="NSE" time="1727358022"/>
+<taskbegin task="ARP Ping Scan" time="1727358022"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.203" addrtype="ipv4"/>
+<address addr="08:00:27:6B:A8:0C" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727358022" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727358022"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727358023"/>
+<taskbegin task="Connect Scan" time="1727358023"/>
+<taskend task="Connect Scan" time="1727358023" extrainfo="2 total ports"/>
+<taskbegin task="Service scan" time="1727358023"/>
+<taskend task="Service scan" time="1727358029" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1727358033"/>
+<taskend task="NSE" time="1727358033"/>
+<taskbegin task="NSE" time="1727358033"/>
+<taskend task="NSE" time="1727358033"/>
+<taskbegin task="NSE" time="1727358033"/>
+<taskend task="NSE" time="1727358033"/>
+<host starttime="1727358023" endtime="1727358033"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.203" addrtype="ipv4"/>
+<address addr="08:00:27:6B:A8:0C" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="6.6.1" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.6.1</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 61:16:10:91:bd:d7:6c:06:df:a2:b9:b5:b9:3b:dd:b6 (RSA)&#xa;  256 0e:a4:c9:fc:de:53:f6:1d:de:a9:de:e4:21:34:7d:1a (ECDSA)&#xa;  256 ec:27:1e:42:65:1c:4a:3b:93:1c:a1:75:be:00:22:0d (ED25519)"><table>
+<elem key="fingerprint">61161091bdd76c06dfa2b9b5b93bddb6</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDZwfoUnj5DzMlbK5tY6JtH+GOCmEqaGPle3wxNVabnbYeAicg/35OHCZX9UNBfXHCkxrE4GuuF5dt6g70UyLNxI5iO9A4wnANDvlAfKNTq/qsQdpemYcYZSwQQLWdi8Qnno7BIR5gteI8+ZtLvFjsQ8LSJ5Hc5Lx9+lxxoZwvCJKC1UjIYaWHJPaFRQPdb2y57+63NcA/Gki5z2DRoKou4aVz1qsjwHZUlP6L5FgoZb75RbfQJe4NCY4+TGAVdstR1wgRYm7dpoHnzWQwEm8ocAekK7slUwah4brpA2u+MpmF3FVTai2+zfi02s4XbahY5/SGQeqtKj2cWfDvL0IyV</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="fingerprint">0ea4c9fcde53f61ddea9dee421347d1a</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL6Wz1rv7fAEmPfOknHvjMFX3A3DB9/Mz9UpPQ3Zsb7lg8BwbTtlmh8e/HG70m6YeNAw+hqlWStW8gOBGSCI4h8=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="fingerprint">ec271e42651c4a3b931ca175be00220d</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJ1zwLp8Vh7UFjPnbTrrL720yHvmHUKVq91Og4oHTJha</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache Tomcat" version="9.0.31" method="probed" conf="10"><cpe>cpe:/a:apache:tomcat:9.0.31</cpe></service><script id="http-title" output="Apache Tomcat/9.0.31"><elem key="title">Apache Tomcat/9.0.31</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-favicon" output="Apache Tomcat"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<osmatch name="Linux 3.10 - 4.11" accuracy="97" line="63448">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="97" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.1" accuracy="97" line="68139">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:5.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13 - 3.16" accuracy="91" line="63954">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16 - 4.6" accuracy="91" line="64382">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.10" accuracy="91" line="67166">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="91" line="67361">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="91" line="55372">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.4 - 3.10" accuracy="91" line="65584">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.15 - 5.8" accuracy="91" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="4294947" lastboot="Thu Aug  8 02:08:06 2024"/>
+<distance value="1"/>
+<tcpsequence index="259" difficulty="Good luck!" values="B6EE2C53,DB263849,3E635BDE,47EB2A4,76439D53,B3338E43"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="FFFFA9E1,FFFFAA45,FFFFAAA9,FFFFAB0D,FFFFAB71,FFFFABD6"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.203" rtt="0.61"/>
+</trace>
+<times srtt="613" rttvar="113" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727358033"/>
+<taskend task="NSE" time="1727358033"/>
+<taskbegin task="NSE" time="1727358033"/>
+<taskend task="NSE" time="1727358033"/>
+<taskbegin task="NSE" time="1727358033"/>
+<taskend task="NSE" time="1727358033"/>
+<runstats><finished time="1727358033" timestr="Thu Sep 26 19:10:33 2024" summary="Nmap done at Thu Sep 26 19:10:33 2024; 1 IP address (1 host up) scanned in 10.93 seconds" elapsed="10.93" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
