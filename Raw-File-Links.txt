@@ -24,3 +24,4 @@ https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/h
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Sar-1/sar-all-ports-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Digitalworld.local(Development)/digitalworldlocal-development-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Bee%20Box/bee-box-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/DC-6/DC-6-nmap-version-scan.xml
