@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 21:13:07 2024 as: nmap -v -Pn -p- -oA sar-all-ports-scan-output 192.168.1.14
+Nmap scan report for 192.168.1.14 (192.168.1.14)
+Host is up (0.00012s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE
+80/tcp open  http
+MAC Address: 08:00:27:84:82:9B (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Sep 26 21:13:09 2024 -- 1 IP address (1 host up) scanned in 1.79 seconds

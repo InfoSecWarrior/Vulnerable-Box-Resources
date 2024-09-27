@@ -1,0 +1,23 @@
+# Dirsearch started Thu Sep 26 21:14:01 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.14:80 -o sar-dirsearch-80-output.txt -q
+
+403   277B   http://192.168.1.14/.ht_wsr.txt
+403   277B   http://192.168.1.14/.htaccess.bak1
+403   277B   http://192.168.1.14/.htaccess.save
+403   277B   http://192.168.1.14/.htaccess.sample
+403   277B   http://192.168.1.14/.htaccess.orig
+403   277B   http://192.168.1.14/.htaccess_extra
+403   277B   http://192.168.1.14/.htaccess_sc
+403   277B   http://192.168.1.14/.htaccessOLD
+403   277B   http://192.168.1.14/.htaccessOLD2
+403   277B   http://192.168.1.14/.htaccess_orig
+403   277B   http://192.168.1.14/.htaccessBAK
+403   277B   http://192.168.1.14/.html
+403   277B   http://192.168.1.14/.htm
+403   277B   http://192.168.1.14/.htpasswd_test
+403   277B   http://192.168.1.14/.httr-oauth
+403   277B   http://192.168.1.14/.htpasswds
+403   277B   http://192.168.1.14/.php
+200    24KB  http://192.168.1.14/phpinfo.php
+200     9B   http://192.168.1.14/robots.txt
+403   277B   http://192.168.1.14/server-status
+403   277B   http://192.168.1.14/server-status/
