@@ -1,0 +1,431 @@
+# Dirsearch started Thu Sep 26 20:18:10 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.49:80 -o TommyBoy-dirsearch-80-output.txt -q
+
+403   299B   http://192.168.29.49/.ht_wsr.txt
+403   302B   http://192.168.29.49/.htaccess.bak1
+403   302B   http://192.168.29.49/.htaccess.orig
+403   304B   http://192.168.29.49/.htaccess.sample
+403   302B   http://192.168.29.49/.htaccess.save
+403   303B   http://192.168.29.49/.htaccess_extra
+403   302B   http://192.168.29.49/.htaccess_orig
+403   300B   http://192.168.29.49/.htaccess_sc
+403   300B   http://192.168.29.49/.htaccessBAK
+403   300B   http://192.168.29.49/.htaccessOLD
+403   301B   http://192.168.29.49/.htaccessOLD2
+403   292B   http://192.168.29.49/.htm
+403   293B   http://192.168.29.49/.html
+403   302B   http://192.168.29.49/.htpasswd_test
+403   298B   http://192.168.29.49/.htpasswds
+403   299B   http://192.168.29.49/.httr-oauth
+301   311B   http://192.168.29.49/js    -> REDIRECTS TO: http://192.168.29.49/js/
+403   292B   http://192.168.29.49/.php
+403   293B   http://192.168.29.49/.php3
+301   312B   http://192.168.29.49/102    -> REDIRECTS TO: http://192.168.29.49/102/
+301   312B   http://192.168.29.49/1x1    -> REDIRECTS TO: http://192.168.29.49/1x1/
+301   311B   http://192.168.29.49/20    -> REDIRECTS TO: http://192.168.29.49/20/
+301   313B   http://192.168.29.49/2004    -> REDIRECTS TO: http://192.168.29.49/2004/
+301   313B   http://192.168.29.49/2001    -> REDIRECTS TO: http://192.168.29.49/2001/
+301   310B   http://192.168.29.49/3    -> REDIRECTS TO: http://192.168.29.49/3/
+301   311B   http://192.168.29.49/30    -> REDIRECTS TO: http://192.168.29.49/30/
+301   310B   http://192.168.29.49/@    -> REDIRECTS TO: http://192.168.29.49/@/
+301   315B   http://192.168.29.49/_pages    -> REDIRECTS TO: http://192.168.29.49/_pages/
+301   317B   http://192.168.29.49/_vti_cnf    -> REDIRECTS TO: http://192.168.29.49/_vti_cnf/
+200   409B   http://192.168.29.49/_vti_cnf/
+301   317B   http://192.168.29.49/_vti_pvt    -> REDIRECTS TO: http://192.168.29.49/_vti_pvt/
+200   409B   http://192.168.29.49/_vti_pvt/
+301   310B   http://192.168.29.49/a    -> REDIRECTS TO: http://192.168.29.49/a/
+301   311B   http://192.168.29.49/aa    -> REDIRECTS TO: http://192.168.29.49/aa/
+301   317B   http://192.168.29.49/abcd1234    -> REDIRECTS TO: http://192.168.29.49/abcd1234/
+301   312B   http://192.168.29.49/abc    -> REDIRECTS TO: http://192.168.29.49/abc/
+301   314B   http://192.168.29.49/About    -> REDIRECTS TO: http://192.168.29.49/About/
+301   316B   http://192.168.29.49/AboutUs    -> REDIRECTS TO: http://192.168.29.49/AboutUs/
+301   316B   http://192.168.29.49/aboutus    -> REDIRECTS TO: http://192.168.29.49/aboutus/
+301   317B   http://192.168.29.49/abstract    -> REDIRECTS TO: http://192.168.29.49/abstract/
+301   317B   http://192.168.29.49/academic    -> REDIRECTS TO: http://192.168.29.49/academic/
+301   318B   http://192.168.29.49/academics    -> REDIRECTS TO: http://192.168.29.49/academics/
+301   314B   http://192.168.29.49/acces    -> REDIRECTS TO: http://192.168.29.49/acces/
+301   315B   http://192.168.29.49/acceso    -> REDIRECTS TO: http://192.168.29.49/acceso/
+301   315B   http://192.168.29.49/access    -> REDIRECTS TO: http://192.168.29.49/access/
+200   407B   http://192.168.29.49/access/
+301   317B   http://192.168.29.49/accounts    -> REDIRECTS TO: http://192.168.29.49/accounts/
+200   408B   http://192.168.29.49/accounts/
+301   311B   http://192.168.29.49/ad    -> REDIRECTS TO: http://192.168.29.49/ad/
+301   314B   http://192.168.29.49/admin    -> REDIRECTS TO: http://192.168.29.49/admin/
+200   407B   http://192.168.29.49/admin/
+301   315B   http://192.168.29.49/admin_    -> REDIRECTS TO: http://192.168.29.49/admin_/
+200   407B   http://192.168.29.49/admin_/
+301   322B   http://192.168.29.49/administracio    -> REDIRECTS TO: http://192.168.29.49/administracio/
+301   322B   http://192.168.29.49/administrator    -> REDIRECTS TO: http://192.168.29.49/administrator/
+200   411B   http://192.168.29.49/administrator/
+301   319B   http://192.168.29.49/adminlogon    -> REDIRECTS TO: http://192.168.29.49/adminlogon/
+200   410B   http://192.168.29.49/adminlogon/
+301   320B   http://192.168.29.49/advertising    -> REDIRECTS TO: http://192.168.29.49/advertising/
+301   318B   http://192.168.29.49/affiliate    -> REDIRECTS TO: http://192.168.29.49/affiliate/
+301   313B   http://192.168.29.49/ajax    -> REDIRECTS TO: http://192.168.29.49/ajax/
+301   315B   http://192.168.29.49/applet    -> REDIRECTS TO: http://192.168.29.49/applet/
+301   321B   http://192.168.29.49/applications    -> REDIRECTS TO: http://192.168.29.49/applications/
+301   316B   http://192.168.29.49/archive    -> REDIRECTS TO: http://192.168.29.49/archive/
+301   316B   http://192.168.29.49/article    -> REDIRECTS TO: http://192.168.29.49/article/
+200   403B   http://192.168.29.49/article/
+301   317B   http://192.168.29.49/articles    -> REDIRECTS TO: http://192.168.29.49/articles/
+200   412B   http://192.168.29.49/aspnet_client/
+301   322B   http://192.168.29.49/aspnet_client    -> REDIRECTS TO: http://192.168.29.49/aspnet_client/
+200   406B   http://192.168.29.49/assets/
+301   315B   http://192.168.29.49/assets    -> REDIRECTS TO: http://192.168.29.49/assets/
+301   320B   http://192.168.29.49/attachments    -> REDIRECTS TO: http://192.168.29.49/attachments/
+301   315B   http://192.168.29.49/author    -> REDIRECTS TO: http://192.168.29.49/author/
+301   315B   http://192.168.29.49/awards    -> REDIRECTS TO: http://192.168.29.49/awards/
+301   315B   http://192.168.29.49/backup    -> REDIRECTS TO: http://192.168.29.49/backup/
+200   404B   http://192.168.29.49/backup/
+200   407B   http://192.168.29.49/bamboo/
+301   311B   http://192.168.29.49/bb    -> REDIRECTS TO: http://192.168.29.49/bb/
+301   314B   http://192.168.29.49/beans    -> REDIRECTS TO: http://192.168.29.49/beans/
+301   313B   http://192.168.29.49/beta    -> REDIRECTS TO: http://192.168.29.49/beta/
+301   313B   http://192.168.29.49/book    -> REDIRECTS TO: http://192.168.29.49/book/
+301   315B   http://192.168.29.49/browse    -> REDIRECTS TO: http://192.168.29.49/browse/
+301   317B   http://192.168.29.49/business    -> REDIRECTS TO: http://192.168.29.49/business/
+301   310B   http://192.168.29.49/c    -> REDIRECTS TO: http://192.168.29.49/c/
+301   314B   http://192.168.29.49/cache    -> REDIRECTS TO: http://192.168.29.49/cache/
+200   402B   http://192.168.29.49/cache/
+301   313B   http://192.168.29.49/cart    -> REDIRECTS TO: http://192.168.29.49/cart/
+301   317B   http://192.168.29.49/category    -> REDIRECTS TO: http://192.168.29.49/category/
+200   402B   http://192.168.29.49/cert/
+301   320B   http://192.168.29.49/certificate    -> REDIRECTS TO: http://192.168.29.49/certificate/
+301   312B   http://192.168.29.49/cgi    -> REDIRECTS TO: http://192.168.29.49/cgi/
+301   316B   http://192.168.29.49/cgi-bin    -> REDIRECTS TO: http://192.168.29.49/cgi-bin/
+200   404B   http://192.168.29.49/cgi-bin/
+200   404B   http://192.168.29.49/cgi-exe/
+200   408B   http://192.168.29.49/cgi-sys/
+200   408B   http://192.168.29.49/cgi-win/
+200   401B   http://192.168.29.49/cgi/
+200   403B   http://192.168.29.49/cgibin/
+301   316B   http://192.168.29.49/cgi-sys    -> REDIRECTS TO: http://192.168.29.49/cgi-sys/
+301   318B   http://192.168.29.49/changelog    -> REDIRECTS TO: http://192.168.29.49/changelog/
+301   314B   http://192.168.29.49/class    -> REDIRECTS TO: http://192.168.29.49/class/
+301   314B   http://192.168.29.49/clear    -> REDIRECTS TO: http://192.168.29.49/clear/
+200   404B   http://192.168.29.49/cliente/
+301   312B   http://192.168.29.49/cms    -> REDIRECTS TO: http://192.168.29.49/cms/
+200   404B   http://192.168.29.49/cms/
+301   312B   http://192.168.29.49/cnt    -> REDIRECTS TO: http://192.168.29.49/cnt/
+301   315B   http://192.168.29.49/common    -> REDIRECTS TO: http://192.168.29.49/common/
+200   405B   http://192.168.29.49/common/
+301   318B   http://192.168.29.49/community    -> REDIRECTS TO: http://192.168.29.49/community/
+301   315B   http://192.168.29.49/compat    -> REDIRECTS TO: http://192.168.29.49/compat/
+301   318B   http://192.168.29.49/component    -> REDIRECTS TO: http://192.168.29.49/component/
+301   319B   http://192.168.29.49/components    -> REDIRECTS TO: http://192.168.29.49/components/
+200   410B   http://192.168.29.49/components/
+301   313B   http://192.168.29.49/conf    -> REDIRECTS TO: http://192.168.29.49/conf/
+200   401B   http://192.168.29.49/conf/
+200   411B   http://192.168.29.49/configuration/
+301   320B   http://192.168.29.49/connections    -> REDIRECTS TO: http://192.168.29.49/connections/
+301   316B   http://192.168.29.49/contact    -> REDIRECTS TO: http://192.168.29.49/contact/
+301   319B   http://192.168.29.49/contact_us    -> REDIRECTS TO: http://192.168.29.49/contact_us/
+301   317B   http://192.168.29.49/contacts    -> REDIRECTS TO: http://192.168.29.49/contacts/
+301   317B   http://192.168.29.49/contents    -> REDIRECTS TO: http://192.168.29.49/contents/
+301   319B   http://192.168.29.49/controller    -> REDIRECTS TO: http://192.168.29.49/controller/
+301   316B   http://192.168.29.49/counter    -> REDIRECTS TO: http://192.168.29.49/counter/
+301   311B   http://192.168.29.49/cp    -> REDIRECTS TO: http://192.168.29.49/cp/
+200   401B   http://192.168.29.49/cp/
+301   313B   http://192.168.29.49/cron    -> REDIRECTS TO: http://192.168.29.49/cron/
+200   402B   http://192.168.29.49/cron/
+200   406B   http://192.168.29.49/custom/
+301   311B   http://192.168.29.49/db    -> REDIRECTS TO: http://192.168.29.49/db/
+200   401B   http://192.168.29.49/db/
+301   314B   http://192.168.29.49/debug    -> REDIRECTS TO: http://192.168.29.49/debug/
+200   403B   http://192.168.29.49/debug/
+301   316B   http://192.168.29.49/default    -> REDIRECTS TO: http://192.168.29.49/default/
+301   313B   http://192.168.29.49/demo    -> REDIRECTS TO: http://192.168.29.49/demo/
+301   315B   http://192.168.29.49/delete    -> REDIRECTS TO: http://192.168.29.49/delete/
+200   402B   http://192.168.29.49/demo/
+301   315B   http://192.168.29.49/deploy    -> REDIRECTS TO: http://192.168.29.49/deploy/
+301   312B   http://192.168.29.49/dev    -> REDIRECTS TO: http://192.168.29.49/dev/
+301   314B   http://192.168.29.49/devel    -> REDIRECTS TO: http://192.168.29.49/devel/
+200   403B   http://192.168.29.49/devel/
+301   319B   http://192.168.29.49/developers    -> REDIRECTS TO: http://192.168.29.49/developers/
+200   402B   http://192.168.29.49/dev/
+301   318B   http://192.168.29.49/directory    -> REDIRECTS TO: http://192.168.29.49/directory/
+301   316B   http://192.168.29.49/display    -> REDIRECTS TO: http://192.168.29.49/display/
+301   311B   http://192.168.29.49/dl    -> REDIRECTS TO: http://192.168.29.49/dl/
+301   313B   http://192.168.29.49/docs    -> REDIRECTS TO: http://192.168.29.49/docs/
+301   315B   http://192.168.29.49/docs51    -> REDIRECTS TO: http://192.168.29.49/docs51/
+200   405B   http://192.168.29.49/docs/
+301   315B   http://192.168.29.49/donate    -> REDIRECTS TO: http://192.168.29.49/donate/
+301   313B   http://192.168.29.49/down    -> REDIRECTS TO: http://192.168.29.49/down/
+200   402B   http://192.168.29.49/down/
+301   317B   http://192.168.29.49/download    -> REDIRECTS TO: http://192.168.29.49/download/
+200   408B   http://192.168.29.49/download/
+301   318B   http://192.168.29.49/downloads    -> REDIRECTS TO: http://192.168.29.49/downloads/
+200   410B   http://192.168.29.49/downloads/
+301   313B   http://192.168.29.49/dump    -> REDIRECTS TO: http://192.168.29.49/dump/
+200   402B   http://192.168.29.49/dump/
+301   315B   http://192.168.29.49/e-mail    -> REDIRECTS TO: http://192.168.29.49/e-mail/
+301   312B   http://192.168.29.49/eng    -> REDIRECTS TO: http://192.168.29.49/eng/
+200   403B   http://192.168.29.49/engine/
+301   315B   http://192.168.29.49/engine    -> REDIRECTS TO: http://192.168.29.49/engine/
+301   319B   http://192.168.29.49/enterprise    -> REDIRECTS TO: http://192.168.29.49/enterprise/
+301   322B   http://192.168.29.49/entertainment    -> REDIRECTS TO: http://192.168.29.49/entertainment/
+301   315B   http://192.168.29.49/events    -> REDIRECTS TO: http://192.168.29.49/events/
+301   313B   http://192.168.29.49/exec    -> REDIRECTS TO: http://192.168.29.49/exec/
+301   316B   http://192.168.29.49/express    -> REDIRECTS TO: http://192.168.29.49/express/
+301   310B   http://192.168.29.49/f    -> REDIRECTS TO: http://192.168.29.49/f/
+301   312B   http://192.168.29.49/FAQ    -> REDIRECTS TO: http://192.168.29.49/FAQ/
+301   313B   http://192.168.29.49/faqs    -> REDIRECTS TO: http://192.168.29.49/faqs/
+301   317B   http://192.168.29.49/fcgi-bin    -> REDIRECTS TO: http://192.168.29.49/fcgi-bin/
+200   409B   http://192.168.29.49/fcgi-bin/
+301   317B   http://192.168.29.49/features    -> REDIRECTS TO: http://192.168.29.49/features/
+301   317B   http://192.168.29.49/feedback    -> REDIRECTS TO: http://192.168.29.49/feedback/
+301   313B   http://192.168.29.49/file    -> REDIRECTS TO: http://192.168.29.49/file/
+200   401B   http://192.168.29.49/file/
+301   318B   http://192.168.29.49/fileadmin    -> REDIRECTS TO: http://192.168.29.49/fileadmin/
+200   406B   http://192.168.29.49/fileadmin/
+301   314B   http://192.168.29.49/files    -> REDIRECTS TO: http://192.168.29.49/files/
+200   405B   http://192.168.29.49/files/
+301   314B   http://192.168.29.49/flags    -> REDIRECTS TO: http://192.168.29.49/flags/
+301   314B   http://192.168.29.49/fonts    -> REDIRECTS TO: http://192.168.29.49/fonts/
+301   314B   http://192.168.29.49/forms    -> REDIRECTS TO: http://192.168.29.49/forms/
+301   313B   http://192.168.29.49/free    -> REDIRECTS TO: http://192.168.29.49/free/
+301   311B   http://192.168.29.49/fr    -> REDIRECTS TO: http://192.168.29.49/fr/
+301   310B   http://192.168.29.49/g    -> REDIRECTS TO: http://192.168.29.49/g/
+200   408B   http://192.168.29.49/gateway/
+301   312B   http://192.168.29.49/get    -> REDIRECTS TO: http://192.168.29.49/get/
+301   317B   http://192.168.29.49/glossary    -> REDIRECTS TO: http://192.168.29.49/glossary/
+301   311B   http://192.168.29.49/go    -> REDIRECTS TO: http://192.168.29.49/go/
+301   317B   http://192.168.29.49/graphics    -> REDIRECTS TO: http://192.168.29.49/graphics/
+200   406B   http://192.168.29.49/groovy/
+301   314B   http://192.168.29.49/group    -> REDIRECTS TO: http://192.168.29.49/group/
+301   314B   http://192.168.29.49/guide    -> REDIRECTS TO: http://192.168.29.49/guide/
+301   315B   http://192.168.29.49/guides    -> REDIRECTS TO: http://192.168.29.49/guides/
+301   313B   http://192.168.29.49/home    -> REDIRECTS TO: http://192.168.29.49/home/
+301   317B   http://192.168.29.49/homepage    -> REDIRECTS TO: http://192.168.29.49/homepage/
+301   312B   http://192.168.29.49/ibm    -> REDIRECTS TO: http://192.168.29.49/ibm/
+301   317B   http://192.168.29.49/iisadmin    -> REDIRECTS TO: http://192.168.29.49/iisadmin/
+200   408B   http://192.168.29.49/iisadmin/
+301   314B   http://192.168.29.49/image    -> REDIRECTS TO: http://192.168.29.49/image/
+301   317B   http://192.168.29.49/images01    -> REDIRECTS TO: http://192.168.29.49/images01/
+301   315B   http://192.168.29.49/import    -> REDIRECTS TO: http://192.168.29.49/import/
+200   403B   http://192.168.29.49/import/
+301   311B   http://192.168.29.49/in    -> REDIRECTS TO: http://192.168.29.49/in/
+200   401B   http://192.168.29.49/in/
+200   408B   http://192.168.29.49/includes/
+301   317B   http://192.168.29.49/includes    -> REDIRECTS TO: http://192.168.29.49/includes/
+301   314B   http://192.168.29.49/index    -> REDIRECTS TO: http://192.168.29.49/index/
+301   312B   http://192.168.29.49/ini    -> REDIRECTS TO: http://192.168.29.49/ini/
+301   322B   http://192.168.29.49/INSTALL_admin    -> REDIRECTS TO: http://192.168.29.49/INSTALL_admin/
+301   317B   http://192.168.29.49/internal    -> REDIRECTS TO: http://192.168.29.49/internal/
+301   317B   http://192.168.29.49/internet    -> REDIRECTS TO: http://192.168.29.49/internet/
+301   322B   http://192.168.29.49/international    -> REDIRECTS TO: http://192.168.29.49/international/
+301   317B   http://192.168.29.49/intranet    -> REDIRECTS TO: http://192.168.29.49/intranet/
+301   311B   http://192.168.29.49/it    -> REDIRECTS TO: http://192.168.29.49/it/
+301   315B   http://192.168.29.49/issues    -> REDIRECTS TO: http://192.168.29.49/issues/
+301   310B   http://192.168.29.49/j    -> REDIRECTS TO: http://192.168.29.49/j/
+301   313B   http://192.168.29.49/java    -> REDIRECTS TO: http://192.168.29.49/java/
+200   404B   http://192.168.29.49/js/
+200   412B   http://192.168.29.49/jsp-examples/
+301   313B   http://192.168.29.49/jsps    -> REDIRECTS TO: http://192.168.29.49/jsps/
+301   316B   http://192.168.29.49/kontakt    -> REDIRECTS TO: http://192.168.29.49/kontakt/
+301   310B   http://192.168.29.49/l    -> REDIRECTS TO: http://192.168.29.49/l/
+301   313B   http://192.168.29.49/lang    -> REDIRECTS TO: http://192.168.29.49/lang/
+301   317B   http://192.168.29.49/language    -> REDIRECTS TO: http://192.168.29.49/language/
+200   405B   http://192.168.29.49/ldap/
+301   316B   http://192.168.29.49/letmein    -> REDIRECTS TO: http://192.168.29.49/letmein/
+200   403B   http://192.168.29.49/letmein/
+301   311B   http://192.168.29.49/lg    -> REDIRECTS TO: http://192.168.29.49/lg/
+200   401B   http://192.168.29.49/lg/
+200   402B   http://192.168.29.49/lib/
+301   312B   http://192.168.29.49/lib    -> REDIRECTS TO: http://192.168.29.49/lib/
+301   316B   http://192.168.29.49/library    -> REDIRECTS TO: http://192.168.29.49/library/
+301   314B   http://192.168.29.49/links    -> REDIRECTS TO: http://192.168.29.49/links/
+301   314B   http://192.168.29.49/linux    -> REDIRECTS TO: http://192.168.29.49/linux/
+301   317B   http://192.168.29.49/logfiles    -> REDIRECTS TO: http://192.168.29.49/logfiles/
+301   314B   http://192.168.29.49/login    -> REDIRECTS TO: http://192.168.29.49/login/
+200   402B   http://192.168.29.49/login/
+301   313B   http://192.168.29.49/logo    -> REDIRECTS TO: http://192.168.29.49/logo/
+301   315B   http://192.168.29.49/logout    -> REDIRECTS TO: http://192.168.29.49/logout/
+200   403B   http://192.168.29.49/logout/
+200   406B   http://192.168.29.49/Logs/
+301   312B   http://192.168.29.49/mac    -> REDIRECTS TO: http://192.168.29.49/mac/
+301   317B   http://192.168.29.49/magazine    -> REDIRECTS TO: http://192.168.29.49/magazine/
+301   316B   http://192.168.29.49/mailman    -> REDIRECTS TO: http://192.168.29.49/mailman/
+200   408B   http://192.168.29.49/mailman/
+301   313B   http://192.168.29.49/main    -> REDIRECTS TO: http://192.168.29.49/main/
+200   406B   http://192.168.29.49/main/
+301   315B   http://192.168.29.49/manage    -> REDIRECTS TO: http://192.168.29.49/manage/
+200   404B   http://192.168.29.49/manage/
+301   319B   http://192.168.29.49/management    -> REDIRECTS TO: http://192.168.29.49/management/
+301   316B   http://192.168.29.49/manager    -> REDIRECTS TO: http://192.168.29.49/manager/
+200   409B   http://192.168.29.49/management/
+200   407B   http://192.168.29.49/manager/
+301   312B   http://192.168.29.49/map    -> REDIRECTS TO: http://192.168.29.49/map/
+301   315B   http://192.168.29.49/market    -> REDIRECTS TO: http://192.168.29.49/market/
+200   403B   http://192.168.29.49/master/
+301   313B   http://192.168.29.49/menu    -> REDIRECTS TO: http://192.168.29.49/menu/
+301   312B   http://192.168.29.49/mp3    -> REDIRECTS TO: http://192.168.29.49/mp3/
+301   315B   http://192.168.29.49/movies    -> REDIRECTS TO: http://192.168.29.49/movies/
+301   314B   http://192.168.29.49/mssql    -> REDIRECTS TO: http://192.168.29.49/mssql/
+200   406B   http://192.168.29.49/mssql/
+301   314B   http://192.168.29.49/music    -> REDIRECTS TO: http://192.168.29.49/music/
+301   310B   http://192.168.29.49/n    -> REDIRECTS TO: http://192.168.29.49/n/
+301   312B   http://192.168.29.49/old    -> REDIRECTS TO: http://192.168.29.49/old/
+200   401B   http://192.168.29.49/old/
+301   315B   http://192.168.29.49/oracle    -> REDIRECTS TO: http://192.168.29.49/oracle/
+200   402B   http://192.168.29.49/out/
+301   316B   http://192.168.29.49/partner    -> REDIRECTS TO: http://192.168.29.49/partner/
+301   315B   http://192.168.29.49/papers    -> REDIRECTS TO: http://192.168.29.49/papers/
+301   318B   http://192.168.29.49/passwords    -> REDIRECTS TO: http://192.168.29.49/passwords/
+200   410B   http://192.168.29.49/passwords/
+200   405B   http://192.168.29.49/path/
+301   312B   http://192.168.29.49/pdf    -> REDIRECTS TO: http://192.168.29.49/pdf/
+301   313B   http://192.168.29.49/perl    -> REDIRECTS TO: http://192.168.29.49/perl/
+301   314B   http://192.168.29.49/photo    -> REDIRECTS TO: http://192.168.29.49/photo/
+301   316B   http://192.168.29.49/phoenix    -> REDIRECTS TO: http://192.168.29.49/phoenix/
+301   319B   http://192.168.29.49/phpMyAdmin    -> REDIRECTS TO: http://192.168.29.49/phpMyAdmin/
+200   410B   http://192.168.29.49/phpMyAdmin/
+301   317B   http://192.168.29.49/pictures    -> REDIRECTS TO: http://192.168.29.49/pictures/
+301   313B   http://192.168.29.49/ping    -> REDIRECTS TO: http://192.168.29.49/ping/
+301   318B   http://192.168.29.49/pipermail    -> REDIRECTS TO: http://192.168.29.49/pipermail/
+301   314B   http://192.168.29.49/pixel    -> REDIRECTS TO: http://192.168.29.49/pixel/
+200   407B   http://192.168.29.49/plugins/
+301   316B   http://192.168.29.49/plugins    -> REDIRECTS TO: http://192.168.29.49/plugins/
+301   313B   http://192.168.29.49/plus    -> REDIRECTS TO: http://192.168.29.49/plus/
+301   316B   http://192.168.29.49/podcast    -> REDIRECTS TO: http://192.168.29.49/podcast/
+301   317B   http://192.168.29.49/policies    -> REDIRECTS TO: http://192.168.29.49/policies/
+301   317B   http://192.168.29.49/politics    -> REDIRECTS TO: http://192.168.29.49/politics/
+301   313B   http://192.168.29.49/poll    -> REDIRECTS TO: http://192.168.29.49/poll/
+301   313B   http://192.168.29.49/post    -> REDIRECTS TO: http://192.168.29.49/post/
+301   314B   http://192.168.29.49/press    -> REDIRECTS TO: http://192.168.29.49/press/
+301   317B   http://192.168.29.49/printenv    -> REDIRECTS TO: http://192.168.29.49/printenv/
+301   316B   http://192.168.29.49/privacy    -> REDIRECTS TO: http://192.168.29.49/privacy/
+301   322B   http://192.168.29.49/privacypolicy    -> REDIRECTS TO: http://192.168.29.49/privacypolicy/
+301   316B   http://192.168.29.49/private    -> REDIRECTS TO: http://192.168.29.49/private/
+301   316B   http://192.168.29.49/product    -> REDIRECTS TO: http://192.168.29.49/product/
+301   317B   http://192.168.29.49/products    -> REDIRECTS TO: http://192.168.29.49/products/
+301   317B   http://192.168.29.49/projects    -> REDIRECTS TO: http://192.168.29.49/projects/
+301   314B   http://192.168.29.49/promo    -> REDIRECTS TO: http://192.168.29.49/promo/
+200   408B   http://192.168.29.49/publish/
+301   318B   http://192.168.29.49/publisher    -> REDIRECTS TO: http://192.168.29.49/publisher/
+301   312B   http://192.168.29.49/put    -> REDIRECTS TO: http://192.168.29.49/put/
+200   403B   http://192.168.29.49/puppet/
+301   314B   http://192.168.29.49/radio    -> REDIRECTS TO: http://192.168.29.49/radio/
+301   317B   http://192.168.29.49/register    -> REDIRECTS TO: http://192.168.29.49/register/
+301   317B   http://192.168.29.49/releases    -> REDIRECTS TO: http://192.168.29.49/releases/
+301   316B   http://192.168.29.49/reports    -> REDIRECTS TO: http://192.168.29.49/reports/
+301   316B   http://192.168.29.49/results    -> REDIRECTS TO: http://192.168.29.49/results/
+301   316B   http://192.168.29.49/reviews    -> REDIRECTS TO: http://192.168.29.49/reviews/
+200   402B   http://192.168.29.49/root/
+301   313B   http://192.168.29.49/root    -> REDIRECTS TO: http://192.168.29.49/root/
+200   113B   http://192.168.29.49/robots.txt
+200   402B   http://192.168.29.49/rpc/
+301   313B   http://192.168.29.49/save    -> REDIRECTS TO: http://192.168.29.49/save/
+301   315B   http://192.168.29.49/schema    -> REDIRECTS TO: http://192.168.29.49/schema/
+301   315B   http://192.168.29.49/script    -> REDIRECTS TO: http://192.168.29.49/script/
+301   316B   http://192.168.29.49/science    -> REDIRECTS TO: http://192.168.29.49/science/
+200   401B   http://192.168.29.49/script/
+301   315B   http://192.168.29.49/search    -> REDIRECTS TO: http://192.168.29.49/search/
+301   316B   http://192.168.29.49/secrets    -> REDIRECTS TO: http://192.168.29.49/secrets/
+200   407B   http://192.168.29.49/secrets/
+301   315B   http://192.168.29.49/secure    -> REDIRECTS TO: http://192.168.29.49/secure/
+200   403B   http://192.168.29.49/secure/
+301   317B   http://192.168.29.49/security    -> REDIRECTS TO: http://192.168.29.49/security/
+200   408B   http://192.168.29.49/security/
+301   317B   http://192.168.29.49/sendmail    -> REDIRECTS TO: http://192.168.29.49/sendmail/
+403   301B   http://192.168.29.49/server-status
+403   302B   http://192.168.29.49/server-status/
+301   321B   http://192.168.29.49/server_stats    -> REDIRECTS TO: http://192.168.29.49/server_stats/
+301   316B   http://192.168.29.49/servers    -> REDIRECTS TO: http://192.168.29.49/servers/
+301   315B   http://192.168.29.49/shared    -> REDIRECTS TO: http://192.168.29.49/shared/
+301   314B   http://192.168.29.49/shell    -> REDIRECTS TO: http://192.168.29.49/shell/
+200   406B   http://192.168.29.49/shell/
+301   313B   http://192.168.29.49/shop    -> REDIRECTS TO: http://192.168.29.49/shop/
+301   319B   http://192.168.29.49/showthread    -> REDIRECTS TO: http://192.168.29.49/showthread/
+301   315B   http://192.168.29.49/simple    -> REDIRECTS TO: http://192.168.29.49/simple/
+301   313B   http://192.168.29.49/site    -> REDIRECTS TO: http://192.168.29.49/site/
+200   401B   http://192.168.29.49/site/
+301   314B   http://192.168.29.49/snoop    -> REDIRECTS TO: http://192.168.29.49/snoop/
+301   316B   http://192.168.29.49/smilies    -> REDIRECTS TO: http://192.168.29.49/smilies/
+200   406B   http://192.168.29.49/snoop/
+301   312B   http://192.168.29.49/snp    -> REDIRECTS TO: http://192.168.29.49/snp/
+301   315B   http://192.168.29.49/source    -> REDIRECTS TO: http://192.168.29.49/source/
+200   403B   http://192.168.29.49/source/
+301   315B   http://192.168.29.49/spring    -> REDIRECTS TO: http://192.168.29.49/spring/
+301   315B   http://192.168.29.49/sports    -> REDIRECTS TO: http://192.168.29.49/sports/
+301   312B   http://192.168.29.49/sql    -> REDIRECTS TO: http://192.168.29.49/sql/
+200   405B   http://192.168.29.49/sql/
+200   405B   http://192.168.29.49/ssh/
+301   314B   http://192.168.29.49/staff    -> REDIRECTS TO: http://192.168.29.49/staff/
+200   406B   http://192.168.29.49/staff/
+200   405B   http://192.168.29.49/stat/
+301   319B   http://192.168.29.49/statistics    -> REDIRECTS TO: http://192.168.29.49/statistics/
+200   409B   http://192.168.29.49/statistics/
+301   314B   http://192.168.29.49/store    -> REDIRECTS TO: http://192.168.29.49/store/
+301   316B   http://192.168.29.49/stories    -> REDIRECTS TO: http://192.168.29.49/stories/
+301   314B   http://192.168.29.49/story    -> REDIRECTS TO: http://192.168.29.49/story/
+301   314B   http://192.168.29.49/style    -> REDIRECTS TO: http://192.168.29.49/style/
+200   407B   http://192.168.29.49/superman/
+301   317B   http://192.168.29.49/superman    -> REDIRECTS TO: http://192.168.29.49/superman/
+200   407B   http://192.168.29.49/sysadmin/
+301   317B   http://192.168.29.49/sysadmin    -> REDIRECTS TO: http://192.168.29.49/sysadmin/
+301   315B   http://192.168.29.49/system    -> REDIRECTS TO: http://192.168.29.49/system/
+200   406B   http://192.168.29.49/system/
+301   313B   http://192.168.29.49/tech    -> REDIRECTS TO: http://192.168.29.49/tech/
+301   318B   http://192.168.29.49/telephone    -> REDIRECTS TO: http://192.168.29.49/telephone/
+301   313B   http://192.168.29.49/temp    -> REDIRECTS TO: http://192.168.29.49/temp/
+301   317B   http://192.168.29.49/template    -> REDIRECTS TO: http://192.168.29.49/template/
+200   408B   http://192.168.29.49/template/
+200   402B   http://192.168.29.49/temp/
+301   314B   http://192.168.29.49/terms    -> REDIRECTS TO: http://192.168.29.49/terms/
+301   313B   http://192.168.29.49/test    -> REDIRECTS TO: http://192.168.29.49/test/
+200   405B   http://192.168.29.49/test/
+200   406B   http://192.168.29.49/tests/
+301   313B   http://192.168.29.49/text    -> REDIRECTS TO: http://192.168.29.49/text/
+301   314B   http://192.168.29.49/tests    -> REDIRECTS TO: http://192.168.29.49/tests/
+301   315B   http://192.168.29.49/themes    -> REDIRECTS TO: http://192.168.29.49/themes/
+200   403B   http://192.168.29.49/themes/
+301   314B   http://192.168.29.49/thumb    -> REDIRECTS TO: http://192.168.29.49/thumb/
+301   314B   http://192.168.29.49/theme    -> REDIRECTS TO: http://192.168.29.49/theme/
+200   402B   http://192.168.29.49/thumbs/
+301   314B   http://192.168.29.49/title    -> REDIRECTS TO: http://192.168.29.49/title/
+200   401B   http://192.168.29.49/tmp/
+301   312B   http://192.168.29.49/tmp    -> REDIRECTS TO: http://192.168.29.49/tmp/
+301   314B   http://192.168.29.49/topic    -> REDIRECTS TO: http://192.168.29.49/topic/
+301   315B   http://192.168.29.49/topics    -> REDIRECTS TO: http://192.168.29.49/topics/
+301   317B   http://192.168.29.49/training    -> REDIRECTS TO: http://192.168.29.49/training/
+301   312B   http://192.168.29.49/tst    -> REDIRECTS TO: http://192.168.29.49/tst/
+200   404B   http://192.168.29.49/txt/
+301   313B   http://192.168.29.49/uddi    -> REDIRECTS TO: http://192.168.29.49/uddi/
+301   311B   http://192.168.29.49/ui    -> REDIRECTS TO: http://192.168.29.49/ui/
+200   401B   http://192.168.29.49/ui/
+301   315B   http://192.168.29.49/upload    -> REDIRECTS TO: http://192.168.29.49/upload/
+200   407B   http://192.168.29.49/upload/
+301   316B   http://192.168.29.49/uploads    -> REDIRECTS TO: http://192.168.29.49/uploads/
+200   408B   http://192.168.29.49/uploads/
+301   312B   http://192.168.29.49/url    -> REDIRECTS TO: http://192.168.29.49/url/
+301   313B   http://192.168.29.49/user    -> REDIRECTS TO: http://192.168.29.49/user/
+200   406B   http://192.168.29.49/user/
+301   312B   http://192.168.29.49/usr    -> REDIRECTS TO: http://192.168.29.49/usr/
+200   405B   http://192.168.29.49/usr/
+301   314B   http://192.168.29.49/utils    -> REDIRECTS TO: http://192.168.29.49/utils/
+301   310B   http://192.168.29.49/v    -> REDIRECTS TO: http://192.168.29.49/v/
+301   316B   http://192.168.29.49/version    -> REDIRECTS TO: http://192.168.29.49/version/
+200   406B   http://192.168.29.49/version/
+301   316B   http://192.168.29.49/WEB-INF    -> REDIRECTS TO: http://192.168.29.49/WEB-INF/
+200   408B   http://192.168.29.49/WEB-INF/
+200   402B   http://192.168.29.49/web/
+301   317B   http://192.168.29.49/webadmin    -> REDIRECTS TO: http://192.168.29.49/webadmin/
+200   409B   http://192.168.29.49/webadmin/
+301   316B   http://192.168.29.49/webmail    -> REDIRECTS TO: http://192.168.29.49/webmail/
+200   407B   http://192.168.29.49/wheels/
+301   313B   http://192.168.29.49/wiki    -> REDIRECTS TO: http://192.168.29.49/wiki/
+200   402B   http://192.168.29.49/wiki/
+200   406B   http://192.168.29.49/wp-content/
+301   319B   http://192.168.29.49/wp-content    -> REDIRECTS TO: http://192.168.29.49/wp-content/
+301   320B   http://192.168.29.49/wp-includes    -> REDIRECTS TO: http://192.168.29.49/wp-includes/
+301   316B   http://192.168.29.49/wp-rss2    -> REDIRECTS TO: http://192.168.29.49/wp-rss2/
+200   411B   http://192.168.29.49/wp-includes/
+200   409B   http://192.168.29.49/wwwboard/
+301   315B   http://192.168.29.49/wwwlog    -> REDIRECTS TO: http://192.168.29.49/wwwlog/
+301   313B   http://192.168.29.49/~adm    -> REDIRECTS TO: http://192.168.29.49/~adm/
+301   313B   http://192.168.29.49/~ftp    -> REDIRECTS TO: http://192.168.29.49/~ftp/
+301   315B   http://192.168.29.49/~guest    -> REDIRECTS TO: http://192.168.29.49/~guest/
+301   318B   http://192.168.29.49/~operator    -> REDIRECTS TO: http://192.168.29.49/~operator/
+301   314B   http://192.168.29.49/~root    -> REDIRECTS TO: http://192.168.29.49/~root/
+301   314B   http://192.168.29.49/~user    -> REDIRECTS TO: http://192.168.29.49/~user/
+301   313B   http://192.168.29.49/~www    -> REDIRECTS TO: http://192.168.29.49/~www/

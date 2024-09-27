@@ -1,0 +1,22 @@
+# Dirsearch started Thu Sep 26 20:17:57 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.49:8008 -o TommyBoy-dirsearch-8008-output.txt -q
+
+403   304B   http://192.168.29.49:8008/.htaccess.bak1
+403   301B   http://192.168.29.49:8008/.ht_wsr.txt
+403   304B   http://192.168.29.49:8008/.htaccess.orig
+403   306B   http://192.168.29.49:8008/.htaccess.sample
+403   304B   http://192.168.29.49:8008/.htaccess.save
+403   304B   http://192.168.29.49:8008/.htaccess_orig
+403   302B   http://192.168.29.49:8008/.htaccess_sc
+403   305B   http://192.168.29.49:8008/.htaccess_extra
+403   302B   http://192.168.29.49:8008/.htaccessBAK
+403   302B   http://192.168.29.49:8008/.htaccessOLD
+403   303B   http://192.168.29.49:8008/.htaccessOLD2
+403   294B   http://192.168.29.49:8008/.htm
+403   295B   http://192.168.29.49:8008/.html
+403   304B   http://192.168.29.49:8008/.htpasswd_test
+403   300B   http://192.168.29.49:8008/.htpasswds
+403   301B   http://192.168.29.49:8008/.httr-oauth
+403   294B   http://192.168.29.49:8008/.php
+403   295B   http://192.168.29.49:8008/.php3
+403   304B   http://192.168.29.49:8008/server-status/
+403   303B   http://192.168.29.49:8008/server-status
