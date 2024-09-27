@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 20:00:46 2024 as: nmap -v -Pn -p- -oA DC-6-all-ports-scan 192.168.1.158
+Nmap scan report for 192.168.1.158
+Host is up (0.000031s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+MAC Address: 08:00:27:8E:12:3A (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Sep 26 20:00:46 2024 -- 1 IP address (1 host up) scanned in 0.64 seconds
