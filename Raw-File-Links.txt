@@ -17,3 +17,5 @@ https://raw.githubusercontent.com/infosecwarrior/Vulnerable-Box-Resources/refs/h
 https://raw.githubusercontent.com/infosecwarrior/Vulnerable-Box-Resources/refs/heads/main/My%20File%20Server-1/My-file-server-1-nmap-version-scan.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/My%20File%20Server-2/my-file-server-2-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Temple%20of%20Doom/temple-of-doom-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Kioptrix%3A%20Level%201.1/kioptrix-level-1-1-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Readme%201/readme-1-nmap-version-scan-output.xml
