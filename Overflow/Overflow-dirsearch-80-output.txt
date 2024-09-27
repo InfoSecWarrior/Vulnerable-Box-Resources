@@ -1,0 +1,23 @@
+# Dirsearch started Fri Sep 27 00:14:35 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.8:80 -o Overflow-dirsearch-80-output.txt -q
+
+403   297B   http://192.168.1.8/.ht_wsr.txt
+403   300B   http://192.168.1.8/.htaccess.bak1
+403   300B   http://192.168.1.8/.htaccess.orig
+403   302B   http://192.168.1.8/.htaccess.sample
+403   301B   http://192.168.1.8/.htaccess_extra
+403   298B   http://192.168.1.8/.htaccess_sc
+403   300B   http://192.168.1.8/.htaccess_orig
+403   298B   http://192.168.1.8/.htaccessBAK
+403   290B   http://192.168.1.8/.htm
+403   300B   http://192.168.1.8/.htpasswd_test
+403   300B   http://192.168.1.8/.htaccess.save
+403   297B   http://192.168.1.8/.httr-oauth
+403   299B   http://192.168.1.8/.htaccessOLD2
+403   291B   http://192.168.1.8/.html
+403   296B   http://192.168.1.8/.htpasswds
+403   298B   http://192.168.1.8/.htaccessOLD
+301   311B   http://192.168.1.8/manual    -> REDIRECTS TO: http://192.168.1.8/manual/
+200   201B   http://192.168.1.8/manual/index.html
+200    10KB  http://192.168.1.8/old
+403   300B   http://192.168.1.8/server-status/
+403   299B   http://192.168.1.8/server-status

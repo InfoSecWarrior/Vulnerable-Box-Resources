@@ -1,0 +1,46 @@
+# Nmap 7.94SVN scan initiated Fri Sep 27 14:02:12 2024 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 22,80,111,52744 -oA Zico-2-nmap-version-scan-output 192.168.1.136
+Nmap scan report for 192.168.1.136 (192.168.1.136)
+Host is up (0.00027s latency).
+
+PORT      STATE SERVICE VERSION
+22/tcp    open  ssh     OpenSSH 5.9p1 Debian 5ubuntu1.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 68:60:de:c2:2b:c6:16:d8:5b:88:be:e3:cc:a1:25:75 (DSA)
+|   2048 50:db:75:ba:11:2f:43:c9:ab:14:40:6d:7f:a1:ee:e3 (RSA)
+|_  256 11:5d:55:29:8a:77:d8:08:b4:00:9b:a3:61:93:fe:e5 (ECDSA)
+80/tcp    open  http    Apache httpd 2.2.22 ((Ubuntu))
+|_http-title: Zico's Shop
+|_http-server-header: Apache/2.2.22 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: OPTIONS GET HEAD POST
+111/tcp   open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1          33546/udp   status
+|   100024  1          44998/tcp6  status
+|   100024  1          52744/tcp   status
+|_  100024  1          59591/udp6  status
+52744/tcp open  status  1 (RPC #100024)
+MAC Address: 08:00:27:3C:FF:5B (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 2.6.X|3.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+OS details: Linux 2.6.32 - 3.5
+Uptime guess: 198.841 days (since Tue Mar 12 17:51:58 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=259 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.27 ms 192.168.1.136 (192.168.1.136)
+
+Read data files from: /usr/share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 27 14:02:25 2024 -- 1 IP address (1 host up) scanned in 13.24 seconds

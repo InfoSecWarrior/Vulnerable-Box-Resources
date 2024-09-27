@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Fri Sep 27 14:02:11 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA Zico-2-all-ports-scan-output 192.168.1.136
+Nmap scan report for 192.168.1.136 (192.168.1.136)
+Host is up (0.000086s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+111/tcp   open  rpcbind
+52744/tcp open  unknown
+MAC Address: 08:00:27:3C:FF:5B (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/share/nmap
+# Nmap done at Fri Sep 27 14:02:12 2024 -- 1 IP address (1 host up) scanned in 1.32 seconds

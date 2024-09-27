@@ -1,0 +1,28 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 15:56:40 2024 as: nmap -v -Pn -p- -oA bee-box-all-ports-scan-output 192.168.1.229
+Nmap scan report for 192.168.1.229
+Host is up (0.00028s latency).
+Not shown: 65516 closed tcp ports (reset)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+25/tcp   open  smtp
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+512/tcp  open  exec
+513/tcp  open  login
+514/tcp  open  shell
+666/tcp  open  doom
+3306/tcp open  mysql
+3632/tcp open  distccd
+5901/tcp open  vnc-1
+6001/tcp open  X11:1
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+9080/tcp open  glrpc
+9443/tcp open  tungsten-https
+MAC Address: 08:00:27:90:0B:6D (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Sep 25 15:56:42 2024 -- 1 IP address (1 host up) scanned in 1.67 seconds

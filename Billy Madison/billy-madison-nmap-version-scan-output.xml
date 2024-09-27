@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Sep 27 11:44:11 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,23,80,139,445,2525 -oA billy-madison-nmap-version-scan-output 192.168.1.3 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,23,80,139,445,2525 -oA billy-madison-nmap-version-scan-output 192.168.1.3" start="1727417651" startstr="Fri Sep 27 11:44:11 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="6" services="22-23,80,139,445,2525"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727417651"/>
+<taskend task="NSE" time="1727417651"/>
+<taskbegin task="NSE" time="1727417651"/>
+<taskend task="NSE" time="1727417651"/>
+<taskbegin task="NSE" time="1727417651"/>
+<taskend task="NSE" time="1727417651"/>
+<taskbegin task="ARP Ping Scan" time="1727417651"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.3" addrtype="ipv4"/>
+<address addr="08:00:27:C5:3D:58" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727417651" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727417651"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727417651"/>
+<taskbegin task="Connect Scan" time="1727417651"/>
+<taskend task="Connect Scan" time="1727417651" extrainfo="6 total ports"/>
+<taskbegin task="Service scan" time="1727417651"/>
+<taskend task="Service scan" time="1727417675" extrainfo="6 services on 1 host"/>
+<taskbegin task="NSE" time="1727417679"/>
+<taskend task="NSE" time="1727417719"/>
+<taskbegin task="NSE" time="1727417719"/>
+<taskend task="NSE" time="1727417719"/>
+<taskbegin task="NSE" time="1727417719"/>
+<taskend task="NSE" time="1727417719"/>
+<host starttime="1727417651" endtime="1727417719"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.3" addrtype="ipv4"/>
+<address addr="08:00:27:C5:3D:58" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/><script id="ssh-hostkey" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Oh nooooooo!"><elem key="title">Oh nooooooo!</elem>
+</script><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="BM" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.3.9-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="BM" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="2525"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="SubEtha smtpd" hostname="BM" method="probed" conf="10"><cpe>cpe:/a:voodoodyne:subethasmtp</cpe></service><script id="smtp-ntlm-info" output="ERROR: Script execution failed (use -d to debug)"/><script id="smtp-commands" output="BM, 8BITMIME, AUTH LOGIN, Ok&#xa; SubEthaSMTP null on BM Topics: HELP HELO RCPT MAIL DATA AUTH EHLO NOOP RSET VRFY QUIT STARTTLS For more info use &quot;HELP &lt;topic&gt;&quot;. End of HELP info"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Linux 3.10 - 4.11" accuracy="93" line="63448">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16 - 4.6" accuracy="93" line="64382">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="93" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="93" line="67361">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="90" line="67289">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="90" line="63862">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.18" accuracy="88" line="64420">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13 - 3.16" accuracy="87" line="63954">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4)" accuracy="87" line="66953">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:4.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.10" accuracy="87" line="67166">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:4.10</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="10541" lastboot="Fri Sep 27 08:49:38 2024"/>
+<distance value="1"/>
+<tcpsequence index="259" difficulty="Good luck!" values="E7E1474A,60FA903C,A32F731B,296BDD18,D976022B,AC204EB9"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="285F7B,285F94,285FAD,285FC6,285FDF,285FF9"/>
+<hostscript><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="clock-skew" output="mean: 1h40m00s, deviation: 2h53m12s, median: 0s"><elem key="mean">6000</elem>
+<elem key="count">3</elem>
+<elem key="median">0</elem>
+<elem key="stddev">10392</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.3.9-Ubuntu)&#xa;  Computer name: bm&#xa;  NetBIOS computer name: BM\x00&#xa;  Domain name: \x00&#xa;  FQDN: bm&#xa;  System time: 2024-09-27T01:14:40-05:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.3.9-Ubuntu</elem>
+<elem key="server">BM\x00</elem>
+<elem key="date">2024-09-27T01:14:40-05:00</elem>
+<elem key="fqdn">bm</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb2-time" output="&#xa;  date: 2024-09-27T06:14:44&#xa;  start_date: N/A"><elem key="date">2024-09-27T06:14:44</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.1.3" rtt="0.64"/>
+</trace>
+<times srtt="638" rttvar="55" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727417719"/>
+<taskend task="NSE" time="1727417719"/>
+<taskbegin task="NSE" time="1727417719"/>
+<taskend task="NSE" time="1727417719"/>
+<taskbegin task="NSE" time="1727417719"/>
+<taskend task="NSE" time="1727417719"/>
+<runstats><finished time="1727417719" timestr="Fri Sep 27 11:45:19 2024" summary="Nmap done at Fri Sep 27 11:45:19 2024; 1 IP address (1 host up) scanned in 68.52 seconds" elapsed="68.52" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

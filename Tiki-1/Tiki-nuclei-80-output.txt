@@ -1,0 +1,12 @@
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.4:80
+[smb2-server-time] [javascript] [info] 192.168.1.4:445 ["SystemTime: 2024-09-26T15:12:05.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb2-capabilities] [javascript] [info] 192.168.1.4:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[ssh-password-auth] [javascript] [info] 192.168.1.4:22
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.4:22
+[ssh-auth-methods] [javascript] [info] 192.168.1.4:22 ["["publickey","password"]"]
+[ssh-server-enumeration] [javascript] [info] 192.168.1.4:22 ["SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.1"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.4:22 ["Vulnerable to Terrapin"]
+[smb-enum] [javascript] [info] 192.168.1.4:445 ["NetBIOSComputerName: UBUNTU","NetBIOSDomainName: UBUNTU","DNSComputerNamen: ubuntu","DNSComputerName: ubuntu","ForestName:","OSVersion: 6.1.0"]
+[smb-signing-not-required] [javascript] [medium] 192.168.1.4:445
+[smb-anonymous-access] [javascript] [high] 192.168.1.4:445
+[smb-os-detect] [javascript] [info] 192.168.1.4:445 ["6.1.0"]

@@ -1,0 +1,1 @@
+[rsync-list-modules] [javascript] [low] 192.168.1.8:1337 ["COMMAND  :  TRY  HARDER!"]

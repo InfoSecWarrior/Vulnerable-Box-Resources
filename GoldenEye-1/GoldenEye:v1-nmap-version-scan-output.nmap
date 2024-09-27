@@ -1,0 +1,52 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 23:39:46 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 25,80,55006,55007 -oA GoldenEye:v1-nmap-version-scan-output 192.168.1.7
+Nmap scan report for 192.168.1.7
+Host is up (0.00047s latency).
+
+PORT      STATE SERVICE     VERSION
+25/tcp    open  smtp        Postfix smtpd
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=ubuntu
+| Issuer: commonName=ubuntu
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-04-24T03:22:34
+| Not valid after:  2028-04-21T03:22:34
+| MD5:   cd4a:d178:f216:17fb:21a6:0a16:8f46:c8c6
+|_SHA-1: fda3:fc7b:6601:4746:96aa:0f56:b126:1c29:36e8:442c
+|_smtp-commands: ubuntu, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
+80/tcp    open  http        Apache httpd 2.4.7 ((Ubuntu))
+|_http-title: GoldenEye Primary Admin Server
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+55006/tcp open  ssl/unknown
+| ssl-cert: Subject: commonName=localhost/organizationName=Dovecot mail server
+| Issuer: commonName=localhost/organizationName=Dovecot mail server
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-04-24T03:23:52
+| Not valid after:  2028-04-23T03:23:52
+| MD5:   d039:2e71:c76a:2cb3:e694:ec40:7228:ec63
+|_SHA-1: 9d6a:92eb:5f9f:e9ba:6cbd:dc93:55fa:5754:219b:0b77
+|_ssl-date: TLS randomness does not represent time
+55007/tcp open  unknown
+MAC Address: 08:00:27:18:90:92 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 198.841 days (since Tue Mar 12 03:32:03 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.47 ms 192.168.1.7
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 26 23:42:52 2024 -- 1 IP address (1 host up) scanned in 185.62 seconds

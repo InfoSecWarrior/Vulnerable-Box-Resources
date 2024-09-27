@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 20:37:00 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,139,445 -oA Tiki-nmap-version-scan 192.168.1.4
+# Ports scanned: TCP(4;22,80,139,445) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.4 ()	Status: Up
+Host: 192.168.1.4 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/, 139/open/tcp//netbios-ssn//Samba smbd 4.6.2/, 445/open/tcp//netbios-ssn//Samba smbd 4.6.2/	OS: Linux 4.15 - 5.8	Seq Index: 263	IP ID Seq: All zeros
+# Nmap done at Thu Sep 26 20:37:13 2024 -- 1 IP address (1 host up) scanned in 12.78 seconds

@@ -1,0 +1,12 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.1.229
++ Target Port: 9443
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The site uses TLS and the Strict-Transport-Security HTTP header is not defined. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /crossdomain.xml contains a full wildcard entry. See: http://jeremiahgrossman.blogspot.com/2008/05/crossdomainxml-invites-cross-site.html: 
++ GET Hostname '192.168.1.229' does not match certificate's names: bee-box.bwapp.local. See: https://cwe.mitre.org/data/definitions/297.html: 
++ GET /: The Content-Encoding header is set to "deflate" which may mean that the server is vulnerable to the BREACH attack. See: http://breachattack.com/: 
++ OPTIONS OPTIONS: Allowed HTTP Methods: OPTIONS, GET, HEAD, POST .
++ GET /INSTALL.txt: Default file found.
++ GET /#wp-config.php#: #wp-config.php# file found. This file contains the credentials.
