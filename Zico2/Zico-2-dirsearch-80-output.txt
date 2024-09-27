@@ -1,0 +1,40 @@
+# Dirsearch started Fri Sep 27 14:02:53 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.136:80 -o Zico-2-dirsearch-80-output.txt -q
+
+301   245B   http://192.168.1.136/js    -> REDIRECTS TO: http://192.168.1.136/js/
+403   243B   http://192.168.1.136/.ht_wsr.txt
+403   243B   http://192.168.1.136/.htaccess.sample
+403   242B   http://192.168.1.136/.htaccess.orig
+403   241B   http://192.168.1.136/.htaccess.save
+403   242B   http://192.168.1.136/.htaccess.bak1
+403   244B   http://192.168.1.136/.htaccess_extra
+403   241B   http://192.168.1.136/.htaccess_sc
+403   241B   http://192.168.1.136/.htaccessBAK
+403   241B   http://192.168.1.136/.htaccessOLD2
+403   241B   http://192.168.1.136/.htaccessOLD
+403   243B   http://192.168.1.136/.htaccess_orig
+403   237B   http://192.168.1.136/.htm
+403   237B   http://192.168.1.136/.html
+403   241B   http://192.168.1.136/.htpasswds
+403   241B   http://192.168.1.136/.httr-oauth
+403   246B   http://192.168.1.136/.htpasswd_test
+403   241B   http://192.168.1.136/cgi-bin/
+301   246B   http://192.168.1.136/css    -> REDIRECTS TO: http://192.168.1.136/css/
+301   248B   http://192.168.1.136/dbadmin    -> REDIRECTS TO: http://192.168.1.136/dbadmin/
+200   456B   http://192.168.1.136/dbadmin/
+403   237B   http://192.168.1.136/doc/
+403   247B   http://192.168.1.136/doc/en/changes.html
+403   245B   http://192.168.1.136/doc/html/index.html
+403   240B   http://192.168.1.136/doc/api/
+403   243B   http://192.168.1.136/doc/stable.version
+200   964B   http://192.168.1.136/gulpfile.js
+301   247B   http://192.168.1.136/img    -> REDIRECTS TO: http://192.168.1.136/img/
+200   468B   http://192.168.1.136/js/
+200     1KB  http://192.168.1.136/LICENSE
+200   789B   http://192.168.1.136/package
+200   789B   http://192.168.1.136/package.json
+200     1KB  http://192.168.1.136/README.md
+403   240B   http://192.168.1.136/server-status
+403   240B   http://192.168.1.136/server-status/
+200     1KB  http://192.168.1.136/tools
+200   507B   http://192.168.1.136/vendor/
+200    20B   http://192.168.1.136/view.php
