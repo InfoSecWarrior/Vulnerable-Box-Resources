@@ -1,0 +1,4 @@
+# Dirsearch started Thu Sep 26 20:39:09 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.4:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Tiki-dirsearch-80-wordlist.txt -q
+
+301   309B   http://192.168.1.4/tiki    -> REDIRECTS TO: http://192.168.1.4/tiki/
+403   276B   http://192.168.1.4/server-status

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Sep 26 20:36:59 2024 as: nmap -v -Pn -p- -oA Tiki-all-ports-scan 192.168.1.4 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA Tiki-all-ports-scan 192.168.1.4" start="1727363219" startstr="Thu Sep 26 20:36:59 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1727363219"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.4" addrtype="ipv4"/>
+<address addr="08:00:27:5D:F6:C6" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727363219" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727363219"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727363219"/>
+<taskbegin task="SYN Stealth Scan" time="1727363219"/>
+<taskend task="SYN Stealth Scan" time="1727363220" extrainfo="65535 total ports"/>
+<host starttime="1727363219" endtime="1727363220"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.4" addrtype="ipv4"/>
+<address addr="08:00:27:5D:F6:C6" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="reset" count="65531" proto="tcp" ports="1-21,23-79,81-138,140-444,446-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="30" rttvar="15" to="100000"/>
+</host>
+<runstats><finished time="1727363220" timestr="Thu Sep 26 20:37:00 2024" summary="Nmap done at Thu Sep 26 20:37:00 2024; 1 IP address (1 host up) scanned in 0.73 seconds" elapsed="0.73" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
