@@ -1,0 +1,27 @@
+[apache-detect] [http] [info] https://192.168.56.110:443 [Apache/2.0.52 (CentOS)]
+[php-detect] [http] [info] https://192.168.56.110:443 [4.3.9]
+[tech-detect:php] [http] [info] https://192.168.56.110:443
+[http-missing-security-headers:referrer-policy] [http] [info] https://192.168.56.110:443
+[http-missing-security-headers:clear-site-data] [http] [info] https://192.168.56.110:443
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://192.168.56.110:443
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://192.168.56.110:443
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://192.168.56.110:443
+[http-missing-security-headers:strict-transport-security] [http] [info] https://192.168.56.110:443
+[http-missing-security-headers:content-security-policy] [http] [info] https://192.168.56.110:443
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://192.168.56.110:443
+[http-missing-security-headers:permissions-policy] [http] [info] https://192.168.56.110:443
+[http-missing-security-headers:x-frame-options] [http] [info] https://192.168.56.110:443
+[http-missing-security-headers:x-content-type-options] [http] [info] https://192.168.56.110:443
+[http-trace:trace-request] [http] [info] https://192.168.56.110:443
+[waf-detect:apachegeneric] [http] [info] https://192.168.56.110:443/
+[mysql-detect] [tcp] [info] 192.168.56.110:3306
+[CVE-2001-1473] [tcp] [high] 192.168.56.110:22
+[openssh-detect] [tcp] [info] 192.168.56.110:22 [SSH-1.99-OpenSSH_3.9p1
+]
+[ssl-issuer] [ssl] [info] 192.168.56.110:443 [SomeOrganization]
+[expired-ssl] [ssl] [low] 192.168.56.110:443 [2010-10-08 00:10:47 +0000 UTC]
+[revoked-ssl-certificate] [ssl] [low] 192.168.56.110:443
+[self-signed-ssl] [ssl] [low] 192.168.56.110:443
+[deprecated-tls:tls_1.0] [ssl] [info] 192.168.56.110:443 [tls10]
+[tls-version] [ssl] [info] 192.168.56.110:443 [tls10]
+[weak-cipher-suites:tls-1.0] [ssl] [low] 192.168.56.110:443 [[tls10 TLS_RSA_WITH_AES_128_CBC_SHA]]

@@ -1,0 +1,11 @@
+# Dirsearch started Wed Sep 25 10:58:18 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.11:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o My-CMSMS-dirsearch-80-wordlist-output.txt -q
+
+301   314B   http://192.168.1.11/modules    -> REDIRECTS TO: http://192.168.1.11/modules/
+301   314B   http://192.168.1.11/uploads    -> REDIRECTS TO: http://192.168.1.11/uploads/
+301   310B   http://192.168.1.11/doc    -> REDIRECTS TO: http://192.168.1.11/doc/
+301   312B   http://192.168.1.11/admin    -> REDIRECTS TO: http://192.168.1.11/admin/
+301   313B   http://192.168.1.11/assets    -> REDIRECTS TO: http://192.168.1.11/assets/
+301   310B   http://192.168.1.11/lib    -> REDIRECTS TO: http://192.168.1.11/lib/
+301   310B   http://192.168.1.11/tmp    -> REDIRECTS TO: http://192.168.1.11/tmp/
+401   459B   http://192.168.1.11/phpmyadmin
+403   277B   http://192.168.1.11/server-status

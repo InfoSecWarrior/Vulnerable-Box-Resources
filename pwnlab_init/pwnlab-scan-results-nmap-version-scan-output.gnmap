@@ -1,0 +1,5 @@
+# Nmap 7.94 scan initiated Wed Sep 25 17:26:35 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,111,3306,53472 -oA pwnlab-scan-results-nmap-version-scan-output 192.168.29.172
+# Ports scanned: TCP(4;80,111,3306,53472) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.29.172 ()	Status: Up
+Host: 192.168.29.172 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.10 ((Debian))/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 3306/open/tcp//mysql//MySQL 5.5.47-0+deb8u1/, 53472/open/tcp//status//1 (RPC #100024)/	OS: Linux 3.2 - 4.9	Seq Index: 262	IP ID Seq: All zeros
+# Nmap done at Wed Sep 25 17:26:48 2024 -- 1 IP address (1 host up) scanned in 12.97 seconds

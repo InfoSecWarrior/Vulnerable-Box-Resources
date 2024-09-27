@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 21:55:32 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,6667 -oA VulnOS2_report-nmap-version-scan-output 192.168.1.174
+# Ports scanned: TCP(3;22,80,6667) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.174 ()	Status: Up
+Host: 192.168.1.174 ()	Ports: 22/open/tcp//ssh//OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.6 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.7 ((Ubuntu))/, 6667/open/tcp//irc//ngircd/	OS: Linux 3.2 - 4.9	Seq Index: 255	IP ID Seq: All zeros
+# Nmap done at Wed Sep 25 21:55:52 2024 -- 1 IP address (1 host up) scanned in 20.10 seconds

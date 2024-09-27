@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Sep 25 10:52:22 2024 as: nmap -v -Pn -p- -oA My-CMSMS-all-ports-scan-output 192.168.1.11 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA My-CMSMS-all-ports-scan-output 192.168.1.11" start="1727275942" startstr="Wed Sep 25 10:52:22 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1727275942"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.11" addrtype="ipv4"/>
+<address addr="08:00:27:DD:19:22" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727275943" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727275943"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727275943"/>
+<taskbegin task="SYN Stealth Scan" time="1727275943"/>
+<taskend task="SYN Stealth Scan" time="1727275946" extrainfo="65535 total ports"/>
+<host starttime="1727275943" endtime="1727275946"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.11" addrtype="ipv4"/>
+<address addr="08:00:27:DD:19:22" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="reset" count="65531" proto="tcp" ports="1-21,23-79,81-3305,3307-33059,33061-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="33060"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysqlx" method="table" conf="3"/></port>
+</ports>
+<times srtt="141" rttvar="33" to="100000"/>
+</host>
+<runstats><finished time="1727275946" timestr="Wed Sep 25 10:52:26 2024" summary="Nmap done at Wed Sep 25 10:52:26 2024; 1 IP address (1 host up) scanned in 3.21 seconds" elapsed="3.21" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

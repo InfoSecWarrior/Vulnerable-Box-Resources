@@ -1,0 +1,16 @@
+# Dirsearch started Wed Sep 25 13:14:12 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.15:8080 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Wintermute-Neuromancer-dirsearch-8080-wordlist-output.txt -q
+
+302     0B   http://192.168.1.15:8080/docs    -> REDIRECTS TO: /docs/
+302     0B   http://192.168.1.15:8080/examples    -> REDIRECTS TO: /examples/
+302     0B   http://192.168.1.15:8080/manager    -> REDIRECTS TO: /manager/
+400     0B   http://192.168.1.15:8080/http%3A%2F%2Fwww
+400     0B   http://192.168.1.15:8080/http%3A%2F%2Fyoutube
+400     0B   http://192.168.1.15:8080/http%3A%2F%2Fblogs
+400     0B   http://192.168.1.15:8080/http%3A%2F%2Fblog
+400     0B   http://192.168.1.15:8080/**http%3A%2F%2Fwww
+400     0B   http://192.168.1.15:8080/External%5CX-News
+400     0B   http://192.168.1.15:8080/http%3A%2F%2Fcommunity
+400     0B   http://192.168.1.15:8080/http%3A%2F%2Fradar
+400     0B   http://192.168.1.15:8080/http%3A%2F%2Fjeremiahgrossman
+400     0B   http://192.168.1.15:8080/http%3A%2F%2Fweblog
+400     0B   http://192.168.1.15:8080/http%3A%2F%2Fswik

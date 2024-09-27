@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 11:44:52 2024 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 80,111,139,445,2049,35229,36311,36411,36803 -oA Escalate-Linux-nmap-version-scan-output 192.168.1.111
+# Ports scanned: TCP(9;80,111,139,445,2049,35229,36311,36411,36803) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.111 (192.168.1.111)	Status: Up
+Host: 192.168.1.111 (192.168.1.111)	Ports: 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)/, 2049/open/tcp//nfs//3-4 (RPC #100003)/, 35229/open/tcp//mountd//1-3 (RPC #100005)/, 36311/open/tcp//mountd//1-3 (RPC #100005)/, 36411/open/tcp//nlockmgr//1-4 (RPC #100021)/, 36803/open/tcp//mountd//1-3 (RPC #100005)/	OS: Linux 3.2 - 4.9	Seq Index: 261	IP ID Seq: All zeros
+# Nmap done at Thu Sep 26 11:45:05 2024 -- 1 IP address (1 host up) scanned in 13.12 seconds

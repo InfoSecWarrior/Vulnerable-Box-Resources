@@ -1,0 +1,1 @@
+http://192.168.1.12:80 [200 OK] Apache[2.4.10], Bootstrap, Country[RESERVED][ZZ], HTML5, HTTPServer[Debian Linux][Apache/2.4.10 (Debian)], IP[192.168.1.12], JQuery, Script, Title[Clean Blog - Start Bootstrap Theme]

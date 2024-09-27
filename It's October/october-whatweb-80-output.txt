@@ -1,0 +1,1 @@
+http://192.168.1.205:80 [200 OK] Apache[2.4.38], Bootstrap, Cookies[october_session], Country[RESERVED][ZZ], HTML5, HTTPServer[Debian Linux][Apache/2.4.38 (Debian)], HttpOnly[october_session], IP[192.168.1.205], JQuery, Script, Title[Homepage &#124; My new websites]
