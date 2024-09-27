@@ -1,0 +1,2 @@
+[ftp-anonymous-login] [tcp] [medium] 192.168.1.119:21
+[rsync-list-modules] [javascript] [low] 192.168.1.119:21 ["220  (vsFTPd  3.0.2)  530  Please  login  with  USER  and  PASS."]
