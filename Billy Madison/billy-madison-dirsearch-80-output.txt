@@ -1,0 +1,24 @@
+# Dirsearch started Fri Sep 27 11:46:19 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.3:80 -o billy-madison-dirsearch-80-output.txt -q
+
+403   297B   http://192.168.1.3/.ht_wsr.txt
+403   300B   http://192.168.1.3/.htaccess.bak1
+403   300B   http://192.168.1.3/.htaccess.orig
+403   300B   http://192.168.1.3/.htaccess.save
+403   302B   http://192.168.1.3/.htaccess.sample
+403   300B   http://192.168.1.3/.htaccess_orig
+403   298B   http://192.168.1.3/.htaccess_sc
+403   299B   http://192.168.1.3/.htaccessOLD2
+403   298B   http://192.168.1.3/.htaccessOLD
+403   298B   http://192.168.1.3/.htaccessBAK
+403   290B   http://192.168.1.3/.htm
+403   301B   http://192.168.1.3/.htaccess_extra
+403   291B   http://192.168.1.3/.html
+403   300B   http://192.168.1.3/.htpasswd_test
+403   296B   http://192.168.1.3/.htpasswds
+403   297B   http://192.168.1.3/.httr-oauth
+403   290B   http://192.168.1.3/.php
+403   291B   http://192.168.1.3/.php3
+301   311B   http://192.168.1.3/manual    -> REDIRECTS TO: http://192.168.1.3/manual/
+200   201B   http://192.168.1.3/manual/index.html
+403   300B   http://192.168.1.3/server-status/
+403   299B   http://192.168.1.3/server-status
