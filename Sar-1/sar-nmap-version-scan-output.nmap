@@ -1,0 +1,28 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 21:13:09 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA sar-nmap-version-scan-output 192.168.1.14
+Nmap scan report for 192.168.1.14 (192.168.1.14)
+Host is up (0.00024s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+MAC Address: 08:00:27:84:82:9B (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Uptime guess: 18.489 days (since Sun Sep  8 09:29:06 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=255 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.25 ms 192.168.1.14 (192.168.1.14)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 26 21:13:17 2024 -- 1 IP address (1 host up) scanned in 8.40 seconds
