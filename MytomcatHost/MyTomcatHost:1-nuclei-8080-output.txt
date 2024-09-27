@@ -1,0 +1,35 @@
+[CVE-2000-0760] [http] [low] http://192.168.1.203:8080/examples/jsp/snp/snoop.jsp
+[options-method] [http] [info] http://192.168.1.203:8080 ["GET, HEAD, POST, OPTIONS"]
+[public-tomcat-manager] [http] [info] http://192.168.1.203:8080/manager/html
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.203:8080
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.203:8080
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.203:8080
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.203:8080
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.203:8080
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.203:8080
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.203:8080
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.203:8080
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.203:8080
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.203:8080
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.203:8080
+[tomcat-exposed] [http] [info] http://192.168.1.203:8080/manager/status
+[axis-happyaxis] [http] [info] http://192.168.1.203:8080/axis2/axis2-web/HappyAxis.jsp
+[tomcat-manager-pathnormalization] [http] [info] http://192.168.1.203:8080/2mbx1fvwDcUxB3trtn9C0FbbmOX/..;/manager/html
+[tomcat-stacktraces] [http] [info] http://192.168.1.203:8080/?f=\[
+[tomcat-scripts] [http] [info] http://192.168.1.203:8080/examples/jsp/index.html
+[tomcat-scripts] [http] [info] http://192.168.1.203:8080/examples/websocket/index.xhtml
+[tomcat-detect:version] [http] [info] http://192.168.1.203:8080 ["9.0.31"]
+[tomcat-scripts] [http] [info] http://192.168.1.203:8080/examples/servlets/servlet/SessionExample
+[apache-axis-detect] [http] [info] http://192.168.1.203:8080/axis2/
+[favicon-detect:apache-tomcat] [http] [info] http://192.168.1.203:8080/favicon.ico ["-297069493"]
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.203:8080
+[ssh-auth-methods] [javascript] [info] 192.168.1.203:22 ["["publickey","gssapi-keyex","gssapi-with-mic"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.203:22 ["Vulnerable to Terrapin"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.203:22
+[ssh-cbc-mode-ciphers] [javascript] [low] 192.168.1.203:22
+[ssh-weak-mac-algo] [javascript] [low] 192.168.1.203:22
+[ssh-server-enumeration] [javascript] [info] 192.168.1.203:22 ["SSH-2.0-OpenSSH_6.6.1"]
+[ssh-weakkey-exchange-algo] [javascript] [low] 192.168.1.203:22
+[ssh-weak-algo-supported] [javascript] [medium] 192.168.1.203:22
+[ssh-diffie-hellman-logjam] [javascript] [low] 192.168.1.203:22
+[openssh-detect] [tcp] [info] 192.168.1.203:22 ["SSH-2.0-OpenSSH_6.6.1"]

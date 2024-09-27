@@ -1,0 +1,38 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 19:48:30 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80 -oA DerpNStink:1-nmap-version-scan-output 192.168.1.7
+Nmap scan report for 192.168.1.7
+Host is up (0.00041s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.2
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 12:4e:f8:6e:7b:6c:c6:d8:7c:d8:29:77:d1:0b:eb:72 (DSA)
+|   2048 72:c5:1c:5f:81:7b:dd:1a:fb:2e:59:67:fe:a6:91:2f (RSA)
+|   256 06:77:0f:4b:96:0a:3a:2c:3b:f0:8c:2b:57:b5:97:bc (ECDSA)
+|_  256 28:e8:ed:7c:60:7f:19:6c:e3:24:79:31:ca:ab:5d:2d (ED25519)
+80/tcp open  http    Apache httpd 2.4.7 ((Ubuntu))
+|_http-title: DeRPnStiNK
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+| http-robots.txt: 2 disallowed entries 
+|_/php/ /temporary/
+MAC Address: 08:00:27:1D:09:7C (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 0.004 days (since Thu Sep 26 19:42:56 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=254 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.41 ms 192.168.1.7
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 26 19:48:39 2024 -- 1 IP address (1 host up) scanned in 9.18 seconds
