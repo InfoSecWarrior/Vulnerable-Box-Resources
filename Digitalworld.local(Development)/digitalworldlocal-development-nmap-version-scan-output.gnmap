@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 19:40:37 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,113,139,445,8080 -oA digitalworldlocal-development-nmap-version-scan-output 192.168.29.77
+# Ports scanned: TCP(5;22,113,139,445,8080) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.29.77 ()	Status: Up
+Host: 192.168.29.77 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 113/open/tcp//ident?///, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)/, 8080/open/tcp//http-proxy//IIS 6.0/	OS: Linux 4.15 - 5.8	Seq Index: 265	IP ID Seq: All zeros
+# Nmap done at Thu Sep 26 19:42:16 2024 -- 1 IP address (1 host up) scanned in 99.21 seconds

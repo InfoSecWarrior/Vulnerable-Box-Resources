@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Sep 26 19:40:37 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,113,139,445,8080 -oA digitalworldlocal-development-nmap-version-scan-output 192.168.29.77 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,113,139,445,8080 -oA digitalworldlocal-development-nmap-version-scan-output 192.168.29.77" start="1727359837" startstr="Thu Sep 26 19:40:37 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="5" services="22,113,139,445,8080"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727359837"/>
+<taskend task="NSE" time="1727359837"/>
+<taskbegin task="NSE" time="1727359837"/>
+<taskend task="NSE" time="1727359837"/>
+<taskbegin task="NSE" time="1727359837"/>
+<taskend task="NSE" time="1727359837"/>
+<taskbegin task="ARP Ping Scan" time="1727359837"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.29.77" addrtype="ipv4"/>
+<address addr="08:00:27:62:36:9D" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727359837" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727359837"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727359837"/>
+<taskbegin task="Connect Scan" time="1727359837"/>
+<taskend task="Connect Scan" time="1727359837" extrainfo="5 total ports"/>
+<taskbegin task="Service scan" time="1727359837"/>
+<taskend task="Service scan" time="1727359933" extrainfo="5 services on 1 host"/>
+<taskbegin task="NSE" time="1727359934"/>
+<taskend task="NSE" time="1727359935"/>
+<taskbegin task="NSE" time="1727359935"/>
+<taskend task="NSE" time="1727359936"/>
+<taskbegin task="NSE" time="1727359936"/>
+<taskend task="NSE" time="1727359936"/>
+<host starttime="1727359837" endtime="1727359936"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.29.77" addrtype="ipv4"/>
+<address addr="08:00:27:62:36:9D" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 79:07:2b:2c:2c:4e:14:0a:e7:b3:63:46:c6:b3:ad:16 (RSA)&#xa;  256 24:6b:85:e3:ab:90:5c:ec:d5:83:49:54:cd:98:31:95 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC/0O8beKKMGvekLefDRWa/MVhJwXr1B0PuQHDt8xlqKcpvdLCO6b0c+sfcemEq7m92V82fTy2BAvvkk9GZSQ+OrDfWzB1grIl6t9ndVBB++rz/rZBwmZ/VcSBLSwjRAnrHRiyCtunxDiWYwD2htq5FV2r4K38+YrWARqpapME/K/atz9Txxe4WwzihPB+910b0dG4JAn8hXG8VHZsJvo4qV0/yEcSgwD9B4QV6XK3uxOnHviWUEJTOHU12LAz39KYj5Pir9BmSsfrbDgt4s06zR1RqviIF+GIJkbeWR5V5Mn9CazLuPmyrmybsFEfFMh5VeDJ33eCeGLhmHYoGEJ6p</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">79072b2c2c4e140ae7b36346c6b3ad16</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILvQyP65/4gxE9tbpAIijwT4kwjUtquJDVqd3+iNB0pN</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">246b85e3ab905cecd5834954cd983195</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="113"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ident" method="table" conf="3"/><script id="auth-owners" output="oident"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="DEVELOPMENT" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service><script id="auth-owners" output="root"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.7.6-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="DEVELOPMENT" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service><script id="auth-owners" output="root"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" product="IIS 6.0" servicefp="SF-Port8080-TCP:V=7.94SVN%I=7%D=9/26%Time=66F56B63%P=x86_64-pc-linux-gnu%r(GetRequest,330,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Thu,\x2026\x20Sep\x202024\x2014:10:58\x20GMT\r\nServer:\x20IIS\x206\.0\r\nLast-Modified:\x20Wed,\x2026\x20Dec\x202018\x2001:55:41\x20GMT\r\nETag:\x20\&quot;230-57de32091ad69\&quot;\r\nAccept-Ranges:\x20bytes\r\nContent-Length:\x20560\r\nVary:\x20Accept-Encoding\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;DEVELOPMENT\x20PORTAL\.\x20NOT\x20FOR\x20OUTSIDERS\x20OR\x20HACKERS!&lt;/title&gt;\r\n&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;p&gt;Welcome\x20to\x20the\x20Development\x20Page\.&lt;/p&gt;\r\n&lt;br/&gt;\r\n&lt;p&gt;There\x20are\x20many\x20projects\x20in\x20this\x20box\.\x20View\x20some\x20of\x20these\x20projects\x20at\x20html_pages\.&lt;/p&gt;\r\n&lt;br/&gt;\r\n&lt;p&gt;WARNING!\x20We\x20are\x20experimenting\x20a\x20host-based\x20intrusion\x20detection\x20system\.\x20Report\x20all\x20false\x20positives\x20to\x20patrick@goodtech\.com\.sg\.&lt;/p&gt;\r\n&lt;br/&gt;\r\n&lt;br/&gt;\r\n&lt;br/&gt;\r\n&lt;hr&gt;\r\n&lt;i&gt;Powered\x20by\x20IIS\x206\.0&lt;/i&gt;\r\n&lt;/body&gt;\r\n\r\n&lt;!-&#45;\x20Searching\x20for\x20development\x20secret\x20page\.\.\.\x20where\x20could\x20it\x20be\?\x20-&#45;&gt;\r\n\r\n&lt;!-&#45;\x20Patrick,\x20Head\x20of\x20Development-&#45;&gt;\r\n\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,A6,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Thu,\x2026\x20Sep\x202024\x2014:10:58\x20GMT\r\nServer:\x20IIS\x206\.0\r\nAllow:\x20POST,OPTIONS,HEAD,GET\r\nContent-Length:\x200\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&quot;)%r(RTSPRequest,1CB,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Thu,\x2026\x20Sep\x202024\x2014:10:58\x20GMT\r\nServer:\x20IIS\x206\.0\r\nContent-Length:\x20292\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charset=iso-8859-1\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\n&lt;html&gt;&lt;head&gt;\n&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;\n&lt;/head&gt;&lt;body&gt;\n&lt;h1&gt;Bad\x20Request&lt;/h1&gt;\n&lt;p&gt;Your\x20browser\x20sent\x20a\x20request\x20that\x20this\x20server\x20could\x20not\x20understand\.&lt;br\x20/&gt;\n&lt;/p&gt;\n&lt;hr&gt;\n&lt;address&gt;IIS\x206\.0\x20Server\x20at\x20192\.168\.29\.77\x20Port\x208080&lt;/address&gt;\n&lt;/body&gt;&lt;/html&gt;\n&quot;);" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS HEAD GET"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+</table>
+</script><script id="http-server-header" output="IIS 6.0"><elem>IIS 6.0</elem>
+</script><script id="http-title" output="DEVELOPMENT PORTAL. NOT FOR OUTSIDERS OR HACKERS!"><elem key="title">DEVELOPMENT PORTAL. NOT FOR OUTSIDERS OR HACKERS!</elem>
+</script><script id="http-open-proxy" output="Proxy might be redirecting requests"/><script id="fingerprint-strings" output="&#xa;  GetRequest: &#xa;    HTTP/1.1 200 OK&#xa;    Date: Thu, 26 Sep 2024 14:10:58 GMT&#xa;    Server: IIS 6.0&#xa;    Last-Modified: Wed, 26 Dec 2018 01:55:41 GMT&#xa;    ETag: &quot;230-57de32091ad69&quot;&#xa;    Accept-Ranges: bytes&#xa;    Content-Length: 560&#xa;    Vary: Accept-Encoding&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;DEVELOPMENT PORTAL. NOT FOR OUTSIDERS OR HACKERS!&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Welcome to the Development Page.&lt;/p&gt;&#xa;    &lt;br/&gt;&#xa;    &lt;p&gt;There are many projects in this box. View some of these projects at html_pages.&lt;/p&gt;&#xa;    &lt;br/&gt;&#xa;    &lt;p&gt;WARNING! We are experimenting a host-based intrusion detection system. Report all false positives to patrick@goodtech.com.sg.&lt;/p&gt;&#xa;    &lt;br/&gt;&#xa;    &lt;br/&gt;&#xa;    &lt;br/&gt;&#xa;    &lt;hr&gt;&#xa;    &lt;i&gt;Powered by IIS 6.0&lt;/i&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;!-&#45; Searching for development secret page... where could it be? -&#45;&gt;&#xa;    &lt;!-&#45; Patrick, Head of Development-&#45;&gt;&#xa;    &lt;/html&gt;&#xa;  HTTPOptions: &#xa;    HTTP/1.1 200 OK&#xa;    Date: Thu, 26 Sep 2024 14:10:58 GMT&#xa;    Server: IIS 6.0&#xa;    Allow: POST,OPTIONS,HEAD,GET&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;  RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Thu, 26 Sep 2024 14:10:58 GMT&#xa;    Server: IIS 6.0&#xa;    Content-Length: 292&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=iso-8859-1&#xa;    &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&lt;body&gt;&#xa;    &lt;h1&gt;Bad Request&lt;/h1&gt;&#xa;    &lt;p&gt;Your browser sent a request that this server could not understand.&lt;br /&gt;&#xa;    &lt;/p&gt;&#xa;    &lt;hr&gt;&#xa;    &lt;address&gt;IIS 6.0 Server at 192.168.29.77 Port 8080&lt;/address&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;"><elem key="GetRequest">&#xa;    HTTP/1.1 200 OK&#xa;    Date: Thu, 26 Sep 2024 14:10:58 GMT&#xa;    Server: IIS 6.0&#xa;    Last-Modified: Wed, 26 Dec 2018 01:55:41 GMT&#xa;    ETag: &quot;230-57de32091ad69&quot;&#xa;    Accept-Ranges: bytes&#xa;    Content-Length: 560&#xa;    Vary: Accept-Encoding&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;DEVELOPMENT PORTAL. NOT FOR OUTSIDERS OR HACKERS!&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Welcome to the Development Page.&lt;/p&gt;&#xa;    &lt;br/&gt;&#xa;    &lt;p&gt;There are many projects in this box. View some of these projects at html_pages.&lt;/p&gt;&#xa;    &lt;br/&gt;&#xa;    &lt;p&gt;WARNING! We are experimenting a host-based intrusion detection system. Report all false positives to patrick@goodtech.com.sg.&lt;/p&gt;&#xa;    &lt;br/&gt;&#xa;    &lt;br/&gt;&#xa;    &lt;br/&gt;&#xa;    &lt;hr&gt;&#xa;    &lt;i&gt;Powered by IIS 6.0&lt;/i&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;!-&#45; Searching for development secret page... where could it be? -&#45;&gt;&#xa;    &lt;!-&#45; Patrick, Head of Development-&#45;&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 200 OK&#xa;    Date: Thu, 26 Sep 2024 14:10:58 GMT&#xa;    Server: IIS 6.0&#xa;    Allow: POST,OPTIONS,HEAD,GET&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    Content-Type: text/html</elem>
+<elem key="RTSPRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Thu, 26 Sep 2024 14:10:58 GMT&#xa;    Server: IIS 6.0&#xa;    Content-Length: 292&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=iso-8859-1&#xa;    &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&lt;body&gt;&#xa;    &lt;h1&gt;Bad Request&lt;/h1&gt;&#xa;    &lt;p&gt;Your browser sent a request that this server could not understand.&lt;br /&gt;&#xa;    &lt;/p&gt;&#xa;    &lt;hr&gt;&#xa;    &lt;address&gt;IIS 6.0 Server at 192.168.29.77 Port 8080&lt;/address&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="31188"/>
+<osmatch name="Linux 4.15 - 5.8" accuracy="100" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3381859" lastboot="Sun Aug 18 16:17:57 2024"/>
+<distance value="1"/>
+<tcpsequence index="265" difficulty="Good luck!" values="7C36050E,8B21FED,ED90508A,2760AE4,87D1A8E7,7F773563"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="C9930ADF,C9930B43,C9930BA7,C9930C0B,C9930C6F,C9930CD3"/>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2024-09-26T14:12:29&#xa;  start_date: N/A"><elem key="date">2024-09-26T14:12:29</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="clock-skew" output="mean: 13s, deviation: 0s, median: 13s"><elem key="count">3</elem>
+<elem key="median">13</elem>
+<elem key="mean">13</elem>
+<elem key="stddev">0</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.7.6-Ubuntu)&#xa;  Computer name: development&#xa;  NetBIOS computer name: DEVELOPMENT\x00&#xa;  Domain name: \x00&#xa;  FQDN: development&#xa;  System time: 2024-09-26T14:12:29+00:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.7.6-Ubuntu</elem>
+<elem key="server">DEVELOPMENT\x00</elem>
+<elem key="date">2024-09-26T14:12:29+00:00</elem>
+<elem key="fqdn">development</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="nbstat" output="NetBIOS name: DEVELOPMENT, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  DEVELOPMENT&lt;00&gt;      Flags: &lt;unique&gt;&lt;active&gt;&#xa;  DEVELOPMENT&lt;03&gt;      Flags: &lt;unique&gt;&lt;active&gt;&#xa;  DEVELOPMENT&lt;20&gt;      Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1d&gt;        Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1e&gt;        Flags: &lt;group&gt;&lt;active&gt;"/></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.29.77" rtt="0.37"/>
+</trace>
+<times srtt="365" rttvar="63" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727359936"/>
+<taskend task="NSE" time="1727359936"/>
+<taskbegin task="NSE" time="1727359936"/>
+<taskend task="NSE" time="1727359936"/>
+<taskbegin task="NSE" time="1727359936"/>
+<taskend task="NSE" time="1727359936"/>
+<runstats><finished time="1727359936" timestr="Thu Sep 26 19:42:16 2024" summary="Nmap done at Thu Sep 26 19:42:16 2024; 1 IP address (1 host up) scanned in 99.21 seconds" elapsed="99.21" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
