@@ -1,0 +1,6 @@
+[smb-enum] [javascript] [info] 192.168.1.4:139 ["NetBIOSDomainName: UBUNTU","DNSComputerNamen: ubuntu","DNSComputerName: ubuntu","ForestName:","OSVersion: 6.1.0","NetBIOSComputerName: UBUNTU"]
+[smb2-capabilities] [javascript] [info] 192.168.1.4:139 ["["DFSSupport","Leasing"]"]
+[smb2-server-time] [javascript] [info] 192.168.1.4:139 ["SystemTime: 2024-09-26T15:49:18.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-os-detect] [javascript] [info] 192.168.1.4:139 ["6.1.0"]
+[smb-signing-not-required] [javascript] [medium] 192.168.1.4:139
+[smb-anonymous-access] [javascript] [high] 192.168.1.4:139
