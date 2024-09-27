@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Sep 26 22:36:39 2024 as: nmap -v -Pn -p- -oA TrOll:2-all-ports-scan-output 192.168.1.6 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA TrOll:2-all-ports-scan-output 192.168.1.6" start="1727370399" startstr="Thu Sep 26 22:36:39 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1727370399"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.6" addrtype="ipv4"/>
+<address addr="08:00:27:FD:5A:2C" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727370399" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727370399"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727370400"/>
+<taskbegin task="SYN Stealth Scan" time="1727370400"/>
+<taskend task="SYN Stealth Scan" time="1727370401" extrainfo="65535 total ports"/>
+<host starttime="1727370400" endtime="1727370401"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.6" addrtype="ipv4"/>
+<address addr="08:00:27:FD:5A:2C" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="reset" count="65532" proto="tcp" ports="1-20,23-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="339" rttvar="76" to="100000"/>
+</host>
+<runstats><finished time="1727370401" timestr="Thu Sep 26 22:36:41 2024" summary="Nmap done at Thu Sep 26 22:36:41 2024; 1 IP address (1 host up) scanned in 1.91 seconds" elapsed="1.91" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
