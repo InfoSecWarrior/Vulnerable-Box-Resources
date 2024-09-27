@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Sep 25 15:56:42 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,25,80,139,443,445,512,513,514,666,3306,3632,5901,6001,8080,8443,9080,9443 -oA bee-box-nmap-version-scan-output 192.168.1.229 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 21,22,25,80,139,443,445,512,513,514,666,3306,3632,5901,6001,8080,8443,9080,9443 -oA bee-box-nmap-version-scan-output 192.168.1.229" start="1727260002" startstr="Wed Sep 25 15:56:42 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="19" services="21-22,25,80,139,443,445,512-514,666,3306,3632,5901,6001,8080,8443,9080,9443"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727260002"/>
+<taskend task="NSE" time="1727260002"/>
+<taskbegin task="NSE" time="1727260002"/>
+<taskend task="NSE" time="1727260002"/>
+<taskbegin task="NSE" time="1727260002"/>
+<taskend task="NSE" time="1727260002"/>
+<taskbegin task="ARP Ping Scan" time="1727260002"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.229" addrtype="ipv4"/>
+<address addr="08:00:27:90:0B:6D" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727260002" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727260002"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727260002"/>
+<taskbegin task="Connect Scan" time="1727260002"/>
+<taskend task="Connect Scan" time="1727260002" extrainfo="19 total ports"/>
+<taskbegin task="Service scan" time="1727260002"/>
+<taskend task="Service scan" time="1727260152" extrainfo="19 services on 1 host"/>
+<taskbegin task="NSE" time="1727260154"/>
+<taskend task="NSE" time="1727260165"/>
+<taskbegin task="NSE" time="1727260165"/>
+<taskend task="NSE" time="1727260196"/>
+<taskbegin task="NSE" time="1727260196"/>
+<taskend task="NSE" time="1727260196"/>
+<host starttime="1727260002" endtime="1727260196"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.229" addrtype="ipv4"/>
+<address addr="08:00:27:90:0B:6D" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="ProFTPD" version="1.3.1" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd:1.3.1</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;-rw-rw-r-&#45;   1 root     www-data   543803 Nov  2  2014 Iron_Man.pdf&#xa;-rw-rw-r-&#45;   1 root     www-data   462949 Nov  2  2014 Terminator_Salvation.pdf&#xa;-rw-rw-r-&#45;   1 root     www-data   544600 Nov  2  2014 The_Amazing_Spider-Man.pdf&#xa;-rw-rw-r-&#45;   1 root     www-data   526187 Nov  2  2014 The_Cabin_in_the_Woods.pdf&#xa;-rw-rw-r-&#45;   1 root     www-data   756522 Nov  2  2014 The_Dark_Knight_Rises.pdf&#xa;-rw-rw-r-&#45;   1 root     www-data   618117 Nov  2  2014 The_Incredible_Hulk.pdf&#xa;-rw-rw-r-&#45;   1 root     www-data  5010042 Nov  2  2014 bWAPP_intro.pdf"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="4.7p1 Debian 8ubuntu1" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.7p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 45:a4:66:ec:3a:ba:97:f8:3e:1a:ba:1c:24:68:22:e8 (DSA)&#xa;  2048 63:e7:c5:d1:8d:8a:94:02:36:6a:d7:d2:75:e9:8b:ce (RSA)"><table>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAP4QSUfpcARsOR58DHmfN1BXcQ432mH5p+9cvicr3XKtbvkztetpNJ+iTox2K9EGbIP1eCBNLytWoFsuAX0c6QCGKtk/WxnuMSZERcmiuuAKAnOPXyZ1uCmEHqoALJs7ajk1M+9gQkoECh3HeXY4pgzjAu4G/SMYwNqIsvwgw259AAAAFQDe3e8OsQ8mzHYlbLKUf/NyIbYJYQAAAIBTA+kZMKJXM36LDGvoRDnvVpOp3bhK7OufxozhfZqcAw9BhOvh89s3oBr1l7yWs1nKOOX4vVqFBcimiwuKYzuVdgeM2t1fNU68GJB3Zihu2g5SOKbtW5Pk9xTIch3Q3+1d6pWNlUchjh7FOSwf84UjiITTk9BEeyajU+9aK7IrTAAAAIEAmbCuEx/HipseGGdYEgMb1cHiA6d6TGt7CuE4VBIWQRckIAmIb605LPigXc8Gco5poDvJyVXXvvfZBwbc0dyOAhCER9DaXhtcJuExKvLRUXJeoYOz63qRm5TuGGMY2JfDcy2mBJhASaTJsZGA2eCfQPKA/8vtVKLWWy9pDouWE5o=</elem>
+<elem key="fingerprint">45a466ec3aba97f83e1aba1c246822e8</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="bits">1024</elem>
+</table>
+<table>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAQEA4MzckFt0wKmYH+q3RkHCKrDFMXTFdaqEaY9dHcmYQk+64VIY4n6wei22I706vp2hD67jv2Y19Jxo9bihdzH4Vppd0RffXwRm2IVVSCVskh1Dlxc7mwbIC4ozY8GeP05esapOhLpmlqutiMbC+chul2VeMWrCQ8HjhovLXnE58JDhYbVlRmJXy4Y6XNBRxGuhQE6kd+RzO8A9Dls4I5oxJhG+1uFkXyFU41MU9Eerlhlwv8A0i07hfcn+vmtiseoMlg3mA+HRb19zJ5M31PYeS91fprSag48k6akyD8JyLRihL5J5Gul1Tvg06s1Oj1tRNQqL43swz/ptMDMCbRlphQ==</elem>
+<elem key="fingerprint">63e7c5d18d8a9402366ad7d275e98bce</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" bee-box" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="ssl-date" output="2024-09-25T10:29:29+00:00; -2s from scanner time."><elem key="date">2024-09-25T10:29:29+00:00</elem>
+<elem key="delta">-2.0</elem>
+</script><script id="ssl-cert" output="Subject: commonName=ubuntu/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX&#xa;Issuer: commonName=ubuntu/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2013-03-28T19:14:17&#xa;Not valid after:  2013-04-27T19:14:17&#xa;MD5:   427e:d025:c79d:cb42:b22d:387b:f435:3ced&#xa;SHA-1: d641:5c57:8028:4145:5b2f:5bba:3852:8be4:a11c:2c47"><table key="subject">
+<elem key="commonName">ubuntu</elem>
+<elem key="countryName">XX</elem>
+<elem key="emailAddress">root@ubuntu</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ubuntu</elem>
+<elem key="countryName">XX</elem>
+<elem key="emailAddress">root@ubuntu</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">95E22B35F5A226E6D3C07EA02122A724F37393B81381813704EE186F6EAD01ADEEA39CD5407E92D5A8016CC31FC7689E435DB819A3EC6E04970D89C267F2E6908A448678905EDA03B7183B95C5BD1A36FCEC41C6E36727A69A5C41D5E3BE8A8659265536B6F577DCC0B2BE7A47BC0DAEFD2C9E14AA5A1A6842F70EE36E00C417</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2013-03-28T19:14:17</elem>
+<elem key="notAfter">2013-04-27T19:14:17</elem>
+</table>
+<elem key="md5">427ed025c79dcb42b22d387bf4353ced</elem>
+<elem key="sha1">d6415c57802841455b2f5bba38528be4a11c2c47</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDCzCCAnQCCQDsljia970M0zANBgkqhkiG9w0BAQUFADCByTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czEPMA0GA1UEAxMGdWJ1bnR1MRowGAYJKoZIhvcNAQkBFgtyb290QHVidW50dTAe&#xa;Fw0xMzAzMjgxOTE0MTdaFw0xMzA0MjcxOTE0MTdaMIHJMQswCQYDVQQGEwJYWDEq&#xa;MCgGA1UECBMhVGhlcmUgaXMgbm8gc3VjaCB0aGluZyBvdXRzaWRlIFVTMRMwEQYD&#xa;VQQHEwpFdmVyeXdoZXJlMQ4wDAYDVQQKEwVPQ09TQTE8MDoGA1UECxMzT2ZmaWNl&#xa;IGZvciBDb21wbGljYXRpb24gb2YgT3RoZXJ3aXNlIFNpbXBsZSBBZmZhaXJzMQ8w&#xa;DQYDVQQDEwZ1YnVudHUxGjAYBgkqhkiG9w0BCQEWC3Jvb3RAdWJ1bnR1MIGfMA0G&#xa;CSqGSIb3DQEBAQUAA4GNADCBiQKBgQCV4is19aIm5tPAfqAhIqck83OTuBOBgTcE&#xa;7hhvbq0Bre6jnNVAfpLVqAFswx/HaJ5DXbgZo+xuBJcNicJn8uaQikSGeJBe2gO3&#xa;GDuVxb0aNvzsQcbjZyemmlxB1eO+ioZZJlU2tvV33MCyvnpHvA2u/SyeFKpaGmhC&#xa;9w7jbgDEFwIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAC0Bzq8GUBIEYcldBMuaznEA&#xa;yFr/Pnnuj9Be5eKGdhFDs5vIlC6Odmw9VtHPKmg+P0f4vLhJjYpiP/gUK5CWtz6K&#xa;oQUj0NxWvcevYqEQliXesN44qSwJdf9Wv0WfMYMeXkTVe/oOS/xuWwKDPDDg24mz&#xa;4QZokiPp59Ok98OY5Jfi&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="smtp-commands" output="bee-box, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN"/><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5&#xa;    SSL2_DES_64_CBC_WITH_MD5&#xa;    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5&#xa;    SSL2_RC2_128_CBC_WITH_MD5&#xa;    SSL2_RC4_128_WITH_MD5&#xa;    SSL2_RC4_128_EXPORT40_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+<elem>SSL2_DES_64_CBC_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+<elem>SSL2_RC4_128_EXPORT40_WITH_MD5</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.8" extrainfo="(Ubuntu) DAV/2 mod_fastcgi/2.4.6 PHP/5.2.4-2ubuntu5 with Suhosin-Patch mod_ssl/2.2.8 OpenSSL/0.9.8g" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.8</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-server-header" output="Apache/2.2.8 (Ubuntu) DAV/2 mod_fastcgi/2.4.6 PHP/5.2.4-2ubuntu5 with Suhosin-Patch mod_ssl/2.2.8 OpenSSL/0.9.8g"><elem>Apache/2.2.8 (Ubuntu) DAV/2 mod_fastcgi/2.4.6 PHP/5.2.4-2ubuntu5 with Suhosin-Patch mod_ssl/2.2.8 OpenSSL/0.9.8g</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS TRACE&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: ITSECGAMES" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.8" extrainfo="(Ubuntu) DAV/2 mod_fastcgi/2.4.6 PHP/5.2.4-2ubuntu5 with Suhosin-Patch mod_ssl/2.2.8 OpenSSL/0.9.8g" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.8</cpe></service><script id="ssl-date" output="2024-09-25T10:29:24+00:00; -2s from scanner time."><elem key="date">2024-09-25T10:29:24+00:00</elem>
+<elem key="delta">-2.0</elem>
+</script><script id="http-server-header" output="Apache/2.2.8 (Ubuntu) DAV/2 mod_fastcgi/2.4.6 PHP/5.2.4-2ubuntu5 with Suhosin-Patch mod_ssl/2.2.8 OpenSSL/0.9.8g"><elem>Apache/2.2.8 (Ubuntu) DAV/2 mod_fastcgi/2.4.6 PHP/5.2.4-2ubuntu5 with Suhosin-Patch mod_ssl/2.2.8 OpenSSL/0.9.8g</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS TRACE&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5&#xa;    SSL2_DES_64_CBC_WITH_MD5&#xa;    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5&#xa;    SSL2_RC2_128_CBC_WITH_MD5&#xa;    SSL2_RC4_128_WITH_MD5&#xa;    SSL2_RC4_128_EXPORT40_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+<elem>SSL2_DES_64_CBC_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+<elem>SSL2_RC4_128_EXPORT40_WITH_MD5</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=bee-box.bwapp.local/organizationName=MME/stateOrProvinceName=Flanders/countryName=BE&#xa;Issuer: commonName=bee-box.bwapp.local/organizationName=MME/stateOrProvinceName=Flanders/countryName=BE&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2013-04-14T18:11:32&#xa;Not valid after:  2018-04-13T18:11:32&#xa;MD5:   fbeb:479a:2243:5001:3c79:18f7:4ec9:6fdb&#xa;SHA-1: ae5f:b7be:864a:78e1:6831:8fc1:c96a:4bd2:42c4:e6c3"><table key="subject">
+<elem key="commonName">bee-box.bwapp.local</elem>
+<elem key="countryName">BE</elem>
+<elem key="emailAddress">bwapp@itsecgames.com</elem>
+<elem key="localityName">Menen</elem>
+<elem key="organizationName">MME</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="stateOrProvinceName">Flanders</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">bee-box.bwapp.local</elem>
+<elem key="countryName">BE</elem>
+<elem key="emailAddress">bwapp@itsecgames.com</elem>
+<elem key="localityName">Menen</elem>
+<elem key="organizationName">MME</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="stateOrProvinceName">Flanders</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">97E36A3959B2DE79DBFB42F5FBC14860A802ACBF63E84D30AE3611724E6A7CCBEA28F1F6A5376A177610249CCE28FC46B35983027E67F867037B244950D4B5E8099BED41F5829CAADD54264FBB07CA64E3AE31F4DD9176C7D00F77E6C8C38FBDAB9F1AE12CAB5776EA445077025756B630962F364B9555E7B66391BB06E6F411</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2013-04-14T18:11:32</elem>
+<elem key="notAfter">2018-04-13T18:11:32</elem>
+</table>
+<elem key="md5">fbeb479a224350013c7918f74ec96fdb</elem>
+<elem key="sha1">ae5fb7be864a78e168318fc1c96a4bd242c4e6c3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIClTCCAf4CCQDYvSVKsVyfWzANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMC&#xa;QkUxETAPBgNVBAgTCEZsYW5kZXJzMQ4wDAYDVQQHEwVNZW5lbjEMMAoGA1UEChMD&#xa;TU1FMQswCQYDVQQLEwJJVDEcMBoGA1UEAxMTYmVlLWJveC5id2FwcC5sb2NhbDEj&#xa;MCEGCSqGSIb3DQEJARYUYndhcHBAaXRzZWNnYW1lcy5jb20wHhcNMTMwNDE0MTgx&#xa;MTMyWhcNMTgwNDEzMTgxMTMyWjCBjjELMAkGA1UEBhMCQkUxETAPBgNVBAgTCEZs&#xa;YW5kZXJzMQ4wDAYDVQQHEwVNZW5lbjEMMAoGA1UEChMDTU1FMQswCQYDVQQLEwJJ&#xa;VDEcMBoGA1UEAxMTYmVlLWJveC5id2FwcC5sb2NhbDEjMCEGCSqGSIb3DQEJARYU&#xa;YndhcHBAaXRzZWNnYW1lcy5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGB&#xa;AJfjajlZst552/tC9fvBSGCoAqy/Y+hNMK42EXJOanzL6ijx9qU3ahd2ECSczij8&#xa;RrNZgwJ+Z/hnA3skSVDUtegJm+1B9YKcqt1UJk+7B8pk464x9N2RdsfQD3fmyMOP&#xa;vaufGuEsq1d26kRQdwJXVrYwli82S5VV57ZjkbsG5vQRAgMBAAEwDQYJKoZIhvcN&#xa;AQEFBQADgYEAd+DlGErtouGz0qCAjStyvMDi2i5D1LOuFzHDSsu2tbkALSzbrol2&#xa;lHYGi6hlywZD6wFwVOxsUgjzmlUUowBxmLD+Cam+Df5Xm/yNWqHvmahUQ6VSISYF&#xa;o2i69SuuTghhwqwQ/uiMEUEwPXO20wN0dOq2z8+nG7xDL4eM5AWAbO4=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.0.28a" extrainfo="workgroup: ITSECGAMES" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="512"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="exec" product="netkit-rsh rexecd" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:netkit:netkit</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="513"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="login" method="table" conf="3"/></port>
+<port protocol="tcp" portid="514"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="shell" method="table" conf="3"/></port>
+<port protocol="tcp" portid="666"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="doom" servicefp="SF-Port666-TCP:V=7.94SVN%I=7%D=9/25%Time=66F3E568%P=x86_64-pc-linux-gnu%r(GenericLines,400,&quot;\*\*\*\x20bWAPP\x20Movie\x20Service\x20\*\*\*\nMatching\x20movies:\x200\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0&quot;)%r(beast2,400,&quot;\*\*\*\x20bWAPP\x20Movie\x20Service\x20\*\*\*\nMatching\x20movies:\x200\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GenericLines, beast2: &#xa;    *** bWAPP Movie Service ***&#xa;    Matching movies: 0"><elem key="GenericLines, beast2">&#xa;    *** bWAPP Movie Service ***&#xa;    Matching movies: 0</elem>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" version="5.0.96-0ubuntu3" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:5.0.96-0ubuntu3</cpe></service><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 5.0.96-0ubuntu3&#xa;  Thread ID: 40&#xa;  Capabilities flags: 41516&#xa;  Some Capabilities: Support41Auth, ConnectWithDatabase, Speaks41ProtocolNew, LongColumnFlag, SupportsCompression, SupportsTransactions&#xa;  Status: Autocommit&#xa;  Salt: Ar;pA3y.s|514S&apos;dDg[p"><elem key="Protocol">10</elem>
+<elem key="Version">5.0.96-0ubuntu3</elem>
+<elem key="Thread ID">40</elem>
+<elem key="Capabilities flags">41516</elem>
+<table key="Some Capabilities">
+<elem>Support41Auth</elem>
+<elem>ConnectWithDatabase</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>LongColumnFlag</elem>
+<elem>SupportsCompression</elem>
+<elem>SupportsTransactions</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">Ar;pA3y.s|514S&apos;dDg[p</elem>
+</script></port>
+<port protocol="tcp" portid="3632"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="distccd" product="distccd" version="v1" extrainfo="(GNU) 4.2.3 (Ubuntu 4.2.3-2ubuntu7)" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="5901"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="vnc" product="VNC" extrainfo="protocol 3.8" method="probed" conf="10"/><script id="vnc-info" output="&#xa;  Protocol version: 3.8&#xa;  Security types: &#xa;    VNC Authentication (2)"><elem key="Protocol version">3.8</elem>
+<table key="Security types">
+<table>
+<elem key="type">2</elem>
+<elem key="name">VNC Authentication</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="6001"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="X11" extrainfo="access denied" ostype="Unix" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.4.0" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.4.0</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-server-header" output="nginx/1.4.0"><elem>nginx/1.4.0</elem>
+</script><script id="http-open-proxy" output="Proxy might be redirecting requests"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.4.0" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.4.0</cpe></service><script id="ssl-cert" output="Subject: commonName=bee-box.bwapp.local/organizationName=MME/stateOrProvinceName=Flanders/countryName=BE&#xa;Issuer: commonName=bee-box.bwapp.local/organizationName=MME/stateOrProvinceName=Flanders/countryName=BE&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2013-04-14T18:11:32&#xa;Not valid after:  2018-04-13T18:11:32&#xa;MD5:   fbeb:479a:2243:5001:3c79:18f7:4ec9:6fdb&#xa;SHA-1: ae5f:b7be:864a:78e1:6831:8fc1:c96a:4bd2:42c4:e6c3"><table key="subject">
+<elem key="commonName">bee-box.bwapp.local</elem>
+<elem key="countryName">BE</elem>
+<elem key="emailAddress">bwapp@itsecgames.com</elem>
+<elem key="localityName">Menen</elem>
+<elem key="organizationName">MME</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="stateOrProvinceName">Flanders</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">bee-box.bwapp.local</elem>
+<elem key="countryName">BE</elem>
+<elem key="emailAddress">bwapp@itsecgames.com</elem>
+<elem key="localityName">Menen</elem>
+<elem key="organizationName">MME</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="stateOrProvinceName">Flanders</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">97E36A3959B2DE79DBFB42F5FBC14860A802ACBF63E84D30AE3611724E6A7CCBEA28F1F6A5376A177610249CCE28FC46B35983027E67F867037B244950D4B5E8099BED41F5829CAADD54264FBB07CA64E3AE31F4DD9176C7D00F77E6C8C38FBDAB9F1AE12CAB5776EA445077025756B630962F364B9555E7B66391BB06E6F411</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2013-04-14T18:11:32</elem>
+<elem key="notAfter">2018-04-13T18:11:32</elem>
+</table>
+<elem key="md5">fbeb479a224350013c7918f74ec96fdb</elem>
+<elem key="sha1">ae5fb7be864a78e168318fc1c96a4bd242c4e6c3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIClTCCAf4CCQDYvSVKsVyfWzANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMC&#xa;QkUxETAPBgNVBAgTCEZsYW5kZXJzMQ4wDAYDVQQHEwVNZW5lbjEMMAoGA1UEChMD&#xa;TU1FMQswCQYDVQQLEwJJVDEcMBoGA1UEAxMTYmVlLWJveC5id2FwcC5sb2NhbDEj&#xa;MCEGCSqGSIb3DQEJARYUYndhcHBAaXRzZWNnYW1lcy5jb20wHhcNMTMwNDE0MTgx&#xa;MTMyWhcNMTgwNDEzMTgxMTMyWjCBjjELMAkGA1UEBhMCQkUxETAPBgNVBAgTCEZs&#xa;YW5kZXJzMQ4wDAYDVQQHEwVNZW5lbjEMMAoGA1UEChMDTU1FMQswCQYDVQQLEwJJ&#xa;VDEcMBoGA1UEAxMTYmVlLWJveC5id2FwcC5sb2NhbDEjMCEGCSqGSIb3DQEJARYU&#xa;YndhcHBAaXRzZWNnYW1lcy5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGB&#xa;AJfjajlZst552/tC9fvBSGCoAqy/Y+hNMK42EXJOanzL6ijx9qU3ahd2ECSczij8&#xa;RrNZgwJ+Z/hnA3skSVDUtegJm+1B9YKcqt1UJk+7B8pk464x9N2RdsfQD3fmyMOP&#xa;vaufGuEsq1d26kRQdwJXVrYwli82S5VV57ZjkbsG5vQRAgMBAAEwDQYJKoZIhvcN&#xa;AQEFBQADgYEAd+DlGErtouGz0qCAjStyvMDi2i5D1LOuFzHDSsu2tbkALSzbrol2&#xa;lHYGi6hlywZD6wFwVOxsUgjzmlUUowBxmLD+Cam+Df5Xm/yNWqHvmahUQ6VSISYF&#xa;o2i69SuuTghhwqwQ/uiMEUEwPXO20wN0dOq2z8+nG7xDL4eM5AWAbO4=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="tls-nextprotoneg" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="http-server-header" output="nginx/1.4.0"><elem>nginx/1.4.0</elem>
+</script><script id="ssl-date" output="2024-09-25T10:29:24+00:00; -2s from scanner time."><elem key="date">2024-09-25T10:29:24+00:00</elem>
+<elem key="delta">-2.0</elem>
+</script></port>
+<port protocol="tcp" portid="9080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="lighttpd" version="1.4.19" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd:1.4.19</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS GET HEAD POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-server-header" output="lighttpd/1.4.19"><elem>lighttpd/1.4.19</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+<port protocol="tcp" portid="9443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="lighttpd" version="1.4.19" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd:1.4.19</cpe></service><script id="ssl-date" output="2024-09-25T10:29:24+00:00; -2s from scanner time."><elem key="date">2024-09-25T10:29:24+00:00</elem>
+<elem key="delta">-2.0</elem>
+</script><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5&#xa;    SSL2_DES_64_CBC_WITH_MD5&#xa;    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5&#xa;    SSL2_RC2_128_CBC_WITH_MD5&#xa;    SSL2_RC4_128_WITH_MD5&#xa;    SSL2_RC4_128_EXPORT40_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+<elem>SSL2_DES_64_CBC_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+<elem>SSL2_RC4_128_EXPORT40_WITH_MD5</elem>
+</table>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS GET HEAD POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=bee-box.bwapp.local/organizationName=MME/stateOrProvinceName=Flanders/countryName=BE&#xa;Issuer: commonName=bee-box.bwapp.local/organizationName=MME/stateOrProvinceName=Flanders/countryName=BE&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2013-04-14T18:11:32&#xa;Not valid after:  2018-04-13T18:11:32&#xa;MD5:   fbeb:479a:2243:5001:3c79:18f7:4ec9:6fdb&#xa;SHA-1: ae5f:b7be:864a:78e1:6831:8fc1:c96a:4bd2:42c4:e6c3"><table key="subject">
+<elem key="commonName">bee-box.bwapp.local</elem>
+<elem key="countryName">BE</elem>
+<elem key="emailAddress">bwapp@itsecgames.com</elem>
+<elem key="localityName">Menen</elem>
+<elem key="organizationName">MME</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="stateOrProvinceName">Flanders</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">bee-box.bwapp.local</elem>
+<elem key="countryName">BE</elem>
+<elem key="emailAddress">bwapp@itsecgames.com</elem>
+<elem key="localityName">Menen</elem>
+<elem key="organizationName">MME</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="stateOrProvinceName">Flanders</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">97E36A3959B2DE79DBFB42F5FBC14860A802ACBF63E84D30AE3611724E6A7CCBEA28F1F6A5376A177610249CCE28FC46B35983027E67F867037B244950D4B5E8099BED41F5829CAADD54264FBB07CA64E3AE31F4DD9176C7D00F77E6C8C38FBDAB9F1AE12CAB5776EA445077025756B630962F364B9555E7B66391BB06E6F411</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2013-04-14T18:11:32</elem>
+<elem key="notAfter">2018-04-13T18:11:32</elem>
+</table>
+<elem key="md5">fbeb479a224350013c7918f74ec96fdb</elem>
+<elem key="sha1">ae5fb7be864a78e168318fc1c96a4bd242c4e6c3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIClTCCAf4CCQDYvSVKsVyfWzANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMC&#xa;QkUxETAPBgNVBAgTCEZsYW5kZXJzMQ4wDAYDVQQHEwVNZW5lbjEMMAoGA1UEChMD&#xa;TU1FMQswCQYDVQQLEwJJVDEcMBoGA1UEAxMTYmVlLWJveC5id2FwcC5sb2NhbDEj&#xa;MCEGCSqGSIb3DQEJARYUYndhcHBAaXRzZWNnYW1lcy5jb20wHhcNMTMwNDE0MTgx&#xa;MTMyWhcNMTgwNDEzMTgxMTMyWjCBjjELMAkGA1UEBhMCQkUxETAPBgNVBAgTCEZs&#xa;YW5kZXJzMQ4wDAYDVQQHEwVNZW5lbjEMMAoGA1UEChMDTU1FMQswCQYDVQQLEwJJ&#xa;VDEcMBoGA1UEAxMTYmVlLWJveC5id2FwcC5sb2NhbDEjMCEGCSqGSIb3DQEJARYU&#xa;YndhcHBAaXRzZWNnYW1lcy5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGB&#xa;AJfjajlZst552/tC9fvBSGCoAqy/Y+hNMK42EXJOanzL6ijx9qU3ahd2ECSczij8&#xa;RrNZgwJ+Z/hnA3skSVDUtegJm+1B9YKcqt1UJk+7B8pk464x9N2RdsfQD3fmyMOP&#xa;vaufGuEsq1d26kRQdwJXVrYwli82S5VV57ZjkbsG5vQRAgMBAAEwDQYJKoZIhvcN&#xa;AQEFBQADgYEAd+DlGErtouGz0qCAjStyvMDi2i5D1LOuFzHDSsu2tbkALSzbrol2&#xa;lHYGi6hlywZD6wFwVOxsUgjzmlUUowBxmLD+Cam+Df5Xm/yNWqHvmahUQ6VSISYF&#xa;o2i69SuuTghhwqwQ/uiMEUEwPXO20wN0dOq2z8+nG7xDL4eM5AWAbO4=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-server-header" output="lighttpd/1.4.19"><elem>lighttpd/1.4.19</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="udp" portid="39013"/>
+<osmatch name="Linux 2.6.13 - 2.6.32" accuracy="100" line="47906">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="17179898" lastboot="Sun Mar 10 19:48:18 2024"/>
+<distance value="1"/>
+<tcpsequence index="202" difficulty="Good luck!" values="D3BE0249,D41B98F2,D380A7A3,D378A5B2,D3979BCF,D40BB70C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="FFFFF184,FFFFF19D,FFFFF1B6,FFFFF1CF,FFFFF1E8,FFFFF201"/>
+<hostscript><script id="smb-security-mode" output="&#xa;  account_used: &lt;blank&gt;&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">&lt;blank&gt;</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Unix (Samba 3.0.28a)&#xa;  Computer name: bee-box&#xa;  NetBIOS computer name: &#xa;  Domain name: &#xa;  FQDN: bee-box&#xa;  System time: 2024-09-25T12:29:12+02:00&#xa;"><elem key="os">Unix</elem>
+<elem key="lanmanager">Samba 3.0.28a</elem>
+<elem key="server"></elem>
+<elem key="date">2024-09-25T12:29:12+02:00</elem>
+<elem key="fqdn">bee-box</elem>
+<elem key="domain_dns"></elem>
+<elem key="workgroup">ITSECGAMES\x00</elem>
+</script><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/><script id="clock-skew" output="mean: -20m01s, deviation: 48m59s, median: -2s"><elem key="median">-2</elem>
+<elem key="mean">-1201</elem>
+<elem key="stddev">2939</elem>
+<elem key="count">6</elem>
+</script><script id="nbstat" output="NetBIOS name: BEE-BOX, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  BEE-BOX&lt;00&gt;          Flags: &lt;unique&gt;&lt;active&gt;&#xa;  BEE-BOX&lt;03&gt;          Flags: &lt;unique&gt;&lt;active&gt;&#xa;  BEE-BOX&lt;20&gt;          Flags: &lt;unique&gt;&lt;active&gt;&#xa;  ITSECGAMES&lt;1e&gt;       Flags: &lt;group&gt;&lt;active&gt;&#xa;  ITSECGAMES&lt;00&gt;       Flags: &lt;group&gt;&lt;active&gt;"/></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.1.229" rtt="0.10"/>
+</trace>
+<times srtt="102" rttvar="58" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727260196"/>
+<taskend task="NSE" time="1727260196"/>
+<taskbegin task="NSE" time="1727260196"/>
+<taskend task="NSE" time="1727260196"/>
+<taskbegin task="NSE" time="1727260196"/>
+<taskend task="NSE" time="1727260196"/>
+<runstats><finished time="1727260196" timestr="Wed Sep 25 15:59:56 2024" summary="Nmap done at Wed Sep 25 15:59:56 2024; 1 IP address (1 host up) scanned in 194.28 seconds" elapsed="194.28" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

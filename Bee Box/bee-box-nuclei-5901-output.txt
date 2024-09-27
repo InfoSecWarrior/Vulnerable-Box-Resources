@@ -1,0 +1,2 @@
+[rsync-list-modules] [javascript] [low] 192.168.1.229:5901 ["RFB  003.003  \x00\x00\x00\x00\x00\x00\x00\x1aToo  many  security  failures"]
+[vnc-service-detect] [tcp] [info] 192.168.1.229:5901 ["RFB 003.003"]

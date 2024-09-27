@@ -1,0 +1,13 @@
+# Dirsearch started Wed Sep 25 16:02:04 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.229:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o bee-box-dirsearch-80-wordlist-output.txt -q
+
+200    45B   http://192.168.1.229/index
+200     2KB  http://192.168.1.229/README
+200     3KB  http://192.168.1.229/INSTALL
+301   405B   http://192.168.1.229/drupal    -> REDIRECTS TO: http://192.168.1.229/drupal/
+200     8KB  http://192.168.1.229/release_notes
+301   409B   http://192.168.1.229/phpmyadmin    -> REDIRECTS TO: http://192.168.1.229/phpmyadmin/
+301   403B   http://192.168.1.229/evil    -> REDIRECTS TO: http://192.168.1.229/evil/
+200     0B   http://192.168.1.229/connection
+301   405B   http://192.168.1.229/webdav    -> REDIRECTS TO: http://192.168.1.229/webdav/
+301   405B   http://192.168.1.229/sqlite    -> REDIRECTS TO: http://192.168.1.229/sqlite/
+200    13KB  http://192.168.1.229/server-status

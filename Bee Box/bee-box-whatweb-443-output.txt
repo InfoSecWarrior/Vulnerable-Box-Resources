@@ -1,0 +1,1 @@
+https://192.168.1.229:443 [200 OK] Apache[2.2.8][mod_fastcgi/2.4.6,mod_ssl/2.2.8], Country[RESERVED][ZZ], HTML5, HTTPServer[Ubuntu Linux][Apache/2.2.8 (Ubuntu) DAV/2 mod_fastcgi/2.4.6 PHP/5.2.4-2ubuntu5 with Suhosin-Patch mod_ssl/2.2.8 OpenSSL/0.9.8g], IP[192.168.1.229], OpenSSL[0.9.8g], PHP[5.2.4-2ubuntu5][Suhosin-Patch], WebDAV[2]
