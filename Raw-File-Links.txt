@@ -12,3 +12,4 @@ https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/h
 
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Troll2/TrOll%3A2-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/GoldenEye-v1/GoldenEye%3Av1-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Overflow/Overflow-nmap-version-scan-output.xml
