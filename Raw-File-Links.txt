@@ -10,7 +10,10 @@ https://raw.githubusercontent.com/InfosecWarrior/Vulnerable-Box-Resources/refs/h
 https://raw.githubusercontent.com/InfosecWarrior/Vulnerable-Box-Resources/refs/heads/main/Lord%20of%20the%20root%201.0.1/lord-of-thr-root-1-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Stapler%201/Stapler-1-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Prime%201/Prime-1-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfosecWarrior/Vulnerable-Box-Resources/refs/heads/main/Zico2/Zico-2-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Hacker%20Kid%201.0.1/Hacker-kid-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/pwnlab_init/pwnlab-scan-results-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/infosecwarrior/Vulnerable-Box-Resources/refs/heads/main/Lin.Security/Lin-Security-1-nmap-version-scan.xml
 https://raw.githubusercontent.com/infosecwarrior/Vulnerable-Box-Resources/refs/heads/main/My%20File%20Server-1/My-file-server-1-nmap-version-scan.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/My%20File%20Server-2/my-file-server-2-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Temple%20of%20Doom/temple-of-doom-nmap-version-scan-output.xml

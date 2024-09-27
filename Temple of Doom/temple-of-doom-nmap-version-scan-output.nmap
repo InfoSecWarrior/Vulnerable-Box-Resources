@@ -1,0 +1,32 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 18:47:05 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,666 -oA temple-of-doom-nmap-version-scan-output 192.168.1.141
+Nmap scan report for 192.168.1.141 (192.168.1.141)
+Host is up (0.00049s latency).
+
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.7 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 95:68:04:c7:42:03:04:cd:00:4e:36:7e:cd:4f:66:ea (RSA)
+|   256 c3:06:5f:7f:17:b6:cb:bc:79:6b:46:46:cc:11:3a:7d (ECDSA)
+|_  256 63:0c:28:88:25:d5:48:19:82:bb:bd:72:c6:6c:68:50 (ED25519)
+666/tcp open  http    Node.js Express framework
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+MAC Address: 08:00:27:B0:21:FC (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 35.648 days (since Thu Aug 22 03:14:46 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=264 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.49 ms 192.168.1.141 (192.168.1.141)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 26 18:47:18 2024 -- 1 IP address (1 host up) scanned in 13.16 seconds

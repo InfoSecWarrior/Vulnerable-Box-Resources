@@ -1,0 +1,15 @@
+[http-trace:trace-request] [http] [info] http://192.168.1.103:80
+[http-trace:options-request] [http] [info] http://192.168.1.103:80
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.103:80
+[smb2-capabilities] [javascript] [info] 192.168.1.103:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb-enum] [javascript] [info] 192.168.1.103:445 ["OSVersion: 6.1.0","NetBIOSComputerName: FILESERVER","NetBIOSDomainName: FILESERVER","DNSComputerNamen: localhost","DNSComputerName: localhost","ForestName:"]
+[smb2-server-time] [javascript] [info] 192.168.1.103:445 ["SystemTime: 2024-09-27T05:28:47.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-os-detect] [javascript] [info] 192.168.1.103:445 ["6.1.0"]
+[smb-signing-not-required] [javascript] [medium] 192.168.1.103:445
+[ssh-diffie-hellman-logjam] [javascript] [low] 192.168.1.103:22
+[ssh-auth-methods] [javascript] [info] 192.168.1.103:22 ["["publickey","gssapi-keyex","gssapi-with-mic"]"]
+[ssh-cbc-mode-ciphers] [javascript] [low] 192.168.1.103:22
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.103:22
+[ssh-server-enumeration] [javascript] [info] 192.168.1.103:22 ["SSH-2.0-OpenSSH_7.4"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.103:22 ["Vulnerable to Terrapin"]
+[ssh-weakkey-exchange-algo] [javascript] [low] 192.168.1.103:22

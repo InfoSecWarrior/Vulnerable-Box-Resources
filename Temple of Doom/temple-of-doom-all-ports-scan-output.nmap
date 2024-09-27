@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 18:47:04 2024 as: nmap -v -Pn -p- -oA temple-of-doom-all-ports-scan-output 192.168.1.141
+Nmap scan report for 192.168.1.141 (192.168.1.141)
+Host is up (0.000082s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+666/tcp open  doom
+MAC Address: 08:00:27:B0:21:FC (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Sep 26 18:47:05 2024 -- 1 IP address (1 host up) scanned in 0.75 seconds
