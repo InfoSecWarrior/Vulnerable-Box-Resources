@@ -1,0 +1,7 @@
+# Dirsearch started Fri Sep 27 17:38:29 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.188:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Lemonsqueezy-dirsearch-80-wordlist-output.txt -q
+
+301   318B   http://192.168.1.188/wordpress    -> REDIRECTS TO: http://192.168.1.188/wordpress/
+301   315B   http://192.168.1.188/manual    -> REDIRECTS TO: http://192.168.1.188/manual/
+301   319B   http://192.168.1.188/javascript    -> REDIRECTS TO: http://192.168.1.188/javascript/
+301   319B   http://192.168.1.188/phpmyadmin    -> REDIRECTS TO: http://192.168.1.188/phpmyadmin/
+403   278B   http://192.168.1.188/server-status

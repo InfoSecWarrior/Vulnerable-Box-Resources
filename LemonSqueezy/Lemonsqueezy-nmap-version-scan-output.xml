@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Sep 27 17:32:07 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA Lemonsqueezy-nmap-version-scan-output 192.168.1.188 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA Lemonsqueezy-nmap-version-scan-output 192.168.1.188" start="1727438527" startstr="Fri Sep 27 17:32:07 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727438527"/>
+<taskend task="NSE" time="1727438527"/>
+<taskbegin task="NSE" time="1727438527"/>
+<taskend task="NSE" time="1727438527"/>
+<taskbegin task="NSE" time="1727438527"/>
+<taskend task="NSE" time="1727438527"/>
+<taskbegin task="ARP Ping Scan" time="1727438527"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.188" addrtype="ipv4"/>
+<address addr="08:00:27:A0:1E:6E" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727438527" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727438527"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727438527"/>
+<taskbegin task="Connect Scan" time="1727438527"/>
+<taskend task="Connect Scan" time="1727438527" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1727438528"/>
+<taskend task="Service scan" time="1727438534" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1727438535"/>
+<taskend task="NSE" time="1727438535"/>
+<taskbegin task="NSE" time="1727438535"/>
+<taskend task="NSE" time="1727438535"/>
+<taskbegin task="NSE" time="1727438535"/>
+<taskend task="NSE" time="1727438535"/>
+<host starttime="1727438527" endtime="1727438535"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.188" addrtype="ipv4"/>
+<address addr="08:00:27:A0:1E:6E" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+<hostname name="192.168.1.188" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.25" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.25</cpe></service><script id="http-title" output="Apache2 Debian Default Page: It works"><elem key="title">Apache2 Debian Default Page: It works</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.25 (Debian)"><elem>Apache/2.4.25 (Debian)</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="udp" portid="35366"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="17248862" lastboot="Tue Mar 12 02:11:13 2024"/>
+<distance value="1"/>
+<tcpsequence index="260" difficulty="Good luck!" values="10B5A19,9CF6F6B4,AB1CD74A,45D2954,E6E82431,AB479A66"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="FFFFFD1E,FFFFFD37,FFFFFD50,FFFFFD69,FFFFFD82,FFFFFD9B"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.188" rtt="0.60" host="192.168.1.188"/>
+</trace>
+<times srtt="597" rttvar="164" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727438535"/>
+<taskend task="NSE" time="1727438535"/>
+<taskbegin task="NSE" time="1727438535"/>
+<taskend task="NSE" time="1727438535"/>
+<taskbegin task="NSE" time="1727438535"/>
+<taskend task="NSE" time="1727438535"/>
+<runstats><finished time="1727438535" timestr="Fri Sep 27 17:32:15 2024" summary="Nmap done at Fri Sep 27 17:32:15 2024; 1 IP address (1 host up) scanned in 8.69 seconds" elapsed="8.69" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,1 @@
+http://192.168.1.188:80 [200 OK] Apache[2.4.25], Country[RESERVED][ZZ], HTTPServer[Debian Linux][Apache/2.4.25 (Debian)], IP[192.168.1.188], Title[Apache2 Debian Default Page: It works]
