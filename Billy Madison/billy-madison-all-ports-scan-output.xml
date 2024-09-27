@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Sep 27 11:42:26 2024 as: nmap -v -Pn -p- -oA billy-madison-all-ports-scan-output 192.168.1.3 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA billy-madison-all-ports-scan-output 192.168.1.3" start="1727417546" startstr="Fri Sep 27 11:42:26 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1727417546"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.3" addrtype="ipv4"/>
+<address addr="08:00:27:C5:3D:58" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727417546" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727417546"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727417546"/>
+<taskbegin task="SYN Stealth Scan" time="1727417546"/>
+<taskprogress task="SYN Stealth Scan" time="1727417577" percent="19.88" remaining="125" etc="1727417702"/>
+<taskprogress task="SYN Stealth Scan" time="1727417607" percent="48.23" remaining="66" etc="1727417672"/>
+<taskend task="SYN Stealth Scan" time="1727417651" extrainfo="65535 total ports"/>
+<host starttime="1727417546" endtime="1727417651"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.3" addrtype="ipv4"/>
+<address addr="08:00:27:C5:3D:58" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65526">
+<extrareasons reason="no-response" count="65526" proto="tcp" ports="1-21,24-68,70-79,81-136,140-444,446-2524,2526-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="69"><state state="closed" reason="reset" reason_ttl="64"/><service name="tftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="137"><state state="closed" reason="reset" reason_ttl="64"/><service name="netbios-ns" method="table" conf="3"/></port>
+<port protocol="tcp" portid="138"><state state="closed" reason="reset" reason_ttl="64"/><service name="netbios-dgm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2525"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ms-v-worlds" method="table" conf="3"/></port>
+</ports>
+<times srtt="457" rttvar="154" to="100000"/>
+</host>
+<runstats><finished time="1727417651" timestr="Fri Sep 27 11:44:11 2024" summary="Nmap done at Fri Sep 27 11:44:11 2024; 1 IP address (1 host up) scanned in 104.57 seconds" elapsed="104.57" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

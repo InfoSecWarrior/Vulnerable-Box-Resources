@@ -1,0 +1,6 @@
+[smb-enum] [javascript] [info] 192.168.1.3:445 ["OSVersion: 6.1.0","NetBIOSComputerName: BM","NetBIOSDomainName: BM","DNSComputerNamen: bm","DNSComputerName: bm","ForestName:"]
+[smb2-capabilities] [javascript] [info] 192.168.1.3:445 ["["DFSSupport","LargeMTU"]"]
+[smb2-server-time] [javascript] [info] 192.168.1.3:445 ["SystemTime: 2024-09-27T07:09:43.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-os-detect] [javascript] [info] 192.168.1.3:445 ["6.1.0"]
+[smb-signing-not-required] [javascript] [medium] 192.168.1.3:445
+[smb-anonymous-access] [javascript] [high] 192.168.1.3:445
