@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Sep 25 15:56:40 2024 as: nmap -v -Pn -p- -oA bee-box-all-ports-scan-output 192.168.1.229 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA bee-box-all-ports-scan-output 192.168.1.229" start="1727260000" startstr="Wed Sep 25 15:56:40 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1727260000"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.229" addrtype="ipv4"/>
+<address addr="08:00:27:90:0B:6D" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727260000" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727260000"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727260000"/>
+<taskbegin task="SYN Stealth Scan" time="1727260000"/>
+<taskend task="SYN Stealth Scan" time="1727260002" extrainfo="65535 total ports"/>
+<host starttime="1727260000" endtime="1727260002"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.229" addrtype="ipv4"/>
+<address addr="08:00:27:90:0B:6D" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65516">
+<extrareasons reason="reset" count="65516" proto="tcp" ports="1-20,23-24,26-79,81-138,140-442,444,446-511,515-665,667-3305,3307-3631,3633-5900,5902-6000,6002-8079,8081-8442,8444-9079,9081-9442,9444-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="512"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="exec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="513"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="login" method="table" conf="3"/></port>
+<port protocol="tcp" portid="514"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="shell" method="table" conf="3"/></port>
+<port protocol="tcp" portid="666"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="doom" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3632"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="distccd" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5901"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="vnc-1" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6001"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="X11:1" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="glrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="tungsten-https" method="table" conf="3"/></port>
+</ports>
+<times srtt="285" rttvar="92" to="100000"/>
+</host>
+<runstats><finished time="1727260002" timestr="Wed Sep 25 15:56:42 2024" summary="Nmap done at Wed Sep 25 15:56:42 2024; 1 IP address (1 host up) scanned in 1.67 seconds" elapsed="1.67" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

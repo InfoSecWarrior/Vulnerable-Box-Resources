@@ -1,0 +1,10 @@
+[openssh-detect] [tcp] [info] 192.168.1.229:22 ["SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1"]
+[ssh-cbc-mode-ciphers] [javascript] [low] 192.168.1.229:22
+[ssh-password-auth] [javascript] [info] 192.168.1.229:22
+[ssh-diffie-hellman-logjam] [javascript] [low] 192.168.1.229:22
+[ssh-auth-methods] [javascript] [info] 192.168.1.229:22 ["["publickey","password"]"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.229:22
+[ssh-weakkey-exchange-algo] [javascript] [low] 192.168.1.229:22
+[ssh-weak-algo-supported] [javascript] [medium] 192.168.1.229:22
+[ssh-weak-mac-algo] [javascript] [low] 192.168.1.229:22
+[ssh-server-enumeration] [javascript] [info] 192.168.1.229:22 ["SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1"]

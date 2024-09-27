@@ -1,0 +1,39 @@
+# Dirsearch started Wed Sep 25 16:00:34 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.229:80 -o bee-box-dirsearch-80-output.txt -q
+
+403   382B   http://192.168.1.229/.ht_wsr.txt
+403   385B   http://192.168.1.229/.htaccess.bak1
+403   385B   http://192.168.1.229/.htaccess.orig
+403   385B   http://192.168.1.229/.htaccess.save
+403   386B   http://192.168.1.229/.htaccess_extra
+403   385B   http://192.168.1.229/.htaccess_orig
+403   387B   http://192.168.1.229/.htaccess.sample
+403   383B   http://192.168.1.229/.htaccessOLD
+403   384B   http://192.168.1.229/.htaccessOLD2
+403   383B   http://192.168.1.229/.htaccess_sc
+403   383B   http://192.168.1.229/.htaccessBAK
+403   376B   http://192.168.1.229/.html
+403   375B   http://192.168.1.229/.htm
+403   385B   http://192.168.1.229/.htpasswd_test
+403   381B   http://192.168.1.229/.htpasswds
+403   382B   http://192.168.1.229/.httr-oauth
+200   325B   http://192.168.1.229/ClientAccessPolicy.xml
+200   200B   http://192.168.1.229/crossdomain.xml
+403   375B   http://192.168.1.229/doc/
+403   379B   http://192.168.1.229/doc/api/
+403   390B   http://192.168.1.229/doc/en/changes.html
+403   389B   http://192.168.1.229/doc/stable.version
+403   390B   http://192.168.1.229/doc/html/index.html
+301   405B   http://192.168.1.229/drupal    -> REDIRECTS TO: http://192.168.1.229/drupal/
+200    45B   http://192.168.1.229/index
+200    45B   http://192.168.1.229/index.bak
+200     3KB  http://192.168.1.229/INSTALL
+200     3KB  http://192.168.1.229/INSTALL.txt
+301   409B   http://192.168.1.229/phpmyadmin    -> REDIRECTS TO: http://192.168.1.229/phpmyadmin/
+401   570B   http://192.168.1.229/phpmyadmin/scripts/setup.php
+200     8KB  http://192.168.1.229/phpmyadmin/index.php
+200     8KB  http://192.168.1.229/phpmyadmin/
+200     2KB  http://192.168.1.229/README
+200     2KB  http://192.168.1.229/README.txt
+200    13KB  http://192.168.1.229/server-status
+200    13KB  http://192.168.1.229/server-status/
+200     2KB  http://192.168.1.229/webdav/
