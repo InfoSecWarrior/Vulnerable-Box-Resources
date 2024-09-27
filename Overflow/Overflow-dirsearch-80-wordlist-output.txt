@@ -1,0 +1,5 @@
+# Dirsearch started Fri Sep 27 00:18:46 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.8:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Overflow-dirsearch-80-wordlist-output.txt -q
+
+301   311B   http://192.168.1.8/manual    -> REDIRECTS TO: http://192.168.1.8/manual/
+200    10KB  http://192.168.1.8/old
+403   299B   http://192.168.1.8/server-status
