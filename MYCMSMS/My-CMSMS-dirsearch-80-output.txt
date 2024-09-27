@@ -1,0 +1,50 @@
+# Dirsearch started Wed Sep 25 10:53:25 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.11:80 -o My-CMSMS-dirsearch-80-output.txt -q
+
+403   277B   http://192.168.1.11/.ht_wsr.txt
+403   277B   http://192.168.1.11/.htaccess.orig
+403   277B   http://192.168.1.11/.htaccess.sample
+403   277B   http://192.168.1.11/.htaccess.save
+403   277B   http://192.168.1.11/.htaccess.bak1
+403   277B   http://192.168.1.11/.htaccess_extra
+403   277B   http://192.168.1.11/.htaccess_orig
+403   277B   http://192.168.1.11/.htaccessOLD
+403   277B   http://192.168.1.11/.htaccessBAK
+403   277B   http://192.168.1.11/.htaccessOLD2
+403   277B   http://192.168.1.11/.htaccess_sc
+403   277B   http://192.168.1.11/.htm
+403   277B   http://192.168.1.11/.html
+403   277B   http://192.168.1.11/.htpasswds
+403   277B   http://192.168.1.11/.httr-oauth
+403   277B   http://192.168.1.11/.php
+403   277B   http://192.168.1.11/.htpasswd_test
+301   312B   http://192.168.1.11/admin    -> REDIRECTS TO: http://192.168.1.11/admin/
+302     0B   http://192.168.1.11/admin/    -> REDIRECTS TO: http://192.168.1.11/admin/login.php
+302     0B   http://192.168.1.11/admin/index.php    -> REDIRECTS TO: http://192.168.1.11/admin/login.php
+200     1KB  http://192.168.1.11/admin/login.php
+301   313B   http://192.168.1.11/assets    -> REDIRECTS TO: http://192.168.1.11/assets/
+200   518B   http://192.168.1.11/assets/
+403   277B   http://192.168.1.11/cgi-bin/
+200     0B   http://192.168.1.11/config.php
+301   310B   http://192.168.1.11/doc    -> REDIRECTS TO: http://192.168.1.11/doc/
+200    24B   http://192.168.1.11/doc/
+404   225B   http://192.168.1.11/index.php/login/
+301   310B   http://192.168.1.11/lib    -> REDIRECTS TO: http://192.168.1.11/lib/
+200    24B   http://192.168.1.11/lib/
+301   314B   http://192.168.1.11/modules    -> REDIRECTS TO: http://192.168.1.11/modules/
+200   585B   http://192.168.1.11/modules/
+200    23KB  http://192.168.1.11/phpinfo.php
+401   459B   http://192.168.1.11/phpmyadmin
+401   459B   http://192.168.1.11/phpmyadmin/index.php
+401   459B   http://192.168.1.11/phpmyadmin/doc/html/index.html
+401   459B   http://192.168.1.11/phpmyadmin/
+401   459B   http://192.168.1.11/phpmyadmin/phpmyadmin/index.php
+401   459B   http://192.168.1.11/phpmyadmin/scripts/setup.php
+401   459B   http://192.168.1.11/phpmyadmin/ChangeLog
+401   459B   http://192.168.1.11/phpmyadmin/docs/html/index.html
+401   459B   http://192.168.1.11/phpmyadmin/README
+403   277B   http://192.168.1.11/server-status
+403   277B   http://192.168.1.11/server-status/
+200   460B   http://192.168.1.11/tmp/
+301   310B   http://192.168.1.11/tmp    -> REDIRECTS TO: http://192.168.1.11/tmp/
+200     0B   http://192.168.1.11/uploads/
+301   314B   http://192.168.1.11/uploads    -> REDIRECTS TO: http://192.168.1.11/uploads/

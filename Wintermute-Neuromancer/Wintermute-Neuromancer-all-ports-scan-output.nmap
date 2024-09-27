@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 12:53:33 2024 as: nmap -v -Pn -p- -oA Wintermute-Neuromancer-all-ports-scan-output 192.168.1.15
+Nmap scan report for 192.168.1.15
+Host is up (0.00028s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT      STATE SERVICE
+8009/tcp  open  ajp13
+8080/tcp  open  http-proxy
+34483/tcp open  unknown
+MAC Address: 08:00:27:BF:65:CB (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Sep 25 12:53:36 2024 -- 1 IP address (1 host up) scanned in 3.45 seconds

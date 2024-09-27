@@ -1,0 +1,23 @@
+# Dirsearch started Wed Sep 25 21:56:13 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.174:80 -o VulnOS2_report-dirsearch-80-output.txt -q
+
+403   291B   http://192.168.1.174/.ht_wsr.txt
+403   294B   http://192.168.1.174/.htaccess.bak1
+403   294B   http://192.168.1.174/.htaccess.orig
+403   296B   http://192.168.1.174/.htaccess.sample
+403   294B   http://192.168.1.174/.htaccess.save
+403   295B   http://192.168.1.174/.htaccess_extra
+403   292B   http://192.168.1.174/.htaccessBAK
+403   292B   http://192.168.1.174/.htaccess_sc
+403   293B   http://192.168.1.174/.htaccessOLD2
+403   292B   http://192.168.1.174/.htaccessOLD
+403   284B   http://192.168.1.174/.htm
+403   285B   http://192.168.1.174/.html
+403   290B   http://192.168.1.174/.htpasswds
+403   291B   http://192.168.1.174/.httr-oauth
+403   294B   http://192.168.1.174/.htpasswd_test
+403   284B   http://192.168.1.174/.php
+403   285B   http://192.168.1.174/.php3
+403   294B   http://192.168.1.174/.htaccess_orig
+301   318B   http://192.168.1.174/javascript    -> REDIRECTS TO: http://192.168.1.174/javascript/
+403   293B   http://192.168.1.174/server-status
+403   294B   http://192.168.1.174/server-status/

@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 11:44:50 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA Escalate-Linux-all-ports-scan-output 192.168.1.111
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.111 (192.168.1.111)	Status: Up
+Host: 192.168.1.111 (192.168.1.111)	Ports: 80/open/tcp//http///, 111/open/tcp//rpcbind///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 2049/open/tcp//nfs///, 35229/open/tcp/////, 36311/open/tcp/////, 36411/open/tcp//wlcp///, 36803/open/tcp/////	Ignored State: closed (65526)
+# Nmap done at Thu Sep 26 11:44:52 2024 -- 1 IP address (1 host up) scanned in 1.38 seconds

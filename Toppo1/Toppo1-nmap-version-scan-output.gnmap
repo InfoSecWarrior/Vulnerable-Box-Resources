@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 11:57:57 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,111,34397 -oA Toppo1-nmap-version-scan-output 192.168.1.12
+# Ports scanned: TCP(4;22,80,111,34397) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.12 ()	Status: Up
+Host: 192.168.1.12 ()	Ports: 22/open/tcp//ssh//OpenSSH 6.7p1 Debian 5+deb8u4 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.10 ((Debian))/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 34397/open/tcp//status//1 (RPC #100024)/	OS: Linux 3.2 - 4.9	Seq Index: 255	IP ID Seq: All zeros
+# Nmap done at Wed Sep 25 11:58:11 2024 -- 1 IP address (1 host up) scanned in 14.18 seconds

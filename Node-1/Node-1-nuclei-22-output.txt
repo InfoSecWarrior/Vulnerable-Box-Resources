@@ -1,0 +1,5 @@
+[ssh-auth-methods] [javascript] [info] 192.168.1.138:22 ["["publickey","password"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.138:22 ["Vulnerable to Terrapin"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.138:22
+[ssh-password-auth] [javascript] [info] 192.168.1.138:22
+[ssh-server-enumeration] [javascript] [info] 192.168.1.138:22 ["SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2"]

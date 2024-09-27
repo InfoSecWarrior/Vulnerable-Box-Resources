@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 21:54:48 2024 as: nmap -v -Pn -p- -oA VulnOS2_report-all-ports-scan-output 192.168.1.174
+Nmap scan report for 192.168.1.174
+Host is up (0.078s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+6667/tcp open  irc
+MAC Address: 10:F6:0A:89:1A:D4 (Intel Corporate)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Sep 25 21:55:32 2024 -- 1 IP address (1 host up) scanned in 43.91 seconds

@@ -1,0 +1,21 @@
+[CVE-2000-0760] [http] [low] http://192.168.1.15:8080/examples/jsp/snp/snoop.jsp
+[public-tomcat-manager] [http] [info] http://192.168.1.15:8080/manager/html
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.15:8080
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.15:8080
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.15:8080
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.15:8080
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.15:8080
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.15:8080
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.15:8080
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.15:8080
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.15:8080
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.15:8080
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.15:8080
+[tomcat-exposed] [http] [info] http://192.168.1.15:8080/manager/status
+[tomcat-manager-pathnormalization] [http] [info] http://192.168.1.15:8080/2mZWLasI0szsPECOnw3zDC2cyS6/..;/manager/html
+[tomcat-scripts] [http] [info] http://192.168.1.15:8080/examples/jsp/index.html
+[tomcat-scripts] [http] [info] http://192.168.1.15:8080/examples/websocket/index.xhtml
+[tomcat-detect:version] [http] [info] http://192.168.1.15:8080 ["9.0.0"]
+[tomcat-scripts] [http] [info] http://192.168.1.15:8080/examples/servlets/servlet/SessionExample
+[favicon-detect:apache-tomcat] [http] [info] http://192.168.1.15:8080/favicon.ico ["-297069493"]
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.15:8080

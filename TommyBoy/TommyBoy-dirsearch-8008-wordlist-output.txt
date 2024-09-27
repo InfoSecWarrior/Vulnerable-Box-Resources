@@ -1,0 +1,3 @@
+# Dirsearch started Thu Sep 26 20:25:02 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.49:8008 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o TommyBoy-dirsearch-8008-wordlist-output.txt -q
+
+403   303B   http://192.168.29.49:8008/server-status

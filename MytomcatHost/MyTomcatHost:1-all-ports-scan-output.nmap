@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 19:07:57 2024 as: nmap -v -Pn -p- -oA MyTomcatHost:1-all-ports-scan-output 192.168.1.203
+Nmap scan report for 192.168.1.203
+Host is up (0.00031s latency).
+Not shown: 65383 filtered tcp ports (no-response), 150 filtered tcp ports (host-prohibited)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+8080/tcp open  http-proxy
+MAC Address: 08:00:27:6B:A8:0C (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Sep 26 19:10:22 2024 -- 1 IP address (1 host up) scanned in 145.04 seconds

@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 10:52:22 2024 as: nmap -v -Pn -p- -oA My-CMSMS-all-ports-scan-output 192.168.1.11
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.11 ()	Status: Up
+Host: 192.168.1.11 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 3306/open/tcp//mysql///, 33060/open/tcp//mysqlx///	Ignored State: closed (65531)
+# Nmap done at Wed Sep 25 10:52:26 2024 -- 1 IP address (1 host up) scanned in 3.21 seconds

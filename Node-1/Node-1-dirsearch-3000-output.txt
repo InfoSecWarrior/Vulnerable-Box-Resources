@@ -1,0 +1,4 @@
+# Dirsearch started Thu Sep 26 18:36:50 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.138:3000 -o Node-1-dirsearch-3000-output.txt -q
+
+301   171B   http://192.168.1.138:3000/assets    -> REDIRECTS TO: /assets/
+301   173B   http://192.168.1.138:3000/uploads    -> REDIRECTS TO: /uploads/

@@ -1,0 +1,42 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 20:17:02 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8008 -oA TommyBoy-nmap-version-scan-output 192.168.29.49
+Nmap scan report for 192.168.29.49
+Host is up (0.0011s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 a0:ca:62:ce:f6:7e:ae:8b:62:de:0b:db:21:3f:b0:d6 (RSA)
+|   256 46:6d:4b:4b:02:86:89:27:28:5c:1d:87:10:55:3d:59 (ECDSA)
+|_  256 56:9e:71:2a:a3:83:ff:63:11:7e:94:08:dd:28:1d:46 (ED25519)
+80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Welcome to Callahan Auto
+| http-robots.txt: 4 disallowed entries 
+| /6packsofb...soda /lukeiamyourfather 
+|_/lookalivelowbridge /flag-numero-uno.txt
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+8008/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: KEEP OUT
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+MAC Address: 08:00:27:53:AE:E1 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 198.838 days (since Tue Mar 12 00:09:59 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.11 ms 192.168.29.49
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 26 20:17:11 2024 -- 1 IP address (1 host up) scanned in 9.26 seconds

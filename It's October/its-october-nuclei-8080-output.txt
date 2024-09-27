@@ -1,0 +1,4 @@
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.205:8080
+[mysql-info] [javascript] [info] 192.168.1.205:3306 ["Version:","Transport: tcp"]
+[ssh-auth-methods] [javascript] [info] 192.168.1.205:22 ["["publickey"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.205:22 ["Vulnerable to Terrapin"]
