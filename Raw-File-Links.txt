@@ -24,6 +24,9 @@ https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/h
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Sar-1/sar-all-ports-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Digitalworld.local(Development)/digitalworldlocal-development-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Bee%20Box/bee-box-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfosecWarrior/Vulnerable-Box-Resources/refs/heads/main/Tr0ll-2/TrOll%3A2-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/GoldenEye-1/GoldenEye%3Av1-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfosecWarrior/Vulnerable-Box-Resources/refs/heads/main/Overflow/Overflow-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/DC-6/DC-6-nmap-version-scan.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Tiki-1/Tiki-nmap-version-scan.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/TommyBoy/TommyBoy-nmap-version-scan-output.xml

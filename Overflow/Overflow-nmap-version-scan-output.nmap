@@ -1,0 +1,58 @@
+# Nmap 7.94SVN scan initiated Fri Sep 27 00:11:29 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,1337 -oA Overflow-nmap-version-scan-output 192.168.1.8
+Nmap scan report for 192.168.1.8
+Host is up (0.00064s latency).
+
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Apache httpd 2.4.25 ((Debian))
+| http-methods: 
+|_  Supported Methods: HEAD GET POST OPTIONS
+|_http-server-header: Apache/2.4.25 (Debian)
+|_http-title: Site doesn't have a title (text/html).
+1337/tcp open  waste?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, JavaRMI, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NCP, NotesRPC, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, WMSRequest, X11Probe, afp, giop, ms-sql-s, oracle-tns: 
+|     COMMAND : TRY HARDER!
+|   NULL: 
+|_    COMMAND :
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1337-TCP:V=7.94SVN%I=7%D=9/27%Time=66F5AADF%P=x86_64-pc-linux-gnu%r
+SF:(NULL,A,"COMMAND\x20:\x20")%r(GenericLines,16,"COMMAND\x20:\x20TRY\x20H
+SF:ARDER!\n")%r(GetRequest,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(HTTPOp
+SF:tions,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(RTSPRequest,16,"COMMAND\
+SF:x20:\x20TRY\x20HARDER!\n")%r(RPCCheck,16,"COMMAND\x20:\x20TRY\x20HARDER
+SF:!\n")%r(DNSVersionBindReqTCP,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(D
+SF:NSStatusRequestTCP,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(Help,16,"CO
+SF:MMAND\x20:\x20TRY\x20HARDER!\n")%r(SSLSessionReq,16,"COMMAND\x20:\x20TR
+SF:Y\x20HARDER!\n")%r(TerminalServerCookie,16,"COMMAND\x20:\x20TRY\x20HARD
+SF:ER!\n")%r(TLSSessionReq,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(Kerber
+SF:os,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(SMBProgNeg,16,"COMMAND\x20:
+SF:\x20TRY\x20HARDER!\n")%r(X11Probe,16,"COMMAND\x20:\x20TRY\x20HARDER!\n"
+SF:)%r(FourOhFourRequest,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(LPDStrin
+SF:g,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(LDAPSearchReq,16,"COMMAND\x2
+SF:0:\x20TRY\x20HARDER!\n")%r(LDAPBindReq,16,"COMMAND\x20:\x20TRY\x20HARDE
+SF:R!\n")%r(SIPOptions,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(LANDesk-RC
+SF:,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(TerminalServer,16,"COMMAND\x2
+SF:0:\x20TRY\x20HARDER!\n")%r(NCP,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r
+SF:(NotesRPC,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(JavaRMI,16,"COMMAND\
+SF:x20:\x20TRY\x20HARDER!\n")%r(WMSRequest,16,"COMMAND\x20:\x20TRY\x20HARD
+SF:ER!\n")%r(oracle-tns,16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(ms-sql-s,
+SF:16,"COMMAND\x20:\x20TRY\x20HARDER!\n")%r(afp,16,"COMMAND\x20:\x20TRY\x2
+SF:0HARDER!\n")%r(giop,16,"COMMAND\x20:\x20TRY\x20HARDER!\n");
+MAC Address: 08:00:27:D5:0E:25 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 198.048 days (since Tue Mar 12 23:05:02 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.64 ms 192.168.1.8
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 27 00:14:08 2024 -- 1 IP address (1 host up) scanned in 159.20 seconds
