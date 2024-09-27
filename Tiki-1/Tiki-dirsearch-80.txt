@@ -1,0 +1,24 @@
+# Dirsearch started Thu Sep 26 20:37:44 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.4:80 -o Tiki-dirsearch-80.txt -q
+
+403   276B   http://192.168.1.4/.ht_wsr.txt
+403   276B   http://192.168.1.4/.htaccess.bak1
+403   276B   http://192.168.1.4/.htaccess.orig
+403   276B   http://192.168.1.4/.htaccess.sample
+403   276B   http://192.168.1.4/.htaccess_extra
+403   276B   http://192.168.1.4/.htaccess.save
+403   276B   http://192.168.1.4/.htaccess_sc
+403   276B   http://192.168.1.4/.htaccessOLD
+403   276B   http://192.168.1.4/.htaccessBAK
+403   276B   http://192.168.1.4/.htaccess_orig
+403   276B   http://192.168.1.4/.htaccessOLD2
+403   276B   http://192.168.1.4/.html
+403   276B   http://192.168.1.4/.htpasswd_test
+403   276B   http://192.168.1.4/.htm
+403   276B   http://192.168.1.4/.htpasswds
+403   276B   http://192.168.1.4/.httr-oauth
+403   276B   http://192.168.1.4/.php
+200    42B   http://192.168.1.4/robots.txt
+403   276B   http://192.168.1.4/server-status
+403   276B   http://192.168.1.4/server-status/
+301   309B   http://192.168.1.4/tiki    -> REDIRECTS TO: http://192.168.1.4/tiki/
+200   526B   http://192.168.1.4/tiki/doc/stable.version
