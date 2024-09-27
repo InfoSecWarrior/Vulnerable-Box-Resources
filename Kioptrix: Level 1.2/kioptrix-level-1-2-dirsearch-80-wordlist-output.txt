@@ -1,0 +1,10 @@
+# Dirsearch started Thu Sep 26 10:30:35 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.8:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o kioptrix-level-1-2-dirsearch-80-wordlist-output.txt -q
+
+301   353B   http://192.168.29.8/modules    -> REDIRECTS TO: http://192.168.29.8/modules/
+301   353B   http://192.168.29.8/gallery    -> REDIRECTS TO: http://192.168.29.8/gallery/
+403   323B   http://192.168.29.8/data
+301   350B   http://192.168.29.8/core    -> REDIRECTS TO: http://192.168.29.8/core/
+301   351B   http://192.168.29.8/style    -> REDIRECTS TO: http://192.168.29.8/style/
+301   351B   http://192.168.29.8/cache    -> REDIRECTS TO: http://192.168.29.8/cache/
+301   356B   http://192.168.29.8/phpmyadmin    -> REDIRECTS TO: http://192.168.29.8/phpmyadmin/
+403   332B   http://192.168.29.8/server-status

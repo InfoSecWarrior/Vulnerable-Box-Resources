@@ -1,0 +1,9 @@
+[phpmyadmin-panel] [http] [info] http://192.168.29.8:80/phpmyadmin/ [paths="/phpmyadmin/"]
+[http-trace:trace-request] [http] [info] http://192.168.29.8:80
+[waf-detect:apachegeneric] [http] [info] http://192.168.29.8:80
+[lotuscms-rce] [http] [critical] http://192.168.29.8:80/index.php
+[ssh-diffie-hellman-logjam] [javascript] [low] 192.168.29.8:22
+[ssh-auth-methods] [javascript] [info] 192.168.29.8:22 ["["publickey","password"]"]
+[ssh-password-auth] [javascript] [info] 192.168.29.8:22
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.29.8:22
+[ssh-server-enumeration] [javascript] [info] 192.168.29.8:22 ["SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1.2"]
