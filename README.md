@@ -1,7 +1,7 @@
 <h1 align="center">Vulnerable Box Resources</h1>
 
 <p align="center">
-    <a href="https://infosecwarrior.github.io/Vulnerable-Box-Resources" ><strong>« Live Application (https://infosecwarrior.github.io/Vulnerable-Box-Resources)»</strong></a>
+    <a href="[https://infosecwarrior.github.io/Vulnerable-Box-Resources](https://vulnerable-box-resources.infosecwarrior.com/)" ><strong>« Live Application ([https://infosecwarrior.github.io/Vulnerable-Box-Resources](https://vulnerable-box-resources.infosecwarrior.com))»</strong></a>
 </p>
 
 **Vulnerable Box Resources** is a curated collection of scan outputs and data designed to help you analyze and exploit vulnerable machines. This repository provides detailed insights into the inner workings of your target systems, making it easier to identify potential security gaps, weaknesses, and attack vectors.
