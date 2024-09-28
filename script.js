@@ -4,9 +4,9 @@ let currentPage = 1;
 const itemsPerPage = 20;
 
 const dataSources = {
-    Vulnhub: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Vulnhub-Raw-File-Links.txt',
-    HTB: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/HTB-Raw-File-Links.txt',
-    Other: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Other-Raw-File-Links.txt'
+    Vulnhub: 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub-Raw-File-Links.txt',
+    HTB: 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/HTB-Raw-File-Links.txt',
+    Other: 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Other-Raw-File-Links.txt'
 };
 
 async function fetchAllData() {
