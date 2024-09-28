@@ -1,0 +1,3 @@
+https://raw.githubusercontent.com/InfosecWarrior/Vulnerable-Box-Resources/refs/heads/main/Kioptrix-Level-1/kiopotix-1-all-ports-scan-output.xml
+https://raw.githubusercontent.com/InfosecWarrior/Vulnerable-Box-Resources/refs/heads/main/Pinkys-Palace-v1/Pinky-Palace-all-ports-scan-output.xml
+https://raw.githubusercontent.com/InfosecWarrior/Vulnerable-Box-Resources/refs/heads/main/Troll-3/troll3-all-ports-scan-output.xml
