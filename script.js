@@ -22,13 +22,12 @@ async function fetchAllData() {
         await Promise.all(fetchPromises);
         document.getElementById('status').textContent = 'Data loaded from all available sources.';
         console.log('Data loading completed successfully. Total records:', parsedData.length);
-        renderPage(currentPage, parsedData);
+        renderPage(currentPage, parsedData); // Initial render of all data
     } catch (error) {
         console.error('Error loading data from some sources:', error);
         document.getElementById('status').textContent = 'Data loading completed with errors.';
     }
 }
-
 
 async function fetchData(dataSource) {
     const urlFile = dataSources[dataSource];
@@ -65,7 +64,6 @@ async function fetchData(dataSource) {
         document.getElementById('status').textContent = `Error loading data from ${dataSource}.`;
     }
 }
-
 
 function parseXML(xmlText, url, platform) {
     try {
@@ -110,7 +108,6 @@ function parseXML(xmlText, url, platform) {
         console.error('Error parsing XML:', error);
     }
 }
-
 
 // Function to render the current page of data
 function renderPage(page, data, query = '') {
@@ -196,13 +193,20 @@ document.getElementById('nextBtn').addEventListener('click', () => {
     }
 });
 
-
 // Fetch data on page load
 fetchAllData();
 
 document.getElementById('searchBar').addEventListener('input', function () {
     const query = this.value.toLowerCase().trim();
-    let filteredData = parsedData;
+    let filteredData = parsedData; // Start with all data
+
+    // If the query is empty, just render all data
+    if (query === '') {
+        cachedFilteredData = []; // Clear cached data
+        currentPage = 1; // Reset to the first page
+        renderPage(currentPage, parsedData); // Render all data
+        return;
+    }
 
     const patterns = {
         machine: /machine:([a-zA-Z0-9-_]+)/i,
@@ -213,17 +217,21 @@ document.getElementById('searchBar').addEventListener('input', function () {
         platform: /platform:(vulnhub|htb|other)/i
     };
 
+    // Check for matches with defined patterns
+    let hasFilters = false; // Flag to check if any filter is applied
+
     Object.entries(patterns).forEach(([key, regex]) => {
         const match = query.match(regex);
         if (match) {
+            hasFilters = true; // Set the filter flag
             filteredData = filteredData.filter(item => {
                 switch (key) {
                     case 'platform':
-                        return item.platform.toLowerCase() === match[1].toLowerCase();  // Compare platform directly
+                        return item.platform.toLowerCase() === match[1].toLowerCase(); // Compare platform directly
                     case 'machine':
                         return item.machineName.toLowerCase().includes(match[1].toLowerCase());
                     case 'port':
-                        return item.portDetails.toLowerCase().includes(match[1].toLowerCase());
+                        return item.portDetails.includes(match[1]); // Check port inclusion
                     case 'service':
                         return item.serviceDetails.some(service => service.serviceName.toLowerCase().includes(match[1].toLowerCase()));
                     case 'product':
@@ -231,17 +239,30 @@ document.getElementById('searchBar').addEventListener('input', function () {
                     case 'version':
                         return item.serviceDetails.some(service => service.serviceVersion.toLowerCase().includes(match[1].toLowerCase()));
                     default:
-                        return true;
+                        return true; // If no match, return true
                 }
             });
         }
     });
 
-    // Cache the filtered data for pagination
-    cachedFilteredData = filteredData;
-    currentPage = 1;
-    renderPage(currentPage, cachedFilteredData, query);  // Render the filtered data
+    // If no specific filters were matched, filter based on the query
+    if (!hasFilters) {
+        filteredData = parsedData.filter(item => 
+            item.machineName.toLowerCase().includes(query) || 
+            item.portDetails.includes(query) ||
+            item.serviceDetails.some(service => 
+                service.serviceName.toLowerCase().includes(query) ||
+                service.serviceProduct.toLowerCase().includes(query) ||
+                service.serviceVersion.toLowerCase().includes(query)
+            )
+        );
+    }
+
+    cachedFilteredData = filteredData; // Store filtered data in the cache
+    currentPage = 1; // Reset to the first page
+    renderPage(currentPage, cachedFilteredData, query); // Render filtered results
 });
+
 
 // Add event listeners to predefined pattern buttons
 document.querySelectorAll('.predefined-patterns button').forEach(button => {
