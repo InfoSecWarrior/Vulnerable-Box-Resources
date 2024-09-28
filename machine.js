@@ -108,7 +108,20 @@ async function fetchMachineData() {
     
     // Fetch open ports
     const ports = await fetchOpenPorts(baseURL, dirName, baseFileName);
-
+    // Fetch and set the resource link
+    const resourceUrl = `${baseURL}${encodeURIComponent(dirName)}/resource.txt`;
+    const resourceLinkElement = document.getElementById('resource-url');
+    
+    // Fetch the content of resource.txt, which contains a link
+    const resourceContent = await fetchFileContent(resourceUrl, 'resource-url');
+    
+    if (resourceLinkElement && resourceContent) {
+        // Set the link from the file content into the Resource element
+        resourceLinkElement.href = resourceContent.trim();  // Use the content as the href link
+        resourceLinkElement.textContent = 'Resource';
+    } else {
+        console.warn("Element with ID 'resource-url' not found in the document or no resource content available.");
+    }
     const files = {
         nmap: `${baseURL}${encodeURIComponent(dirName)}/${fileName}`,
         webUrls: `${baseURL}${encodeURIComponent(dirName)}/${baseFileName}-filtered-web-urls-output.txt`,
