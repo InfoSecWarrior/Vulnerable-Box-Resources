@@ -1,0 +1,23 @@
+# Dirsearch started Fri Sep 27 14:44:29 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://192.168.1.137:443 -o troll3-dirsearch-443-output.txt -q
+
+403   293B   https://192.168.1.137/.ht_wsr.txt
+403   296B   https://192.168.1.137/.htaccess.orig
+403   296B   https://192.168.1.137/.htaccess_orig
+403   294B   https://192.168.1.137/.htaccessBAK
+403   298B   https://192.168.1.137/.htaccess.sample
+403   294B   https://192.168.1.137/.htaccess_sc
+403   294B   https://192.168.1.137/.htaccessOLD
+403   295B   https://192.168.1.137/.htaccessOLD2
+403   293B   https://192.168.1.137/.httr-oauth
+403   287B   https://192.168.1.137/.html
+403   296B   https://192.168.1.137/.htaccess.bak1
+403   286B   https://192.168.1.137/.htm
+403   297B   https://192.168.1.137/.htaccess_extra
+403   296B   https://192.168.1.137/.htaccess.save
+403   296B   https://192.168.1.137/.htpasswd_test
+403   292B   https://192.168.1.137/.htpasswds
+403   290B   https://192.168.1.137/cgi-bin/
+403   288B   https://192.168.1.137/error/
+301   317B   https://192.168.1.137/manual    -> REDIRECTS TO: https://192.168.1.137/manual/
+200     7KB  https://192.168.1.137/manual/index.html
+403   287B   https://192.168.1.137/usage

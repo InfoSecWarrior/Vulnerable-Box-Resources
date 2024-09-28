@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Sep 27 12:54:04 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,111,139,443,32768 -oA kiopotix-1-nmap-version-scan-output 192.168.1.130
+# Ports scanned: TCP(6;22,80,111,139,443,32768) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.130 (192.168.1.130)	Status: Up
+Host: 192.168.1.130 (192.168.1.130)	Ports: 22/open/tcp//ssh//OpenSSH 2.9p2 (protocol 1.99)/, 80/open/tcp//http//Apache httpd 1.3.20 ((Unix)  (Red-Hat|Linux) mod_ssl|2.8.4 OpenSSL|0.9.6b)/, 111/open/tcp//rpcbind//2 (RPC #100000)/, 139/open/tcp//netbios-ssn//Samba smbd (workgroup: MYGROUP)/, 443/open/tcp//ssl|https//Apache|1.3.20 (Unix)  (Red-Hat|Linux) mod_ssl|2.8.4 OpenSSL|0.9.6b/, 32768/open/tcp//status//1 (RPC #100024)/	OS: Linux 2.4.9 - 2.4.18 (likely embedded)	Seq Index: 200	IP ID Seq: All zeros
+# Nmap done at Fri Sep 27 12:54:24 2024 -- 1 IP address (1 host up) scanned in 19.52 seconds

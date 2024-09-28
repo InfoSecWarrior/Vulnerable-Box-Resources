@@ -1,0 +1,1 @@
+http://192.168.1.130:80 [200 OK] Apache[1.3.20][mod_ssl/2.8.4], Country[RESERVED][ZZ], Email[webmaster@example.com], HTTPServer[Red Hat Linux][Apache/1.3.20 (Unix)  (Red-Hat/Linux) mod_ssl/2.8.4 OpenSSL/0.9.6b], IP[192.168.1.130], OpenSSL[0.9.6b], Title[Test Page for the Apache Web Server on Red Hat Linux]

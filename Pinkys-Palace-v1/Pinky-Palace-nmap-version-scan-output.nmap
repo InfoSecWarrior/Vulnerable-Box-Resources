@@ -1,0 +1,35 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 19:01:20 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 8080,31337,64666 -oA Pinky-Palace-nmap-version-scan-output 192.168.1.131
+Nmap scan report for 192.168.1.131 (192.168.1.131)
+Host is up (0.00026s latency).
+
+PORT      STATE SERVICE    VERSION
+8080/tcp  open  http       nginx 1.10.3
+|_http-title: 403 Forbidden
+|_http-server-header: nginx/1.10.3
+31337/tcp open  http-proxy Squid http proxy 3.5.23
+|_http-server-header: squid/3.5.23
+|_http-title: ERROR: The requested URL could not be retrieved
+64666/tcp open  ssh        OpenSSH 7.4p1 Debian 10+deb9u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 df:02:12:4f:4c:6d:50:27:6a:84:e9:0e:5b:65:bf:a0 (RSA)
+|   256 0a:ad:aa:c7:16:f7:15:07:f0:a8:50:23:17:f3:1c:2e (ECDSA)
+|_  256 4a:2d:e5:d8:ee:69:61:55:bb:db:af:29:4e:54:52:2f (ED25519)
+MAC Address: 08:00:27:09:33:A0 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 0.037 days (since Thu Sep 26 18:08:25 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.26 ms 192.168.1.131 (192.168.1.131)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 26 19:01:47 2024 -- 1 IP address (1 host up) scanned in 27.69 seconds

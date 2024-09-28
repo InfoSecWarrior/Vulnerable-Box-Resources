@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Sep 27 14:42:37 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,111,443,601,631,3306 -oA troll3-nmap-version-scan-output 192.168.1.137
+# Ports scanned: TCP(7;22,80,111,443,601,631,3306) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.137 (192.168.1.137)	Status: Up
+Host: 192.168.1.137 (192.168.1.137)	Ports: 22/open/tcp//ssh//OpenSSH 3.9p1 (protocol 1.99)/, 80/open/tcp//http//Apache httpd 2.0.52 ((CentOS))/, 111/open/tcp//rpcbind//2 (RPC #100000)/, 443/open/tcp//ssl|http//Apache httpd 2.0.52 ((CentOS))/, 601/open/tcp//status//1 (RPC #100024)/, 631/open/tcp//ipp//CUPS 1.1/, 3306/open/tcp//mysql//MySQL (unauthorized)/	OS: Linux 2.6.9 - 2.6.30	Seq Index: 198	IP ID Seq: All zeros
+# Nmap done at Fri Sep 27 14:42:53 2024 -- 1 IP address (1 host up) scanned in 15.88 seconds

@@ -1,0 +1,1 @@
+http://192.168.1.131:31337 [400 Bad Request] Content-Language[en], Country[RESERVED][ZZ], Email[webmaster], HTTPServer[squid/3.5.23], IP[192.168.1.131], Squid-Web-Proxy-Cache[3.5.23], Title[ERROR: The requested URL could not be retrieved], UncommonHeaders[x-squid-error], Via-Proxy[1.1 pinkys-palace (squid/3.5.23)], X-Cache[pinkys-palace,pinkys-palace:31337]
