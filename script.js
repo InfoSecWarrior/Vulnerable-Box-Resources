@@ -1,61 +1,82 @@
 let parsedData = [];
+let cachedFilteredData = []; 
 let currentPage = 1;
 const itemsPerPage = 20;
 
-// Function to fetch and parse XML data from multiple URLs
-async function fetchData() {
-    const urlFile = 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Vulnhub-Raw-File-Links.txt';
-    
-    document.getElementById('status').textContent = 'Loading...';
-    parsedData = [];
+const dataSources = {
+    Vulnhub: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Vulnhub-Raw-File-Links.txt',
+    HTB: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/HTB-Raw-File-Links.txt',
+    Other: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Other-Raw-File-Links.txt'
+};
+
+async function fetchAllData() {
+    console.log('Starting to fetch all data from sources...');
+    document.getElementById('status').textContent = 'Loading data from all sources...';
+    parsedData = [];  // Clear previous data
+    cachedFilteredData = [];  // Clear filtered data cache
+    currentPage = 1;
+
+    const fetchPromises = Object.keys(dataSources).map(dataSource => fetchData(dataSource));
 
     try {
-        // Fetch the URL list from the external file
+        await Promise.all(fetchPromises);
+        document.getElementById('status').textContent = 'Data loaded from all available sources.';
+        console.log('Data loading completed successfully. Total records:', parsedData.length);
+        renderPage(currentPage, parsedData);
+    } catch (error) {
+        console.error('Error loading data from some sources:', error);
+        document.getElementById('status').textContent = 'Data loading completed with errors.';
+    }
+}
+
+
+async function fetchData(dataSource) {
+    const urlFile = dataSources[dataSource];
+
+    document.getElementById('status').textContent = `Loading from ${dataSource}...`;
+
+    try {
         const response = await fetch(urlFile);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
         const urlText = await response.text();
-        
-        // Split the file content by newlines to get individual URLs
         const urls = urlText.trim().split(/\r?\n/);
-        
-        // Fetch and parse the XML for each URL
+
         for (const url of urls) {
             try {
-                const xmlResponse = await fetch(url);
-                const xmlText = await xmlResponse.text();
+                if (!parsedData.some(data => data.machineFile === url)) {
+                    const xmlResponse = await fetch(url);
+                    if (!xmlResponse.ok) {
+                        console.warn(`Skipping ${url} due to HTTP error! Status: ${xmlResponse.status}`);
+                        continue;
+                    }
 
-                // Debugging: Log the fetched XML content
-                console.log(`Fetched XML from ${url}:`, xmlText);
-
-                parseXML(xmlText, url);
+                    const xmlText = await xmlResponse.text();
+                    parseXML(xmlText, url, dataSource); // Pass dataSource to identify platform
+                }
             } catch (error) {
                 console.error(`Error fetching XML from ${url}:`, error);
             }
         }
 
-        renderMachines(parsedData);
-        document.getElementById('status').textContent = 'Data loaded.';
+        document.getElementById('status').textContent = `Data loaded from ${dataSource}.`;
     } catch (error) {
-        console.error('Error fetching URL file:', error);
-        document.getElementById('status').textContent = 'Error loading data.';
+        console.error(`Error fetching URL file ${urlFile}:`, error);
+        document.getElementById('status').textContent = `Error loading data from ${dataSource}.`;
     }
 }
 
-// Function to parse XML and extract data
-function parseXML(xmlText, url) {
+
+function parseXML(xmlText, url, platform) {  // Platform added here
     try {
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
 
-        // Debugging: Log the parsed XML document
-        console.log(`Parsed XML Document from ${url}:`, xmlDoc);
-
-        // Extract and split the URL into components
         const urlSegments = url.split('/');
-        const encodedDirectoryName = urlSegments[urlSegments.length - 2];  // Second last segment (encoded directory)
-        const directoryName = decodeURIComponent(encodedDirectoryName);     // Decode the directory name
-
-        const fullFileName = urlSegments[urlSegments.length - 1]; // Full filename with extension
-        const fileBase = fullFileName.replace('-nmap-version-scan-output.xml', ''); // File base name without '-nmap-scan.xml'
+        const encodedDirectoryName = urlSegments[urlSegments.length - 2];
+        const directoryName = decodeURIComponent(encodedDirectoryName);
+        const fullFileName = urlSegments[urlSegments.length - 1];
+        const fileBase = fullFileName.replace('-nmap-version-scan-output.xml', '');
 
         const hosts = xmlDoc.querySelectorAll('host');
 
@@ -67,41 +88,40 @@ function parseXML(xmlText, url) {
                 return `${portId}/${protocol}`;
             }).join(', ');
 
-            const services = Array.from(host.querySelectorAll('service'));
-            const serviceDetails = services.map(service => {
-                const serviceName = service.getAttribute('name') || 'Unknown';
-                const serviceProduct = service.getAttribute('product') || 'Unknown';
-                const serviceVersion = service.getAttribute('version') || 'Unknown';
+            const serviceDetails = Array.from(host.querySelectorAll('service')).map(service => ({
+                serviceName: service.getAttribute('name') || 'Unknown',
+                serviceProduct: service.getAttribute('product') || 'Unknown',
+                serviceVersion: service.getAttribute('version') || 'Unknown'
+            }));
 
-                return {
-                    serviceName,
-                    serviceProduct,
-                    serviceVersion
-                };
-            });
-
-            parsedData.push({
-                machineName: directoryName,  // Using the decoded directory name as machine name
-                portDetails,
-                serviceDetails,
-                machineDir: encodedDirectoryName, // For URL construction
-                machineFile: fullFileName.replace(/\.xml$/, '.nmap'), // Replace .xml with .nmap
-                fileBaseName: fileBase // File base without '-nmap-scan.xml'
-            });
+            if (!parsedData.some(data => data.machineFile === fullFileName.replace(/\.xml$/, '.nmap'))) {
+                parsedData.push({
+                    machineName: directoryName,
+                    portDetails,
+                    serviceDetails,
+                    machineDir: encodedDirectoryName,
+                    machineFile: fullFileName.replace(/\.xml$/, '.nmap'),
+                    fileBaseName: fileBase,
+                    platform  // Add platform information here
+                });
+            }
         });
     } catch (error) {
         console.error('Error parsing XML:', error);
     }
 }
 
+
 // Function to render the current page of data
 function renderPage(page, data, query = '') {
+    console.log(`Rendering page ${page} with query: "${query}"`);
     const startIndex = (page - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
     const paginatedData = data.slice(startIndex, endIndex);
 
     renderMachines(paginatedData, query);
     updatePaginationControls(page, data.length);
+    document.getElementById('totalCount').textContent = `Total Results: ${data.length}`;
 }
 
 // Function to update pagination controls
@@ -109,32 +129,17 @@ function updatePaginationControls(page, totalItems) {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
     
     document.getElementById('pageInfo').textContent = `Page ${page} of ${totalPages}`;
-
     document.getElementById('prevBtn').disabled = page === 1;
     document.getElementById('nextBtn').disabled = page === totalPages;
+
+    console.log(`Updated pagination: Page ${page} of ${totalPages}`);
 }
 
-// Add event listeners to pagination buttons
-document.getElementById('prevBtn').addEventListener('click', () => {
-    if (currentPage > 1) {
-        currentPage--;
-        renderPage(currentPage, parsedData, document.getElementById('searchBar').value);
-    }
-});
-
-document.getElementById('nextBtn').addEventListener('click', () => {
-    const totalPages = Math.ceil(parsedData.length / itemsPerPage);
-    if (currentPage < totalPages) {
-        currentPage++;
-        renderPage(currentPage, parsedData, document.getElementById('searchBar').value);
-    }
-});
-
-// Function to render machines and apply pagination
+// Render machines in a table
 function renderMachines(data, query = '') {
     const tableBody = document.getElementById('table-body');
-    tableBody.innerHTML = ''; // Clear previous data
-    const lowerQuery = query.toLowerCase(); // Lowercase the query for case-insensitive matching
+    tableBody.innerHTML = '';
+    const lowerQuery = query.toLowerCase();
 
     const highlight = (text, query) => {
         if (!query) return text;
@@ -169,34 +174,54 @@ function renderMachines(data, query = '') {
 
         tableBody.appendChild(row);
     });
+
+    console.log(`Rendered ${data.length} machine entries.`);
 }
 
-// Fetch data and render the first page on page load
-window.onload = async () => {
-    await fetchData();
-    renderPage(currentPage, parsedData);
-};
+// Pagination button event listeners
+document.getElementById('prevBtn').addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
+        const dataToRender = cachedFilteredData.length > 0 ? cachedFilteredData : parsedData;  // Use cached data if available
+        renderPage(currentPage, dataToRender, document.getElementById('searchBar').value);
+    }
+});
 
-// Search bar event listener
-// Search bar event listener
+document.getElementById('nextBtn').addEventListener('click', () => {
+    const totalPages = Math.ceil((cachedFilteredData.length > 0 ? cachedFilteredData.length : parsedData.length) / itemsPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        const dataToRender = cachedFilteredData.length > 0 ? cachedFilteredData : parsedData;  // Use cached data if available
+        renderPage(currentPage, dataToRender, document.getElementById('searchBar').value);
+    }
+});
+
+
+// Fetch data on page load
+fetchAllData();
+
 document.getElementById('searchBar').addEventListener('input', function () {
     const query = this.value.toLowerCase().trim();
-    let filteredData = parsedData;  // Declare filteredData only once
+    let filteredData = parsedData;
 
     const patterns = {
         machine: /machine:([a-zA-Z0-9-_]+)/i,
         port: /port:(\d+)/i,
         service: /service:([a-zA-Z0-9-_]+)/i,
         product: /product:([a-zA-Z0-9-_]+)/i,
-        version: /version:([a-zA-Z0-9._-]+)/i
+        version: /version:([a-zA-Z0-9._-]+)/i,
+        platform: /platform:(vulnhub|htb|other)/i
     };
 
-    // Filter based on predefined patterns
     Object.entries(patterns).forEach(([key, regex]) => {
         const match = query.match(regex);
         if (match) {
             filteredData = filteredData.filter(item => {
                 switch (key) {
+                    case 'platform':
+                        return item.platform.toLowerCase() === match[1].toLowerCase();  // Compare platform directly
+                    case 'machine':
+                        return item.machineName.toLowerCase().includes(match[1].toLowerCase());
                     case 'port':
                         return item.portDetails.toLowerCase().includes(match[1].toLowerCase());
                     case 'service':
@@ -205,29 +230,17 @@ document.getElementById('searchBar').addEventListener('input', function () {
                         return item.serviceDetails.some(service => service.serviceProduct.toLowerCase().includes(match[1].toLowerCase()));
                     case 'version':
                         return item.serviceDetails.some(service => service.serviceVersion.toLowerCase().includes(match[1].toLowerCase()));
-                    case 'machine':
-                        return item.machineName.toLowerCase().includes(match[1].toLowerCase());
                     default:
-                        return false;
+                        return true;
                 }
             });
         }
     });
 
-    // Fallback to general search across all fields
-    if (!Object.values(patterns).some(regex => regex.test(query)) && query) {
-        filteredData = parsedData.filter(item =>
-            item.machineName.toLowerCase().includes(query) ||
-            item.portDetails.toLowerCase().includes(query) ||
-            item.serviceDetails.some(service =>
-                service.serviceName.toLowerCase().includes(query) ||
-                service.serviceProduct.toLowerCase().includes(query) ||
-                service.serviceVersion.toLowerCase().includes(query)
-            )
-        );
-    }
-
-    renderMachines(filteredData, query); // Pass the query for highlighting
+    // Cache the filtered data for pagination
+    cachedFilteredData = filteredData;
+    currentPage = 1;
+    renderPage(currentPage, cachedFilteredData, query);  // Render the filtered data
 });
 
 // Add event listeners to predefined pattern buttons
