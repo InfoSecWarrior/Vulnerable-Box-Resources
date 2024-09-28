@@ -12,8 +12,8 @@ const dataSources = {
 async function fetchAllData() {
     console.log('Starting to fetch all data from sources...');
     document.getElementById('status').textContent = 'Loading data from all sources...';
-    parsedData = [];  // Clear previous data
-    cachedFilteredData = [];  // Clear filtered data cache
+    parsedData = []; 
+    cachedFilteredData = [];  
     currentPage = 1;
 
     const fetchPromises = Object.keys(dataSources).map(dataSource => fetchData(dataSource));
@@ -52,7 +52,7 @@ async function fetchData(dataSource) {
                     }
 
                     const xmlText = await xmlResponse.text();
-                    parseXML(xmlText, url, dataSource); // Pass dataSource to identify platform
+                    parseXML(xmlText, url, dataSource);
                 }
             } catch (error) {
                 console.error(`Error fetching XML from ${url}:`, error);
@@ -67,7 +67,7 @@ async function fetchData(dataSource) {
 }
 
 
-function parseXML(xmlText, url, platform) {  // Platform added here
+function parseXML(xmlText, url, platform) {
     try {
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
@@ -102,7 +102,7 @@ function parseXML(xmlText, url, platform) {  // Platform added here
                     machineDir: encodedDirectoryName,
                     machineFile: fullFileName.replace(/\.xml$/, '.nmap'),
                     fileBaseName: fileBase,
-                    platform  // Add platform information here
+                    platform
                 });
             }
         });
