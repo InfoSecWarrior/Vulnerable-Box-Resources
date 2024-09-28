@@ -4,7 +4,7 @@ https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/DerpNStink-1/DerpNStink-1-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Election-1/election-1-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Escalate-linux/Escalate-Linux-nmap-version-scan-output.xml
-https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/GoldenEye-1/goldeneye-v1-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/GoldenEye-1/GoldenEye-v1-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Hacker-Kid-1.0.1/Hacker-kid-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Its-October/its-october-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Kioptrix-Level-1.1/kioptrix-level-1-1-nmap-version-scan-output.xml
