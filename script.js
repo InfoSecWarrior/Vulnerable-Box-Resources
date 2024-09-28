@@ -1,8 +1,10 @@
 let parsedData = [];
+let currentPage = 1;
+const itemsPerPage = 20;
 
 // Function to fetch and parse XML data from multiple URLs
 async function fetchData() {
-    const urlFile = 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Raw-File-Links.txt';
+    const urlFile = 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Vulnhub-Raw-File-Links.txt';
     
     document.getElementById('status').textContent = 'Loading...';
     parsedData = [];
@@ -92,30 +94,63 @@ function parseXML(xmlText, url) {
     }
 }
 
-// Function to render machine data in a table with optional query highlighting
+// Function to render the current page of data
+function renderPage(page, data, query = '') {
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const paginatedData = data.slice(startIndex, endIndex);
+
+    renderMachines(paginatedData, query);
+    updatePaginationControls(page, data.length);
+}
+
+// Function to update pagination controls
+function updatePaginationControls(page, totalItems) {
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    
+    document.getElementById('pageInfo').textContent = `Page ${page} of ${totalPages}`;
+
+    document.getElementById('prevBtn').disabled = page === 1;
+    document.getElementById('nextBtn').disabled = page === totalPages;
+}
+
+// Add event listeners to pagination buttons
+document.getElementById('prevBtn').addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
+        renderPage(currentPage, parsedData, document.getElementById('searchBar').value);
+    }
+});
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+    const totalPages = Math.ceil(parsedData.length / itemsPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        renderPage(currentPage, parsedData, document.getElementById('searchBar').value);
+    }
+});
+
+// Function to render machines and apply pagination
 function renderMachines(data, query = '') {
     const tableBody = document.getElementById('table-body');
     tableBody.innerHTML = ''; // Clear previous data
     const lowerQuery = query.toLowerCase(); // Lowercase the query for case-insensitive matching
 
-    // Highlight function: wraps matching text in a <span> with a red color
     const highlight = (text, query) => {
-        if (!query) return text; // No query means no highlighting
-
-        const regex = new RegExp(`(${query})`, 'gi'); // Create a regex for the query
-        return text.replace(regex, '<span style="color: red;">$1</span>'); // Replace and wrap in <span>
+        if (!query) return text;
+        const regex = new RegExp(`(${query})`, 'gi');
+        return text.replace(regex, '<span style="color: red;">$1</span>');
     };
 
     data.forEach(item => {
         const row = document.createElement('tr');
 
-        // Highlight machine name, port details, service names, and products based on the search query
-        const machineNameLink = `<a href="machine.html?dir=${(item.machineDir)}&file=${item.machineFile}" target="_blank">${highlight(item.machineName, lowerQuery)}</a>`;
+        const machineNameLink = `<a href="machine.html?dir=${item.machineDir}&file=${item.machineFile}" target="_blank">${highlight(item.machineName, lowerQuery)}</a>`;
 
         const portDetails = item.portDetails
             .split(', ')
             .map(port => `<span class="port-entry">${highlight(port, lowerQuery)}</span>`)
-            .join(''); // Highlight each port if it matches
+            .join('');
 
         const serviceNames = item.serviceDetails
             .map(service => `<span class="service-entry">${highlight(service.serviceName, lowerQuery)}</span>`)
@@ -125,7 +160,6 @@ function renderMachines(data, query = '') {
             .map(service => `<span class="product-version-entry">${highlight(service.serviceProduct, lowerQuery)} ${highlight(service.serviceVersion, lowerQuery)}</span>`)
             .join('');
 
-        // Construct table row with the highlighted content
         row.innerHTML = `
             <td>${machineNameLink}</td>
             <td>${portDetails}</td>
@@ -137,12 +171,17 @@ function renderMachines(data, query = '') {
     });
 }
 
-// Fetch data and render on page load
-window.onload = fetchData;
+// Fetch data and render the first page on page load
+window.onload = async () => {
+    await fetchData();
+    renderPage(currentPage, parsedData);
+};
 
-// Function to filter data based on search query
+// Search bar event listener
+// Search bar event listener
 document.getElementById('searchBar').addEventListener('input', function () {
     const query = this.value.toLowerCase().trim();
+    let filteredData = parsedData;  // Declare filteredData only once
 
     const patterns = {
         machine: /machine:([a-zA-Z0-9-_]+)/i,
@@ -151,8 +190,6 @@ document.getElementById('searchBar').addEventListener('input', function () {
         product: /product:([a-zA-Z0-9-_]+)/i,
         version: /version:([a-zA-Z0-9._-]+)/i
     };
-
-    let filteredData = parsedData;
 
     // Filter based on predefined patterns
     Object.entries(patterns).forEach(([key, regex]) => {

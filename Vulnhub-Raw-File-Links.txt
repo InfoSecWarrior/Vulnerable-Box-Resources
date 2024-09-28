@@ -29,4 +29,3 @@ https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Wintermute-Neuromancer/Wintermute-Neuromancer-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Wintermute-Straylight/Wintermute-Straylight-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/VulnOS2/VulnOS2_report-nmap-version-scan-output.xml
-https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Zico2/Zico-2-nmap-version-scan-output.xml

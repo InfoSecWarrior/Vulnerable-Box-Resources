@@ -116,6 +116,35 @@ body {
     padding: 2px;
 }
 
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.pagination-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #b20002;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pagination-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination-container span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
 .table-container {
     width: 98%;
     margin: 0 auto;
