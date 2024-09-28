@@ -15,12 +15,13 @@
             <a href="https://infosecwarrior.com/" target="_blank">
                 <img src="images/logo.png" alt="Logo" class="logo">
             </a>
-            <h1>Vulnerable Box Resources</h1>
+            <h1> <a href="index.html" > Vulnerable Box Resources </a>  </h1>
             <a href="https://armourinfosec.com/" target="_blank">
                 <img src="https://www.armourinfosec.com/wp-content/uploads/thegem-logos/logo_3b70cf15afddeb08af9f741446904b90_1x.png" alt="Logo" class="logo armour-logo">
             </a>            
         </header>
 
+        <p id="totalCount">Total Results: 0</p>
         <section class="searchsection">
             <!-- Search Bar with Icons -->
             <div class="search">
@@ -35,6 +36,7 @@
             <button data-pattern="service:http">service:http</button>
             <button data-pattern="product:mysql">product:mysql</button>
             <button data-pattern="version:9">version:9</button>
+            <button data-pattern="platform:vulnhub">platform:vulnhub</button>
         </section>
 
         <p id="status">Loading...</p>
@@ -54,6 +56,11 @@
                 </tbody>
             </table>
         </section>
+        <section class="pagination-container">
+            <button id="prevBtn" disabled>Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextBtn" disabled>Next</button>
+        </section>        
     </div>
 
     <script src="script.js"></script>
