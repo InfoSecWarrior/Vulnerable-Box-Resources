@@ -73,6 +73,15 @@ function parseXML(xmlText, url, platform) {
         const urlSegments = url.split('/');
         const encodedDirectoryName = urlSegments[urlSegments.length - 2];
         const directoryName = decodeURIComponent(encodedDirectoryName);
+        
+        // Print the directory name before removing single dash
+        console.log('Original Directory Name:', directoryName);
+
+        // Remove single dashes from the directory name
+        const modifiedDirectoryName = directoryName.replace(/-/g, ' ');
+        
+        console.log('Modified Directory Name:', modifiedDirectoryName);
+
         const fullFileName = urlSegments[urlSegments.length - 1];
         const fileBase = fullFileName.replace('-nmap-version-scan-output.xml', '');
 
@@ -94,10 +103,10 @@ function parseXML(xmlText, url, platform) {
 
             if (!parsedData.some(data => data.machineFile === fullFileName.replace(/\.xml$/, '.nmap'))) {
                 parsedData.push({
-                    machineName: directoryName,
+                    machineName: modifiedDirectoryName, // Use modified directory name
                     portDetails,
                     serviceDetails,
-                    machineDir: encodedDirectoryName,
+                    machineDir: encodedDirectoryName, // Keep the original encoded name for linking
                     machineFile: fullFileName.replace(/\.xml$/, '.nmap'),
                     fileBaseName: fileBase,
                     platform
@@ -108,6 +117,7 @@ function parseXML(xmlText, url, platform) {
         console.error('Error parsing XML:', error);
     }
 }
+
 
 // Function to render the current page of data
 function renderPage(page, data, query = '') {

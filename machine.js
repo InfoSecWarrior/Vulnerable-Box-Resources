@@ -75,7 +75,6 @@ async function fetchOpenPorts(baseURL, dirName, baseFileName) {
     return []; // Return an empty array if there's an error
 }
 
-// Function to fetch and display all machine-related data
 async function fetchMachineData() {
     const urlParams = new URLSearchParams(window.location.search);
     const dirName = urlParams.get('dir');
@@ -86,11 +85,16 @@ async function fetchMachineData() {
         return;
     }
 
+    // Use original dirName for URLs and other logic
     const baseFileName = fileName.replace(/-nmap-version-scan-output/, '').replace(/\.[^.]+$/, '');
+
+    // Replace dashes only when displaying the directory name
+    const displayDirName = dirName.replace(/-/g, ' ');
 
     const machineTitleElement = document.getElementById('machine-title');
     if (machineTitleElement) {
-        machineTitleElement.textContent = decodeURIComponent(dirName) || 'Unknown Machine';
+        // Display the directory name without dashes
+        machineTitleElement.textContent = decodeURIComponent(displayDirName) || 'Unknown Machine';
     } else {
         console.warn("Element with ID 'machine-title' not found in the document.");
     }
@@ -98,8 +102,8 @@ async function fetchMachineData() {
     const githubBaseURL = 'https://github.com/riteshs4hu/Vulnerable-Box-Resources/tree/main/';
     const githubLink = document.getElementById('github-url');
     if (githubLink) {
-        githubLink.href = `${githubBaseURL}${encodeURIComponent(dirName)}`;
-        githubLink.textContent = `View ${decodeURIComponent(dirName)} on GitHub`;
+        githubLink.href = `${githubBaseURL}${encodeURIComponent(dirName)}`; // Use original name for URL
+        githubLink.textContent = `View ${decodeURIComponent(displayDirName)} on GitHub`; // Display modified name
     } else {
         console.warn("Element with ID 'github-url' not found in the document.");
     }
@@ -108,20 +112,18 @@ async function fetchMachineData() {
     
     // Fetch open ports
     const ports = await fetchOpenPorts(baseURL, dirName, baseFileName);
-    // Fetch and set the resource link
+    
     const resourceUrl = `${baseURL}${encodeURIComponent(dirName)}/resource.txt`;
     const resourceLinkElement = document.getElementById('resource-url');
     
-    // Fetch the content of resource.txt, which contains a link
     const resourceContent = await fetchFileContent(resourceUrl, 'resource-url');
-    
     if (resourceLinkElement && resourceContent) {
-        // Set the link from the file content into the Resource element
-        resourceLinkElement.href = resourceContent.trim();  // Use the content as the href link
+        resourceLinkElement.href = resourceContent.trim(); // Set original resource URL
         resourceLinkElement.textContent = 'Resource';
     } else {
         console.warn("Element with ID 'resource-url' not found in the document or no resource content available.");
     }
+
     const files = {
         nmap: `${baseURL}${encodeURIComponent(dirName)}/${fileName}`,
         webUrls: `${baseURL}${encodeURIComponent(dirName)}/${baseFileName}-filtered-web-urls-output.txt`,
@@ -146,6 +148,7 @@ async function fetchMachineData() {
         fetchFileContent(files.openPortsList, 'open-ports-list')
     ]);
 }
+
 
 // Fetch machine data on page load
 window.onload = fetchMachineData;
