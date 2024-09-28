@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Sep 27 14:42:36 2024 as: nmap -v -Pn -p- -oA troll3-all-ports-scan-output 192.168.1.137
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.137 (192.168.1.137)	Status: Up
+Host: 192.168.1.137 (192.168.1.137)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 443/open/tcp//https///, 601/open/tcp//syslog-conn///, 631/open/tcp//ipp///, 3306/open/tcp//mysql///	Ignored State: closed (65528)
+# Nmap done at Fri Sep 27 14:42:37 2024 -- 1 IP address (1 host up) scanned in 1.19 seconds
