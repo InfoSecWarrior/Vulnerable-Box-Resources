@@ -1,0 +1,10 @@
+# Dirsearch started Thu Sep 26 18:18:08 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.58:80 -o oz-1-dirsearch-80-output.txt -q
+
+500   291B   http://192.168.29.58/users/admin
+500   291B   http://192.168.29.58/users/login
+500   291B   http://192.168.29.58/users/login.aspx
+500   291B   http://192.168.29.58/users/login.jsp
+500   291B   http://192.168.29.58/users/login.php
+500   291B   http://192.168.29.58/users/admin.php
+500   291B   http://192.168.29.58/users/login.html
+500   291B   http://192.168.29.58/users/login.js

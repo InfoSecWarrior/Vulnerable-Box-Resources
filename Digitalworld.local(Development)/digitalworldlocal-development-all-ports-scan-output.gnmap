@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 19:40:33 2024 as: nmap -v -Pn -p- -oA digitalworldlocal-development-all-ports-scan-output 192.168.29.77
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.29.77 ()	Status: Up
+Host: 192.168.29.77 ()	Ports: 22/open/tcp//ssh///, 113/open/tcp//ident///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 8080/open/tcp//http-proxy///	Ignored State: closed (65530)
+# Nmap done at Thu Sep 26 19:40:37 2024 -- 1 IP address (1 host up) scanned in 4.11 seconds

@@ -1,0 +1,46 @@
+# Dirsearch started Thu Sep 26 10:25:28 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.8:80 -o kioptrix-level-1-2-dirsearch-80-output.txt -q
+
+403   333B   http://192.168.29.8/.htaccess.bak1
+403   330B   http://192.168.29.8/.ht_wsr.txt
+403   333B   http://192.168.29.8/.htaccess.save
+403   335B   http://192.168.29.8/.htaccess.sample
+403   334B   http://192.168.29.8/.htaccess_extra
+403   331B   http://192.168.29.8/.htaccess_sc
+403   333B   http://192.168.29.8/.htaccess_orig
+403   331B   http://192.168.29.8/.htaccessOLD
+403   331B   http://192.168.29.8/.htaccessBAK
+403   332B   http://192.168.29.8/.htaccessOLD2
+403   324B   http://192.168.29.8/.html
+403   323B   http://192.168.29.8/.htm
+403   333B   http://192.168.29.8/.htpasswd_test
+403   329B   http://192.168.29.8/.htpasswds
+403   330B   http://192.168.29.8/.httr-oauth
+403   333B   http://192.168.29.8/.htaccess.orig
+301   351B   http://192.168.29.8/cache    -> REDIRECTS TO: http://192.168.29.8/cache/
+301   350B   http://192.168.29.8/core    -> REDIRECTS TO: http://192.168.29.8/core/
+200   688B   http://192.168.29.8/core/fragments/moduleInfo.phtml
+403   323B   http://192.168.29.8/data
+403   324B   http://192.168.29.8/data/
+403   335B   http://192.168.29.8/data/adminer.php
+403   330B   http://192.168.29.8/data/cache/
+403   335B   http://192.168.29.8/data/autosuggest
+403   330B   http://192.168.29.8/data/debug/
+403   330B   http://192.168.29.8/data/files/
+403   328B   http://192.168.29.8/data/tmp/
+403   329B   http://192.168.29.8/data/logs/
+403   332B   http://192.168.29.8/data/backups/
+403   348B   http://192.168.29.8/data/DoctrineORMModule/cache/
+403   348B   http://192.168.29.8/data/DoctrineORMModule/Proxy/
+403   333B   http://192.168.29.8/data/sessions/
+200    23KB  http://192.168.29.8/favicon.ico
+301   353B   http://192.168.29.8/gallery    -> REDIRECTS TO: http://192.168.29.8/gallery/
+301   353B   http://192.168.29.8/modules    -> REDIRECTS TO: http://192.168.29.8/modules/
+200     2KB  http://192.168.29.8/modules/
+301   356B   http://192.168.29.8/phpmyadmin    -> REDIRECTS TO: http://192.168.29.8/phpmyadmin/
+401   518B   http://192.168.29.8/phpmyadmin/scripts/setup.php
+200     8KB  http://192.168.29.8/phpmyadmin/
+200     8KB  http://192.168.29.8/phpmyadmin/index.php
+403   332B   http://192.168.29.8/server-status
+403   333B   http://192.168.29.8/server-status/
+301   351B   http://192.168.29.8/style    -> REDIRECTS TO: http://192.168.29.8/style/
+200    18B   http://192.168.29.8/update.php

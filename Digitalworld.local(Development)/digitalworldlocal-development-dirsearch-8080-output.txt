@@ -1,0 +1,18 @@
+# Dirsearch started Thu Sep 26 19:42:42 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.77:8080 -o digitalworldlocal-development-dirsearch-8080-output.txt -q
+
+403   265B   http://192.168.29.77:8080/.ht_wsr.txt
+403   265B   http://192.168.29.77:8080/.htaccess.bak1
+403   265B   http://192.168.29.77:8080/.htaccess.orig
+403   265B   http://192.168.29.77:8080/.htaccess.sample
+403   265B   http://192.168.29.77:8080/.htaccess.save
+403   265B   http://192.168.29.77:8080/.htaccess_extra
+403   265B   http://192.168.29.77:8080/.htaccessBAK
+403   265B   http://192.168.29.77:8080/.htaccessOLD
+403   265B   http://192.168.29.77:8080/.htaccess_orig
+403   265B   http://192.168.29.77:8080/.htaccess_sc
+403   265B   http://192.168.29.77:8080/.htaccessOLD2
+403   265B   http://192.168.29.77:8080/.htm
+403   265B   http://192.168.29.77:8080/.html
+403   265B   http://192.168.29.77:8080/.htpasswds
+403   265B   http://192.168.29.77:8080/.htpasswd_test
+403   265B   http://192.168.29.77:8080/.httr-oauth
