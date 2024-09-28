@@ -65,7 +65,7 @@ body {
 /* Search bar styling */
 #searchBar {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     padding: 12px 20px;
     font-size: 18px;
     margin: 20px auto;
@@ -115,6 +115,40 @@ body {
     border-radius: 50%;
     padding: 2px;
 }
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.pagination-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 16px; /* Base font size */
+    font-weight: bold;
+    background-color: #b20002;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pagination-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination-container span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
 
 .table-container {
     width: 98%;
@@ -260,4 +294,13 @@ header h1 {
         font-size: 10px;
         padding: 3px 8px;
     }
+}
+
+#totalCount {
+    font-size: 1.3em;
+    color: #333;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
 }
