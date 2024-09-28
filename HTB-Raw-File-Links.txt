@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Zico2/Zico-2-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Zico2/Zico-2-nmap-version-scan-output.xml
