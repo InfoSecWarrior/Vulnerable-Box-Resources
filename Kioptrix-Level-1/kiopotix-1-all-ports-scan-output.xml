@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Sep 27 12:54:03 2024 as: nmap -v -Pn -p- -oA kiopotix-1-all-ports-scan-output 192.168.1.130 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA kiopotix-1-all-ports-scan-output 192.168.1.130" start="1727421843" startstr="Fri Sep 27 12:54:03 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1727421843"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.130" addrtype="ipv4"/>
+<address addr="08:00:27:41:EE:E8" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727421843" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727421843"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727421843"/>
+<taskbegin task="SYN Stealth Scan" time="1727421843"/>
+<taskend task="SYN Stealth Scan" time="1727421844" extrainfo="65535 total ports"/>
+<host starttime="1727421843" endtime="1727421844"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.130" addrtype="ipv4"/>
+<address addr="08:00:27:41:EE:E8" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+<hostname name="192.168.1.130" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65529">
+<extrareasons reason="reset" count="65529" proto="tcp" ports="1-21,23-79,81-110,112-138,140-442,444-32767,32769-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="32768"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="filenet-tms" method="table" conf="3"/></port>
+</ports>
+<times srtt="257" rttvar="74" to="100000"/>
+</host>
+<runstats><finished time="1727421844" timestr="Fri Sep 27 12:54:04 2024" summary="Nmap done at Fri Sep 27 12:54:04 2024; 1 IP address (1 host up) scanned in 1.61 seconds" elapsed="1.61" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
