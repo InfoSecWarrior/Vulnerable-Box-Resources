@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Sep 27 17:32:07 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA Lemonsqueezy-nmap-version-scan-output 192.168.1.188
+# Ports scanned: TCP(1;80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.188 (192.168.1.188)	Status: Up
+Host: 192.168.1.188 (192.168.1.188)	Ports: 80/open/tcp//http//Apache httpd 2.4.25 ((Debian))/	OS: Linux 3.2 - 4.9	Seq Index: 260	IP ID Seq: All zeros
+# Nmap done at Fri Sep 27 17:32:15 2024 -- 1 IP address (1 host up) scanned in 8.69 seconds
