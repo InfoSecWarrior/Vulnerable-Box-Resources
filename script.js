@@ -157,7 +157,7 @@ function renderMachines(data, query = '') {
     data.forEach(item => {
         const row = document.createElement('tr');
 
-        const machineNameLink = `<a href="machine.html?dir=${item.machineDir}&file=${item.machineFile}" target="_blank">${highlight(item.machineName, lowerQuery)}</a>`;
+        const machineNameLink = `<a href="machine.html?dir=${item.machineDir}&file=${item.machineFile}" >${highlight(item.machineName, lowerQuery)}</a>`;
 
         const portDetails = item.portDetails
             .split(', ')
