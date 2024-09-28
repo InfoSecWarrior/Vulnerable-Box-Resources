@@ -2,7 +2,7 @@ let parsedData = [];
 
 // Function to fetch and parse XML data from multiple URLs
 async function fetchData() {
-    const urlFile = 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Raw-File-Links.txt';
+    const urlFile = 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Raw-File-Links.txt';
     
     document.getElementById('status').textContent = 'Loading...';
     parsedData = [];

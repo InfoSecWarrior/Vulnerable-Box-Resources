@@ -1,1 +1,0 @@
-http://192.168.1.119:80 [200 OK] Apache[2.4.6], Country[RESERVED][ZZ], HTTPServer[CentOS][Apache/2.4.6 (CentOS)], IP[192.168.1.119], Title[My File Server]

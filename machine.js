@@ -95,7 +95,7 @@ async function fetchMachineData() {
         console.warn("Element with ID 'machine-title' not found in the document.");
     }
 
-    const githubBaseURL = 'https://github.com/infoSecWarrior/Vulnerable-Box-Resources/tree/main/';
+    const githubBaseURL = 'https://github.com/riteshs4hu/Vulnerable-Box-Resources/tree/main/';
     const githubLink = document.getElementById('github-url');
     if (githubLink) {
         githubLink.href = `${githubBaseURL}${encodeURIComponent(dirName)}`;
@@ -104,7 +104,7 @@ async function fetchMachineData() {
         console.warn("Element with ID 'github-url' not found in the document.");
     }
 
-    const baseURL = 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/';
+    const baseURL = 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/';
     
     // Fetch open ports
     const ports = await fetchOpenPorts(baseURL, dirName, baseFileName);
