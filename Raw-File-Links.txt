@@ -21,7 +21,7 @@ https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Prime-1/prime-1-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/PwnLab-init/pwnlab-scan-results-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Readme-1/readme-1-nmap-version-scan-output.xml
-https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Sar-1/sar-all-ports-scan-output.xml
+https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Sar-1/sar-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Stapler-1/stapler-1-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Temple-Of-Doom/temple-of-doom-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Tiki-1/tiki-nmap-version-scan.xml
@@ -31,4 +31,4 @@ https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/VulnOS2/vulnos2-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Wintermute-Neuromancer/wintermute-neuromancer-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Wintermute-Straylight/wintermute-straylight-nmap-version-scan-output.xml
-https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Zico2/zico-2-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Zico2/Zico-2-nmap-version-scan-output.xml
