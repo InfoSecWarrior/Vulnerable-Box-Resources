@@ -1,7 +1,7 @@
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Bee-Box/bee-box-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Billy-Madison/billy-madison-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Chronos/chronos_report-nmap-version-scan-output.xml
-https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/DerpNStink-1/derpnstink-1-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/DerpNStink-1/DerpNStink-1-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Election-1/election-1-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Escalate-linux/Escalate-Linux-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/GoldenEye-1/goldeneye-v1-nmap-version-scan-output.xml
