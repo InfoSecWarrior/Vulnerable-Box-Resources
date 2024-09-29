@@ -8,41 +8,56 @@
     <link rel="icon" href="images/ai.png" sizes="192x192">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
     <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cors-anywhere.herokuapp.com; style-src 'self' https://fonts.googleapis.com; img-src 'self' data:;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
 </head>
 <body>
     <div class="container">
+        <!-- Header with Branding -->
         <header class="header">
             <a href="https://www.infosecwarrior.com/" target="_blank">
-                <img src="images/logo.png" alt="Logo" class="logo">
+                <img src="images/logo.png" alt="InfoSecWarrior Logo" class="logo" loading="lazy">
             </a>
-            <h1><a href="https://vulnerable-box-resources.infosecwarrior.com/">Vulnerable Box Resources</a></h1>
+            <h1>
+                <a href="https://vulnerable-box-resources.infosecwarrior.com/" aria-label="Vulnerable Box Resources Homepage">
+                    Vulnerable Box Resources
+                </a>
+            </h1>
             <a href="https://www.armourinfosec.com/" target="_blank">
-                <img src="images/armourinfosec.png" alt="Logo" class="logo armour-logo">
+                <img src="images/armourinfosec.png" alt="Armour InfoSec Logo" class="logo armour-logo" loading="lazy">
             </a>            
         </header>
 
-        <p id="totalCount">Total Results: 0</p>
+        <!-- Total Results Counter -->
+        <p id="totalCount" aria-live="polite">Total Results: 0</p>
+
+        <!-- Search Section -->
         <section class="searchsection">
-            <div class="search">
+            <div class="search" style="position: relative;">
                 <input type="search" id="searchBar" class="searchbar" placeholder="Search..." aria-label="Search input">
-                <img src="images/round_close_black_24dp.png" class="closeimg" alt="Close Icon">
+                <button id="clearSearch" class="closebtn" aria-label="Clear search">
+                    <img src="images/round_close_black_24dp.png" class="closeimg" alt="Close Icon">
+                </button>
             </div>
         </section>
 
-        <section class="predefined-patterns">
-            <button data-pattern="machine:Kioptrix">machine:Kioptrix</button>
-            <button data-pattern="port:80">port:80</button>
-            <button data-pattern="service:http">service:http</button>
-            <button data-pattern="product:mysql">product:mysql</button>
-            <button data-pattern="version:9">version:9</button>
-            <button data-pattern="platform:vulnhub">platform:vulnhub</button>
+        <!-- Predefined Search Patterns -->
+        <section class="predefined-patterns" aria-label="Predefined Search Patterns">
+            <button data-pattern="machine:Kioptrix" aria-label="Filter by machine Kioptrix">machine:Kioptrix</button>
+            <button data-pattern="port:80" aria-label="Filter by port 80">port:80</button>
+            <button data-pattern="service:http" aria-label="Filter by service http">service:http</button>
+            <button data-pattern="product:mysql" aria-label="Filter by product mysql">product:mysql</button>
+            <button data-pattern="version:9" aria-label="Filter by version 9">version:9</button>
+            <button data-pattern="platform:vulnhub" aria-label="Filter by platform VulnHub">platform:vulnhub</button>
         </section>
 
-        <p id="status">Loading...</p>
+        <!-- Status with Loading Spinner -->
+        <p id="status" aria-live="polite">
+            <span id="statusMessage">Loading...</span>
+            <span id="spinner" class="spinner" aria-hidden="true"></span>
+        </p>
 
+        <!-- Data Table -->
         <section class="table-container" aria-live="polite">
             <table>
                 <thead>
@@ -58,13 +73,16 @@
                 </tbody>
             </table>
         </section>
-        <section class="pagination-container">
-            <button id="prevBtn" disabled>Previous</button>
-            <span id="pageInfo"></span>
-            <button id="nextBtn" disabled>Next</button>
+
+        <!-- Pagination Controls -->
+        <section class="pagination-container" aria-label="Pagination Controls">
+            <button id="prevBtn" disabled aria-label="Previous Page">Previous</button>
+            <span id="pageInfo" aria-live="polite"></span>
+            <button id="nextBtn" disabled aria-label="Next Page">Next</button>
         </section>        
     </div>
 
-    <script src="script.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
 </body>
 </html>
