@@ -2,92 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Content Security Policy for enhanced security -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vulnerable Box Resources</title>
     <link rel="icon" href="images/ai.png" sizes="192x192">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cors-anywhere.herokuapp.com; style-src 'self' https://fonts.googleapis.com; img-src 'self' data:;">
 </head>
 <body>
     <div class="container">
-        <!-- Header with logos and title -->
         <header class="header">
             <a href="https://www.infosecwarrior.com/" target="_blank">
-                <img src="images/logo.png" alt="InfoSecWarrior Logo" class="logo" loading="lazy">
+                <img src="images/logo.png" alt="Logo" class="logo">
             </a>
-            <h1>
-                <a href="https://vulnerable-box-resources.infosecwarrior.com/" aria-label="Vulnerable Box Resources Homepage">
-                    Vulnerable Box Resources
-                </a>
-            </h1>
+            <h1><a href="https://vulnerable-box-resources.infosecwarrior.com/">Vulnerable Box Resources</a></h1>
             <a href="https://www.armourinfosec.com/" target="_blank">
-                <img src="images/armourinfosec.png" alt="Armour InfoSec Logo" class="logo armour-logo" loading="lazy">
+                <img src="images/armourinfosec.png" alt="Logo" class="logo armour-logo">
             </a>            
         </header>
 
-        <!-- Total Number of Vulnerable Machines -->
-        <p id="totalMachines" class="count">Total Vulnerable Machines: 0</p>
-
-        <!-- Search section with input and clear button -->
+        <p id="totalCount">Total Results: 0</p>
         <section class="searchsection">
             <div class="search">
                 <input type="search" id="searchBar" class="searchbar" placeholder="Search..." aria-label="Search input">
-                <button id="clearSearch" class="closebtn" aria-label="Clear search" title="Clear Search">
-                    <img src="images/round_close_black_24dp.png" class="closeimg" alt="Clear Search">
-                </button>
+                <img src="images/round_close_black_24dp.png" class="closeimg" alt="Close Icon">
             </div>
         </section>
 
-        <!-- Total Search Results -->
-        <p id="searchResults" class="count">Search Results: 0</p>
-
-        <!-- Predefined search patterns for quick access -->
-        <section class="predefined-patterns" aria-label="Predefined Search Patterns">
-            <button data-pattern="machine:Kioptrix" aria-label="Filter by machine Kioptrix">machine:Kioptrix</button>
-            <button data-pattern="port:80" aria-label="Filter by port 80">port:80</button>
-            <button data-pattern="service:http" aria-label="Filter by service HTTP">service:http</button>
-            <button data-pattern="product:mysql" aria-label="Filter by product MySQL">product:mysql</button>
-            <button data-pattern="version:9" aria-label="Filter by version 9">version:9</button>
-            <button data-pattern="platform:vulnhub" aria-label="Filter by platform VulnHub">platform:vulnhub</button>
+        <section class="predefined-patterns">
+            <button data-pattern="machine:Kioptrix">machine:Kioptrix</button>
+            <button data-pattern="port:80">port:80</button>
+            <button data-pattern="service:http">service:http</button>
+            <button data-pattern="product:mysql">product:mysql</button>
+            <button data-pattern="version:9">version:9</button>
+            <button data-pattern="platform:vulnhub">platform:vulnhub</button>
         </section>
 
-        <!-- Status message for loading feedback -->
-        <p id="status" aria-live="polite">
-            <span id="statusMessage">Loading...</span>
-            <span id="spinner" class="spinner" aria-hidden="true"></span>
-        </p>
+        <p id="status">Loading...</p>
 
-        <!-- Data table to display vulnerable machines -->
-        <section class="table-container" aria-label="Vulnerable Machines Table">
+        <section class="table-container" aria-live="polite">
             <table>
                 <thead>
                     <tr>
-                        <th>Vulnerable Machine</th>
-                        <th>Open Ports</th>
-                        <th>Running Services</th>
-                        <th>Software &amp; Version</th>
+                        <th>Machine Name</th>
+                        <th>Ports</th>
+                        <th>Service</th>
+                        <th>Product & Version</th>
                     </tr>
                 </thead>
                 <tbody id="table-body">
-                    <!-- Data will be dynamically inserted here -->
+                    <!-- Data will be populated dynamically -->
                 </tbody>
             </table>
         </section>
-
-        <!-- Pagination controls for navigating through results -->
-        <section class="pagination-container" aria-label="Pagination Controls">
-            <button id="prevBtn" disabled aria-label="Previous Page">Previous</button>
-            <span id="pageInfo" aria-live="polite"></span>
-            <button id="nextBtn" disabled aria-label="Next Page">Next</button>
+        <section class="pagination-container">
+            <button id="prevBtn" disabled>Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextBtn" disabled>Next</button>
         </section>        
     </div>
 
-    <!-- Script for handling data fetch, search, and pagination -->
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
