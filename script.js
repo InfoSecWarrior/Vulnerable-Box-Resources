@@ -6,10 +6,11 @@ let currentPage = 1;
 const itemsPerPage = 20;
 
 // Define your data sources
+const corsProxy = 'https://cors-anywhere.herokuapp.com/';
 const dataSources = {
-    Vulnhub: 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/Vulnhub-Raw-File-Links.txt',
-    HTB: 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/HTB-Raw-File-Links.txt',
-    Other: 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/Other-Raw-File-Links.txt'
+    Vulnhub: `${corsProxy}https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/Vulnhub-Raw-File-Links.txt`,
+    HTB: `${corsProxy}https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/HTB-Raw-File-Links.txt`,
+    Other: `${corsProxy}https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/Other-Raw-File-Links.txt`
 };
 
 /**
