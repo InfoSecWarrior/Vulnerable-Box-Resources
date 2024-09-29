@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 21:11:34 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80 -oA Moria-nmap-version-scan-output 192.168.1.116
+# Ports scanned: TCP(3;21-22,80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.116 (Moria.bbrouter)	Status: Up
+Host: 192.168.1.116 (Moria.bbrouter)	Ports: 21/open/tcp//ftp//vsftpd 2.0.8 or later/, 22/open/tcp//ssh//OpenSSH 6.6.1 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.6 ((CentOS) PHP|5.4.16)/	OS: Linux 3.2 - 4.9	Seq Index: 261	IP ID Seq: All zeros
+# Nmap done at Sun Sep 29 21:11:51 2024 -- 1 IP address (1 host up) scanned in 17.08 seconds
