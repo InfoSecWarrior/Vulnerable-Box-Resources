@@ -1,3 +1,5 @@
+// script.js
+
 let parsedData = [];
 let cachedFilteredData = [];
 let currentPage = 1;
@@ -11,7 +13,7 @@ const dataSources = {
 
 async function fetchAllData() {
     console.log('Starting to fetch all data from sources...');
-    updateStatus('Loading data from all sources...');
+    updateStatus('Loading data from all sources...', true);
     parsedData = [];
     cachedFilteredData = [];
     currentPage = 1;
@@ -20,18 +22,20 @@ async function fetchAllData() {
 
     try {
         await Promise.all(fetchPromises);
-        updateStatus('Data loaded from all available sources.');
+        updateStatus('Data loaded from all available sources.', false);
         console.log('Data loading completed successfully. Total records:', parsedData.length);
+        updateTotalMachines(parsedData.length); // Update total machines count
+        updateSearchResults(parsedData.length); // Initially, all results are shown
         renderPage(currentPage, parsedData); // Initial render of all data
     } catch (error) {
         console.error('Error loading data from some sources:', error);
-        updateStatus('Data loading completed with errors.');
+        updateStatus('Data loading completed with errors.', false);
     }
 }
 
 async function fetchData(dataSource) {
     const urlFile = dataSources[dataSource];
-    updateStatus(`Loading from ${dataSource}...`);
+    updateStatus(`Loading from ${dataSource}...`, true);
 
     try {
         const response = await fetch(urlFile);
@@ -50,10 +54,10 @@ async function fetchData(dataSource) {
             await Promise.all(batch.map(url => fetchAndParseXML(url, dataSource)));
         }
 
-        updateStatus(`Data loaded from ${dataSource}.`);
+        updateStatus(`Data loaded from ${dataSource}.`, false);
     } catch (error) {
         console.error(`Error fetching URL file ${urlFile}:`, error);
-        updateStatus(`Error loading data from ${dataSource}.`);
+        updateStatus(`Error loading data from ${dataSource}.`, false);
     }
 }
 
@@ -76,6 +80,13 @@ function parseXML(xmlText, url, platform) {
     try {
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
+
+        // Check for XML parsing errors
+        const parserError = xmlDoc.querySelector('parsererror');
+        if (parserError) {
+            console.error('Error parsing XML:', parserError.textContent);
+            return;
+        }
 
         const urlSegments = url.split('/');
         const encodedDirectoryName = urlSegments[urlSegments.length - 2];
@@ -123,11 +134,31 @@ function parseXML(xmlText, url, platform) {
     }
 }
 
-// Helper function to update status text
-function updateStatus(message) {
-    const statusElement = document.getElementById('status');
-    if (statusElement) {
-        statusElement.textContent = message;
+// Helper function to update status message and spinner
+function updateStatus(message, isLoading) {
+    const statusMessage = document.getElementById('statusMessage');
+    const spinner = document.getElementById('spinner');
+    if (statusMessage) {
+        statusMessage.textContent = message;
+    }
+    if (spinner) {
+        spinner.style.display = isLoading ? 'inline-block' : 'none';
+    }
+}
+
+// Function to update the total number of vulnerable machines
+function updateTotalMachines(count) {
+    const totalMachinesElement = document.getElementById('totalMachines');
+    if (totalMachinesElement) {
+        totalMachinesElement.textContent = `Total Vulnerable Machines: ${count}`;
+    }
+}
+
+// Function to update the total number of search results
+function updateSearchResults(count) {
+    const searchResultsElement = document.getElementById('searchResults');
+    if (searchResultsElement) {
+        searchResultsElement.textContent = `Search Results: ${count}`;
     }
 }
 
@@ -140,10 +171,7 @@ function renderPage(page, data, query = '') {
 
     renderMachines(paginatedData, query);
     updatePaginationControls(page, data.length);
-    const totalCountElement = document.getElementById('totalCount');
-    if (totalCountElement) {
-        totalCountElement.textContent = `Total Results: ${data.length}`;
-    }
+    updateSearchResults(data.length); // Update search results count
 }
 
 // Function to update pagination controls
@@ -159,7 +187,7 @@ function updatePaginationControls(page, totalItems) {
     const nextBtn = document.getElementById('nextBtn');
 
     if (prevBtn) prevBtn.disabled = page === 1;
-    if (nextBtn) nextBtn.disabled = page === totalPages;
+    if (nextBtn) nextBtn.disabled = page === totalPages || totalPages === 0;
 
     console.log(`Updated pagination: Page ${page} of ${totalPages}`);
 }
@@ -179,8 +207,9 @@ function renderMachines(data, query = '') {
 
     const highlight = (text, query) => {
         if (!query) return escapeHTML(text);
-        const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
-        return escapeHTML(text).replace(regex, '<span style="color: red;">$1</span>');
+        const escapedQuery = escapeRegExp(query);
+        const regex = new RegExp(`(${escapedQuery})`, 'gi');
+        return escapeHTML(text).replace(regex, '<span class="highlight">$1</span>');
     };
 
     data.forEach(item => {
@@ -191,15 +220,15 @@ function renderMachines(data, query = '') {
         const portDetails = item.portDetails
             .split(', ')
             .map(port => `<span class="port-entry">${highlight(port, lowerQuery)}</span>`)
-            .join('');
+            .join(', '); // Added comma separation for better readability
 
         const serviceNames = item.serviceDetails
             .map(service => `<span class="service-entry">${highlight(service.serviceName, lowerQuery)}</span>`)
-            .join('');
+            .join(', '); // Added comma separation
 
         const serviceProducts = item.serviceDetails
             .map(service => `<span class="product-version-entry">${highlight(service.serviceProduct, lowerQuery)} ${highlight(service.serviceVersion, lowerQuery)}</span>`)
-            .join('');
+            .join(', '); // Added comma separation
 
         row.innerHTML = `
             <td>${machineNameLink}</td>
@@ -218,11 +247,6 @@ function renderMachines(data, query = '') {
     }
 
     console.log(`Rendered ${data.length} machine entries.`);
-}
-
-// Escape RegExp special characters
-function escapeRegExp(string) {
-    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 // Pagination button event listeners
@@ -320,12 +344,31 @@ function handleSearch(query) {
     renderPage(currentPage, cachedFilteredData, trimmedQuery);
 }
 
+// Function to escape RegExp special characters
+function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Function to escape HTML to prevent XSS
+function escapeHTML(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
 // Add event listeners to predefined pattern buttons
 document.querySelectorAll('.predefined-patterns button').forEach(button => {
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function() {
         const pattern = this.getAttribute('data-pattern');
         const searchBar = document.getElementById('searchBar');
         searchBar.value = pattern;
         searchBar.dispatchEvent(new Event('input'));
     });
+});
+
+// Clear search input when clear button is clicked
+document.getElementById('clearSearch').addEventListener('click', () => {
+    const searchBar = document.getElementById('searchBar');
+    searchBar.value = '';
+    searchBar.dispatchEvent(new Event('input')); // Trigger the input event to reset the search
 });
