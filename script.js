@@ -5,6 +5,7 @@ let cachedFilteredData = [];
 let currentPage = 1;
 const itemsPerPage = 20;
 
+// Define your data sources
 const dataSources = {
     Vulnhub: 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/Vulnhub-Raw-File-Links.txt',
     HTB: 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/HTB-Raw-File-Links.txt',
@@ -435,3 +436,62 @@ document.getElementById('searchBar').addEventListener('input', function () {
         handleSearch(this.value);
     }, 300);
 });
+
+/**
+ * For testing purposes: Inject sample data if data fetching fails.
+ */
+async function injectSampleData() {
+    const sampleData = [
+        {
+            machineName: "Sample Machine 1",
+            portDetails: "22/tcp, 80/tcp, 443/tcp",
+            serviceDetails: [
+                { serviceName: "ssh", serviceProduct: "OpenSSH", serviceVersion: "7.4" },
+                { serviceName: "http", serviceProduct: "Apache", serviceVersion: "2.4.29" },
+                { serviceName: "https", serviceProduct: "Apache", serviceVersion: "2.4.29" }
+            ],
+            machineDir: "Sample-Machine-1",
+            machineFile: "sample-machine-1.nmap",
+            fileBaseName: "sample-machine-1",
+            platform: "VulnHub"
+        },
+        {
+            machineName: "Sample Machine 2",
+            portDetails: "21/tcp, 23/tcp, 80/tcp",
+            serviceDetails: [
+                { serviceName: "ftp", serviceProduct: "vsftpd", serviceVersion: "3.0.3" },
+                { serviceName: "telnet", serviceProduct: "telnetd", serviceVersion: "0.17" },
+                { serviceName: "http", serviceProduct: "nginx", serviceVersion: "1.14.0" }
+            ],
+            machineDir: "Sample-Machine-2",
+            machineFile: "sample-machine-2.nmap",
+            fileBaseName: "sample-machine-2",
+            platform: "HTB"
+        }
+    ];
+
+    parsedData = sampleData;
+    updateTotalMachines(parsedData.length);
+    updateSearchResults(parsedData.length);
+    renderPage(currentPage, parsedData);
+    console.log("Sample data injected for testing purposes.");
+}
+
+/**
+ * Override fetchAllData to inject sample data if data fetching fails.
+ */
+async function fetchAllDataWithSample() {
+    try {
+        await fetchAllData();
+        if (parsedData.length === 0) {
+            throw new Error("No data fetched. Injecting sample data.");
+        }
+    } catch (error) {
+        console.warn(error.message);
+        injectSampleData();
+    }
+}
+
+// Replace the original fetchAllData with the enhanced version
+window.removeEventListener('DOMContentLoaded', fetchAllData);
+window.addEventListener('DOMContentLoaded', fetchAllDataWithSample);
