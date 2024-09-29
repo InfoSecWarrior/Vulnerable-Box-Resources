@@ -11,6 +11,9 @@ const dataSources = {
     Other: 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/Other-Raw-File-Links.txt'
 };
 
+/**
+ * Initiates data fetching from all sources.
+ */
 async function fetchAllData() {
     console.log('Starting to fetch all data from sources...');
     updateStatus('Loading data from all sources...', true);
@@ -33,6 +36,10 @@ async function fetchAllData() {
     }
 }
 
+/**
+ * Fetches data from a specific data source.
+ * @param {string} dataSource - The name of the data source.
+ */
 async function fetchData(dataSource) {
     const urlFile = dataSources[dataSource];
     updateStatus(`Loading from ${dataSource}...`, true);
@@ -61,6 +68,11 @@ async function fetchData(dataSource) {
     }
 }
 
+/**
+ * Fetches and parses XML data from a URL.
+ * @param {string} url - The URL to fetch the XML data from.
+ * @param {string} dataSource - The name of the data source.
+ */
 async function fetchAndParseXML(url, dataSource) {
     try {
         const xmlResponse = await fetch(url);
@@ -76,6 +88,12 @@ async function fetchAndParseXML(url, dataSource) {
     }
 }
 
+/**
+ * Parses XML data and populates the parsedData array.
+ * @param {string} xmlText - The XML data as a string.
+ * @param {string} url - The URL from which the XML was fetched.
+ * @param {string} platform - The platform/source name.
+ */
 function parseXML(xmlText, url, platform) {
     try {
         const parser = new DOMParser();
@@ -134,7 +152,11 @@ function parseXML(xmlText, url, platform) {
     }
 }
 
-// Helper function to update status message and spinner
+/**
+ * Updates the status message and spinner visibility.
+ * @param {string} message - The status message to display.
+ * @param {boolean} isLoading - Indicates whether a loading operation is in progress.
+ */
 function updateStatus(message, isLoading) {
     const statusMessage = document.getElementById('statusMessage');
     const spinner = document.getElementById('spinner');
@@ -146,7 +168,10 @@ function updateStatus(message, isLoading) {
     }
 }
 
-// Function to update the total number of vulnerable machines
+/**
+ * Updates the total number of vulnerable machines displayed.
+ * @param {number} count - The total count of vulnerable machines.
+ */
 function updateTotalMachines(count) {
     const totalMachinesElement = document.getElementById('totalMachines');
     if (totalMachinesElement) {
@@ -154,7 +179,10 @@ function updateTotalMachines(count) {
     }
 }
 
-// Function to update the total number of search results
+/**
+ * Updates the total number of search results displayed.
+ * @param {number} count - The count of search results.
+ */
 function updateSearchResults(count) {
     const searchResultsElement = document.getElementById('searchResults');
     if (searchResultsElement) {
@@ -162,7 +190,12 @@ function updateSearchResults(count) {
     }
 }
 
-// Function to render the current page of data
+/**
+ * Renders the current page of data.
+ * @param {number} page - The current page number.
+ * @param {Array} data - The data to display on the current page.
+ * @param {string} query - The current search query.
+ */
 function renderPage(page, data, query = '') {
     console.log(`Rendering page ${page} with query: "${query}"`);
     const startIndex = (page - 1) * itemsPerPage;
@@ -174,7 +207,11 @@ function renderPage(page, data, query = '') {
     updateSearchResults(data.length); // Update search results count
 }
 
-// Function to update pagination controls
+/**
+ * Updates the pagination controls based on the current page and total items.
+ * @param {number} page - The current page number.
+ * @param {number} totalItems - The total number of items.
+ */
 function updatePaginationControls(page, totalItems) {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
 
@@ -192,7 +229,11 @@ function updatePaginationControls(page, totalItems) {
     console.log(`Updated pagination: Page ${page} of ${totalPages}`);
 }
 
-// Render machines in a table
+/**
+ * Renders the machines data into the table.
+ * @param {Array} data - The machines data to display.
+ * @param {string} query - The current search query.
+ */
 function renderMachines(data, query = '') {
     const tableBody = document.getElementById('table-body');
     if (!tableBody) return;
@@ -249,37 +290,10 @@ function renderMachines(data, query = '') {
     console.log(`Rendered ${data.length} machine entries.`);
 }
 
-// Pagination button event listeners
-document.getElementById('prevBtn').addEventListener('click', () => {
-    if (currentPage > 1) {
-        currentPage--;
-        const dataToRender = cachedFilteredData.length > 0 ? cachedFilteredData : parsedData;
-        renderPage(currentPage, dataToRender, document.getElementById('searchBar').value);
-    }
-});
-
-document.getElementById('nextBtn').addEventListener('click', () => {
-    const dataLength = cachedFilteredData.length > 0 ? cachedFilteredData.length : parsedData.length;
-    const totalPages = Math.ceil(dataLength / itemsPerPage);
-    if (currentPage < totalPages) {
-        currentPage++;
-        const dataToRender = cachedFilteredData.length > 0 ? cachedFilteredData : parsedData;
-        renderPage(currentPage, dataToRender, document.getElementById('searchBar').value);
-    }
-});
-
-// Fetch data on page load
-window.addEventListener('DOMContentLoaded', fetchAllData);
-
-// Debounced search handler
-let debounceTimeout;
-document.getElementById('searchBar').addEventListener('input', function () {
-    clearTimeout(debounceTimeout);
-    debounceTimeout = setTimeout(() => {
-        handleSearch(this.value);
-    }, 300);
-});
-
+/**
+ * Handles the search functionality with debouncing.
+ * @param {string} query - The search query entered by the user.
+ */
 function handleSearch(query) {
     const trimmedQuery = query.toLowerCase().trim();
     let filteredData = parsedData;
@@ -344,19 +358,29 @@ function handleSearch(query) {
     renderPage(currentPage, cachedFilteredData, trimmedQuery);
 }
 
-// Function to escape RegExp special characters
+/**
+ * Escapes special characters in a string for use in a regular expression.
+ * @param {string} string - The string to escape.
+ * @returns {string} - The escaped string.
+ */
 function escapeRegExp(string) {
     return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-// Function to escape HTML to prevent XSS
+/**
+ * Escapes HTML to prevent XSS attacks.
+ * @param {string} str - The string to escape.
+ * @returns {string} - The escaped HTML string.
+ */
 function escapeHTML(str) {
     const div = document.createElement('div');
     div.textContent = str;
     return div.innerHTML;
 }
 
-// Add event listeners to predefined pattern buttons
+/**
+ * Adds event listeners to predefined pattern buttons for quick search.
+ */
 document.querySelectorAll('.predefined-patterns button').forEach(button => {
     button.addEventListener('click', function() {
         const pattern = this.getAttribute('data-pattern');
@@ -366,9 +390,48 @@ document.querySelectorAll('.predefined-patterns button').forEach(button => {
     });
 });
 
-// Clear search input when clear button is clicked
+/**
+ * Clears the search input and resets the search results.
+ */
 document.getElementById('clearSearch').addEventListener('click', () => {
     const searchBar = document.getElementById('searchBar');
     searchBar.value = '';
     searchBar.dispatchEvent(new Event('input')); // Trigger the input event to reset the search
+});
+
+/**
+ * Adds event listeners to pagination buttons.
+ */
+document.getElementById('prevBtn').addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
+        const dataToRender = cachedFilteredData.length > 0 ? cachedFilteredData : parsedData;
+        renderPage(currentPage, dataToRender, document.getElementById('searchBar').value);
+    }
+});
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+    const dataLength = cachedFilteredData.length > 0 ? cachedFilteredData.length : parsedData.length;
+    const totalPages = Math.ceil(dataLength / itemsPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        const dataToRender = cachedFilteredData.length > 0 ? cachedFilteredData : parsedData;
+        renderPage(currentPage, dataToRender, document.getElementById('searchBar').value);
+    }
+});
+
+/**
+ * Fetches data when the DOM content is fully loaded.
+ */
+window.addEventListener('DOMContentLoaded', fetchAllData);
+
+/**
+ * Implements debouncing for the search input to optimize performance.
+ */
+let debounceTimeout;
+document.getElementById('searchBar').addEventListener('input', function () {
+    clearTimeout(debounceTimeout);
+    debounceTimeout = setTimeout(() => {
+        handleSearch(this.value);
+    }, 300);
 });
