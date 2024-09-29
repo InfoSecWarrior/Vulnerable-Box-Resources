@@ -11,58 +11,71 @@
 </head>
 <body>
     <div class="container">
+        <!-- Header with logos and title -->
         <header class="header">
             <a href="https://www.infosecwarrior.com/" target="_blank">
-                <img src="images/logo.png" alt="Logo" class="logo">
+                <img src="images/logo.png" alt="InfoSecWarrior Logo" class="logo">
             </a>
-            <h1> <a href="https://vulnerable-box-resources.infosecwarrior.com/"> Vulnerable Box Resources </a></h1>
+            <h1>
+                <a href="https://vulnerable-box-resources.infosecwarrior.com/">Vulnerable Box Resources</a>
+            </h1>
             <a href="https://www.armourinfosec.com/" target="_blank">
-                <img src="images/armourinfosec.png" alt="Logo" class="logo armour-logo">
+                <img src="images/armourinfosec.png" alt="Armour InfoSec Logo" class="logo armour-logo">
             </a>            
         </header>
 
+        <!-- Display total count of results -->
         <p id="totalCount">Total Results: 0</p>
+
+        <!-- Search section with input and clear button -->
         <section class="searchsection">
-            <!-- Search Bar with Icons -->
-            <div class="search">
+            <div class="search" style="position: relative;">
                 <input type="search" id="searchBar" class="searchbar" placeholder="Search..." aria-label="Search input">
-                <img src="images/round_close_black_24dp.png" class="closeimg" alt="Close Icon">
+                <button id="clearSearch" class="closebtn" aria-label="Clear search">
+                    <img src="images/round_close_black_24dp.png" class="closeimg" alt="Clear Search">
+                </button>
             </div>
         </section>
 
-        <section class="predefined-patterns">
-            <button data-pattern="machine:Kioptrix">machine:Kioptrix</button>
-            <button data-pattern="port:80">port:80</button>
-            <button data-pattern="service:http">service:http</button>
-            <button data-pattern="product:mysql">product:mysql</button>
-            <button data-pattern="version:9">version:9</button>
-            <button data-pattern="platform:vulnhub">platform:vulnhub</button>
+        <!-- Predefined search patterns for quick access -->
+        <section class="predefined-patterns" aria-label="Predefined Search Patterns">
+            <button data-pattern="machine:Kioptrix" aria-label="Filter by machine Kioptrix">machine:Kioptrix</button>
+            <button data-pattern="port:80" aria-label="Filter by port 80">port:80</button>
+            <button data-pattern="service:http" aria-label="Filter by service HTTP">service:http</button>
+            <button data-pattern="product:mysql" aria-label="Filter by product MySQL">product:mysql</button>
+            <button data-pattern="version:9" aria-label="Filter by version 9">version:9</button>
+            <button data-pattern="platform:vulnhub" aria-label="Filter by platform VulnHub">platform:vulnhub</button>
         </section>
 
-        <p id="status">Loading...</p>
+        <!-- Status message for loading feedback -->
+        <p id="status" aria-live="polite">Loading...</p>
 
+        <!-- Data table to display vulnerable machines -->
         <section class="table-container" aria-live="polite">
             <table>
                 <thead>
                     <tr>
-                        <th>Machine Name</th>
-                        <th>Ports</th>
-                        <th>Service</th>
-                        <th>Product & Version</th>
+                        <th>Vulnerable Machine</th>
+                        <th>Open Ports</th>
+                        <th>Running Services</th>
+                        <th>Software & Version</th>
                     </tr>
                 </thead>
                 <tbody id="table-body">
-                    <!-- Data will be populated dynamically -->
+                    <!-- Data will be dynamically inserted here -->
                 </tbody>
             </table>
         </section>
-        <section class="pagination-container">
-            <button id="prevBtn" disabled>Previous</button>
-            <span id="pageInfo"></span>
-            <button id="nextBtn" disabled>Next</button>
+
+        <!-- Pagination controls for navigating through results -->
+        <section class="pagination-container" aria-label="Pagination Controls">
+            <button id="prevBtn" disabled aria-label="Previous Page">Previous</button>
+            <span id="pageInfo" aria-live="polite"></span>
+            <button id="nextBtn" disabled aria-label="Next Page">Next</button>
         </section>        
     </div>
 
-    <script src="script.js"></script>
+    <!-- Script for handling data fetch, search, and pagination -->
+    <script src="script.js" defer></script>
 </body>
 </html>
