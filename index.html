@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vulnerable Box Resources</title>
@@ -14,28 +15,33 @@
         <!-- Header with logos and title -->
         <header class="header">
             <a href="https://www.infosecwarrior.com/" target="_blank">
-                <img src="images/logo.png" alt="InfoSecWarrior Logo" class="logo">
+                <img src="images/logo.png" alt="InfoSecWarrior Logo" class="logo" loading="lazy">
             </a>
             <h1>
-                <a href="https://vulnerable-box-resources.infosecwarrior.com/">Vulnerable Box Resources</a>
+                <a href="https://vulnerable-box-resources.infosecwarrior.com/" aria-label="Vulnerable Box Resources Homepage">
+                    Vulnerable Box Resources
+                </a>
             </h1>
             <a href="https://www.armourinfosec.com/" target="_blank">
-                <img src="images/armourinfosec.png" alt="Armour InfoSec Logo" class="logo armour-logo">
+                <img src="images/armourinfosec.png" alt="Armour InfoSec Logo" class="logo armour-logo" loading="lazy">
             </a>            
         </header>
 
-        <!-- Display total count of results -->
-        <p id="totalCount">Total Results: 0</p>
+        <!-- Total Number of Vulnerable Machines -->
+        <p id="totalMachines" class="count">Total Vulnerable Machines: 0</p>
 
         <!-- Search section with input and clear button -->
         <section class="searchsection">
-            <div class="search" style="position: relative;">
+            <div class="search">
                 <input type="search" id="searchBar" class="searchbar" placeholder="Search..." aria-label="Search input">
-                <button id="clearSearch" class="closebtn" aria-label="Clear search">
+                <button id="clearSearch" class="closebtn" aria-label="Clear search" title="Clear Search">
                     <img src="images/round_close_black_24dp.png" class="closeimg" alt="Clear Search">
                 </button>
             </div>
         </section>
+
+        <!-- Total Search Results -->
+        <p id="searchResults" class="count">Search Results: 0</p>
 
         <!-- Predefined search patterns for quick access -->
         <section class="predefined-patterns" aria-label="Predefined Search Patterns">
@@ -48,17 +54,20 @@
         </section>
 
         <!-- Status message for loading feedback -->
-        <p id="status" aria-live="polite">Loading...</p>
+        <p id="status" aria-live="polite">
+            <span id="statusMessage">Loading...</span>
+            <span id="spinner" class="spinner" aria-hidden="true"></span>
+        </p>
 
         <!-- Data table to display vulnerable machines -->
-        <section class="table-container" aria-live="polite">
+        <section class="table-container" aria-label="Vulnerable Machines Table">
             <table>
                 <thead>
                     <tr>
                         <th>Vulnerable Machine</th>
                         <th>Open Ports</th>
                         <th>Running Services</th>
-                        <th>Software & Version</th>
+                        <th>Software &amp; Version</th>
                     </tr>
                 </thead>
                 <tbody id="table-body">
