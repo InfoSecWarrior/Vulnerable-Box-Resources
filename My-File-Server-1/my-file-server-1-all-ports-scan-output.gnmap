@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 20:17:29 2024 as: nmap -v -Pn -p- -oA my-file-server-1-all-ports-scan-output 192.168.1.39
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.39 (fileserver.bbrouter)	Status: Up
+Host: 192.168.1.39 (fileserver.bbrouter)	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 445/open/tcp//microsoft-ds///, 2049/open/tcp//nfs///, 2121/open/tcp//ccproxy-ftp///, 20048/open/tcp//mountd///
+# Nmap done at Sun Sep 29 20:18:41 2024 -- 1 IP address (1 host up) scanned in 72.15 seconds
