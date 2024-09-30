@@ -30,3 +30,4 @@ https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/h
 https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Wintermute-Straylight/Wintermute-Straylight-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/VulnOS2/VulnOS2_report-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Zico2/Zico-2-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Bob%201.0.1/bob-1-0-1-nmap-version-scan-output.xml
