@@ -1,0 +1,8 @@
+[ssl-issuer] [ssl] [info] 192.168.29.30:443 [SomeOrganization]
+[expired-ssl] [ssl] [low] 192.168.29.30:443 [2021-03-23 16:30:17 +0000 UTC]
+[revoked-ssl-certificate] [ssl] [low] 192.168.29.30:443
+[self-signed-ssl] [ssl] [low] 192.168.29.30:443
+[tech-detect:php] [http] [info] https://192.168.29.30:443
+[deprecated-tls:tls_1.1] [ssl] [info] 192.168.29.30:443 [tls11]
+[deprecated-tls:tls_1.0] [ssl] [info] 192.168.29.30:443 [tls10]
+[deprecated-tls:ssl_3.0] [ssl] [info] 192.168.29.30:443 [ssl30]
