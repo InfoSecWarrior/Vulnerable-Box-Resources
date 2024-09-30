@@ -4,9 +4,9 @@ let currentPage = 1;
 const itemsPerPage = 20;
 
 const dataSources = {
-    Vulnhub: 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/Vulnhub-Raw-File-Links.txt',
-    HTB: 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/HTB-Raw-File-Links.txt',
-    Other: 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/Other-Raw-File-Links.txt'
+    Vulnhub: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/Vulnhub-Raw-File-Links.txt',
+    HTB: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/HTB-Raw-File-Links.txt',
+    Other: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/Other-Raw-File-Links.txt'
 };
 
 async function fetchAllData() {
@@ -141,8 +141,22 @@ function renderPage(page, data, query = '') {
     renderMachines(paginatedData, query);
     updatePaginationControls(page, data.length);
     const totalCountElement = document.getElementById('totalCount');
-    if (totalCountElement) {
-        totalCountElement.textContent = `Total Results: ${data.length}`;
+    const searchCountElement = document.getElementById('searchCount');
+    if (query === '') {
+        // When no search query is provided, show total vulnerable machine count
+        if (totalCountElement) {
+            totalCountElement.textContent = `Total Vulnerable Machines: ${parsedData.length}`;
+        }
+        // Hide the search result count
+        searchCountElement.style.display = 'none';
+    } else {
+        // When a search query is provided, show search results count
+        if (searchCountElement) {
+            searchCountElement.textContent = `Search Results: ${data.length}`;
+            searchCountElement.style.display = 'block';
+        }
+        // Hide the total count when search results are being displayed
+        totalCountElement.style.display = 'none';
     }
 }
 
@@ -164,7 +178,6 @@ function updatePaginationControls(page, totalItems) {
     console.log(`Updated pagination: Page ${page} of ${totalPages}`);
 }
 
-// Render machines in a table
 function renderMachines(data, query = '') {
     const tableBody = document.getElementById('table-body');
     if (!tableBody) return;
@@ -186,7 +199,11 @@ function renderMachines(data, query = '') {
     data.forEach(item => {
         const row = document.createElement('tr');
 
-        const machineNameLink = `<a href="machine.html?dir=${encodeURIComponent(item.machineDir)}&file=${encodeURIComponent(item.machineFile)}">${highlight(item.machineName, lowerQuery)}</a>`;
+        // Machine name link with platform tag after it
+        const machineNameLink = `<a href="machine.html?dir=${encodeURIComponent(item.machineDir)}&file=${encodeURIComponent(item.machineFile)}">
+            ${highlight(item.machineName, lowerQuery)}
+            <span class="platform-tag">${item.platform}</span> <!-- Platform tag added here -->
+        </a>`;
 
         const portDetails = item.portDetails
             .split(', ')
@@ -219,6 +236,10 @@ function renderMachines(data, query = '') {
 
     console.log(`Rendered ${data.length} machine entries.`);
 }
+
+
+
+
 
 // Escape RegExp special characters
 function escapeRegExp(string) {
@@ -264,6 +285,7 @@ function handleSearch(query) {
         cachedFilteredData = [];
         currentPage = 1;
         renderPage(currentPage, parsedData);
+        updateSearchResultCount(0); // Reset search result count when search is cleared
         return;
     }
 
@@ -318,6 +340,18 @@ function handleSearch(query) {
     cachedFilteredData = filteredData;
     currentPage = 1;
     renderPage(currentPage, cachedFilteredData, trimmedQuery);
+    updateSearchResultCount(filteredData.length); // Update search result count after filtering
+}
+
+// Function to update the search result count
+function updateSearchResultCount(count) {
+    const searchResultCountElement = document.getElementById('searchResultCount');
+    if (count > 0) {
+        searchResultCountElement.style.display = 'block';
+        searchResultCountElement.textContent = `Search Result: ${count}`;
+    } else {
+        searchResultCountElement.style.display = 'none';
+    }
 }
 
 // Add event listeners to predefined pattern buttons
