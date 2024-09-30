@@ -1,0 +1,483 @@
+# Nmap 7.94 scan initiated Mon Sep 30 09:09:25 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 7,9,13,21,22,23,25,26,37,53,79,80,81,88,106,110,111,113,119,135,139,143,144,179,199,389,427,443,444,445,465,513,514,515,543,544,548,554,587,631,646,873,990,993,995,1025,1026,1027,1028,1029,1110,1433,1720,1723,1755,1900,2000,2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000,6001,6646,7070,8000,8008,8009,8080,8081,8443,8888,9100,9999,10000,32768,49152,49153,49154,49155,49156,49157 -oA Breach1-nmap-version-scan-output 192.168.110.140
+Nmap scan report for 192.168.110.140
+Host is up (0.012s latency).
+
+PORT      STATE SERVICE           VERSION
+7/tcp     open  echo?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0fffffffffffff777778887777777777cffffffffffffffffffff00
+9/tcp     open  discard?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0ffffffffff80000088808000000888800000008887ffffffffff00
+13/tcp    open  daytime?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0ffffffff000000888000000000800000080000008800007fffff00
+21/tcp    open  ftp?
+|_ftp-syst: ERROR: Script execution failed (use -d to debug)
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0f7000f800770008777000000000000000f80008f7f70088000cf00
+|_ftp-anon: ERROR: Script execution failed (use -d to debug)
+|_tls-alpn: ERROR: Script execution failed (use -d to debug)
+|_ftp-bounce: ERROR: Script execution failed (use -d to debug)
+|_ssl-cert: ERROR: Script execution failed (use -d to debug)
+|_tls-nextprotoneg: ERROR: Script execution failed (use -d to debug)
+|_ssl-date: ERROR: Script execution failed (use -d to debug)
+|_sslv2: ERROR: Script execution failed (use -d to debug)
+22/tcp    open  ssh?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0f8008c008fff8000000000000780000007f800087708000800ff00
+23/tcp    open  telnet?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0f8008707ff07ff8000008088ff800000000f7000000f800808ff00
+25/tcp    open  smtp?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0ff0808800cf0000ffff70000f877f70000c70008008ff8088fff00
+|_smtp-commands: SMTP EHLO nmap.scanme.org: failed to receive data: connection closed
+26/tcp    open  rsftp?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0ff70800008ff800f007fff70880000087f70000007fcf7007fff00
+37/tcp    open  time?
+| fingerprint-strings: 
+|   NULL: 
+|_    550 12345 0fffffffffffc8088888008cffffff7887f87ffffff800000ffff00
+53/tcp    open  domain?
+|_dns-nsid: ERROR: Script execution failed (use -d to debug)
+| fingerprint-strings: 
+|   NULL: 
+|_    550 4m2v4 FUZZ_HERE
+79/tcp    open  nntp              Mailtraq nntpd 51719
+80/tcp    open  http              Apache httpd 2.4.7 ((Ubuntu))
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Welcome to Breach 1.0
+81/tcp    open  hosts2-ns?
+| fingerprint-strings: 
+|   NULL: 
+|     220-Setting memory limit to 1024+1024kbytes
+|     220-Local time is now 45and the load is 51.
+|_    will be disconnected after 8seconds of inactivityt
+88/tcp    open  kerberos-sec?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 401 Unauthorized
+|     Server: 
+|_    pWWW-Authenticate: Basic realm="Please enter your user name and password on C54APRA"
+106/tcp   open  http              WN httpd 1984
+|_http-title: Site doesn't have a title.
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: WN/1984
+110/tcp   open  http              iSoft Commerce Suite httpd
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: iSoft Commerce Suite Server
+|_http-title: Site doesn't have a title.
+111/tcp   open  sip-proxy         SIP Express Router -48714u9 (500)
+113/tcp   open  ident?
+119/tcp   open  nntp?
+135/tcp   open  ftp               ProFTPD
+139/tcp   open  telnet            Netgear FSMa router telnetd
+143/tcp   open  imap?
+|_imap-capabilities: CAPABILITY
+| fingerprint-strings: 
+|   NULL: 
+|     220- Welcome to this Xitami FTP server, running version 08242123 of Xitami. 
+|_    user number 6of a permitted 7users.| p/Xitami ftpd/ v/$1/ i|$2/$3 users
+144/tcp   open  http              Welltech Wellgate VoIP adapter http config
+|_http-title: Site doesn't have a title (text/html).
+| http-auth: 
+| HTTP/1.0 401 Unauthorized\x0D
+|_  Basic realm=VoIP Configuration Web Server
+179/tcp   open  telnet            Foundry Networks telnetd
+199/tcp   open  smux?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 404 Not Found
+|_    sServer: lighttpd/040
+389/tcp   open  ldap?
+| fingerprint-strings: 
+|   NULL: 
+|     Process query: ''
+|     Query recognized as IP?:v4?.
+|_    Querying 522:4with whois.
+427/tcp   open  telnet            BusyBox telnetd cEvyqV (Syabas Popcorn Hour media player telnetd)
+443/tcp   open  https?
+| fingerprint-strings: 
+|   NULL: 
+|_    lx0150
+444/tcp   open  http              Honeyd httpd 87830 (Python 568155)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title.
+|_http-server-header: HoneydHTTP/87830 Python/568155
+445/tcp   open  microsoft-ds?
+| fingerprint-strings: 
+|   NULL: 
+|_    ? 1 illegal command
+465/tcp   open  http              Perl Dancer n
+|_http-title: Site doesn't have a title.
+|_http-server-header: Perl Dancer n
+|_http-favicon: Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E
+|_smtp-commands: SMTP EHLO nmap.scanme.org: failed to receive data: connection closed
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+513/tcp   open  login?
+| fingerprint-strings: 
+|   NULL: 
+|_    HTTP/1.939 gServer: Sun-ONE-Web-Server/oBgR
+514/tcp   open  telnet            Huawei telnetd
+| fingerprint-strings: 
+|   NULL: 
+|     *{57}
+|     rights reserved (1997-2005) *
+|     Without the owner's prior written consent, *
+|_    decompiling or reverse-engineering shall be allowed.*
+515/tcp   open  smtp              GMX smtpd
+|_smtp-commands: SMTP EHLO nmap.scanme.org: failed to receive data: connection closed
+543/tcp   open  ftp               Comau IurBiP robot control unit ftpd LgsCoUB (system id: xPlx)
+544/tcp   open  icy               SHOUTcast server 6 (Name: w?)
+548/tcp   open  ftp
+| fingerprint-strings: 
+|   NULL: 
+|_    220 ?:SHARP|Sharp OBNA- Ver pA FTP server.
+|_afp-serverinfo: ERROR: Script execution failed (use -d to debug)
+554/tcp   open  http              IBM HTTP Server 9shjTHsp (Derived from Apache)
+|_http-server-header: IBM_HTTP_Server/9shjTHsp (Win32)
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
+|_http-title: Site doesn't have a title.
+587/tcp   open  http              Ultima online sphere httpd r.
+|_http-server-header: Sphere Vr\x95
+|_http-title: Site doesn't have a title.
+|_smtp-commands: SMTP EHLO nmap.scanme.org: failed to receive data: connection closed
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+631/tcp   open  ipp?
+| fingerprint-strings: 
+|   NULL: 
+|     ~x30xa0
+|     80718560690995Z
+|     x02?:
+|     vwa|
+|     krbtgt
+|_    client in request
+646/tcp   open  ldp?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 506 g<!-- Copyright (c) 2000-2002, Fuji Xerox Co., Ltd. All Rights Reserved. -->
+|     <HTML>
+|     <HEAD>
+|     <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+|     <TITLE>
+|_    WorkCentre a-
+873/tcp   open  rsync?
+| fingerprint-strings: 
+|   NULL: 
+|_    00000
+990/tcp   open  ftps?
+|_ftp-bounce: ERROR: Script execution failed (use -d to debug)
+| fingerprint-strings: 
+|   NULL: 
+|     f{3,4}
+|_    h{5,6}0
+993/tcp   open  imaps?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK Content-type: text/html
+|     p<H2>57066 Minolta Network Configuration Sheet 1 of 2
+|_    </H2>lSerial Number: *8nmEthernet Address: *51F274hF/W Version: *xZbZTS (l)tPrint Server Name: *lrnc
+|_imap-capabilities: CAPABILITY
+995/tcp   open  pop3s?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.597 r
+|_    Server: Lotus-Domino/Release-5KVv
+1025/tcp  open  http              File Share httpd (Android mobile phone)
+|_http-favicon: Unknown favicon MD5: 2A9D7B0BBBA3AD3F21A523D373BF63D9
+|_http-title: File Share
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+1026/tcp  open  LSA-or-nterm?
+1027/tcp  open  IIS?
+| fingerprint-strings: 
+|   NULL: 
+|     220*
+|     220^
+|_    ESMTP Exim
+1028/tcp  open  ftp               NetBSD lukemftpd
+1029/tcp  open  ms-lsa?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 400 Bad Request
+|_    tServer: LapLink 647138
+1110/tcp  open  smtp              Canon printer smtp server
+|_smtp-commands: SMTP EHLO nmap.scanme.org: failed to receive data: connection closed
+1433/tcp  open  telnet-proxy      Gauntlet telnet proxy
+1720/tcp  open  http              NPAD Diagnostics httpd (SimpleHTTP y; Python yWjPDW)
+|_http-server-header: SimpleHTTP/y Python/yWjPDW
+1723/tcp  open  telnet            slush telnetd 218705 (zLJZyVCz)
+1755/tcp  open  wms?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 877 tServer: Webserver
+|     Xerox Corporation (R)
+|_    Xerox Corporation 2002 - 2004.
+1900/tcp  open  upnp?
+| fingerprint-strings: 
+|   NULL: 
+|_    iMaze server JC/HUK 2605548
+2000/tcp  open  cisco-sccp?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     Pragma:no-cache
+|     Content-Length: 3r
+|     Content-Type: text/html
+|     <html>
+|     <head>
+|_    <title>INTERMEC //76; IP
+2001/tcp  open  dc?
+| fingerprint-strings: 
+|   NULL: 
+|_    WWWOFFLE Incorrect Password
+2049/tcp  open  http              OpenPGP Public Key Server raHg
+|_http-server-header: pks_www/raHg
+|_http-title: 400 Bad Request
+2121/tcp  open  telnet            BusyBox telnetd 1.14.0 or later
+| fingerprint-strings: 
+|   NULL: 
+|     DD-WRT v24-sp2 ?:mini|mega|std (c) 1345 NewMedia-NET GmbH
+|     Release: 8 (SVN revision: 7)
+|_    RpjhmDz login:
+2717/tcp  open  telnet            APC PDU/UPS devices or Windows CE telnetd
+| fingerprint-strings: 
+|   NULL: 
+|     Ver. l (c) Copyright 54Redline Communications Inc.
+|_    Username:0
+3000/tcp  open  ppp?
+| fingerprint-strings: 
+|   NULL: 
+|_    PJLINK 1 8}
+3128/tcp  open  squid-http?
+| fingerprint-strings: 
+|   NULL: 
+|_    30811198 40{240,250}
+3306/tcp  open  mysql?
+| fingerprint-strings: 
+|   NULL: 
+|     `000U000
+|     twhkw
+|_    0000
+3389/tcp  open  http              Meridian Quantum Snap! http config 79207
+|_http-server-header: Meridian Data/79207
+3986/tcp  open  ssh               (protocol 1)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-1-OpenSSH_HMUPAUgN in RemotelyAnywhere 24942
+4899/tcp  open  radmin?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 404 Not Found
+|     Content-Type: text/html
+|     Content-Length: 4r
+|     <HTML>
+|     <HEAD>
+|     <TITLE>Error 404 - Not Found</TITLE>
+|     <BODY>
+|     <H2>Error 404 - Not Found.</H2>
+|_    context on this server matched or handled this request.
+5000/tcp  open  telnet            Minecraft RemoteShell Il
+5009/tcp  open  http              Software AG webMethods httpd
+|_http-title: Site doesn't have a title.
+| http-auth: 
+| HTTP/1.0 401 com.wm.app.b2b.server.AccessException: com.wm.app.b2b.server.AccessException: [ISS.0084.9004] Access Denied\x0D
+|_  Basic realm=webMethods
+5051/tcp  open  venti             Plan 9 venti storage system
+5060/tcp  open  http              LuCI Lua http config
+5101/tcp  open  ftp               vsftpd (Freetz firmware for AVM Fritz!Box)
+5190/tcp  open  aol?
+| fingerprint-strings: 
+|   NULL: 
+|_    'TF' version
+5357/tcp  open  wsdapi?
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.1 200 OK
+|_    qServer: AirDroid q_vd
+5432/tcp  open  gopher
+|_gopher-ls: 
+5631/tcp  open  http              Vina Technologies eLink 200 http config
+5666/tcp  open  http              Boa HTTPd 7Q
+|_http-server-header: Boa/7Q
+5800/tcp  open  vnc-http          ZOT-PS-19/txYjtzrXB
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     Date: g
+|     MIME-version: 1.0
+|     Server: ZOT-PS-19/txYjtzrXB
+|_    m<title>Index</title>
+|_http-server-header: ZOT-PS-19/txYjtzrXB
+5900/tcp  open  nntp              Servizio nntpd 601300218 (posting ok)
+6000/tcp  open  http              IneoQuest Video Diagnostic HTTP 033
+|_http-server-header: INEOQUEST/033
+6001/tcp  open  X11:1?
+| fingerprint-strings: 
+|   NULL: 
+|     220*
+|     214-The following commands are recognized:
+|_    Have a nice day.
+6646/tcp  open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     E000
+|_    SFATAL0C0A0000Munsupported frontend protocol 65363.19778: server supports 1.0 to 3.00Fpostmaster.c0L12930RProcessStartupPacket00
+7070/tcp  open  realserver?
+8000/tcp  open  http              Sun Java Management Extensions Reference Installation httpd 227150247
+| http-open-proxy: Potentially OPEN proxy.
+|_Methods supported:CONNECTION
+8008/tcp  open  http?
+| fingerprint-strings: 
+|   NULL: 
+|     00crqqigtu0000newnvnkl
+|     *VMware38x05
+|     AFP3.4
+|     AFP3.3
+|     AFP3.2
+|     AFP3.1
+|     AFPX03
+|     DHCAST128
+|     DHX2
+|     Recon1
+|     Client Krb v2
+|     User Authentj
+|_    $not_defined_in_RFC4178@please_ignore
+8009/tcp  open  telnet            Dell PowerConnect or Netgear FSM700S switch telnetd
+|_ajp-methods: Failed to get a valid response for the OPTION request
+8080/tcp  open  http-proxy?
+| fingerprint-strings: 
+|   NULL: 
+|_    /bin/bash -c {perl,-e,$0,useSPACEMIME::Base64,cHJpbnQgIlBXTkVEXG4iIHggNSA7ICRfPWBwd2RgOyBwcmludCAiXG51cGxvYWRpbmcgeW91ciBob21lIGRpcmVjdG9yeTogIiwkXywiLi4uIFxuXG4iOw==} $_=$ARGV[0];~s/SPACE/ /ig;eval;$_=$ARGV[1];eval(decode_base64($_));
+8081/tcp  open  blackice-icecap?
+| fingerprint-strings: 
+|   NULL: 
+|_    OK0100 eXtremail V10482309 release 8REMote management ...
+8443/tcp  open  ssl/https-alt?
+|_ssl-date: 2024-09-30T09:12:52+00:00; +5h29m58s from scanner time.
+| ssl-cert: Subject: commonName=Unknown/organizationName=Unknown/stateOrProvinceName=Unknown/countryName=Unknown
+| Issuer: commonName=Unknown/organizationName=Unknown/stateOrProvinceName=Unknown/countryName=Unknown
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2016-05-20T17:51:07
+| Not valid after:  2016-08-18T17:51:07
+| MD5:   c472:e6b0:5f58:ce8b:b47e:2d67:86a9:52a0
+|_SHA-1: d5d2:49c3:6993:cce5:39a9:de5c:91dc:f126:a640:4653
+8888/tcp  open  sun-answerbook?
+| fingerprint-strings: 
+|   NULL: 
+|_    xeqk 6{1,2}:9{1,2}:0{1,2} ?:19|2016-7{1,2}-8{1,2}
+9100/tcp  open  jetdirect?
+9999/tcp  open  http              eMule MorphXT P2P pWPE/L-PpP-B
+|_http-server-header: embedded
+10000/tcp open  snet-sensor-mgmt?
+| fingerprint-strings: 
+|   NULL: 
+|     00000
+|_    unknown command (code=0)
+32768/tcp open  filenet-tms?
+| fingerprint-strings: 
+|   NULL: 
+|_    nduid:
+49152/tcp open  ssh               SCS SSH Secure Shell 3tRJqHyD (on WkydFMb; protocol 58913)
+49153/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 200 OK
+|     Date: s
+|     Expires: i
+|     Content-Type: text/html; charset=UTF-8
+|     Content-Length: 7r
+|_    <HTML><HEAD><TITLE>Welcome to 963</TITLE>
+49154/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     HTTP/1.0 401 Unauthorized
+|     Server: NAShttpd
+|_    aWWW-Authenticate: Basic realm="Default uHUe_Ijkz:-hXZUQT"
+49155/tcp open  unknown
+49156/tcp open  unknown
+| fingerprint-strings: 
+|   NULL: 
+|     v<address>Apache/5301839 (
+|     Server at nuUV Port 7/address>
+|_    </body></html>
+49157/tcp open  http              thttpd ......= (Asotel Vector 1908 switch http config)
+|_http-title: 400 Bad Request
+|_http-server-header: httpd-impacct/\x7F\xEE\x13\xDF\xE1\xF4=
+9 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port7-TCP:V=7.94%I=7%D=9/30%Time=66FA1D6F%P=x86_64-pc-linux-gnu%r(NULL,
+SF:41,"550\x2012345\x200fffffffffffff777778887777777777cffffffffffffffffff
+SF:ff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9-TCP:V=7.94%I=7%D=9/30%Time=66FA1D6E%P=x86_64-pc-linux-gnu%r(NULL,
+SF:41,"550\x2012345\x200ffffffffff80000088808000000888800000008887ffffffff
+SF:ff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port13-TCP:V=7.94%I=7%D=9/30%Time=66FA1D6E%P=x86_64-pc-linux-gnu%r(NULL
+SF:,41,"550\x2012345\x200ffffffff000000888000000000800000080000008800007ff
+SF:fff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port21-TCP:V=7.94%I=7%D=9/30%Time=66FA1D6F%P=x86_64-pc-linux-gnu%r(NULL
+SF:,41,"550\x2012345\x200f7000f800770008777000000000000000f80008f7f7008800
+SF:0cf00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port22-TCP:V=7.94%I=7%D=9/30%Time=66FA1D6F%P=x86_64-pc-linux-gnu%r(NULL
+SF:,41,"550\x2012345\x200f8008c008fff8000000000000780000007f80008770800080
+SF:0ff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port23-TCP:V=7.94%I=7%D=9/30%Time=66FA1D6E%P=x86_64-pc-linux-gnu%r(NULL
+SF:,41,"550\x2012345\x200f8008707ff07ff8000008088ff800000000f7000000f80080
+SF:8ff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port25-TCP:V=7.94%I=7%D=9/30%Time=66FA1D6F%P=x86_64-pc-linux-gnu%r(NULL
+SF:,41,"550\x2012345\x200ff0808800cf0000ffff70000f877f70000c70008008ff8088
+SF:fff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port26-TCP:V=7.94%I=7%D=9/30%Time=66FA1D6F%P=x86_64-pc-linux-gnu%r(NULL
+SF:,41,"550\x2012345\x200ff70800008ff800f007fff70880000087f70000007fcf7007
+SF:fff00");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port37-TCP:V=7.94%I=7%D=9/30%Time=66FA1D6F%P=x86_64-pc-linux-gnu%r(NULL
+SF:,41,"550\x2012345\x200fffffffffffc8088888008cffffff7887f87ffffff800000f
+SF:fff00");
+MAC Address: 08:00:27:FD:7A:D6 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.16 (96%), Linksys EA3500 WAP (95%), Linux 4.4 (95%), Linux 3.2 - 4.9 (92%), Linux 2.6.18 - 2.6.32 (90%), Linux 3.13 (90%), OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4) (90%), Linux 4.10 (90%), Linux 3.2 - 3.10 (89%), Linux 3.2 - 3.16 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.139 days (since Mon Sep 30 05:53:36 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=253 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Hosts: GU_t, YfCSoxq, S+, jABTB; OSs: Windows, Unix, Solaris, Linux, NetBSD; Devices: router, VoIP adapter, media device, specialized, phone; CPE: cpe:/o:microsoft:windows, cpe:/h:netgear:fsma, cpe:/h:syabas:popcorn_hour, cpe:/o:sun:sunos, cpe:/o:linux:linux_kernel
+
+Host script results:
+|_smb2-time: Protocol negotiation failed (SMB2)
+|_clock-skew: 5h29m57s
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   12.05 ms 192.168.110.140
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 30 09:14:11 2024 -- 1 IP address (1 host up) scanned in 286.26 seconds

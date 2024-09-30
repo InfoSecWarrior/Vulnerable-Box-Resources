@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Mon Sep 30 09:09:24 2024 as: nmap -v -Pn -&#45;top-ports 100 -oA Breach1-all-ports-scan-output 192.168.110.140 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -&#45;top-ports 100 -oA Breach1-all-ports-scan-output 192.168.110.140" start="1727667564" startstr="Mon Sep 30 09:09:24 2024" version="7.94" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1727667564"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.110.140" addrtype="ipv4"/>
+<address addr="08:00:27:FD:7A:D6" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727667565" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727667565"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727667565"/>
+<taskbegin task="SYN Stealth Scan" time="1727667565"/>
+<taskend task="SYN Stealth Scan" time="1727667565" extrainfo="100 total ports"/>
+<host starttime="1727667565" endtime="1727667565"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.110.140" addrtype="ipv4"/>
+<address addr="08:00:27:FD:7A:D6" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="7"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="echo" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="discard" method="table" conf="3"/></port>
+<port protocol="tcp" portid="13"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="daytime" method="table" conf="3"/></port>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="26"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rsftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="37"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="time" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="79"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="finger" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="81"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="hosts2-ns" method="table" conf="3"/></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="kerberos-sec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="106"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="pop3pw" method="table" conf="3"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="113"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="119"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nntp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="imap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="144"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="news" method="table" conf="3"/></port>
+<port protocol="tcp" portid="179"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="bgp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="199"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smux" method="table" conf="3"/></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ldap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="427"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="svrloc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="444"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="snpp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="513"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="login" method="table" conf="3"/></port>
+<port protocol="tcp" portid="514"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="shell" method="table" conf="3"/></port>
+<port protocol="tcp" portid="515"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="543"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="klogin" method="table" conf="3"/></port>
+<port protocol="tcp" portid="544"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="kshell" method="table" conf="3"/></port>
+<port protocol="tcp" portid="548"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="afp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="554"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rtsp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="submission" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="646"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ldp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="873"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rsync" method="table" conf="3"/></port>
+<port protocol="tcp" portid="990"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="imaps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="pop3s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1025"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="NFS-or-IIS" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1026"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="LSA-or-nterm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1027"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="IIS" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1028"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="1029"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ms-lsa" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1110"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nfsd-status" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1433"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ms-sql-s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1720"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="h323q931" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1723"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="pptp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1755"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="wms" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1900"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="upnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="cisco-sccp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2001"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="dc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nfs" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2121"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ccproxy-ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2717"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="pn-requester" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ppp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3128"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="squid-http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3986"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mapper-ws_ethd" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4899"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="radmin" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="upnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5009"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="airport-admin" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5051"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ida-agent" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="sip" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5101"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="admdog" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5190"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="aol" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5357"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="wsdapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5432"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="postgresql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5631"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="pcanywheredata" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5666"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nrpe" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5800"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="vnc-http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5900"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="vnc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="X11" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6001"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="X11:1" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6646"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="7070"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="realserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8008"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ajp13" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8081"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="blackice-icecap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8888"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="sun-answerbook" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="jetdirect" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9999"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="abyss" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="snet-sensor-mgmt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="32768"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="filenet-tms" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="49155"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="49156"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="49157"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+</ports>
+<times srtt="312" rttvar="69" to="100000"/>
+</host>
+<runstats><finished time="1727667565" timestr="Mon Sep 30 09:09:25 2024" summary="Nmap done at Mon Sep 30 09:09:25 2024; 1 IP address (1 host up) scanned in 0.26 seconds" elapsed="0.26" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
