@@ -1,0 +1,106 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 20:18:42 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80,111,445,2049,2121,20048 -oA my-file-server-1-nmap-version-scan-output 192.168.1.39
+Nmap scan report for fileserver.bbrouter (192.168.1.39)
+Host is up (0.00057s latency).
+
+PORT      STATE SERVICE     VERSION
+21/tcp    open  ftp         vsftpd 3.0.2
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxrwxrwx    3 0        0              16 Feb 19  2020 pub [NSE: writeable]
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:192.168.1.41
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.2 - secure, fast, stable
+|_End of status
+22/tcp    open  ssh         OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 75:fa:37:d1:62:4a:15:87:7e:21:83:b9:2f:ff:04:93 (RSA)
+|   256 b8:db:2c:ca:e2:70:c3:eb:9a:a8:cc:0e:a2:1c:68:6b (ECDSA)
+|_  256 66:a3:1b:55:ca:c2:51:84:41:21:7f:77:40:45:d4:9f (ED25519)
+80/tcp    open  http        Apache httpd 2.4.6 ((CentOS))
+|_http-title: My File Server
+|_http-server-header: Apache/2.4.6 (CentOS)
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+111/tcp   open  rpcbind     2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100003  3,4         2049/tcp   nfs
+|   100003  3,4         2049/tcp6  nfs
+|   100003  3,4         2049/udp   nfs
+|   100003  3,4         2049/udp6  nfs
+|   100005  1,2,3      20048/tcp   mountd
+|   100005  1,2,3      20048/tcp6  mountd
+|   100005  1,2,3      20048/udp   mountd
+|   100005  1,2,3      20048/udp6  mountd
+|   100021  1,3,4      34585/udp6  nlockmgr
+|   100021  1,3,4      36384/udp   nlockmgr
+|   100021  1,3,4      48975/tcp6  nlockmgr
+|   100021  1,3,4      58956/tcp   nlockmgr
+|   100024  1          40492/tcp6  status
+|   100024  1          44187/tcp   status
+|   100024  1          55857/udp6  status
+|   100024  1          59614/udp   status
+|   100227  3           2049/tcp   nfs_acl
+|   100227  3           2049/tcp6  nfs_acl
+|   100227  3           2049/udp   nfs_acl
+|_  100227  3           2049/udp6  nfs_acl
+445/tcp   open  netbios-ssn Samba smbd 4.9.1 (workgroup: SAMBA)
+2049/tcp  open  nfs_acl     3 (RPC #100227)
+2121/tcp  open  ftp         ProFTPD 1.3.5
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: ERROR
+20048/tcp open  mountd      1-3 (RPC #100005)
+MAC Address: 08:00:27:49:57:E8 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|storage-misc
+Running (JUST GUESSING): Linux 3.X|2.6.X|4.X|5.X (97%), Synology DiskStation Manager 5.X (94%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:2.6 cpe:/a:synology:diskstation_manager:5.2 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+Aggressive OS guesses: Linux 3.4 - 3.10 (97%), Linux 2.6.32 - 3.10 (97%), Linux 2.6.32 - 3.13 (97%), Linux 2.6.39 (97%), Linux 3.10 (95%), Synology DiskStation Manager 5.2-5644 (94%), Linux 2.6.32 (94%), Linux 2.6.32 - 3.5 (92%), Linux 3.2 - 3.16 (91%), Linux 3.2 - 3.8 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 49.709 days (since Sun Aug 11 03:18:47 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: FILESERVER; OS: Unix
+
+Host script results:
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.9.1)
+|   Computer name: localhost
+|   NetBIOS computer name: FILESERVER\x00
+|   Domain name: \x00
+|   FQDN: localhost
+|_  System time: 2024-09-29T20:18:55+05:30
+|_clock-skew: mean: -1h50m00s, deviation: 3h10m29s, median: -2s
+| smb2-time: 
+|   date: 2024-09-29T14:48:53
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.57 ms fileserver.bbrouter (192.168.1.39)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep 29 20:19:09 2024 -- 1 IP address (1 host up) scanned in 27.20 seconds
