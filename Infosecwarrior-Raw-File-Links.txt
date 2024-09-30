@@ -1,5 +1,5 @@
-https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Its-October/its-october-nmap-version-scan-output.xml
-https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/My-File-Server-2/my-file-server-2-nmap-version-scan-output.xml
-https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/My-Tomcat-Host/MyTomcatHost-1-nmap-version-scan-output.xml
-https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/MyCMSMS/My-CMSMS-nmap-version-scan-output.xml
-https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Joomlu/joomlu-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior/Its-October/its-october-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior/My-File-Server-2/my-file-server-2-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior/My-Tomcat-Host/MyTomcatHost-1-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior/MyCMSMS/My-CMSMS-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior/Joomlu/joomlu-nmap-version-scan-output.xml
