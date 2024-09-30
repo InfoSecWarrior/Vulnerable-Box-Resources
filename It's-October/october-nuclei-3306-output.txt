@@ -1,3 +1,0 @@
-[mysql-info] [javascript] [info] 192.168.1.205:3306 ["Version:","Transport: tcp"]
-[rsync-list-modules] [javascript] [low] 192.168.1.205:3306 ["D\x00\x00\x00\ufffdj\x04Host  '192.168.1.8'  is  not  allowed  to  connect  to  this  MySQL  server"]
-[mysql-detect] [tcp] [info] 192.168.1.205:3306
