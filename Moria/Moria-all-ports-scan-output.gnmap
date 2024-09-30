@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 21:11:33 2024 as: nmap -v -Pn -p- -oA Moria-all-ports-scan-output 192.168.1.116
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.116 (Moria.bbrouter)	Status: Up
+Host: 192.168.1.116 (Moria.bbrouter)	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///	Ignored State: closed (65532)
+# Nmap done at Sun Sep 29 21:11:34 2024 -- 1 IP address (1 host up) scanned in 1.09 seconds
