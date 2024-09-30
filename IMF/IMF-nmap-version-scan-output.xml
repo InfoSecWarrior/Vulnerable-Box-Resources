@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sun Sep 29 17:42:47 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA IMF-nmap-version-scan-output 192.168.29.76 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA IMF-nmap-version-scan-output 192.168.29.76" start="1727611967" startstr="Sun Sep 29 17:42:47 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727611967"/>
+<taskend task="NSE" time="1727611967"/>
+<taskbegin task="NSE" time="1727611967"/>
+<taskend task="NSE" time="1727611967"/>
+<taskbegin task="NSE" time="1727611967"/>
+<taskend task="NSE" time="1727611967"/>
+<taskbegin task="ARP Ping Scan" time="1727611967"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.29.76" addrtype="ipv4"/>
+<address addr="08:00:27:4C:26:C3" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727611967" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727611967"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727611967"/>
+<taskbegin task="Connect Scan" time="1727611967"/>
+<taskend task="Connect Scan" time="1727611967" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1727611967"/>
+<taskend task="Service scan" time="1727611973" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1727611977"/>
+<taskend task="NSE" time="1727611982"/>
+<taskbegin task="NSE" time="1727611982"/>
+<taskend task="NSE" time="1727611982"/>
+<taskbegin task="NSE" time="1727611982"/>
+<taskend task="NSE" time="1727611982"/>
+<host starttime="1727611967" endtime="1727611982"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.29.76" addrtype="ipv4"/>
+<address addr="08:00:27:4C:26:C3" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="IMF - Homepage"><elem key="title">IMF - Homepage</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Linux 3.10 - 4.11" accuracy="93" line="63448">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16 - 4.6" accuracy="93" line="64382">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="93" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="92" line="67361">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="90" line="67289">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="90" line="63862">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.18" accuracy="88" line="64420">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4)" accuracy="87" line="66953">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:4.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.10" accuracy="87" line="67166">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:4.10</cpe></osclass>
+</osmatch>
+<osmatch name="Android 5.0 - 6.0.1 (Linux 3.4)" accuracy="87" line="31521">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="87"><cpe>cpe:/o:google:android:5</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="6.X" accuracy="87"><cpe>cpe:/o:google:android:6</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="17179779" lastboot="Thu Mar 14 21:33:23 2024"/>
+<distance value="1"/>
+<tcpsequence index="254" difficulty="Good luck!" values="2D5E8145,B12BD8F0,2AE1A4B3,E34155F8,7E9BFFFB,EE79F6B5"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="FFFFA277,FFFFA290,FFFFA2A9,FFFFA2C2,FFFFA2DB,FFFFA2F4"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.29.76" rtt="0.24"/>
+</trace>
+<times srtt="237" rttvar="91" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727611982"/>
+<taskend task="NSE" time="1727611982"/>
+<taskbegin task="NSE" time="1727611982"/>
+<taskend task="NSE" time="1727611982"/>
+<taskbegin task="NSE" time="1727611982"/>
+<taskend task="NSE" time="1727611982"/>
+<runstats><finished time="1727611982" timestr="Sun Sep 29 17:43:02 2024" summary="Nmap done at Sun Sep 29 17:43:02 2024; 1 IP address (1 host up) scanned in 15.45 seconds" elapsed="15.45" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
