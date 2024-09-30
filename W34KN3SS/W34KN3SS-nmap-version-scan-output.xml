@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Mon Sep 30 14:34:26 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,443 -oA W34KN3SS-nmap-version-scan-output 192.168.1.139 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80,443 -oA W34KN3SS-nmap-version-scan-output 192.168.1.139" start="1727687066" startstr="Mon Sep 30 14:34:26 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,80,443"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727687066"/>
+<taskend task="NSE" time="1727687066"/>
+<taskbegin task="NSE" time="1727687066"/>
+<taskend task="NSE" time="1727687066"/>
+<taskbegin task="NSE" time="1727687066"/>
+<taskend task="NSE" time="1727687066"/>
+<taskbegin task="ARP Ping Scan" time="1727687066"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.139" addrtype="ipv4"/>
+<address addr="08:00:27:3B:64:A4" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727687066" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727687066"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727687066"/>
+<taskbegin task="Connect Scan" time="1727687066"/>
+<taskend task="Connect Scan" time="1727687066" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1727687066"/>
+<taskend task="Service scan" time="1727687078" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1727687080"/>
+<taskend task="NSE" time="1727687081"/>
+<taskbegin task="NSE" time="1727687081"/>
+<taskend task="NSE" time="1727687081"/>
+<taskbegin task="NSE" time="1727687081"/>
+<taskend task="NSE" time="1727687081"/>
+<host starttime="1727687066" endtime="1727687081"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.139" addrtype="ipv4"/>
+<address addr="08:00:27:3B:64:A4" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 de:89:a2:de:45:e7:d6:3d:ef:e9:bd:b4:b6:68:ca:6d (RSA)&#xa;  256 1d:98:4a:db:a2:e0:cc:68:38:93:d0:52:2a:1a:aa:96 (ECDSA)&#xa;  256 3d:8a:6b:92:0d:ba:37:82:9e:c3:27:18:b6:01:cd:98 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCvkgmVahuBlxM6WUy6NSEAmWnYQbfKfrHwxT0rlZleQQ6Hyjd435lLBiA1kSyHzYxQ2l2WhiXefSycEtI8FntMjnOEFahCgobvsP5HblaUGAxmh+RPId+/U0OPwbF8WEtE2aM7ynaJ3eJt02iyHoFSTICNNiwAMX1sde/ADI2zXkssrjerwyTJLrI5JO1girvHJcJxJWvS3HFHyZbksKK6giPy7E8Q6Uz0sp5p+Qx4iqZ9kHkwwLZ+Yk56BupHZDvjDWx9Pi8qhnlwgaqUj/RbG/eEylxRtqQn2i1A6TQrWMcMTpN+P25Ws9TPV8cRiDQwEX+bx30HHgc5AQ+YDRkf</elem>
+<elem key="fingerprint">de89a2de45e7d63defe9bdb4b668ca6d</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDyK5qz3tcYxvzJVZO2izBdS3LucZE0hUU4mOTja1WHO7Ma3plgqQoL52O+svarU9eHvf0sW5GqD02Bf+4ZQbWo=</elem>
+<elem key="fingerprint">1d984adba2e0cc683893d0522a1aaa96</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIEOKeds8hqs+e9SnwnrnhhoV8IRh/CUlCgMmdTroLiuG</elem>
+<elem key="fingerprint">3d8a6b920dba37829ec32718b601cd98</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="Apache2 Ubuntu Default Page: It works"><elem key="title">Apache2 Ubuntu Default Page: It works</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS HEAD GET POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>POST</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-title" output="Apache2 Ubuntu Default Page: It works"><elem key="title">Apache2 Ubuntu Default Page: It works</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS HEAD GET POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=weakness.jth/organizationName=weakness.jth/stateOrProvinceName=Jordan/countryName=jo&#xa;Issuer: commonName=weakness.jth/organizationName=weakness.jth/stateOrProvinceName=Jordan/countryName=jo&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2018-05-05T11:12:54&#xa;Not valid after:  2019-05-05T11:12:54&#xa;MD5:   f921:c4be:2c6e:89d6:adaf:a7c2:8f39:a87d&#xa;SHA-1: 0b44:5a28:c4da:0bf8:b308:a782:4081:1218:101e:0feb"><table key="subject">
+<elem key="commonName">weakness.jth</elem>
+<elem key="countryName">jo</elem>
+<elem key="emailAddress">n30@weakness.jth</elem>
+<elem key="localityName">Amman</elem>
+<elem key="organizationName">weakness.jth</elem>
+<elem key="stateOrProvinceName">Jordan</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">weakness.jth</elem>
+<elem key="countryName">jo</elem>
+<elem key="emailAddress">n30@weakness.jth</elem>
+<elem key="localityName">Amman</elem>
+<elem key="organizationName">weakness.jth</elem>
+<elem key="stateOrProvinceName">Jordan</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">DAB7E39A9D500081D3B1FF8C867E5532F7D36F696F06E2076130D99A12D03A62225CF916F71DD79FC38B0FDBDAE09F5EB4DAEE46B6C187923FE8698A923AA0A4C1F3EEE746E87E72E82F6C0A5C93ED7B9C37BB31E137D2CEE13B7DD03C7A023EB5A633A679DEF845FEEAF773277DA2C2AB020F683C25CC0412957B9FECFA05BD73B99F9F6BBEB479BA9C054A49CC55A0575795DD1CECE28E643A852CA2BBCCB3DAE621CA216F7069D60273BD4E000039B71E5F727E315418CE48141430EA89307111D6C50C3A9AABB321E67BCE13BA580D4DC936E277728877040DF90194E680FAA583C1CC45C36D8D16401E837FEBCBF27A81306B424091B21DCD71B81DFC8B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">94:2C:FF:2D:2A:9E:0F:64:1E:D7:74:A7:B2:6E:3D:CF:D5:AB:E8:96</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">94:2C:FF:2D:2A:9E:0F:64:1E:D7:74:A7:B2:6E:3D:CF:D5:AB:E8:96</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2018-05-05T11:12:54</elem>
+<elem key="notAfter">2019-05-05T11:12:54</elem>
+</table>
+<elem key="md5">f921c4be2c6e89d6adafa7c28f39a87d</elem>
+<elem key="sha1">0b445a28c4da0bf8b308a78240811218101e0feb</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIID0DCCArigAwIBAgIJAPo2he2sLvFHMA0GCSqGSIb3DQEBCwUAMH0xCzAJBgNV&#xa;BAYTAmpvMQ8wDQYDVQQIDAZKb3JkYW4xDjAMBgNVBAcMBUFtbWFuMRUwEwYDVQQK&#xa;DAx3ZWFrbmVzcy5qdGgxFTATBgNVBAMMDHdlYWtuZXNzLmp0aDEfMB0GCSqGSIb3&#xa;DQEJARYQbjMwQHdlYWtuZXNzLmp0aDAeFw0xODA1MDUxMTEyNTRaFw0xOTA1MDUx&#xa;MTEyNTRaMH0xCzAJBgNVBAYTAmpvMQ8wDQYDVQQIDAZKb3JkYW4xDjAMBgNVBAcM&#xa;BUFtbWFuMRUwEwYDVQQKDAx3ZWFrbmVzcy5qdGgxFTATBgNVBAMMDHdlYWtuZXNz&#xa;Lmp0aDEfMB0GCSqGSIb3DQEJARYQbjMwQHdlYWtuZXNzLmp0aDCCASIwDQYJKoZI&#xa;hvcNAQEBBQADggEPADCCAQoCggEBANq345qdUACB07H/jIZ+VTL3029pbwbiB2Ew&#xa;2ZoS0DpiIlz5Fvcd15/Diw/b2uCfXrTa7ka2wYeSP+hpipI6oKTB8+7nRuh+cugv&#xa;bApck+17nDe7MeE30s7hO33QPHoCPrWmM6Z53vhF/ur3cyd9osKrAg9oPCXMBBKV&#xa;e5/s+gW9c7mfn2u+tHm6nAVKScxVoFdXld0c7OKOZDqFLKK7zLPa5iHKIW9wadYC&#xa;c71OAAA5tx5fcn4xVBjOSBQUMOqJMHER1sUMOpqrsyHme84TulgNTck24ndyiHcE&#xa;DfkBlOaA+qWDwcxFw22NFkAeg3/ry/J6gTBrQkCRsh3Ncbgd/IsCAwEAAaNTMFEw&#xa;HQYDVR0OBBYEFJQs/y0qng9kHtd0p7JuPc/Vq+iWMB8GA1UdIwQYMBaAFJQs/y0q&#xa;ng9kHtd0p7JuPc/Vq+iWMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQAD&#xa;ggEBAMDHIAbnghNdTW/dG9xLyTLkPZYsaAeKgq8B8D5HfNy5Oo7A3dUIit0fvjJv&#xa;AFTV16v8dwWPv6mjWwf1Npzl9JNHiT+437ZO+eBn3utIwYa8nl58ZyMC2gZCo0/4&#xa;htEK3RgIFnjU2qiBeEBHk+Z6chF4AWVtxJa+mXx4RfUPwK5+WwOUOY9QbymR8cUI&#xa;1qlPDrP3MTuDj8OY9ts17L/XLcyKTkX2zuDIS8wBgt+WoOCb6Hy9s4/PGYwJT5iy&#xa;KVlQicmEiKU70In1cpPF1FSV7iLpMQXhspJADJ0lPTzc7WEpIoySpxX8SVQ8cq4b&#xa;d07ykwyD+BS8XzcuFQgI/8ek0as=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="30899"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3330403" lastboot="Fri Aug 23 01:27:58 2024"/>
+<distance value="1"/>
+<tcpsequence index="262" difficulty="Good luck!" values="590FDA6A,F375E42A,7D3BDBA3,B79AB055,A4BBB0CE,37D5D735"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="C681E05D,C681E0C2,C681E126,C681E18A,C681E1EF,C681E253"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.139" rtt="0.37"/>
+</trace>
+<times srtt="366" rttvar="141" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727687081"/>
+<taskend task="NSE" time="1727687081"/>
+<taskbegin task="NSE" time="1727687081"/>
+<taskend task="NSE" time="1727687081"/>
+<taskbegin task="NSE" time="1727687081"/>
+<taskend task="NSE" time="1727687081"/>
+<runstats><finished time="1727687081" timestr="Mon Sep 30 14:34:41 2024" summary="Nmap done at Mon Sep 30 14:34:41 2024; 1 IP address (1 host up) scanned in 14.80 seconds" elapsed="14.80" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
