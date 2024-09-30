@@ -1,0 +1,16 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 23:27:25 2024 as: nmap -v -Pn -p- -oA Lin-Security-all-ports-scan-output 192.168.1.40
+Nmap scan report for linsecurity.bbrouter (192.168.1.40)
+Host is up (0.00012s latency).
+Not shown: 65528 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+111/tcp   open  rpcbind
+2049/tcp  open  nfs
+35843/tcp open  unknown
+44525/tcp open  unknown
+45101/tcp open  unknown
+56433/tcp open  unknown
+MAC Address: 08:00:27:D8:9F:D6 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Sep 29 23:27:26 2024 -- 1 IP address (1 host up) scanned in 0.88 seconds
