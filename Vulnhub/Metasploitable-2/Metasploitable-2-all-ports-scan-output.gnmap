@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Mon Sep 30 23:30:34 2024 as: nmap -v -Pn -p- -oA Metasploitable-2-all-ports-scan-output 192.168.56.101
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.56.101 ()	Status: Up
+Host: 192.168.56.101 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 23/open/tcp//telnet///, 25/open/tcp//smtp///, 53/open/tcp//domain///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 512/open/tcp//exec///, 513/open/tcp//login///, 514/open/tcp//shell///, 1099/open/tcp//rmiregistry///, 1524/open/tcp//ingreslock///, 2049/open/tcp//nfs///, 2121/open/tcp//ccproxy-ftp///, 3306/open/tcp//mysql///, 3632/open/tcp//distccd///, 5432/open/tcp//postgresql///, 5900/open/tcp//vnc///, 6000/open/tcp//X11///, 6667/open/tcp//irc///, 6697/open/tcp//ircs-u///, 8009/open/tcp//ajp13///, 8180/open/tcp/////, 8787/open/tcp//msgsrvr///, 35695/open/tcp/////, 41255/open/tcp/////, 45018/open/tcp/////, 46155/open/tcp/////	Ignored State: closed (65505)
+# Nmap done at Mon Sep 30 23:30:38 2024 -- 1 IP address (1 host up) scanned in 3.97 seconds

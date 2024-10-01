@@ -1,0 +1,48 @@
+# Dirsearch started Mon Sep 30 23:33:53 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.56.101:8180 -o Metasploitable-2-dirsearch-8180-output.txt -q
+
+400     0B   http://192.168.56.101:8180/\..\..\..\..\..\..\..\..\..\etc\passwd
+400     0B   http://192.168.56.101:8180/a%5c.aspx
+302     0B   http://192.168.56.101:8180/admin    -> REDIRECTS TO: http://192.168.56.101:8180/admin/
+302     0B   http://192.168.56.101:8180/admin;/    -> REDIRECTS TO: http://192.168.56.101:8180/admin/
+200     5KB  http://192.168.56.101:8180/admin/controlpanel.html
+200     5KB  http://192.168.56.101:8180/admin/home.jsp
+200     5KB  http://192.168.56.101:8180/admin/secure/logon.jsp
+200     5KB  http://192.168.56.101:8180/admin/adminLogin.jsp
+200     5KB  http://192.168.56.101:8180/admin/cp.html
+200     5KB  http://192.168.56.101:8180/admin/login.jsp
+200     5KB  http://192.168.56.101:8180/admin/index.html
+200     5KB  http://192.168.56.101:8180/admin/admin-login.jsp
+200     5KB  http://192.168.56.101:8180/admin/adminLogin.html
+200     5KB  http://192.168.56.101:8180/admin/cp.jsp
+200     5KB  http://192.168.56.101:8180/admin/admin.jsp
+200     5KB  http://192.168.56.101:8180/admin/home.html
+200     5KB  http://192.168.56.101:8180/admin/login.do
+200     5KB  http://192.168.56.101:8180/admin/logon.jsp
+200     5KB  http://192.168.56.101:8180/admin/admin.html
+200     5KB  http://192.168.56.101:8180/admin/controlpanel.jsp
+200     5KB  http://192.168.56.101:8180/admin/admin_login.jsp
+200     5KB  http://192.168.56.101:8180/admin/login.html
+200     5KB  http://192.168.56.101:8180/admin/index.jsp
+200     5KB  http://192.168.56.101:8180/admin/
+200     5KB  http://192.168.56.101:8180/admin/admin_login.html
+200     5KB  http://192.168.56.101:8180/admin/admin-login.html
+200     5KB  http://192.168.56.101:8180/admin/account.html
+200     5KB  http://192.168.56.101:8180/admin/account.jsp
+200    21KB  http://192.168.56.101:8180/favicon.ico
+401   948B   http://192.168.56.101:8180/host-manager/html
+200    16KB  http://192.168.56.101:8180/jsp-examples/
+401   948B   http://192.168.56.101:8180/manager/jmxproxy/?get=BEANNAME&att=MYATTRIBUTE&key=MYKEY
+401   948B   http://192.168.56.101:8180/manager/jmxproxy/?get=java.lang:type=Memory&att=HeapMemoryUsage
+401   948B   http://192.168.56.101:8180/manager/jmxproxy/?set=BEANNAME&att=MYATTRIBUTE&val=NEWVALUE
+302     0B   http://192.168.56.101:8180/manager    -> REDIRECTS TO: http://192.168.56.101:8180/manager/
+401   948B   http://192.168.56.101:8180/manager/jmxproxy
+401   948B   http://192.168.56.101:8180/manager/html
+401   948B   http://192.168.56.101:8180/manager/jmxproxy/?invoke=Catalina%3Atype%3DService&op=findConnectors&ps=
+401   948B   http://192.168.56.101:8180/manager/jmxproxy/?qry=STUFF
+401   948B   http://192.168.56.101:8180/manager/jmxproxy/?invoke=BEANNAME&op=METHODNAME&ps=COMMASEPARATEDPARAMETERS
+401   948B   http://192.168.56.101:8180/manager/html/
+401   948B   http://192.168.56.101:8180/manager/status/all
+302     0B   http://192.168.56.101:8180/WEB-INF    -> REDIRECTS TO: http://192.168.56.101:8180/WEB-INF/
+200     2KB  http://192.168.56.101:8180/webdav/
+200     4KB  http://192.168.56.101:8180/webdav/index.html
+200     1KB  http://192.168.56.101:8180/tomcat-docs/appdev/sample/web/hello.jsp

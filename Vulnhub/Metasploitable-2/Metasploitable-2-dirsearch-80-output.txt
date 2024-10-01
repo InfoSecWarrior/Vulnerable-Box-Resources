@@ -1,0 +1,32 @@
+# Dirsearch started Mon Sep 30 23:33:34 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.56.101:80 -o Metasploitable-2-dirsearch-80-output.txt -q
+
+403   298B   http://192.168.56.101/.ht_wsr.txt
+403   301B   http://192.168.56.101/.htaccess.save
+403   301B   http://192.168.56.101/.htaccess.orig
+403   303B   http://192.168.56.101/.htaccess.sample
+403   302B   http://192.168.56.101/.htaccess_extra
+403   301B   http://192.168.56.101/.htaccess.bak1
+403   301B   http://192.168.56.101/.htaccess_orig
+403   299B   http://192.168.56.101/.htaccess_sc
+403   299B   http://192.168.56.101/.htaccessBAK
+403   299B   http://192.168.56.101/.htaccessOLD
+403   300B   http://192.168.56.101/.htaccessOLD2
+403   291B   http://192.168.56.101/.htm
+403   292B   http://192.168.56.101/.html
+403   301B   http://192.168.56.101/.htpasswd_test
+403   298B   http://192.168.56.101/.httr-oauth
+403   297B   http://192.168.56.101/.htpasswds
+403   295B   http://192.168.56.101/cgi-bin/
+302     0B   http://192.168.56.101/dvwa/    -> REDIRECTS TO: login.php
+200   112KB  http://192.168.56.101/doc/
+200    24KB  http://192.168.56.101/mutillidae/
+200    49KB  http://192.168.56.101/phpinfo.php
+200    49KB  http://192.168.56.101/phpinfo
+301   326B   http://192.168.56.101/phpMyAdmin    -> REDIRECTS TO: http://192.168.56.101/phpMyAdmin/
+200     4KB  http://192.168.56.101/phpMyAdmin/index.php
+200     4KB  http://192.168.56.101/phpMyAdmin/
+403   300B   http://192.168.56.101/server-status
+403   301B   http://192.168.56.101/server-status/
+301   320B   http://192.168.56.101/test    -> REDIRECTS TO: http://192.168.56.101/test/
+200   885B   http://192.168.56.101/test/
+301   324B   http://192.168.56.101/tikiwiki    -> REDIRECTS TO: http://192.168.56.101/tikiwiki/
