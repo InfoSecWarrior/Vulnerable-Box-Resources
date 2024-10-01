@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 100%; /* Changed from 1400px to 100% to allow full width */
     margin: 0 auto;
     padding: 20px;
 }
@@ -191,14 +191,17 @@ body {
 
 /* Table Styling */
 .table-container {
-    width: 98%;
+    width: 100%; /* Changed from 98% to 100% for full width */
     margin: 0 auto;
     overflow-x: auto;
-    max-height: 500px; /* Adjust as needed */
+    /* Removed max-height to allow the table to expand naturally */
+    /* max-height: 500px; */
     border: 1px solid #ddd;
-    overflow-y: auto;
+    /* Removed overflow-y to prevent vertical scrolling */
+    /* overflow-y: auto; */
     background-color: #fff;
     border-radius: 10px;
+    padding: 10px; /* Optional padding for better spacing */
 }
 
 table {
@@ -223,8 +226,6 @@ thead th {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.05em;
-    position: sticky;
-    top: 0;
     background-color: #b20002;
     z-index: 100; /* Ensures the header stays on top */
 }
@@ -355,6 +356,19 @@ td:nth-child(4) {
     .pagination-container span {
         font-size: 16px;
     }
+
+    /* Adjust table container padding for smaller screens */
+    .table-container {
+        padding: 5px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
 }
 
 /* Anchor tag styling */
@@ -367,6 +381,7 @@ a:hover {
     color: #b20002;
     text-decoration: none;
 }
+
 /* Machine name container styling */
 .machine-name-container {
     display: flex;
