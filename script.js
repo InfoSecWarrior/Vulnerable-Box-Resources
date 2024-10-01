@@ -201,11 +201,11 @@ function renderMachines(data, query = '') {
         const row = document.createElement('tr');
 
         // Machine name link with platform tag after it
-        const machineNameLink = `<a href="machine.html?dir=${encodeURIComponent(item.machineDir)}&file=${encodeURIComponent(item.machineFile)}">
+        const machineNameLink = `<a href="machine.html?dir=${encodeURIComponent(item.machineDir)}&file=${encodeURIComponent(item.machineFile)}&platform=${encodeURIComponent(item.platform)}">
             ${highlight(item.machineName, lowerQuery)}
             <span class="platform-tag">${item.platform}</span> <!-- Platform tag added here -->
-        </a>`;
-
+        </a>`;    
+    
         const portDetails = item.portDetails
             .split(', ')
             .map(port => `<span class="port-entry">${highlight(port, lowerQuery)}</span>`)
@@ -296,7 +296,7 @@ function handleSearch(query) {
         service: /service:([a-zA-Z0-9-_]+)/i,
         product: /product:([a-zA-Z0-9-_]+)/i,
         version: /version:([a-zA-Z0-9._-]+)/i,
-        platform: /platform:(vulnhub|htb|other)/i
+        platform: /platform:(vulnhub|htb|other|InfoSecWarrior)/i
     };
 
     let hasFilters = false;
