@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Sep 28 20:42:35 2024 as: nmap -v -Pn -p- -oA My-Wordpress-Host-2-all-ports-scan-output 192.168.1.104
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.104 ()	Status: Up
+Host: 192.168.1.104 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///	Ignored State: closed (65533)
+# Nmap done at Sat Sep 28 20:42:37 2024 -- 1 IP address (1 host up) scanned in 1.87 seconds

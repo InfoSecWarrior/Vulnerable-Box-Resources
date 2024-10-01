@@ -1,0 +1,4 @@
+# Dirsearch started Sat Sep 28 21:15:56 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.6:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o defcon-galahad-dirsearch-80-wordlist-output.txt -q
+
+301   310B   http://192.168.1.6/staff    -> REDIRECTS TO: http://192.168.1.6/staff/
+301   310B   http://192.168.1.6/admin    -> REDIRECTS TO: http://192.168.1.6/admin/

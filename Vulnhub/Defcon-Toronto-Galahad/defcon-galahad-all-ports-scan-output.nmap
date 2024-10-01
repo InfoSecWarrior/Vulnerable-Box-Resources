@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Sat Sep 28 21:13:08 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA defcon-galahad-all-ports-scan-output 192.168.1.6
+Nmap scan report for 192.168.1.6
+Host is up (0.00044s latency).
+Not shown: 65377 filtered tcp ports (no-response), 155 filtered tcp ports (host-prohibited)
+PORT      STATE  SERVICE
+22/tcp    open   ssh
+80/tcp    open   http
+50000/tcp closed ibm-db2
+MAC Address: 08:00:27:87:C7:FB (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/share/nmap
+# Nmap done at Sat Sep 28 21:15:33 2024 -- 1 IP address (1 host up) scanned in 144.65 seconds

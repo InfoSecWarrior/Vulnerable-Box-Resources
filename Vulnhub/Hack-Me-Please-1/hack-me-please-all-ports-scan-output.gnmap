@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 21:38:01 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA hack-me-please-all-ports-scan-output 192.168.1.6
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.6 ()	Status: Up
+Host: 192.168.1.6 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 50000/open/tcp//ibm-db2///	Ignored State: filtered (65532)
+# Nmap done at Sun Sep 29 21:40:25 2024 -- 1 IP address (1 host up) scanned in 144.84 seconds

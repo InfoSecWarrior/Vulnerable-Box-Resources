@@ -1,0 +1,23 @@
+# Dirsearch started Tue Oct  1 01:38:38 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.56.102:8180 -o Metasploitable-1-dirsearch-8180-output.txt -q
+
+400     0B   http://192.168.56.102:8180/\..\..\..\..\..\..\..\..\..\etc\passwd
+400     0B   http://192.168.56.102:8180/a%5c.aspx
+302     0B   http://192.168.56.102:8180/admin    -> REDIRECTS TO: http://192.168.56.102:8180/admin/
+302     0B   http://192.168.56.102:8180/admin;/    -> REDIRECTS TO: http://192.168.56.102:8180/admin/
+200    21KB  http://192.168.56.102:8180/favicon.ico
+401   948B   http://192.168.56.102:8180/host-manager/html
+200    16KB  http://192.168.56.102:8180/jsp-examples/
+401   948B   http://192.168.56.102:8180/manager/jmxproxy/?get=BEANNAME&att=MYATTRIBUTE&key=MYKEY
+401   948B   http://192.168.56.102:8180/manager/jmxproxy
+401   948B   http://192.168.56.102:8180/manager/jmxproxy/?get=java.lang:type=Memory&att=HeapMemoryUsage
+401   948B   http://192.168.56.102:8180/manager/jmxproxy/?invoke=BEANNAME&op=METHODNAME&ps=COMMASEPARATEDPARAMETERS
+302     0B   http://192.168.56.102:8180/manager    -> REDIRECTS TO: http://192.168.56.102:8180/manager/
+401   948B   http://192.168.56.102:8180/manager/jmxproxy/?qry=STUFF
+401   948B   http://192.168.56.102:8180/manager/status/all
+401   948B   http://192.168.56.102:8180/manager/jmxproxy/?invoke=Catalina%3Atype%3DService&op=findConnectors&ps=
+401   948B   http://192.168.56.102:8180/manager/html
+401   948B   http://192.168.56.102:8180/manager/jmxproxy/?set=BEANNAME&att=MYATTRIBUTE&val=NEWVALUE
+401   948B   http://192.168.56.102:8180/manager/html/
+302     0B   http://192.168.56.102:8180/WEB-INF    -> REDIRECTS TO: http://192.168.56.102:8180/WEB-INF/
+200     2KB  http://192.168.56.102:8180/webdav/
+200     4KB  http://192.168.56.102:8180/webdav/index.html

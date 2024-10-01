@@ -1,0 +1,18 @@
+# Dirsearch started Tue Oct  1 13:12:43 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.2.125:80 -o Pinkys-Palace-v4-dirsearch-80-output.txt -q
+
+403   571B   http://192.168.2.125/.ht_wsr.txt
+403   571B   http://192.168.2.125/.htaccess.bak1
+403   571B   http://192.168.2.125/.htaccess.orig
+403   571B   http://192.168.2.125/.htaccess.save
+403   571B   http://192.168.2.125/.htaccess.sample
+403   571B   http://192.168.2.125/.htaccess_orig
+403   571B   http://192.168.2.125/.htaccessOLD2
+403   571B   http://192.168.2.125/.htaccessBAK
+403   571B   http://192.168.2.125/.html
+403   571B   http://192.168.2.125/.htm
+403   571B   http://192.168.2.125/.htpasswd_test
+403   571B   http://192.168.2.125/.htpasswds
+403   571B   http://192.168.2.125/.htaccess_extra
+403   571B   http://192.168.2.125/.htaccess_sc
+403   571B   http://192.168.2.125/.httr-oauth
+403   571B   http://192.168.2.125/.htaccessOLD
