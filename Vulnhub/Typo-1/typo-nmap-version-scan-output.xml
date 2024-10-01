@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Oct  1 07:08:37 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8000,8080,8081 -oA typo-nmap-version-scan-output 192.168.1.15 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8000,8080,8081 -oA typo-nmap-version-scan-output 192.168.1.15" start="1727746717" startstr="Tue Oct  1 07:08:37 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="5" services="22,80,8000,8080-8081"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727746717"/>
+<taskend task="NSE" time="1727746717"/>
+<taskbegin task="NSE" time="1727746717"/>
+<taskend task="NSE" time="1727746717"/>
+<taskbegin task="NSE" time="1727746717"/>
+<taskend task="NSE" time="1727746717"/>
+<taskbegin task="ARP Ping Scan" time="1727746717"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.15" addrtype="ipv4"/>
+<address addr="08:00:27:61:E3:17" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727746717" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727746717"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727746717"/>
+<taskbegin task="Connect Scan" time="1727746717"/>
+<taskend task="Connect Scan" time="1727746717" extrainfo="5 total ports"/>
+<taskbegin task="Service scan" time="1727746717"/>
+<taskend task="Service scan" time="1727746728" extrainfo="5 services on 1 host"/>
+<taskbegin task="NSE" time="1727746729"/>
+<taskend task="NSE" time="1727746731"/>
+<taskbegin task="NSE" time="1727746731"/>
+<taskend task="NSE" time="1727746731"/>
+<taskbegin task="NSE" time="1727746731"/>
+<taskend task="NSE" time="1727746731"/>
+<host starttime="1727746717" endtime="1727746731"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.15" addrtype="ipv4"/>
+<address addr="08:00:27:61:E3:17" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 cd:dc:8f:24:51:73:54:bc:87:62:a2:e6:ed:f1:c1:b4 (RSA)&#xa;  256 a9:39:a9:bf:b2:f7:01:22:65:07:be:15:48:e8:ef:11 (ECDSA)&#xa;  256 77:f5:a9:ff:a6:44:7c:9c:34:41:f1:ec:73:5e:57:bd (ED25519)"><table>
+<elem key="fingerprint">cddc8f24517354bc8762a2e6edf1c1b4</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDpGu8OROct6WsqJC2pF2llWVZCpNUWgxzu/7Qg/wII3+6NDU+WkbnQ7FkLJjzO8+uROg4GpbM0HlrGyXjFHhv/FbeqJJrE4j08gn6QCcpwRgoB2L5E1OJL5bxtaijryXWic4rifesztbXjiUwmKV2m4+4XVxhxFvn8F/Q0tufy9TFwF34V07z6iU4PyX3bpNMZPnW8yw8+RCZNFbvvKFyMKm4t18wUXpCpqMsa+/ZHPheyiICKoq+LqI/GngOeBTuM92tN8FwGKyKdNsVmbj3/fKxA5z/MQFXKJZr+YtUgoTJsGoNoB8ZiX21hAk1EucPrfufPxtj6CQeVidUS6nSt</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="fingerprint">a939a9bfb2f701226507be1548e8ef11</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBD6RKxwQyDEIWiCvOoPyNc196icnZuw5yN+elCF1ylhg5SWkiNC4ENQX4pE8cq3k96Yfn3WZPsN5LSn9yBqQuLI=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="fingerprint">77f5a9ffa6447c9c3441f1ec735e57bd</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIGkKJCCZ2wQlS6N171PEVBN+dngA0rYZCBcv1vQx5cTG</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.38" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.38</cpe></service><script id="http-title" output="Page Not Found"><elem key="title">Page Not Found</elem>
+</script><script id="http-server-header" output="Apache/2.4.38 (Debian)"><elem>Apache/2.4.38 (Debian)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.38" hostname="127.0.0.1" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.38</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.38 (Debian)"><elem>Apache/2.4.38 (Debian)</elem>
+</script><script id="http-open-proxy" output="Potentially OPEN proxy.&#xa;Methods supported:CONNECTION"/><script id="http-title" output="Did not follow redirect to http://typo.local"><elem key="redirect_url">http://typo.local</elem>
+</script></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.38" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.38</cpe></service><script id="http-open-proxy" output="Proxy might be redirecting requests"/><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-server-header" output="Apache/2.4.38 (Debian)"><elem>Apache/2.4.38 (Debian)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS HEAD GET"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="8081"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.38" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.38</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS HEAD GET"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.38 (Debian)"><elem>Apache/2.4.38 (Debian)</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="30643"/>
+<osmatch name="Linux 4.15 - 5.8" accuracy="100" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="4266693" lastboot="Mon Aug 12 21:57:18 2024"/>
+<distance value="1"/>
+<tcpsequence index="262" difficulty="Good luck!" values="94706990,48E51A70,36E97A1B,63559F2,78D38F0F,FC6ED34C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="FE5087D2,FE508836,FE50889B,FE5088FE,FE508963,FE5089C7"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.15" rtt="0.58"/>
+</trace>
+<times srtt="577" rttvar="65" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727746731"/>
+<taskend task="NSE" time="1727746731"/>
+<taskbegin task="NSE" time="1727746731"/>
+<taskend task="NSE" time="1727746731"/>
+<taskbegin task="NSE" time="1727746731"/>
+<taskend task="NSE" time="1727746731"/>
+<runstats><finished time="1727746731" timestr="Tue Oct  1 07:08:51 2024" summary="Nmap done at Tue Oct  1 07:08:51 2024; 1 IP address (1 host up) scanned in 13.95 seconds" elapsed="13.95" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

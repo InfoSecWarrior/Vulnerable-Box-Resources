@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Tue Oct  1 05:57:05 2024 as: nmap -v -Pn -p- -oA skytower-1-all-ports-scan-output 192.168.1.13
+Nmap scan report for 192.168.1.13
+Host is up (0.000053s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT     STATE    SERVICE
+22/tcp   filtered ssh
+80/tcp   open     http
+3128/tcp open     squid-http
+MAC Address: 08:00:27:54:4A:37 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Oct  1 05:57:06 2024 -- 1 IP address (1 host up) scanned in 1.81 seconds

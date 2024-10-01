@@ -1,0 +1,24 @@
+# Dirsearch started Tue Oct  1 05:58:01 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.13:80 -o skytower-1-dirsearch-80-output.txt -q
+
+403   241B   http://192.168.1.13/.ht_wsr.txt
+403   240B   http://192.168.1.13/.htaccess.bak1
+403   241B   http://192.168.1.13/.htaccess.sample
+403   240B   http://192.168.1.13/.htaccess.orig
+403   239B   http://192.168.1.13/.htaccess.save
+403   242B   http://192.168.1.13/.htaccess_extra
+403   242B   http://192.168.1.13/.htaccess_orig
+403   240B   http://192.168.1.13/.htaccess_sc
+403   240B   http://192.168.1.13/.htaccessBAK
+403   239B   http://192.168.1.13/.htaccessOLD
+403   240B   http://192.168.1.13/.htaccessOLD2
+403   236B   http://192.168.1.13/.htm
+403   236B   http://192.168.1.13/.html
+403   239B   http://192.168.1.13/.htpasswds
+403   240B   http://192.168.1.13/.httr-oauth
+403   244B   http://192.168.1.13/.htpasswd_test
+403   236B   http://192.168.1.13/.php
+403   236B   http://192.168.1.13/.php3
+403   239B   http://192.168.1.13/cgi-bin/
+200    40B   http://192.168.1.13/login.php
+403   239B   http://192.168.1.13/server-status/
+403   239B   http://192.168.1.13/server-status

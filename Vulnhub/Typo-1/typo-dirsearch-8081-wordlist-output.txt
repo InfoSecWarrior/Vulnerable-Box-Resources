@@ -1,0 +1,4 @@
+# Dirsearch started Tue Oct  1 07:11:18 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.15:8081 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o typo-dirsearch-8081-wordlist-output.txt -q
+
+301   324B   http://192.168.1.15:8081/phpmyadmin    -> REDIRECTS TO: http://192.168.1.15:8081/phpmyadmin/
+403   279B   http://192.168.1.15:8081/server-status
