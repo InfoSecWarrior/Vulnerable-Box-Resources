@@ -1,0 +1,57 @@
+# Nmap 7.94 scan initiated Tue Oct  1 20:18:30 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,53,80,443 -oA My-communication-server1-nmap-version-scan-output 192.168.29.30
+Nmap scan report for 192.168.29.30
+Host is up (0.00031s latency).
+
+PORT    STATE SERVICE    VERSION
+22/tcp  open  ssh        OpenSSH 5.3 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 df:ba:c4:5c:5b:6a:ca:b9:f9:94:3a:99:30:5b:33:57 (DSA)
+|_  2048 b9:08:e5:32:8a:56:ca:0a:1a:1c:e7:d7:9f:07:92:31 (RSA)
+53/tcp  open  tcpwrapped
+80/tcp  open  http       Apache httpd 2.2.15 ((CentOS))
+|_http-server-header: Apache/2.2.15 (CentOS)
+| http-title: 404 Not Found
+|_Requested resource was config.php
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 2 disallowed entries 
+|_/ /backup.7z
+443/tcp open  ssl/http   Apache httpd 2.2.15 ((CentOS))
+|_http-server-header: Apache/2.2.15 (CentOS)
+|_ssl-date: 2024-10-01T14:48:51+00:00; +2s from scanner time.
+| http-robots.txt: 2 disallowed entries 
+|_/ /backup.7z
+| ssl-cert: Subject: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=--
+| Issuer: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=--
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2020-03-23T16:30:17
+| Not valid after:  2021-03-23T16:30:17
+| MD5:   f4bf:a335:3e11:6420:c896:25b5:a865:1230
+|_SHA-1: 02d1:5f78:6b1c:e378:5486:50eb:a6f2:7a4b:e326:7491
+| http-title: 404 Not Found
+|_Requested resource was config.php
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+MAC Address: 08:00:27:E1:48:F2 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 2.6.X|3.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+OS details: Linux 2.6.32 - 3.10
+Uptime guess: 49.709 days (since Tue Aug 13 03:18:09 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Host script results:
+|_clock-skew: 1s
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.31 ms 192.168.29.30
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct  1 20:18:49 2024 -- 1 IP address (1 host up) scanned in 18.91 seconds

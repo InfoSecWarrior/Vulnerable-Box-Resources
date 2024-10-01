@@ -1,0 +1,6 @@
+[tech-detect:php] [http] [info] https://192.168.29.30:443
+[self-signed-ssl] [ssl] [low] 192.168.29.30:443
+[expired-ssl] [ssl] [low] 192.168.29.30:443 [2021-03-23 16:30:17 +0000 UTC]
+[ssl-issuer] [ssl] [info] 192.168.29.30:443 [SomeOrganization]
+[revoked-ssl-certificate] [ssl] [low] 192.168.29.30:443
+[freepbx-administration-panel] [http] [info] https://192.168.29.30:443/admin/config.php

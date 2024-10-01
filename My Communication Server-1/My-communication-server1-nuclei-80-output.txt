@@ -1,0 +1,2 @@
+[tech-detect:php] [http] [info] http://192.168.29.30:80
+[robots-txt-endpoint] [http] [info] http://192.168.29.30:80/robots.txt

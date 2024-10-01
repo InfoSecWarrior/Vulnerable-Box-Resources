@@ -1,0 +1,13 @@
+# Nmap 7.94 scan initiated Tue Oct  1 20:18:30 2024 as: nmap -v -Pn --top-ports 100 -oA My-communication-server1-all-ports-scan-output 192.168.29.30
+Nmap scan report for 192.168.29.30
+Host is up (0.00029s latency).
+Not shown: 96 closed tcp ports (reset)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+53/tcp  open  domain
+80/tcp  open  http
+443/tcp open  https
+MAC Address: 08:00:27:E1:48:F2 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Oct  1 20:18:30 2024 -- 1 IP address (1 host up) scanned in 0.29 seconds

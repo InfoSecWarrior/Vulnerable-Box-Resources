@@ -1,0 +1,5 @@
+# Nmap 7.94 scan initiated Tue Oct  1 20:18:30 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,53,80,443 -oA My-communication-server1-nmap-version-scan-output 192.168.29.30
+# Ports scanned: TCP(4;22,53,80,443) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.29.30 ()	Status: Up
+Host: 192.168.29.30 ()	Ports: 22/open/tcp//ssh//OpenSSH 5.3 (protocol 2.0)/, 53/open/tcp//tcpwrapped///, 80/open/tcp//http//Apache httpd 2.2.15 ((CentOS))/, 443/open/tcp//ssl|http//Apache httpd 2.2.15 ((CentOS))/	OS: Linux 2.6.32 - 3.10	Seq Index: 261	IP ID Seq: All zeros
+# Nmap done at Tue Oct  1 20:18:49 2024 -- 1 IP address (1 host up) scanned in 18.91 seconds
