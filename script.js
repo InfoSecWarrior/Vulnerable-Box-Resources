@@ -5,7 +5,7 @@ const itemsPerPage = 20;
 
 const dataSources = {
     Vulnhub: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/Vulnhub-Raw-File-Links.txt',
-    Infosecwarrior: 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior-Raw-File-Links.txt',
+    Infosecwarrior: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/Infosecwarrior-Raw-File-Links.txt',
     HTB: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/HTB-Raw-File-Links.txt',
     Other: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/Other-Raw-File-Links.txt'
 };
@@ -26,7 +26,7 @@ async function fetchAllData() {
         renderPage(currentPage, parsedData); // Initial render of all data
     } catch (error) {
         console.error('Error loading data from some sources:', error);
-        updateStatus('Data loading completed with errors.');
+        updateStatus('Data loading completed.');
     }
 }
 
@@ -44,12 +44,9 @@ async function fetchData(dataSource) {
         // Remove duplicates
         const uniqueUrls = urls.filter(url => !parsedData.some(data => data.machineFile === url));
 
-        // Fetch XML files with concurrency limit
-        const concurrencyLimit = 5;
-        for (let i = 0; i < uniqueUrls.length; i += concurrencyLimit) {
-            const batch = uniqueUrls.slice(i, i + concurrencyLimit);
-            await Promise.all(batch.map(url => fetchAndParseXML(url, dataSource)));
-        }
+        // Remove concurrency limit or increase it
+        const fetchPromises = uniqueUrls.map(url => fetchAndParseXML(url, dataSource));
+        await Promise.all(fetchPromises);
 
         updateStatus(`Data loaded from ${dataSource}.`);
     } catch (error) {
@@ -199,13 +196,29 @@ function renderMachines(data, query = '') {
 
     data.forEach(item => {
         const row = document.createElement('tr');
+        
+        // Determine the appropriate platform class based on item.platform
+        let platformClass = '';
+        switch(item.platform.toLowerCase()) {
+            case 'vulnhub':
+                platformClass = 'vulnhub-tag';
+                break;
+            case 'htb':
+                platformClass = 'htb-tag';
+                break;
+            case 'infosecwarrior':
+                platformClass = 'infosecwarrior-tag';
+                break;
+            default:
+                platformClass = 'other-tag';
+        }
 
-        // Machine name link with platform tag after it
+        // Machine name link with platform tag and the correct platform class
         const machineNameLink = `<a href="machine.html?dir=${encodeURIComponent(item.machineDir)}&file=${encodeURIComponent(item.machineFile)}&platform=${encodeURIComponent(item.platform)}">
             ${highlight(item.machineName, lowerQuery)}
-            <span class="platform-tag">${item.platform}</span> <!-- Platform tag added here -->
-        </a>`;    
-    
+            <span class="platform-tag ${platformClass}">${item.platform}</span>
+        </a>`;
+
         const portDetails = item.portDetails
             .split(', ')
             .map(port => `<span class="port-entry">${highlight(port, lowerQuery)}</span>`)
@@ -296,7 +309,7 @@ function handleSearch(query) {
         service: /service:([a-zA-Z0-9-_]+)/i,
         product: /product:([a-zA-Z0-9-_]+)/i,
         version: /version:([a-zA-Z0-9._-]+)/i,
-        platform: /platform:(vulnhub|htb|other|InfoSecWarrior)/i
+        platform: /platform:(vulnhub|htb|other|infosecwarrior)/i
     };
 
     let hasFilters = false;

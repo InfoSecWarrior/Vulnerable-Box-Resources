@@ -21,10 +21,29 @@ async function fetchFileContent(url, elementId) {
     }
 }
 
-// Helper function to fetch and combine multiple files
+// Helper function to limit concurrency of async operations
+async function withConcurrencyLimit(tasks, limit) {
+    const results = [];
+    const executing = new Set();
+    
+    for (const task of tasks) {
+        const p = Promise.resolve().then(() => task());
+        results.push(p);
+        executing.add(p);
+        p.finally(() => executing.delete(p));
+
+        if (executing.size >= limit) {
+            await Promise.race(executing);
+        }
+    }
+    return Promise.all(results);
+}
+
 async function fetchMultipleFiles(fileUrls, elementId) {
     let combinedData = '';
-    for (const url of fileUrls) {
+
+    // Map URLs to fetch promises and process them concurrently
+    const fetchTasks = fileUrls.map(async url => {
         try {
             const response = await fetch(url);
             if (!response.ok) throw new Error(`File not found: ${url}`);
@@ -33,15 +52,22 @@ async function fetchMultipleFiles(fileUrls, elementId) {
         } catch (error) {
             console.error(`Error loading data from ${url}:`, error);
         }
-    }
+    });
+
+    // Wait for all fetches to complete concurrently
+    await Promise.all(fetchTasks);
+
     const element = document.getElementById(elementId);
     if (element) {
         element.textContent = combinedData || 'No data available';
     } else {
         console.warn(`Element with ID '${elementId}' not found in the document.`);
     }
+
     return combinedData;
 }
+
+
 
 // Function to generate URLs based on dynamic number ranges and ports
 function generateFileUrls(baseURL, dirName, baseFileName, type, ports) {
