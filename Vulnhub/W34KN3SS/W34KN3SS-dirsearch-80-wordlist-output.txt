@@ -1,0 +1,6 @@
+# Dirsearch started Mon Sep 30 14:39:50 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.139:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o W34KN3SS-dirsearch-80-wordlist-output.txt -q
+
+301   313B   http://192.168.1.139/blog    -> REDIRECTS TO: http://192.168.1.139/blog/
+301   316B   http://192.168.1.139/uploads    -> REDIRECTS TO: http://192.168.1.139/uploads/
+301   313B   http://192.168.1.139/test    -> REDIRECTS TO: http://192.168.1.139/test/
+403   301B   http://192.168.1.139/server-status
