@@ -1,3 +1,5 @@
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Troll-1/Troll-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/W34KN3SS/W34KN3SS-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Bee-Box/bee-box-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Billy-Madison/billy-madison-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Chronos/chronos_report-nmap-version-scan-output.xml
