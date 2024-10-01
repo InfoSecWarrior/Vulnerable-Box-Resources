@@ -11,8 +11,9 @@ body {
     overflow-x: hidden;
 }
 
+/* Container to hold all content */
 .container {
-    max-width: 100%; /* Changed from 1400px to 100% to allow full width */
+    max-width: 100%; /* Allows full viewport width */
     margin: 0 auto;
     padding: 20px;
 }
@@ -189,21 +190,21 @@ body {
     to { transform: rotate(360deg); }
 }
 
-/* Table Styling */
+/* Table Container Styling */
 .table-container {
-    width: 100%; /* Changed from 98% to 100% for full width */
+    width: 100%; /* Full width */
     margin: 0 auto;
-    overflow-x: auto;
-    /* Removed max-height to allow the table to expand naturally */
-    /* max-height: 500px; */
+    overflow-x: auto; /* Horizontal scrolling if needed */
+    /* Optional: Set a max height to enable vertical scrolling within the table container */
+    max-height: 600px; /* Adjust as needed */
     border: 1px solid #ddd;
-    /* Removed overflow-y to prevent vertical scrolling */
-    /* overflow-y: auto; */
     background-color: #fff;
     border-radius: 10px;
     padding: 10px; /* Optional padding for better spacing */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -227,7 +228,14 @@ thead th {
     font-weight: 600;
     letter-spacing: 0.05em;
     background-color: #b20002;
-    z-index: 100; /* Ensures the header stays on top */
+    z-index: 2; /* Higher than tbody cells */
+}
+
+/* Ensuring thead has a higher stacking context */
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 tbody tr {
@@ -360,6 +368,7 @@ td:nth-child(4) {
     /* Adjust table container padding for smaller screens */
     .table-container {
         padding: 5px;
+        max-height: 400px; /* Adjust as needed for smaller screens */
     }
 
     table {
