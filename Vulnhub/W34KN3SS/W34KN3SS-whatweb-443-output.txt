@@ -1,0 +1,1 @@
+https://192.168.1.139:443 [200 OK] Apache[2.4.29], Country[RESERVED][ZZ], HTTPServer[Ubuntu Linux][Apache/2.4.29 (Ubuntu)], IP[192.168.1.139], Title[Apache2 Ubuntu Default Page: It works]

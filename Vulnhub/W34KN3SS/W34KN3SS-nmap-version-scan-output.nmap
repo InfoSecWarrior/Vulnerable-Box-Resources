@@ -1,0 +1,51 @@
+# Nmap 7.94SVN scan initiated Mon Sep 30 14:34:26 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,443 -oA W34KN3SS-nmap-version-scan-output 192.168.1.139
+Nmap scan report for 192.168.1.139
+Host is up (0.00037s latency).
+
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 de:89:a2:de:45:e7:d6:3d:ef:e9:bd:b4:b6:68:ca:6d (RSA)
+|   256 1d:98:4a:db:a2:e0:cc:68:38:93:d0:52:2a:1a:aa:96 (ECDSA)
+|_  256 3d:8a:6b:92:0d:ba:37:82:9e:c3:27:18:b6:01:cd:98 (ED25519)
+80/tcp  open  http     Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+443/tcp open  ssl/http Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| tls-alpn: 
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=weakness.jth/organizationName=weakness.jth/stateOrProvinceName=Jordan/countryName=jo
+| Issuer: commonName=weakness.jth/organizationName=weakness.jth/stateOrProvinceName=Jordan/countryName=jo
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-05-05T11:12:54
+| Not valid after:  2019-05-05T11:12:54
+| MD5:   f921:c4be:2c6e:89d6:adaf:a7c2:8f39:a87d
+|_SHA-1: 0b44:5a28:c4da:0bf8:b308:a782:4081:1218:101e:0feb
+MAC Address: 08:00:27:3B:64:A4 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 38.546 days (since Fri Aug 23 01:27:58 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.37 ms 192.168.1.139
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 30 14:34:41 2024 -- 1 IP address (1 host up) scanned in 14.80 seconds

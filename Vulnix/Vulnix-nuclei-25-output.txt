@@ -1,0 +1,4 @@
+[rsync-list-modules] [javascript] [low] 192.168.1.109:25 ["220  vulnix  ESMTP  Postfix  (Ubuntu)  221  2.7.0  Error:  I  can  break  rules,  too.  Goodbye."]
+[esmtp-detect] [tcp] [info] 192.168.1.109:25
+[smtp-service-detect] [tcp] [info] 192.168.1.109:25
+[starttls-mail-detect] [tcp] [info] 192.168.1.109:25
