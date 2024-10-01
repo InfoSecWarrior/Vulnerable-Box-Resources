@@ -1,0 +1,4 @@
+# Dirsearch started Tue Oct  1 06:03:05 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.13:3128 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o skytower-1-dirsearch-3128-wordlist-output.txt -q
+
+400     3KB  http://192.168.1.13:3128/Fall%20Out%20Boy%20-%20From%20Under%20The%20Cork%20Tree
+400     3KB  http://192.168.1.13:3128/Guns%20N%20Roses%20-%20Appetite%20for%20Destruction
