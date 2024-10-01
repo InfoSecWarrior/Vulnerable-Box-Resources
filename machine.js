@@ -21,10 +21,29 @@ async function fetchFileContent(url, elementId) {
     }
 }
 
-// Helper function to fetch and combine multiple files
+// Helper function to limit concurrency of async operations
+async function withConcurrencyLimit(tasks, limit) {
+    const results = [];
+    const executing = new Set();
+    
+    for (const task of tasks) {
+        const p = Promise.resolve().then(() => task());
+        results.push(p);
+        executing.add(p);
+        p.finally(() => executing.delete(p));
+
+        if (executing.size >= limit) {
+            await Promise.race(executing);
+        }
+    }
+    return Promise.all(results);
+}
+
 async function fetchMultipleFiles(fileUrls, elementId) {
     let combinedData = '';
-    for (const url of fileUrls) {
+
+    // Map URLs to fetch promises and process them concurrently
+    const fetchTasks = fileUrls.map(async url => {
         try {
             const response = await fetch(url);
             if (!response.ok) throw new Error(`File not found: ${url}`);
@@ -33,15 +52,22 @@ async function fetchMultipleFiles(fileUrls, elementId) {
         } catch (error) {
             console.error(`Error loading data from ${url}:`, error);
         }
-    }
+    });
+
+    // Wait for all fetches to complete concurrently
+    await Promise.all(fetchTasks);
+
     const element = document.getElementById(elementId);
     if (element) {
         element.textContent = combinedData || 'No data available';
     } else {
         console.warn(`Element with ID '${elementId}' not found in the document.`);
     }
+
     return combinedData;
 }
+
+
 
 // Function to generate URLs based on dynamic number ranges and ports
 function generateFileUrls(baseURL, dirName, baseFileName, type, ports) {
@@ -79,9 +105,10 @@ async function fetchMachineData() {
     const urlParams = new URLSearchParams(window.location.search);
     const dirName = urlParams.get('dir');
     let fileName = urlParams.get('file');
+    const platform = urlParams.get('platform'); // Get the platform tag from URL params
 
-    if (!dirName || !fileName) {
-        console.error('Directory or filename not provided.');
+    if (!dirName || !fileName || !platform) {
+        console.error('Directory, filename, or platform not provided.');
         return;
     }
 
@@ -99,7 +126,7 @@ async function fetchMachineData() {
         console.warn("Element with ID 'machine-title' not found in the document.");
     }
 
-    const githubBaseURL = 'https://github.com/infoSecWarrior/Vulnerable-Box-Resources/tree/main/';
+    const githubBaseURL = `https://github.com/riteshs4hu/Vulnerable-Box-Resources/tree/main/${encodeURIComponent(platform)}/`;
     const githubLink = document.getElementById('github-url');
     if (githubLink) {
         githubLink.href = `${githubBaseURL}${encodeURIComponent(dirName)}`; // Use original name for URL
@@ -108,7 +135,7 @@ async function fetchMachineData() {
         console.warn("Element with ID 'github-url' not found in the document.");
     }
 
-    const baseURL = 'https://raw.githubusercontent.com/infoSecWarrior/Vulnerable-Box-Resources/main/';
+    const baseURL = `https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/${encodeURIComponent(platform)}/`; // Use the platform tag in the base URL
     
     // Fetch open ports
     const ports = await fetchOpenPorts(baseURL, dirName, baseFileName);
@@ -148,6 +175,7 @@ async function fetchMachineData() {
         fetchFileContent(files.openPortsList, 'open-ports-list')
     ]);
 }
+
 
 
 // Fetch machine data on page load

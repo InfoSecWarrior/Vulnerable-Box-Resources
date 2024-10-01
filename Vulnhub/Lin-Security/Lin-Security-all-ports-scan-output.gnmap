@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 23:27:25 2024 as: nmap -v -Pn -p- -oA Lin-Security-all-ports-scan-output 192.168.1.40
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.40 (linsecurity.bbrouter)	Status: Up
+Host: 192.168.1.40 (linsecurity.bbrouter)	Ports: 22/open/tcp//ssh///, 111/open/tcp//rpcbind///, 2049/open/tcp//nfs///, 35843/open/tcp/////, 44525/open/tcp/////, 45101/open/tcp/////, 56433/open/tcp/////	Ignored State: closed (65528)
+# Nmap done at Sun Sep 29 23:27:26 2024 -- 1 IP address (1 host up) scanned in 0.88 seconds

@@ -1,0 +1,5 @@
+[smb-enum] [javascript] [info] 192.168.1.39:445 ["OSVersion: 6.1.0","NetBIOSComputerName: FILESERVER","NetBIOSDomainName: FILESERVER","DNSComputerNamen: localhost","DNSComputerName: localhost","ForestName:"]
+[smb2-capabilities] [javascript] [info] 192.168.1.39:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb2-server-time] [javascript] [info] 192.168.1.39:445 ["SystemTime: 2024-09-29T15:32:32.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-os-detect] [javascript] [info] 192.168.1.39:445 ["6.1.0"]
+[smb-signing-not-required] [javascript] [medium] 192.168.1.39:445
