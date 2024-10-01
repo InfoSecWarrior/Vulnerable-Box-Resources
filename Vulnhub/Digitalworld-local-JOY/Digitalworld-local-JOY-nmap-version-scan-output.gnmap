@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 16:38:36 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,25,80,110,139,143,445,465,587,993,995 -oA Digitalworld-local-JOY-nmap-version-scan-output 192.168.0.243
+# Ports scanned: TCP(12;21-22,25,80,110,139,143,445,465,587,993,995) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.0.243 (192.168.0.243)	Status: Up
+Host: 192.168.0.243 (192.168.0.243)	Ports: 21/open/tcp//ftp//ProFTPD 1.2.10/, 22/open/tcp//ssh//Dropbear sshd 0.34 (protocol 2.0)/, 25/open/tcp//smtp//Postfix smtpd/, 80/open/tcp//http//Apache httpd 2.4.25 ((Debian))/, 110/open/tcp//pop3//Dovecot pop3d/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 143/open/tcp//imap//Dovecot imapd/, 445/open/tcp//netbios-ssn//Samba smbd 4.5.12-Debian (workgroup: WORKGROUP)/, 465/open/tcp//smtp//Postfix smtpd/, 587/open/tcp//smtp//Postfix smtpd/, 993/open/tcp//ssl|imap//Dovecot imapd/, 995/open/tcp//ssl|pop3//Dovecot pop3d/	OS: Linux 3.2 - 4.9	Seq Index: 262	IP ID Seq: All zeros
+# Nmap done at Sun Sep 29 16:39:19 2024 -- 1 IP address (1 host up) scanned in 43.37 seconds
