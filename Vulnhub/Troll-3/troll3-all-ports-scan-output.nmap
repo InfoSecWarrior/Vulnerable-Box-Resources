@@ -1,0 +1,16 @@
+# Nmap 7.94SVN scan initiated Fri Sep 27 14:42:36 2024 as: nmap -v -Pn -p- -oA troll3-all-ports-scan-output 192.168.1.137
+Nmap scan report for 192.168.1.137 (192.168.1.137)
+Host is up (0.00010s latency).
+Not shown: 65528 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+111/tcp  open  rpcbind
+443/tcp  open  https
+601/tcp  open  syslog-conn
+631/tcp  open  ipp
+3306/tcp open  mysql
+MAC Address: 08:00:27:9A:17:08 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Sep 27 14:42:37 2024 -- 1 IP address (1 host up) scanned in 1.19 seconds

@@ -1,0 +1,8 @@
+[http-trace:trace-request] [http] [info] http://192.168.1.116:80
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.116:80
+[CVE-2023-48795] [javascript] [medium] 192.168.1.116:22 ["Vulnerable to Terrapin"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.116:22
+[ssh-password-auth] [javascript] [info] 192.168.1.116:22
+[ssh-auth-methods] [javascript] [info] 192.168.1.116:22 ["["publickey","gssapi-keyex","gssapi-with-mic","password"]"]
+[ssh-diffie-hellman-logjam] [javascript] [low] 192.168.1.116:22
+[ssh-server-enumeration] [javascript] [info] 192.168.1.116:22 ["SSH-2.0-OpenSSH_6.6.1"]

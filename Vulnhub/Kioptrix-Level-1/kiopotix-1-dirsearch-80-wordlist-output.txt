@@ -1,0 +1,5 @@
+# Dirsearch started Fri Sep 27 12:55:03 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.130:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o kiopotix-1-dirsearch-80-wordlist-output.txt -q
+
+301   294B   http://192.168.1.130/manual    -> REDIRECTS TO: http://127.0.0.1/manual/
+301   293B   http://192.168.1.130/usage    -> REDIRECTS TO: http://127.0.0.1/usage/
+301   292B   http://192.168.1.130/mrtg    -> REDIRECTS TO: http://127.0.0.1/mrtg/

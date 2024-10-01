@@ -1,5 +1,0 @@
-# Nmap 7.94SVN scan initiated Thu Sep 26 20:00:46 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA DC-6-nmap-version-scan 192.168.1.158
-# Ports scanned: TCP(2;22,80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 192.168.1.158 ()	Status: Up
-Host: 192.168.1.158 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.4p1 Debian 10+deb9u6 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.25 ((Debian))/	OS: Linux 3.2 - 4.9	Seq Index: 261	IP ID Seq: All zeros
-# Nmap done at Thu Sep 26 20:00:55 2024 -- 1 IP address (1 host up) scanned in 8.32 seconds

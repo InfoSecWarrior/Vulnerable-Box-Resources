@@ -1,0 +1,4 @@
+# Dirsearch started Fri Sep 27 14:44:50 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://192.168.1.137:443 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o troll3-dirsearch-443-wordlist-output.txt -q
+
+301   317B   https://192.168.1.137/manual    -> REDIRECTS TO: https://192.168.1.137/manual/
+403   287B   https://192.168.1.137/usage

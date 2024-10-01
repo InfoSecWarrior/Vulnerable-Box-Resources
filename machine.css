@@ -86,7 +86,7 @@ body {
 }
 
 h2 {
-    border-bottom: 3px solid #004085;
+    border-bottom: 3px solid #b20002;
     padding-bottom: 10px;
     color: #222;
     text-align: left;
@@ -135,6 +135,61 @@ button {
     transition: background-color 0.3s, transform 0.2s ease;
 }
 
+.box {
+    background-color: #b20002;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 8px;
+    max-width: 1500px; /* Reduced max-width for better display */
+    margin: 20px auto;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between; /* Space between the elements */
+    align-items: center;
+    gap: 20px; /* Added gap for consistent spacing between items */
+}
+
+#machine-title {
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    font-size: 22px; /* Slightly larger for better readability */
+    flex-shrink: 0; /* Prevents shrinking of the title */
+}
+
+#github-link,
+#resource-link {
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    font-size: 18px; /* Adjusted for better consistency */
+    color: #ffffff;
+}
+
+#github-link a,
+#resource-link a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#github-link a:hover,
+#resource-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #github-link,
+    #resource-link {
+        margin-top: 10px;
+    }
+}
+
 button:hover {
     background-color: #218838;
     transform: translateY(-2px);
@@ -158,4 +213,14 @@ button:active {
     pre {
         font-size: 0.85rem;
     }
+}
+
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b20002;
+    text-decoration: none;
 }

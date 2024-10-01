@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 21:11:33 2024 as: nmap -v -Pn -p- -oA Moria-all-ports-scan-output 192.168.1.116
+Nmap scan report for Moria.bbrouter (192.168.1.116)
+Host is up (0.00011s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+MAC Address: 08:00:27:A6:88:A3 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Sep 29 21:11:34 2024 -- 1 IP address (1 host up) scanned in 1.09 seconds

@@ -1,0 +1,37 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 19:33:18 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,25468 -oA bob-1-0-1-nmap-version-scan-output 192.168.1.6
+Nmap scan report for 192.168.1.6
+Host is up (0.00029s latency).
+
+PORT      STATE SERVICE VERSION
+80/tcp    open  http    Apache httpd 2.4.25 ((Debian))
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+| http-robots.txt: 4 disallowed entries 
+| /login.php /dev_shell.php /lat_memo.html 
+|_/passwords.html
+|_http-server-header: Apache/2.4.25 (Debian)
+25468/tcp open  ssh     OpenSSH 7.4p1 Debian 10+deb9u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 84:f2:f8:e5:ed:3e:14:f3:93:d4:1e:4c:41:3b:a2:a9 (RSA)
+|   256 5b:98:c7:4f:84:6e:fd:56:6a:35:16:83:aa:9c:ea:f8 (ECDSA)
+|_  256 39:16:56:fb:4e:0f:50:85:40:d3:53:22:41:43:38:15 (ED25519)
+MAC Address: 08:00:27:3F:10:86 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 0.001 days (since Sun Sep 29 19:31:32 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.29 ms 192.168.1.6
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep 29 19:33:29 2024 -- 1 IP address (1 host up) scanned in 11.44 seconds
