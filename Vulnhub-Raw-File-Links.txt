@@ -1,4 +1,4 @@
-https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Vulnhub/Bee-Box/bee-box-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Bee-Box/bee-box-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Billy-Madison/billy-madison-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Chronos/chronos_report-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/DerpNStink-1/DerpNStink-1-nmap-version-scan-output.xml
