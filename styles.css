@@ -194,14 +194,12 @@ body {
 .table-container {
     width: 100%; /* Full width */
     margin: 0 auto;
-    overflow-x: auto; /* Horizontal scrolling if needed */
-    /* Optional: Set a max height to enable vertical scrolling within the table container */
-    max-height: 600px; /* Adjust as needed */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    /* Removed max-height and overflow-y to allow natural scrolling */
     border: 1px solid #ddd;
     background-color: #fff;
     border-radius: 10px;
     padding: 10px; /* Optional padding for better spacing */
-    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 /* Table Styling */
@@ -222,16 +220,16 @@ thead {
 thead th {
     padding: 20px;
     position: sticky;
-    top: 0;
+    top: 0; /* Sticks to the top of the viewport */
     text-align: left;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.05em;
     background-color: #b20002;
-    z-index: 2; /* Higher than tbody cells */
+    z-index: 2; /* Ensures headers stay above other content */
 }
 
-/* Ensuring thead has a higher stacking context */
+/* Ensure thead has a higher stacking context */
 thead {
     position: sticky;
     top: 0;
@@ -368,7 +366,6 @@ td:nth-child(4) {
     /* Adjust table container padding for smaller screens */
     .table-container {
         padding: 5px;
-        max-height: 400px; /* Adjust as needed for smaller screens */
     }
 
     table {
