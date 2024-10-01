@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sat Sep 28 20:42:37 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA My-Wordpress-Host-2-nmap-version-scan-output 192.168.1.104 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA My-Wordpress-Host-2-nmap-version-scan-output 192.168.1.104" start="1727536357" startstr="Sat Sep 28 20:42:37 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727536357"/>
+<taskend task="NSE" time="1727536357"/>
+<taskbegin task="NSE" time="1727536357"/>
+<taskend task="NSE" time="1727536357"/>
+<taskbegin task="NSE" time="1727536357"/>
+<taskend task="NSE" time="1727536357"/>
+<taskbegin task="ARP Ping Scan" time="1727536357"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.104" addrtype="ipv4"/>
+<address addr="08:00:27:18:64:D3" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727536357" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727536357"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727536357"/>
+<taskbegin task="Connect Scan" time="1727536357"/>
+<taskend task="Connect Scan" time="1727536357" extrainfo="2 total ports"/>
+<taskbegin task="Service scan" time="1727536357"/>
+<taskend task="Service scan" time="1727536365" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1727536366"/>
+<taskend task="NSE" time="1727536367"/>
+<taskbegin task="NSE" time="1727536367"/>
+<taskend task="NSE" time="1727536367"/>
+<taskbegin task="NSE" time="1727536367"/>
+<taskend task="NSE" time="1727536367"/>
+<host starttime="1727536357" endtime="1727536367"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.104" addrtype="ipv4"/>
+<address addr="08:00:27:18:64:D3" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 d4:f4:29:2d:3d:63:24:16:b2:de:50:16:95:0c:45:a8 (RSA)&#xa;  256 35:82:8d:1d:51:b3:fe:1b:eb:ce:f5:f7:d8:42:77:39 (ECDSA)&#xa;  256 1c:0a:bd:3f:30:ba:c0:6d:bb:d7:93:36:a5:ec:a1:06 (ED25519)"><table>
+<elem key="fingerprint">d4f4292d3d632416b2de5016950c45a8</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDZyP3KDx2PB21O2O4Jdgs58EOGrcGUJ41fCGOI0M+KbaibAI+MFrSVL1nJAmsl+DJMx5Z99DfN0w3SVQRh1b/2QnEYwckPGb/bpXqX60CMWts+QkBI54mKJxOHoAIX1PTPcHVOn6GzyUTiAzn/WbXXfPNYHqN3hN2fP1lPHAavssBVnktFJPLyPdBy2nNhE5C50MT/Z/1WlVO77NXaJBq4QxihKz4695/WfO+Hm9nCmjYfxbq+VvP/U5c4ivPONUiSBdnYX2sUC7BVUcbKLrYvvyKvvouGTt7Un9eRb2Jl5HlBpzM47UtO0Qw4Myd4yuK67+xq3btZcWKaS+txw1I/</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="fingerprint">35828d1d51b3fe1bebcef5f7d8427739</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH1L4jveMO7TyiA37JKZiojN3QVzQ+mwaF5TjnW3rOLdSP9GrCdur1S5p0NjmdNq7fmf/RsGFfCkeqtG4dclWMk=</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="fingerprint">1c0abd3f30bac06dbbd79336a5eca106</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIBmQkJdGnd83AWMaiEG48/PTmGJO71/m11HOD1yWw/ss</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.38" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.38</cpe></service><script id="http-title" output="infosec &amp;#8211; Just another WordPress site"><elem key="title">infosec &amp;#8211; Just another WordPress site</elem>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.38 (Debian)"><elem>Apache/2.4.38 (Debian)</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E"/><script id="http-generator" output="WordPress 5.1.19"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="41077"/>
+<osmatch name="Linux 4.15 - 5.8" accuracy="100" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="2034879" lastboot="Thu Sep  5 07:28:08 2024"/>
+<distance value="1"/>
+<tcpsequence index="264" difficulty="Good luck!" values="FD83306B,95360A38,919CA97C,AD54D078,39B524CF,A2D9CE7C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="7949C610,7949C68E,7949C6F5,7949C76D,7949C7D1,7949C837"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.104" rtt="0.25"/>
+</trace>
+<times srtt="251" rttvar="156" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727536367"/>
+<taskend task="NSE" time="1727536367"/>
+<taskbegin task="NSE" time="1727536367"/>
+<taskend task="NSE" time="1727536367"/>
+<taskbegin task="NSE" time="1727536367"/>
+<taskend task="NSE" time="1727536367"/>
+<runstats><finished time="1727536367" timestr="Sat Sep 28 20:42:47 2024" summary="Nmap done at Sat Sep 28 20:42:47 2024; 1 IP address (1 host up) scanned in 10.37 seconds" elapsed="10.37" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

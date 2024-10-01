@@ -196,6 +196,7 @@ body {
     overflow-x: auto;
     max-height: 500px; /* Adjust as needed */
     border: 1px solid #ddd;
+    overflow-y: auto;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -205,9 +206,7 @@ table {
     border-collapse: collapse;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    table-layout: auto;
     border-radius: 10px;
-    overflow: hidden;
 }
 
 thead {
@@ -218,6 +217,8 @@ thead {
 
 thead th {
     padding: 20px;
+    position: sticky;
+    top: 0;
     text-align: left;
     font-size: 18px;
     font-weight: 600;
@@ -225,7 +226,7 @@ thead th {
     position: sticky;
     top: 0;
     background-color: #b20002;
-    z-index: 10; /* Ensures the header stays on top */
+    z-index: 100; /* Ensures the header stays on top */
 }
 
 tbody tr {
@@ -381,34 +382,39 @@ a:hover {
 }
 
 .platform-tag {
-    font-size: 0.75em; /* Slightly smaller for a sleeker look */
+    font-size: 0.75em; 
     margin-left: 10px;
-    padding: 3px 8px; /* More padding for better spacing */
-    border-radius: 12px; /* Rounder tags for a modern feel */
-    color: #fff; /* White text for better contrast */
-    font-weight: 600; /* Slightly bolder for readability */
+    padding: 3px 8px; 
+    border-radius: 12px; 
+    color: #fff; 
+    font-weight: 600;
     display: inline-block;
-    text-transform: uppercase; /* Consistent tag text style */
-    letter-spacing: 0.05em; /* Slight letter spacing for clarity */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    background: linear-gradient(135deg, #2e52f0, #2e52f0); /* Black gradient background */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effect */
+    text-transform: uppercase;
+    letter-spacing: 0.05em; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* VulnHub specific styling */
 .vulnhub-tag {
-    background: linear-gradient(135deg, #af4444, #af4444); /* Black background for consistency */
-    border: 1px solid #0073e6; /* Add a subtle blue border for identification */
+    background: linear-gradient(135deg, #ff7300, #ff7300);
+    border: 1px solid #ff7300;
+}
+
+/* InfosecWarrior specific styling */
+.infosecwarrior-tag {
+    background: linear-gradient(135deg, #3143e4, #3143e4);
+    border: 1px solid #3143e4;
 }
 
 /* HTB specific styling */
 .htb-tag {
-    background: linear-gradient(135deg, #af4444, #af4444); /* Black background for consistency */
-    border: 1px solid #28a745; /* Add a subtle green border for identification */
+    background: linear-gradient(135deg, #28a745, #28a745);
+    border: 1px solid #28a745;
 }
 
 /* Other platform styling */
 .other-tag {
-    background: linear-gradient(135deg, #af4444, #af4444); /* Black gradient background */
-    border: 1px solid #6c757d; /* Add a subtle grey border for other platforms */
+    background: linear-gradient(135deg, #6c757d, #6c757d);
+    border: 1px solid #6c757d;
 }

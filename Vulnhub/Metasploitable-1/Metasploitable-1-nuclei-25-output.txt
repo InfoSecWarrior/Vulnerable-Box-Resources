@@ -1,0 +1,1 @@
+[rsync-list-modules] [javascript] [low] 192.168.56.102:25 ["220  metasploitable.localdomain  ESMTP  Postfix  (Ubuntu)  221  2.7.0  Error:  I  can  break  rules,  too.  Goodbye."]

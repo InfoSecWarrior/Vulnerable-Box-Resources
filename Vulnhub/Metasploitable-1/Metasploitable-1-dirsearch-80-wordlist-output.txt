@@ -1,0 +1,6 @@
+# Dirsearch started Tue Oct  1 01:43:11 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.56.102:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Metasploitable-1-dirsearch-80-wordlist-output.txt -q
+
+301   356B   http://192.168.56.102/twiki    -> REDIRECTS TO: http://192.168.56.102/twiki/
+301   359B   http://192.168.56.102/tikiwiki    -> REDIRECTS TO: http://192.168.56.102/tikiwiki/
+200    48KB  http://192.168.56.102/phpinfo
+403   335B   http://192.168.56.102/server-status

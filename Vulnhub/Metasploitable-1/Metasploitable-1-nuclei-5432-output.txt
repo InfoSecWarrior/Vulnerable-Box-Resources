@@ -1,0 +1,8 @@
+[postgres-default-logins] [javascript] [high] 192.168.56.102:5432 [passwords="postgres",usernames="postgres"]
+[pgsql-default-db] [javascript] [high] 192.168.56.102:5432 [database="postgres",password="postgres",usernames="postgres"]
+[pgsql-file-read] [javascript] [high] 192.168.56.102:5432 ["global","PG_VERSION","postmaster.pid","server.crt","pg_multixact","pg_subtrans","base","pg_twophase","postmaster.opts","pg_xlog","pg_clog","root.crt","pg_tblspc","server.key"] [database="postgres",password="postgres",usernames="postgres"]
+[pgsql-list-database] [javascript] [high] 192.168.56.102:5432 ["template1","template0","postgres"] [database="postgres",password="postgres",usernames="postgres"]
+[pgsql-default-db] [javascript] [high] 192.168.56.102:5432 [database="template1",password="postgres",usernames="postgres"]
+[pgsql-list-password-hashes] [javascript] [high] 192.168.56.102:5432 ["postgres : md53175bce1d3201d16594cebf9d7eb3f9d"] [database="postgres",password="postgres",usernames="postgres"]
+[pgsql-list-users] [javascript] [high] 192.168.56.102:5432 ["postgres"] [database="postgres",password="postgres",usernames="postgres"]
+[pgsql-version-detect] [javascript] [high] 192.168.56.102:5432 ["PostgreSQL 8.3.1 on i486-pc-linux-gnu, compiled by GCC cc (GCC) 4.2.3 (Ubuntu 4.2.3-2ubuntu4)"] [database="postgres",password="postgres",usernames="postgres"]

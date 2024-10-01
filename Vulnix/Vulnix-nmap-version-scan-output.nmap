@@ -1,0 +1,111 @@
+# Nmap 7.94SVN scan initiated Mon Sep 30 20:53:16 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,25,79,110,111,143,512,513,514,993,995,2049,34474,36615,45119,54825,57180 -oA Vulnix-nmap-version-scan-output 192.168.1.109
+Nmap scan report for 192.168.1.109
+Host is up (0.00063s latency).
+
+PORT      STATE SERVICE    VERSION
+22/tcp    open  ssh        OpenSSH 5.9p1 Debian 5ubuntu1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 10:cd:9e:a0:e4:e0:30:24:3e:bd:67:5f:75:4a:33:bf (DSA)
+|   2048 bc:f9:24:07:2f:cb:76:80:0d:27:a6:48:52:0a:24:3a (RSA)
+|_  256 4d:bb:4a:c1:18:e8:da:d1:82:6f:58:52:9c:ee:34:5f (ECDSA)
+25/tcp    open  smtp       Postfix smtpd
+|_ssl-date: 2024-09-30T15:23:41+00:00; +1s from scanner time.
+|_smtp-commands: vulnix, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
+| ssl-cert: Subject: commonName=vulnix
+| Issuer: commonName=vulnix
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2012-09-02T17:40:12
+| Not valid after:  2022-08-31T17:40:12
+| MD5:   58e3:f1ac:fef6:b6d1:744c:836f:ba24:4f0a
+|_SHA-1: 712f:69ba:8c54:32e5:711c:898b:55ab:0a83:44a0:420b
+79/tcp    open  finger     Linux fingerd
+|_finger: No one logged on.\x0D
+110/tcp   open  pop3       Dovecot pop3d
+|_pop3-capabilities: RESP-CODES UIDL SASL STLS PIPELINING TOP CAPA
+| ssl-cert: Subject: commonName=vulnix/organizationName=Dovecot mail server
+| Issuer: commonName=vulnix/organizationName=Dovecot mail server
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2012-09-02T17:40:22
+| Not valid after:  2022-09-02T17:40:22
+| MD5:   2b3f:3e28:c85d:e10c:7b7a:2435:c5e7:84fc
+|_SHA-1: 4a49:a407:01f1:37c8:81a3:4519:981b:1eee:6856:348e
+|_ssl-date: 2024-09-30T15:23:41+00:00; +1s from scanner time.
+111/tcp   open  rpcbind    2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100005  1,2,3      36615/tcp   mountd
+|   100005  1,2,3      37306/udp   mountd
+|   100005  1,2,3      47730/tcp6  mountd
+|   100005  1,2,3      57155/udp6  mountd
+|   100227  2,3         2049/tcp   nfs_acl
+|   100227  2,3         2049/tcp6  nfs_acl
+|   100227  2,3         2049/udp   nfs_acl
+|_  100227  2,3         2049/udp6  nfs_acl
+143/tcp   open  imap       Dovecot imapd
+|_imap-capabilities: more SASL-IR ID have LOGIN-REFERRALS Pre-login post-login listed capabilities IDLE IMAP4rev1 OK ENABLE STARTTLS LOGINDISABLEDA0001 LITERAL+
+|_ssl-date: 2024-09-30T15:23:41+00:00; +1s from scanner time.
+| ssl-cert: Subject: commonName=vulnix/organizationName=Dovecot mail server
+| Issuer: commonName=vulnix/organizationName=Dovecot mail server
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2012-09-02T17:40:22
+| Not valid after:  2022-09-02T17:40:22
+| MD5:   2b3f:3e28:c85d:e10c:7b7a:2435:c5e7:84fc
+|_SHA-1: 4a49:a407:01f1:37c8:81a3:4519:981b:1eee:6856:348e
+512/tcp   open  exec       netkit-rsh rexecd
+513/tcp   open  login?
+514/tcp   open  tcpwrapped
+993/tcp   open  ssl/imap   Dovecot imapd
+|_ssl-date: 2024-09-30T15:23:41+00:00; +1s from scanner time.
+|_imap-capabilities: SASL-IR AUTH=PLAINA0001 more LOGIN-REFERRALS Pre-login have post-login listed IDLE IMAP4rev1 capabilities ENABLE OK LITERAL+ ID
+| ssl-cert: Subject: commonName=vulnix/organizationName=Dovecot mail server
+| Issuer: commonName=vulnix/organizationName=Dovecot mail server
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2012-09-02T17:40:22
+| Not valid after:  2022-09-02T17:40:22
+| MD5:   2b3f:3e28:c85d:e10c:7b7a:2435:c5e7:84fc
+|_SHA-1: 4a49:a407:01f1:37c8:81a3:4519:981b:1eee:6856:348e
+995/tcp   open  ssl/pop3   Dovecot pop3d
+|_ssl-date: 2024-09-30T15:23:41+00:00; +1s from scanner time.
+|_pop3-capabilities: RESP-CODES UIDL SASL(PLAIN) USER PIPELINING TOP CAPA
+| ssl-cert: Subject: commonName=vulnix/organizationName=Dovecot mail server
+| Issuer: commonName=vulnix/organizationName=Dovecot mail server
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2012-09-02T17:40:22
+| Not valid after:  2022-09-02T17:40:22
+| MD5:   2b3f:3e28:c85d:e10c:7b7a:2435:c5e7:84fc
+|_SHA-1: 4a49:a407:01f1:37c8:81a3:4519:981b:1eee:6856:348e
+2049/tcp  open  nfs_acl    2-3 (RPC #100227)
+34474/tcp open  nlockmgr   1-4 (RPC #100021)
+36615/tcp open  mountd     1-3 (RPC #100005)
+45119/tcp open  mountd     1-3 (RPC #100005)
+54825/tcp open  mountd     1-3 (RPC #100005)
+57180/tcp open  status     1 (RPC #100024)
+MAC Address: 08:00:27:B6:1C:2C (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 2.6.X|3.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+OS details: Linux 2.6.32 - 3.10
+Uptime guess: 0.001 days (since Mon Sep 30 20:52:39 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=265 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host:  vulnix; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.63 ms 192.168.1.109
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 30 20:53:40 2024 -- 1 IP address (1 host up) scanned in 24.36 seconds

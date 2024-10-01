@@ -1,0 +1,16 @@
+# Dirsearch started Tue Oct  1 01:53:53 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.56.102:8180 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Metasploitable-1-dirsearch-8180-wordlist-output.txt -q
+
+302     0B   http://192.168.56.102:8180/admin    -> REDIRECTS TO: http://192.168.56.102:8180/admin/
+302     0B   http://192.168.56.102:8180/manager    -> REDIRECTS TO: http://192.168.56.102:8180/manager/
+400     0B   http://192.168.56.102:8180/http%3A%2F%2Fwww
+200     2KB  http://192.168.56.102:8180/webdav
+400     0B   http://192.168.56.102:8180/http%3A%2F%2Fyoutube
+400     0B   http://192.168.56.102:8180/http%3A%2F%2Fblogs
+400     0B   http://192.168.56.102:8180/http%3A%2F%2Fblog
+400     0B   http://192.168.56.102:8180/**http%3A%2F%2Fwww
+400     0B   http://192.168.56.102:8180/External%5CX-News
+400     0B   http://192.168.56.102:8180/http%3A%2F%2Fcommunity
+400     0B   http://192.168.56.102:8180/http%3A%2F%2Fradar
+400     0B   http://192.168.56.102:8180/http%3A%2F%2Fjeremiahgrossman
+400     0B   http://192.168.56.102:8180/http%3A%2F%2Fweblog
+400     0B   http://192.168.56.102:8180/http%3A%2F%2Fswik
