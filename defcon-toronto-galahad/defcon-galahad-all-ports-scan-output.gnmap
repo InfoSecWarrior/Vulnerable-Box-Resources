@@ -1,5 +1,0 @@
-# Nmap 7.94SVN scan initiated Sat Sep 28 21:13:08 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA defcon-galahad-all-ports-scan-output 192.168.1.6
-# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 192.168.1.6 ()	Status: Up
-Host: 192.168.1.6 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 50000/closed/tcp//ibm-db2///	Ignored State: filtered (65532)
-# Nmap done at Sat Sep 28 21:15:33 2024 -- 1 IP address (1 host up) scanned in 144.65 seconds

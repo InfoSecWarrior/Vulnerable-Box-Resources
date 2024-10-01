@@ -1,5 +1,0 @@
-# Nmap 7.94SVN scan initiated Sat Sep 28 21:15:33 2024 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA defcon-galahad-nmap-version-scan-output 192.168.1.6
-# Ports scanned: TCP(2;22,80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 192.168.1.6 ()	Status: Up
-Host: 192.168.1.6 ()	Ports: 22/open/tcp//ssh//OpenSSH 5.3 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.2.15 ((CentOS))/	Seq Index: 259	IP ID Seq: All zeros
-# Nmap done at Sat Sep 28 21:15:43 2024 -- 1 IP address (1 host up) scanned in 10.37 seconds
