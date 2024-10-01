@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Tue Oct  1 13:08:35 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA Pinkys-Palace-v4-all-ports-scan-output 192.168.2.125
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.2.125 (192.168.2.125)	Status: Up
+Host: 192.168.2.125 (192.168.2.125)	Ports: 80/open/tcp//http///, 65535/open/tcp/////	Ignored State: filtered (65533)
+# Nmap done at Tue Oct  1 13:10:19 2024 -- 1 IP address (1 host up) scanned in 104.06 seconds
