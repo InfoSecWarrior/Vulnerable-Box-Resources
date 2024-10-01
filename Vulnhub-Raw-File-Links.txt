@@ -31,3 +31,4 @@ https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Lin-Security/Lin-Security-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Bob%201.0.1/bob-1-0-1-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Zico2/Zico-2-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Defcon-Toronto-Galahad/defcon-galahad-nmap-version-scan-output.xml
