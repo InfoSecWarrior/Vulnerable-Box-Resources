@@ -1,0 +1,1 @@
+http://192.168.2.125:65535 [200 OK] Country[RESERVED][ZZ], HTTPServer[pinkys-HTTP-server], IP[192.168.2.125], Title[Pinky's HTTP Server]

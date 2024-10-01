@@ -1,0 +1,4 @@
+# Dirsearch started Sun Sep 29 09:32:36 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.105:7331 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Djinn-1-dirsearch-7331-wordlist-output.txt -q
+
+200   385B   http://192.168.1.105:7331/wish
+200     2KB  http://192.168.1.105:7331/genie
