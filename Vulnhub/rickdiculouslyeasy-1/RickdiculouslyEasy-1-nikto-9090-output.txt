@@ -1,0 +1,675 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.1.14
++ Target Port: 9090
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The site uses TLS and the Strict-Transport-Security HTTP header is not defined. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET Hostname '192.168.1.14' does not match certificate's names: localhost.localdomain. See: https://cwe.mitre.org/data/definitions/297.html: 
++ GET /favicon.ico: Retrieved access-control-allow-origin header: https://192.168.1.14:9090.
++ GET /tiki/tiki-install.php: Tiki 1.7.2 and previous allowed restricted Wiki pages to be viewed via a 'URL trick'. Default login/pass could be admin/admin.
++ GET /scripts/samples/details.idc: NT ODBC Remote Compromise. See: http://attrition.org/security/advisory/individual/rfp/rfp.9901.nt_odbc: 
++ GET /_vti_bin/shtml.exe: Attackers may be able to crash FrontPage by requesting a DOS device, like shtml.exe/aux.htm -- a DoS was not attempted. See: CVE-2000-0709: 
++ GET /forums//admin/config.php: PHP Config file may contain database IDs and passwords.
++ GET /forums//adm/config.php: PHP Config file may contain database IDs and passwords.
++ GET /forums//administrator/config.php: PHP Config file may contain database IDs and passwords.
++ GET /forums/config.php: PHP Config file may contain database IDs and passwords.
++ GET /hola/admin/cms/htmltags.php?datei=./sec/data.php: hola-cms-1.2.9-10 may reveal the administrator ID and password. See: https://vulners.com/exploitdb/EDB-ID:23027: 
++ GET /inc/common.load.php: Bookmark4U v1.8.3 include files are not protected and may contain remote source injection by using the 'prefix' variable. See: CVE-2003-1253: 
++ GET /inc/config.php: Bookmark4U v1.8.3 include files are not protected and may contain remote source injection by using the 'prefix' variable. See: CVE-2003-1253: 
++ GET /inc/dbase.php: Bookmark4U v1.8.3 include files are not protected and may contain remote source injection by using the 'prefix' variable. See: CVE-2003-1253: 
++ GET /geeklog/users.php: Geeklog prior to 1.3.8-1sr2 contains a SQL injection vulnerability that lets a remote attacker reset admin password. See: https://vulners.com/osvdb/OSVDB:2703: 
++ GET /gb/index.php?login=true: gBook may allow admin login by setting the value 'login' equal to 'true'. See: CVE-2002-1560: 
++ GET /guestbook/admin.php: Guestbook admin page available without authentication.
++ GET /cfdocs/expeval/openfile.cfm: Can use to expose the system/server path.
++ GET /scripts/iisadmin/bdir.htr: This default script shows host info, may allow file browsing and buffer a overrun in the Chunked Encoding data transfer mechanism, request /scripts/iisadmin/bdir.htr??c:\<dir>. See: MS02-028: 
++ GET /scripts/iisadmin/ism.dll: Allows you to mount a brute force attack on passwords.
++ GET /scripts/tools/ctss.idc: This CGI allows remote users to view and modify SQL DB contents, server paths, docroot and more.
++ GET /SiteServer/Admin/commerce/foundation/domain.asp: Displays known domains of which that server is involved. See: CVE-2002-1769: 
++ GET /SiteServer/Admin/commerce/foundation/driver.asp: Displays a list of installed ODBC drivers. See: CVE-2002-1769: 
++ GET /SiteServer/Admin/commerce/foundation/DSN.asp: Displays all DSNs configured for selected ODBC drivers. See: CVE-2002-1769: 
++ GET /SiteServer/admin/findvserver.asp: Gives a list of installed Site Server components. See: CVE-2002-1769: 
++ GET /SiteServer/Admin/knowledge/dsmgr/default.asp: Used to view current search catalog configurations.
++ GET /basilix/mbox-list.php3: BasiliX webmail application prior to 1.1.1 contains a XSS issue in 'message list' function/page.
++ GET /basilix/message-read.php3: BasiliX webmail application prior to 1.1.1 contains a XSS issue in 'read message' function/page.
++ GET /IlohaMail/blank.html: IlohaMail 0.8.10 contains a XSS vulnerability. Previous versions contain other non-descript vulnerabilities.
++ GET /scripts/Carello/Carello.dll: Carello 1.3 may allow commands to be executed on the server by replacing hidden form elements. This could not be tested by Nikto. See: CVE-2001-0614: 
++ GET /scripts/tools/dsnform.exe: Allows creation of ODBC Data Source.
++ GET /SiteServer/Admin/knowledge/dsmgr/users/GroupManager.asp: Microsoft Site Server script used to create, modify, and potentially delete LDAP users and groups. See: https://securitytracker.com/id/1003420: 
++ GET /SiteServer/Admin/knowledge/dsmgr/users/UserManager.asp: Microsoft Site Server used to create, modify, and potentially delete LDAP users and groups. See: https://securitytracker.com/id/1003420: 
++ GET /scripts/httpodbc.dll: Possible IIS backdoor found.
++ GET /scripts/proxy/w3proxy.dll: MSProxy v1.0 installed.
++ GET /pccsmysqladm/incs/dbconnect.inc: This file should not be accessible, as it contains database connectivity information. Upgrade to version 1.2.5 or higher.
++ GET /PDG_Cart/order.log: PDG Commerce log found. See: http://zodi.com/cgi-bin/shopper.cgi?display=intro&template=Intro/commerce.html: 
++ GET /officescan/cgi/cgiChkMasterPwd.exe: Trend Micro Officescan allows you to skip the login page and access some CGI programs directly. See: https://web.archive.org/web/20030607054822/http://support.microsoft.com/support/exchange/content/whitepapers/owaguide.doc: 
++ GET /pbserver/pbserver.dll: This may contain a buffer overflow. See: MS00-094: 
++ GET /administrator/gallery/uploadimage.php: Mambo PHP Portal/Server 4.0.12 BETA and below may allow upload of any file type simply putting '.jpg' before the real file extension.
++ GET /pafiledb/includes/team/file.php: paFileDB 3.1 and below may allow file upload without authentication.
++ GET /phpEventCalendar/file_upload.php: phpEventCalendar 1.1 and prior are vulnerable to file upload bug.
++ GET /servlet/com.unify.servletexec.UploadServlet: This servlet allows attackers to upload files to the server.
++ GET /scripts/cpshost.dll: Posting acceptor possibly allows you to upload files.
++ GET /basilix/compose-attach.php3: BasiliX webmail application prior to 1.1.1 contains a non-descript security vulnerability in compose-attach.php3 related to attachment uploads.
++ GET /forum/admin/wwforum.mdb: Web Wiz Forums password database found. See: https://seclists.org/bugtraq/2003/Apr/238: 
++ GET /fpdb/shop.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /guestbook/admin/o12guest.mdb: Ocean12 ASP Guestbook Manager allows download of SQL database which contains admin password. See: https://www.exploit-db.com/exploits/22484: 
++ GET /MIDICART/midicart.mdb: MIDICART database is available for browsing. This should not be allowed via the web server. See: CVE-2002-1432: 
++ GET /mpcsoftweb_guestbook/database/mpcsoftweb_guestdata.mdb: MPCSoftWeb Guest Book passwords retrieved. See: https://www.exploit-db.com/exploits/22513: 
++ GET /news/news.mdb: Web Wiz Site News release v3.06 admin password database is available and unencrypted.
++ GET /shoppingdirectory/midicart.mdb: MIDICART database is available for browsing. This should not be allowed via the web server. See: CVE-2002-1432: 
++ GET /database/db2000.mdb: Max Web Portal database is available remotely. It should be moved from the default location to a directory outside the web root. See: https://www.medae.co/en/max/web-app: 
++ GET /admin/config.php: PHP Config file may contain database IDs and passwords.
++ GET /adm/config.php: PHP Config file may contain database IDs and passwords.
++ GET /administrator/config.php: PHP Config file may contain database IDs and passwords.
++ GET /pw/storemgr.pw: Encrypted ID/Pass for Mercantec's SoftCart. See: CVE-1999-0609: 
++ GET /simplebbs/users/users.php: Simple BBS 1.0.6 allows user information and passwords to be viewed remotely. See: https://www.webhostingtalk.nl/bugtraq-mailing-lijst/23898-simplebbs-1-0-6-default-permissions-vuln.html: 
++ GET /sips/sipssys/users/a/admin/user: SIPS v0.2.2 allows user account info (including password) to be retrieved remotely. See: https://vulners.com/exploitdb/EDB-ID:22381: 
++ GET /typo3conf/database.sql: TYPO3 SQL file found.
++ GET /cms/typo3conf/database.sql: TYPO3 SQL file found.
++ GET /site/typo3conf/database.sql: TYPO3 SQL file found.
++ GET /typo/typo3conf/database.sql: TYPO3 SQL file found.
++ GET /typo3/typo3conf/database.sql: TYPO3 SQL file found.
++ GET /typo3conf/localconf.php: TYPO3 config file found.
++ GET /cms/typo3conf/localconf.php: TYPO3 config file found.
++ GET /site/typo3conf/localconf.php: TYPO3 config file found.
++ GET /typo/typo3conf/localconf.php: TYPO3 config file found.
++ GET /typo3/typo3conf/localconf.php: TYPO3 config file found.
++ GET /vchat/msg.txt: VChat allows user information to be retrieved. See: https://www.securityfocus.com/bid/7186/info: 
++ GET /webcart-lite/config/import.txt: This may allow attackers to read credit card data. Reconfigure to make this file not accessible via the web. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /webcart-lite/orders/import.txt: This may allow attackers to read credit card data. Reconfigure to make this file not accessible via the web. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /webcart/config/clients.txt: This may allow attackers to read credit card data. Reconfigure to make this file not accessible via the web. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /webcart/orders/import.txt: This may allow attackers to read credit card data. Reconfigure to make this file not accessible via the web. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /_mem_bin/auoconfig.asp: Displays the default AUO (LDAP) schema, including host and port.
++ GET /SiteServer/Admin/knowledge/persmbr/vs.asp: Expose various LDAP service and backend configuration parameters. See: https://vulners.com/osvdb/OSVDB:17659: 
++ GET /SiteServer/Admin/knowledge/persmbr/VsLsLpRd.asp: Expose various LDAP service and backend configuration parameters. See: https://vulners.com/osvdb/OSVDB:17661: 
++ GET /SiteServer/Admin/knowledge/persmbr/VsPrAuoEd.asp: Expose various LDAP service and backend configuration parameters. See: https://vulners.com/osvdb/OSVDB:17662: 
++ GET /SiteServer/Admin/knowledge/persmbr/VsTmPr.asp: Expose various LDAP service and backend configuration parameters. See: https://vulners.com/osvdb/OSVDB:17660: 
++ GET /tvcs/getservers.exe?action=selects1: Following steps 2-4 of this page may reveal a zip file that contains passwords and system details.
++ GET /nsn/fdir.bas:ShowVolume: You can use ShowVolume and ShowDirectory directly on the Novell server (NW5.1) to view the filesystem without having to log in.
++ GET /forum/admin/database/wwForum.mdb: Web Wiz Forums pre 7.5 is vulnerable to Cross-Site Scripting attacks. Default login/pass is Administrator/letmein.
++ GET /webmail/blank.html: IlohaMail 0.8.10 contains an XSS vulnerability. Previous versions contain other non-descript vulnerabilities.
++ GET /servlet/sunexamples.BBoardServlet: This default servlet lets attackers execute arbitrary commands.
++ GET /IDSWebApp/IDSjsp/Login.jsp: Tivoli Directory Server Web Administration.
++ GET /nsn/..%5Cutil/attrib.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/chkvol.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/copy.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/del.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/dir.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/dsbrowse.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/glist.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/lancard.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/md.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/rd.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/ren.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/send.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/set.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/slist.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/type.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cutil/userlist.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cweb/env.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cweb/fdir.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cwebdemo/env.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /nsn/..%5Cwebdemo/fdir.bas: Netbase util access is possible which means that several utility scripts might be run (including directory listings, NDS tree enumeration and running .bas files on server.
++ GET /USER/CONFIG.AP: MIPCD configuration information. MIPCD should not have the web interface enabled.
++ GET /ht_root/wwwroot/-/local/httpd$map.conf: WASD reveals the http configuration file. Upgrade to a later version and secure according to the documents on the WASD web site.
++ GET /local/httpd$map.conf: WASD reveals the http configuration file. Upgrade to a later version and secure according to the documents on the WASD web site.
++ GET /cgi-win/cgitest.exe: This CGI may allow the server to be crashed remotely. See: CVE-2002-0128: 
++ GET /cgi-shl/win-c-sample.exe: win-c-sample.exe has a buffer overflow.
++ GET /admentor/adminadmin.asp: Version 2.11 of AdMentor is vulnerable to SQL injection during login, in the style of: ' or =. See: CVE-2002-0308: 
++ GET /My_eGallery/public/displayCategory.php: My_eGallery prior to 3.1.1.g are vulnerable to a remote execution bug via SQL command injection. displayCategory.php calls imageFunctions.php without checking URL/location arguments. See: CVE-2006-6795: 
++ GET /postnuke/My_eGallery/public/displayCategory.php: My_eGallery prior to 3.1.1.g are vulnerable to a remote execution bug via SQL command injection. displayCategory.php calls imageFunctions.php without checking URL/location arguments. See: CVE-2006-6795: 
++ GET /postnuke/html/My_eGallery/public/displayCategory.php: My_eGallery prior to 3.1.1.g are vulnerable to a remote execution bug via SQL command injection. displayCategory.php calls imageFunctions.php without checking URL/location arguments. See: CVE-2006-6795: 
++ GET /modules/My_eGallery/public/displayCategory.php: My_eGallery prior to 3.1.1.g are vulnerable to a remote execution bug via SQL command injection. displayCategory.php calls imageFunctions.php without checking URL/location arguments. See: CVE-2006-6795: 
++ GET /phpBB/My_eGallery/public/displayCategory.php: My_eGallery prior to 3.1.1.g are vulnerable to a remote execution bug via SQL command injection. displayCategory.php calls imageFunctions.php without checking URL/location arguments. See: CVE-2006-6795: 
++ GET /forum/My_eGallery/public/displayCategory.php: My_eGallery prior to 3.1.1.g are vulnerable to a remote execution bug via SQL command injection. displayCategory.php calls imageFunctions.php without checking URL/location arguments. See: CVE-2006-6795: 
++ GET /anthill/login.php: Anthill bug tracking system may be installed. Versions lower than 0.1.6.1 allow XSS and may allow users to bypass login requirements.
++ GET /cfdocs/expeval/sendmail.cfm: Can be used to send email; go to the page and fill in the form.
++ GET /cgi-bin/bigconf.cgi: BigIP Configuration CGI. See: CVE-1999-1550: 
++ GET /cbms/cbmsfoot.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/.
++ GET /cbms/changepass.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/.
++ GET /cbms/editclient.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/.
++ GET /cbms/passgen.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/.
++ GET /cbms/realinv.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/.
++ GET /cbms/usersetup.php: CBMS Billing Management has had many vulnerabilities in versions 0.7.1 and below. None could be confirmed here, but they should be manually checked if possible. http://freshmeat.net/projects/cbms/.
++ GET /db/users.dat: upb PB allows the user database to be retrieved remotely. See: OSVDB-59412: 
++ GET /dcshop/auth_data/auth_user_file.txt: The DCShop installation allows credit card numbers to be viewed remotely. See: CVE-2001-0821 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /dcshop/orders/orders.txt: The DCShop installation allows credit card numbers to be viewed remotely. See: CVE-2001-0821 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /Admin_files/order.log: Selena Sol's WebStore 1.0 exposes order information. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /admin/cplogfile.log: DevBB 1.0 final log file is readable remotely. Upgrade to the latest version. See: http://www.mybboard.com: 
++ GET /admin/system_footer.php: myphpnuke version 1.8.8_final_7 reveals detailed system information.
++ GET /cfdocs/snippets/fileexists.cfm: Can be used to verify the existence of files (on the same drive info as the web tree/file).
++ GET /chat/!nicks.txt: WF-Chat 1.0 Beta allows retrieval of user information. See: OSVDB-59646: 
++ GET /chat/!pwds.txt: WF-Chat 1.0 Beta allows retrieval of user information. See: OSVDB-59645: 
++ GET /examples/jsp/snp/anything.snp: Tomcat servlet gives lots of host information.
++ GET /cfdocs/snippets/evaluate.cfm: This allows you to enter Coldfusion code to be evaluated, or potentially create denial of service.
++ GET /cfide/Administrator/startstop.html: Can start/stop the Coldfusion server.
++ GET /cd-cgi/sscd_suncourier.pl: Sunsolve CD script may allow users to execute arbitrary commands. The script was confirmed to exist, but the test was not done. See: CVE-2002-0436: 
++ GET /cgi-bin/webdist.cgi: Comes with IRIX 5.0 - 6.3; allows to run arbitrary commands. See: CVE-1999-0039: 
++ GET /ews/ews/architext_query.pl: Versions older than 1.1 of Excite for Web Servers allow attackers to execute arbitrary commands. BID-2665. See: CVE-1999-0279: 
++ GET /instantwebmail/message.php: Instant Web Mail is installed. Versions 0.59 and lower can allow remote users to embed POP3 commands in URLs contained in email. See: CVE-2002-0490: 
++ GET /admin/admin_phpinfo.php4: Mon Album version 0.6.2d allows remote admin access. This should be protected.
++ GET /admin/login.php?action=insert&username=test&password=test: phpAuction may allow user admin accounts to be inserted without proper authentication. Attempt to log in with user 'test' password 'test' to verify. See: CVE-2002-0995: 
++ GET /accounts/getuserdesc.asp: Hosting Controller 2002 administration page is available. This should be protected. See: CVE-2002-0776: 
++ GET /logs/str_err.log: Bmedia error log, contains invalid login attempts which include the invalid usernames and passwords entered (could just be typos & be very close to the right entries).
++ GET /mall_log_files/order.log: EZMall2000 exposes order information. See: CVE-1999-0606: 
++ GET /megabook/files/20/setup.db: Megabook guestbook configuration available remotely. See: OSVDB-3204: 
++ GET /officescan/hotdownload/ofscan.ini: OfficeScan from Trend Micro allows anyone to read the ofscan.ini file, which may contain passwords. See: CVE-2001-1151: 
++ GET /order/order_log.dat: Web shopping system exposes order information. See: CVE-1999-0606: 
++ GET /orders/order_log_v12.dat: Web shopping system exposes order information. See: CVE-1999-0606: 
++ GET /SiteScope/htdocs/SiteScope.html: The SiteScope install may allow remote users to get sensitive information about the hosts being monitored. See: OSVDB-613: 
++ GET /isapi/count.pl?: AN HTTPd default script may allow writing over arbitrary files with a new content of '1', which could allow a trivial DoS. Append /../../../../../ctr.dll to replace this file's contents, for example.
++ GET /logjam/showhits.php: Logjam may possibly allow remote command execution via showhits.php page.
++ GET /photo/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more.
++ GET /photodata/manage.cgi: My Photo Gallery management interface. May allow full access to photo galleries and more.
++ GET /pub/english.cgi?op=rmail: BSCW self-registration may be enabled. This could allow untrusted users semi-trusted access to the software. 3.x version (and probably some 4.x) allow arbitrary commands to be executed remotely. See: CVE-2002-0095: 
++ GET /pvote/ch_info.php?newpass=password&confirm=password%20: PVote administration page is available. Versions 1.5b and lower do not require authentication to reset the administration password.
++ GET /thebox/admin.php?act=write&username=admin&password=admin&aduser=admin&adpass=admin: paBox 1.6 may allow remote users to set the admin password. If successful, the 'admin' password is now 'admin'. See: OSVDB-2225: 
++ GET /_vti_pvt/deptodoc.btr: FrontPage file found. This may contain useful information.
++ GET /_vti_pvt/doctodep.btr: FrontPage file found. This may contain useful information.
++ GET /_vti_pvt/services.org: FrontPage file found. This may contain useful information.
++ GET /_vti_bin/_vti_aut/dvwssr.dll: This dll allows anyone with authoring privs to change other users file, and may contain a buffer overflow for unauthenticated users. See: MS00-025: 
++ GET /_vti_bin/_vti_aut/fp30reg.dll: Some versions of the FrontPage fp30reg.dll are vulnerable to a buffer overflow. See: MS03-051: 
++ GET /_vti_pvt/access.cnf: Contains HTTP server-specific access control information. Remove or ACL if FrontPage is not being used. See: CVE-2002-1717: 
++ GET /_vti_pvt/service.cnf: Contains meta-information about the web server Remove or ACL if FrontPage is not being used. See: CVE-2002-1717: 
++ GET /_vti_pvt/services.cnf: Contains the list of subwebs. Remove or ACL if FrontPage is not being used. May reveal server version if Admin has changed it. See: CVE-2002-1717: 
++ GET /_vti_pvt/svacl.cnf: File used to store whether subwebs have unique permissions settings and any IP address restrictions. Can be used to discover information about subwebs, remove or ACL if FrontPage is not being used. See: CVE-2002-1717: 
++ GET /_vti_pvt/writeto.cnf: Contains information about form handler result files. Remove or ACL if FrontPage is not being used. See: CVE-2002-1717: 
++ GET /_vti_pvt/linkinfo.cnf: IIS file shows http links on and off site. Might show host trust relationships and other machines on network. See: CVE-2002-1717: 
++ GET /cgis/wwwboard/wwwboard.cgi: Versions 2.0 Alpha and below have multiple problems. This could allow over-write of messages. Default ID 'WebAdmin' with pass 'WebBoard'. See: BID-1795 CVE-1999-0930: 
++ GET /cgis/wwwboard/wwwboard.pl: Versions 2.0 Alpha and below have multiple problems. This could allow over-write of messages. Default ID 'WebAdmin' with pass 'WebBoard'. See: BID-1795 CVE-1999-0930: 
++ GET /manager/contextAdmin/contextAdmin.html: Tomcat may be configured to let attackers read arbitrary files. Restrict access to /admin. See: CVE-2000-0672: 
++ GET /jk-manager/contextAdmin/contextAdmin.html: Tomcat may be configured to let attackers read arbitrary files. Restrict access to /admin. See: CVE-2000-0672: 
++ GET /jk-status/contextAdmin/contextAdmin.html: Tomcat may be configured to let attackers read arbitrary files. Restrict access to /admin. See: CVE-2000-0672: 
++ GET /admin/contextAdmin/contextAdmin.html: Tomcat may be configured to let attackers read arbitrary files. Restrict access to /admin. See: CVE-2000-0672: 
++ GET /host-manager/contextAdmin/contextAdmin.html: Tomcat may be configured to let attackers read arbitrary files. Restrict access to /admin. See: CVE-2000-0672: 
++ GET /nsn/env.bas: Novell web server shows the server environment and is vulnerable to cross-site scripting. See: CVE-2004-2104: 
++ GET /lcgi/lcgitest.nlm: Novell web server shows the server environment. See: CVE-2004-2104: 
++ GET /axis-cgi/buffer/command.cgi: Axis WebCam 2400 may allow overwriting or creating files on the system. See: https://www.securityfocus.com/archive/1/313485: 
++ GET /counter/1/n/n/0/3/5/0/a/123.gif: The Roxen Counter may eat up excessive CPU time with image requests. See: OSVDB-155: 
++ GET /iissamples/exair/search/search.asp: Scripts within the Exair package on IIS 4 can be used for a DoS against the server. See: CVE-1999-0449: 
++ GET /shopping/diag_dbtest.asp: VP-ASP Shopping Cart 5.0 contains multiple SQL injection vulnerabilities. See: CVE-2003-0560: 
++ GET /wwwboard/passwd.txt: The wwwboard password file is browsable. Change wwwboard to store this file elsewhere, or upgrade to the latest version. See: CVE-1999-0930: 
++ GET /msadc/msadcs.dll: . See: CVE-1999-1011 BID-529 MS98-004 MS99-025 http://attrition.org/security/advisory/individual/rfp/rfp.9902.rds_iis: 
++ GET /scripts/tools/newdsn.exe: This can be used to make DSNs, useful in use with an ODBC exploit and the RDS exploit (with msadcs.dll). Also may allow files to be created on the server. See: BID-1818 CVE-1999-0191 http://attrition.org/security/advisory/individual/rfp/rfp.9901.nt_odbc: 
++ GET /admin/database/wwForum.mdb: Web Wiz Forums pre 7.5 is vulnerable to Cross-Site Scripting attacks. Default login/pass is Administrator/letmein. See: OSVDB-2813: 
++ GET /iisadmpwd/aexp2.htr: Gives domain and system name, may allow an attacker to brute force for access. Also will allow an NT4 user to change his password regardless of the 'user cannot change password' security policy. CVE-1999-0407. BID-4236. BID-2110. See: CVE-1999-0407: 
++ GET /iisadmpwd/aexp2b.htr: Gives domain and system name, may allow an attacker to brute force for access. Also will allow an NT4 user to change his password regardless of the 'user cannot change password' security policy. CVE-1999-0407. BID-4236. BID-2110. See: CVE-1999-0407: 
++ GET /iisadmpwd/aexp3.htr: Gives domain and system name, may allow an attacker to brute force for access. Also will allow an NT4 user to change his password regardless of the 'user cannot change password' security policy. CVE-1999-0407. BID-4236. BID-2110. See: CVE-1999-0407: 
++ GET /iisadmpwd/aexp4.htr: Gives domain and system name, may allow an attacker to brute force for access. Also will allow an NT4 user to change his password regardless of the 'user cannot change password' security policy. CVE-1999-0407. BID-4236. BID-2110. See: CVE-1999-0407: 
++ GET /iisadmpwd/aexp4b.htr: Gives domain and system name, may allow an attacker to brute force for access. Also will allow an NT4 user to change his password regardless of the 'user cannot change password' security policy. CVE-1999-0407. BID-4236. BID-2110. See: CVE-1999-0407: 
++ GET /admin/wg_user-info.ml: WebGate Web Eye exposes user names and passwords. See: OSVDB-2922: 
++ GET /iissamples/exair/search/query.asp: Scripts within the Exair package on IIS 4 can be used for a DoS against the server. See: CVE-1999-0449: 
++ GET /ccbill/secure/ccbill.log: CC Bill log file. Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /cfdocs/exampleapp/email/application.cfm: This might be interesting.
++ GET /cfdocs/exampleapp/publish/admin/addcontent.cfm: This might be interesting.
++ GET /cfdocs/exampleapp/publish/admin/application.cfm: This might be interesting.
++ GET /cfdocs/examples/httpclient/mainframeset.cfm: This might be interesting.
++ GET /config/checks.txt: This might be interesting.
++ GET /easylog/easylog.html: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /hitmatic/analyse.cgi: This might be interesting.
++ GET /hyperstat/stat_what.log: This might be interesting. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /ministats/admin.cgi: This might be interesting.
++ GET /officescan/cgi/jdkRqNotify.exe: This might be interesting.
++ GET /orders/checks.txt: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /orders/mountain.cfg: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /orders/orders.log: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /orders/orders.txt: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /piranha/secure/passwd.php3: This might be interesting.
++ GET /reviews/newpro.cgi: This might be interesting.
++ GET /users/scripts/submit.cgi: This might be interesting.
++ GET /webaccess/access-options.txt: This might be interesting.
++ GET /WebShop/logs/cc.txt: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /WebShop/templates/cc.txt: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /wwwboard/wwwboard.cgi: This might be interesting.
++ GET /wwwboard/wwwboard.pl: This might be interesting.
++ GET /wwwthreads/3tvars.pm: This might be interesting.
++ GET /wwwthreads/w3tvars.pm: This might be interesting.
++ GET /adsamples/config/site.csc: Contains SQL username/password. See: CVE-1999-1520: 
++ GET /advworks/equipment/catalog_type.asp: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /samples/search/queryhit.htm: This might be interesting.
++ GET /scripts/counter.exe: This might be interesting.
++ GET /scripts/cphost.dll: cphost.dll may have a DoS and a traversal issue. See: CVE-2002-1769: 
++ GET /scripts/fpadmcgi.exe: This might be interesting.
++ GET /scripts/postinfo.asp: This might be interesting.
++ GET /scripts/samples/ctguestb.idc: This might be interesting.
++ GET /scripts/samples/search/webhits.exe: This might be interesting.
++ GET /_mem_bin/FormsLogin.asp: This might be interesting: user login.
++ GET /perl/files.pl: This might be interesting.
++ GET /perl5/files.pl: This might be interesting.
++ GET /scripts/convert.bas: This might be interesting.
++ GET /cgi-dos/args.bat: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /acartpath/signin.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/auth.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/cfg/configscreen.inc.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/cfg/configsite.inc.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/cfg/configsql.inc.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/cfg/configtache.inc.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/cms/htmltags.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/credit_card_info.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/exec.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/modules/cache.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/objects.inc.php4: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/script.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/settings.inc.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/templates/header.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin/upload.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /admin_t/include/aff_liste_langue.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /approval/ts_app.htm: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /b2-tools/gm-2-b2.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /bandwidth/index.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /bin/common/user_update_passwd.pl: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /biztalktracking/RawCustomSearchField.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /biztalktracking/rawdocdata.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /board/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /board/philboard_admin.asp+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /caupo/admin/admin_workspace.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ccbill/whereami.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /chat_dir/register.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /community/forumdisplay.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /community/index.php?analized=anything: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /community/member.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /config/html/cnf_gi.htm: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /cp/rac/nsManager.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /cutenews/comments.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /cutenews/search.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /cutenews/shownews.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /Data/settings.xml+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /database/metacart.mdb+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dcp/advertiser.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /doc/admin/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dotproject/modules/files/index_table.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dotproject/modules/projects/addedit.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dotproject/modules/projects/view.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dotproject/modules/projects/vw_files.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dotproject/modules/tasks/addedit.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /dotproject/modules/tasks/viewgantt.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ez2000/ezadmin.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ez2000/ezboard.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ez2000/ezman.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /faqman/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /filemanager/index.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /filemgmt/brokenfile.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /filemgmt/singlefile.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /filemgmt/viewcat.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /filemgmt/visit.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /foro/YaBB.pl: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /forum/mainfile.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /forum/member.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /forum/newreply.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /forum/newthread.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /forum/viewtopic.php: phpBB found.
++ GET /homebet/homebet.dll?form=menu&amp;option=menu-signin: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /idealbb/error.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /iisprotect/admin/SiteAdmin.ASP?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /include/customize.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /include/help.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /includes/footer.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /includes/header.php3: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /infos/contact/index.asp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /infos/faq/index.asp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /infos/gen/index.asp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /infos/services/index.asp: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /instaboard/index.cfm: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /intranet/browse.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /kernel/class/delete.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /kernel/classes/ezrole.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /livredor/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /mail/include.html: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /mail/settings.html: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /mambo/banners.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /manage/login.asp+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /mantis/summary_graph_functions.php?g_jpgraph_path=http%3A%2F%2Fattackershost%2Flistings.txt%3F: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /members/ID.pm: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /members/ID.xbb: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modif/delete.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modif/ident.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/Downloads/voteinclude.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/Forums/attachment.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/Search/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/WebChat/in.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/WebChat/out.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/WebChat/quit.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/WebChat/users.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /modules/Your_Account/navbar.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /msadc/Samples/SELECTOR/showcode.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /myguestBk/add1.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /myguestBk/admin/delEnt.asp?id=NEWSNUMBER|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /myguestBk/admin/index.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /nphp/nphpd.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /oscommerce/default.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /php/gaestebuch/admin/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /php/php4ts.dll: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /pm/lib.inc.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /produccart/pdacmin/login.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /productcart/database/EIPC.mdb: Seen in carding forums. See: https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /productcart/pc/Custva.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ProductCart/pc/msg.asp?|-|0|404_Object_Not_Found: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /prometheus-all/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /protected/secret.html+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /pvote/add.php?question=AmIgAy&amp;o1=yes&amp;o2=yeah&amp;o3=well..yeah&amp;o4=bad%20: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /pvote/del.php?pollorder=1%20: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /room/save_item.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /scripts/tradecli.dll: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /security/web_access.html: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /servers/link.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /shop/php_files/site.config.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /shop/search.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /shop/show.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /Site/biztalkhttpreceive.dll: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /staticpages/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /supporter/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /supporter/tupdate.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /technote/print.cgi: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /topic/entete.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /topsitesdir/edit.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ttforum/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /tutos/file/file_new.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /tutos/file/file_select.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /typo3/dev/translations.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /cms/typo3/dev/translations.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /site/typo3/dev/translations.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /typo/typo3/dev/translations.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /typo3/typo3/dev/translations.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /uifc/MultFileUploadHandler.php+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /utils/sprc.asp+: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /VBZooM/add-subject.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /wbboard/profile.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /wbboard/reply.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /webcalendar/login.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /webcalendar/view_m.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /webmail/lib/emailreader_execute_on_each_page.inc.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /web_app/WEB-INF/webapp.properties: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /XMBforum/buddy.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /XMBforum/member.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /yabbse/Reminder.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /yabbse/Sources/Packages.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /zentrack/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ows-bin/oaskill.exe?abcde.exe: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /ows-bin/oasnetconf.exe?-l%20-s%20BlahBlah: This might be interesting: has been seen in web logs from an unknown scanner.
++ GET /tomcat-docs/index.html: Default Apache Tomcat documentation found. See: CWE-552: 
++ GET /ojspdemos/basic/hellouser/hellouser.jsp: Oracle 9i default JSP page found, may be vulnerable to XSS in any field. See: CWE-552: 
++ GET /ojspdemos/basic/simple/usebean.jsp: Oracle 9i default JSP page found, may be vulnerable to XSS in any field. See: CWE-552: 
++ GET /ojspdemos/basic/simple/welcomeuser.jsp: Oracle 9i default JSP page found, may be vulnerable to XSS in any field. See: CWE-552: 
++ GET /php/index.php: Monkey Http Daemon default PHP file found. See: CWE-552: 
++ GET /admcgi/contents.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /admcgi/scripts/Fpadmcgi.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /admisapi/fpadmin.htm: Default FrontPage file found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/admin.pl: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/cfgwiz.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/CGImail.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/contents.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/fpadmin.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/fpremadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /bin/fpsrvadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/admin.pl: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/cfgwiz.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/CGImail.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/contents.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/fpadmin.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/fpremadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /cgi-bin/fpsrvadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/admin.pl: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/cfgwiz.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/CGImail.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/contents.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/fpadmin.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/fpcount.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/fpremadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /scripts/fpsrvadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_private/orders.htm: Default FrontPage file found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_private/orders.txt: Default FrontPage file found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_private/register.htm: Default FrontPage file found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_private/register.txt: Default FrontPage file found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_private/registrations.txt: Default FrontPage file found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/admin.pl: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/cfgwiz.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/CGImail.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/contents.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/fpadmin.htm: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/fpremadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_bin/fpsrvadm.exe: Default FrontPage CGI found. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_pvt/administrators.pwd: Default FrontPage file found, may be a password file. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_pvt/authors.pwd: Default FrontPage file found, may be a password file. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_pvt/service.pwd: Default FrontPage file found, may be a password file. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /_vti_pvt/users.pwd: Default FrontPage file found, may be a password file. See: https://en.wikipedia.org/wiki/Microsoft_FrontPage: 
++ GET /help/contents.htm: Default Netscape manual found. All default pages should be removed. See: CWE-552: 
++ GET /help/home.html: Default Netscape manual found. All default pages should be removed. See: CWE-552: 
++ GET /manual/ag/esperfrm.htm: Default Netscape manual found. All default pages should be removed. See: CWE-552: 
++ GET /com/novell/gwmonitor/help/en/default.htm: Netware gateway monitor access documentation found. All default documentation should be removed from web servers. See: CWE-552: 
++ GET /com/novell/webaccess/help/en/default.htm: Netware web access documentation found. All default documentation should be removed from web servers. See: CWE-552: 
++ GET /com/novell/webpublisher/help/en/default.htm: Netware web publisher documentation found. All default documentation should be removed from web servers. See: CWE-552: 
++ GET /iissamples/sdk/asp/docs/codebrw2.asp: This is a default IIS script/file that should be removed. See: CVE-1999-0739,MS99-013: 
++ GET /iissamples/sdk/asp/docs/codebrws.asp: This is a default IIS script/file that should be removed. See: CVE-1999-0739,MS99-013: 
++ GET /iissamples/sdk/asp/docs/Winmsdp.exe: This is a default IIS script/file that should be removed. CVE-1999-0738. MS99-013. See: CVE-1999-1451,MS99-013: 
++ GET /php/mlog.html: Remote file read vulnerability 1999-0346. See: CVE-1999-0068: 
++ GET /php/mlog.phtml: Remote file read vulnerability 1999-0346. See: CVE-1999-0068: 
++ GET /_private/form_results.htm: This file may contain information submitted by other web users via forms. See: CVE-1999-1052: 
++ GET /_private/form_results.html: This file may contain information submitted by other web users via forms. See: CVE-1999-1052: 
++ GET /_private/form_results.txt: This file may contain information submitted by other web users via forms. See: CVE-1999-1052: 
++ GET /scripts/tools/getdrvrs.exe: MS Jet database engine can be used to make DSNs, useful with an ODBC exploit and the RDS exploit (with msadcs.dll) which mail allow command execution. See: http://attrition.org/security/advisory/individual/rfp/rfp.9901.nt_odbc: 
++ GET /project/index.php?m=projects&user_cookie=1: dotProject 0.2.1.5 may allow admin login bypass by adding the user_cookie=1 to the URL. See: CVE-2002-1428: 
++ GET /site/eg/source.asp: This ASP (installed with Apache::ASP) allows attackers to upload files to the server. Upgrade to 1.95 or higher. See: CVE-2000-0628: 
++ GET /iissamples/exair/search/advsearch.asp: Scripts within the Exair package on IIS 4 can be used for a DoS against the server. See: CVE-1999-0449: 
++ GET /data/member_log.txt: Teekai's forum full 1.2 member's log can be retrieved remotely. See: CVE-2002-2057: 
++ GET /data/userlog/log.txt: Teekai's Tracking Online 1.0 log can be retrieved remotely. See: CVE-2002-2058: 
++ GET /ASP/cart/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /mcartfree/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /metacart/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /shop/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /shoponline/fpdb/shop.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /shopping/database/metacart.mdb: MetaCart2 is an ASP shopping cart. The database of customers is available via the web. See: CVE-2002-0943 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /admin/adminproc.asp: Xpede administration page may be available. The /admin directory should be protected. See: CVE-2002-0579: 
++ GET /admin/datasource.asp: Xpede page reveals SQL account name. The /admin directory should be protected. See: CVE-2002-0579: 
++ GET /utils/sprc.asp: Xpede page may allow SQL injection. See: CVE-2002-0579: 
++ GET /acart2_0/acart2_0.mdb: Alan Ward A-Cart 2.0 allows remote user to read customer database file which may contain usernames, passwords, credit cards and more. See: CVE-2006-2948: 
++ GET /acart2_0/admin/category.asp?catcode=': Alan Ward A-Cart 2.0 is vulnerable to a SQL inject attack. See: CVE-2004-1873: 
++ GET /Sites/Knowledge/Membership/Inspired/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /Sites/Knowledge/Membership/Inspiredtutorial/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /Sites/Samples/Knowledge/Membership/Inspired/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /Sites/Samples/Knowledge/Membership/Inspiredtutorial/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /Sites/Samples/Knowledge/Push/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /Sites/Samples/Knowledge/Search/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /SiteServer/Publishing/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. See: CVE-1999-0737,MS99-013: 
++ GET /siteserver/publishing/viewcode.asp?source=/default.asp: May be able to view source code using Site Server vulnerability. See: OSVDB-17671: 
++ GET /securelogin/1,2345,A,00.html: Vignette Story Server v4.1, 6, may disclose sensitive information via a buffer overflow. See: CVE-2002-0385: 
++ GET /MWS/HandleSearch.html?searchTarget=test&B1=Submit: MyWebServer 1.0.2 may be vulnerable to a buffer overflow (untested). Upgrade to a later version if 990b of searched data crashes the server. See: CVE-2002-1452: 
++ GET /dc/auth_data/auth_user_file.txt: The DCShop installation allows credit card numbers to be viewed remotely. See: CVE-2001-0821 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /dc/orders/orders.txt: The DCShop installation allows credit card numbers to be viewed remotely. See: CVE-2001-0821 https://packetstormsecurity.com/files/32406/xmas.txt.html: 
++ GET /cgi-bin/hpnst.exe?c=p+i=SrvSystemInfo.html: HP Instant TopTools GoAhead WebServer hpnst.exe may be vulnerable to a DoS. See: CVE-2003-0169: 
++ GET /_layouts/alllibs.htm: Microsoft SharePoint Portal and Team Services vulnerable to NT or NTLM authentication bypass on Win2000 SP4 using IE 6.x. See: https://seclists.org/bugtraq/2003/Nov/226: 
++ GET /_layouts/settings.htm: Microsoft SharePoint Portal and Team Services vulnerable to NT or NTLM authentication bypass on Win2000 SP4 using IE 6.x. See: https://seclists.org/bugtraq/2003/Nov/226: 
++ GET /_layouts/userinfo.htm: Microsoft SharePoint Portal and Team Services vulnerable to NT or NTLM authentication bypass on Win2000 SP4 using IE 6.x. See: https://seclists.org/bugtraq/2003/Nov/226: 
++ GET /iissamples/exair/howitworks/Code.asp: Scripts within the Exair package on IIS 4 can be used for a DoS against the server. See: CVE-1999-0449: 
++ GET /iissamples/exair/howitworks/Codebrw1.asp: This is a default IIS script/file which should be removed, it may allow a DoS against the server. See: CVE-1999-0449 MS99-013: 
++ GET /iissamples/sdk/asp/docs/CodeBrws.asp?Source=/IISSAMPLES/%c0%ae%c0%ae/default.asp: IIS may be vulnerable to source code viewing via the example CodeBrws.asp file. Remove all default files from the web root. See: CVE-1999-0739 MS99-013: 
++ GET /admin/admin.php?adminpy=1: PY-Membres 4.2 may allow administrator access. See: CVE-2001-1198: 
++ GET /webcache/webcache.xml: Oracle WebCache Demo. See: CWE-552: 
++ GET /bmp/global-web-application.xml: SQLJ Demo Application. See: CWE-552: 
++ GET /bmp/JSPClient.java: SQLJ Demo Application. See: CWE-552: 
++ GET /bmp/mime.types: SQLJ Demo Application. See: CWE-552: 
++ GET /bmp/README.txt: SQLJ Demo Application. See: CWE-552: 
++ GET /bmp/sqljdemo.jsp: SQLJ Demo Application. See: CWE-552: 
++ GET /bmp/setconn.jsp: SQLJ Demo Application. See: CWE-552: 
++ GET /OA_HTML/oam/weboam.log: Oracle log files. See: CWE-552: 
++ GET /_pages/_webapp/_admin/_showpooldetails.java: Oracle JSP files. See: CWE-552: 
++ GET /_pages/_webapp/_admin/_showjavartdetails.java: Oracle JSP file. See: CWE-552: 
++ GET /OA_HTML/webtools/doc/index.html: Cabo DHTML Components Help Page. See: CWE-552: 
++ GET /reports/rwservlet?server=repserv+report=/tmp/hacker.rdf+destype=cache+desformat=PDF: Oracle Reports rwservlet report Variable Arbitrary Report Executable Execution. See: https://www.exploit-db.com/exploits/26006: 
++ GET /OA_HTML/PTB/mwa_readme.htm: Oracle Mobile Applications Industrial Server administration and configuration interface. See: CWE-552: 
++ GET /pls/portal/owa_util.cellsprint?p_theQuery=select: Direct access to Oracle packages could have an unknown impact.
++ GET /pls/portal/owa_util.listprint?p_theQuery=select: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/owa_util.show_query_columns?ctable=sys.dba_users: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/owa_util.showsource?cname=owa_util: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/owa_util.cellsprint?p_theQuery=select+*+from+sys.dba_users: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/owa_util.signature: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/HTP.PRINT: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/CXTSYS.DRILOAD.VALIDATE_STMT: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/PORTAL_DEMO.ORG_CHART.SHOW: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/PORTAL.wwv_form.genpopuplist: Access to Oracle pages cold have an unknown impact.
++ GET /pls/portal/PORTAL.wwv_ui_lovf.show: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/PORTAL.wwv_dynxml_generator.show: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/PORTAL.home: Access to Oracle pages could have an unknown impact.
++ GET /pls/portal/PORTAL.wwv_main.render_warning_screen?p_oldurl=inTellectPRO&p_newurl=inTellectPRO: Access to Oracle pages could have an unknown impact.
++ GET /OA_HTML/jsp/por/services/login.jsp: Oracle Applications portal pages found.
++ GET /OA_HTML/PTB/ICXINDEXBASECASE.htm: Oracle Applications portal pages found.
++ GET /OA_HTML/PTB/ECXOTAPing.htm: Oracle Applications portal pages found.
++ GET /OA_HTML/PTB/xml_sample1.htm: Oracle Applications portal pages found.
++ GET /OA_HTML/jsp/wf/WFReassign.jsp: Oracle Applications portal pages found.
++ GET /OA_JAVA/servlet.zip: Oracle Applications portal pages found.
++ GET /OA_JAVA/oracle/forms/registry/Registry.dat: Oracle Applications portal pages found.
++ GET /OA_HTML/jsp/fnd/fndversion.jsp: Oracle Applications help page found. See: CWE-552: 
++ GET /OA_HTML/jsp/fnd/fndhelp.jsp?dbc=/u01/oracle/prodappl/fnd/11.5.0/secure/dbprod2_prod.dbc: Oracle Applications help page found. See: CWE-552: 
++ GET /OA_HTML/jsp/fnd/fndhelputil.jsp: Oracle Applications help page found. See: CWE-552: 
++ GET /install/install.php: Install file found.
++ GET /doc/icodUserGuide.pdf: Instant Capacity on Demand (iCOD) Userís Guide. See: CWE-552: 
++ GET /doc/planning_SuperDome_configs.pdf: Planning HP SuperDome Configurations. See: CWE-552: 
++ GET /doc/vxvm/pitc_ag.pdf: VERITAS FlashSnapTM Point-In-Time Copy Solutions documentation. See: CWE-552: 
++ GET /doc/Judy/Judy_tech_book.pdf: HP Judy documentation found. See: CWE-552: 
++ GET /doc/vxvm/vxvm_ag.pdf: Veritas Volume Manager documentation. See: CWE-552: 
++ GET /doc/vxvm/vxvm_hwnotes.pdf: Veritas Volume Manager documentation. See: CWE-552: 
++ GET /doc/vxvm/vxvm_ig.pdf: Veritas Volume Manager documentation. See: CWE-552: 
++ GET /doc/vxvm/vxvm_mig.pdf: Veritas Volume Manager documentation. See: CWE-552: 
++ GET /doc/vxvm/vxvm_tshoot.pdf: Veritas Volume Manager documentation. See: CWE-552: 
++ GET /doc/vxvm/vxvm_notes.pdf: Veritas Volume Manager documentation. See: CWE-552: 
++ GET /doc/vxvm/vxvm_ug.pdf: Veritas Volume Manager documentation. See: CWE-552: 
++ GET /content/sitemap.gz: The sitemap.gz file, used for Google indexing, contains an xml representation of the web site\'s structure.
++ GET /includes/sendmail.inc: Include files (.inc) should not be served in plain text.
++ GET /wordpress/wp-app.log: Wordpress' wp-app.log may leak application/system details.
++ GET /config/config.txt: Configuration file found.
++ GET /config/readme.txt: Readme file found.
++ GET /data/readme.txt: Readme file found.
++ GET /log/readme.txt: Readme file found.
++ GET /logs/readme.txt: Readme file found.
++ GET /uploads/readme.txt: Readme file found.
++ GET /admin/account.asp: Admin login page/section found.
++ GET /admin/account.html: Admin login page/section found.
++ GET /admin/account.php: Admin login page/section found.
++ GET /admin/controlpanel.asp: Admin login page/section found.
++ GET /admin/controlpanel.html: Admin login page/section found.
++ GET /admin/controlpanel.php: Admin login page/section found.
++ GET /admin/cp.asp: Admin login page/section found.
++ GET /admin/cp.html: Admin login page/section found.
++ GET /admin/cp.php: Admin login page/section found.
++ GET /admin/home.asp: Admin login page/section found.
++ GET /admin/home.php: Admin login page/section found.
++ GET /admin/index.asp: Admin login page/section found.
++ GET /admin/index.html: Admin login page/section found.
++ GET /admin/login.asp: Admin login page/section found.
++ GET /admin/login.html: Admin login page/section found.
++ GET /admin/login.php: Admin login page/section found.
++ GET /administrator/account.asp: Admin login page/section found.
++ GET /administrator/account.html: Admin login page/section found.
++ GET /administrator/account.php: Admin login page/section found.
++ GET /administrator/index.asp: Admin login page/section found.
++ GET /administrator/index.html: Admin login page/section found.
++ GET /administrator/index.php: Admin login page/section found.
++ GET /administrator/login.asp: Admin login page/section found.
++ GET /administrator/login.html: Admin login page/section found.
++ GET /administrator/login.php: Admin login page/section found.
++ GET /ccms/index.php: Admin login page/section found.
++ GET /ccms/login.php: Admin login page/section found.
++ GET /modelsearch/login.asp: Admin login page/section found.
++ GET /modelsearch/login.php: Admin login page/section found.
++ GET /moderator/admin.asp: Admin login page/section found.
++ GET /moderator/admin.html: Admin login page/section found.
++ GET /moderator/admin.php: Admin login page/section found.
++ GET /moderator/login.asp: Admin login page/section found.
++ GET /moderator/login.html: Admin login page/section found.
++ GET /moderator/login.php: Admin login page/section found.
++ GET /sdk/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/etc/vmware/hostd/vmInventory.xml: VMWare ESX is vulnerable to a directory traversal attack. See: CVE-2009-3733: 
++ GET /gif/hp_invent_logo.gif: This device may be an HP printer/scanner and allow retrieval of previously scanned images.
++ GET /gif/tricolor_ink_guage.gif: This device may be an HP printer/scanner and allow retrieval of previously scanned images.
++ GET /spin/main.csp: CA iTechnology SPIN interface found.
++ GET /mobileadmin/db/MobileAdminDB.sqlite: RoveIT Mobile Admin internal database is available for download.
++ GET /adfs/fs/federationserverservice.asmx: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /Federationmetadata/2007-06/FederationMetadata.xml: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /adfs/ls/IdpInitiatedSignon.aspx: Active Directory Federation Services page found. See: https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview: 
++ GET /includes/db.inc: Include files (.inc) should not be served in plain text.
++ GET /_vti_bin/owssvr.dll: FrontPage/Sharepointfile available.
++ GET /_vti_bin/_vti_adm/admin.exe: FrontPage/Sharepointfile available.
++ GET /_vti_bin/_vti_aut/author.exe: FrontPage/Sharepointfile available.
++ GET /_vti_bin/_vti_aut/WS_FTP.log: FrontPage/Sharepointfile available.
++ GET /_vti_bin/_vti_aut/ws_ftp.log: FrontPage/Sharepointfile available.
++ GET /_vti_bin/_vti_aut/author.dll: FrontPage/Sharepointfile available.
++ GET /_layouts/addrole.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/AdminRecycleBin.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/AreaNavigationSettings.aspx: FrontPage/Sharepointfile available.
++ GET /_Layouts/AreaTemplateSettings.aspx: FrontPage/Sharepointfile available.
++ GET /_Layouts/AreaWelcomePage.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/bpcf.aspx: FrontPage/Sharepointfile available.
++ GET /_Layouts/ChangeSiteMasterPage.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/create.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/editgrp.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/editprms.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/help.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/listedit.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/ManageFeatures.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/mcontent.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/mngctype.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/mngfield.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/mngsiteadmin.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/mngsubwebs.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/mngsubwebs.aspx?view=sites: FrontPage/Sharepointfile available.
++ GET /_layouts/mobile/mbllists.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/MyInfo.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/MyPage.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/MyTasks.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/navoptions.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/NewDwp.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/newgrp.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/newsbweb.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/PageSettings.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/people.aspx?MembershipGroupId=0: FrontPage/Sharepointfile available.
++ GET /_layouts/permsetup.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/picker.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/policy.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/policyconfig.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/policycts.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/Policylist.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/prjsetng.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/quiklnch.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/recyclebin.aspx: FrontPage/Sharepointfile available.
++ GET /_Layouts/RedirectPage.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/role.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/settings.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/SiteDirectorySettings.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/sitemanager.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/SiteManager.aspx?lro=all: FrontPage/Sharepointfile available.
++ GET /_layouts/spcf.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/storman.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/themeweb.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/topnav.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/user.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/userdisp.aspx?ID=1: FrontPage/Sharepointfile available.
++ GET /_layouts/useredit.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/useredit.aspx?ID=1: FrontPage/Sharepointfile available.
++ GET /_layouts/viewlsts.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/vsubwebs.aspx: FrontPage/Sharepointfile available.
++ GET /_layouts/WPPrevw.aspx?ID=247: FrontPage/Sharepointfile available.
++ GET /_layouts/wrkmng.aspx: FrontPage/Sharepointfile available.
++ GET /Forms/DispForm.aspx: FrontPage/Sharepointfile available.
++ GET /Forms/DispForm.aspx?ID=1: FrontPage/Sharepointfile available.
++ GET /Forms/EditForm.aspx: FrontPage/Sharepointfile available.
++ GET /Forms/EditForm.aspx?ID=1: FrontPage/Sharepointfile available.
++ GET /Forms/Forms/AllItems.aspx: FrontPage/Sharepointfile available.
++ GET /Forms/MyItems.aspx: FrontPage/Sharepointfile available.
++ GET /Forms/NewForm.aspx: FrontPage/Sharepointfile available.
++ GET /Pages/default.aspx: FrontPage/Sharepointfile available.
++ GET /Pages/Forms/AllItems.aspx: FrontPage/Sharepointfile available.
++ GET /_catalogs/masterpage/Forms/AllItems.aspx: FrontPage/Sharepointfile available.
++ GET /_catalogs/wp/Forms/AllItems.aspx: FrontPage/Sharepointfile available.
++ GET /_catalogs/wt/Forms/Common.aspx: FrontPage/Sharepointfile available.
++ GET /_vti_pvt/service.grp: FrontPage/Sharepointfile available.
++ GET /_vti_pvt/botsinf.cnf: FrontPage/Sharepointfile available.
++ GET /_vti_pvt/structure.cnf: FrontPage/Sharepointfile available.
++ GET /_vti_pvt/uniqperm.cnf: FrontPage/Sharepointfile available.
++ GET /wp-content/plugins/gravityforms/change_log.txt: Gravity forms is installed. Based on the version number in the changelog, it is vulnerable to an authenticated SQL injection. https://wpvulndb.com/vulnerabilities/7849.
++ GET /wordpress/wp-content/plugins/gravityforms/change_log.txt: Gravity forms is installed. Based on the version number in the changelog, it is vulnerable to an authenticated SQL injection. https://wpvulndb.com/vulnerabilities/7849.
++ GET /loleaflet/dist/admin/admin.html: LibreOffice Online Admin interface found (pass protected).
++ GET /dist/admin/admin.html: LibreOffice Online Admin interface found (pass protected).
++ GET /wordpress/.wp-config.php.swp: .wp-config.php.swp file found. This file is swap file created when editing with vi/vim editor. This file contains the credentials.
++ GET /wordpress/wp-config.php~: wp-config.php~ file found. This file is a backup file created when editing with emacs editor. This file contains the credentials.
++ GET /wordpress/wp-config.php.bak: wp-config.php.bak file found. This file contains the credentials.
++ GET /wordpress/wp-config.php.bakup: wp-config.php.bakup file found. This file contains the credentials.
++ GET /wordpress/#wp-config.php#: #wp-config.php# file found. This file contains the credentials.
++ GET /wordpress/wp-config.php_bak: wp-config.php_bak file found. This file contains the credentials.

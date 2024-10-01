@@ -1,0 +1,5 @@
+[ssh-auth-methods] [javascript] [info] 192.168.1.14:22222 ["["publickey","gssapi-keyex","gssapi-with-mic","password"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.14:22222 ["Vulnerable to Terrapin"]
+[ssh-password-auth] [javascript] [info] 192.168.1.14:22222
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.14:22222
+[ssh-server-enumeration] [javascript] [info] 192.168.1.14:22222 ["SSH-2.0-OpenSSH_7.5"]

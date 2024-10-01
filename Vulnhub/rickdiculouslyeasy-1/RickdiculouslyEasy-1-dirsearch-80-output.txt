@@ -1,0 +1,22 @@
+# Dirsearch started Tue Oct  1 06:44:13 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.14:80 -o RickdiculouslyEasy-1-dirsearch-80-output.txt -q
+
+403   220B   http://192.168.1.14/.ht_wsr.txt
+403   223B   http://192.168.1.14/.htaccess.bak1
+403   225B   http://192.168.1.14/.htaccess.sample
+403   223B   http://192.168.1.14/.htaccess.orig
+403   223B   http://192.168.1.14/.htaccess.save
+403   224B   http://192.168.1.14/.htaccess_extra
+403   223B   http://192.168.1.14/.htaccess_orig
+403   221B   http://192.168.1.14/.htaccess_sc
+403   221B   http://192.168.1.14/.htaccessOLD
+403   221B   http://192.168.1.14/.htaccessBAK
+403   222B   http://192.168.1.14/.htaccessOLD2
+403   213B   http://192.168.1.14/.htm
+403   214B   http://192.168.1.14/.html
+403   219B   http://192.168.1.14/.htpasswds
+403   223B   http://192.168.1.14/.htpasswd_test
+403   220B   http://192.168.1.14/.httr-oauth
+403   217B   http://192.168.1.14/cgi-bin/
+301   238B   http://192.168.1.14/passwords    -> REDIRECTS TO: http://192.168.1.14/passwords/
+200     1KB  http://192.168.1.14/passwords/
+200   126B   http://192.168.1.14/robots.txt
