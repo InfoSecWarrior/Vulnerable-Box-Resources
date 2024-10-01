@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Oct  1 13:08:35 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA Pinkys-Palace-v4-all-ports-scan-output 192.168.2.125
+Nmap scan report for 192.168.2.125 (192.168.2.125)
+Host is up (0.00012s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+80/tcp    open  http
+65535/tcp open  unknown
+MAC Address: 08:00:27:D7:91:2B (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/share/nmap
+# Nmap done at Tue Oct  1 13:10:19 2024 -- 1 IP address (1 host up) scanned in 104.06 seconds
