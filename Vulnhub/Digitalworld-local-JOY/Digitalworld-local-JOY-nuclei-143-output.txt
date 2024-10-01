@@ -1,0 +1,2 @@
+[imap-detect] [tcp] [info] 192.168.0.243:143
+[rsync-list-modules] [javascript] [low] 192.168.0.243:143 ["*  OK  [CAPABILITY  IMAP4rev1  LITERAL+  SASL-IR  LOGIN-REFERRALS  ID  ENABLE  IDLE  STARTTLS  LOGINDISABLED]  Dovecot  ready.  BAD  Error  in  IMAP  command  received  by  server.  *  BAD  Error  in  IMAP  command  received  by  server."]

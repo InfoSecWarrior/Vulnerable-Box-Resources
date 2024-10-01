@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sun Sep 29 16:38:36 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,25,80,110,139,143,445,465,587,993,995 -oA Digitalworld-local-JOY-nmap-version-scan-output 192.168.0.243 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 21,22,25,80,110,139,143,445,465,587,993,995 -oA Digitalworld-local-JOY-nmap-version-scan-output 192.168.0.243" start="1727608116" startstr="Sun Sep 29 16:38:36 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="12" services="21-22,25,80,110,139,143,445,465,587,993,995"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727608116"/>
+<taskend task="NSE" time="1727608116"/>
+<taskbegin task="NSE" time="1727608116"/>
+<taskend task="NSE" time="1727608116"/>
+<taskbegin task="NSE" time="1727608116"/>
+<taskend task="NSE" time="1727608116"/>
+<taskbegin task="ARP Ping Scan" time="1727608116"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.243" addrtype="ipv4"/>
+<address addr="08:00:27:47:80:DB" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727608116" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727608116"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727608116"/>
+<taskbegin task="Connect Scan" time="1727608116"/>
+<taskend task="Connect Scan" time="1727608116" extrainfo="12 total ports"/>
+<taskbegin task="Service scan" time="1727608116"/>
+<taskend task="Service scan" time="1727608127" extrainfo="12 services on 1 host"/>
+<taskbegin task="NSE" time="1727608128"/>
+<taskend task="NSE" time="1727608158"/>
+<taskbegin task="NSE" time="1727608158"/>
+<taskend task="NSE" time="1727608159"/>
+<taskbegin task="NSE" time="1727608159"/>
+<taskend task="NSE" time="1727608159"/>
+<host starttime="1727608116" endtime="1727608159"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.243" addrtype="ipv4"/>
+<address addr="08:00:27:47:80:DB" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+<hostname name="192.168.0.243" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="ProFTPD" version="1.2.10" hostname="The" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd:1.2.10</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;drwxrwxr-x   2 ftp      ftp          4096 Jan  6  2019 download&#xa;drwxrwxr-x   2 ftp      ftp          4096 Jan 10  2019 upload"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="Dropbear sshd" version="0.34" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:matt_johnston:dropbear_ssh_server:0.34</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" JOY.localdomain" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="smtp-commands" output="JOY.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8"/><script id="ssl-cert" output="Subject: commonName=JOY&#xa;Subject Alternative Name: DNS:JOY&#xa;Issuer: commonName=JOY&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2018-12-23T14:29:24&#xa;Not valid after:  2028-12-20T14:29:24&#xa;MD5:   9a80:5234:0ef3:1fdd:8f77:16fe:09ee:5b7b&#xa;SHA-1: 4f02:9a1c:1f41:2ec9:c0df:4523:b1f4:a480:25f9:0165"><table key="subject">
+<elem key="commonName">JOY</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">JOY</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C282093B20EBC5ED5687B18B445846CD2555E253B0A15F7E38242CDE686D245364EC4CD4CDFBA6FB39FA6060365805CBA96831B8D46E09FCCE5AE2E26FD7EA44D6196AD40D4AFA426AAD9DD051CD964017EEF82C099520E7A4B855968E01F56E11C056AEEB42127E221467104E8DE48755CD28DBAD5A4B35A7183073125CE949D037914E1178620A4D4010FC19F0D4A8A0CBC57EF083D33EBC093853027D975EB36F9FA6872B8E1007AC09C7445C2066C6C30DD41F30191D819732C55EC4D81DC12A727341376694270D184EA8BFD9AEC6381215639BF62E69CEE134D0B8467A8FF6B6CC0B79F1DBC8691742730966CD5690FD076148BA65BFD62F83C168FD8B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:JOY</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2018-12-23T14:29:24</elem>
+<elem key="notAfter">2028-12-20T14:29:24</elem>
+</table>
+<elem key="md5">9a8052340ef31fdd8f7716fe09ee5b7b</elem>
+<elem key="sha1">4f029a1c1f412ec9c0df4523b1f4a48025f90165</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICvDCCAaSgAwIBAgIJAOB9FmtuDenTMA0GCSqGSIb3DQEBCwUAMA4xDDAKBgNV&#xa;BAMMA0pPWTAeFw0xODEyMjMxNDI5MjRaFw0yODEyMjAxNDI5MjRaMA4xDDAKBgNV&#xa;BAMMA0pPWTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMKCCTsg68Xt&#xa;Voexi0RYRs0lVeJTsKFffjgkLN5obSRTZOxM1M37pvs5+mBgNlgFy6loMbjUbgn8&#xa;zlri4m/X6kTWGWrUDUr6QmqtndBRzZZAF+74LAmVIOekuFWWjgH1bhHAVq7rQhJ+&#xa;IhRnEE6N5IdVzSjbrVpLNacYMHMSXOlJ0DeRThF4YgpNQBD8GfDUqKDLxX7wg9M+&#xa;vAk4UwJ9l16zb5+mhyuOEAesCcdEXCBmxsMN1B8wGR2BlzLFXsTYHcEqcnNBN2aU&#xa;Jw0YTqi/2a7GOBIVY5v2LmnO4TTQuEZ6j/a2zAt58dvIaRdCcwlmzVaQ/QdhSLpl&#xa;v9Yvg8Fo/YsCAwEAAaMdMBswCQYDVR0TBAIwADAOBgNVHREEBzAFggNKT1kwDQYJ&#xa;KoZIhvcNAQELBQADggEBAA4HnoLSM97sTHyvzxGXfjrWhfrPM18Qzh+iVL46XMjc&#xa;YkZnAiyeU2FlY4xxlVjah+eb1pdNLYymbDdisv6HIkA7dfnf6jWBD2YxYSHhLfS7&#xa;dwLklgMLeoVNI3EjjkWGiIlfDRXwkwD8GglotAlAgFsBr4SKtnI3vEp6nrlfjj6y&#xa;VAxSZm3Q9z3Pm9WUZ8S6wV3MnoT5HTnRivt38Kbd1x24Bn1RsyrPIjHVteWZ+9vw&#xa;wX+4SmJ9suq568berTNJ3kv3kO0NSJO4O4z6QelwQB14lflbBMJATxCBDyIUtyow&#xa;x9Vlo8bbytCdNblSAjyxriZp1lZPmLOSe0D1YgpZWDQ=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.25" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.25</cpe></service><script id="http-server-header" output="Apache/2.4.25 (Debian)"><elem>Apache/2.4.25 (Debian)</elem>
+</script><script id="http-ls" output="Volume /&#xa;SIZE  TIME              FILENAME&#xa;-     2016-07-19 20:03  ossec/&#xa;&#xa;"><table key="volumes">
+<table>
+<elem key="volume">/</elem>
+<table key="files">
+<table>
+<elem key="size">-</elem>
+<elem key="time">2016-07-19 20:03</elem>
+<elem key="filename">ossec/</elem>
+</table>
+</table>
+</table>
+</table>
+<table key="total">
+<elem key="files">1</elem>
+<elem key="bytes">0</elem>
+</table>
+</script><script id="http-title" output="Index of /"><elem key="title">Index of /</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="TOP SASL CAPA PIPELINING STLS AUTH-RESP-CODE UIDL RESP-CODES"/><script id="ssl-cert" output="Subject: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG&#xa;Issuer: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2019-01-27T17:23:23&#xa;Not valid after:  2032-10-05T17:23:23&#xa;MD5:   c8f9:a1cb:ac3b:baa1:f158:2916:d7bd:d3b0&#xa;SHA-1: 5df6:1fce:d31e:e8c4:9bd9:b5b7:27fa:4f28:cfb9:34c6"><table key="subject">
+<elem key="commonName">JOY</elem>
+<elem key="countryName">SG</elem>
+<elem key="emailAddress">joy@goodtech.com.sg</elem>
+<elem key="localityName">Singapore</elem>
+<elem key="organizationName">Good Tech Pte. Ltd</elem>
+<elem key="organizationalUnitName">JOY</elem>
+<elem key="stateOrProvinceName">Singapore</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">JOY</elem>
+<elem key="countryName">SG</elem>
+<elem key="emailAddress">joy@goodtech.com.sg</elem>
+<elem key="localityName">Singapore</elem>
+<elem key="organizationName">Good Tech Pte. Ltd</elem>
+<elem key="organizationalUnitName">JOY</elem>
+<elem key="stateOrProvinceName">Singapore</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C11C5CAFF765CF5E5026387035EF36BFFCF3DB75F1FC126B04417651E34DF0030276C8DC1F73BB1F53D080B0E514F607FA4DC76DBD8AD53023BDB76083D2B102825957824B06A666E4DD907A9238882A77AE2BD158E21A9DBAE41F726C28696643207ED263BE71DA50D5E13E70CEB085B0A7458A7A8CFA7DDEA117CD7B2E8876AFC20AC746EBA457B3AFF954650889A9230D798455671CC9E231C9AAAD0E59F8780D54C9B90010EAEC945754A0CF5EB7EE2CEDE6935D619C3D0C12B82E3B8FFACD220BAA33EFA3204ACFA6B4415F7340F9F4AB72244B5EE075AA84AB0C1AF1F39AF42525C84B683B06901434C5A882696BDE03C0315B9F707170B5B541972409</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2019-01-27T17:23:23</elem>
+<elem key="notAfter">2032-10-05T17:23:23</elem>
+</table>
+<elem key="md5">c8f9a1cbac3bbaa1f1582916d7bdd3b0</elem>
+<elem key="sha1">5df61fced31ee8c49bd9b5b727fa4f28cfb934c6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDojCCAooCCQC7ojISCyumxzANBgkqhkiG9w0BAQsFADCBkjELMAkGA1UEBhMC&#xa;U0cxEjAQBgNVBAgMCVNpbmdhcG9yZTESMBAGA1UEBwwJU2luZ2Fwb3JlMRswGQYD&#xa;VQQKDBJHb29kIFRlY2ggUHRlLiBMdGQxDDAKBgNVBAsMA0pPWTEMMAoGA1UEAwwD&#xa;Sk9ZMSIwIAYJKoZIhvcNAQkBFhNqb3lAZ29vZHRlY2guY29tLnNnMB4XDTE5MDEy&#xa;NzE3MjMyM1oXDTMyMTAwNTE3MjMyM1owgZIxCzAJBgNVBAYTAlNHMRIwEAYDVQQI&#xa;DAlTaW5nYXBvcmUxEjAQBgNVBAcMCVNpbmdhcG9yZTEbMBkGA1UECgwSR29vZCBU&#xa;ZWNoIFB0ZS4gTHRkMQwwCgYDVQQLDANKT1kxDDAKBgNVBAMMA0pPWTEiMCAGCSqG&#xa;SIb3DQEJARYTam95QGdvb2R0ZWNoLmNvbS5zZzCCASIwDQYJKoZIhvcNAQEBBQAD&#xa;ggEPADCCAQoCggEBAMEcXK/3Zc9eUCY4cDXvNr/889t18fwSawRBdlHjTfADAnbI&#xa;3B9zux9T0ICw5RT2B/pNx229itUwI723YIPSsQKCWVeCSwamZuTdkHqSOIgqd64r&#xa;0VjiGp265B9ybChpZkMgftJjvnHaUNXhPnDOsIWwp0WKeoz6fd6hF817Loh2r8IK&#xa;x0brpFezr/lUZQiJqSMNeYRVZxzJ4jHJqq0OWfh4DVTJuQAQ6uyUV1Sgz1637izt&#xa;5pNdYZw9DBK4LjuP+s0iC6oz76MgSs+mtEFfc0D59KtyJEte4HWqhKsMGvHzmvQl&#xa;JchLaDsGkBQ0xaiCaWveA8AxW59wcXC1tUGXJAkCAwEAATANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAb8TK96b4AHhyrrhiFZDkEgSzU6W0p8t5UQbYrwx/g7oRtT78N6wD4rsA&#xa;t+1qfaWCTL5KJ7kLrVnAnCdcZow90FrmIdsr3dib/4IKKNueiidXb0HD2/2FXCIw&#xa;+b0QABRlw1WZEX1DiJDIj8nuI0CtuL3mRmWcbw6P4EwvwoMlQTc9aQ1goASpmVTN&#xa;1uZLCs1Kz8XIXJueyU0lsYsXumqvdaBIkcOwiIFB3wAaK6+TB+9m91GpNFR41fiH&#xa;yHD2de8hnao+fiYSE416zQHTZgG7zDHpvH6OrO+TLLdEWtEvYo9xV9oirLcro+Wj&#xa;p6Rjq4nlJrAyLA9BXP/I2xDPquktJA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="JOY" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="ssl-cert" output="Subject: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG&#xa;Issuer: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2019-01-27T17:23:23&#xa;Not valid after:  2032-10-05T17:23:23&#xa;MD5:   c8f9:a1cb:ac3b:baa1:f158:2916:d7bd:d3b0&#xa;SHA-1: 5df6:1fce:d31e:e8c4:9bd9:b5b7:27fa:4f28:cfb9:34c6"><table key="subject">
+<elem key="commonName">JOY</elem>
+<elem key="countryName">SG</elem>
+<elem key="emailAddress">joy@goodtech.com.sg</elem>
+<elem key="localityName">Singapore</elem>
+<elem key="organizationName">Good Tech Pte. Ltd</elem>
+<elem key="organizationalUnitName">JOY</elem>
+<elem key="stateOrProvinceName">Singapore</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">JOY</elem>
+<elem key="countryName">SG</elem>
+<elem key="emailAddress">joy@goodtech.com.sg</elem>
+<elem key="localityName">Singapore</elem>
+<elem key="organizationName">Good Tech Pte. Ltd</elem>
+<elem key="organizationalUnitName">JOY</elem>
+<elem key="stateOrProvinceName">Singapore</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C11C5CAFF765CF5E5026387035EF36BFFCF3DB75F1FC126B04417651E34DF0030276C8DC1F73BB1F53D080B0E514F607FA4DC76DBD8AD53023BDB76083D2B102825957824B06A666E4DD907A9238882A77AE2BD158E21A9DBAE41F726C28696643207ED263BE71DA50D5E13E70CEB085B0A7458A7A8CFA7DDEA117CD7B2E8876AFC20AC746EBA457B3AFF954650889A9230D798455671CC9E231C9AAAD0E59F8780D54C9B90010EAEC945754A0CF5EB7EE2CEDE6935D619C3D0C12B82E3B8FFACD220BAA33EFA3204ACFA6B4415F7340F9F4AB72244B5EE075AA84AB0C1AF1F39AF42525C84B683B06901434C5A882696BDE03C0315B9F707170B5B541972409</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2019-01-27T17:23:23</elem>
+<elem key="notAfter">2032-10-05T17:23:23</elem>
+</table>
+<elem key="md5">c8f9a1cbac3bbaa1f1582916d7bdd3b0</elem>
+<elem key="sha1">5df61fced31ee8c49bd9b5b727fa4f28cfb934c6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDojCCAooCCQC7ojISCyumxzANBgkqhkiG9w0BAQsFADCBkjELMAkGA1UEBhMC&#xa;U0cxEjAQBgNVBAgMCVNpbmdhcG9yZTESMBAGA1UEBwwJU2luZ2Fwb3JlMRswGQYD&#xa;VQQKDBJHb29kIFRlY2ggUHRlLiBMdGQxDDAKBgNVBAsMA0pPWTEMMAoGA1UEAwwD&#xa;Sk9ZMSIwIAYJKoZIhvcNAQkBFhNqb3lAZ29vZHRlY2guY29tLnNnMB4XDTE5MDEy&#xa;NzE3MjMyM1oXDTMyMTAwNTE3MjMyM1owgZIxCzAJBgNVBAYTAlNHMRIwEAYDVQQI&#xa;DAlTaW5nYXBvcmUxEjAQBgNVBAcMCVNpbmdhcG9yZTEbMBkGA1UECgwSR29vZCBU&#xa;ZWNoIFB0ZS4gTHRkMQwwCgYDVQQLDANKT1kxDDAKBgNVBAMMA0pPWTEiMCAGCSqG&#xa;SIb3DQEJARYTam95QGdvb2R0ZWNoLmNvbS5zZzCCASIwDQYJKoZIhvcNAQEBBQAD&#xa;ggEPADCCAQoCggEBAMEcXK/3Zc9eUCY4cDXvNr/889t18fwSawRBdlHjTfADAnbI&#xa;3B9zux9T0ICw5RT2B/pNx229itUwI723YIPSsQKCWVeCSwamZuTdkHqSOIgqd64r&#xa;0VjiGp265B9ybChpZkMgftJjvnHaUNXhPnDOsIWwp0WKeoz6fd6hF817Loh2r8IK&#xa;x0brpFezr/lUZQiJqSMNeYRVZxzJ4jHJqq0OWfh4DVTJuQAQ6uyUV1Sgz1637izt&#xa;5pNdYZw9DBK4LjuP+s0iC6oz76MgSs+mtEFfc0D59KtyJEte4HWqhKsMGvHzmvQl&#xa;JchLaDsGkBQ0xaiCaWveA8AxW59wcXC1tUGXJAkCAwEAATANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAb8TK96b4AHhyrrhiFZDkEgSzU6W0p8t5UQbYrwx/g7oRtT78N6wD4rsA&#xa;t+1qfaWCTL5KJ7kLrVnAnCdcZow90FrmIdsr3dib/4IKKNueiidXb0HD2/2FXCIw&#xa;+b0QABRlw1WZEX1DiJDIj8nuI0CtuL3mRmWcbw6P4EwvwoMlQTc9aQ1goASpmVTN&#xa;1uZLCs1Kz8XIXJueyU0lsYsXumqvdaBIkcOwiIFB3wAaK6+TB+9m91GpNFR41fiH&#xa;yHD2de8hnao+fiYSE416zQHTZgG7zDHpvH6OrO+TLLdEWtEvYo9xV9oirLcro+Wj&#xa;p6Rjq4nlJrAyLA9BXP/I2xDPquktJA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="imap-capabilities" output="listed more have LOGIN-REFERRALS post-login IMAP4rev1 IDLE STARTTLS OK Pre-login LOGINDISABLEDA0001 capabilities ID LITERAL+ SASL-IR ENABLE"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.5.12-Debian" extrainfo="workgroup: WORKGROUP" hostname="JOY" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" JOY.localdomain" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="JOY.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8"/><script id="ssl-cert" output="Subject: commonName=JOY&#xa;Subject Alternative Name: DNS:JOY&#xa;Issuer: commonName=JOY&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2018-12-23T14:29:24&#xa;Not valid after:  2028-12-20T14:29:24&#xa;MD5:   9a80:5234:0ef3:1fdd:8f77:16fe:09ee:5b7b&#xa;SHA-1: 4f02:9a1c:1f41:2ec9:c0df:4523:b1f4:a480:25f9:0165"><table key="subject">
+<elem key="commonName">JOY</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">JOY</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C282093B20EBC5ED5687B18B445846CD2555E253B0A15F7E38242CDE686D245364EC4CD4CDFBA6FB39FA6060365805CBA96831B8D46E09FCCE5AE2E26FD7EA44D6196AD40D4AFA426AAD9DD051CD964017EEF82C099520E7A4B855968E01F56E11C056AEEB42127E221467104E8DE48755CD28DBAD5A4B35A7183073125CE949D037914E1178620A4D4010FC19F0D4A8A0CBC57EF083D33EBC093853027D975EB36F9FA6872B8E1007AC09C7445C2066C6C30DD41F30191D819732C55EC4D81DC12A727341376694270D184EA8BFD9AEC6381215639BF62E69CEE134D0B8467A8FF6B6CC0B79F1DBC8691742730966CD5690FD076148BA65BFD62F83C168FD8B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:JOY</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2018-12-23T14:29:24</elem>
+<elem key="notAfter">2028-12-20T14:29:24</elem>
+</table>
+<elem key="md5">9a8052340ef31fdd8f7716fe09ee5b7b</elem>
+<elem key="sha1">4f029a1c1f412ec9c0df4523b1f4a48025f90165</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICvDCCAaSgAwIBAgIJAOB9FmtuDenTMA0GCSqGSIb3DQEBCwUAMA4xDDAKBgNV&#xa;BAMMA0pPWTAeFw0xODEyMjMxNDI5MjRaFw0yODEyMjAxNDI5MjRaMA4xDDAKBgNV&#xa;BAMMA0pPWTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMKCCTsg68Xt&#xa;Voexi0RYRs0lVeJTsKFffjgkLN5obSRTZOxM1M37pvs5+mBgNlgFy6loMbjUbgn8&#xa;zlri4m/X6kTWGWrUDUr6QmqtndBRzZZAF+74LAmVIOekuFWWjgH1bhHAVq7rQhJ+&#xa;IhRnEE6N5IdVzSjbrVpLNacYMHMSXOlJ0DeRThF4YgpNQBD8GfDUqKDLxX7wg9M+&#xa;vAk4UwJ9l16zb5+mhyuOEAesCcdEXCBmxsMN1B8wGR2BlzLFXsTYHcEqcnNBN2aU&#xa;Jw0YTqi/2a7GOBIVY5v2LmnO4TTQuEZ6j/a2zAt58dvIaRdCcwlmzVaQ/QdhSLpl&#xa;v9Yvg8Fo/YsCAwEAAaMdMBswCQYDVR0TBAIwADAOBgNVHREEBzAFggNKT1kwDQYJ&#xa;KoZIhvcNAQELBQADggEBAA4HnoLSM97sTHyvzxGXfjrWhfrPM18Qzh+iVL46XMjc&#xa;YkZnAiyeU2FlY4xxlVjah+eb1pdNLYymbDdisv6HIkA7dfnf6jWBD2YxYSHhLfS7&#xa;dwLklgMLeoVNI3EjjkWGiIlfDRXwkwD8GglotAlAgFsBr4SKtnI3vEp6nrlfjj6y&#xa;VAxSZm3Q9z3Pm9WUZ8S6wV3MnoT5HTnRivt38Kbd1x24Bn1RsyrPIjHVteWZ+9vw&#xa;wX+4SmJ9suq568berTNJ3kv3kO0NSJO4O4z6QelwQB14lflbBMJATxCBDyIUtyow&#xa;x9Vlo8bbytCdNblSAjyxriZp1lZPmLOSe0D1YgpZWDQ=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" JOY.localdomain" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="ssl-cert" output="Subject: commonName=JOY&#xa;Subject Alternative Name: DNS:JOY&#xa;Issuer: commonName=JOY&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2018-12-23T14:29:24&#xa;Not valid after:  2028-12-20T14:29:24&#xa;MD5:   9a80:5234:0ef3:1fdd:8f77:16fe:09ee:5b7b&#xa;SHA-1: 4f02:9a1c:1f41:2ec9:c0df:4523:b1f4:a480:25f9:0165"><table key="subject">
+<elem key="commonName">JOY</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">JOY</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C282093B20EBC5ED5687B18B445846CD2555E253B0A15F7E38242CDE686D245364EC4CD4CDFBA6FB39FA6060365805CBA96831B8D46E09FCCE5AE2E26FD7EA44D6196AD40D4AFA426AAD9DD051CD964017EEF82C099520E7A4B855968E01F56E11C056AEEB42127E221467104E8DE48755CD28DBAD5A4B35A7183073125CE949D037914E1178620A4D4010FC19F0D4A8A0CBC57EF083D33EBC093853027D975EB36F9FA6872B8E1007AC09C7445C2066C6C30DD41F30191D819732C55EC4D81DC12A727341376694270D184EA8BFD9AEC6381215639BF62E69CEE134D0B8467A8FF6B6CC0B79F1DBC8691742730966CD5690FD076148BA65BFD62F83C168FD8B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:JOY</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2018-12-23T14:29:24</elem>
+<elem key="notAfter">2028-12-20T14:29:24</elem>
+</table>
+<elem key="md5">9a8052340ef31fdd8f7716fe09ee5b7b</elem>
+<elem key="sha1">4f029a1c1f412ec9c0df4523b1f4a48025f90165</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICvDCCAaSgAwIBAgIJAOB9FmtuDenTMA0GCSqGSIb3DQEBCwUAMA4xDDAKBgNV&#xa;BAMMA0pPWTAeFw0xODEyMjMxNDI5MjRaFw0yODEyMjAxNDI5MjRaMA4xDDAKBgNV&#xa;BAMMA0pPWTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMKCCTsg68Xt&#xa;Voexi0RYRs0lVeJTsKFffjgkLN5obSRTZOxM1M37pvs5+mBgNlgFy6loMbjUbgn8&#xa;zlri4m/X6kTWGWrUDUr6QmqtndBRzZZAF+74LAmVIOekuFWWjgH1bhHAVq7rQhJ+&#xa;IhRnEE6N5IdVzSjbrVpLNacYMHMSXOlJ0DeRThF4YgpNQBD8GfDUqKDLxX7wg9M+&#xa;vAk4UwJ9l16zb5+mhyuOEAesCcdEXCBmxsMN1B8wGR2BlzLFXsTYHcEqcnNBN2aU&#xa;Jw0YTqi/2a7GOBIVY5v2LmnO4TTQuEZ6j/a2zAt58dvIaRdCcwlmzVaQ/QdhSLpl&#xa;v9Yvg8Fo/YsCAwEAAaMdMBswCQYDVR0TBAIwADAOBgNVHREEBzAFggNKT1kwDQYJ&#xa;KoZIhvcNAQELBQADggEBAA4HnoLSM97sTHyvzxGXfjrWhfrPM18Qzh+iVL46XMjc&#xa;YkZnAiyeU2FlY4xxlVjah+eb1pdNLYymbDdisv6HIkA7dfnf6jWBD2YxYSHhLfS7&#xa;dwLklgMLeoVNI3EjjkWGiIlfDRXwkwD8GglotAlAgFsBr4SKtnI3vEp6nrlfjj6y&#xa;VAxSZm3Q9z3Pm9WUZ8S6wV3MnoT5HTnRivt38Kbd1x24Bn1RsyrPIjHVteWZ+9vw&#xa;wX+4SmJ9suq568berTNJ3kv3kO0NSJO4O4z6QelwQB14lflbBMJATxCBDyIUtyow&#xa;x9Vlo8bbytCdNblSAjyxriZp1lZPmLOSe0D1YgpZWDQ=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="smtp-commands" output="JOY.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG&#xa;Issuer: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2019-01-27T17:23:23&#xa;Not valid after:  2032-10-05T17:23:23&#xa;MD5:   c8f9:a1cb:ac3b:baa1:f158:2916:d7bd:d3b0&#xa;SHA-1: 5df6:1fce:d31e:e8c4:9bd9:b5b7:27fa:4f28:cfb9:34c6"><table key="subject">
+<elem key="commonName">JOY</elem>
+<elem key="countryName">SG</elem>
+<elem key="emailAddress">joy@goodtech.com.sg</elem>
+<elem key="localityName">Singapore</elem>
+<elem key="organizationName">Good Tech Pte. Ltd</elem>
+<elem key="organizationalUnitName">JOY</elem>
+<elem key="stateOrProvinceName">Singapore</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">JOY</elem>
+<elem key="countryName">SG</elem>
+<elem key="emailAddress">joy@goodtech.com.sg</elem>
+<elem key="localityName">Singapore</elem>
+<elem key="organizationName">Good Tech Pte. Ltd</elem>
+<elem key="organizationalUnitName">JOY</elem>
+<elem key="stateOrProvinceName">Singapore</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C11C5CAFF765CF5E5026387035EF36BFFCF3DB75F1FC126B04417651E34DF0030276C8DC1F73BB1F53D080B0E514F607FA4DC76DBD8AD53023BDB76083D2B102825957824B06A666E4DD907A9238882A77AE2BD158E21A9DBAE41F726C28696643207ED263BE71DA50D5E13E70CEB085B0A7458A7A8CFA7DDEA117CD7B2E8876AFC20AC746EBA457B3AFF954650889A9230D798455671CC9E231C9AAAD0E59F8780D54C9B90010EAEC945754A0CF5EB7EE2CEDE6935D619C3D0C12B82E3B8FFACD220BAA33EFA3204ACFA6B4415F7340F9F4AB72244B5EE075AA84AB0C1AF1F39AF42525C84B683B06901434C5A882696BDE03C0315B9F707170B5B541972409</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2019-01-27T17:23:23</elem>
+<elem key="notAfter">2032-10-05T17:23:23</elem>
+</table>
+<elem key="md5">c8f9a1cbac3bbaa1f1582916d7bdd3b0</elem>
+<elem key="sha1">5df61fced31ee8c49bd9b5b727fa4f28cfb934c6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDojCCAooCCQC7ojISCyumxzANBgkqhkiG9w0BAQsFADCBkjELMAkGA1UEBhMC&#xa;U0cxEjAQBgNVBAgMCVNpbmdhcG9yZTESMBAGA1UEBwwJU2luZ2Fwb3JlMRswGQYD&#xa;VQQKDBJHb29kIFRlY2ggUHRlLiBMdGQxDDAKBgNVBAsMA0pPWTEMMAoGA1UEAwwD&#xa;Sk9ZMSIwIAYJKoZIhvcNAQkBFhNqb3lAZ29vZHRlY2guY29tLnNnMB4XDTE5MDEy&#xa;NzE3MjMyM1oXDTMyMTAwNTE3MjMyM1owgZIxCzAJBgNVBAYTAlNHMRIwEAYDVQQI&#xa;DAlTaW5nYXBvcmUxEjAQBgNVBAcMCVNpbmdhcG9yZTEbMBkGA1UECgwSR29vZCBU&#xa;ZWNoIFB0ZS4gTHRkMQwwCgYDVQQLDANKT1kxDDAKBgNVBAMMA0pPWTEiMCAGCSqG&#xa;SIb3DQEJARYTam95QGdvb2R0ZWNoLmNvbS5zZzCCASIwDQYJKoZIhvcNAQEBBQAD&#xa;ggEPADCCAQoCggEBAMEcXK/3Zc9eUCY4cDXvNr/889t18fwSawRBdlHjTfADAnbI&#xa;3B9zux9T0ICw5RT2B/pNx229itUwI723YIPSsQKCWVeCSwamZuTdkHqSOIgqd64r&#xa;0VjiGp265B9ybChpZkMgftJjvnHaUNXhPnDOsIWwp0WKeoz6fd6hF817Loh2r8IK&#xa;x0brpFezr/lUZQiJqSMNeYRVZxzJ4jHJqq0OWfh4DVTJuQAQ6uyUV1Sgz1637izt&#xa;5pNdYZw9DBK4LjuP+s0iC6oz76MgSs+mtEFfc0D59KtyJEte4HWqhKsMGvHzmvQl&#xa;JchLaDsGkBQ0xaiCaWveA8AxW59wcXC1tUGXJAkCAwEAATANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAb8TK96b4AHhyrrhiFZDkEgSzU6W0p8t5UQbYrwx/g7oRtT78N6wD4rsA&#xa;t+1qfaWCTL5KJ7kLrVnAnCdcZow90FrmIdsr3dib/4IKKNueiidXb0HD2/2FXCIw&#xa;+b0QABRlw1WZEX1DiJDIj8nuI0CtuL3mRmWcbw6P4EwvwoMlQTc9aQ1goASpmVTN&#xa;1uZLCs1Kz8XIXJueyU0lsYsXumqvdaBIkcOwiIFB3wAaK6+TB+9m91GpNFR41fiH&#xa;yHD2de8hnao+fiYSE416zQHTZgG7zDHpvH6OrO+TLLdEWtEvYo9xV9oirLcro+Wj&#xa;p6Rjq4nlJrAyLA9BXP/I2xDPquktJA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="imap-capabilities" output="listed have LOGIN-REFERRALS more post-login IDLE IMAP4rev1 OK ENABLE Pre-login capabilities LITERAL+ ID SASL-IR AUTH=PLAINA0001"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="CAPA SASL(PLAIN) USER PIPELINING TOP AUTH-RESP-CODE UIDL RESP-CODES"/><script id="ssl-cert" output="Subject: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG&#xa;Issuer: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2019-01-27T17:23:23&#xa;Not valid after:  2032-10-05T17:23:23&#xa;MD5:   c8f9:a1cb:ac3b:baa1:f158:2916:d7bd:d3b0&#xa;SHA-1: 5df6:1fce:d31e:e8c4:9bd9:b5b7:27fa:4f28:cfb9:34c6"><table key="subject">
+<elem key="commonName">JOY</elem>
+<elem key="countryName">SG</elem>
+<elem key="emailAddress">joy@goodtech.com.sg</elem>
+<elem key="localityName">Singapore</elem>
+<elem key="organizationName">Good Tech Pte. Ltd</elem>
+<elem key="organizationalUnitName">JOY</elem>
+<elem key="stateOrProvinceName">Singapore</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">JOY</elem>
+<elem key="countryName">SG</elem>
+<elem key="emailAddress">joy@goodtech.com.sg</elem>
+<elem key="localityName">Singapore</elem>
+<elem key="organizationName">Good Tech Pte. Ltd</elem>
+<elem key="organizationalUnitName">JOY</elem>
+<elem key="stateOrProvinceName">Singapore</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C11C5CAFF765CF5E5026387035EF36BFFCF3DB75F1FC126B04417651E34DF0030276C8DC1F73BB1F53D080B0E514F607FA4DC76DBD8AD53023BDB76083D2B102825957824B06A666E4DD907A9238882A77AE2BD158E21A9DBAE41F726C28696643207ED263BE71DA50D5E13E70CEB085B0A7458A7A8CFA7DDEA117CD7B2E8876AFC20AC746EBA457B3AFF954650889A9230D798455671CC9E231C9AAAD0E59F8780D54C9B90010EAEC945754A0CF5EB7EE2CEDE6935D619C3D0C12B82E3B8FFACD220BAA33EFA3204ACFA6B4415F7340F9F4AB72244B5EE075AA84AB0C1AF1F39AF42525C84B683B06901434C5A882696BDE03C0315B9F707170B5B541972409</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2019-01-27T17:23:23</elem>
+<elem key="notAfter">2032-10-05T17:23:23</elem>
+</table>
+<elem key="md5">c8f9a1cbac3bbaa1f1582916d7bdd3b0</elem>
+<elem key="sha1">5df61fced31ee8c49bd9b5b727fa4f28cfb934c6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDojCCAooCCQC7ojISCyumxzANBgkqhkiG9w0BAQsFADCBkjELMAkGA1UEBhMC&#xa;U0cxEjAQBgNVBAgMCVNpbmdhcG9yZTESMBAGA1UEBwwJU2luZ2Fwb3JlMRswGQYD&#xa;VQQKDBJHb29kIFRlY2ggUHRlLiBMdGQxDDAKBgNVBAsMA0pPWTEMMAoGA1UEAwwD&#xa;Sk9ZMSIwIAYJKoZIhvcNAQkBFhNqb3lAZ29vZHRlY2guY29tLnNnMB4XDTE5MDEy&#xa;NzE3MjMyM1oXDTMyMTAwNTE3MjMyM1owgZIxCzAJBgNVBAYTAlNHMRIwEAYDVQQI&#xa;DAlTaW5nYXBvcmUxEjAQBgNVBAcMCVNpbmdhcG9yZTEbMBkGA1UECgwSR29vZCBU&#xa;ZWNoIFB0ZS4gTHRkMQwwCgYDVQQLDANKT1kxDDAKBgNVBAMMA0pPWTEiMCAGCSqG&#xa;SIb3DQEJARYTam95QGdvb2R0ZWNoLmNvbS5zZzCCASIwDQYJKoZIhvcNAQEBBQAD&#xa;ggEPADCCAQoCggEBAMEcXK/3Zc9eUCY4cDXvNr/889t18fwSawRBdlHjTfADAnbI&#xa;3B9zux9T0ICw5RT2B/pNx229itUwI723YIPSsQKCWVeCSwamZuTdkHqSOIgqd64r&#xa;0VjiGp265B9ybChpZkMgftJjvnHaUNXhPnDOsIWwp0WKeoz6fd6hF817Loh2r8IK&#xa;x0brpFezr/lUZQiJqSMNeYRVZxzJ4jHJqq0OWfh4DVTJuQAQ6uyUV1Sgz1637izt&#xa;5pNdYZw9DBK4LjuP+s0iC6oz76MgSs+mtEFfc0D59KtyJEte4HWqhKsMGvHzmvQl&#xa;JchLaDsGkBQ0xaiCaWveA8AxW59wcXC1tUGXJAkCAwEAATANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAb8TK96b4AHhyrrhiFZDkEgSzU6W0p8t5UQbYrwx/g7oRtT78N6wD4rsA&#xa;t+1qfaWCTL5KJ7kLrVnAnCdcZow90FrmIdsr3dib/4IKKNueiidXb0HD2/2FXCIw&#xa;+b0QABRlw1WZEX1DiJDIj8nuI0CtuL3mRmWcbw6P4EwvwoMlQTc9aQ1goASpmVTN&#xa;1uZLCs1Kz8XIXJueyU0lsYsXumqvdaBIkcOwiIFB3wAaK6+TB+9m91GpNFR41fiH&#xa;yHD2de8hnao+fiYSE416zQHTZgG7zDHpvH6OrO+TLLdEWtEvYo9xV9oirLcro+Wj&#xa;p6Rjq4nlJrAyLA9BXP/I2xDPquktJA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="udp" portid="39214"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="17179776" lastboot="Thu Mar 14 20:29:43 2024"/>
+<distance value="1"/>
+<tcpsequence index="262" difficulty="Good luck!" values="4CC83D7E,89C29183,1B9DC8E8,E7159CC7,7C6694E6,86824272"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="FFFF8683,FFFF869C,FFFF86B5,FFFF86CE,FFFF86E7,FFFF8700"/>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2024-09-29T11:08:49&#xa;  start_date: N/A"><elem key="date">2024-09-29T11:08:49</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="clock-skew" output="mean: -2h39m59s, deviation: 4h37m07s, median: 0s"><elem key="median">0</elem>
+<elem key="count">3</elem>
+<elem key="mean">-9599</elem>
+<elem key="stddev">16627</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="nbstat" output="NetBIOS name: JOY, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  JOY&lt;00&gt;              Flags: &lt;unique&gt;&lt;active&gt;&#xa;  JOY&lt;03&gt;              Flags: &lt;unique&gt;&lt;active&gt;&#xa;  JOY&lt;20&gt;              Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1d&gt;        Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1e&gt;        Flags: &lt;group&gt;&lt;active&gt;"/><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.5.12-Debian)&#xa;  Computer name: joy&#xa;  NetBIOS computer name: JOY\x00&#xa;  Domain name: \x00&#xa;  FQDN: joy&#xa;  System time: 2024-09-29T19:08:49+08:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.5.12-Debian</elem>
+<elem key="server">JOY\x00</elem>
+<elem key="date">2024-09-29T19:08:49+08:00</elem>
+<elem key="fqdn">joy</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.0.243" rtt="0.21" host="192.168.0.243"/>
+</trace>
+<times srtt="214" rttvar="135" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727608159"/>
+<taskend task="NSE" time="1727608159"/>
+<taskbegin task="NSE" time="1727608159"/>
+<taskend task="NSE" time="1727608159"/>
+<taskbegin task="NSE" time="1727608159"/>
+<taskend task="NSE" time="1727608159"/>
+<runstats><finished time="1727608159" timestr="Sun Sep 29 16:39:19 2024" summary="Nmap done at Sun Sep 29 16:39:19 2024; 1 IP address (1 host up) scanned in 43.37 seconds" elapsed="43.37" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

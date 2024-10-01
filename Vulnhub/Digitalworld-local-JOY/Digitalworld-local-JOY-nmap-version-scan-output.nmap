@@ -1,0 +1,157 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 16:38:36 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,25,80,110,139,143,445,465,587,993,995 -oA Digitalworld-local-JOY-nmap-version-scan-output 192.168.0.243
+Nmap scan report for 192.168.0.243 (192.168.0.243)
+Host is up (0.00021s latency).
+
+PORT    STATE SERVICE     VERSION
+21/tcp  open  ftp         ProFTPD 1.2.10
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| drwxrwxr-x   2 ftp      ftp          4096 Jan  6  2019 download
+|_drwxrwxr-x   2 ftp      ftp          4096 Jan 10  2019 upload
+22/tcp  open  ssh         Dropbear sshd 0.34 (protocol 2.0)
+25/tcp  open  smtp        Postfix smtpd
+|_ssl-date: TLS randomness does not represent time
+|_smtp-commands: JOY.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8
+| ssl-cert: Subject: commonName=JOY
+| Subject Alternative Name: DNS:JOY
+| Issuer: commonName=JOY
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-12-23T14:29:24
+| Not valid after:  2028-12-20T14:29:24
+| MD5:   9a80:5234:0ef3:1fdd:8f77:16fe:09ee:5b7b
+|_SHA-1: 4f02:9a1c:1f41:2ec9:c0df:4523:b1f4:a480:25f9:0165
+80/tcp  open  http        Apache httpd 2.4.25 ((Debian))
+|_http-server-header: Apache/2.4.25 (Debian)
+| http-ls: Volume /
+| SIZE  TIME              FILENAME
+| -     2016-07-19 20:03  ossec/
+|_
+|_http-title: Index of /
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+110/tcp open  pop3        Dovecot pop3d
+|_pop3-capabilities: TOP SASL CAPA PIPELINING STLS AUTH-RESP-CODE UIDL RESP-CODES
+| ssl-cert: Subject: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG
+| Issuer: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2019-01-27T17:23:23
+| Not valid after:  2032-10-05T17:23:23
+| MD5:   c8f9:a1cb:ac3b:baa1:f158:2916:d7bd:d3b0
+|_SHA-1: 5df6:1fce:d31e:e8c4:9bd9:b5b7:27fa:4f28:cfb9:34c6
+|_ssl-date: TLS randomness does not represent time
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+143/tcp open  imap        Dovecot imapd
+| ssl-cert: Subject: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG
+| Issuer: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2019-01-27T17:23:23
+| Not valid after:  2032-10-05T17:23:23
+| MD5:   c8f9:a1cb:ac3b:baa1:f158:2916:d7bd:d3b0
+|_SHA-1: 5df6:1fce:d31e:e8c4:9bd9:b5b7:27fa:4f28:cfb9:34c6
+|_ssl-date: TLS randomness does not represent time
+|_imap-capabilities: listed more have LOGIN-REFERRALS post-login IMAP4rev1 IDLE STARTTLS OK Pre-login LOGINDISABLEDA0001 capabilities ID LITERAL+ SASL-IR ENABLE
+445/tcp open  netbios-ssn Samba smbd 4.5.12-Debian (workgroup: WORKGROUP)
+465/tcp open  smtp        Postfix smtpd
+|_smtp-commands: JOY.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8
+| ssl-cert: Subject: commonName=JOY
+| Subject Alternative Name: DNS:JOY
+| Issuer: commonName=JOY
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-12-23T14:29:24
+| Not valid after:  2028-12-20T14:29:24
+| MD5:   9a80:5234:0ef3:1fdd:8f77:16fe:09ee:5b7b
+|_SHA-1: 4f02:9a1c:1f41:2ec9:c0df:4523:b1f4:a480:25f9:0165
+|_ssl-date: TLS randomness does not represent time
+587/tcp open  smtp        Postfix smtpd
+| ssl-cert: Subject: commonName=JOY
+| Subject Alternative Name: DNS:JOY
+| Issuer: commonName=JOY
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-12-23T14:29:24
+| Not valid after:  2028-12-20T14:29:24
+| MD5:   9a80:5234:0ef3:1fdd:8f77:16fe:09ee:5b7b
+|_SHA-1: 4f02:9a1c:1f41:2ec9:c0df:4523:b1f4:a480:25f9:0165
+|_ssl-date: TLS randomness does not represent time
+|_smtp-commands: JOY.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8
+993/tcp open  ssl/imap    Dovecot imapd
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG
+| Issuer: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2019-01-27T17:23:23
+| Not valid after:  2032-10-05T17:23:23
+| MD5:   c8f9:a1cb:ac3b:baa1:f158:2916:d7bd:d3b0
+|_SHA-1: 5df6:1fce:d31e:e8c4:9bd9:b5b7:27fa:4f28:cfb9:34c6
+|_imap-capabilities: listed have LOGIN-REFERRALS more post-login IDLE IMAP4rev1 OK ENABLE Pre-login capabilities LITERAL+ ID SASL-IR AUTH=PLAINA0001
+995/tcp open  ssl/pop3    Dovecot pop3d
+|_pop3-capabilities: CAPA SASL(PLAIN) USER PIPELINING TOP AUTH-RESP-CODE UIDL RESP-CODES
+| ssl-cert: Subject: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG
+| Issuer: commonName=JOY/organizationName=Good Tech Pte. Ltd/stateOrProvinceName=Singapore/countryName=SG
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2019-01-27T17:23:23
+| Not valid after:  2032-10-05T17:23:23
+| MD5:   c8f9:a1cb:ac3b:baa1:f158:2916:d7bd:d3b0
+|_SHA-1: 5df6:1fce:d31e:e8c4:9bd9:b5b7:27fa:4f28:cfb9:34c6
+|_ssl-date: TLS randomness does not represent time
+MAC Address: 08:00:27:47:80:DB (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 198.840 days (since Thu Mar 14 20:29:43 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Hosts: The,  JOY.localdomain, JOY; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| smb2-time: 
+|   date: 2024-09-29T11:08:49
+|_  start_date: N/A
+|_clock-skew: mean: -2h39m59s, deviation: 4h37m07s, median: 0s
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| nbstat: NetBIOS name: JOY, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   JOY<00>              Flags: <unique><active>
+|   JOY<03>              Flags: <unique><active>
+|   JOY<20>              Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|_  WORKGROUP<1e>        Flags: <group><active>
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.5.12-Debian)
+|   Computer name: joy
+|   NetBIOS computer name: JOY\x00
+|   Domain name: \x00
+|   FQDN: joy
+|_  System time: 2024-09-29T19:08:49+08:00
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.21 ms 192.168.0.243 (192.168.0.243)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep 29 16:39:19 2024 -- 1 IP address (1 host up) scanned in 43.37 seconds

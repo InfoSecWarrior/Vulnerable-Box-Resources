@@ -1,0 +1,1 @@
+http://192.168.0.243:80 [200 OK] Apache[2.4.25], Country[RESERVED][ZZ], HTTPServer[Debian Linux][Apache/2.4.25 (Debian)], IP[192.168.0.243], Index-Of, Title[Index of /]

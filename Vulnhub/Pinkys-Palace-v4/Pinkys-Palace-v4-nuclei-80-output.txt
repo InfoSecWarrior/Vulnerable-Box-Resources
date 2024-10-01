@@ -1,0 +1,21 @@
+[phpinfo-files] [http] [low] http://192.168.2.125:80/?phpinfo=1 ["7.0.30"] [paths="/?phpinfo=1"]
+[waf-detect:apachegeneric] [http] [info] http://192.168.2.125:80
+[waf-detect:nginxgeneric] [http] [info] http://192.168.2.125:80
+[fingerprinthub-web-fingerprints:phpinfo] [http] [info] http://192.168.2.125:80
+[tech-detect:nginx] [http] [info] http://192.168.2.125:80
+[email-extractor] [http] [info] http://192.168.2.125:80 ["license@php.net"]
+[php-errors] [http] [info] http://192.168.2.125:80 ["include_path"]
+[nginx-version] [http] [info] http://192.168.2.125:80 ["nginx/1.10.3"]
+[laragon-phpinfo] [http] [low] http://192.168.2.125:80/?q=info ["7.0.30"]
+[host-header-injection] [http] [info] http://192.168.2.125:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.2.125:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.2.125:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.2.125:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.2.125:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.2.125:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.2.125:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.2.125:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.2.125:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.2.125:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.2.125:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.2.125:80

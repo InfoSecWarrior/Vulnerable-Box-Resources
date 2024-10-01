@@ -1,0 +1,22 @@
+# Dirsearch started Sun Sep 29 16:39:48 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.0.243:80 -o Digitalworld-local-JOY-dirsearch-80-output.txt -q
+
+403   299B   http://192.168.0.243/.ht_wsr.txt
+403   302B   http://192.168.0.243/.htaccess.bak1
+403   302B   http://192.168.0.243/.htaccess.orig
+403   304B   http://192.168.0.243/.htaccess.sample
+403   303B   http://192.168.0.243/.htaccess_extra
+403   300B   http://192.168.0.243/.htaccess_sc
+403   300B   http://192.168.0.243/.htaccessOLD
+403   302B   http://192.168.0.243/.htaccess_orig
+403   301B   http://192.168.0.243/.htaccessOLD2
+403   300B   http://192.168.0.243/.htaccessBAK
+403   292B   http://192.168.0.243/.htm
+403   293B   http://192.168.0.243/.html
+403   302B   http://192.168.0.243/.htpasswd_test
+403   299B   http://192.168.0.243/.httr-oauth
+403   298B   http://192.168.0.243/.htpasswds
+403   293B   http://192.168.0.243/.php3
+403   292B   http://192.168.0.243/.php
+403   302B   http://192.168.0.243/.htaccess.save
+403   301B   http://192.168.0.243/server-status
+403   302B   http://192.168.0.243/server-status/
