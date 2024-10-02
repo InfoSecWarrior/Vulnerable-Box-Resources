@@ -1,0 +1,19 @@
+# Dirsearch started Wed Oct  2 20:29:14 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.156.124:80 -o Moria1.1-dirsearch-80-output.txt -q
+
+403   213B   http://192.168.156.124/.ht_wsr.txt
+403   216B   http://192.168.156.124/.htaccess.bak1
+403   216B   http://192.168.156.124/.htaccess.orig
+403   218B   http://192.168.156.124/.htaccess.sample
+403   216B   http://192.168.156.124/.htaccess.save
+403   216B   http://192.168.156.124/.htaccess_orig
+403   217B   http://192.168.156.124/.htaccess_extra
+403   214B   http://192.168.156.124/.htaccessBAK
+403   214B   http://192.168.156.124/.htaccessOLD
+403   214B   http://192.168.156.124/.htaccess_sc
+403   215B   http://192.168.156.124/.htaccessOLD2
+403   206B   http://192.168.156.124/.htm
+403   207B   http://192.168.156.124/.html
+403   212B   http://192.168.156.124/.htpasswds
+403   216B   http://192.168.156.124/.htpasswd_test
+403   213B   http://192.168.156.124/.httr-oauth
+403   210B   http://192.168.156.124/cgi-bin/
