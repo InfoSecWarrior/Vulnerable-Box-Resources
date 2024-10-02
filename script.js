@@ -213,11 +213,13 @@ function renderMachines(data, query = '') {
                 platformClass = 'other-tag';
         }
 
-        // Machine name link with platform tag and the correct platform class
-        const machineNameLink = `<a href="machine.html?dir=${encodeURIComponent(item.machineDir)}&file=${encodeURIComponent(item.machineFile)}&platform=${encodeURIComponent(item.platform)}">
+        // Machine name link
+        const machineNameLink = `<a href="machine.html?dir=${encodeURIComponent(item.machineDir)}&file=${encodeURIComponent(item.machineFile)}&platform=${encodeURIComponent(item.platform)}" class="machine-name">
             ${highlight(item.machineName, lowerQuery)}
-            <span class="platform-tag ${platformClass}">${item.platform}</span>
         </a>`;
+
+        const platformTag = `<span class="platform-tag ${platformClass}" data-platform="${item.platform}">${item.platform}</span>`;
+
 
         const portDetails = item.portDetails
             .split(', ')
@@ -233,13 +235,27 @@ function renderMachines(data, query = '') {
             .join('');
 
         row.innerHTML = `
-            <td>${machineNameLink}</td>
+            <td>${machineNameLink} ${platformTag}</td>
             <td>${portDetails}</td>
             <td>${serviceNames}</td>
             <td>${serviceProducts}</td>
         `;
 
         tableBody.appendChild(row);
+    });
+
+    // Add event listener for platform tag search
+    document.querySelectorAll('.platform-tag').forEach(tag => {
+        tag.addEventListener('click', function () {
+            const platform = this.getAttribute('data-platform').toLowerCase();
+            document.getElementById('searchBar').value = `platform:${platform}`;
+            handleSearch(`platform:${platform}`);
+
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     });
 
     if (data.length === 0) {

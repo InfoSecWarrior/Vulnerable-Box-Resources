@@ -1,0 +1,27 @@
+# Dirsearch started Wed Oct  2 17:25:12 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.246.168:80 -o BSides-Vancouver-2018-Workshop-dirsearch-80-output.txt -q
+
+403   244B   http://192.168.246.168/.ht_wsr.txt
+403   242B   http://192.168.246.168/.htaccess.bak1
+403   243B   http://192.168.246.168/.htaccess.sample
+403   244B   http://192.168.246.168/.htaccess_extra
+403   241B   http://192.168.246.168/.htaccess.save
+403   242B   http://192.168.246.168/.htaccess.orig
+403   243B   http://192.168.246.168/.htaccess_orig
+403   241B   http://192.168.246.168/.htaccess_sc
+403   241B   http://192.168.246.168/.htaccessBAK
+403   241B   http://192.168.246.168/.htaccessOLD2
+403   241B   http://192.168.246.168/.htaccessOLD
+403   238B   http://192.168.246.168/.htm
+403   238B   http://192.168.246.168/.html
+403   246B   http://192.168.246.168/.htpasswd_test
+403   242B   http://192.168.246.168/.htpasswds
+403   242B   http://192.168.246.168/.httr-oauth
+403   241B   http://192.168.246.168/cgi-bin/
+403   247B   http://192.168.246.168/doc/en/changes.html
+403   238B   http://192.168.246.168/doc/
+403   245B   http://192.168.246.168/doc/html/index.html
+403   240B   http://192.168.246.168/doc/api/
+403   246B   http://192.168.246.168/doc/stable.version
+200    63B   http://192.168.246.168/robots.txt
+403   242B   http://192.168.246.168/server-status
+403   242B   http://192.168.246.168/server-status/

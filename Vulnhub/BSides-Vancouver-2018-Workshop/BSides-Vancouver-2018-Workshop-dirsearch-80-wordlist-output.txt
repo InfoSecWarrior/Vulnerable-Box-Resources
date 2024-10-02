@@ -1,0 +1,4 @@
+# Dirsearch started Wed Oct  2 17:27:13 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.246.168:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o BSides-Vancouver-2018-Workshop-dirsearch-80-wordlist-output.txt -q
+
+200    63B   http://192.168.246.168/robots
+403   242B   http://192.168.246.168/server-status
