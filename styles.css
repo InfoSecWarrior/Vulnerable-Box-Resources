@@ -190,18 +190,6 @@ body {
     to { transform: rotate(360deg); }
 }
 
-/* Table Container Styling */
-.table-container {
-    width: 100%; /* Full width */
-    margin: 0 auto;
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
-    /* Removed max-height and overflow-y to allow natural scrolling */
-    border: 1px solid #ddd;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px; /* Optional padding for better spacing */
-}
-
 /* Table Styling */
 table {
     width: 100%;
@@ -209,6 +197,7 @@ table {
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    text-align: center; /* Center content horizontally */
 }
 
 thead {
@@ -221,19 +210,13 @@ thead th {
     padding: 20px;
     position: sticky;
     top: 0; /* Sticks to the top of the viewport */
-    text-align: left;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.05em;
     background-color: #b20002;
     z-index: 2; /* Ensures headers stay above other content */
-}
-
-/* Ensure thead has a higher stacking context */
-thead {
-    position: sticky;
-    top: 0;
-    z-index: 2;
+    text-align: center; /* Center header content */
+    vertical-align: middle; /* Center header content vertically */
 }
 
 tbody tr {
@@ -258,7 +241,8 @@ td {
     padding: 18px 28px;
     font-size: 18px;
     color: #333;
-    text-align: left;
+    text-align: center; /* Center cell content */
+    vertical-align: middle; /* Center cell content vertically */
     white-space: pre-wrap;
 }
 
@@ -404,7 +388,6 @@ a:hover {
 
 .platform-tag {
     font-size: 0.75em; 
-    margin-left: 10px;
     padding: 3px 8px; 
     border-radius: 12px; 
     color: #fff; 
@@ -430,8 +413,8 @@ a:hover {
 
 /* HTB specific styling */
 .htb-tag {
-    background: linear-gradient(135deg, #28a745, #28a745);
-    border: 1px solid #28a745;
+    background: linear-gradient(135deg, #66ec0c, #66ec0c);
+    border: 1px solid #66ec0c;
 }
 
 /* Other platform styling */
