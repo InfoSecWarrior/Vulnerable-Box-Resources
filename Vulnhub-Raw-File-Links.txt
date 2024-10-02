@@ -21,7 +21,8 @@ https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/h
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Tiki-1/Tiki-nmap-version-scan.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/TommyBoy/TommyBoy-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Toppo1/Toppo1-nmap-version-scan-output.xml
-https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Tr0ll-2/TrOll-2-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Troll-1/Troll-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Troll-2/Troll-2-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Wintermute-Neuromancer/Wintermute-Neuromancer-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Wintermute-Straylight/Wintermute-Straylight-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/VulnOS2/VulnOS2_report-nmap-version-scan-output.xml
