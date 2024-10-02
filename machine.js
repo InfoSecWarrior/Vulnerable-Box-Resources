@@ -135,7 +135,7 @@ async function fetchMachineData() {
         console.warn("Element with ID 'github-url' not found in the document.");
     }
 
-    const baseURL = `https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/${encodeURIComponent(platform)}/`; // Use the platform tag in the base URL
+    const baseURL = `https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/main/${encodeURIComponent(platform)}/`; // Use the platform tag in the base URL
     
     // Fetch open ports
     const ports = await fetchOpenPorts(baseURL, dirName, baseFileName);
