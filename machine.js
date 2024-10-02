@@ -126,7 +126,7 @@ async function fetchMachineData() {
         console.warn("Element with ID 'machine-title' not found in the document.");
     }
 
-    const githubBaseURL = `https://github.com/riteshs4hu/Vulnerable-Box-Resources/tree/main/${encodeURIComponent(platform)}/`;
+    const githubBaseURL = `https://github.com/InfoSecWarrior/Vulnerable-Box-Resources/tree/main/${encodeURIComponent(platform)}/`;
     const githubLink = document.getElementById('github-url');
     if (githubLink) {
         githubLink.href = `${githubBaseURL}${encodeURIComponent(dirName)}`; // Use original name for URL
