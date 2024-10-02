@@ -1,0 +1,13 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.156.10
++ Target Port: 80
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ HEAD Apache/2.4.29 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ GET /.htaccess: Contains configuration and/or authorization information.
++ GET /icons/README: Apache default file found. See: https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/: 
++ GET /.git/index: Git Index file may contain directory listing information.
++ GET /.git/HEAD: Git HEAD file found. Full repo details may be present.
++ GET /.git/config: Git config file found. Infos about repo details may be present.
++ GET /.gitignore: .gitignore file found. It is possible to grasp the directory structure.
++ GET /README.md: Readme Found.

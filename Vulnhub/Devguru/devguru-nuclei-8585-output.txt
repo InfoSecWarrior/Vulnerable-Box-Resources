@@ -1,0 +1,18 @@
+[cookies-without-secure] [http] [info] http://192.168.156.10:8585
+[fingerprinthub-web-fingerprints:gitea] [http] [info] http://192.168.156.10:8585
+[tech-detect:font-awesome] [http] [info] http://192.168.156.10:8585
+[tech-detect:gitea] [http] [info] http://192.168.156.10:8585
+[gitea-login] [http] [info] http://192.168.156.10:8585/user/login
+[gitea-detect] [http] [info] http://192.168.156.10:8585/user/login ["","1.12.5"]
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.156.10:8585
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.156.10:8585
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.156.10:8585
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.156.10:8585
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.156.10:8585
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.156.10:8585
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.156.10:8585
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.156.10:8585
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.156.10:8585
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.156.10:8585
+[swagger-api] [http] [info] http://192.168.156.10:8585/api/swagger [paths="/api/swagger"]
+[waf-detect:modsecurity] [http] [info] http://192.168.156.10:8585
