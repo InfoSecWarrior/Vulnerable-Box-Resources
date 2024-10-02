@@ -380,10 +380,11 @@ a:hover {
 }
 
 /* Machine name styling */
-.machine-name {
-    margin-right: 10px;
-    text-decoration: none;
-    font-weight: bold;
+/* Ensure machine name and platform tag are displayed inline */
+.machine-name, .platform-tag {
+    display: inline-block; /* Display them inline */
+    vertical-align: middle; /* Align vertically in the middle */
+    margin-right: 10px; /* Add spacing between the elements */
 }
 
 .platform-tag {
