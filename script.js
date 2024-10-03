@@ -367,7 +367,7 @@ function handleSearch(query) {
 function updateTotalMachinesCount() {
     const totalMachinesElement = document.getElementById('totalMachines');
     if (totalMachinesElement) {
-        totalMachinesElement.textContent = `Total Machines: ${parsedData.length}`;
+        totalMachinesElement.textContent = `Total Vulnerable Machines: ${parsedData.length}`;
     }
 }
 // Add event listeners to predefined pattern buttons
