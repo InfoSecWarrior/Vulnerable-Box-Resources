@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Oct  3 06:59:54 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA myfirewall-nmap-version-scan-output 192.168.1.208 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA myfirewall-nmap-version-scan-output 192.168.1.208" start="1727918994" startstr="Thu Oct  3 06:59:54 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727918994"/>
+<taskend task="NSE" time="1727918994"/>
+<taskbegin task="NSE" time="1727918994"/>
+<taskend task="NSE" time="1727918994"/>
+<taskbegin task="NSE" time="1727918994"/>
+<taskend task="NSE" time="1727918994"/>
+<taskbegin task="ARP Ping Scan" time="1727918994"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.208" addrtype="ipv4"/>
+<address addr="08:00:27:BB:75:94" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727918994" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727918994"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727918994"/>
+<taskbegin task="Connect Scan" time="1727918994"/>
+<taskend task="Connect Scan" time="1727918994" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1727918994"/>
+<taskend task="Service scan" time="1727919000" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1727919004"/>
+<taskend task="NSE" time="1727919009"/>
+<taskbegin task="NSE" time="1727919009"/>
+<taskend task="NSE" time="1727919009"/>
+<taskbegin task="NSE" time="1727919009"/>
+<taskend task="NSE" time="1727919009"/>
+<host starttime="1727918994" endtime="1727919009"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.208" addrtype="ipv4"/>
+<address addr="08:00:27:BB:75:94" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-title" output="pfSense - Login"><elem key="title">pfSense - Login</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: 5567E9CE23E5549E0FCD7195F3882816"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="FreeBSD 11.2-RELEASE" accuracy="92" line="26466">
+<osclass type="general purpose" vendor="FreeBSD" osfamily="FreeBSD" osgen="11.X" accuracy="92"><cpe>cpe:/o:freebsd:freebsd:11.2</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="6" lastboot="Thu Oct  3 07:00:03 2024"/>
+<distance value="1"/>
+<tcpsequence index="257" difficulty="Good luck!" values="63F9D69C,8887420F,5D30CF6C,37FB1928,D0B512EF,7466E04"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="62208DFF,46998639,47A2897E,6004CB5E,3BAD9F54,9BA9D59D"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.208" rtt="0.39"/>
+</trace>
+<times srtt="393" rttvar="197" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727919009"/>
+<taskend task="NSE" time="1727919009"/>
+<taskbegin task="NSE" time="1727919009"/>
+<taskend task="NSE" time="1727919009"/>
+<taskbegin task="NSE" time="1727919009"/>
+<taskend task="NSE" time="1727919009"/>
+<runstats><finished time="1727919009" timestr="Thu Oct  3 07:00:09 2024" summary="Nmap done at Thu Oct  3 07:00:09 2024; 1 IP address (1 host up) scanned in 16.01 seconds" elapsed="16.01" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

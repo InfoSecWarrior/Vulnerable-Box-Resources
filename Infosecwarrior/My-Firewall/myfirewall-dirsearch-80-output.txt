@@ -1,0 +1,44 @@
+# Dirsearch started Thu Oct  3 07:00:30 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.208:80 -o myfirewall-dirsearch-80-output.txt -q
+
+301   162B   http://192.168.1.208/js    -> REDIRECTS TO: http://192.168.1.208/js/
+403   548B   http://192.168.1.208/.dep.inc
+403   548B   http://192.168.1.208/.inc
+403   548B   http://192.168.1.208/_config.inc
+403   548B   http://192.168.1.208/adovbs.inc
+403   548B   http://192.168.1.208/auth.inc
+403   548B   http://192.168.1.208/backup.inc
+403   548B   http://192.168.1.208/backups.inc
+301   162B   http://192.168.1.208/classes    -> REDIRECTS TO: http://192.168.1.208/classes/
+403   548B   http://192.168.1.208/classes/
+403   548B   http://192.168.1.208/common.inc
+403   548B   http://192.168.1.208/config.inc
+403   548B   http://192.168.1.208/config.php.inc
+403   548B   http://192.168.1.208/config/config.inc
+403   548B   http://192.168.1.208/config/db.inc
+403   548B   http://192.168.1.208/config/settings.inc
+403   548B   http://192.168.1.208/connect.inc
+301   162B   http://192.168.1.208/css    -> REDIRECTS TO: http://192.168.1.208/css/
+403   548B   http://192.168.1.208/database.inc
+403   548B   http://192.168.1.208/database_credentials.inc
+403   548B   http://192.168.1.208/db.inc
+403   548B   http://192.168.1.208/debug.inc
+403   548B   http://192.168.1.208/dump.inc
+200    15KB  http://192.168.1.208/favicon.ico
+403   548B   http://192.168.1.208/globals.inc
+403   548B   http://192.168.1.208/inc/config.inc
+403   548B   http://192.168.1.208/includes/adovbs.inc
+403   548B   http://192.168.1.208/includes/
+403   548B   http://192.168.1.208/includes/bootstrap.inc
+301   162B   http://192.168.1.208/includes    -> REDIRECTS TO: http://192.168.1.208/includes/
+403   548B   http://192.168.1.208/index.inc
+403   548B   http://192.168.1.208/install.inc
+403   548B   http://192.168.1.208/js/
+200   404B   http://192.168.1.208/manifest.json
+403   548B   http://192.168.1.208/revision.inc
+403   548B   http://192.168.1.208/sql.inc
+403   548B   http://192.168.1.208/status
+403   548B   http://192.168.1.208/status?full=true
+403   548B   http://192.168.1.208/vendor/
+403   548B   http://192.168.1.208/wp-config.inc
+403   548B   http://192.168.1.208/wp-config.php.inc
+200   285B   http://192.168.1.208/xmlrpc.php

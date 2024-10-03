@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Thu Oct  3 06:58:09 2024 as: nmap -v -Pn -p- -oA myfirewall-all-ports-scan-output 192.168.1.208
+Nmap scan report for 192.168.1.208
+Host is up (0.00055s latency).
+Not shown: 65534 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+80/tcp open  http
+MAC Address: 08:00:27:BB:75:94 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Oct  3 06:59:53 2024 -- 1 IP address (1 host up) scanned in 104.30 seconds
