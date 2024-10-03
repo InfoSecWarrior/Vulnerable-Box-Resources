@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 18:01:47 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,65535 -oA Pinkys-Palacev4-nmap-version-scan-output 192.168.29.199
+# Ports scanned: TCP(2;80,65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.29.199 ()	Status: Up
+Host: 192.168.29.199 ()	Ports: 80/open/tcp//http//nginx 1.10.3/, 65535/open/tcp//unknown///	Seq Index: 262	IP ID Seq: All zeros
+# Nmap done at Sun Sep 29 18:03:57 2024 -- 1 IP address (1 host up) scanned in 130.59 seconds
