@@ -23,6 +23,10 @@ async function fetchAllData() {
         await Promise.all(fetchPromises);
         updateStatus('Data loaded from all available sources.');
         console.log('Data loading completed successfully. Total records:', parsedData.length);
+        
+        // Update the total machine count
+        updateTotalMachinesCount(); 
+        
         renderPage(currentPage, parsedData); // Initial render of all data
     } catch (error) {
         console.error('Error loading data from some sources:', error);
@@ -129,7 +133,6 @@ function updateStatus(message) {
     }
 }
 
-// Function to render the current page of data
 function renderPage(page, data, query = '') {
     console.log(`Rendering page ${page} with query: "${query}"`);
     const startIndex = (page - 1) * itemsPerPage;
@@ -138,23 +141,17 @@ function renderPage(page, data, query = '') {
 
     renderMachines(paginatedData, query);
     updatePaginationControls(page, data.length);
+
     const totalCountElement = document.getElementById('totalCount');
-    const searchCountElement = document.getElementById('searchCount');
-    if (query === '') {
-        // When no search query is provided, show total vulnerable machine count
-        if (totalCountElement) {
-            totalCountElement.textContent = `Total Vulnerable Machines: ${parsedData.length}`;
+    
+    if (totalCountElement) {
+        if (query === '') {
+            // Show total results when there's no search query
+            totalCountElement.textContent = `Search Results: 0`;
+        } else {
+            // Show filtered result count during search
+            totalCountElement.textContent = `Search Results: ${data.length}`;
         }
-        // Hide the search result count
-        searchCountElement.style.display = 'none';
-    } else {
-        // When a search query is provided, show search results count
-        if (searchCountElement) {
-            searchCountElement.textContent = `Search Results: ${data.length}`;
-            searchCountElement.style.display = 'block';
-        }
-        // Hide the total count when search results are being displayed
-        totalCountElement.style.display = 'none';
     }
 }
 
@@ -267,10 +264,6 @@ function renderMachines(data, query = '') {
     console.log(`Rendered ${data.length} machine entries.`);
 }
 
-
-
-
-
 // Escape RegExp special characters
 function escapeRegExp(string) {
     return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -315,8 +308,7 @@ function handleSearch(query) {
         cachedFilteredData = [];
         currentPage = 1;
         renderPage(currentPage, parsedData);
-        updateSearchResultCount(0); // Reset search result count when search is cleared
-        return;
+        return; // No need to update count when search is cleared
     }
 
     const patterns = {
@@ -370,20 +362,14 @@ function handleSearch(query) {
     cachedFilteredData = filteredData;
     currentPage = 1;
     renderPage(currentPage, cachedFilteredData, trimmedQuery);
-    updateSearchResultCount(filteredData.length); // Update search result count after filtering
 }
 
-// Function to update the search result count
-function updateSearchResultCount(count) {
-    const searchResultCountElement = document.getElementById('searchResultCount');
-    if (count > 0) {
-        searchResultCountElement.style.display = 'block';
-        searchResultCountElement.textContent = `Search Result: ${count}`;
-    } else {
-        searchResultCountElement.style.display = 'none';
+function updateTotalMachinesCount() {
+    const totalMachinesElement = document.getElementById('totalMachines');
+    if (totalMachinesElement) {
+        totalMachinesElement.textContent = `Total Machines: ${parsedData.length}`;
     }
 }
-
 // Add event listeners to predefined pattern buttons
 document.querySelectorAll('.predefined-patterns button').forEach(button => {
     button.addEventListener('click', function () {
