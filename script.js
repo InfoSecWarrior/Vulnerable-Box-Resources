@@ -275,6 +275,9 @@ document.getElementById('prevBtn').addEventListener('click', () => {
         currentPage--;
         const dataToRender = cachedFilteredData.length > 0 ? cachedFilteredData : parsedData;
         renderPage(currentPage, dataToRender, document.getElementById('searchBar').value);
+        window.scrollTo({
+            top: 0
+        });
     }
 });
 
@@ -285,6 +288,9 @@ document.getElementById('nextBtn').addEventListener('click', () => {
         currentPage++;
         const dataToRender = cachedFilteredData.length > 0 ? cachedFilteredData : parsedData;
         renderPage(currentPage, dataToRender, document.getElementById('searchBar').value);
+        window.scrollTo({
+            top: 0
+        });
     }
 });
 

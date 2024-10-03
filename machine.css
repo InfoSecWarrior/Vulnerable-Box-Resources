@@ -135,49 +135,6 @@ button {
     transition: background-color 0.3s, transform 0.2s ease;
 }
 
-.box {
-    background-color: #b20002;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 8px;
-    max-width: 1500px; /* Reduced max-width for better display */
-    margin: 20px auto;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between; /* Space between the elements */
-    align-items: center;
-    gap: 20px; /* Added gap for consistent spacing between items */
-}
-
-#machine-title {
-    font-weight: bold;
-    color: #ffffff;
-    margin: 0;
-    font-size: 22px; /* Slightly larger for better readability */
-    flex-shrink: 0; /* Prevents shrinking of the title */
-}
-
-#github-link,
-#resource-link {
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0;
-    font-size: 18px; /* Adjusted for better consistency */
-    color: #ffffff;
-}
-
-#github-link a,
-#resource-link a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-#github-link a:hover,
-#resource-link a:hover {
-    text-decoration: underline;
-}
-
 @media (max-width: 768px) {
     .box {
         flex-direction: column;
@@ -223,4 +180,83 @@ a {
 a:hover {
     color: #b20002;
     text-decoration: none;
+}
+
+.box {
+    background-color: #b20002; /* Darker background for a more professional look */
+    padding: 20px 40px;
+    border-radius: 8px;
+    max-width: 1500px;
+    margin: 20px auto;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; /* Increased gap for better spacing */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+}
+
+/* Title container */
+#machine-title-container {
+    flex-grow: 1; /* Allows it to expand if needed */
+}
+
+#machine-title {
+    font-weight: bold;
+    color: #f0f0f0;
+    margin: 0;
+    font-size: 24px; /* Slightly larger for prominence */
+}
+
+/* Link container */
+.info-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns links to the right */
+}
+
+#github-link,
+#resource-link {
+    margin: 5px 0;
+    font-size: 18px; /* Consistent size for the links */
+}
+
+/* Icon styling */
+#github-link i,
+#resource-link i {
+    margin-right: 8px;
+    color: #b3b3b3; /* Subtle color for icons */
+}
+
+#github-link a,
+#resource-link a {
+    text-decoration: none;
+    color: #00b4d8; /* Distinct blue for clickable links */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .info-links {
+        align-items: flex-start;
+    }
+
+    #machine-title {
+        font-size: 20px;
+    }
+
+    #github-link,
+    #resource-link {
+        font-size: 16px;
+    }
 }
