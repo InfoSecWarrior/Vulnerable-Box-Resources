@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Thu Oct  3 18:42:27 2024 as: nmap -v -Pn -p- -oA scream-all-ports-scan-output 192.168.29.237
+Nmap scan report for 192.168.29.237
+Host is up (0.00061s latency).
+Not shown: 65531 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+23/tcp open  telnet
+80/tcp open  http
+MAC Address: 08:00:27:FC:BA:4E (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Oct  3 18:44:11 2024 -- 1 IP address (1 host up) scanned in 104.14 seconds
