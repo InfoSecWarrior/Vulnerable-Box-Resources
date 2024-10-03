@@ -1,0 +1,7 @@
+# Dirsearch started Wed Oct  2 23:46:30 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.56:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o InfoSec-oscp-prep-dirsearch-80-wordlist-output.txt -q
+
+301   317B   http://192.168.1.56/wp-content    -> REDIRECTS TO: http://192.168.1.56/wp-content/
+301   318B   http://192.168.1.56/wp-includes    -> REDIRECTS TO: http://192.168.1.56/wp-includes/
+301   317B   http://192.168.1.56/javascript    -> REDIRECTS TO: http://192.168.1.56/javascript/
+301   315B   http://192.168.1.56/wp-admin    -> REDIRECTS TO: http://192.168.1.56/wp-admin/
+403   277B   http://192.168.1.56/server-status
