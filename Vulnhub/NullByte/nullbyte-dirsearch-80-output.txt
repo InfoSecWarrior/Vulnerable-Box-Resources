@@ -1,0 +1,29 @@
+# Dirsearch started Thu Oct  3 07:12:29 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.211:80 -o nullbyte-dirsearch-80-output.txt -q
+
+403   299B   http://192.168.1.211/.ht_wsr.txt
+403   302B   http://192.168.1.211/.htaccess.orig
+403   302B   http://192.168.1.211/.htaccess.bak1
+403   304B   http://192.168.1.211/.htaccess.sample
+403   302B   http://192.168.1.211/.htaccess.save
+403   302B   http://192.168.1.211/.htaccess_orig
+403   300B   http://192.168.1.211/.htaccess_sc
+403   303B   http://192.168.1.211/.htaccess_extra
+403   300B   http://192.168.1.211/.htaccessBAK
+403   300B   http://192.168.1.211/.htaccessOLD
+403   301B   http://192.168.1.211/.htaccessOLD2
+403   293B   http://192.168.1.211/.html
+403   292B   http://192.168.1.211/.htm
+403   302B   http://192.168.1.211/.htpasswd_test
+403   299B   http://192.168.1.211/.httr-oauth
+403   292B   http://192.168.1.211/.php
+403   293B   http://192.168.1.211/.php3
+403   298B   http://192.168.1.211/.htpasswds
+301   319B   http://192.168.1.211/javascript    -> REDIRECTS TO: http://192.168.1.211/javascript/
+301   319B   http://192.168.1.211/phpmyadmin    -> REDIRECTS TO: http://192.168.1.211/phpmyadmin/
+200     3KB  http://192.168.1.211/phpmyadmin/docs/html/index.html
+200     9KB  http://192.168.1.211/phpmyadmin/index.php
+200     9KB  http://192.168.1.211/phpmyadmin/
+403   301B   http://192.168.1.211/server-status
+403   302B   http://192.168.1.211/server-status/
+301   316B   http://192.168.1.211/uploads    -> REDIRECTS TO: http://192.168.1.211/uploads/
+200   110B   http://192.168.1.211/uploads/

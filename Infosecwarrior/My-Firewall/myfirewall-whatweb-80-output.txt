@@ -1,0 +1,1 @@
+http://192.168.1.208:80 [200 OK] Bootstrap, Cookies[PHPSESSID], Country[RESERVED][ZZ], HTML5, HTTPServer[nginx], HttpOnly[PHPSESSID], IP[192.168.1.208], JQuery[3.4.1], PasswordField[passwordfld], Script[text/javascript], Title[pfSense - Login], X-Frame-Options[SAMEORIGIN, SAMEORIGIN], nginx
