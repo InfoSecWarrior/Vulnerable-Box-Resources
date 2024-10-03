@@ -1,0 +1,59 @@
+# Nmap 7.94SVN scan initiated Thu Oct  3 13:05:37 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,2222,3306,8009,8080,8081 -oA My-Web-Server-nmap-version-scan-output 192.168.29.61
+Nmap scan report for 192.168.29.61
+Host is up (0.00037s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 cd:dc:8f:24:51:73:54:bc:87:62:a2:e6:ed:f1:c1:b4 (RSA)
+|   256 a9:39:a9:bf:b2:f7:01:22:65:07:be:15:48:e8:ef:11 (ECDSA)
+|_  256 77:f5:a9:ff:a6:44:7c:9c:34:41:f1:ec:73:5e:57:bd (ED25519)
+80/tcp   open  http    Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+| http-robots.txt: 1 disallowed entry 
+|_/wp-admin/
+|_http-title: Armour &#8211; Just another WordPress site
+|_http-generator: WordPress 5.3.2
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-favicon: Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E
+2222/tcp open  http    nostromo 1.9.6
+|_http-server-header: nostromo 1.9.6
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-title: Radius by TEMPLATED
+3306/tcp open  mysql   MySQL (unauthorized)
+8009/tcp open  ajp13   Apache Jserv (Protocol v1.3)
+|_ajp-methods: Failed to get a valid response for the OPTION request
+8080/tcp open  http    Apache Tomcat/Coyote JSP engine 1.1
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: Apache-Coyote/1.1
+|_http-favicon: Apache Tomcat
+|_http-title: Apache Tomcat/8.0.33
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+8081/tcp open  http    nginx 1.14.2
+|_http-server-header: nginx/1.14.2
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: Visualize by TEMPLATED
+MAC Address: 08:00:27:10:0D:C9 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Uptime guess: 10.746 days (since Sun Sep 22 19:11:26 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=259 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.37 ms 192.168.29.61
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Oct  3 13:06:08 2024 -- 1 IP address (1 host up) scanned in 31.64 seconds
