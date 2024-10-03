@@ -1,0 +1,17 @@
+[apache-detect] [http] [info] http://192.168.156.124:80 ["Apache/2.4.6 (CentOS) PHP/5.4.16"]
+[php-detect] [http] [info] http://192.168.156.124:80 ["5.4.16"]
+[tech-detect:php] [http] [info] http://192.168.156.124:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.156.124:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.156.124:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.156.124:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.156.124:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.156.124:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.156.124:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.156.124:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.156.124:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.156.124:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.156.124:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.156.124:80
+[waf-detect:apachegeneric] [http] [info] http://192.168.156.124:80
+[ssh-auth-methods] [javascript] [info] 192.168.156.124:22 ["["publickey","gssapi-keyex","gssapi-with-mic","password"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.156.124:22 ["Vulnerable to Terrapin"]

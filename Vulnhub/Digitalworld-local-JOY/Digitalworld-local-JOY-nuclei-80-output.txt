@@ -1,0 +1,7 @@
+[waf-detect:apachegeneric] [http] [info] http://192.168.0.243:80
+[smb2-capabilities] [javascript] [info] 192.168.0.243:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb2-server-time] [javascript] [info] 192.168.0.243:445 ["SystemTime: 2024-09-29T11:13:53.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-enum] [javascript] [info] 192.168.0.243:445 ["OSVersion: 6.1.0","NetBIOSComputerName: JOY","NetBIOSDomainName: JOY","DNSComputerNamen: joy","DNSComputerName: joy","ForestName:"]
+[smb-signing-not-required] [javascript] [medium] 192.168.0.243:445
+[smb-os-detect] [javascript] [info] 192.168.0.243:445 ["6.1.0"]
+[smb-anonymous-access] [javascript] [high] 192.168.0.243:445

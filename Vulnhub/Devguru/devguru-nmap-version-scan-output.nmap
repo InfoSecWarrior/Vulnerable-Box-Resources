@@ -1,0 +1,127 @@
+# Nmap 7.94SVN scan initiated Wed Oct  2 20:40:43 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8585 -oA devguru-nmap-version-scan-output 192.168.156.10
+Nmap scan report for 192.168.156.10
+Host is up (0.00072s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 2a:46:e8:2b:01:ff:57:58:7a:5f:25:a4:d6:f2:89:8e (RSA)
+|   256 08:79:93:9c:e3:b4:a4:be:80:ad:61:9d:d3:88:d2:84 (ECDSA)
+|_  256 9c:f9:88:d4:33:77:06:4e:d9:7c:39:17:3e:07:9c:bd (ED25519)
+80/tcp   open  http    Apache httpd 2.4.29 ((Ubuntu))
+| http-git: 
+|   192.168.156.10:80/.git/
+|     Git repository found!
+|     Repository description: Unnamed repository; edit this file 'description' to name the...
+|     Last commit message: first commit 
+|     Remotes:
+|       http://devguru.local:8585/frank/devguru-website.git
+|_    Project type: PHP application (guessed from .gitignore)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Corp - DevGuru
+|_http-generator: DevGuru
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+8585/tcp open  unknown
+| fingerprint-strings: 
+|   GenericLines: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Content-Type: text/html; charset=UTF-8
+|     Set-Cookie: lang=en-US; Path=/; Max-Age=2147483647
+|     Set-Cookie: i_like_gitea=cd8435b9cfe6146d; Path=/; HttpOnly
+|     Set-Cookie: _csrf=b2YRBCv_HDodllibLz6v-GrBWUE6MTcyNzg4MTg1MDI2NzI1OTE5OQ; Path=/; Expires=Thu, 03 Oct 2024 15:10:50 GMT; HttpOnly
+|     X-Frame-Options: SAMEORIGIN
+|     Date: Wed, 02 Oct 2024 15:10:50 GMT
+|     <!DOCTYPE html>
+|     <html lang="en-US" class="theme-">
+|     <head data-suburl="">
+|     <meta charset="utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <meta http-equiv="x-ua-compatible" content="ie=edge">
+|     <title> Gitea: Git with a cup of tea </title>
+|     <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+|     <meta name="theme-color" content="#6cc644">
+|     <meta name="author" content="Gitea - Git with a cup of tea" />
+|     <meta name="description" content="Gitea (Git with a cup of tea) is a painless
+|   HTTPOptions: 
+|     HTTP/1.0 404 Not Found
+|     Content-Type: text/html; charset=UTF-8
+|     Set-Cookie: lang=en-US; Path=/; Max-Age=2147483647
+|     Set-Cookie: i_like_gitea=86a09b0d8945039d; Path=/; HttpOnly
+|     Set-Cookie: _csrf=IZMqIuwayoN4Zul0c1nKBegztUs6MTcyNzg4MTg1MDI4NzM4NTEzNA; Path=/; Expires=Thu, 03 Oct 2024 15:10:50 GMT; HttpOnly
+|     X-Frame-Options: SAMEORIGIN
+|     Date: Wed, 02 Oct 2024 15:10:50 GMT
+|     <!DOCTYPE html>
+|     <html lang="en-US" class="theme-">
+|     <head data-suburl="">
+|     <meta charset="utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <meta http-equiv="x-ua-compatible" content="ie=edge">
+|     <title>Page Not Found - Gitea: Git with a cup of tea </title>
+|     <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+|     <meta name="theme-color" content="#6cc644">
+|     <meta name="author" content="Gitea - Git with a cup of tea" />
+|_    <meta name="description" content="Gitea (Git with a c
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8585-TCP:V=7.94SVN%I=7%D=10/2%Time=66FD627A%P=x86_64-pc-linux-gnu%r
+SF:(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(GetRequest,2A00,"HTTP/1\.0\x20200\x20OK\r\nContent-Typ
+SF:e:\x20text/html;\x20charset=UTF-8\r\nSet-Cookie:\x20lang=en-US;\x20Path
+SF:=/;\x20Max-Age=2147483647\r\nSet-Cookie:\x20i_like_gitea=cd8435b9cfe614
+SF:6d;\x20Path=/;\x20HttpOnly\r\nSet-Cookie:\x20_csrf=b2YRBCv_HDodllibLz6v
+SF:-GrBWUE6MTcyNzg4MTg1MDI2NzI1OTE5OQ;\x20Path=/;\x20Expires=Thu,\x2003\x2
+SF:0Oct\x202024\x2015:10:50\x20GMT;\x20HttpOnly\r\nX-Frame-Options:\x20SAM
+SF:EORIGIN\r\nDate:\x20Wed,\x2002\x20Oct\x202024\x2015:10:50\x20GMT\r\n\r\
+SF:n<!DOCTYPE\x20html>\n<html\x20lang=\"en-US\"\x20class=\"theme-\">\n<hea
+SF:d\x20data-suburl=\"\">\n\t<meta\x20charset=\"utf-8\">\n\t<meta\x20name=
+SF:\"viewport\"\x20content=\"width=device-width,\x20initial-scale=1\">\n\t
+SF:<meta\x20http-equiv=\"x-ua-compatible\"\x20content=\"ie=edge\">\n\t<tit
+SF:le>\x20Gitea:\x20Git\x20with\x20a\x20cup\x20of\x20tea\x20</title>\n\t<l
+SF:ink\x20rel=\"manifest\"\x20href=\"/manifest\.json\"\x20crossorigin=\"us
+SF:e-credentials\">\n\t<meta\x20name=\"theme-color\"\x20content=\"#6cc644\
+SF:">\n\t<meta\x20name=\"author\"\x20content=\"Gitea\x20-\x20Git\x20with\x
+SF:20a\x20cup\x20of\x20tea\"\x20/>\n\t<meta\x20name=\"description\"\x20con
+SF:tent=\"Gitea\x20\(Git\x20with\x20a\x20cup\x20of\x20tea\)\x20is\x20a\x20
+SF:painless")%r(HTTPOptions,212A,"HTTP/1\.0\x20404\x20Not\x20Found\r\nCont
+SF:ent-Type:\x20text/html;\x20charset=UTF-8\r\nSet-Cookie:\x20lang=en-US;\
+SF:x20Path=/;\x20Max-Age=2147483647\r\nSet-Cookie:\x20i_like_gitea=86a09b0
+SF:d8945039d;\x20Path=/;\x20HttpOnly\r\nSet-Cookie:\x20_csrf=IZMqIuwayoN4Z
+SF:ul0c1nKBegztUs6MTcyNzg4MTg1MDI4NzM4NTEzNA;\x20Path=/;\x20Expires=Thu,\x
+SF:2003\x20Oct\x202024\x2015:10:50\x20GMT;\x20HttpOnly\r\nX-Frame-Options:
+SF:\x20SAMEORIGIN\r\nDate:\x20Wed,\x2002\x20Oct\x202024\x2015:10:50\x20GMT
+SF:\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=\"en-US\"\x20class=\"theme-\"
+SF:>\n<head\x20data-suburl=\"\">\n\t<meta\x20charset=\"utf-8\">\n\t<meta\x
+SF:20name=\"viewport\"\x20content=\"width=device-width,\x20initial-scale=1
+SF:\">\n\t<meta\x20http-equiv=\"x-ua-compatible\"\x20content=\"ie=edge\">\
+SF:n\t<title>Page\x20Not\x20Found\x20-\x20\x20Gitea:\x20Git\x20with\x20a\x
+SF:20cup\x20of\x20tea\x20</title>\n\t<link\x20rel=\"manifest\"\x20href=\"/
+SF:manifest\.json\"\x20crossorigin=\"use-credentials\">\n\t<meta\x20name=\
+SF:"theme-color\"\x20content=\"#6cc644\">\n\t<meta\x20name=\"author\"\x20c
+SF:ontent=\"Gitea\x20-\x20Git\x20with\x20a\x20cup\x20of\x20tea\"\x20/>\n\t
+SF:<meta\x20name=\"description\"\x20content=\"Gitea\x20\(Git\x20with\x20a\
+SF:x20c");
+MAC Address: 08:00:27:CB:98:78 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Uptime guess: 40.093 days (since Fri Aug 23 18:28:10 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.72 ms 192.168.156.10
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct  2 20:42:13 2024 -- 1 IP address (1 host up) scanned in 89.12 seconds

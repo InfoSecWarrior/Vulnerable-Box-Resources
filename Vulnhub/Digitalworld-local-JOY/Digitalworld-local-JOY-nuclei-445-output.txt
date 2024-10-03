@@ -1,0 +1,6 @@
+[smb-enum] [javascript] [info] 192.168.0.243:445 ["ForestName:","OSVersion: 6.1.0","NetBIOSComputerName: JOY","NetBIOSDomainName: JOY","DNSComputerNamen: joy","DNSComputerName: joy"]
+[smb2-capabilities] [javascript] [info] 192.168.0.243:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb2-server-time] [javascript] [info] 192.168.0.243:445 ["SystemTime: 2024-09-29T11:53:30.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-os-detect] [javascript] [info] 192.168.0.243:445 ["6.1.0"]
+[smb-signing-not-required] [javascript] [medium] 192.168.0.243:445
+[smb-anonymous-access] [javascript] [high] 192.168.0.243:445

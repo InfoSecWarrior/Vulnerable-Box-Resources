@@ -1,0 +1,12 @@
+# Dirsearch started Tue Oct  1 07:17:13 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.15:8000 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o typo-dirsearch-8000-wordlist-output.txt -q
+
+404   276B   http://192.168.1.15:8000/http%3A%2F%2Fwww
+404   276B   http://192.168.1.15:8000/http%3A%2F%2Fyoutube
+404   276B   http://192.168.1.15:8000/http%3A%2F%2Fblogs
+404   276B   http://192.168.1.15:8000/http%3A%2F%2Fblog
+404   276B   http://192.168.1.15:8000/**http%3A%2F%2Fwww
+404   276B   http://192.168.1.15:8000/http%3A%2F%2Fcommunity
+404   276B   http://192.168.1.15:8000/http%3A%2F%2Fradar
+404   276B   http://192.168.1.15:8000/http%3A%2F%2Fjeremiahgrossman
+404   276B   http://192.168.1.15:8000/http%3A%2F%2Fweblog
+404   276B   http://192.168.1.15:8000/http%3A%2F%2Fswik

@@ -1,0 +1,4 @@
+[CVE-2023-48795] [javascript] [medium] 192.168.1.104:22 ["Vulnerable to Terrapin"]
+[ssh-auth-methods] [javascript] [info] 192.168.1.104:22 ["["publickey"]"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.104:22
+[ssh-server-enumeration] [javascript] [info] 192.168.1.104:22 ["SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u2"]

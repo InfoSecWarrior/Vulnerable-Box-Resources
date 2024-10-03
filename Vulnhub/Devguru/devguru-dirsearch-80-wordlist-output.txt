@@ -1,0 +1,27 @@
+# Dirsearch started Wed Oct  2 20:53:39 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.156.10:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o devguru-dirsearch-80-wordlist-output.txt -q
+
+200     3KB  http://192.168.156.10/about
+301   317B   http://192.168.156.10/themes    -> REDIRECTS TO: http://192.168.156.10/themes/
+200     2KB  http://192.168.156.10/services
+301   318B   http://192.168.156.10/modules    -> REDIRECTS TO: http://192.168.156.10/modules/
+301   318B   http://192.168.156.10/storage    -> REDIRECTS TO: http://192.168.156.10/storage/
+301   318B   http://192.168.156.10/plugins    -> REDIRECTS TO: http://192.168.156.10/plugins/
+200     3KB  http://192.168.156.10/About
+302   414B   http://192.168.156.10/backend    -> REDIRECTS TO: http://192.168.156.10/backend/backend/auth
+200     2KB  http://192.168.156.10/Services
+301   317B   http://192.168.156.10/vendor    -> REDIRECTS TO: http://192.168.156.10/vendor/
+301   317B   http://192.168.156.10/config    -> REDIRECTS TO: http://192.168.156.10/config/
+404   276B   http://192.168.156.10/http%3A%2F%2Fwww
+200     2KB  http://192.168.156.10/artisan
+301   320B   http://192.168.156.10/bootstrap    -> REDIRECTS TO: http://192.168.156.10/bootstrap/
+200     2KB  http://192.168.156.10/SERVICES
+200     3KB  http://192.168.156.10/ABOUT
+404   276B   http://192.168.156.10/http%3A%2F%2Fyoutube
+404   276B   http://192.168.156.10/http%3A%2F%2Fblogs
+404   276B   http://192.168.156.10/http%3A%2F%2Fblog
+404   276B   http://192.168.156.10/**http%3A%2F%2Fwww
+404   276B   http://192.168.156.10/http%3A%2F%2Fcommunity
+404   276B   http://192.168.156.10/http%3A%2F%2Fradar
+404   276B   http://192.168.156.10/http%3A%2F%2Fjeremiahgrossman
+404   276B   http://192.168.156.10/http%3A%2F%2Fweblog
+404   276B   http://192.168.156.10/http%3A%2F%2Fswik

@@ -1,0 +1,17 @@
+[deprecated-tls:tls_1.1] [ssl] [info] 192.168.1.14:9090 ["tls11"]
+[tls-version] [ssl] [info] 192.168.1.14:9090 ["tls11"]
+[weak-cipher-suites:tls-1.1] [ssl] [low] 192.168.1.14:9090 ["[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]"]
+[tls-version] [ssl] [info] 192.168.1.14:9090 ["tls12"]
+[addeventlistener-detect] [http] [info] https://192.168.1.14:9090
+[http-missing-security-headers:strict-transport-security] [http] [info] https://192.168.1.14:9090
+[http-missing-security-headers:permissions-policy] [http] [info] https://192.168.1.14:9090
+[http-missing-security-headers:referrer-policy] [http] [info] https://192.168.1.14:9090
+[http-missing-security-headers:clear-site-data] [http] [info] https://192.168.1.14:9090
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://192.168.1.14:9090
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://192.168.1.14:9090
+[http-missing-security-headers:x-frame-options] [http] [info] https://192.168.1.14:9090
+[http-missing-security-headers:x-content-type-options] [http] [info] https://192.168.1.14:9090
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://192.168.1.14:9090
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://192.168.1.14:9090
+[ssl-issuer] [ssl] [info] 192.168.1.14:9090 ["4500c48fcdd544f8829a8b818a83cfe3"]
+[self-signed-ssl] [ssl] [low] 192.168.1.14:9090

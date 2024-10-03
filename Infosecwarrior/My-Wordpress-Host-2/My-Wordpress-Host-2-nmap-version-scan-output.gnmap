@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Sep 28 20:42:37 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA My-Wordpress-Host-2-nmap-version-scan-output 192.168.1.104
+# Ports scanned: TCP(2;22,80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.104 ()	Status: Up
+Host: 192.168.1.104 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.38 ((Debian))/	OS: Linux 4.15 - 5.8	Seq Index: 264	IP ID Seq: All zeros
+# Nmap done at Sat Sep 28 20:42:47 2024 -- 1 IP address (1 host up) scanned in 10.37 seconds

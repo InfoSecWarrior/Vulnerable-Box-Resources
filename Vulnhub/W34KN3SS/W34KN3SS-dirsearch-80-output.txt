@@ -1,0 +1,28 @@
+# Dirsearch started Mon Sep 30 14:35:16 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.139:80 -o W34KN3SS-dirsearch-80-output.txt -q
+
+403   299B   http://192.168.1.139/.ht_wsr.txt
+403   304B   http://192.168.1.139/.htaccess.sample
+403   302B   http://192.168.1.139/.htaccess.orig
+403   302B   http://192.168.1.139/.htaccess.save
+403   302B   http://192.168.1.139/.htaccess.bak1
+403   303B   http://192.168.1.139/.htaccess_extra
+403   302B   http://192.168.1.139/.htaccess_orig
+403   300B   http://192.168.1.139/.htaccessBAK
+403   300B   http://192.168.1.139/.htaccessOLD
+403   300B   http://192.168.1.139/.htaccess_sc
+403   301B   http://192.168.1.139/.htaccessOLD2
+403   293B   http://192.168.1.139/.html
+403   292B   http://192.168.1.139/.htm
+403   302B   http://192.168.1.139/.htpasswd_test
+403   298B   http://192.168.1.139/.htpasswds
+403   299B   http://192.168.1.139/.httr-oauth
+403   292B   http://192.168.1.139/.php
+301   313B   http://192.168.1.139/blog    -> REDIRECTS TO: http://192.168.1.139/blog/
+200   401B   http://192.168.1.139/blog/
+403   302B   http://192.168.1.139/server-status/
+403   301B   http://192.168.1.139/server-status
+301   313B   http://192.168.1.139/test    -> REDIRECTS TO: http://192.168.1.139/test/
+200    84B   http://192.168.1.139/test/
+200   168B   http://192.168.1.139/upload.php
+200   407B   http://192.168.1.139/uploads/
+301   316B   http://192.168.1.139/uploads    -> REDIRECTS TO: http://192.168.1.139/uploads/

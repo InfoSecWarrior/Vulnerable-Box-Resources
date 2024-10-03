@@ -1,0 +1,12 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.0.186
++ Target Port: 8080
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ HEAD mod_ssl/2.2.21 appears to be outdated (current is at least 2.9.6) (may depend on server version).
++ HEAD PHP/5.3.8 appears to be outdated (current is at least 8.1.5), PHP 7.4.28 for the 7.4 branch.
++ HEAD Apache/2.2.21 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ HEAD OpenSSL/0.9.8q appears to be outdated (current is at least 3.0.7). OpenSSL 1.1.1s is current for the 1.x branch and will be supported until Nov 11 2023.
++ TRACE /: HTTP TRACE method is active which suggests the host is vulnerable to XST. See: https://owasp.org/www-community/attacks/Cross_Site_Tracing: 
++ GET mod_ssl/2.2.21 OpenSSL/0.9.8q DAV/2 PHP/5.3.8 - mod_ssl 2.8.7 and lower are vulnerable to a remote buffer overflow which may allow a remote shell.
++ GET PHP/5.3 - PHP 3/4/5 and 7.0 are End of Life products without support.

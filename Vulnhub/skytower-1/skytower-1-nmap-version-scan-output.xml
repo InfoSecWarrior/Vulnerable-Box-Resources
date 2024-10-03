@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Oct  1 05:57:06 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,3128 -oA skytower-1-nmap-version-scan-output 192.168.1.13 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 80,3128 -oA skytower-1-nmap-version-scan-output 192.168.1.13" start="1727742426" startstr="Tue Oct  1 05:57:06 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="80,3128"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727742427"/>
+<taskend task="NSE" time="1727742427"/>
+<taskbegin task="NSE" time="1727742427"/>
+<taskend task="NSE" time="1727742427"/>
+<taskbegin task="NSE" time="1727742427"/>
+<taskend task="NSE" time="1727742427"/>
+<taskbegin task="ARP Ping Scan" time="1727742427"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.13" addrtype="ipv4"/>
+<address addr="08:00:27:54:4A:37" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727742427" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727742427"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727742427"/>
+<taskbegin task="Connect Scan" time="1727742427"/>
+<taskend task="Connect Scan" time="1727742427" extrainfo="2 total ports"/>
+<taskbegin task="Service scan" time="1727742427"/>
+<taskend task="Service scan" time="1727742438" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1727742439"/>
+<taskend task="NSE" time="1727742459"/>
+<taskbegin task="NSE" time="1727742459"/>
+<taskend task="NSE" time="1727742459"/>
+<taskbegin task="NSE" time="1727742459"/>
+<taskend task="NSE" time="1727742459"/>
+<host starttime="1727742427" endtime="1727742459"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.13" addrtype="ipv4"/>
+<address addr="08:00:27:54:4A:37" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.22" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.22</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-server-header" output="Apache/2.2.22 (Debian)"><elem>Apache/2.2.22 (Debian)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS GET HEAD POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="3128"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" product="Squid http proxy" version="3.1.20" method="probed" conf="10"><cpe>cpe:/a:squid-cache:squid:3.1.20</cpe></service><script id="http-title" output="ERROR: The requested URL could not be retrieved"><elem key="title">ERROR: The requested URL could not be retrieved</elem>
+</script><script id="http-server-header" output="squid/3.1.20"><elem>squid/3.1.20</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="udp" portid="44095"/>
+<osmatch name="Linux 3.2 - 3.10" accuracy="100" line="65114">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 3.16" accuracy="100" line="65151">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="17179819" lastboot="Sat Mar 16 09:47:20 2024"/>
+<distance value="1"/>
+<tcpsequence index="260" difficulty="Good luck!" values="62B5ACDE,1042AE2,CF03051A,C8706FE6,ED7528F3,3C173688"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="FFFFBB2E,FFFFBB47,FFFFBB60,FFFFBB79,FFFFBB92,FFFFBBAB"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.13" rtt="0.61"/>
+</trace>
+<times srtt="613" rttvar="140" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727742459"/>
+<taskend task="NSE" time="1727742459"/>
+<taskbegin task="NSE" time="1727742459"/>
+<taskend task="NSE" time="1727742459"/>
+<taskbegin task="NSE" time="1727742459"/>
+<taskend task="NSE" time="1727742459"/>
+<runstats><finished time="1727742459" timestr="Tue Oct  1 05:57:39 2024" summary="Nmap done at Tue Oct  1 05:57:39 2024; 1 IP address (1 host up) scanned in 32.67 seconds" elapsed="32.67" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

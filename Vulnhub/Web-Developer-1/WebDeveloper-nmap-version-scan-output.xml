@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Oct  2 21:39:00 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA WebDeveloper-nmap-version-scan-output 192.168.1.139 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA WebDeveloper-nmap-version-scan-output 192.168.1.139" start="1727885340" startstr="Wed Oct  2 21:39:00 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727885340"/>
+<taskend task="NSE" time="1727885340"/>
+<taskbegin task="NSE" time="1727885340"/>
+<taskend task="NSE" time="1727885340"/>
+<taskbegin task="NSE" time="1727885340"/>
+<taskend task="NSE" time="1727885340"/>
+<taskbegin task="ARP Ping Scan" time="1727885340"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.139" addrtype="ipv4"/>
+<address addr="08:00:27:CC:54:C9" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727885340" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727885341"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727885341"/>
+<taskbegin task="Connect Scan" time="1727885341"/>
+<taskend task="Connect Scan" time="1727885341" extrainfo="2 total ports"/>
+<taskbegin task="Service scan" time="1727885341"/>
+<taskend task="Service scan" time="1727885347" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1727885348"/>
+<taskend task="NSE" time="1727885349"/>
+<taskbegin task="NSE" time="1727885349"/>
+<taskend task="NSE" time="1727885349"/>
+<taskbegin task="NSE" time="1727885349"/>
+<taskend task="NSE" time="1727885349"/>
+<host starttime="1727885341" endtime="1727885349"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.139" addrtype="ipv4"/>
+<address addr="08:00:27:CC:54:C9" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 d2:ac:73:4c:17:ec:6a:82:79:87:5a:f9:22:d4:12:cb (RSA)&#xa;  256 9c:d5:f3:2c:e2:d0:06:cc:8c:15:5a:5a:81:5b:03:3d (ECDSA)&#xa;  256 ab:67:56:69:27:ea:3e:3b:33:73:32:f8:ff:2e:1f:20 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">d2ac734c17ec6a8279875af922d412cb</elem>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCkgdNJs41OI0TFS67l3c9wTuvs/SD7S5kVwofnV5wkDIYa5grQc1J7C1qSImXlX2MQ02Y6VbcsebLpy4NqyAgtV+VBCEqWu6FujA2kwaWN+yL781GaEd3/Jze9a6Uxse4p5O6/5TtPeh5bVJTqFALQ9sjsZpwD528x9FfPdmK9voAKD3pzFWLBI4WaKqh2Xy+d3mDLQOc+dULhOymdiuGh+UcaSVQN9WSy9NeECWYxhy/pkpMGZS4DaVNGsHmQfQicjtaRhPYg8r2ICeAdgpZ2aQWpe1fcUW58t/uj3eauU3VRJNqiy+yp7hV+dwxrl9NqFKtmTlRvGvy3G8mLRyhJ</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">9cd5f32ce2d006cc8c155a5a815b033d</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLrmTuklXg8ulgnCnC8YZZLKR9LbMSSW7QfxBsJUDjgBMVP6PsHYHlNaEY+oHfZtjU2L5VyQufGKoyvaS4CC30k=</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">ab67566927ea3e3b337332f8ff2e1f20</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJddm5Qctin2VSmNmkU8zAOzC5y1+4W1u+4ygqepqjKi</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Example site &amp;#8211; Just another WordPress site"><elem key="title">Example site &amp;#8211; Just another WordPress site</elem>
+</script><script id="http-generator" output="WordPress 4.9.8"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="34707"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="513891" lastboot="Thu Sep 26 22:54:18 2024"/>
+<distance value="1"/>
+<tcpsequence index="261" difficulty="Good luck!" values="F6EA37DB,2B245B16,157B24FC,7F6AF1CF,19A35652,A8F107B8"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="1EA156AC,1EA15710,1EA15775,1EA157D9,1EA1583D,1EA158A1"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.139" rtt="0.55"/>
+</trace>
+<times srtt="554" rttvar="119" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727885349"/>
+<taskend task="NSE" time="1727885349"/>
+<taskbegin task="NSE" time="1727885349"/>
+<taskend task="NSE" time="1727885349"/>
+<taskbegin task="NSE" time="1727885349"/>
+<taskend task="NSE" time="1727885349"/>
+<runstats><finished time="1727885349" timestr="Wed Oct  2 21:39:09 2024" summary="Nmap done at Wed Oct  2 21:39:09 2024; 1 IP address (1 host up) scanned in 8.93 seconds" elapsed="8.93" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

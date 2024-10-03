@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Mon Sep 30 20:53:13 2024 as: nmap -v -Pn -p- -oA Vulnix-all-ports-scan-output 192.168.1.109
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.109 ()	Status: Up
+Host: 192.168.1.109 ()	Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///, 79/open/tcp//finger///, 110/open/tcp//pop3///, 111/open/tcp//rpcbind///, 143/open/tcp//imap///, 512/open/tcp//exec///, 513/open/tcp//login///, 514/open/tcp//shell///, 993/open/tcp//imaps///, 995/open/tcp//pop3s///, 2049/open/tcp//nfs///, 34474/open/tcp/////, 36615/open/tcp/////, 45119/open/tcp/////, 54825/open/tcp/////, 57180/open/tcp/////	Ignored State: closed (65518)
+# Nmap done at Mon Sep 30 20:53:16 2024 -- 1 IP address (1 host up) scanned in 3.41 seconds

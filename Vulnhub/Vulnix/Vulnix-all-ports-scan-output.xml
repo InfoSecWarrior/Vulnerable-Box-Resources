@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Mon Sep 30 20:53:13 2024 as: nmap -v -Pn -p- -oA Vulnix-all-ports-scan-output 192.168.1.109 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA Vulnix-all-ports-scan-output 192.168.1.109" start="1727709793" startstr="Mon Sep 30 20:53:13 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1727709793"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.109" addrtype="ipv4"/>
+<address addr="08:00:27:B6:1C:2C" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727709793" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727709793"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727709793"/>
+<taskbegin task="SYN Stealth Scan" time="1727709793"/>
+<taskend task="SYN Stealth Scan" time="1727709796" extrainfo="65535 total ports"/>
+<host starttime="1727709793" endtime="1727709796"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.109" addrtype="ipv4"/>
+<address addr="08:00:27:B6:1C:2C" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65518">
+<extrareasons reason="reset" count="65518" proto="tcp" ports="1-21,23-24,26-78,80-109,112-142,144-511,515-992,994,996-2048,2050-34473,34475-36614,36616-45118,45120-54824,54826-57179,57181-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="79"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="finger" method="table" conf="3"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="imap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="512"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="exec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="513"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="login" method="table" conf="3"/></port>
+<port protocol="tcp" portid="514"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="shell" method="table" conf="3"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="imaps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="pop3s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nfs" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34474"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="36615"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="45119"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="54825"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="57180"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+</ports>
+<times srtt="146" rttvar="24" to="100000"/>
+</host>
+<runstats><finished time="1727709796" timestr="Mon Sep 30 20:53:16 2024" summary="Nmap done at Mon Sep 30 20:53:16 2024; 1 IP address (1 host up) scanned in 3.41 seconds" elapsed="3.41" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

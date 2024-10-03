@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Tue Oct  1 05:57:05 2024 as: nmap -v -Pn -p- -oA skytower-1-all-ports-scan-output 192.168.1.13
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.13 ()	Status: Up
+Host: 192.168.1.13 ()	Ports: 22/filtered/tcp//ssh///, 80/open/tcp//http///, 3128/open/tcp//squid-http///	Ignored State: closed (65532)
+# Nmap done at Tue Oct  1 05:57:06 2024 -- 1 IP address (1 host up) scanned in 1.81 seconds

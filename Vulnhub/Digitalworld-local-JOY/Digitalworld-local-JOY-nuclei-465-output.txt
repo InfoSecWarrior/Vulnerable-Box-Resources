@@ -1,0 +1,1 @@
+[rsync-list-modules] [javascript] [low] 192.168.0.243:465 ["220  JOY.localdomain  ESMTP  Postfix  (Debian/GNU)  221  2.7.0  Error:  I  can  break  rules,  too.  Goodbye."]

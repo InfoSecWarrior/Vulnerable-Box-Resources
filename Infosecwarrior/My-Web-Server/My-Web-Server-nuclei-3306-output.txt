@@ -1,0 +1,4 @@
+[mysql-info] [javascript] [info] 192.168.29.61:3306 ["Version:","Transport: tcp"]
+[rsync-list-modules] [javascript] [low] 192.168.29.61:3306 ["F\x00\x00\x00\ufffdj\x04Host  '192.168.29.18'  is  not  allowed  to  connect  to  this  MySQL  server"]
+[mysql-detect] [tcp] [info] 192.168.29.61:3306
+[CVE-2020-1938] [tcp] [critical] 192.168.29.61:8009

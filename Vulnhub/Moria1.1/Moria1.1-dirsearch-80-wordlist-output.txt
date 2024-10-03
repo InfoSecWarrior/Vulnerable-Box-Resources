@@ -1,0 +1,3 @@
+# Dirsearch started Wed Oct  2 20:29:21 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.156.124:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Moria1.1-dirsearch-80-wordlist-output.txt -q
+
+301   233B   http://192.168.156.124/w    -> REDIRECTS TO: http://192.168.156.124/w/

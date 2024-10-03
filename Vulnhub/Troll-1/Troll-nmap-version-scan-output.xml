@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Mon Sep 30 13:37:52 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80 -oA Troll-nmap-version-scan-output 192.168.1.126 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80 -oA Troll-nmap-version-scan-output 192.168.1.126" start="1727683672" startstr="Mon Sep 30 13:37:52 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="21-22,80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727683672"/>
+<taskend task="NSE" time="1727683672"/>
+<taskbegin task="NSE" time="1727683672"/>
+<taskend task="NSE" time="1727683672"/>
+<taskbegin task="NSE" time="1727683672"/>
+<taskend task="NSE" time="1727683672"/>
+<taskbegin task="ARP Ping Scan" time="1727683672"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.126" addrtype="ipv4"/>
+<address addr="08:00:27:67:47:22" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727683672" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727683673"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727683673"/>
+<taskbegin task="Connect Scan" time="1727683673"/>
+<taskend task="Connect Scan" time="1727683673" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1727683673"/>
+<taskend task="Service scan" time="1727683679" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1727683680"/>
+<taskend task="NSE" time="1727683681"/>
+<taskbegin task="NSE" time="1727683681"/>
+<taskend task="NSE" time="1727683681"/>
+<taskbegin task="NSE" time="1727683681"/>
+<taskend task="NSE" time="1727683681"/>
+<host starttime="1727683673" endtime="1727683681"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.126" addrtype="ipv4"/>
+<address addr="08:00:27:67:47:22" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="3.0.2" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.2</cpe></service><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to 192.168.1.217&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 600&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.2 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to 192.168.1.217&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 600&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.2 - secure, fast, stable&#xa;End of status</elem>
+</script><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;-rwxrwxrwx    1 1000     0            8068 Aug 10  2014 lol.pcap [NSE: writeable]"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="6.6.1p1 Ubuntu 2ubuntu2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.6.1p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 d6:18:d9:ef:75:d3:1c:29:be:14:b5:2b:18:54:a9:c0 (DSA)&#xa;  2048 ee:8c:64:87:44:39:53:8c:24:fe:9d:39:a9:ad:ea:db (RSA)&#xa;  256 0e:66:e6:50:cf:56:3b:9c:67:8b:5f:56:ca:ae:6b:f4 (ECDSA)&#xa;  256 b2:8b:e2:46:5c:ef:fd:dc:72:f7:10:7e:04:5f:25:85 (ED25519)"><table>
+<elem key="bits">1024</elem>
+<elem key="fingerprint">d618d9ef75d31c29be14b52b1854a9c0</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAPvm+E+qXyRODHZMbgiT5buFG3ibhNm4hBA3oWrF0kIpePfc0uQZIPUpUZG6EEGQjbeXhyMFPQu4P9s6QwJJ4f31K+U+dLmMfOJNaIVdx9MpX04xuy7mxDp7h9XDJPiIcgLvMYItY52kgxZAuFbjsYdyBBT48Umyd6hhCpwq1/0rAAAAFQDFm+k8NFmBftv1yK4U7dkg8ERgVwAAAIEAzzz/FseGlWcEZrnlJSMoyKRa/Dph5uIYpYqLu1OfZLhPKnELg9l5w6Gct9D+5SrFnm5lX6IcHWhG/4ionh9qQO/IJtuuSia9nVHruLvYipqiyULQ/HO69Znv7hGmsWAsQa3MlX7nyo/0MSgmVIJraSUBBNBzLCgU5oLn0xxNirwAAACARTIMgZBYWhbs2aZeqfq4HjUzH1nUB+/bvyJ4cmbc3s8VfZhXRUggjDiz3f3spROVZEKwBKLUSM/lGIDd9LfUjtjdoKdYN1HDEUwiKl2OlbmnhNX88NCF1QN66XTYKq0CThJYinBMIZi8FiW4DYZ9QT+9SZDib6hEvab/E7YJ9zY=</elem>
+</table>
+<table>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">ee8c64874439538c24fe9d39a9adeadb</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDi1MPWZMtN3eywmC1nj8ZOZsCv7j78Do5ebJiFEhwXDszJtWgzp/Tb9H/VidiUAdlnzNNZoq6KSBqETX1SxaHyl+d28gHR0A7Y1U0BtkMjTQsqo+Ocpc1cUSdAZTGz8i7t/segL8ouF7agOjr0x97R5Hw1BSYuK3u51qgCothfrKJFrtt4mPryqx6Q2+ZV5h3dOaMExprApTMCjj2WtKwJn5xZsmKJ5c8sVnsbQaNKo1M7IH2WJkV89jO90EMZ6XJsTlbobWN8pASn7N05rjvI/njinfI8cUq9HdSjYjaM4Lq4ZpReNXQ3bf7da0nRRGv2tSaVGU7OhcpNYIpo7Xcv</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">0e66e650cf563b9c678b5f56caae6bf4</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBE+5luyzp+tLU9TK+5Avd2IA+8LEBFPxjUavwPVbeLdBhgF/pTThnzpQ2hEhcUzWq2CfQPkg6q4H4F9k9Tpeg+k=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">b28be2465ceffddc72f7107e045f2585</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIIJZC+1mSO4wMlWhDBBwmHKkCob1KrCwkoqIvi9Bw+44</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.7" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.7</cpe></service><script id="http-robots.txt" output="1 disallowed entry &#xa;/secret"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.7 (Ubuntu)"><elem>Apache/2.4.7 (Ubuntu)</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="udp" portid="40165"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="1300" lastboot="Mon Sep 30 13:16:21 2024"/>
+<distance value="1"/>
+<tcpsequence index="261" difficulty="Good luck!" values="BBC7ECE3,B34F3902,5C04BBD0,BE7D4CA1,FFF09E4F,7130495C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="4F928,4F941,4F95A,4F973,4F98D,4F9A6"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.126" rtt="0.33"/>
+</trace>
+<times srtt="327" rttvar="61" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727683681"/>
+<taskend task="NSE" time="1727683681"/>
+<taskbegin task="NSE" time="1727683681"/>
+<taskend task="NSE" time="1727683681"/>
+<taskbegin task="NSE" time="1727683681"/>
+<taskend task="NSE" time="1727683681"/>
+<runstats><finished time="1727683681" timestr="Mon Sep 30 13:38:01 2024" summary="Nmap done at Mon Sep 30 13:38:01 2024; 1 IP address (1 host up) scanned in 8.63 seconds" elapsed="8.63" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Wed Oct  2 17:24:50 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80 -oA BSides-Vancouver-2018-Workshop-nmap-version-scan-output 192.168.246.168
+# Ports scanned: TCP(3;21-22,80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.246.168 ()	Status: Up
+Host: 192.168.246.168 ()	Ports: 21/open/tcp//ftp//vsftpd 2.3.5/, 22/open/tcp//ssh//OpenSSH 5.9p1 Debian 5ubuntu1.10 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.2.22 ((Ubuntu))/	OS: Linux 3.2 - 4.9	Seq Index: 258	IP ID Seq: All zeros
+# Nmap done at Wed Oct  2 17:24:58 2024 -- 1 IP address (1 host up) scanned in 8.32 seconds
