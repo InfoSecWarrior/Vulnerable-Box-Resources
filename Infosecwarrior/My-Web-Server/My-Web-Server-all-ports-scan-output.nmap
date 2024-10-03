@@ -1,0 +1,16 @@
+# Nmap 7.94SVN scan initiated Thu Oct  3 13:05:36 2024 as: nmap -v -Pn -p- -oA My-Web-Server-all-ports-scan-output 192.168.29.61
+Nmap scan report for 192.168.29.61
+Host is up (0.000096s latency).
+Not shown: 65528 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+2222/tcp open  EtherNetIP-1
+3306/tcp open  mysql
+8009/tcp open  ajp13
+8080/tcp open  http-proxy
+8081/tcp open  blackice-icecap
+MAC Address: 08:00:27:10:0D:C9 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Oct  3 13:05:36 2024 -- 1 IP address (1 host up) scanned in 0.80 seconds

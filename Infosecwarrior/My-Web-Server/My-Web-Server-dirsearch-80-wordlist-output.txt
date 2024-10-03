@@ -1,0 +1,68 @@
+# Dirsearch started Thu Oct  3 14:02:55 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.61:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o My-Web-Server-dirsearch-80-wordlist-output.txt -q
+
+301     0B   http://192.168.29.61/rss    -> REDIRECTS TO: http://192.168.29.61/feed/
+302     0B   http://192.168.29.61/login    -> REDIRECTS TO: http://www.armour.local/wp-login.php
+301     0B   http://192.168.29.61/0    -> REDIRECTS TO: http://192.168.29.61/0/
+301     0B   http://192.168.29.61/feed    -> REDIRECTS TO: http://192.168.29.61/feed/
+301     0B   http://192.168.29.61/atom    -> REDIRECTS TO: http://192.168.29.61/feed/atom/
+301   319B   http://192.168.29.61/wp-content    -> REDIRECTS TO: http://192.168.29.61/wp-content/
+302     0B   http://192.168.29.61/admin    -> REDIRECTS TO: http://www.armour.local/wp-admin/
+301     0B   http://192.168.29.61/rss2    -> REDIRECTS TO: http://192.168.29.61/feed/
+301   320B   http://192.168.29.61/wp-includes    -> REDIRECTS TO: http://192.168.29.61/wp-includes/
+301   319B   http://192.168.29.61/javascript    -> REDIRECTS TO: http://192.168.29.61/javascript/
+301     0B   http://192.168.29.61/rdf    -> REDIRECTS TO: http://192.168.29.61/feed/rdf/
+301     0B   http://192.168.29.61/page1    -> REDIRECTS TO: http://192.168.29.61/
+301     0B   http://192.168.29.61/'    -> REDIRECTS TO: http://192.168.29.61/
+302     0B   http://192.168.29.61/dashboard    -> REDIRECTS TO: http://www.armour.local/wp-admin/
+301     0B   http://192.168.29.61/%20    -> REDIRECTS TO: http://192.168.29.61/
+301     0B   http://192.168.29.61/2020    -> REDIRECTS TO: http://192.168.29.61/2020/
+301   317B   http://192.168.29.61/wp-admin    -> REDIRECTS TO: http://192.168.29.61/wp-admin/
+301     0B   http://192.168.29.61/0000    -> REDIRECTS TO: http://192.168.29.61/0000/
+301     0B   http://192.168.29.61/embed    -> REDIRECTS TO: http://192.168.29.61/embed/
+404   275B   http://192.168.29.61/http%3A%2F%2Fwww
+301     0B   http://192.168.29.61/Oasis%20-%20'Definitely%20Maybe'    -> REDIRECTS TO: http://192.168.29.61/Oasis%20-%20Definitely%20Maybe
+301     0B   http://192.168.29.61/!    -> REDIRECTS TO: http://192.168.29.61/
+404   275B   http://192.168.29.61/http%3A%2F%2Fyoutube
+301     0B   http://192.168.29.61/yahoo!    -> REDIRECTS TO: http://192.168.29.61/yahoo
+301     0B   http://192.168.29.61/Check%20Screenshots!    -> REDIRECTS TO: http://192.168.29.61/Check%20Screenshots
+301     0B   http://192.168.29.61/Check%20All%20Tracker%20Features!    -> REDIRECTS TO: http://192.168.29.61/Check%20All%20Tracker%20Features
+404   275B   http://192.168.29.61/http%3A%2F%2Fblogs
+301     0B   http://192.168.29.61/Bling!    -> REDIRECTS TO: http://192.168.29.61/Bling
+404   275B   http://192.168.29.61/http%3A%2F%2Fblog
+301     0B   http://192.168.29.61/Welcome!    -> REDIRECTS TO: http://192.168.29.61/Welcome
+404   275B   http://192.168.29.61/**http%3A%2F%2Fwww
+403   278B   http://192.168.29.61/server-status
+301     0B   http://192.168.29.61/b00g!    -> REDIRECTS TO: http://192.168.29.61/b00g
+301     0B   http://192.168.29.61/party!    -> REDIRECTS TO: http://192.168.29.61/party
+301     0B   http://192.168.29.61/leeches!    -> REDIRECTS TO: http://192.168.29.61/leeches
+301     0B   http://192.168.29.61/Mac%20Fishin!!!    -> REDIRECTS TO: http://192.168.29.61/Mac%20Fishin
+301     0B   http://192.168.29.61/i%20deep%20throat%20in%20a%20thong!    -> REDIRECTS TO: http://192.168.29.61/i%20deep%20throat%20in%20a%20thong
+301     0B   http://192.168.29.61/new!    -> REDIRECTS TO: http://192.168.29.61/new
+301     0B   http://192.168.29.61/KeithRankin%20    -> REDIRECTS TO: http://192.168.29.61/KeithRankin
+301     0B   http://192.168.29.61/Naked%20Gymnastics%20-%20This%20Is%20How%20It%20Should%20Always%20Be!    -> REDIRECTS TO: http://192.168.29.61/Naked%20Gymnastics%20-%20This%20Is%20How%20It%20Should%20Always%20Be
+301     0B   http://192.168.29.61/nada!    -> REDIRECTS TO: http://192.168.29.61/nada
+301     0B   http://192.168.29.61/Q%20Are%20We%20Not%20Men%20A%20We%20Are%20Devo!    -> REDIRECTS TO: http://192.168.29.61/Q%20Are%20We%20Not%20Men%20A%20We%20Are%20Devo
+301     0B   http://192.168.29.61/Wanted%2e%2e%2e    -> REDIRECTS TO: http://192.168.29.61/Wanted
+301     0B   http://192.168.29.61/How_to%2e%2e%2e    -> REDIRECTS TO: http://192.168.29.61/How_to
+301     0B   http://192.168.29.61/!index!    -> REDIRECTS TO: http://192.168.29.61/!index
+301     0B   http://192.168.29.61/35-GeoCool!    -> REDIRECTS TO: http://192.168.29.61/35-GeoCool
+301     0B   http://192.168.29.61/kaspersky%20    -> REDIRECTS TO: http://192.168.29.61/kaspersky
+301     0B   http://192.168.29.61/Ping%21    -> REDIRECTS TO: http://192.168.29.61/Ping
+301     0B   http://192.168.29.61/Ajax_%28programming%29    -> REDIRECTS TO: http://192.168.29.61/Ajax_%28programming
+301     0B   http://192.168.29.61/page01    -> REDIRECTS TO: http://192.168.29.61/
+404   275B   http://192.168.29.61/http%3A%2F%2Fcommunity
+301     0B   http://192.168.29.61/Clinton%20Sparks%20%26%20Diddy%20-%20Dont%20Call%20It%20A%20Comeback%28RuZtY%29    -> REDIRECTS TO: http://192.168.29.61/Clinton%20Sparks%20%26%20Diddy%20-%20Dont%20Call%20It%20A%20Comeback%28RuZtY
+301     0B   http://192.168.29.61/Yahoo%21    -> REDIRECTS TO: http://192.168.29.61/Yahoo
+404   275B   http://192.168.29.61/http%3A%2F%2Fradar
+301     0B   http://192.168.29.61/Go!    -> REDIRECTS TO: http://192.168.29.61/Go
+301     0B   http://192.168.29.61/Sevendust%20-%20Animosity%20%282001%29    -> REDIRECTS TO: http://192.168.29.61/Sevendust%20-%20Animosity%20%282001
+301     0B   http://192.168.29.61/David%20Wright%20-%20Deeper%20%28New%20Age%2C%202005%29    -> REDIRECTS TO: http://192.168.29.61/David%20Wright%20-%20Deeper%20%28New%20Age%2C%202005
+301     0B   http://192.168.29.61/Cirque%20du%20soleil%20    -> REDIRECTS TO: http://192.168.29.61/Cirque%20du%20soleil
+301     0B   http://192.168.29.61/Rameses%20II%20-%20Wrath%20of%20God%20or%20Man%20%28Discovery%20Channel%29    -> REDIRECTS TO: http://192.168.29.61/Rameses%20II%20-%20Wrath%20of%20God%20or%20Man%20%28Discovery%20Channel
+301     0B   http://192.168.29.61/Windows%20Longhorn%20Server%20Core%20Lite%20%28December%202006%29    -> REDIRECTS TO: http://192.168.29.61/Windows%20Longhorn%20Server%20Core%20Lite%20%28December%202006
+301     0B   http://192.168.29.61/%22james%20kim%22    -> REDIRECTS TO: http://192.168.29.61/%22james%20kim
+301     0B   http://192.168.29.61/%22julie%20roehm%22    -> REDIRECTS TO: http://192.168.29.61/%22julie%20roehm
+301     0B   http://192.168.29.61/%22britney%20spears%22    -> REDIRECTS TO: http://192.168.29.61/%22britney%20spears
+404   275B   http://192.168.29.61/http%3A%2F%2Fjeremiahgrossman
+404   275B   http://192.168.29.61/http%3A%2F%2Fweblog
+404   275B   http://192.168.29.61/http%3A%2F%2Fswik

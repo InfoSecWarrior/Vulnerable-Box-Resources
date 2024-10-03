@@ -1,0 +1,21 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.29.61
++ Target Port: 80
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: Drupal Link header found with value: <http://www.armour.local/wp-json/>; rel="https://api.w.org/". See: https://www.drupal.org/: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /yTx3HfyN.: Uncommon header 'x-redirect-by' found, with contents: WordPress.
++ GET /robots.txt: contains 2 entries which should be manually viewed. See: https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt: 
++ HEAD Apache/2.4.38 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ TPTMFBQO /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ GET /icons/README: Apache default file found. See: https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/: 
++ GET /wp-links-opml.php: This WordPress script reveals the installed version.
++ GET /license.txt: License file found may identify site software.
++ GET /wp-app.log: Wordpress' wp-app.log may leak application/system details.
++ GET /wordpress/wp-app.log: Wordpress' wp-app.log may leak application/system details.
++ GET /: A Wordpress installation was found.
++ GET /wordpress/: A Wordpress installation was found.
++ GET /wp-login.php?action=register: Cookie wordpress_test_cookie created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /wp-content/uploads/: Directory indexing found.
++ GET /wp-content/uploads/: Wordpress uploads directory is browsable. This may reveal sensitive information.
++ GET /wp-login.php: Wordpress login found.

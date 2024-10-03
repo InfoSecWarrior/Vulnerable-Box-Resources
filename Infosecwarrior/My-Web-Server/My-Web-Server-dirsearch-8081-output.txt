@@ -1,0 +1,7 @@
+# Dirsearch started Thu Oct  3 13:06:37 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.61:8081 -o My-Web-Server-dirsearch-8081-output.txt -q
+
+301   185B   http://192.168.29.61:8081/assets    -> REDIRECTS TO: http://192.168.29.61:8081/assets/
+403   571B   http://192.168.29.61:8081/assets/
+301   185B   http://192.168.29.61:8081/images    -> REDIRECTS TO: http://192.168.29.61:8081/images/
+403   571B   http://192.168.29.61:8081/images/
+200    17KB  http://192.168.29.61:8081/LICENSE.txt
