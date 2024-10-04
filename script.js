@@ -249,8 +249,7 @@ function renderMachines(data, query = '') {
             handleSearch(`platform:${platform}`);
 
             window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+                top: 0
             });
         });
     });
@@ -289,7 +288,8 @@ document.getElementById('nextBtn').addEventListener('click', () => {
         const dataToRender = cachedFilteredData.length > 0 ? cachedFilteredData : parsedData;
         renderPage(currentPage, dataToRender, document.getElementById('searchBar').value);
         window.scrollTo({
-            top: 0
+            top: 0,
+
         });
     }
 });
