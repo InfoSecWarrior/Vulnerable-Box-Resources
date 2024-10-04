@@ -269,44 +269,6 @@ td:nth-child(4) {
     font-weight: bold;
 }
 
-/* Pagination Controls */
-.pagination-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    gap: 10px;
-}
-
-.pagination-container button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #b20002;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.pagination-container button:hover:not(:disabled),
-.pagination-container button:focus:not(:disabled) {
-    background-color: #a30000;
-    outline: none;
-}
-
-.pagination-container button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
-.pagination-container span {
-    font-size: 18px;
-    font-weight: 600;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .header {
@@ -424,3 +386,95 @@ a:hover {
     border: 1px solid #6c757d;
 }
 
+/* Container for Pagination */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+/* General Button Styling */
+.pagination-button {
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.pagination-button:disabled {
+    background-color: #e9e9e9;
+    color: #bbb;
+    cursor: not-allowed;
+    border-color: #e0e0e0;
+}
+
+.pagination-button:hover:not(:disabled),
+.page-number:hover {
+    background-color: #b20002;
+    color: #fff;
+    border-color: #b20002;
+    box-shadow: 0px 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+.pagination-button:focus-visible,
+.page-number:focus-visible {
+    outline: 3px solid rgba(0, 123, 255, 0.6);
+}
+
+/* Page Numbers Container */
+.pagination-pages {
+    display: flex;
+    gap: 8px;
+}
+
+/* Page Number Buttons */
+.page-number {
+    padding: 10px 16px;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    color: #555;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+/* Active Page Styling */
+.page-number.active {
+    background-color: #b20002;
+    color: #fff;
+    border-color: #b20002;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+    cursor: default;
+}
+
+/* Hover Effect for Page Numbers */
+.page-number:hover {
+    background-color: #b20002;
+    color: white;
+    border-color: #b20002;
+}
+
+/* Responsive Pagination */
+@media (max-width: 600px) {
+    .pagination-button, .page-number {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .pagination-container {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}

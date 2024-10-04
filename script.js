@@ -3,6 +3,7 @@ let cachedFilteredData = [];
 let currentPage = 1;
 const itemsPerPage = 20;
 
+
 const dataSources = {
     Vulnhub: 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub-Raw-File-Links.txt',
     Infosecwarrior: 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior-Raw-File-Links.txt',
@@ -155,23 +156,101 @@ function renderPage(page, data, query = '') {
     }
 }
 
-// Function to update pagination controls
 function updatePaginationControls(page, totalItems) {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-    const pageInfoElement = document.getElementById('pageInfo');
-    if (pageInfoElement) {
-        pageInfoElement.textContent = `Page ${page} of ${totalPages}`;
-    }
-
+    // Enable or disable prev/next buttons
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
+    prevBtn.disabled = page === 1;
+    nextBtn.disabled = page === totalPages;
 
-    if (prevBtn) prevBtn.disabled = page === 1;
-    if (nextBtn) nextBtn.disabled = page === totalPages;
+    // Update the "Back" and "Next" button text and click events
+    prevBtn.innerHTML = '&lsaquo; Back';
+    nextBtn.innerHTML = 'Next &rsaquo;';
+    
+    prevBtn.addEventListener('click', () => {
+        if (page > 1) {
+            currentPage = page - 1;
+            renderPage(currentPage, cachedFilteredData.length > 0 ? cachedFilteredData : parsedData);
+            window.scrollTo({ top: 0 });
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (page < totalPages) {
+            currentPage = page + 1;
+            renderPage(currentPage, cachedFilteredData.length > 0 ? cachedFilteredData : parsedData);
+            window.scrollTo({ top: 0 });
+        }
+    });
+
+    // Dynamically create page numbers with ellipsis
+    const paginationPages = document.querySelector('.pagination-pages');
+    paginationPages.innerHTML = ''; // Clear previous pagination
+
+    const maxVisiblePages = 7; // Limit visible pages
+    const pagesToShow = [];
+
+    // Always show the first page
+    pagesToShow.push(1);
+
+    // Determine if ellipsis is needed before current page set
+    if (page > maxVisiblePages - 3) {
+        pagesToShow.push('...');
+    }
+
+    // Show pages around the current page
+    const startPage = Math.max(2, page - 2); // Show up to 2 pages before the current page
+    const endPage = Math.min(page + 2, totalPages - 1); // Show up to 2 pages after the current page
+
+    for (let i = startPage; i <= endPage; i++) {
+        if (i > 1 && i < totalPages) {
+            pagesToShow.push(i);
+        }
+    }
+
+    // Determine if ellipsis is needed before the last page
+    if (page < totalPages - 3) {
+        pagesToShow.push('...');
+    }
+
+    // Always show the last page
+    if (totalPages > 1) {
+        pagesToShow.push(totalPages);
+    }
+
+    // Create page buttons dynamically
+    pagesToShow.forEach(pageNumber => {
+        if (pageNumber === '...') {
+            const ellipsis = document.createElement('span');
+            ellipsis.textContent = '...';
+            paginationPages.appendChild(ellipsis);
+        } else {
+            const pageButton = document.createElement('button');
+            pageButton.classList.add('page-number');
+            pageButton.textContent = pageNumber;
+
+            // Highlight the active page
+            if (pageNumber === page) {
+                pageButton.classList.add('active');
+            }
+
+            // Add click event to load the selected page
+            pageButton.addEventListener('click', () => {
+                currentPage = pageNumber;
+                renderPage(currentPage, cachedFilteredData.length > 0 ? cachedFilteredData : parsedData);
+                window.scrollTo({ top: 0 });
+            });
+
+            paginationPages.appendChild(pageButton);
+        }
+    });
 
     console.log(`Updated pagination: Page ${page} of ${totalPages}`);
 }
+
+
 
 function renderMachines(data, query = '') {
     const tableBody = document.getElementById('table-body');

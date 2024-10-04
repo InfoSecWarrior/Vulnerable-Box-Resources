@@ -75,10 +75,15 @@
         
         <!-- Pagination Controls -->
         <section class="pagination-container" aria-label="Pagination Controls">
-            <button id="prevBtn" disabled aria-label="Previous Page">Previous</button>
-            <span id="pageInfo" aria-live="polite"></span>
-            <button id="nextBtn" disabled aria-label="Next Page">Next</button>
-        </section>        
+            <button id="prevBtn" disabled aria-label="Previous Page" class="pagination-button">Back</button>
+            
+            <div class="pagination-pages">
+                <!-- Page numbers will be dynamically generated here -->
+            </div>
+            
+            <button id="nextBtn" disabled aria-label="Next Page" class="pagination-button">Next</button>
+        </section>
+        
     </div>
 
     <!-- JavaScript -->
