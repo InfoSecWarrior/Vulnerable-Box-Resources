@@ -1,0 +1,90 @@
+# Nmap 7.94SVN scan initiated Thu Oct  3 18:44:11 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,23,80 -oA scream-nmap-version-scan-output 192.168.29.237
+Nmap scan report for 192.168.29.237
+Host is up (0.00075s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     WAR-FTPD 1.65 (Name Scream XP (SP2) FTP Service)
+| ftp-syst: 
+|_  SYST: UNIX emulated by FileZilla
+|_ftp-bounce: bounce working!
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| drwxr-xr-x 1 ftp ftp              0 Oct 03 18:29 bin
+| drwxr-xr-x 1 ftp ftp              0 Oct 03 18:29 log
+|_drwxr-xr-x 1 ftp ftp              0 Oct 03 18:29 root
+22/tcp open  ssh     WeOnlyDo sshd 2.1.3 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 2c:23:77:67:d3:e0:ae:2a:a8:01:a4:9e:54:97:db:2c (DSA)
+|_  1024 fa:11:a5:3d:63:95:4a:ae:3e:16:49:2f:bb:4b:f1:de (RSA)
+23/tcp open  telnet
+| fingerprint-strings: 
+|   GenericLines, NCP, RPCCheck, tn3270: 
+|     Scream Telnet Service
+|     login:
+|   GetRequest: 
+|     HTTP/1.0
+|     Scream Telnet Service
+|     login:
+|   Help: 
+|     HELP
+|     Scream Telnet Service
+|     login:
+|   SIPOptions: 
+|     OPTIONS sip:nm SIP/2.0
+|     Via: SIP/2.0/TCP nm;branch=foo
+|     From: <sip:nm@nm>;tag=root
+|     <sip:nm2@nm2>
+|     Call-ID: 50000
+|     CSeq: 42 OPTIONS
+|     Max-Forwards: 70
+|     Content-Length: 0
+|     Contact: <sip:nm@nm>
+|     Accept: application/sdp
+|     Scream Telnet Service
+|_    login:
+80/tcp open  http    Tinyweb httpd 1.93
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-server-header: TinyWeb/1.93
+|_http-title: The Scream - Edvard Munch
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port23-TCP:V=7.94SVN%I=7%D=10/3%Time=66FE98A9%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,12,"\xff\xfb\x01\xff\xfe\"\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xf
+SF:d\x1f")%r(GenericLines,34,"\xff\xfb\x01\xff\xfe\"\xff\xfe\0\xff\xfd\x03
+SF:\xff\xfd\x18\xff\xfd\x1f\r\n\r\nScream\x20Telnet\x20Service\r\nlogin:\x
+SF:20")%r(tn3270,3C,"\xff\xfb\x01\xff\xfe\"\xff\xfe\0\xff\xfd\x03\xff\xfd\
+SF:x18\xff\xfd\x1f\xff\xfc\x18\xff\xfe\x19\xff\xfc\x19\xff\xfb\0Scream\x20
+SF:Telnet\x20Service\r\nlogin:\x20")%r(GetRequest,42,"\xff\xfb\x01\xff\xfe
+SF:\"\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xfd\x1fGET\x20/\x20HTTP/1\.0\r
+SF:\n\r\nScream\x20Telnet\x20Service\r\nlogin:\x20")%r(RPCCheck,5C,"\xff\x
+SF:fb\x01\xff\xfe\"\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xfd\x1f\x80\0\0\
+SF:(r\xfe\x1d\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xa0\0\x01\x97\|\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0Scream\x20Telnet\x20Service\r\nlogin:\x20")%
+SF:r(Help,36,"\xff\xfb\x01\xff\xfe\"\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff
+SF:\xfd\x1fHELP\r\nScream\x20Telnet\x20Service\r\nlogin:\x20")%r(SIPOption
+SF:s,10F,"\xff\xfb\x01\xff\xfe\"\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xfd
+SF:\x1fOPTIONS\x20sip:nm\x20SIP/2\.0\r\nVia:\x20SIP/2\.0/TCP\x20nm;branch=
+SF:foo\r\nFrom:\x20<sip:nm@nm>;tag=root\r\nTo:\x20<sip:nm2@nm2>\r\nCall-ID
+SF::\x2050000\r\nCSeq:\x2042\x20OPTIONS\r\nMax-Forwards:\x2070\r\nContent-
+SF:Length:\x200\r\nContact:\x20<sip:nm@nm>\r\nAccept:\x20application/sdp\r
+SF:\n\r\nScream\x20Telnet\x20Service\r\nlogin:\x20")%r(NCP,31,"\xff\xfb\x0
+SF:1\xff\xfe\"\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xfd\x1f\x13Scream\x20
+SF:Telnet\x20Service\r\nlogin:\x20");
+MAC Address: 08:00:27:FC:BA:4E (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|specialized
+Running (JUST GUESSING): Microsoft Windows 2000|XP|2003 (96%), General Dynamics embedded (91%)
+OS CPE: cpe:/o:microsoft:windows_2000 cpe:/o:microsoft:windows_xp::sp2 cpe:/o:microsoft:windows_xp::sp3 cpe:/o:microsoft:windows_server_2003
+Aggressive OS guesses: Microsoft Windows 2000 (96%), Microsoft Windows XP SP2 or SP3 (96%), Microsoft Windows XP SP3 (96%), Microsoft Windows Server 2003 (94%), Microsoft Windows XP Home SP1 (French) (92%), Microsoft Windows 2000 SP4 (92%), Microsoft Windows XP Professional SP2 - SP3 (91%), General Dynamics R8000B Comm Systems Analyzer (91%), Microsoft Windows XP SP 2 (90%), Microsoft Windows XP SP2 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=255 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.75 ms 192.168.29.237
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Oct  3 18:45:07 2024 -- 1 IP address (1 host up) scanned in 55.69 seconds

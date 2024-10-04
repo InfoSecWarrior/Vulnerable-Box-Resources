@@ -1,0 +1,1 @@
+[waf-detect:nginxgeneric] [http] [info] http://192.168.1.208:80

@@ -1,0 +1,13 @@
+# Dirsearch started Thu Oct  3 07:02:18 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.208:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o myfirewall-dirsearch-80-wordlist-output.txt -q
+
+301   162B   http://192.168.1.208/css    -> REDIRECTS TO: http://192.168.1.208/css/
+301   162B   http://192.168.1.208/includes    -> REDIRECTS TO: http://192.168.1.208/includes/
+403   548B   http://192.168.1.208/status
+301   162B   http://192.168.1.208/js    -> REDIRECTS TO: http://192.168.1.208/js/
+301   162B   http://192.168.1.208/classes    -> REDIRECTS TO: http://192.168.1.208/classes/
+301   162B   http://192.168.1.208/vendor    -> REDIRECTS TO: http://192.168.1.208/vendor/
+301   162B   http://192.168.1.208/widgets    -> REDIRECTS TO: http://192.168.1.208/widgets/
+301   162B   http://192.168.1.208/shortcuts    -> REDIRECTS TO: http://192.168.1.208/shortcuts/
+301   162B   http://192.168.1.208/wizards    -> REDIRECTS TO: http://192.168.1.208/wizards/
+301   162B   http://192.168.1.208/nginx    -> REDIRECTS TO: http://192.168.1.208/nginx/
+301   162B   http://192.168.1.208/csrf    -> REDIRECTS TO: http://192.168.1.208/csrf/
