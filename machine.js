@@ -146,7 +146,7 @@ async function fetchMachineData() {
     const resourceContent = await fetchFileContent(resourceUrl, 'resource-url');
     if (resourceLinkElement && resourceContent) {
         resourceLinkElement.href = resourceContent.trim(); // Set original resource URL
-        resourceLinkElement.textContent = 'Resource';
+        resourceLinkElement.textContent = 'Platform';
     } else {
         console.warn("Element with ID 'resource-url' not found in the document or no resource content available.");
     }
