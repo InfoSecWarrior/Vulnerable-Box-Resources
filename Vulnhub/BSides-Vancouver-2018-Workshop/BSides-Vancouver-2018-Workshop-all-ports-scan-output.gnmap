@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Wed Oct  2 17:24:48 2024 as: nmap -v -Pn -p- -oA BSides-Vancouver-2018-Workshop-all-ports-scan-output 192.168.246.168
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.246.168 ()	Status: Up
+Host: 192.168.246.168 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///	Ignored State: closed (65532)
+# Nmap done at Wed Oct  2 17:24:50 2024 -- 1 IP address (1 host up) scanned in 1.45 seconds

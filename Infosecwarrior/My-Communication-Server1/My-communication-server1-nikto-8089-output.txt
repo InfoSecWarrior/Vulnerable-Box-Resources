@@ -1,0 +1,7 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.29.30
++ Target Port: 8089
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The site uses TLS and the Strict-Transport-Security HTTP header is not defined. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET Hostname '192.168.29.30' does not match certificate's names: localhost.localdomain. See: https://cwe.mitre.org/data/definitions/297.html: 

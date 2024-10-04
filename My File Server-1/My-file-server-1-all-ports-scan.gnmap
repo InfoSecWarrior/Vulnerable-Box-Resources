@@ -1,5 +1,0 @@
-# Nmap 7.94SVN scan initiated Tue Sep 24 12:56:57 2024 as: nmap -v -Pn -p- -oA My-file-server-1-all-ports-scan 192.168.1.119
-# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 192.168.1.119 (192.168.1.119)	Status: Up
-Host: 192.168.1.119 (192.168.1.119)	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 445/open/tcp//microsoft-ds///, 2049/open/tcp//nfs///, 2121/open/tcp//ccproxy-ftp///, 20048/open/tcp//mountd///
-# Nmap done at Tue Sep 24 12:58:09 2024 -- 1 IP address (1 host up) scanned in 71.94 seconds

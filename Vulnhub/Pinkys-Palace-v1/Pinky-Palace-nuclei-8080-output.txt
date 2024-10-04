@@ -1,0 +1,2 @@
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.131:8080
+[waf-detect:nginxgeneric] [http] [info] http://192.168.1.131:8080

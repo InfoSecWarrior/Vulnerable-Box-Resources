@@ -1,0 +1,30 @@
+# Dirsearch started Sun Sep 29 17:43:14 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.76:80 -o IMF-dirsearch-80-output.txt -q
+
+301   311B   http://192.168.29.76/js    -> REDIRECTS TO: http://192.168.29.76/js/
+403   299B   http://192.168.29.76/.ht_wsr.txt
+403   302B   http://192.168.29.76/.htaccess.bak1
+403   304B   http://192.168.29.76/.htaccess.sample
+403   303B   http://192.168.29.76/.htaccess_extra
+403   302B   http://192.168.29.76/.htaccess_orig
+403   300B   http://192.168.29.76/.htaccessBAK
+403   300B   http://192.168.29.76/.htaccessOLD
+403   300B   http://192.168.29.76/.htaccess_sc
+403   301B   http://192.168.29.76/.htaccessOLD2
+403   302B   http://192.168.29.76/.htaccess.orig
+403   292B   http://192.168.29.76/.htm
+403   293B   http://192.168.29.76/.html
+403   298B   http://192.168.29.76/.htpasswds
+403   299B   http://192.168.29.76/.httr-oauth
+403   292B   http://192.168.29.76/.php
+403   293B   http://192.168.29.76/.php3
+403   302B   http://192.168.29.76/.htaccess.save
+403   302B   http://192.168.29.76/.htpasswd_test
+200     2KB  http://192.168.29.76/contact.php
+301   312B   http://192.168.29.76/css    -> REDIRECTS TO: http://192.168.29.76/css/
+301   314B   http://192.168.29.76/fonts    -> REDIRECTS TO: http://192.168.29.76/fonts/
+301   315B   http://192.168.29.76/images    -> REDIRECTS TO: http://192.168.29.76/images/
+403   295B   http://192.168.29.76/images/
+403   291B   http://192.168.29.76/js/
+200     2KB  http://192.168.29.76/projects.php
+403   301B   http://192.168.29.76/server-status
+403   302B   http://192.168.29.76/server-status/

@@ -1,0 +1,19 @@
+# Dirsearch started Thu Oct  3 13:06:47 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.61:2222 -o My-Web-Server-dirsearch-2222-output.txt -q
+
+501   313B   http://192.168.29.61:2222/admin%20/
+200   874B   http://192.168.29.61:2222/assets/
+301   317B   http://192.168.29.61:2222/assets    -> REDIRECTS TO: http://192.168.29.61:2222/assets/
+200   610B   http://192.168.29.61:2222/cgi-bin/
+301   317B   http://192.168.29.61:2222/cgi-bin    -> REDIRECTS TO: http://192.168.29.61:2222/cgi-bin/
+200   759B   http://192.168.29.61:2222/cgi-bin/printenv
+301   317B   http://192.168.29.61:2222/icons    -> REDIRECTS TO: http://192.168.29.61:2222/icons/
+301   317B   http://192.168.29.61:2222/images    -> REDIRECTS TO: http://192.168.29.61:2222/images/
+200     3KB  http://192.168.29.61:2222/images/
+200    17KB  http://192.168.29.61:2222/LICENSE.txt
+501   313B   http://192.168.29.61:2222/login.wdm%20
+501   313B   http://192.168.29.61:2222/New%20folder%20(2)
+501   313B   http://192.168.29.61:2222/New%20Folder
+501   313B   http://192.168.29.61:2222/phpliteadmin%202.php
+501   313B   http://192.168.29.61:2222/Read%20Me.txt
+400   305B   http://192.168.29.61:2222/remote/fgt_lang?lang=/../../../../////////////////////////bin/sslvpnd
+400   305B   http://192.168.29.61:2222/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession

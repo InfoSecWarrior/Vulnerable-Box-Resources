@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Oct  2 20:40:43 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8585 -oA devguru-nmap-version-scan-output 192.168.156.10 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8585 -oA devguru-nmap-version-scan-output 192.168.156.10" start="1727881843" startstr="Wed Oct  2 20:40:43 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,80,8585"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727881844"/>
+<taskend task="NSE" time="1727881844"/>
+<taskbegin task="NSE" time="1727881844"/>
+<taskend task="NSE" time="1727881844"/>
+<taskbegin task="NSE" time="1727881844"/>
+<taskend task="NSE" time="1727881844"/>
+<taskbegin task="ARP Ping Scan" time="1727881844"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.156.10" addrtype="ipv4"/>
+<address addr="08:00:27:CB:98:78" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727881844" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727881844"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727881844"/>
+<taskbegin task="Connect Scan" time="1727881844"/>
+<taskend task="Connect Scan" time="1727881844" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1727881844"/>
+<taskend task="Service scan" time="1727881930" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1727881931"/>
+<taskend task="NSE" time="1727881932"/>
+<taskbegin task="NSE" time="1727881932"/>
+<taskend task="NSE" time="1727881933"/>
+<taskbegin task="NSE" time="1727881933"/>
+<taskend task="NSE" time="1727881933"/>
+<host starttime="1727881844" endtime="1727881933"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.156.10" addrtype="ipv4"/>
+<address addr="08:00:27:CB:98:78" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 2a:46:e8:2b:01:ff:57:58:7a:5f:25:a4:d6:f2:89:8e (RSA)&#xa;  256 08:79:93:9c:e3:b4:a4:be:80:ad:61:9d:d3:88:d2:84 (ECDSA)&#xa;  256 9c:f9:88:d4:33:77:06:4e:d9:7c:39:17:3e:07:9c:bd (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC+lft/kQdC+3L4qMerPmpboe5GOrB60x+QU0R7hjmxY+9bNqST//1+Oa7ycVotqdlk4EtxgnqE2B4mRTNb16mITv/Y8UfsCqYAuy3C8lV9HzG6zgsXgnAhvpMmY31fZqz+dKamnp1W1o+scbnzRNqr/fE1+Yz7Fcu4JvAJ/4NLQS9CHmZh+N12OyF8eVOQmjPeRVHR8BiptinM+EXis4xpOQiuZoEBPkyqhXcBW65CAXlkjuuJ6KpJ7Y3Gbse38L6LKGFs8Hl5k1jbuTxDg8CT+rzzy6on8niDDfcVwHTvZ1JqlUpzjaGifDD8gV60ebRa5/36ORI+ed6G9v1HOW3r</elem>
+<elem key="fingerprint">2a46e82b01ff57587a5f25a4d6f2898e</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNQzBnXE0Ezf7XOzh2KxdMAetOtoTEmfiCh2OSwjnIpAzd1osDr7UsuNt/5m45OgfWVAcVnu3ECEuQZ03P4VxkU=</elem>
+<elem key="fingerprint">0879939ce3b4a4be80ad619dd388d284</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAINjsvy3HYYZxlENx0Fmval1Ax8ApGBKu6wf5sjK8xuv2</elem>
+<elem key="fingerprint">9cf988d43377064ed97c39173e079cbd</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-git" output="&#xa;  192.168.156.10:80/.git/&#xa;    Git repository found!&#xa;    Repository description: Unnamed repository; edit this file &apos;description&apos; to name the...&#xa;    Last commit message: first commit &#xa;    Remotes:&#xa;      http://devguru.local:8585/frank/devguru-website.git&#xa;    Project type: PHP application (guessed from .gitignore)&#xa;"><table key="192.168.156.10:80/.git/">
+<elem key="last-commit-message">first commit&#xa;</elem>
+<table key="project-type">
+<table key=".gitignore">
+<elem>PHP application</elem>
+</table>
+</table>
+<elem key="repository-description">Unnamed repository; edit this file &apos;description&apos; to name the repository.&#xa;</elem>
+<table key="files-found">
+<elem key=".git/description">true</elem>
+<elem key=".gitignore">true</elem>
+<elem key=".git/info/exclude">true</elem>
+<elem key=".git/config">true</elem>
+<elem key=".git/COMMIT_EDITMSG">true</elem>
+</table>
+<table key="remotes">
+<elem>http://devguru.local:8585/frank/devguru-website.git</elem>
+</table>
+</table>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Corp - DevGuru"><elem key="title">Corp - DevGuru</elem>
+</script><script id="http-generator" output="DevGuru"/><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="8585"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" servicefp="SF-Port8585-TCP:V=7.94SVN%I=7%D=10/2%Time=66FD627A%P=x86_64-pc-linux-gnu%r(GenericLines,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(GetRequest,2A00,&quot;HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nSet-Cookie:\x20lang=en-US;\x20Path=/;\x20Max-Age=2147483647\r\nSet-Cookie:\x20i_like_gitea=cd8435b9cfe6146d;\x20Path=/;\x20HttpOnly\r\nSet-Cookie:\x20_csrf=b2YRBCv_HDodllibLz6v-GrBWUE6MTcyNzg4MTg1MDI2NzI1OTE5OQ;\x20Path=/;\x20Expires=Thu,\x2003\x20Oct\x202024\x2015:10:50\x20GMT;\x20HttpOnly\r\nX-Frame-Options:\x20SAMEORIGIN\r\nDate:\x20Wed,\x2002\x20Oct\x202024\x2015:10:50\x20GMT\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en-US\&quot;\x20class=\&quot;theme-\&quot;&gt;\n&lt;head\x20data-suburl=\&quot;\&quot;&gt;\n\t&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\t&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\n\t&lt;meta\x20http-equiv=\&quot;x-ua-compatible\&quot;\x20content=\&quot;ie=edge\&quot;&gt;\n\t&lt;title&gt;\x20Gitea:\x20Git\x20with\x20a\x20cup\x20of\x20tea\x20&lt;/title&gt;\n\t&lt;link\x20rel=\&quot;manifest\&quot;\x20href=\&quot;/manifest\.json\&quot;\x20crossorigin=\&quot;use-credentials\&quot;&gt;\n\t&lt;meta\x20name=\&quot;theme-color\&quot;\x20content=\&quot;#6cc644\&quot;&gt;\n\t&lt;meta\x20name=\&quot;author\&quot;\x20content=\&quot;Gitea\x20-\x20Git\x20with\x20a\x20cup\x20of\x20tea\&quot;\x20/&gt;\n\t&lt;meta\x20name=\&quot;description\&quot;\x20content=\&quot;Gitea\x20\(Git\x20with\x20a\x20cup\x20of\x20tea\)\x20is\x20a\x20painless&quot;)%r(HTTPOptions,212A,&quot;HTTP/1\.0\x20404\x20Not\x20Found\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nSet-Cookie:\x20lang=en-US;\x20Path=/;\x20Max-Age=2147483647\r\nSet-Cookie:\x20i_like_gitea=86a09b0d8945039d;\x20Path=/;\x20HttpOnly\r\nSet-Cookie:\x20_csrf=IZMqIuwayoN4Zul0c1nKBegztUs6MTcyNzg4MTg1MDI4NzM4NTEzNA;\x20Path=/;\x20Expires=Thu,\x2003\x20Oct\x202024\x2015:10:50\x20GMT;\x20HttpOnly\r\nX-Frame-Options:\x20SAMEORIGIN\r\nDate:\x20Wed,\x2002\x20Oct\x202024\x2015:10:50\x20GMT\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en-US\&quot;\x20class=\&quot;theme-\&quot;&gt;\n&lt;head\x20data-suburl=\&quot;\&quot;&gt;\n\t&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\t&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\n\t&lt;meta\x20http-equiv=\&quot;x-ua-compatible\&quot;\x20content=\&quot;ie=edge\&quot;&gt;\n\t&lt;title&gt;Page\x20Not\x20Found\x20-\x20\x20Gitea:\x20Git\x20with\x20a\x20cup\x20of\x20tea\x20&lt;/title&gt;\n\t&lt;link\x20rel=\&quot;manifest\&quot;\x20href=\&quot;/manifest\.json\&quot;\x20crossorigin=\&quot;use-credentials\&quot;&gt;\n\t&lt;meta\x20name=\&quot;theme-color\&quot;\x20content=\&quot;#6cc644\&quot;&gt;\n\t&lt;meta\x20name=\&quot;author\&quot;\x20content=\&quot;Gitea\x20-\x20Git\x20with\x20a\x20cup\x20of\x20tea\&quot;\x20/&gt;\n\t&lt;meta\x20name=\&quot;description\&quot;\x20content=\&quot;Gitea\x20\(Git\x20with\x20a\x20c&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GenericLines: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request&#xa;  GetRequest: &#xa;    HTTP/1.0 200 OK&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Set-Cookie: lang=en-US; Path=/; Max-Age=2147483647&#xa;    Set-Cookie: i_like_gitea=cd8435b9cfe6146d; Path=/; HttpOnly&#xa;    Set-Cookie: _csrf=b2YRBCv_HDodllibLz6v-GrBWUE6MTcyNzg4MTg1MDI2NzI1OTE5OQ; Path=/; Expires=Thu, 03 Oct 2024 15:10:50 GMT; HttpOnly&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Date: Wed, 02 Oct 2024 15:10:50 GMT&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en-US&quot; class=&quot;theme-&quot;&gt;&#xa;    &lt;head data-suburl=&quot;&quot;&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;&#xa;    &lt;title&gt; Gitea: Git with a cup of tea &lt;/title&gt;&#xa;    &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot; crossorigin=&quot;use-credentials&quot;&gt;&#xa;    &lt;meta name=&quot;theme-color&quot; content=&quot;#6cc644&quot;&gt;&#xa;    &lt;meta name=&quot;author&quot; content=&quot;Gitea - Git with a cup of tea&quot; /&gt;&#xa;    &lt;meta name=&quot;description&quot; content=&quot;Gitea (Git with a cup of tea) is a painless&#xa;  HTTPOptions: &#xa;    HTTP/1.0 404 Not Found&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Set-Cookie: lang=en-US; Path=/; Max-Age=2147483647&#xa;    Set-Cookie: i_like_gitea=86a09b0d8945039d; Path=/; HttpOnly&#xa;    Set-Cookie: _csrf=IZMqIuwayoN4Zul0c1nKBegztUs6MTcyNzg4MTg1MDI4NzM4NTEzNA; Path=/; Expires=Thu, 03 Oct 2024 15:10:50 GMT; HttpOnly&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Date: Wed, 02 Oct 2024 15:10:50 GMT&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en-US&quot; class=&quot;theme-&quot;&gt;&#xa;    &lt;head data-suburl=&quot;&quot;&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;&#xa;    &lt;title&gt;Page Not Found - Gitea: Git with a cup of tea &lt;/title&gt;&#xa;    &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot; crossorigin=&quot;use-credentials&quot;&gt;&#xa;    &lt;meta name=&quot;theme-color&quot; content=&quot;#6cc644&quot;&gt;&#xa;    &lt;meta name=&quot;author&quot; content=&quot;Gitea - Git with a cup of tea&quot; /&gt;&#xa;    &lt;meta name=&quot;description&quot; content=&quot;Gitea (Git with a c"><elem key="GenericLines">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 200 OK&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Set-Cookie: lang=en-US; Path=/; Max-Age=2147483647&#xa;    Set-Cookie: i_like_gitea=cd8435b9cfe6146d; Path=/; HttpOnly&#xa;    Set-Cookie: _csrf=b2YRBCv_HDodllibLz6v-GrBWUE6MTcyNzg4MTg1MDI2NzI1OTE5OQ; Path=/; Expires=Thu, 03 Oct 2024 15:10:50 GMT; HttpOnly&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Date: Wed, 02 Oct 2024 15:10:50 GMT&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en-US&quot; class=&quot;theme-&quot;&gt;&#xa;    &lt;head data-suburl=&quot;&quot;&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;&#xa;    &lt;title&gt; Gitea: Git with a cup of tea &lt;/title&gt;&#xa;    &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot; crossorigin=&quot;use-credentials&quot;&gt;&#xa;    &lt;meta name=&quot;theme-color&quot; content=&quot;#6cc644&quot;&gt;&#xa;    &lt;meta name=&quot;author&quot; content=&quot;Gitea - Git with a cup of tea&quot; /&gt;&#xa;    &lt;meta name=&quot;description&quot; content=&quot;Gitea (Git with a cup of tea) is a painless</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 404 Not Found&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Set-Cookie: lang=en-US; Path=/; Max-Age=2147483647&#xa;    Set-Cookie: i_like_gitea=86a09b0d8945039d; Path=/; HttpOnly&#xa;    Set-Cookie: _csrf=IZMqIuwayoN4Zul0c1nKBegztUs6MTcyNzg4MTg1MDI4NzM4NTEzNA; Path=/; Expires=Thu, 03 Oct 2024 15:10:50 GMT; HttpOnly&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Date: Wed, 02 Oct 2024 15:10:50 GMT&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en-US&quot; class=&quot;theme-&quot;&gt;&#xa;    &lt;head data-suburl=&quot;&quot;&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;ie=edge&quot;&gt;&#xa;    &lt;title&gt;Page Not Found - Gitea: Git with a cup of tea &lt;/title&gt;&#xa;    &lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot; crossorigin=&quot;use-credentials&quot;&gt;&#xa;    &lt;meta name=&quot;theme-color&quot; content=&quot;#6cc644&quot;&gt;&#xa;    &lt;meta name=&quot;author&quot; content=&quot;Gitea - Git with a cup of tea&quot; /&gt;&#xa;    &lt;meta name=&quot;description&quot; content=&quot;Gitea (Git with a c</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="40445"/>
+<osmatch name="Linux 4.15 - 5.8" accuracy="100" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3464043" lastboot="Fri Aug 23 18:28:10 2024"/>
+<distance value="1"/>
+<tcpsequence index="257" difficulty="Good luck!" values="DF11092C,310882A9,300A5EB3,D71FAD7,37A54EA4,4B6AB0C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="CE790FC6,CE79102A,CE79108F,CE7910F3,CE791157,CE7911BB"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.156.10" rtt="0.72"/>
+</trace>
+<times srtt="720" rttvar="175" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727881933"/>
+<taskend task="NSE" time="1727881933"/>
+<taskbegin task="NSE" time="1727881933"/>
+<taskend task="NSE" time="1727881933"/>
+<taskbegin task="NSE" time="1727881933"/>
+<taskend task="NSE" time="1727881933"/>
+<runstats><finished time="1727881933" timestr="Wed Oct  2 20:42:13 2024" summary="Nmap done at Wed Oct  2 20:42:13 2024; 1 IP address (1 host up) scanned in 89.12 seconds" elapsed="89.12" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

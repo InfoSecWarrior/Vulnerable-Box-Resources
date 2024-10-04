@@ -1,0 +1,16 @@
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.15:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.15:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.15:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.15:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.15:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.15:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.15:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.15:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.15:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.15:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.15:80
+[typo3-login] [http] [info] http://192.168.1.15:80/typo3/
+[phpstan-config] [http] [info] http://192.168.1.15:80/phpstan.neon
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.15:80
+[ssh-auth-methods] [javascript] [info] 192.168.1.15:22 ["["publickey"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.15:22 ["Vulnerable to Terrapin"]

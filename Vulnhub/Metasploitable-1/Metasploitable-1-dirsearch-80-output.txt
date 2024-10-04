@@ -1,0 +1,29 @@
+# Dirsearch started Tue Oct  1 01:37:57 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.56.102:80 -o Metasploitable-1-dirsearch-80-output.txt -q
+
+403   333B   http://192.168.56.102/.ht_wsr.txt
+403   336B   http://192.168.56.102/.htaccess.bak1
+403   336B   http://192.168.56.102/.htaccess.save
+403   338B   http://192.168.56.102/.htaccess.sample
+403   336B   http://192.168.56.102/.htaccess.orig
+403   337B   http://192.168.56.102/.htaccess_extra
+403   334B   http://192.168.56.102/.htaccess_sc
+403   334B   http://192.168.56.102/.htaccessBAK
+403   334B   http://192.168.56.102/.htaccessOLD
+403   335B   http://192.168.56.102/.htaccessOLD2
+403   327B   http://192.168.56.102/.html
+403   326B   http://192.168.56.102/.htm
+403   332B   http://192.168.56.102/.htpasswds
+403   333B   http://192.168.56.102/.httr-oauth
+403   336B   http://192.168.56.102/.htpasswd_test
+403   336B   http://192.168.56.102/.htaccess_orig
+403   330B   http://192.168.56.102/cgi-bin/
+403   326B   http://192.168.56.102/doc/
+403   330B   http://192.168.56.102/doc/api/
+403   341B   http://192.168.56.102/doc/html/index.html
+403   341B   http://192.168.56.102/doc/en/changes.html
+403   340B   http://192.168.56.102/doc/stable.version
+200    48KB  http://192.168.56.102/phpinfo
+200    48KB  http://192.168.56.102/phpinfo.php
+403   336B   http://192.168.56.102/server-status/
+403   335B   http://192.168.56.102/server-status
+301   359B   http://192.168.56.102/tikiwiki    -> REDIRECTS TO: http://192.168.56.102/tikiwiki/

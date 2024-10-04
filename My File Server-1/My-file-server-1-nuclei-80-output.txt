@@ -1,2 +1,0 @@
-[http-trace:trace-request] [http] [info] http://192.168.1.119:80
-[http-trace:options-request] [http] [info] http://192.168.1.119:80

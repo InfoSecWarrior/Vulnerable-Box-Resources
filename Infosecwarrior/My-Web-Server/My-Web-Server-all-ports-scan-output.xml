@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Oct  3 13:05:36 2024 as: nmap -v -Pn -p- -oA My-Web-Server-all-ports-scan-output 192.168.29.61 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA My-Web-Server-all-ports-scan-output 192.168.29.61" start="1727940936" startstr="Thu Oct  3 13:05:36 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1727940936"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.29.61" addrtype="ipv4"/>
+<address addr="08:00:27:10:0D:C9" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727940936" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727940936"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727940936"/>
+<taskbegin task="SYN Stealth Scan" time="1727940936"/>
+<taskend task="SYN Stealth Scan" time="1727940936" extrainfo="65535 total ports"/>
+<host starttime="1727940936" endtime="1727940936"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.29.61" addrtype="ipv4"/>
+<address addr="08:00:27:10:0D:C9" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65528">
+<extrareasons reason="reset" count="65528" proto="tcp" ports="1-21,23-79,81-2221,2223-3305,3307-8008,8010-8079,8082-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2222"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="EtherNetIP-1" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ajp13" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8081"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="blackice-icecap" method="table" conf="3"/></port>
+</ports>
+<times srtt="96" rttvar="17" to="100000"/>
+</host>
+<runstats><finished time="1727940936" timestr="Thu Oct  3 13:05:36 2024" summary="Nmap done at Thu Oct  3 13:05:36 2024; 1 IP address (1 host up) scanned in 0.80 seconds" elapsed="0.80" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

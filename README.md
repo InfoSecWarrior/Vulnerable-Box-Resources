@@ -1,7 +1,7 @@
 <h1 align="center">Vulnerable Box Resources</h1>
 
 <p align="center">
-    <a href="https://infosecwarrior.github.io/Vulnerable-Box-Resources" ><strong>« Live Application (https://infosecwarrior.github.io/Vulnerable-Box-Resources)»</strong></a>
+    <strong> Live Application https://vulnerable-box-resources.infosecwarrior.com </strong>
 </p>
 
 **Vulnerable Box Resources** is a curated collection of scan outputs and data designed to help you analyze and exploit vulnerable machines. This repository provides detailed insights into the inner workings of your target systems, making it easier to identify potential security gaps, weaknesses, and attack vectors.
@@ -20,7 +20,7 @@
 
 To contribute your scan data to this repository, please follow the steps below:
 
-1. **Run the Scanning Script**: First, visit the repository [Box Scanning Script](https://github.com/infoSecWarrior/Offensive-Pentesting-Scripts/tree/main/Box-Scann), which provides the necessary script along with installation instructions.
+1. **Run the Scanning Script**: First, visit the repository [Box Scanning Script](https://github.com/infoSecWarrior/Offensive-Pentesting-Scripts/tree/main/Box-Scan), which provides the necessary script along with installation instructions.
 
 2. **Install and Execute the Script**: After downloading and setting up the script, run it using the following command, replacing `<target_ip>` with your target machine's IP address and `<output_directory_prefix>` with your desired filename prefix:
 

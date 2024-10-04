@@ -1,0 +1,38 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 18:06:13 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,8080 -oA oz-1-nmap-version-scan-output 192.168.29.58
+Nmap scan report for 192.168.29.58
+Host is up (0.00039s latency).
+
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Werkzeug httpd 0.14.1 (Python 2.7.14)
+| http-methods: 
+|_  Supported Methods: HEAD OPTIONS GET POST
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: OZ webapi
+|_http-favicon: Unknown favicon MD5: FDB5E440E071E91E8898C883240B9F39
+|_http-server-header: Werkzeug/0.14.1 Python/2.7.14
+8080/tcp open  http    Werkzeug httpd 0.14.1 (Python 2.7.14)
+| http-open-proxy: Potentially OPEN proxy.
+|_Methods supported:CONNECTION
+| http-title: GBR Support - Login
+|_Requested resource was http://192.168.29.58:8080/login
+| http-methods: 
+|_  Supported Methods: HEAD GET POST OPTIONS
+|_http-favicon: Unknown favicon MD5: 131B03077D7717DBFF2E41E52F08BC7A
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-server-header: Werkzeug/0.14.1 Python/2.7.14
+MAC Address: 08:00:27:CF:77:28 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 4.11 (97%), Linux 3.16 - 4.6 (97%), Linux 3.2 - 4.9 (97%), Linux 4.4 (97%), Linux 3.13 (94%), Linux 4.2 (92%), Linux 3.13 - 3.16 (91%), OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4) (91%), Linux 4.10 (91%), Linux 5.1 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 198.840 days (since Mon Mar 11 21:56:24 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.39 ms 192.168.29.58
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 26 18:06:28 2024 -- 1 IP address (1 host up) scanned in 15.30 seconds

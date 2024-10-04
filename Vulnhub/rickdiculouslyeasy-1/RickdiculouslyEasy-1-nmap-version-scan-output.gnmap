@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Tue Oct  1 06:43:20 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80,9090,13337,22222,60000 -oA RickdiculouslyEasy-1-nmap-version-scan-output 192.168.1.14
+# Ports scanned: TCP(7;21-22,80,9090,13337,22222,60000) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.14 ()	Status: Up
+Host: 192.168.1.14 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//tcpwrapped///, 80/open/tcp//http//Apache httpd 2.4.27 ((Fedora))/, 9090/open/tcp//http//Cockpit web service 161 or earlier/, 13337/open/tcp//tcpwrapped///, 22222/open/tcp//ssh//OpenSSH 7.5 (protocol 2.0)/, 60000/open/tcp//tcpwrapped///	OS: Linux 3.2 - 4.9	Seq Index: 260	IP ID Seq: All zeros
+# Nmap done at Tue Oct  1 06:43:58 2024 -- 1 IP address (1 host up) scanned in 37.83 seconds

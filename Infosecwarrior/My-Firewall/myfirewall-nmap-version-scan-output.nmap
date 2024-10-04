@@ -1,0 +1,29 @@
+# Nmap 7.94SVN scan initiated Thu Oct  3 06:59:54 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA myfirewall-nmap-version-scan-output 192.168.1.208
+Nmap scan report for 192.168.1.208
+Host is up (0.00039s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx
+|_http-title: pfSense - Login
+|_http-favicon: Unknown favicon MD5: 5567E9CE23E5549E0FCD7195F3882816
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+MAC Address: 08:00:27:BB:75:94 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): FreeBSD 11.X (92%)
+OS CPE: cpe:/o:freebsd:freebsd:11.2
+Aggressive OS guesses: FreeBSD 11.2-RELEASE (92%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.000 days (since Thu Oct  3 07:00:03 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.39 ms 192.168.1.208
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Oct  3 07:00:09 2024 -- 1 IP address (1 host up) scanned in 16.01 seconds

@@ -1,0 +1,2 @@
+http://192.168.29.58:8080 [302 Found] Country[RESERVED][ZZ], HTTPServer[Werkzeug/0.14.1 Python/2.7.14], IP[192.168.29.58], Python[2.7.14], RedirectLocation[http://192.168.29.58:8080/login], Title[Redirecting...], Werkzeug[0.14.1]
+http://192.168.29.58:8080/login [200 OK] Bootstrap, Country[RESERVED][ZZ], HTML5, HTTPServer[Werkzeug/0.14.1 Python/2.7.14], IP[192.168.29.58], JQuery, PasswordField[password], Python[2.7.14], Script, Title[GBR Support - Login], Werkzeug[0.14.1], X-UA-Compatible[IE=edge]

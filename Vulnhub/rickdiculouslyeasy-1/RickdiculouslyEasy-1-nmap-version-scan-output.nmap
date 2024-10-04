@@ -1,0 +1,61 @@
+# Nmap 7.94SVN scan initiated Tue Oct  1 06:43:20 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80,9090,13337,22222,60000 -oA RickdiculouslyEasy-1-nmap-version-scan-output 192.168.1.14
+Nmap scan report for 192.168.1.14
+Host is up (0.00059s latency).
+
+PORT      STATE SERVICE    VERSION
+21/tcp    open  ftp        vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| -rw-r--r--    1 0        0              42 Aug 22  2017 FLAG.txt
+|_drwxr-xr-x    2 0        0               6 Feb 12  2017 pub
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:192.168.1.150
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp    open  tcpwrapped
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+80/tcp    open  http       Apache httpd 2.4.27 ((Fedora))
+| http-methods: 
+|   Supported Methods: POST OPTIONS HEAD GET TRACE
+|_  Potentially risky methods: TRACE
+|_http-title: Morty's Website
+|_http-server-header: Apache/2.4.27 (Fedora)
+9090/tcp  open  http       Cockpit web service 161 or earlier
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: Did not follow redirect to https://192.168.1.14:9090/
+13337/tcp open  tcpwrapped
+22222/tcp open  ssh        OpenSSH 7.5 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 b4:11:56:7f:c0:36:96:7c:d0:99:dd:53:95:22:97:4f (RSA)
+|   256 20:67:ed:d9:39:88:f9:ed:0d:af:8c:8e:8a:45:6e:0e (ECDSA)
+|_  256 a6:84:fa:0f:df:e0:dc:e2:9a:2d:e7:13:3c:e7:50:a9 (ED25519)
+60000/tcp open  tcpwrapped
+|_drda-info: ERROR
+MAC Address: 08:00:27:BF:52:95 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 20.219 days (since Wed Sep 11 01:28:06 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.59 ms 192.168.1.14
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct  1 06:43:58 2024 -- 1 IP address (1 host up) scanned in 37.83 seconds

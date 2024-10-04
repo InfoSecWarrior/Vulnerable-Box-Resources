@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* General body styling */
 body {
     font-family: 'Fira Code', monospace;
@@ -9,8 +11,9 @@ body {
     overflow-x: hidden;
 }
 
+/* Container to hold all content */
 .container {
-    max-width: 1400px;
+    max-width: 100%; /* Allows full viewport width */
     margin: 0 auto;
     padding: 20px;
 }
@@ -62,74 +65,139 @@ body {
     transform: scale(1.1);
 }
 
+/* Count styling */
+.count {
+    font-size: 1.3em;
+    color: #333;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
 /* Search bar styling */
-#searchBar {
+.searchsection {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.search {
+    position: relative;
+}
+
+.searchbar {
     width: 100%;
-    max-width: 800px;
-    padding: 12px 20px;
+    max-width: 900px;
+    padding: 12px 40px 12px 20px; /* Adjusted padding for the clear button */
     font-size: 18px;
     margin: 20px auto;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: #ffffff;
     color: #333;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.searchbar {
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 20px;
+    font-family: 'Fira Code', monospace;
+    box-sizing: border-box;
 }
 
 .searchbar:focus {
     background-color: #edf2fb;
+    outline: none;
 }
 
 .searchbar:hover {
     background-color: #c9c9c9;
 }
 
-.searchimg, .closeimg {
+/* Close search button styling */
+.closebtn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closebtn img {
     width: 24px;
     height: 24px;
-    cursor: pointer;
 }
 
-.searchimg {
-    margin-right: 10px;
-}
-
-.closeimg {
-    margin-right: 10px;
-    display: none;
-}
-
-.closeimg:hover, .searchimg:hover {
-    background-color: #edf2fb;
-    border-radius: 50%;
-    padding: 2px;
-}
-
-.table-container {
-    width: 98%;
-    margin: 0 auto;
+/* Predefined Patterns */
+.predefined-patterns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
     overflow-x: auto;
+    margin: 10px auto;
+    padding: 10px 0;
+    width: 100%;
 }
 
+.predefined-patterns button {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 100px;
+    border: 1px solid #000000;
+    background-color: #f98d8d;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: 'Fira Code', monospace;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    white-space: nowrap;
+}
+
+.predefined-patterns button:hover,
+.predefined-patterns button:focus {
+    background-color: #e67e7e;
+    transform: scale(1.05);
+    outline: none;
+}
+
+/* Status Message and Spinner */
+#status {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    font-family: 'Fira Code', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s linear infinite;
+    display: none; /* Initially hidden */
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    table-layout: auto;
     border-radius: 10px;
-    overflow: hidden;
+    text-align: center; /* Center content horizontally */
 }
 
 thead {
@@ -140,10 +208,15 @@ thead {
 
 thead th {
     padding: 20px;
-    text-align: left;
+    position: sticky;
+    top: 0; /* Sticks to the top of the viewport */
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.05em;
+    background-color: #b20002;
+    z-index: 2; /* Ensures headers stay above other content */
+    text-align: center; /* Center header content */
+    vertical-align: middle; /* Center header content vertically */
 }
 
 tbody tr {
@@ -168,7 +241,8 @@ td {
     padding: 18px 28px;
     font-size: 18px;
     color: #333;
-    text-align: left;
+    text-align: center; /* Center cell content */
+    vertical-align: middle; /* Center cell content vertically */
     white-space: pre-wrap;
 }
 
@@ -176,88 +250,176 @@ td:first-child {
     padding-left: 35px;
 }
 
-td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4) {
     padding-left: 40px;
 }
 
-.port-entry, .service-entry, .product-version-entry {
+.port-entry,
+.service-entry,
+.product-version-entry {
     display: block;
     padding: 6px 0;
 }
 
-header h1 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333;
-    font-family: 'Fira Code', monospace;
+/* Highlighted Text */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
 }
 
-#searchBar {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    font-family: 'Fira Code', monospace;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.predefined-patterns {
+/* Pagination Controls */
+.pagination-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
-    gap: 4px;
-    overflow-x: auto;
-    margin: 10px auto;
-    padding: 5px 0;
-    width: 100%;
+    margin: 20px 0;
+    gap: 10px;
 }
 
-.predefined-patterns button {
-    font-size: 14px;
-    padding: 7px 13px;
-    border-radius: 100px;
-    border: 1px;
-    border-color: #000000;
-    background-color: #f98d8d;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    font-family: 'Fira Code', monospace;
-    transition: background-color 0.3s, transform 0.2s ease-in-out;
-    white-space: nowrap;
-}
-
-.predefined-patterns button:hover {
-    background-color: #f98d8d;
-    transform: scale(1.05);
-}
-
-#status {
-    text-align: center;
+.pagination-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
-    color: #666;
-    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+    background-color: #b20002;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
+.pagination-container button:hover:not(:disabled),
+.pagination-container button:focus:not(:disabled) {
+    background-color: #a30000;
+    outline: none;
+}
+
+.pagination-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination-container span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    thead th, tbody td {
-        padding: 8px;
-        font-size: 12px;
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
     }
-}
 
-@media (max-width: 768px) {
     .predefined-patterns {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .predefined-patterns button {
-        font-size: 10px;
-        padding: 3px 8px;
+        width: 100%;
+        max-width: 300px;
     }
+
+    thead th,
+    tbody td {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .searchbar {
+        font-size: 16px;
+    }
+
+    .count {
+        font-size: 1.1em;
+    }
+
+    .pagination-container button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .pagination-container span {
+        font-size: 16px;
+    }
+
+    /* Adjust table container padding for smaller screens */
+    .table-container {
+        padding: 5px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+/* Anchor tag styling */
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b20002;
+    text-decoration: none;
+}
+
+/* Machine name container styling */
+.machine-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content */
+}
+
+/* Machine name styling */
+/* Ensure machine name and platform tag are displayed inline */
+.machine-name, .platform-tag {
+    display: inline-block; /* Display them inline */
+    vertical-align: middle; /* Align vertically in the middle */
+    margin-right: 10px; /* Add spacing between the elements */
+}
+
+.platform-tag {
+    font-size: 0.75em; 
+    padding: 3px 8px; 
+    border-radius: 12px; 
+    color: #fff; 
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* VulnHub specific styling */
+.vulnhub-tag {
+    background: linear-gradient(135deg, #ff7300, #ff7300);
+    border: 1px solid #ff7300;
+}
+
+/* InfosecWarrior specific styling */
+.infosecwarrior-tag {
+    background: linear-gradient(135deg, #3143e4, #3143e4);
+    border: 1px solid #3143e4;
+}
+
+/* HTB specific styling */
+.htb-tag {
+    background: linear-gradient(135deg, #66ec0c, #66ec0c);
+    border: 1px solid #66ec0c;
+}
+
+/* Other platform styling */
+.other-tag {
+    background: linear-gradient(135deg, #6c757d, #6c757d);
+    border: 1px solid #6c757d;
 }

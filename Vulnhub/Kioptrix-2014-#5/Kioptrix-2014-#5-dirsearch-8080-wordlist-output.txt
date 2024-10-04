@@ -1,0 +1,12 @@
+# Dirsearch started Mon Sep 30 18:14:26 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.0.186:8080 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Kioptrix-2014-#5-dirsearch-8080-wordlist-output.txt -q
+
+404   208B   http://192.168.0.186:8080/http%3A%2F%2Fwww
+404   212B   http://192.168.0.186:8080/http%3A%2F%2Fyoutube
+404   210B   http://192.168.0.186:8080/http%3A%2F%2Fblogs
+404   209B   http://192.168.0.186:8080/http%3A%2F%2Fblog
+404   210B   http://192.168.0.186:8080/**http%3A%2F%2Fwww
+404   214B   http://192.168.0.186:8080/http%3A%2F%2Fcommunity
+404   210B   http://192.168.0.186:8080/http%3A%2F%2Fradar
+404   221B   http://192.168.0.186:8080/http%3A%2F%2Fjeremiahgrossman
+404   211B   http://192.168.0.186:8080/http%3A%2F%2Fweblog
+404   209B   http://192.168.0.186:8080/http%3A%2F%2Fswik

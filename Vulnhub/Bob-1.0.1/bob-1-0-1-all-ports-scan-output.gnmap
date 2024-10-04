@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 19:33:16 2024 as: nmap -v -Pn -p- -oA bob-1-0-1-all-ports-scan-output 192.168.1.6
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.6 ()	Status: Up
+Host: 192.168.1.6 ()	Ports: 80/open/tcp//http///, 25468/open/tcp/////	Ignored State: closed (65533)
+# Nmap done at Sun Sep 29 19:33:17 2024 -- 1 IP address (1 host up) scanned in 1.74 seconds

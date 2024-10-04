@@ -1,0 +1,20 @@
+# Dirsearch started Sun Sep 29 20:19:48 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.39:80 -o my-file-server-1-dirsearch-80-output.txt -q
+
+403   213B   http://192.168.1.39/.ht_wsr.txt
+403   216B   http://192.168.1.39/.htaccess.bak1
+403   216B   http://192.168.1.39/.htaccess.orig
+403   218B   http://192.168.1.39/.htaccess.sample
+403   216B   http://192.168.1.39/.htaccess.save
+403   217B   http://192.168.1.39/.htaccess_extra
+403   216B   http://192.168.1.39/.htaccess_orig
+403   214B   http://192.168.1.39/.htaccessBAK
+403   214B   http://192.168.1.39/.htaccess_sc
+403   214B   http://192.168.1.39/.htaccessOLD
+403   215B   http://192.168.1.39/.htaccessOLD2
+403   206B   http://192.168.1.39/.htm
+403   207B   http://192.168.1.39/.html
+403   216B   http://192.168.1.39/.htpasswd_test
+403   212B   http://192.168.1.39/.htpasswds
+403   213B   http://192.168.1.39/.httr-oauth
+403   210B   http://192.168.1.39/cgi-bin/
+200    25B   http://192.168.1.39/readme.txt

@@ -1,0 +1,10 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.156.10
++ Target Port: 8585
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /: Cookie lang created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /favicon.ico: Uncommon header 'content-disposition' found, with contents: attachment; filename=favicon.png.
++ GET /favicon.ico: Uncommon header 'content-description' found, with contents: File Transfer.
++ GET /favicon.ico: Uncommon header 'content-transfer-encoding' found, with contents: binary.
++ GET /admin/: Cookie redirect_to created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /debug/: Possible debug directory/program found.
