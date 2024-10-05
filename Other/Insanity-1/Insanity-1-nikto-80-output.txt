@@ -1,0 +1,31 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.29.33
++ Target Port: 80
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /index.php?: Retrieved x-powered-by header: PHP/7.2.33.
++ HEAD PHP/7.2.33 appears to be outdated (current is at least 8.1.5), PHP 7.4.28 for the 7.4 branch.
++ HEAD Apache/2.4.6 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ GET Multiple index files found: /index.html, /index.php.
++ OPTIONS OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, OPTIONS, TRACE .
++ TRACE /: HTTP TRACE method is active which suggests the host is vulnerable to XST. See: https://owasp.org/www-community/attacks/Cross_Site_Tracing: 
++ GET /phpinfo.php: Output from the phpinfo() function was found.
++ GET /css/: Directory indexing found.
++ GET /css/: This might be interesting.
++ GET /data/: Directory indexing found.
++ GET /data/: This might be interesting.
++ GET /img/: Directory indexing found.
++ GET /img/: This might be interesting.
++ GET /phpmyadmin/changelog.php: Uncommon header 'x-ob_mode' found, with contents: 1.
++ GET /phpmyadmin/changelog.php: Cookie goto created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /phpmyadmin/changelog.php: Cookie back created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /phpmyadmin/ChangeLog: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ GET /webmail/src/read_body.php: Cookie SQMSESSID created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /webmail/src/read_body.php: SquirrelMail found.
++ GET /phpinfo.php: PHP is installed, and a test script which runs phpinfo() was found. This gives a lot of system information. See: CWE-552: 
++ GET /icons/: Directory indexing found.
++ GET /icons/README: Apache default file found. See: https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/: 
++ GET /webmail/src/configtest.php: Squirrelmail configuration test may reveal version and system info.
++ GET /phpmyadmin/: phpMyAdmin directory found.
++ GET /phpmyadmin/README: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts. See: https://typo3.org/: 
++ GET /package.json: Node.js package file found. It may contain sensitive information.

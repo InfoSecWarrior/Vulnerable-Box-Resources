@@ -1,0 +1,23 @@
+[php-detect] [http] [info] http://192.168.29.33:80
+[apache-detect] [http] [info] http://192.168.29.33:80 [Apache/2.4.6 (CentOS) PHP/7.2.33]
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.29.33:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.29.33:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.29.33:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.29.33:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.29.33:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.29.33:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.29.33:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.29.33:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.29.33:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.29.33:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.29.33:80
+[fingerprinthub-web-fingerprints:openfire] [http] [info] http://192.168.29.33:80
+[squirrelmail-login] [http] [info] http://192.168.29.33:80/webmail/src/login.php
+[package-json] [http] [info] http://192.168.29.33:80/package.json
+[package-json] [http] [info] http://192.168.29.33:80/package-lock.json
+[http-trace:trace-request] [http] [info] http://192.168.29.33:80
+[http-trace:options-request] [http] [info] http://192.168.29.33:80
+[waf-detect:apachegeneric] [http] [info] http://192.168.29.33:80/
+[options-method] [http] [info] http://192.168.29.33:80 [GET,HEAD,POST,OPTIONS,TRACE]
+[phpinfo-files] [http] [low] http://192.168.29.33:80/phpinfo.php [7.2.33] [paths="/phpinfo.php"]
+[phpmyadmin-panel] [http] [info] http://192.168.29.33:80/phpmyadmin/ [5.0.2] [paths="/phpmyadmin/"]

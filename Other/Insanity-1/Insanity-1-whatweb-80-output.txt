@@ -1,0 +1,1 @@
+http://192.168.29.33:80 [200 OK] Apache[2.4.6], Bootstrap, Country[RESERVED][ZZ], Email[hello@insanityhosting.vm], HTML5, HTTPServer[CentOS][Apache/2.4.6 (CentOS) PHP/7.2.33], IP[192.168.29.33], JQuery, PHP[7.2.33], Script, Title[Insanity - UK and European Servers], X-UA-Compatible[IE=edge]
