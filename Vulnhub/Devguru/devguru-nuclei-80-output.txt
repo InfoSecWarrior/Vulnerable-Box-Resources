@@ -1,0 +1,29 @@
+[email-extractor] [http] [info] http://192.168.156.10:80 ["support@gmail.com"]
+[apache-detect] [http] [info] http://192.168.156.10:80 ["Apache/2.4.29 (Ubuntu)"]
+[adminer-panel] [http] [info] http://192.168.156.10:80/adminer.php ["4.7.7"]
+[cookies-without-httponly] [http] [info] http://192.168.156.10:80
+[cookies-without-secure] [http] [info] http://192.168.156.10:80
+[fingerprinthub-web-fingerprints:openfire] [http] [info] http://192.168.156.10:80
+[metatag-cms] [http] [info] http://192.168.156.10:80 ["DevGuru"]
+[form-detection] [http] [info] http://192.168.156.10:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.156.10:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.156.10:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.156.10:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.156.10:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.156.10:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.156.10:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.156.10:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.156.10:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.156.10:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.156.10:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.156.10:80
+[exposed-gitignore] [http] [info] http://192.168.156.10:80/.gitignore
+[git-config] [http] [medium] http://192.168.156.10:80/.git/config
+[readme-md] [http] [info] http://192.168.156.10:80/README.md
+[google-api-key] [http] [info] http://192.168.156.10:80 ["AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA"]
+[htaccess-config] [http] [info] http://192.168.156.10:80/.htaccess
+[missing-sri] [http] [info] http://192.168.156.10:80 ["http://192.168.156.10/combine/9e2962cbe8d095d58a50bfcde49caf76-1605748980","https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"]
+[octobercms-detect] [http] [info] http://192.168.156.10:80
+[waf-detect:apachegeneric] [http] [info] http://192.168.156.10:80
+[ssh-auth-methods] [javascript] [info] 192.168.156.10:22 ["["publickey"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.156.10:22 ["Vulnerable to Terrapin"]

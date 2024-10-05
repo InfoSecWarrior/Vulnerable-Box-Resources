@@ -29,18 +29,16 @@
         </header>
 
         <!-- Total Results Counter -->
-        <p id="totalCount" aria-live="polite">Total Results: 0</p>
-
+        <p id="totalMachines" aria-live="polite">Total Vulnerable Machines: 0</p>
+        
         <!-- Search Section -->
         <section class="searchsection">
             <div class="search" style="position: relative;">
                 <input type="search" id="searchBar" class="searchbar" placeholder="Search..." aria-label="Search input">
             </div>
         </section>
-
-        <!-- Search Result Counter -->
-        <p id="searchResultCount" aria-live="polite" style="display: none;">Search Result: 0</p>
-
+        
+        <p id="totalCount" aria-live="polite">Search Result: 0</p>
 
         <!-- Predefined Search Patterns -->
         <section class="predefined-patterns" aria-label="Predefined Search Patterns">
@@ -77,10 +75,15 @@
         
         <!-- Pagination Controls -->
         <section class="pagination-container" aria-label="Pagination Controls">
-            <button id="prevBtn" disabled aria-label="Previous Page">Previous</button>
-            <span id="pageInfo" aria-live="polite"></span>
-            <button id="nextBtn" disabled aria-label="Next Page">Next</button>
-        </section>        
+            <button id="prevBtn" disabled aria-label="Previous Page" class="pagination-button">Back</button>
+            
+            <div class="pagination-pages">
+                <!-- Page numbers will be dynamically generated here -->
+            </div>
+            
+            <button id="nextBtn" disabled aria-label="Next Page" class="pagination-button">Next</button>
+        </section>
+        
     </div>
 
     <!-- JavaScript -->

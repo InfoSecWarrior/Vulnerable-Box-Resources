@@ -1,0 +1,1 @@
+http://192.168.29.237:80 [200 OK] Country[RESERVED][ZZ], HTTPServer[TinyWeb/1.93], IP[192.168.29.237], Meta-Author[Allen Mullen, X.D.], Title[The Scream - Edvard Munch]

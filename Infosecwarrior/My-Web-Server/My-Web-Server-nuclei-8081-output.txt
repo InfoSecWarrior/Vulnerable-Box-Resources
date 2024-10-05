@@ -1,0 +1,4 @@
+[waf-detect:nginxgeneric] [http] [info] http://192.168.29.61:8081
+[mysql-info] [javascript] [info] 192.168.29.61:3306 ["Transport: tcp","Version:"]
+[CVE-2023-48795] [javascript] [medium] 192.168.29.61:22 ["Vulnerable to Terrapin"]
+[ssh-auth-methods] [javascript] [info] 192.168.29.61:22 ["["publickey"]"]

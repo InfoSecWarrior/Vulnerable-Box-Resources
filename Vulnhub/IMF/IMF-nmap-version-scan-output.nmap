@@ -1,0 +1,29 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 17:42:47 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA IMF-nmap-version-scan-output 192.168.29.76
+Nmap scan report for 192.168.29.76
+Host is up (0.00024s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: IMF - Homepage
+MAC Address: 08:00:27:4C:26:C3 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|WAP|phone
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (93%), Google Android 5.X|6.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:3.18 cpe:/o:linux:linux_kernel:4.1 cpe:/o:google:android:5 cpe:/o:google:android:6 cpe:/o:linux:linux_kernel:3.4 cpe:/o:linux:linux_kernel:2.6.32
+Aggressive OS guesses: Linux 3.10 - 4.11 (93%), Linux 3.16 - 4.6 (93%), Linux 3.2 - 4.9 (93%), Linux 4.4 (92%), Linux 4.2 (90%), Linux 3.13 (90%), Linux 3.18 (88%), OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4) (87%), Linux 4.10 (87%), Android 5.0 - 6.0.1 (Linux 3.4) (87%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 198.840 days (since Thu Mar 14 21:33:23 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=254 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.24 ms 192.168.29.76
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep 29 17:43:02 2024 -- 1 IP address (1 host up) scanned in 15.45 seconds

@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Wed Oct  2 20:40:43 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8585 -oA devguru-nmap-version-scan-output 192.168.156.10
+# Ports scanned: TCP(3;22,80,8585) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.156.10 ()	Status: Up
+Host: 192.168.156.10 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 8585/open/tcp//unknown///	OS: Linux 4.15 - 5.8	Seq Index: 257	IP ID Seq: All zeros
+# Nmap done at Wed Oct  2 20:42:13 2024 -- 1 IP address (1 host up) scanned in 89.12 seconds

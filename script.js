@@ -3,11 +3,12 @@ let cachedFilteredData = [];
 let currentPage = 1;
 const itemsPerPage = 20;
 
+
 const dataSources = {
-    Vulnhub: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/Vulnhub-Raw-File-Links.txt',
-    Infosecwarrior: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/Infosecwarrior-Raw-File-Links.txt',
-    HTB: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/HTB-Raw-File-Links.txt',
-    Other: 'https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/Other-Raw-File-Links.txt'
+    Vulnhub: 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub-Raw-File-Links.txt',
+    Infosecwarrior: 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior-Raw-File-Links.txt',
+    HTB: 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/HTB-Raw-File-Links.txt',
+    Other: 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Other-Raw-Files-Links.txt'
 };
 
 async function fetchAllData() {
@@ -23,6 +24,10 @@ async function fetchAllData() {
         await Promise.all(fetchPromises);
         updateStatus('Data loaded from all available sources.');
         console.log('Data loading completed successfully. Total records:', parsedData.length);
+        
+        // Update the total machine count
+        updateTotalMachinesCount(); 
+        
         renderPage(currentPage, parsedData); // Initial render of all data
     } catch (error) {
         console.error('Error loading data from some sources:', error);
@@ -129,7 +134,6 @@ function updateStatus(message) {
     }
 }
 
-// Function to render the current page of data
 function renderPage(page, data, query = '') {
     console.log(`Rendering page ${page} with query: "${query}"`);
     const startIndex = (page - 1) * itemsPerPage;
@@ -138,43 +142,115 @@ function renderPage(page, data, query = '') {
 
     renderMachines(paginatedData, query);
     updatePaginationControls(page, data.length);
+
     const totalCountElement = document.getElementById('totalCount');
-    const searchCountElement = document.getElementById('searchCount');
-    if (query === '') {
-        // When no search query is provided, show total vulnerable machine count
-        if (totalCountElement) {
-            totalCountElement.textContent = `Total Vulnerable Machines: ${parsedData.length}`;
+    
+    if (totalCountElement) {
+        if (query === '') {
+            // Show total results when there's no search query
+            totalCountElement.textContent = `Search Results: 0`;
+        } else {
+            // Show filtered result count during search
+            totalCountElement.textContent = `Search Results: ${data.length}`;
         }
-        // Hide the search result count
-        searchCountElement.style.display = 'none';
-    } else {
-        // When a search query is provided, show search results count
-        if (searchCountElement) {
-            searchCountElement.textContent = `Search Results: ${data.length}`;
-            searchCountElement.style.display = 'block';
-        }
-        // Hide the total count when search results are being displayed
-        totalCountElement.style.display = 'none';
     }
 }
 
-// Function to update pagination controls
 function updatePaginationControls(page, totalItems) {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-    const pageInfoElement = document.getElementById('pageInfo');
-    if (pageInfoElement) {
-        pageInfoElement.textContent = `Page ${page} of ${totalPages}`;
-    }
-
+    // Enable or disable prev/next buttons
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
+    prevBtn.disabled = page === 1;
+    nextBtn.disabled = page === totalPages;
 
-    if (prevBtn) prevBtn.disabled = page === 1;
-    if (nextBtn) nextBtn.disabled = page === totalPages;
+    // Update the "Back" and "Next" button text and click events
+    prevBtn.innerHTML = '&lsaquo; Back';
+    nextBtn.innerHTML = 'Next &rsaquo;';
+    
+    prevBtn.addEventListener('click', () => {
+        if (page > 1) {
+            currentPage = page - 1;
+            renderPage(currentPage, cachedFilteredData.length > 0 ? cachedFilteredData : parsedData);
+            window.scrollTo({ top: 0 });
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (page < totalPages) {
+            currentPage = page + 1;
+            renderPage(currentPage, cachedFilteredData.length > 0 ? cachedFilteredData : parsedData);
+            window.scrollTo({ top: 0 });
+        }
+    });
+
+    // Dynamically create page numbers with ellipsis
+    const paginationPages = document.querySelector('.pagination-pages');
+    paginationPages.innerHTML = ''; // Clear previous pagination
+
+    const maxVisiblePages = 7; // Limit visible pages
+    const pagesToShow = [];
+
+    // Always show the first page
+    pagesToShow.push(1);
+
+    // Determine if ellipsis is needed before current page set
+    if (page > maxVisiblePages - 3) {
+        pagesToShow.push('...');
+    }
+
+    // Show pages around the current page
+    const startPage = Math.max(2, page - 2); // Show up to 2 pages before the current page
+    const endPage = Math.min(page + 2, totalPages - 1); // Show up to 2 pages after the current page
+
+    for (let i = startPage; i <= endPage; i++) {
+        if (i > 1 && i < totalPages) {
+            pagesToShow.push(i);
+        }
+    }
+
+    // Determine if ellipsis is needed before the last page
+    if (page < totalPages - 3) {
+        pagesToShow.push('...');
+    }
+
+    // Always show the last page
+    if (totalPages > 1) {
+        pagesToShow.push(totalPages);
+    }
+
+    // Create page buttons dynamically
+    pagesToShow.forEach(pageNumber => {
+        if (pageNumber === '...') {
+            const ellipsis = document.createElement('span');
+            ellipsis.textContent = '...';
+            paginationPages.appendChild(ellipsis);
+        } else {
+            const pageButton = document.createElement('button');
+            pageButton.classList.add('page-number');
+            pageButton.textContent = pageNumber;
+
+            // Highlight the active page
+            if (pageNumber === page) {
+                pageButton.classList.add('active');
+            }
+
+            // Add click event to load the selected page
+            pageButton.addEventListener('click', () => {
+                currentPage = pageNumber;
+                renderPage(currentPage, cachedFilteredData.length > 0 ? cachedFilteredData : parsedData);
+                window.scrollTo({ top: 0 });
+            });
+
+            paginationPages.appendChild(pageButton);
+        }
+    });
 
     console.log(`Updated pagination: Page ${page} of ${totalPages}`);
 }
+
+
 
 function renderMachines(data, query = '') {
     const tableBody = document.getElementById('table-body');
@@ -213,11 +289,13 @@ function renderMachines(data, query = '') {
                 platformClass = 'other-tag';
         }
 
-        // Machine name link with platform tag and the correct platform class
-        const machineNameLink = `<a href="machine.html?dir=${encodeURIComponent(item.machineDir)}&file=${encodeURIComponent(item.machineFile)}&platform=${encodeURIComponent(item.platform)}">
+        // Machine name link
+        const machineNameLink = `<a href="machine.html?dir=${encodeURIComponent(item.machineDir)}&file=${encodeURIComponent(item.machineFile)}&platform=${encodeURIComponent(item.platform)}" class="machine-name">
             ${highlight(item.machineName, lowerQuery)}
-            <span class="platform-tag ${platformClass}">${item.platform}</span>
         </a>`;
+
+        const platformTag = `<span class="platform-tag ${platformClass}" data-platform="${item.platform}">${item.platform}</span>`;
+
 
         const portDetails = item.portDetails
             .split(', ')
@@ -233,13 +311,26 @@ function renderMachines(data, query = '') {
             .join('');
 
         row.innerHTML = `
-            <td>${machineNameLink}</td>
+            <td>${machineNameLink} ${platformTag}</td>
             <td>${portDetails}</td>
             <td>${serviceNames}</td>
             <td>${serviceProducts}</td>
         `;
 
         tableBody.appendChild(row);
+    });
+
+    // Add event listener for platform tag search
+    document.querySelectorAll('.platform-tag').forEach(tag => {
+        tag.addEventListener('click', function () {
+            const platform = this.getAttribute('data-platform').toLowerCase();
+            document.getElementById('searchBar').value = `platform:${platform}`;
+            handleSearch(`platform:${platform}`);
+
+            window.scrollTo({
+                top: 0
+            });
+        });
     });
 
     if (data.length === 0) {
@@ -250,10 +341,6 @@ function renderMachines(data, query = '') {
 
     console.log(`Rendered ${data.length} machine entries.`);
 }
-
-
-
-
 
 // Escape RegExp special characters
 function escapeRegExp(string) {
@@ -266,6 +353,9 @@ document.getElementById('prevBtn').addEventListener('click', () => {
         currentPage--;
         const dataToRender = cachedFilteredData.length > 0 ? cachedFilteredData : parsedData;
         renderPage(currentPage, dataToRender, document.getElementById('searchBar').value);
+        window.scrollTo({
+            top: 0
+        });
     }
 });
 
@@ -276,6 +366,10 @@ document.getElementById('nextBtn').addEventListener('click', () => {
         currentPage++;
         const dataToRender = cachedFilteredData.length > 0 ? cachedFilteredData : parsedData;
         renderPage(currentPage, dataToRender, document.getElementById('searchBar').value);
+        window.scrollTo({
+            top: 0,
+
+        });
     }
 });
 
@@ -299,8 +393,7 @@ function handleSearch(query) {
         cachedFilteredData = [];
         currentPage = 1;
         renderPage(currentPage, parsedData);
-        updateSearchResultCount(0); // Reset search result count when search is cleared
-        return;
+        return; // No need to update count when search is cleared
     }
 
     const patterns = {
@@ -354,20 +447,14 @@ function handleSearch(query) {
     cachedFilteredData = filteredData;
     currentPage = 1;
     renderPage(currentPage, cachedFilteredData, trimmedQuery);
-    updateSearchResultCount(filteredData.length); // Update search result count after filtering
 }
 
-// Function to update the search result count
-function updateSearchResultCount(count) {
-    const searchResultCountElement = document.getElementById('searchResultCount');
-    if (count > 0) {
-        searchResultCountElement.style.display = 'block';
-        searchResultCountElement.textContent = `Search Result: ${count}`;
-    } else {
-        searchResultCountElement.style.display = 'none';
+function updateTotalMachinesCount() {
+    const totalMachinesElement = document.getElementById('totalMachines');
+    if (totalMachinesElement) {
+        totalMachinesElement.textContent = `Total Vulnerable Machines: ${parsedData.length}`;
     }
 }
-
 // Add event listeners to predefined pattern buttons
 document.querySelectorAll('.predefined-patterns button').forEach(button => {
     button.addEventListener('click', function () {

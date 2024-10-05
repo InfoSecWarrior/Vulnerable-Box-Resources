@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Oct  3 18:44:11 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,23,80 -oA scream-nmap-version-scan-output 192.168.29.237 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 21,22,23,80 -oA scream-nmap-version-scan-output 192.168.29.237" start="1727961251" startstr="Thu Oct  3 18:44:11 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="21-23,80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727961251"/>
+<taskend task="NSE" time="1727961251"/>
+<taskbegin task="NSE" time="1727961251"/>
+<taskend task="NSE" time="1727961251"/>
+<taskbegin task="NSE" time="1727961251"/>
+<taskend task="NSE" time="1727961251"/>
+<taskbegin task="ARP Ping Scan" time="1727961251"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.29.237" addrtype="ipv4"/>
+<address addr="08:00:27:FC:BA:4E" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727961251" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727961251"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727961251"/>
+<taskbegin task="Connect Scan" time="1727961251"/>
+<taskend task="Connect Scan" time="1727961251" extrainfo="4 total ports"/>
+<taskbegin task="Service scan" time="1727961251"/>
+<taskend task="Service scan" time="1727961297" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1727961301"/>
+<taskend task="NSE" time="1727961306"/>
+<taskbegin task="NSE" time="1727961306"/>
+<taskend task="NSE" time="1727961307"/>
+<taskbegin task="NSE" time="1727961307"/>
+<taskend task="NSE" time="1727961307"/>
+<host starttime="1727961251" endtime="1727961307"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.29.237" addrtype="ipv4"/>
+<address addr="08:00:27:FC:BA:4E" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="WAR-FTPD" version="1.65" extrainfo="Name Scream XP (SP2) FTP Service" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ftp-syst" output="&#xa;  SYST: UNIX emulated by FileZilla"><elem key="SYST">UNIX emulated by FileZilla</elem>
+</script><script id="ftp-bounce" output="bounce working!"/><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;drwxr-xr-x 1 ftp ftp              0 Oct 03 18:29 bin&#xa;drwxr-xr-x 1 ftp ftp              0 Oct 03 18:29 log&#xa;drwxr-xr-x 1 ftp ftp              0 Oct 03 18:29 root"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="WeOnlyDo sshd" version="2.1.3" extrainfo="protocol 2.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 2c:23:77:67:d3:e0:ae:2a:a8:01:a4:9e:54:97:db:2c (DSA)&#xa;  1024 fa:11:a5:3d:63:95:4a:ae:3e:16:49:2f:bb:4b:f1:de (RSA)"><table>
+<elem key="bits">1024</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAPtvfmQ8cYhT1xTUjk5200EXVr+bRcTtGNR4rO/Lvu/Vqg/bVeh5s9jVC71rtZUKo7JgO69m2mC3tTotkfmAxiITLfjWh4oser26g7JxcNZBpwdLVbfT1nv97z04v6IiKW8wEWtMh1bIJPjvmVPAZ014VwBnAAciMyhOwDMEZpIXAAAAFQDyUkmh2IGAv+mFXyCBioERkTgalQAAAIBIFC7tXS5HM9kNh+rSNEn69CwsC8JM+oScNih2xJBDDdDkjdUQaan29p0+Xypa4xlxfLisYLmWgoN8ckRjclehgvRMub498VtWtrJVeNohpuy/I01M+knr6WjhAM7bQ6FwZZnFuP9tjOOr88f62Y/cOyyNZdVx0GW+beAMHRkmEAAAAIEA4nZJdLgvGEV7kw+V36+ABpbk43fg/SoqXnDqBrrNoMLVQIioJQCN8SJpYvI/9XeWT2wvQ9+2EGp2JA+RIihP1+OiLlVKFPqleTGQz4sBeHKl+erAqhBlpdWG29X8qkMGHdlCUtCvUkK/DFuFsllx3RUSqeEJEuZ9n2bjiDFDmP0=</elem>
+<elem key="fingerprint">2c237767d3e0ae2aa801a49e5497db2c</elem>
+</table>
+<table>
+<elem key="bits">1024</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAIEAs4A0SjxI4hCfOqCoOQlHePoEzc7jnMryJ2l+VytIUIzl4CtZWDl+QksfXMeh3qJLRCGluu+FYsxbkWQMEzaw77tD9nhVyV7q+9vDDi5SvKon9NppKMmTTNxZK69qLVzKYnXuazBPIrUG1HfNaCr/1jSyTNEMWt4kngdfLpewoMM=</elem>
+<elem key="fingerprint">fa11a53d63954aae3e16492fbb4bf1de</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="telnet" servicefp="SF-Port23-TCP:V=7.94SVN%I=7%D=10/3%Time=66FE98A9%P=x86_64-pc-linux-gnu%r(NULL,12,&quot;\xff\xfb\x01\xff\xfe\&quot;\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xfd\x1f&quot;)%r(GenericLines,34,&quot;\xff\xfb\x01\xff\xfe\&quot;\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xfd\x1f\r\n\r\nScream\x20Telnet\x20Service\r\nlogin:\x20&quot;)%r(tn3270,3C,&quot;\xff\xfb\x01\xff\xfe\&quot;\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xfd\x1f\xff\xfc\x18\xff\xfe\x19\xff\xfc\x19\xff\xfb\0Scream\x20Telnet\x20Service\r\nlogin:\x20&quot;)%r(GetRequest,42,&quot;\xff\xfb\x01\xff\xfe\&quot;\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xfd\x1fGET\x20/\x20HTTP/1\.0\r\n\r\nScream\x20Telnet\x20Service\r\nlogin:\x20&quot;)%r(RPCCheck,5C,&quot;\xff\xfb\x01\xff\xfe\&quot;\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xfd\x1f\x80\0\0\(r\xfe\x1d\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xa0\0\x01\x97\|\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Scream\x20Telnet\x20Service\r\nlogin:\x20&quot;)%r(Help,36,&quot;\xff\xfb\x01\xff\xfe\&quot;\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xfd\x1fHELP\r\nScream\x20Telnet\x20Service\r\nlogin:\x20&quot;)%r(SIPOptions,10F,&quot;\xff\xfb\x01\xff\xfe\&quot;\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xfd\x1fOPTIONS\x20sip:nm\x20SIP/2\.0\r\nVia:\x20SIP/2\.0/TCP\x20nm;branch=foo\r\nFrom:\x20&lt;sip:nm@nm&gt;;tag=root\r\nTo:\x20&lt;sip:nm2@nm2&gt;\r\nCall-ID:\x2050000\r\nCSeq:\x2042\x20OPTIONS\r\nMax-Forwards:\x2070\r\nContent-Length:\x200\r\nContact:\x20&lt;sip:nm@nm&gt;\r\nAccept:\x20application/sdp\r\n\r\nScream\x20Telnet\x20Service\r\nlogin:\x20&quot;)%r(NCP,31,&quot;\xff\xfb\x01\xff\xfe\&quot;\xff\xfe\0\xff\xfd\x03\xff\xfd\x18\xff\xfd\x1f\x13Scream\x20Telnet\x20Service\r\nlogin:\x20&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GenericLines, NCP, RPCCheck, tn3270: &#xa;    Scream Telnet Service&#xa;    login:&#xa;  GetRequest: &#xa;    HTTP/1.0&#xa;    Scream Telnet Service&#xa;    login:&#xa;  Help: &#xa;    HELP&#xa;    Scream Telnet Service&#xa;    login:&#xa;  SIPOptions: &#xa;    OPTIONS sip:nm SIP/2.0&#xa;    Via: SIP/2.0/TCP nm;branch=foo&#xa;    From: &lt;sip:nm@nm&gt;;tag=root&#xa;    &lt;sip:nm2@nm2&gt;&#xa;    Call-ID: 50000&#xa;    CSeq: 42 OPTIONS&#xa;    Max-Forwards: 70&#xa;    Content-Length: 0&#xa;    Contact: &lt;sip:nm@nm&gt;&#xa;    Accept: application/sdp&#xa;    Scream Telnet Service&#xa;    login:"><elem key="GenericLines, NCP, RPCCheck, tn3270">&#xa;    Scream Telnet Service&#xa;    login:</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0&#xa;    Scream Telnet Service&#xa;    login:</elem>
+<elem key="Help">&#xa;    HELP&#xa;    Scream Telnet Service&#xa;    login:</elem>
+<elem key="SIPOptions">&#xa;    OPTIONS sip:nm SIP/2.0&#xa;    Via: SIP/2.0/TCP nm;branch=foo&#xa;    From: &lt;sip:nm@nm&gt;;tag=root&#xa;    &lt;sip:nm2@nm2&gt;&#xa;    Call-ID: 50000&#xa;    CSeq: 42 OPTIONS&#xa;    Max-Forwards: 70&#xa;    Content-Length: 0&#xa;    Contact: &lt;sip:nm@nm&gt;&#xa;    Accept: application/sdp&#xa;    Scream Telnet Service&#xa;    login:</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Tinyweb httpd" version="1.93" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-server-header" output="TinyWeb/1.93"><elem>TinyWeb/1.93</elem>
+</script><script id="http-title" output="The Scream - Edvard Munch"><elem key="title">The Scream - Edvard Munch</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<osmatch name="Microsoft Windows 2000" accuracy="96" line="70008">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2000" accuracy="96"><cpe>cpe:/o:microsoft:windows_2000</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP2 or SP3" accuracy="96" line="82821">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="96"><cpe>cpe:/o:microsoft:windows_xp::sp2</cpe><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP3" accuracy="96" line="83804">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="96"><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003" accuracy="94" line="72197">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="94"><cpe>cpe:/o:microsoft:windows_server_2003</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP Home SP1 (French)" accuracy="92" line="80766">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="92"><cpe>cpe:/o:microsoft:windows_xp::sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 2000 SP4" accuracy="92" line="71364">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2000" accuracy="92"><cpe>cpe:/o:microsoft:windows_2000::sp4</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP Professional SP2 - SP3" accuracy="91" line="81204">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="91"><cpe>cpe:/o:microsoft:windows_xp::sp2</cpe><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<osmatch name="General Dynamics R8000B Comm Systems Analyzer" accuracy="91" line="30414">
+<osclass type="specialized" vendor="General Dynamics" osfamily="embedded" accuracy="91"/>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP 2" accuracy="90" line="81340">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="90"><cpe>cpe:/o:microsoft:windows_xp::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP2" accuracy="89" line="82138">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="89"><cpe>cpe:/o:microsoft:windows_xp::sp2</cpe></osclass>
+</osmatch>
+</os>
+<distance value="1"/>
+<tcpsequence index="255" difficulty="Good luck!" values="32BD1398,666C492D,B0E2B8FF,76768610,AB73F25,D3ED9274"/>
+<ipidsequence class="Incremental" values="13E,13F,140,141,142,143"/>
+<tcptssequence class="zero timestamp" values="0,0,0,0,0,0"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.29.237" rtt="0.75"/>
+</trace>
+<times srtt="753" rttvar="154" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727961307"/>
+<taskend task="NSE" time="1727961307"/>
+<taskbegin task="NSE" time="1727961307"/>
+<taskend task="NSE" time="1727961307"/>
+<taskbegin task="NSE" time="1727961307"/>
+<taskend task="NSE" time="1727961307"/>
+<runstats><finished time="1727961307" timestr="Thu Oct  3 18:45:07 2024" summary="Nmap done at Thu Oct  3 18:45:07 2024; 1 IP address (1 host up) scanned in 55.69 seconds" elapsed="55.69" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

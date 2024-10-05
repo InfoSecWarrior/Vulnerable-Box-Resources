@@ -1,0 +1,67 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 18:01:47 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,65535 -oA Pinkys-Palacev4-nmap-version-scan-output 192.168.29.199
+Nmap scan report for 192.168.29.199
+Host is up (0.00037s latency).
+
+PORT      STATE SERVICE VERSION
+80/tcp    open  http    nginx 1.10.3
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-title: Pinky's Dev Box
+|_http-server-header: nginx/1.10.3
+65535/tcp open  unknown
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 404 NOT FOUND
+|     Server: pinkys-HTTP-server
+|     <html><head><title>404 Not Found</title></head><body><h1>File Not Found</h1></body></html>
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Server: pinkys-HTTP-server
+|     <html>
+|     <head>
+|     <title>Pinky's HTTP Server</title>
+|     </head>
+|     <body>
+|     <center><h1>Pinky's HTTP Server</h1></center>
+|     <center><h2>This application is under development!</h2></center>
+|     </body>
+|     <style>
+|     html{background-color: #ff33cc;}
+|     </style>
+|     </html>
+|   HTTPOptions: 
+|     HTTP/1.0 400 Bad Request
+|     Content-Type: text/html
+|     Connection: close
+|     Server: pinkys-HTTP-server
+|_    <html><h2>400 Bad Request</h2></html>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port65535-TCP:V=7.94SVN%I=7%D=9/29%Time=66F948B9%P=x86_64-pc-linux-gnu%
+SF:r(GetRequest,12E,"HTTP/1\.0\x20200\x20OK\r\nServer:\x20pinkys-HTTP-serv
+SF:er\r\n\r\n<html>\n\t<head>\n\t\t<title>Pinky's\x20HTTP\x20Server</title
+SF:>\n\t</head>\n\t<body>\n\t\t<center><h1>Pinky's\x20HTTP\x20Server</h1><
+SF:/center>\n\t\t<center><h2>This\x20application\x20is\x20under\x20develop
+SF:ment!</h2></center>\n\t</body>\n\t<style>\n\t\thtml{background-color:\x
+SF:20#ff33cc;}\n\t</style>\n</html>\n")%r(HTTPOptions,8B,"HTTP/1\.0\x20400
+SF:\x20Bad\x20Request\r\nContent-Type:\x20text/html\r\nConnection:\x20clos
+SF:e\r\nServer:\x20pinkys-HTTP-server\r\n\r\n<html><h2>400\x20Bad\x20Reque
+SF:st</h2></html>\r\n")%r(FourOhFourRequest,92,"HTTP/1\.0\x20404\x20NOT\x2
+SF:0FOUND\r\nServer:\x20pinkys-HTTP-server\r\n\r\n<html><head><title>404\x
+SF:20Not\x20Found</title></head><body><h1>File\x20Not\x20Found</h1></body>
+SF:</html>\r\n");
+MAC Address: 08:00:27:79:E6:C9 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 4.11 (93%), Linux 3.16 - 4.6 (93%), Linux 3.2 - 4.9 (93%), Linux 4.4 (93%), Linux 3.13 (90%), Linux 3.18 (89%), Linux 4.2 (89%), Linux 3.13 - 3.16 (87%), Linux 3.16 (87%), OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4) (87%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 198.841 days (since Thu Mar 14 21:53:17 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.37 ms 192.168.29.199
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep 29 18:03:57 2024 -- 1 IP address (1 host up) scanned in 130.59 seconds

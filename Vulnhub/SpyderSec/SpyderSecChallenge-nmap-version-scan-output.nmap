@@ -1,0 +1,30 @@
+# Nmap 7.94SVN scan initiated Mon Sep 30 12:11:26 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA SpyderSecChallenge-nmap-version-scan-output 192.168.1.5
+Nmap scan report for 192.168.1.5
+Host is up (0.00076s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd
+|_http-title: SpyderSec | Challenge
+|_http-favicon: Unknown favicon MD5: 032CC5C2FD1D6AABD91FC08470E0905C
+|_http-server-header: Apache
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+MAC Address: 08:00:27:C6:DA:83 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|storage-misc|media device|webcam
+Running (JUST GUESSING): Linux 2.6.X|3.X|4.X (97%), Synology DiskStation Manager 5.X (91%), LG embedded (88%), Tandberg embedded (88%), Drobo embedded (88%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/a:synology:diskstation_manager:5.2 cpe:/h:drobo:5n
+Aggressive OS guesses: Linux 2.6.32 - 3.10 (97%), Linux 2.6.32 - 3.13 (97%), Linux 2.6.39 (94%), Linux 2.6.32 - 3.5 (92%), Linux 3.2 - 3.16 (91%), Linux 3.2 - 3.8 (91%), Linux 2.6.32 (91%), Linux 3.10 - 4.11 (91%), Linux 3.2 - 4.9 (91%), Linux 3.4 - 3.10 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 49.710 days (since Sun Aug 11 19:09:41 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=255 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.76 ms 192.168.1.5
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 30 12:11:39 2024 -- 1 IP address (1 host up) scanned in 12.99 seconds

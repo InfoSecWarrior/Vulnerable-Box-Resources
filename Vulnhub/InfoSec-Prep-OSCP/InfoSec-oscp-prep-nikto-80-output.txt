@@ -1,0 +1,32 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.1.56
++ Target Port: 80
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: Drupal Link header found with value: <http://192.168.1.56/index.php/wp-json/>; rel="https://api.w.org/". See: https://www.drupal.org/: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /index.php?: Uncommon header 'x-redirect-by' found, with contents: WordPress.
++ GET /robots.txt: Entry '/secret.txt' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ HEAD Apache/2.4.41 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ CBPVBQRU /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ GET /wp-content/plugins/akismet/readme.txt: The WordPress Akismet plugin 'Tested up to' version usually matches the WordPress version.
++ GET /wp-links-opml.php: This WordPress script reveals the installed version.
++ GET /license.txt: License file found may identify site software.
++ GET /: A Wordpress installation was found.
++ GET /wp-login.php?action=register: Cookie wordpress_test_cookie created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /wp-login.php: Wordpress login found.
+- Nikto v2.5.0/
++ Target Host: 192.168.1.56
++ Target Port: 80
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: Drupal Link header found with value: <http://192.168.1.56/index.php/wp-json/>; rel="https://api.w.org/". See: https://www.drupal.org/: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /index.php?: Uncommon header 'x-redirect-by' found, with contents: WordPress.
++ GET /robots.txt: Entry '/secret.txt' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ HEAD Apache/2.4.41 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ OOCYILUD /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ GET /wp-content/plugins/akismet/readme.txt: The WordPress Akismet plugin 'Tested up to' version usually matches the WordPress version.
++ GET /wp-links-opml.php: This WordPress script reveals the installed version.
++ GET /license.txt: License file found may identify site software.
++ GET /: A Wordpress installation was found.
++ GET /wp-login.php?action=register: Cookie wordpress_test_cookie created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /wp-login.php: Wordpress login found.

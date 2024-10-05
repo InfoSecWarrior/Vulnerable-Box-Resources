@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 17:42:47 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA IMF-nmap-version-scan-output 192.168.29.76
+# Ports scanned: TCP(1;80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.29.76 ()	Status: Up
+Host: 192.168.29.76 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/	Seq Index: 254	IP ID Seq: All zeros
+# Nmap done at Sun Sep 29 17:43:02 2024 -- 1 IP address (1 host up) scanned in 15.45 seconds

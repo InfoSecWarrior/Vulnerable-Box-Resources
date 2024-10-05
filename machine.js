@@ -126,7 +126,7 @@ async function fetchMachineData() {
         console.warn("Element with ID 'machine-title' not found in the document.");
     }
 
-    const githubBaseURL = `https://github.com/riteshs4hu/Vulnerable-Box-Resources/tree/main/${encodeURIComponent(platform)}/`;
+    const githubBaseURL = `https://github.com/InfoSecWarrior/Vulnerable-Box-Resources/tree/main/${encodeURIComponent(platform)}/`;
     const githubLink = document.getElementById('github-url');
     if (githubLink) {
         githubLink.href = `${githubBaseURL}${encodeURIComponent(dirName)}`; // Use original name for URL
@@ -135,7 +135,7 @@ async function fetchMachineData() {
         console.warn("Element with ID 'github-url' not found in the document.");
     }
 
-    const baseURL = `https://raw.githubusercontent.com/riteshs4hu/Vulnerable-Box-Resources/main/${encodeURIComponent(platform)}/`; // Use the platform tag in the base URL
+    const baseURL = `https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/main/${encodeURIComponent(platform)}/`; // Use the platform tag in the base URL
     
     // Fetch open ports
     const ports = await fetchOpenPorts(baseURL, dirName, baseFileName);
@@ -146,7 +146,7 @@ async function fetchMachineData() {
     const resourceContent = await fetchFileContent(resourceUrl, 'resource-url');
     if (resourceLinkElement && resourceContent) {
         resourceLinkElement.href = resourceContent.trim(); // Set original resource URL
-        resourceLinkElement.textContent = 'Resource';
+        resourceLinkElement.textContent = 'Platform';
     } else {
         console.warn("Element with ID 'resource-url' not found in the document or no resource content available.");
     }

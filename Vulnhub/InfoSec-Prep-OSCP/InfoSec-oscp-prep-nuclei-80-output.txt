@@ -1,0 +1,31 @@
+[missing-sri] [http] [info] http://192.168.1.56:80 ["http://192.168.1.56/wp-content/themes/twentytwenty/assets/js/index.js?ver=1.2","http://192.168.1.56/wp-includes/js/wp-embed.min.js?ver=5.4.2"]
+[wordpress-akismet:outdated_version] [http] [info] http://192.168.1.56:80/wp-content/plugins/akismet/readme.txt ["4.1.5"] [last_version="5.3.3"]
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.56:80
+[ssh-server-enumeration] [javascript] [info] 192.168.1.56:22 ["SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.1"]
+[ssh-auth-methods] [javascript] [info] 192.168.1.56:22 ["["publickey"]"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.56:22
+[CVE-2023-48795] [javascript] [medium] 192.168.1.56:22 ["Vulnerable to Terrapin"]
+[openssh-detect] [tcp] [info] 192.168.1.56:22 ["SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.1"]
+[wordpress-login] [http] [info] http://192.168.1.56:80/wp-login.php
+[wordpress-xmlrpc-file] [http] [info] http://192.168.1.56:80/xmlrpc.php
+[wp-user-enum:usernames] [http] [low] http://192.168.1.56:80/?rest_route=/wp/v2/users/ ["admin"]
+[addeventlistener-detect] [http] [info] http://192.168.1.56:80
+[apache-detect] [http] [info] http://192.168.1.56:80 ["Apache/2.4.41 (Ubuntu)"]
+[robots-txt-endpoint] [http] [info] http://192.168.1.56:80/robots.txt
+[wordpress-readme-file] [http] [info] http://192.168.1.56:80/readme.html
+[metatag-cms] [http] [info] http://192.168.1.56:80 ["WordPress 5.4.2"]
+[wp-license-file] [http] [info] http://192.168.1.56:80/license.txt
+[wordpress-directory-listing] [http] [info] http://192.168.1.56:80/wp-includes/
+[wordpress-detect:version_by_js] [http] [info] http://192.168.1.56:80 ["5.4.2"]
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.56:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.56:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.56:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.56:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.56:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.56:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.56:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.56:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.56:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.56:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.56:80
+[form-detection] [http] [info] http://192.168.1.56:80

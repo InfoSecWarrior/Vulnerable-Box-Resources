@@ -1,0 +1,40 @@
+# Dirsearch started Wed Oct  2 20:42:46 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.156.10:80 -o devguru-dirsearch-80-output.txt -q
+
+301   315B   http://192.168.156.10/.git    -> REDIRECTS TO: http://192.168.156.10/.git/
+200    13B   http://192.168.156.10/.git/COMMIT_EDITMSG
+200   276B   http://192.168.156.10/.git/config
+200    73B   http://192.168.156.10/.git/description
+200    23B   http://192.168.156.10/.git/HEAD
+200   308KB  http://192.168.156.10/.git/index
+200   158B   http://192.168.156.10/.git/logs/HEAD
+301   325B   http://192.168.156.10/.git/logs/refs    -> REDIRECTS TO: http://192.168.156.10/.git/logs/refs/
+301   331B   http://192.168.156.10/.git/logs/refs/heads    -> REDIRECTS TO: http://192.168.156.10/.git/logs/refs/heads/
+200   240B   http://192.168.156.10/.git/info/exclude
+200   158B   http://192.168.156.10/.git/logs/refs/heads/master
+301   340B   http://192.168.156.10/.git/logs/refs/remotes/origin    -> REDIRECTS TO: http://192.168.156.10/.git/logs/refs/remotes/origin/
+301   333B   http://192.168.156.10/.git/logs/refs/remotes    -> REDIRECTS TO: http://192.168.156.10/.git/logs/refs/remotes/
+200   142B   http://192.168.156.10/.git/logs/refs/remotes/origin/master
+301   326B   http://192.168.156.10/.git/refs/heads    -> REDIRECTS TO: http://192.168.156.10/.git/refs/heads/
+200    41B   http://192.168.156.10/.git/refs/heads/master
+301   328B   http://192.168.156.10/.git/refs/remotes    -> REDIRECTS TO: http://192.168.156.10/.git/refs/remotes/
+301   335B   http://192.168.156.10/.git/refs/remotes/origin    -> REDIRECTS TO: http://192.168.156.10/.git/refs/remotes/origin/
+301   325B   http://192.168.156.10/.git/refs/tags    -> REDIRECTS TO: http://192.168.156.10/.git/refs/tags/
+200    41B   http://192.168.156.10/.git/refs/remotes/origin/master
+200   413B   http://192.168.156.10/.gitignore
+404   276B   http://192.168.156.10/.gitignore/
+200     2KB  http://192.168.156.10/.htaccess
+404   276B   http://192.168.156.10/.htaccess/
+200     3KB  http://192.168.156.10/About
+200     3KB  http://192.168.156.10/about
+200     2KB  http://192.168.156.10/adminer.php
+302   414B   http://192.168.156.10/backend/    -> REDIRECTS TO: http://192.168.156.10/backend/backend/auth
+301   317B   http://192.168.156.10/config    -> REDIRECTS TO: http://192.168.156.10/config/
+200     3KB  http://192.168.156.10/index.php
+301   318B   http://192.168.156.10/modules    -> REDIRECTS TO: http://192.168.156.10/modules/
+301   318B   http://192.168.156.10/plugins    -> REDIRECTS TO: http://192.168.156.10/plugins/
+200     1KB  http://192.168.156.10/README.md
+200     0B   http://192.168.156.10/server.php
+200     2KB  http://192.168.156.10/services/
+200     2KB  http://192.168.156.10/services
+301   318B   http://192.168.156.10/storage    -> REDIRECTS TO: http://192.168.156.10/storage/
+301   317B   http://192.168.156.10/themes    -> REDIRECTS TO: http://192.168.156.10/themes/
