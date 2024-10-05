@@ -1,1 +1,0 @@
-https://192.168.29.30:8089 [404 Not Found] Asterisk[13.17.0], Country[RESERVED][ZZ], HTTPServer[Asterisk/13.17.0], IP[192.168.29.30], Title[404 Not Found]
