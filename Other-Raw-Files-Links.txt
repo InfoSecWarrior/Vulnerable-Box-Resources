@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Other/Insanity-1/Insanity-1-nmap-version-scan-output.xml
