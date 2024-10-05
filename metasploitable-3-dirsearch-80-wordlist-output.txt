@@ -1,7 +1,0 @@
-# Dirsearch started Sat Oct  5 10:47:58 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.6:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o metasploitable-3-dirsearch-80-wordlist-output.txt -q
-
-301   311B   http://192.168.1.6/uploads    -> REDIRECTS TO: http://192.168.1.6/uploads/
-301   308B   http://192.168.1.6/chat    -> REDIRECTS TO: http://192.168.1.6/chat/
-301   310B   http://192.168.1.6/drupal    -> REDIRECTS TO: http://192.168.1.6/drupal/
-301   314B   http://192.168.1.6/phpmyadmin    -> REDIRECTS TO: http://192.168.1.6/phpmyadmin/
-403   291B   http://192.168.1.6/server-status
