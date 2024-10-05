@@ -1,0 +1,33 @@
+[CVE-2023-48795] [javascript] [medium] 192.168.1.6:22 ["Vulnerable to Terrapin"]
+[ssh-auth-methods] [javascript] [info] 192.168.1.6:22 ["["publickey","password"]"]
+[mysql-info] [javascript] [info] 192.168.1.6:3306 ["Version:","Transport: tcp"]
+[smb2-capabilities] [javascript] [info] 192.168.1.6:445 ["["DFSSupport","LargeMTU"]"]
+[smb2-server-time] [javascript] [info] 192.168.1.6:445 ["SystemTime: 2024-10-05T06:03:36.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[ssh-diffie-hellman-logjam] [javascript] [low] 192.168.1.6:22
+[ssh-password-auth] [javascript] [info] 192.168.1.6:22
+[ssh-server-enumeration] [javascript] [info] 192.168.1.6:22 ["SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.6:22
+[ssh-cbc-mode-ciphers] [javascript] [low] 192.168.1.6:22
+[ssh-weak-algo-supported] [javascript] [medium] 192.168.1.6:22
+[ssh-weak-mac-algo] [javascript] [low] 192.168.1.6:22
+[ssh-weakkey-exchange-algo] [javascript] [low] 192.168.1.6:22
+[smb-signing-not-required] [javascript] [medium] 192.168.1.6:445
+[smb-enum] [javascript] [info] 192.168.1.6:445 ["ForestName:","OSVersion: 6.1.0","NetBIOSComputerName: METASPLOITABLE3-UB1404","NetBIOSDomainName: METASPLOITABLE3-UB1404","DNSComputerNamen: metasploitable3-ub1404","DNSComputerName: metasploitable3-ub1404"]
+[smb-os-detect] [javascript] [info] 192.168.1.6:445 ["6.1.0"]
+[smb-anonymous-access] [javascript] [high] 192.168.1.6:445
+[mysql-detect] [tcp] [info] 192.168.1.6:3306
+[openssh-detect] [tcp] [info] 192.168.1.6:22 ["SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13"]
+[jetty-showcontexts-enable] [http] [low] http://192.168.1.6:8080
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.6:8080
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.6:8080
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.6:8080
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.6:8080
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.6:8080
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.6:8080
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.6:8080
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.6:8080
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.6:8080
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.6:8080
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.6:8080
+[favicon-detect:jetty-] [http] [info] http://192.168.1.6:8080/favicon.ico ["-629047854"]
+[tech-detect:jetty] [http] [info] http://192.168.1.6:8080
