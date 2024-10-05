@@ -1,2 +1,0 @@
-[http-trace:trace-request] [http] [info] http://192.168.1.7:80
-[waf-detect:apachegeneric] [http] [info] http://192.168.1.7:80
