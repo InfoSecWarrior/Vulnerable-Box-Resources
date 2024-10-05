@@ -1,3 +1,0 @@
-# Dirsearch started Sat Oct  5 10:46:07 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.6:8080 -o metasploitable-3-dirsearch-8080-output.txt -q
-
-200     1KB  http://192.168.1.6:8080/favicon.ico
