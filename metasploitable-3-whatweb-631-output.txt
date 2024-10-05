@@ -1,1 +1,0 @@
-https://192.168.1.6:631 [200 OK] Content-Language[en_US], Country[RESERVED][ZZ], HTTPServer[CUPS/1.7 IPP/2.1], IP[192.168.1.6], Title[Home - CUPS 1.7.2]
