@@ -1,0 +1,35 @@
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.139:80
+[wordpress-akismet:outdated_version] [http] [info] http://192.168.1.139:80/wp-content/plugins/akismet/readme.txt ["4.0.8"] [last_version="5.3.3"]
+[wordpress-xmlrpc-listmethods] [http] [info] http://192.168.1.139:80/xmlrpc.php
+[openssh-detect] [tcp] [info] 192.168.1.139:22 ["SSH-2.0-OpenSSH_7.6p1 Ubuntu-4"]
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.139:22
+[ssh-auth-methods] [javascript] [info] 192.168.1.139:22 ["["publickey","password"]"]
+[ssh-password-auth] [javascript] [info] 192.168.1.139:22
+[ssh-server-enumeration] [javascript] [info] 192.168.1.139:22 ["SSH-2.0-OpenSSH_7.6p1 Ubuntu-4"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.139:22 ["Vulnerable to Terrapin"]
+[wp-xmlrpc-pingback-detection] [http] [info] http://192.168.1.139:80/xmlrpc.php
+[wp-xmlrpc-pingback-detection] [http] [info] http://192.168.1.139:80/xmlrpc.php
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.139:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.139:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.139:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.139:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.139:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.139:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.139:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.139:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.139:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.139:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.139:80
+[wp-license-file] [http] [info] http://192.168.1.139:80/license.txt
+[metatag-cms] [http] [info] http://192.168.1.139:80 ["WordPress 4.9.8"]
+[tech-detect:google-font-api] [http] [info] http://192.168.1.139:80
+[wordpress-login] [http] [info] http://192.168.1.139:80/wp-login.php
+[wordpress-readme-file] [http] [info] http://192.168.1.139:80/readme.html
+[wp-user-enum:usernames] [http] [low] http://192.168.1.139:80/?rest_route=/wp/v2/users/ ["webdeveloper"]
+[addeventlistener-detect] [http] [info] http://192.168.1.139:80
+[apache-detect] [http] [info] http://192.168.1.139:80 ["Apache/2.4.29 (Ubuntu)"]
+[wordpress-xmlrpc-file] [http] [info] http://192.168.1.139:80/xmlrpc.php
+[wordpress-detect:version_by_js] [http] [info] http://192.168.1.139:80 ["4.9.8"]
+[wordpress-directory-listing] [http] [info] http://192.168.1.139:80/wp-content/uploads/
+[wordpress-directory-listing] [http] [info] http://192.168.1.139:80/wp-includes/
+[form-detection] [http] [info] http://192.168.1.139:80

@@ -1,0 +1,30 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.56.101
++ Target Port: 8180
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /favicon.ico: identifies this app/server as: Apache Tomcat (possibly 5.5.26 through 8.0.15), Alfresco Community. See: https://en.wikipedia.org/wiki/Favicon: 
++ OPTIONS OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS .
++ GET HTTP method ('Allow' Header): 'PUT' method could allow clients to save files on the web server.
++ GET HTTP method ('Allow' Header): 'DELETE' may allow clients to remove files on the web server.
++ ZCJCORLF /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ GET /: Appears to be a default Apache Tomcat install.
++ GET /admin/: Cookie JSESSIONID created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /admin/contextAdmin/contextAdmin.html: Tomcat may be configured to let attackers read arbitrary files. Restrict access to /admin. See: CVE-2000-0672: 
++ GET /admin/: This might be interesting.
++ GET /tomcat-docs/index.html: Default Apache Tomcat documentation found. See: CWE-552: 
++ GET /manager/html-manager-howto.html: Tomcat documentation found. See: CWE-552: 
++ GET /manager/manager-howto.html: Tomcat documentation found. See: CWE-552: 
++ GET /webdav/index.html: WebDAV support is enabled.
++ GET /jsp-examples/: Apache Java Server Pages documentation. See: CWE-552: 
++ GET /admin/account.html: Admin login page/section found.
++ GET /admin/controlpanel.html: Admin login page/section found.
++ GET /admin/cp.html: Admin login page/section found.
++ GET /admin/index.html: Admin login page/section found.
++ GET /admin/login.html: Admin login page/section found.
++ GET /servlets-examples/: Tomcat servlets examples are visible.
++ GET /manager/html: Default account found for 'Tomcat Manager Application' at (ID 'tomcat', PW 'tomcat'). Apache Tomcat. See: CWE-16: 
++ GET /manager/html: Tomcat Manager / Host Manager interface found (pass protected).
++ GET /host-manager/html: Tomcat Manager / Host Manager interface found (pass protected).
++ GET /manager/status: Tomcat Server Status interface found (pass protected).
++ GET /admin/login.jsp: Tomcat Server Administration interface found.

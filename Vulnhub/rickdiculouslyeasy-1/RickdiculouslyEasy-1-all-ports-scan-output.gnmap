@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Tue Oct  1 06:43:19 2024 as: nmap -v -Pn -p- -oA RickdiculouslyEasy-1-all-ports-scan-output 192.168.1.14
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.14 ()	Status: Up
+Host: 192.168.1.14 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 9090/open/tcp//zeus-admin///, 13337/open/tcp/////, 22222/open/tcp//easyengine///, 60000/open/tcp/////	Ignored State: closed (65528)
+# Nmap done at Tue Oct  1 06:43:20 2024 -- 1 IP address (1 host up) scanned in 0.60 seconds

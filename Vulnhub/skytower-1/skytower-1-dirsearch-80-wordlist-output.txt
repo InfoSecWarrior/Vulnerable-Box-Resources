@@ -1,0 +1,5 @@
+# Dirsearch started Tue Oct  1 06:01:29 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.13:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o skytower-1-dirsearch-80-wordlist-output.txt -q
+
+200     2MB  http://192.168.1.13/background
+200     3MB  http://192.168.1.13/background2
+403   239B   http://192.168.1.13/server-status

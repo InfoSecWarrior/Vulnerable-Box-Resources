@@ -1,0 +1,24 @@
+# Dirsearch started Mon Sep 30 17:55:43 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.0.186:8080 -o Kioptrix-2014-#5-dirsearch-8080-output.txt -q
+
+404   216B   http://192.168.0.186:8080/cgi-bin/awstats.pl
+404   214B   http://192.168.0.186:8080/cgi-bin/awstats/
+404   217B   http://192.168.0.186:8080/cgi-bin/htimage.exe?2,2
+404   216B   http://192.168.0.186:8080/cgi-bin/htmlscript
+404   218B   http://192.168.0.186:8080/cgi-bin/imagemap.exe?2,2
+404   216B   http://192.168.0.186:8080/cgi-bin/index.html
+404   211B   http://192.168.0.186:8080/cgi-bin/login
+404   215B   http://192.168.0.186:8080/cgi-bin/login.cgi
+404   215B   http://192.168.0.186:8080/cgi-bin/login.php
+404   219B   http://192.168.0.186:8080/cgi-bin/mt-xmlrpc.cgi
+404   212B   http://192.168.0.186:8080/cgi-bin/mt.cgi
+404   222B   http://192.168.0.186:8080/cgi-bin/mt/mt-xmlrpc.cgi
+404   215B   http://192.168.0.186:8080/cgi-bin/mt/mt.cgi
+404   223B   http://192.168.0.186:8080/cgi-bin/mt7/mt-xmlrpc.cgi
+404   216B   http://192.168.0.186:8080/cgi-bin/mt7/mt.cgi
+404   213B   http://192.168.0.186:8080/cgi-bin/php.ini
+500   535B   http://192.168.0.186:8080/cgi-bin/printenv
+404   217B   http://192.168.0.186:8080/cgi-bin/printenv.pl
+404   214B   http://192.168.0.186:8080/cgi-bin/test.cgi
+404   217B   http://192.168.0.186:8080/cgi-bin/ViewLog.asp
+500   535B   http://192.168.0.186:8080/cgi-bin/test-cgi
+404   224B   http://192.168.0.186:8080/cgi-bin/a1stats/a1disp.cgi

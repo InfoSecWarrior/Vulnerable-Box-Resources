@@ -1,0 +1,148 @@
+# Dirsearch started Thu Oct  3 13:10:56 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.61:80 -o My-Web-Server-dirsearch-80-output.txt -q
+
+301     0B   http://192.168.29.61/%2e%2e//google.com    -> REDIRECTS TO: http://192.168.29.61/%2E%2E/google.com
+403   278B   http://192.168.29.61/.ht_wsr.txt
+403   278B   http://192.168.29.61/.htaccess.bak1
+403   278B   http://192.168.29.61/.htaccess.sample
+403   278B   http://192.168.29.61/.htaccess.orig
+403   278B   http://192.168.29.61/.htaccess_orig
+403   278B   http://192.168.29.61/.htaccess_sc
+403   278B   http://192.168.29.61/.htaccessOLD
+403   278B   http://192.168.29.61/.htaccessOLD2
+403   278B   http://192.168.29.61/.htm
+403   278B   http://192.168.29.61/.html
+403   278B   http://192.168.29.61/.htaccess.save
+403   278B   http://192.168.29.61/.htpasswds
+403   278B   http://192.168.29.61/.htpasswd_test
+403   278B   http://192.168.29.61/.httr-oauth
+403   278B   http://192.168.29.61/.htaccessBAK
+403   278B   http://192.168.29.61/.htaccess_extra
+403   278B   http://192.168.29.61/.php
+301     0B   http://192.168.29.61/0    -> REDIRECTS TO: http://192.168.29.61/0/
+301     0B   http://192.168.29.61/2020    -> REDIRECTS TO: http://192.168.29.61/2020/
+301     0B   http://192.168.29.61/adm/index.php    -> REDIRECTS TO: http://192.168.29.61/adm/
+302     0B   http://192.168.29.61/admin    -> REDIRECTS TO: http://www.armour.local/wp-admin/
+301     0B   http://192.168.29.61/admin.    -> REDIRECTS TO: http://192.168.29.61/admin
+302     0B   http://192.168.29.61/admin/    -> REDIRECTS TO: http://www.armour.local/wp-admin/
+301     0B   http://192.168.29.61/admin/index.php    -> REDIRECTS TO: http://192.168.29.61/admin/
+301     0B   http://192.168.29.61/admin/mysql/index.php    -> REDIRECTS TO: http://192.168.29.61/admin/mysql/
+301     0B   http://192.168.29.61/admin/mysql2/index.php    -> REDIRECTS TO: http://192.168.29.61/admin/mysql2/
+301     0B   http://192.168.29.61/admin/phpmyadmin/index.php    -> REDIRECTS TO: http://192.168.29.61/admin/phpmyadmin/
+301     0B   http://192.168.29.61/admin/phpMyAdmin/index.php    -> REDIRECTS TO: http://192.168.29.61/admin/phpMyAdmin/
+301     0B   http://192.168.29.61/admin/phpmyadmin2/index.php    -> REDIRECTS TO: http://192.168.29.61/admin/phpmyadmin2/
+301     0B   http://192.168.29.61/admin/pma/index.php    -> REDIRECTS TO: http://192.168.29.61/admin/pma/
+301     0B   http://192.168.29.61/admin/PMA/index.php    -> REDIRECTS TO: http://192.168.29.61/admin/PMA/
+301     0B   http://192.168.29.61/admin2/index.php    -> REDIRECTS TO: http://192.168.29.61/admin2/
+301     0B   http://192.168.29.61/admin_area/index.php    -> REDIRECTS TO: http://192.168.29.61/admin_area/
+301     0B   http://192.168.29.61/adminarea/index.php    -> REDIRECTS TO: http://192.168.29.61/adminarea/
+301     0B   http://192.168.29.61/admincp/index.php    -> REDIRECTS TO: http://192.168.29.61/admincp/
+301     0B   http://192.168.29.61/adminer/index.php    -> REDIRECTS TO: http://192.168.29.61/adminer/
+301     0B   http://192.168.29.61/administrator/index.php    -> REDIRECTS TO: http://192.168.29.61/administrator/
+301     0B   http://192.168.29.61/apc/index.php    -> REDIRECTS TO: http://192.168.29.61/apc/
+301     0B   http://192.168.29.61/asset..    -> REDIRECTS TO: http://192.168.29.61/asset
+301     0B   http://192.168.29.61/atom    -> REDIRECTS TO: http://192.168.29.61/feed/atom/
+301     0B   http://192.168.29.61/axis//happyaxis.jsp    -> REDIRECTS TO: http://192.168.29.61/axis/happyaxis.jsp
+301     0B   http://192.168.29.61/axis2//axis2-web/HappyAxis.jsp    -> REDIRECTS TO: http://192.168.29.61/axis2/axis2-web/HappyAxis.jsp
+301     0B   http://192.168.29.61/axis2-web//HappyAxis.jsp    -> REDIRECTS TO: http://192.168.29.61/axis2-web/HappyAxis.jsp
+301     0B   http://192.168.29.61/bb-admin/index.php    -> REDIRECTS TO: http://192.168.29.61/bb-admin/
+301     0B   http://192.168.29.61/bitrix/admin/index.php    -> REDIRECTS TO: http://192.168.29.61/bitrix/admin/
+301     0B   http://192.168.29.61/Citrix//AccessPlatform/auth/clientscripts/cookies.js    -> REDIRECTS TO: http://192.168.29.61/Citrix/AccessPlatform/auth/clientscripts/cookies.js
+301     0B   http://192.168.29.61/claroline/phpMyAdmin/index.php    -> REDIRECTS TO: http://192.168.29.61/claroline/phpMyAdmin/
+302     0B   http://192.168.29.61/dashboard    -> REDIRECTS TO: http://www.armour.local/wp-admin/
+302     0B   http://192.168.29.61/dashboard/    -> REDIRECTS TO: http://www.armour.local/wp-admin/
+301     0B   http://192.168.29.61/db/index.php    -> REDIRECTS TO: http://192.168.29.61/db/
+301     0B   http://192.168.29.61/dbadmin/index.php    -> REDIRECTS TO: http://192.168.29.61/dbadmin/
+301     0B   http://192.168.29.61/engine/classes/swfupload//swfupload.swf    -> REDIRECTS TO: http://192.168.29.61/engine/classes/swfupload/swfupload.swf
+301     0B   http://192.168.29.61/engine/classes/swfupload//swfupload_f9.swf    -> REDIRECTS TO: http://192.168.29.61/engine/classes/swfupload/swfupload_f9.swf
+301     0B   http://192.168.29.61/etc/lib/pChart2/examples/imageMap/index.php    -> REDIRECTS TO: http://192.168.29.61/etc/lib/pChart2/examples/imageMap/
+301     0B   http://192.168.29.61/extjs/resources//charts.swf    -> REDIRECTS TO: http://192.168.29.61/extjs/resources/charts.swf
+200     0B   http://192.168.29.61/favicon.ico
+301     0B   http://192.168.29.61/feed    -> REDIRECTS TO: http://192.168.29.61/feed/
+301     0B   http://192.168.29.61/html/js/misc/swfupload//swfupload.swf    -> REDIRECTS TO: http://192.168.29.61/html/js/misc/swfupload/swfupload.swf
+301     0B   http://192.168.29.61/index.php    -> REDIRECTS TO: http://192.168.29.61/
+301     0B   http://192.168.29.61/index.php/login/    -> REDIRECTS TO: http://192.168.29.61/login/
+301     0B   http://192.168.29.61/install/index.php?upgrade/    -> REDIRECTS TO: http://192.168.29.61/install/?upgrade/
+301   319B   http://192.168.29.61/javascript    -> REDIRECTS TO: http://192.168.29.61/javascript/
+404   275B   http://192.168.29.61/javascript/tiny_mce
+404   275B   http://192.168.29.61/javascript/editors/fckeditor
+301     0B   http://192.168.29.61/jkstatus;    -> REDIRECTS TO: http://192.168.29.61/jkstatus
+200     7KB  http://192.168.29.61/license.txt
+302     0B   http://192.168.29.61/login    -> REDIRECTS TO: http://www.armour.local/wp-login.php
+301     0B   http://192.168.29.61/login.wdm%20    -> REDIRECTS TO: http://192.168.29.61/login.wdm
+301     0B   http://192.168.29.61/login.wdm%2e    -> REDIRECTS TO: http://192.168.29.61/login.wdm
+302     0B   http://192.168.29.61/login/    -> REDIRECTS TO: http://www.armour.local/wp-login.php
+301     0B   http://192.168.29.61/modelsearch/index.php    -> REDIRECTS TO: http://192.168.29.61/modelsearch/
+301     0B   http://192.168.29.61/myadmin/index.php    -> REDIRECTS TO: http://192.168.29.61/myadmin/
+301     0B   http://192.168.29.61/myadmin2/index.php    -> REDIRECTS TO: http://192.168.29.61/myadmin2/
+301     0B   http://192.168.29.61/mysql-admin/index.php    -> REDIRECTS TO: http://192.168.29.61/mysql-admin/
+301     0B   http://192.168.29.61/mysql/index.php    -> REDIRECTS TO: http://192.168.29.61/mysql/
+301     0B   http://192.168.29.61/mysqladmin/index.php    -> REDIRECTS TO: http://192.168.29.61/mysqladmin/
+301     0B   http://192.168.29.61/New%20folder%20(2)    -> REDIRECTS TO: http://192.168.29.61/New%20folder%20(2
+301     0B   http://192.168.29.61/panel-administracion/index.php    -> REDIRECTS TO: http://192.168.29.61/panel-administracion/
+301     0B   http://192.168.29.61/phpadmin/index.php    -> REDIRECTS TO: http://192.168.29.61/phpadmin/
+301     0B   http://192.168.29.61/phpma/index.php    -> REDIRECTS TO: http://192.168.29.61/phpma/
+301     0B   http://192.168.29.61/phpmyadmin!!    -> REDIRECTS TO: http://192.168.29.61/phpmyadmin
+301     0B   http://192.168.29.61/phpmyadmin-old/index.php    -> REDIRECTS TO: http://192.168.29.61/phpmyadmin-old/
+301     0B   http://192.168.29.61/phpMyAdmin.old/index.php    -> REDIRECTS TO: http://192.168.29.61/phpMyAdmin.old/
+301     0B   http://192.168.29.61/phpmyadmin/index.php    -> REDIRECTS TO: http://192.168.29.61/phpmyadmin/
+301     0B   http://192.168.29.61/phpMyAdmin/phpMyAdmin/index.php    -> REDIRECTS TO: http://192.168.29.61/phpMyAdmin/phpMyAdmin/
+301     0B   http://192.168.29.61/phpMyAdmin/index.php    -> REDIRECTS TO: http://192.168.29.61/phpMyAdmin/
+301     0B   http://192.168.29.61/phpmyadmin/phpmyadmin/index.php    -> REDIRECTS TO: http://192.168.29.61/phpmyadmin/phpmyadmin/
+301     0B   http://192.168.29.61/phpmyadmin0/index.php    -> REDIRECTS TO: http://192.168.29.61/phpmyadmin0/
+301     0B   http://192.168.29.61/phpmyadmin1/index.php    -> REDIRECTS TO: http://192.168.29.61/phpmyadmin1/
+301     0B   http://192.168.29.61/phpmyadmin2/index.php    -> REDIRECTS TO: http://192.168.29.61/phpmyadmin2/
+301     0B   http://192.168.29.61/phpMyadmin_bak/index.php    -> REDIRECTS TO: http://192.168.29.61/phpMyadmin_bak/
+301     0B   http://192.168.29.61/phpMyAdminold/index.php    -> REDIRECTS TO: http://192.168.29.61/phpMyAdminold/
+301     0B   http://192.168.29.61/pma-old/index.php    -> REDIRECTS TO: http://192.168.29.61/pma-old/
+301     0B   http://192.168.29.61/PMA/index.php    -> REDIRECTS TO: http://192.168.29.61/PMA/
+301     0B   http://192.168.29.61/pma/index.php    -> REDIRECTS TO: http://192.168.29.61/pma/
+301     0B   http://192.168.29.61/PMA2/index.php    -> REDIRECTS TO: http://192.168.29.61/PMA2/
+301     0B   http://192.168.29.61/pmamy2/index.php    -> REDIRECTS TO: http://192.168.29.61/pmamy2/
+301     0B   http://192.168.29.61/pmamy/index.php    -> REDIRECTS TO: http://192.168.29.61/pmamy/
+301     0B   http://192.168.29.61/pmd/index.php    -> REDIRECTS TO: http://192.168.29.61/pmd/
+301     0B   http://192.168.29.61/rating_over.    -> REDIRECTS TO: http://192.168.29.61/rating_over
+200     3KB  http://192.168.29.61/readme.html
+200    67B   http://192.168.29.61/robots.txt
+301     0B   http://192.168.29.61/roundcube/index.php    -> REDIRECTS TO: http://192.168.29.61/roundcube/
+301     0B   http://192.168.29.61/rss    -> REDIRECTS TO: http://192.168.29.61/feed/
+403   278B   http://192.168.29.61/server-status
+403   278B   http://192.168.29.61/server-status/
+301     0B   http://192.168.29.61/siteadmin/index.php    -> REDIRECTS TO: http://192.168.29.61/siteadmin/
+301     0B   http://192.168.29.61/sql/index.php    -> REDIRECTS TO: http://192.168.29.61/sql/
+301     0B   http://192.168.29.61/static..    -> REDIRECTS TO: http://192.168.29.61/static
+301     0B   http://192.168.29.61/sugarcrm/index.php?module=Contacts&action=ShowDuplicates    -> REDIRECTS TO: http://192.168.29.61/sugarcrm/?module=Contacts&action=ShowDuplicates
+301     0B   http://192.168.29.61/sugarcrm/index.php?module=Accounts&action=ShowDuplicates    -> REDIRECTS TO: http://192.168.29.61/sugarcrm/?module=Accounts&action=ShowDuplicates
+301     0B   http://192.168.29.61/templates/beez/index.php    -> REDIRECTS TO: http://192.168.29.61/templates/beez/
+301     0B   http://192.168.29.61/templates/rhuk_milkyway/index.php    -> REDIRECTS TO: http://192.168.29.61/templates/rhuk_milkyway/
+301     0B   http://192.168.29.61/templates/ja-helio-farsi/index.php    -> REDIRECTS TO: http://192.168.29.61/templates/ja-helio-farsi/
+301     0B   http://192.168.29.61/tmp/index.php    -> REDIRECTS TO: http://192.168.29.61/tmp/
+301     0B   http://192.168.29.61/tools/phpMyAdmin/index.php    -> REDIRECTS TO: http://192.168.29.61/tools/phpMyAdmin/
+301     0B   http://192.168.29.61/typo3/phpmyadmin/index.php    -> REDIRECTS TO: http://192.168.29.61/typo3/phpmyadmin/
+301     0B   http://192.168.29.61/web/phpMyAdmin/index.php    -> REDIRECTS TO: http://192.168.29.61/web/phpMyAdmin/
+301     0B   http://192.168.29.61/webadmin/index.php    -> REDIRECTS TO: http://192.168.29.61/webadmin/
+301   317B   http://192.168.29.61/wp-admin    -> REDIRECTS TO: http://192.168.29.61/wp-admin/
+200     0B   http://192.168.29.61/wp-config.php
+400     1B   http://192.168.29.61/wp-admin/admin-ajax.php
+302     0B   http://192.168.29.61/wp-admin/    -> REDIRECTS TO: http://www.armour.local/wp-login.php?redirect_to=http%3A%2F%2F192.168.29.61%2Fwp-admin%2F&reauth=1
+301   319B   http://192.168.29.61/wp-content    -> REDIRECTS TO: http://192.168.29.61/wp-content/
+200     0B   http://192.168.29.61/wp-content/
+500     3KB  http://192.168.29.61/wp-admin/setup-config.php
+200   549B   http://192.168.29.61/wp-admin/install.php
+403   278B   http://192.168.29.61/wp-content/plugins/akismet/admin.php
+403   278B   http://192.168.29.61/wp-content/plugins/akismet/akismet.php
+500     0B   http://192.168.29.61/wp-content/plugins/hello.php
+200   415B   http://192.168.29.61/wp-content/upgrade/
+200   475B   http://192.168.29.61/wp-content/uploads/
+301     0B   http://192.168.29.61/wp-content/plugins/adminer/inc/editor/index.php    -> REDIRECTS TO: http://192.168.29.61/wp-content/plugins/adminer/inc/editor/
+301   320B   http://192.168.29.61/wp-includes    -> REDIRECTS TO: http://192.168.29.61/wp-includes/
+500     0B   http://192.168.29.61/wp-includes/rss-functions.php
+200     4KB  http://192.168.29.61/wp-includes/
+200     0B   http://192.168.29.61/wp-cron.php
+200    74KB  http://192.168.29.61/wp-json/
+301     0B   http://192.168.29.61/wp-register.php    -> REDIRECTS TO: http://www.armour.local/wp-login.php?action=register
+200   586B   http://192.168.29.61/wp-json/wp/v2/users/
+302     0B   http://192.168.29.61/wp-signup.php    -> REDIRECTS TO: http://www.armour.local/wp-login.php?action=register
+200     2KB  http://192.168.29.61/wp-login.php
+301     0B   http://192.168.29.61/www/phpMyAdmin/index.php    -> REDIRECTS TO: http://192.168.29.61/www/phpMyAdmin/
+301     0B   http://192.168.29.61/xampp/phpmyadmin/index.php    -> REDIRECTS TO: http://192.168.29.61/xampp/phpmyadmin/
+403   278B   http://192.168.29.61/xmlrpc.php

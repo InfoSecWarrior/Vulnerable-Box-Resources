@@ -1,0 +1,1 @@
+http://192.168.0.186:8080 [403 Forbidden] Apache[2.2.21][mod_ssl/2.2.21], Country[RESERVED][ZZ], HTTPServer[FreeBSD][Apache/2.2.21 (FreeBSD) mod_ssl/2.2.21 OpenSSL/0.9.8q DAV/2 PHP/5.3.8], IP[192.168.0.186], OpenSSL[0.9.8q], PHP[5.3.8], Title[403 Forbidden], WebDAV[2]

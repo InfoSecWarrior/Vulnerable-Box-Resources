@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Oct  4 20:59:08 2024 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA spydersec-nmap-version-scan-output 192.168.1.7
+# Ports scanned: TCP(1;80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.7 ()	Status: Up
+Host: 192.168.1.7 ()	Ports: 80/open/tcp//http//Apache httpd/	Seq Index: 263	IP ID Seq: All zeros
+# Nmap done at Fri Oct  4 20:59:31 2024 -- 1 IP address (1 host up) scanned in 23.29 seconds

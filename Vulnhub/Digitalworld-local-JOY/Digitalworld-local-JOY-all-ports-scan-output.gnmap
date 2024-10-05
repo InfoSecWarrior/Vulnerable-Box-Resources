@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 16:38:34 2024 as: nmap -v -Pn -p- -oA Digitalworld-local-JOY-all-ports-scan-output 192.168.0.243
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.0.243 (192.168.0.243)	Status: Up
+Host: 192.168.0.243 (192.168.0.243)	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 25/open/tcp//smtp///, 80/open/tcp//http///, 110/open/tcp//pop3///, 139/open/tcp//netbios-ssn///, 143/open/tcp//imap///, 445/open/tcp//microsoft-ds///, 465/open/tcp//smtps///, 587/open/tcp//submission///, 993/open/tcp//imaps///, 995/open/tcp//pop3s///	Ignored State: closed (65523)
+# Nmap done at Sun Sep 29 16:38:35 2024 -- 1 IP address (1 host up) scanned in 1.23 seconds

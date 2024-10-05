@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sun Sep 29 09:28:18 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,1337,7331 -oA Djinn-1-nmap-version-scan-output 192.168.1.105 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 21,1337,7331 -oA Djinn-1-nmap-version-scan-output 192.168.1.105" start="1727582298" startstr="Sun Sep 29 09:28:18 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="21,1337,7331"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1727582299"/>
+<taskend task="NSE" time="1727582299"/>
+<taskbegin task="NSE" time="1727582299"/>
+<taskend task="NSE" time="1727582299"/>
+<taskbegin task="NSE" time="1727582299"/>
+<taskend task="NSE" time="1727582299"/>
+<taskbegin task="ARP Ping Scan" time="1727582299"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.105" addrtype="ipv4"/>
+<address addr="08:00:27:87:B7:7B" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727582299" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727582299"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727582299"/>
+<taskbegin task="Connect Scan" time="1727582299"/>
+<taskend task="Connect Scan" time="1727582299" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1727582299"/>
+<taskend task="Service scan" time="1727582388" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1727582390"/>
+<taskend task="NSE" time="1727582391"/>
+<taskbegin task="NSE" time="1727582391"/>
+<taskend task="NSE" time="1727582392"/>
+<taskbegin task="NSE" time="1727582392"/>
+<taskend task="NSE" time="1727582392"/>
+<host starttime="1727582299" endtime="1727582392"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.105" addrtype="ipv4"/>
+<address addr="08:00:27:87:B7:7B" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to ::ffff:192.168.1.8&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 3&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to ::ffff:192.168.1.8&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 3&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status</elem>
+</script><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;-rw-r-&#45;r-&#45;    1 0        0              11 Oct 20  2019 creds.txt&#xa;-rw-r-&#45;r-&#45;    1 0        0             128 Oct 21  2019 game.txt&#xa;-rw-r-&#45;r-&#45;    1 0        0             113 Oct 21  2019 message.txt"/></port>
+<port protocol="tcp" portid="1337"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="waste" servicefp="SF-Port1337-TCP:V=7.94SVN%I=7%D=9/29%Time=66F8D061%P=x86_64-pc-linux-gnu%r(NULL,1BC,&quot;\x20\x20____\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20_____\x20_\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\n\x20/\x20___\|\x20__\x20_\x20_\x20__\x20___\x20\x20\x20___\x20\x20\|_\x20\x20\x20_\(_\)_\x20__\x20___\x20\x20\x20___\x20\n\|\x20\|\x20\x20_\x20/\x20_`\x20\|\x20&apos;_\x20`\x20_\x20\\\x20/\x20_\x20\\\x20\x20\x20\|\x20\|\x20\|\x20\|\x20&apos;_\x20`\x20_\x20\\\x20/\x20_\x20\\\n\|\x20\|_\|\x20\|\x20\(_\|\x20\|\x20\|\x20\|\x20\|\x20\|\x20\|\x20\x20__/\x20\x20\x20\|\x20\|\x20\|\x20\|\x20\|\x20\|\x20\|\x20\|\x20\|\x20\x20__/\n\x20\\____\|\\__,_\|_\|\x20\|_\|\x20\|_\|\\___\|\x20\x20\x20\|_\|\x20\|_\|_\|\x20\|_\|\x20\|_\|\\___\|\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\n\nLet&apos;s\x20see\x20how\x20good\x20you\x20are\x20with\x20simple\x20maths\nAnswer\x20my\x20questions\x201000\x20times\x20and\x20I&apos;ll\x20give\x20you\x20your\x20gift\.\n\(8,\x20&apos;-&apos;,\x204\)\n&gt;\x20&quot;)%r(RPCCheck,1BC,&quot;\x20\x20____\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20_____\x20_\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\n\x20/\x20___\|\x20__\x20_\x20_\x20__\x20___\x20\x20\x20___\x20\x20\|_\x20\x20\x20_\(_\)_\x20__\x20___\x20\x20\x20___\x20\n\|\x20\|\x20\x20_\x20/\x20_`\x20\|\x20&apos;_\x20`\x20_\x20\\\x20/\x20_\x20\\\x20\x20\x20\|\x20\|\x20\|\x20\|\x20&apos;_\x20`\x20_\x20\\\x20/\x20_\x20\\\n\|\x20\|_\|\x20\|\x20\(_\|\x20\|\x20\|\x20\|\x20\|\x20\|\x20\|\x20\x20__/\x20\x20\x20\|\x20\|\x20\|\x20\|\x20\|\x20\|\x20\|\x20\|\x20\|\x20\x20__/\n\x20\\____\|\\__,_\|_\|\x20\|_\|\x20\|_\|\\___\|\x20\x20\x20\|_\|\x20\|_\|_\|\x20\|_\|\x20\|_\|\\___\|\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\n\nLet&apos;s\x20see\x20how\x20good\x20you\x20are\x20with\x20simple\x20maths\nAnswer\x20my\x20questions\x201000\x20times\x20and\x20I&apos;ll\x20give\x20you\x20your\x20gift\.\n\(8,\x20&apos;-&apos;,\x204\)\n&gt;\x20&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  NULL, RPCCheck: &#xa;    ____ _____ _ &#xa;    ___| __ _ _ __ ___ ___ |_ _(_)_ __ ___ ___ &#xa;    \x20/ _ \x20 | | | | &apos;_ ` _ \x20/ _ \n| |_| | (_| | | | | | | __/ | | | | | | | | | __/&#xa;    ____|__,_|_| |_| |_|___| |_| |_|_| |_| |_|___|&#xa;    Let&apos;s see how good you are with simple maths&#xa;    Answer my questions 1000 times and I&apos;ll give you your gift.&#xa;    &apos;-&apos;, 4)"><elem key="NULL, RPCCheck">&#xa;    ____ _____ _ &#xa;    ___| __ _ _ __ ___ ___ |_ _(_)_ __ ___ ___ &#xa;    \x20/ _ \x20 | | | | &apos;_ ` _ \x20/ _ \n| |_| | (_| | | | | | | __/ | | | | | | | | | __/&#xa;    ____|__,_|_| |_| |_|___| |_| |_|_| |_| |_|___|&#xa;    Let&apos;s see how good you are with simple maths&#xa;    Answer my questions 1000 times and I&apos;ll give you your gift.&#xa;    &apos;-&apos;, 4)</elem>
+</script></port>
+<port protocol="tcp" portid="7331"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Werkzeug httpd" version="0.16.0" extrainfo="Python 2.7.15+" method="probed" conf="10"><cpe>cpe:/a:python:python:2.7.15%2B</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: HEAD OPTIONS GET"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+</table>
+</script><script id="http-title" output="Lost in space"><elem key="title">Lost in space</elem>
+</script><script id="http-server-header" output="Werkzeug/0.16.0 Python/2.7.15+"><elem>Werkzeug/0.16.0 Python/2.7.15+</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="udp" portid="35804"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="1538265" lastboot="Wed Sep 11 14:12:07 2024"/>
+<distance value="1"/>
+<tcpsequence index="263" difficulty="Good luck!" values="183D8978,412D8068,BE151D29,757C4228,7EE4B065,A33B5E55"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="5BB004FB,5BB00564,5BB005C8,5BB00663,5BB006C7,5BB00870"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.105" rtt="0.54"/>
+</trace>
+<times srtt="540" rttvar="268" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1727582392"/>
+<taskend task="NSE" time="1727582392"/>
+<taskbegin task="NSE" time="1727582392"/>
+<taskend task="NSE" time="1727582392"/>
+<taskbegin task="NSE" time="1727582392"/>
+<taskend task="NSE" time="1727582392"/>
+<runstats><finished time="1727582392" timestr="Sun Sep 29 09:29:52 2024" summary="Nmap done at Sun Sep 29 09:29:52 2024; 1 IP address (1 host up) scanned in 94.64 seconds" elapsed="94.64" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,1 @@
+http://192.168.29.61:80 [200 OK] Apache[2.4.38], Country[RESERVED][ZZ], HTML5, HTTPServer[Debian Linux][Apache/2.4.38 (Debian)], IP[192.168.29.61], JQuery, MetaGenerator[WordPress 5.3.18], Script[text/javascript], Title[Armour &#8211; Just another WordPress site], UncommonHeaders[link], WordPress[5.3.18], X-UA-Compatible[IE=edge]

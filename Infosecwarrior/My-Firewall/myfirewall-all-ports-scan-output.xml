@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Oct  3 06:58:09 2024 as: nmap -v -Pn -p- -oA myfirewall-all-ports-scan-output 192.168.1.208 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA myfirewall-all-ports-scan-output 192.168.1.208" start="1727918889" startstr="Thu Oct  3 06:58:09 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1727918889"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.208" addrtype="ipv4"/>
+<address addr="08:00:27:BB:75:94" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1727918889" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1727918889"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1727918889"/>
+<taskbegin task="SYN Stealth Scan" time="1727918889"/>
+<taskprogress task="SYN Stealth Scan" time="1727918920" percent="20.07" remaining="124" etc="1727919043"/>
+<taskprogress task="SYN Stealth Scan" time="1727918950" percent="48.41" remaining="66" etc="1727919015"/>
+<taskend task="SYN Stealth Scan" time="1727918993" extrainfo="65535 total ports"/>
+<host starttime="1727918889" endtime="1727918993"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.208" addrtype="ipv4"/>
+<address addr="08:00:27:BB:75:94" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-response" count="65534" proto="tcp" ports="1-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="545" rttvar="202" to="100000"/>
+</host>
+<runstats><finished time="1727918993" timestr="Thu Oct  3 06:59:53 2024" summary="Nmap done at Thu Oct  3 06:59:53 2024; 1 IP address (1 host up) scanned in 104.30 seconds" elapsed="104.30" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

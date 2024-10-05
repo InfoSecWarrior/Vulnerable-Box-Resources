@@ -1,0 +1,53 @@
+# Nmap 7.94SVN scan initiated Mon Sep 30 13:37:52 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80 -oA Troll-nmap-version-scan-output 192.168.1.126
+Nmap scan report for 192.168.1.126
+Host is up (0.00033s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.2
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.1.217
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 600
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.2 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rwxrwxrwx    1 1000     0            8068 Aug 10  2014 lol.pcap [NSE: writeable]
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 d6:18:d9:ef:75:d3:1c:29:be:14:b5:2b:18:54:a9:c0 (DSA)
+|   2048 ee:8c:64:87:44:39:53:8c:24:fe:9d:39:a9:ad:ea:db (RSA)
+|   256 0e:66:e6:50:cf:56:3b:9c:67:8b:5f:56:ca:ae:6b:f4 (ECDSA)
+|_  256 b2:8b:e2:46:5c:ef:fd:dc:72:f7:10:7e:04:5f:25:85 (ED25519)
+80/tcp open  http    Apache httpd 2.4.7 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry 
+|_/secret
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+MAC Address: 08:00:27:67:47:22 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 0.015 days (since Mon Sep 30 13:16:21 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.33 ms 192.168.1.126
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 30 13:38:01 2024 -- 1 IP address (1 host up) scanned in 8.63 seconds

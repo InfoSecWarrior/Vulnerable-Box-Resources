@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 09:28:14 2024 as: nmap -v -Pn -p- -oA Djinn-1-all-ports-scan-output 192.168.1.105
+Nmap scan report for 192.168.1.105
+Host is up (0.00024s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT     STATE    SERVICE
+21/tcp   open     ftp
+22/tcp   filtered ssh
+1337/tcp open     waste
+7331/tcp open     swx
+MAC Address: 08:00:27:87:B7:7B (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Sep 29 09:28:18 2024 -- 1 IP address (1 host up) scanned in 3.66 seconds

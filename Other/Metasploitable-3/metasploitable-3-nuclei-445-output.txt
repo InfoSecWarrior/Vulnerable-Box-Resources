@@ -1,0 +1,6 @@
+[smb-enum] [javascript] [info] 192.168.1.6:445 ["NetBIOSDomainName: METASPLOITABLE3-UB1404","DNSComputerNamen: metasploitable3-ub1404","DNSComputerName: metasploitable3-ub1404","ForestName:","OSVersion: 6.1.0","NetBIOSComputerName: METASPLOITABLE3-UB1404"]
+[smb-os-detect] [javascript] [info] 192.168.1.6:445 ["6.1.0"]
+[smb2-capabilities] [javascript] [info] 192.168.1.6:445 ["["DFSSupport","LargeMTU"]"]
+[smb2-server-time] [javascript] [info] 192.168.1.6:445 ["SystemTime: 2024-10-05T06:35:36.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-signing-not-required] [javascript] [medium] 192.168.1.6:445
+[smb-anonymous-access] [javascript] [high] 192.168.1.6:445

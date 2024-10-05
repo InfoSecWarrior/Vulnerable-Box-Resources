@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Wed Oct  2 21:38:59 2024 as: nmap -v -Pn -p- -oA WebDeveloper-all-ports-scan-output 192.168.1.139
+Nmap scan report for 192.168.1.139
+Host is up (0.000088s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+MAC Address: 08:00:27:CC:54:C9 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Oct  2 21:39:00 2024 -- 1 IP address (1 host up) scanned in 0.82 seconds

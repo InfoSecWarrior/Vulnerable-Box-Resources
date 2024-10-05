@@ -1,0 +1,72 @@
+# Nmap 7.94 scan initiated Wed Oct  2 12:14:32 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,53,80,443,5038,8088,8089 -oA My-communication-server1-nmap-version-scan-output 192.168.29.30
+Nmap scan report for 192.168.29.30
+Host is up (0.00036s latency).
+
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 5.3 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 df:ba:c4:5c:5b:6a:ca:b9:f9:94:3a:99:30:5b:33:57 (DSA)
+|_  2048 b9:08:e5:32:8a:56:ca:0a:1a:1c:e7:d7:9f:07:92:31 (RSA)
+53/tcp   open  tcpwrapped
+80/tcp   open  http       Apache httpd 2.2.15 ((CentOS))
+| http-title: 404 Not Found
+|_Requested resource was config.php
+|_http-server-header: Apache/2.2.15 (CentOS)
+| http-robots.txt: 2 disallowed entries 
+|_/ /backup.7z
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+443/tcp  open  ssl/http   Apache httpd 2.2.15 ((CentOS))
+|_ssl-date: 2024-10-02T06:45:04+00:00; +1s from scanner time.
+|_http-server-header: Apache/2.2.15 (CentOS)
+| ssl-cert: Subject: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=--
+| Issuer: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=--
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2020-03-23T16:30:17
+| Not valid after:  2021-03-23T16:30:17
+| MD5:   f4bf:a335:3e11:6420:c896:25b5:a865:1230
+|_SHA-1: 02d1:5f78:6b1c:e378:5486:50eb:a6f2:7a4b:e326:7491
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 2 disallowed entries 
+|_/ /backup.7z
+| http-title: 404 Not Found
+|_Requested resource was config.php
+5038/tcp open  asterisk   Asterisk Call Manager 2.10.0
+8088/tcp open  http       Asterisk 13.17.0
+|_http-server-header: Asterisk/13.17.0
+|_http-title: 404 Not Found
+8089/tcp open  ssl/http   Asterisk 13.17.0
+| ssl-cert: Subject: commonName=localhost.localdomain/organizationName=localhost.localdomain
+| Issuer: commonName=localhost.localdomain/organizationName=localhost.localdomain
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-03-23T16:28:55
+| Not valid after:  2030-03-21T16:28:55
+| MD5:   91bd:0f13:17a1:4729:b095:daae:a5f6:a6f8
+|_SHA-1: 4fc7:5b35:f399:3849:ed2d:f963:4ade:735d:1525:5169
+|_http-server-header: Asterisk/13.17.0
+|_ssl-date: 2024-10-02T06:45:04+00:00; +1s from scanner time.
+|_http-title: 404 Not Found
+MAC Address: 08:00:27:E1:48:F2 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 2.6.X|3.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+OS details: Linux 2.6.32 - 3.10
+Uptime guess: 49.709 days (since Tue Aug 13 19:14:12 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Device: PBX
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.36 ms 192.168.29.30
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct  2 12:15:03 2024 -- 1 IP address (1 host up) scanned in 31.46 seconds

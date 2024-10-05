@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Sun Sep 29 21:38:01 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA hack-me-please-all-ports-scan-output 192.168.1.6
+Nmap scan report for 192.168.1.6
+Host is up (0.00037s latency).
+Not shown: 65382 filtered tcp ports (no-response), 150 filtered tcp ports (host-prohibited)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+50000/tcp open  ibm-db2
+MAC Address: 08:00:27:87:C7:FB (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/share/nmap
+# Nmap done at Sun Sep 29 21:40:25 2024 -- 1 IP address (1 host up) scanned in 144.84 seconds

@@ -1,0 +1,34 @@
+[CVE-2018-7422] [http] [high] http://192.168.1.104:80/wp-content/plugins/site-editor/editor/extensions/pagebuilder/includes/ajax_shortcode_pattern.php?ajax_path=/etc/passwd
+[addeventlistener-detect] [http] [info] http://192.168.1.104:80
+[apache-detect] [http] [info] http://192.168.1.104:80 ["Apache/2.4.38 (Debian)"]
+[CVE-2022-0140] [http] [medium] http://192.168.1.104:80/wp-admin/admin.php?page=vfb-export
+[metatag-cms] [http] [info] http://192.168.1.104:80 ["WordPress 5.1.19"]
+[tech-detect:google-font-api] [http] [info] http://192.168.1.104:80
+[tech-detect:font-awesome] [http] [info] http://192.168.1.104:80
+[tech-detect:animate.css] [http] [info] http://192.168.1.104:80
+[form-detection] [http] [info] http://192.168.1.104:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.104:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.104:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.104:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.104:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.104:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.104:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.104:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.104:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.104:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.104:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.104:80
+[mixed-passive-content:img] [http] [info] http://192.168.1.104:80 ["http://www.infosec.local/wp-content/themes/twentyseventeen/assets/images/header.jpg"]
+[wordpress-login] [http] [info] http://192.168.1.104:80/wp-login.php
+[wordpress-readme-file] [http] [info] http://192.168.1.104:80/readme.html
+[robots-txt-endpoint] [http] [info] http://192.168.1.104:80/robots.txt
+[missing-sri] [http] [info] http://192.168.1.104:80 ["http://www.infosec.local/wp-includes/js/jquery/jquery.js?ver=1.12.4","http://www.infosec.local/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1","http://www.infosec.local/wp-content/plugins/site-editor/framework/assets/js/animate/wow.min.js?ver=1.0.2","http://www.infosec.local/wp-content/plugins/site-editor/framework/assets/js/parallax/jquery.parallax.min.js?ver=1.1.3","http://www.infosec.local/wp-content/themes/twentyseventeen/assets/js/global.js?ver=1.0","http://www.infosec.local/wp-includes/js/wp-embed.min.js?ver=5.1.19","http://www.infosec.local/wp-content/plugins/site-editor/assets/js/livequery/jquery.livequery.min.js?ver=1.0.0","http://www.infosec.local/wp-content/plugins/site-editor/assets/js/livequery/sed.livequery.min.js?ver=1.0.0","http://www.infosec.local/wp-content/themes/twentyseventeen/assets/js/navigation.js?ver=1.0","http://www.infosec.local/wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo.js?ver=2.1.2","http://www.infosec.local/wp-content/plugins/site-editor/editor/extensions/pagebuilder/modules/row/js/row.js?ver=1.0.0","http://www.infosec.local/wp-content/plugins/site-editor/framework/assets/js/sed_app_site.min.js?ver=1.0.0","http://www.infosec.local/wp-content/plugins/site-editor/framework/assets/js/render.min.js?ver=1.0.0","http://www.infosec.local/wp-content/themes/twentyseventeen/assets/js/skip-link-focus-fix.js?ver=1.0","http://www.infosec.local/wp-includes/js/underscore.min.js?ver=1.8.3"]
+[wordpress-classic-editor:outdated_version] [http] [info] http://192.168.1.104:80/wp-content/plugins/classic-editor/readme.txt ["1.4"] [last_version="1.6.4"]
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.104:80
+[wordpress-detect:version_by_css] [http] [info] http://192.168.1.104:80/wp-admin/install.php ["5.1.19"]
+[wordpress-limit-login-attempts-reloaded:outdated_version] [http] [info] http://192.168.1.104:80/wp-content/plugins/limit-login-attempts-reloaded/readme.txt ["2.10.1"] [last_version="2.26.13"]
+[wp-license-file] [http] [info] http://192.168.1.104:80/license.txt
+[wordpress-rdf-user-enum] [http] [info] http://192.168.1.104/feed/rdf/ ["admin"]
+[wp-user-enum:usernames] [http] [low] http://192.168.1.104:80/wp-json/wp/v2/users/ ["admin"]
+[ssh-auth-methods] [javascript] [info] 192.168.1.104:22 ["["publickey"]"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.104:22 ["Vulnerable to Terrapin"]

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sat Oct  5 10:44:32 2024 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80,445,631,3306,6697,8080 -oA metasploitable-3-nmap-version-scan-output 192.168.1.6 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80,445,631,3306,6697,8080 -oA metasploitable-3-nmap-version-scan-output 192.168.1.6" start="1728105272" startstr="Sat Oct  5 10:44:32 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="8" services="21-22,80,445,631,3306,6697,8080"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1728105272"/>
+<taskend task="NSE" time="1728105272"/>
+<taskbegin task="NSE" time="1728105272"/>
+<taskend task="NSE" time="1728105272"/>
+<taskbegin task="NSE" time="1728105272"/>
+<taskend task="NSE" time="1728105272"/>
+<taskbegin task="ARP Ping Scan" time="1728105272"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.6" addrtype="ipv4"/>
+<address addr="08:00:27:5E:03:39" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1728105272" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1728105272"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1728105272"/>
+<taskbegin task="Connect Scan" time="1728105272"/>
+<taskend task="Connect Scan" time="1728105272" extrainfo="8 total ports"/>
+<taskbegin task="Service scan" time="1728105272"/>
+<taskend task="Service scan" time="1728105278" extrainfo="8 services on 1 host"/>
+<taskbegin task="NSE" time="1728105282"/>
+<taskend task="NSE" time="1728105322"/>
+<taskbegin task="NSE" time="1728105322"/>
+<taskend task="NSE" time="1728105335"/>
+<taskbegin task="NSE" time="1728105335"/>
+<taskend task="NSE" time="1728105335"/>
+<host starttime="1728105272" endtime="1728105335"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.6" addrtype="ipv4"/>
+<address addr="08:00:27:5E:03:39" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="ProFTPD" version="1.3.5" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd:1.3.5</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="6.6.1p1 Ubuntu 2ubuntu2.13" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.6.1p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 2b:2e:1f:a4:54:26:87:76:12:26:59:58:0d:da:3b:04 (DSA)&#xa;  2048 c9:ac:70:ef:f8:de:8b:a3:a3:44:ab:3d:32:0a:5c:6a (RSA)&#xa;  256 c0:49:cc:18:7b:27:a4:07:0d:2a:0d:bb:42:4c:36:17 (ECDSA)&#xa;  256 a0:76:f3:76:f8:f0:70:4d:09:ca:e1:10:fd:a9:cc:0a (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAO0VmQeu9zOETHuLNJw7289ium1MGjwthfAm/FFDdsW8/Xf4qKJXs2jmYlwDIVKRuKOjOa/UMwpTxGS5dyPGuuCOlU5swrXYfH664Y8NLbVIRw38tJoF9i6aQhq4Q2syN8MyCG+pPc1HrEvqX2b7ejTXLo/iEyy3xTEL7aeH7GA3AAAAFQC4XCJ6kJ3IF1AhzVh3LbX4J/WU2wAAAIALyBGVIxdCaFzrtlIXzF9btSBEAc5UQ808GN/ESKzeqKXeydcSR/KfSTo7Aax4Nih+2ObnD4uWHhh4DAUDfFPWG4peYjUokgmKzzyVzYE63DBbFD9y8vlyPmzvNAB3HArrAQRoiFQWZuf2ef5acWF+uFmZRZSzYIzmUsp6ZUgNaQAAAIBDqu91WqY15j743zai/9um0Qr9irygKG2ZN6UFiCpeWauptZ13s0tVGgfZe59gOm1+HWjaJx20/Zei1XTMNZf2EiQIZDFWjLZkf6ZUdHi3yzkz6NKbxAMSAyJmXe2PFHBPoEnGvzk/luuSrNnAJYG1yh+IvHMM3YRKp/HFFsgc3w==</elem>
+<elem key="fingerprint">2b2e1fa454268776122659580dda3b04</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="bits">1024</elem>
+</table>
+<table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCvspoRpsPpthAcHo5qjj5AtUvvk/2L+3Jv4TJ53ne1B+bo7B/aS9MUvG+mA0B5nj4O/6Rr+7Gw8U4/7CRLWL2MiFHfRkIGUzEXdOFvoqSCq5ix5QBO8ERyS7j9ryll7iCDpms/LeiKf+MTNqFh+LLNNRlU7Xf3k+VC6kP8yybWh+AbCmZ6X5JFUjvmZdNOhzFdhfMYvzFhXokJ9iROV9MHh17BIPkyGKjuvHuSwZ5DuXa/WYLYMrSJ2Wf1ADr8YmUQazJrOnCrneGmgmUMWVycZuWp8yMC/ZwYK+JMC1n7ygy2Yl4QKCFs3VgocA6mJwX89IMcIHIRmcWA4KjTXQjV</elem>
+<elem key="fingerprint">c9ac70eff8de8ba3a344ab3d320a5c6a</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBO2FzSD+kiofezCxH18MaMQL2RcwXUEQzB3kxFZIW9u1oP8iXVM3NPCf/o30YmbjEr48+KUHfxAxVgxnn28IEUg=</elem>
+<elem key="fingerprint">c049cc187b27a4070d2a0dbb424c3617</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIGnTNWyunssDVqb3w9GGBT672JYX2FGIIeoidxxYrGxS</elem>
+<elem key="fingerprint">a076f376f8f0704d09cae110fda9cc0a</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.7" hostname="127.0.0.1" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.7</cpe></service><script id="http-title" output="Index of /"><elem key="title">Index of /</elem>
+</script><script id="http-server-header" output="Apache/2.4.7 (Ubuntu)"><elem>Apache/2.4.7 (Ubuntu)</elem>
+</script><script id="http-ls" output="Volume /&#xa;SIZE  TIME              FILENAME&#xa;71    2024-09-20 15:46  2mLDmxuBxVqppvb7A7zbYfO0ayZ&#xa;71    2024-10-03 06:50  2mutEu5JGX7ID2DzkwKSjNMfx0X&#xa;71    2024-10-03 06:56  2mutuTKxZ7BXsZ87phOwVa7ePIV&#xa;-     2020-10-29 19:37  chat/&#xa;-     2011-07-27 20:17  drupal/&#xa;1.7K  2020-10-29 19:37  payroll_app.php&#xa;-     2013-04-08 12:06  phpmyadmin/&#xa;&#xa;"><table key="volumes">
+<table>
+<table key="files">
+<table>
+<elem key="time">2024-09-20 15:46</elem>
+<elem key="size">71</elem>
+<elem key="filename">2mLDmxuBxVqppvb7A7zbYfO0ayZ</elem>
+</table>
+<table>
+<elem key="time">2024-10-03 06:50</elem>
+<elem key="size">71</elem>
+<elem key="filename">2mutEu5JGX7ID2DzkwKSjNMfx0X</elem>
+</table>
+<table>
+<elem key="time">2024-10-03 06:56</elem>
+<elem key="size">71</elem>
+<elem key="filename">2mutuTKxZ7BXsZ87phOwVa7ePIV</elem>
+</table>
+<table>
+<elem key="time">2020-10-29 19:37</elem>
+<elem key="size">-</elem>
+<elem key="filename">chat/</elem>
+</table>
+<table>
+<elem key="time">2011-07-27 20:17</elem>
+<elem key="size">-</elem>
+<elem key="filename">drupal/</elem>
+</table>
+<table>
+<elem key="time">2020-10-29 19:37</elem>
+<elem key="size">1.7K</elem>
+<elem key="filename">payroll_app.php</elem>
+</table>
+<table>
+<elem key="time">2013-04-08 12:06</elem>
+<elem key="size">-</elem>
+<elem key="filename">phpmyadmin/</elem>
+</table>
+</table>
+<elem key="volume">/</elem>
+</table>
+</table>
+<table key="total">
+<elem key="files">7</elem>
+<elem key="bytes">1913</elem>
+</table>
+</script><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS GET HEAD"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.3.11-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="METASPLOITABLE3-UB1404" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="631"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ipp" product="CUPS" version="1.7" method="probed" conf="10"><cpe>cpe:/a:apple:cups:1.7</cpe></service><script id="http-server-header" output="CUPS/1.7 IPP/2.1"><elem>CUPS/1.7 IPP/2.1</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD OPTIONS POST PUT&#xa;  Potentially risky methods: PUT"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>OPTIONS</elem>
+<elem>POST</elem>
+<elem>PUT</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>PUT</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-title" output="Home - CUPS 1.7.2"><elem key="title">Home - CUPS 1.7.2</elem>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql</cpe></service></port>
+<port protocol="tcp" portid="6697"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="irc" product="UnrealIRCd" hostname="irc.TestIRC.net" method="probed" conf="10"><cpe>cpe:/a:unrealircd:unrealircd</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Jetty" version="8.1.7.v20120910" method="probed" conf="10"><cpe>cpe:/a:mortbay:jetty:8.1.7.v20120910</cpe></service><script id="http-title" output="Error 404 - Not Found"><elem key="title">Error 404 - Not Found</elem>
+</script><script id="http-server-header" output="Jetty(8.1.7.v20120910)"><elem>Jetty(8.1.7.v20120910)</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: ED7D5C39C69262F4BA95418D4F909B10"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<osmatch name="Linux 3.10 - 4.11" accuracy="97" line="63448">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="97" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="97" line="67361">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16 - 4.6" accuracy="95" line="64382">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="94" line="63862">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="92" line="67289">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4)" accuracy="91" line="66953">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.10" accuracy="91" line="67166">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.1" accuracy="91" line="68139">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:5.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="91" line="55372">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="17179777" lastboot="Wed Mar 20 14:35:58 2024"/>
+<distance value="1"/>
+<tcpsequence index="259" difficulty="Good luck!" values="203BA3A0,2D55ACB2,1332B378,47D2D333,ED993931,E3CA00FD"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="FFFF7176,FFFF718F,FFFF71A8,FFFF71C1,FFFF71DA,FFFF71F3"/>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2024-10-05T05:14:47&#xa;  start_date: N/A"><elem key="date">2024-10-05T05:14:47</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.3.11-Ubuntu)&#xa;  Computer name: metasploitable3-ub1404&#xa;  NetBIOS computer name: METASPLOITABLE3-UB1404\x00&#xa;  Domain name: \x00&#xa;  FQDN: metasploitable3-ub1404&#xa;  System time: 2024-10-05T05:14:43+00:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.3.11-Ubuntu</elem>
+<elem key="server">METASPLOITABLE3-UB1404\x00</elem>
+<elem key="date">2024-10-05T05:14:43+00:00</elem>
+<elem key="fqdn">metasploitable3-ub1404</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="clock-skew" output="mean: 0s, deviation: 1s, median: 0s"><elem key="median">0</elem>
+<elem key="stddev">1</elem>
+<elem key="count">3</elem>
+<elem key="mean">0</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.1.6" rtt="0.29"/>
+</trace>
+<times srtt="286" rttvar="60" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1728105335"/>
+<taskend task="NSE" time="1728105335"/>
+<taskbegin task="NSE" time="1728105335"/>
+<taskend task="NSE" time="1728105335"/>
+<taskbegin task="NSE" time="1728105335"/>
+<taskend task="NSE" time="1728105335"/>
+<runstats><finished time="1728105335" timestr="Sat Oct  5 10:45:35 2024" summary="Nmap done at Sat Oct  5 10:45:35 2024; 1 IP address (1 host up) scanned in 63.37 seconds" elapsed="63.37" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

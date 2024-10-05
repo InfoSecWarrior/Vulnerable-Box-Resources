@@ -58,22 +58,6 @@ body {
     transform: scale(1.1);
 }
 
-#machine-title, #github-link {
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: middle;
-    margin-bottom: 0;
-}
-
-#github-link a {
-    text-decoration: none;
-    color: #004085;
-}
-
-#github-link a:hover {
-    text-decoration: underline;
-}
-
 .machine-content {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -135,47 +119,14 @@ button {
     transition: background-color 0.3s, transform 0.2s ease;
 }
 
-.box {
-    background-color: #b20002;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 8px;
-    max-width: 1500px; /* Reduced max-width for better display */
-    margin: 20px auto;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between; /* Space between the elements */
-    align-items: center;
-    gap: 20px; /* Added gap for consistent spacing between items */
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
 }
 
-#machine-title {
-    font-weight: bold;
-    color: #ffffff;
-    margin: 0;
-    font-size: 22px; /* Slightly larger for better readability */
-    flex-shrink: 0; /* Prevents shrinking of the title */
-}
-
-#github-link,
-#resource-link {
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0;
-    font-size: 18px; /* Adjusted for better consistency */
-    color: #ffffff;
-}
-
-#github-link a,
-#resource-link a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-#github-link a:hover,
-#resource-link a:hover {
-    text-decoration: underline;
+button:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
 }
 
 @media (max-width: 768px) {
@@ -190,31 +141,6 @@ button {
     }
 }
 
-button:hover {
-    background-color: #218838;
-    transform: translateY(-2px);
-}
-
-button:active {
-    background-color: #1e7e34;
-    transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-    #machine-title, #github-link {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .header, .machine-content {
-        padding: 20px;
-    }
-
-    pre {
-        font-size: 0.85rem;
-    }
-}
-
 a {
     color: inherit; 
     text-decoration: none;
@@ -223,4 +149,47 @@ a {
 a:hover {
     color: #b20002;
     text-decoration: none;
+}
+
+.box {
+    position: sticky;
+    display: flex;
+    background-color: #b20002;
+    padding: 15px 30px; /* Adjust padding for a cleaner look */
+    border-radius: 10px;
+    max-width: 1500px; /* Adjusted max-width for better display */
+    margin: 20px auto;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    gap: 15px; /* Consistent gap between elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    z-index: 1000;
+}
+
+.info-links {
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+
+#github-link, #resource-link {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+#github-link a, #resource-link a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+#github-link a:hover, #resource-link a:hover {
+    text-decoration: underline;
+}
+
+.fas {
+    margin-right: 8px; /* Adds space between the icon and text */
 }
