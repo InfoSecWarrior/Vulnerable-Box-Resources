@@ -58,3 +58,4 @@ https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/h
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Wintermute-Neuromancer/Wintermute-Neuromancer-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Wintermute-Straylight/Wintermute-Straylight-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Zico2/Zico-2-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/Krishna-cybersec/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/SickOs/SickOs-nmap-version-scan-output.xml
