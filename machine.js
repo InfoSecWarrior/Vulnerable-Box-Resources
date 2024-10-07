@@ -130,7 +130,7 @@ async function fetchMachineData() {
     const githubLink = document.getElementById('github-url');
     if (githubLink) {
         githubLink.href = `${githubBaseURL}${encodeURIComponent(dirName)}`; // Use original name for URL
-        githubLink.textContent = `View ${decodeURIComponent(displayDirName)} on GitHub`; // Display modified name
+        githubLink.textContent = `Get Complete ${decodeURIComponent(displayDirName)} Files on GitHub`; // ${decodeURIComponent(displayDirName)}
     } else {
         console.warn("Element with ID 'github-url' not found in the document.");
     }
@@ -146,7 +146,7 @@ async function fetchMachineData() {
     const resourceContent = await fetchFileContent(resourceUrl, 'resource-url');
     if (resourceLinkElement && resourceContent) {
         resourceLinkElement.href = resourceContent.trim(); // Set original resource URL
-        resourceLinkElement.textContent = 'Platform';
+        resourceLinkElement.textContent = 'Vulnerable Box Link';
     } else {
         console.warn("Element with ID 'resource-url' not found in the document or no resource content available.");
     }

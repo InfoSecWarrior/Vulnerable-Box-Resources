@@ -63,11 +63,21 @@ body {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 25px;
-    margin-top: 20px;
+    margin: 20px auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 1500px;
-    width: 100%;
+    width: calc(100vw - 20px); /* Increased width by reducing side padding */
+    max-width: 1823px; /* Increased max-width for larger screens */
+    overflow-x: hidden;
 }
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .machine-content {
+        padding: 20px;
+        width: calc(100vw - 20px); /* Slightly reduced width on smaller screens */
+    }
+}
+
 
 h2 {
     border-bottom: 3px solid #b20002;
@@ -155,28 +165,35 @@ a:hover {
     position: sticky;
     display: flex;
     background-color: #b20002;
-    padding: 15px 30px; /* Adjust padding for a cleaner look */
+    padding: 1px 2%; /* Reduced padding to decrease height */
     border-radius: 10px;
-    max-width: 1500px; /* Adjusted max-width for better display */
+    max-width: 95vw;
     margin: 20px auto;
     color: #ffffff;
     justify-content: space-between;
     align-items: center;
     top: 0;
-    gap: 15px; /* Consistent gap between elements */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
+
 .info-links {
     display: flex;
-    gap: 30px; /* Space between links */
+    justify-content: space-between; /* Space links apart */
+    width: 100%; /* Ensures links take up full width */
 }
 
-#github-link, #resource-link {
+#github-link {
     font-weight: bold;
     font-size: 18px;
-    margin: 0;
+    text-align: left; /* Align to the left */
+}
+
+#resource-link {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right; /* Align to the right */
 }
 
 #github-link a, #resource-link a {
@@ -188,8 +205,4 @@ a:hover {
 
 #github-link a:hover, #resource-link a:hover {
     text-decoration: underline;
-}
-
-.fas {
-    margin-right: 8px; /* Adds space between the icon and text */
 }
