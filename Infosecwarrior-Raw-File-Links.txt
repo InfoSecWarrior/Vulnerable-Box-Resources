@@ -8,4 +8,5 @@ https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/h
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior/My-Wordpress-Host-2/My-Wordpress-Host-2-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior/My-Web-Server/My-Web-Server-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior/My-Firewall/myfirewall-nmap-version-scan-output.xml
-https://raw.githubusercontent.com/Krishna-cybersec/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior/Wordpress-Host-Server-1/Wordpress_host_server_1-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior/My-Firewall/myfirewall-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrio/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior/Wordpress-Host-Server-1/Wordpress_host_server_1-nmap-version-scan-output.xml

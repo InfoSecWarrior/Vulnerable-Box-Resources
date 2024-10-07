@@ -1,0 +1,12 @@
+# Nmap 7.94 scan initiated Sat Oct  5 17:16:06 2024 as: nmap -v -Pn -p- -oA Insanity-1-all-ports-scan-output 192.168.29.33
+Nmap scan report for 192.168.29.33
+Host is up (0.00023s latency).
+Not shown: 65380 filtered tcp ports (no-response), 152 filtered tcp ports (host-prohibited)
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+MAC Address: 08:00:27:03:B0:E0 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Oct  5 17:18:33 2024 -- 1 IP address (1 host up) scanned in 147.12 seconds

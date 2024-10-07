@@ -1,0 +1,5 @@
+# Nmap 7.94 scan initiated Sat Oct  5 17:18:33 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80 -oA Insanity-1-nmap-version-scan-output 192.168.29.33
+# Ports scanned: TCP(3;21-22,80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.29.33 ()	Status: Up
+Host: 192.168.29.33 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.2/, 22/open/tcp//ssh//OpenSSH 7.4 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.6 ((CentOS) PHP|7.2.33)/	Seq Index: 258	IP ID Seq: All zeros
+# Nmap done at Sat Oct  5 17:18:44 2024 -- 1 IP address (1 host up) scanned in 11.43 seconds
