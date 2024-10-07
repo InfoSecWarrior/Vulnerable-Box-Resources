@@ -1,0 +1,9 @@
+[ssh-auth-methods] [javascript] [info] 192.168.1.11:22 ["["publickey","password"]"]
+[ssh-diffie-hellman-logjam] [javascript] [low] 192.168.1.11:22
+[ssh-server-enumeration] [javascript] [info] 192.168.1.11:22 ["SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1.8"]
+[ssh-cbc-mode-ciphers] [javascript] [low] 192.168.1.11:22
+[ssh-weak-algo-supported] [javascript] [medium] 192.168.1.11:22
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.11:22
+[ssh-weakkey-exchange-algo] [javascript] [low] 192.168.1.11:22
+[ssh-password-auth] [javascript] [info] 192.168.1.11:22
+[ssh-weak-mac-algo] [javascript] [low] 192.168.1.11:22
