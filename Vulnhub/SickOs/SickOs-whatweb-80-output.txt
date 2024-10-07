@@ -1,0 +1,1 @@
+http://192.168.1.11:80 [200 OK] Country[RESERVED][ZZ], HTTPServer[lighttpd/1.4.28], IP[192.168.1.11], PHP[5.3.10-1ubuntu3.21], X-Powered-By[PHP/5.3.10-1ubuntu3.21], lighttpd[1.4.28]

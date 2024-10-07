@@ -1,0 +1,32 @@
+# Nmap 7.94SVN scan initiated Sat Oct  5 10:31:31 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA SickOs-nmap-version-scan-output 192.168.1.11
+Nmap scan report for 192.168.1.11 (192.168.1.11)
+Host is up (0.00044s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 5.9p1 Debian 5ubuntu1.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 66:8c:c0:f2:85:7c:6c:c0:f6:ab:7d:48:04:81:c2:d4 (DSA)
+|   2048 ba:86:f5:ee:cc:83:df:a6:3f:fd:c1:34:bb:7e:62:ab (RSA)
+|_  256 a1:6c:fa:18:da:57:1d:33:2c:52:e4:ec:97:e2:9e:af (ECDSA)
+80/tcp open  http    lighttpd 1.4.28
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: lighttpd/1.4.28
+|_http-title: Site doesn't have a title (text/html).
+MAC Address: 08:00:27:62:21:AD (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 4.11 (93%), Linux 3.16 - 4.6 (93%), Linux 3.2 - 4.9 (93%), Linux 4.4 (93%), Linux 4.2 (90%), Linux 3.13 (90%), Linux 3.18 (89%), Linux 3.13 - 3.16 (87%), Linux 3.16 (87%), OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4) (87%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 198.840 days (since Wed Mar 20 14:21:28 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.44 ms 192.168.1.11 (192.168.1.11)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct  5 10:31:47 2024 -- 1 IP address (1 host up) scanned in 16.02 seconds

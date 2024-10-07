@@ -1,0 +1,52 @@
+# Nmap 7.94SVN scan initiated Sat Oct  5 10:35:45 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,443 -oA Wordpress_host_server_1-nmap-version-scan-output 192.168.1.13
+Nmap scan report for 192.168.1.13 (192.168.1.13)
+Host is up (0.00025s latency).
+
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 08:af:4d:3c:91:26:85:2c:30:d1:38:d7:cd:8c:c3:1d (RSA)
+|   256 a8:7c:c9:a5:2d:dd:04:d0:e0:25:2a:cd:f7:68:0c:06 (ECDSA)
+|_  256 a2:72:b9:95:7b:55:2e:57:78:26:75:d4:71:69:89:46 (ED25519)
+80/tcp  open  http     Apache httpd 2.4.6 ((CentOS) OpenSSL/1.0.2k-fips PHP/7.3.14)
+| http-methods: 
+|_  Supported Methods: HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.3.14
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+443/tcp open  ssl/http Apache httpd 2.4.6 ((CentOS) OpenSSL/1.0.2k-fips PHP/7.3.14)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=armour infosec/organizationName=Armour infosec/stateOrProvinceName=MP/countryName=IN
+| Issuer: commonName=armour infosec/organizationName=Armour infosec/stateOrProvinceName=MP/countryName=IN
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-01-30T18:25:03
+| Not valid after:  2021-01-29T18:25:03
+| MD5:   8341:6446:1cf6:683a:08aa:61c2:9ce0:eb7c
+|_SHA-1: 2156:34a0:2f82:7bd6:cc5c:4352:6063:125b:37bb:f046
+|_http-title: 400 Bad Request
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.3.14
+MAC Address: 08:00:27:75:CC:FF (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|storage-misc
+Running (JUST GUESSING): Linux 3.X|4.X|5.X|2.6.X (97%), Synology DiskStation Manager 5.X (90%), Netgear RAIDiator 4.X (87%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5.1 cpe:/o:linux:linux_kernel:2.6.32 cpe:/a:synology:diskstation_manager:5.2 cpe:/o:netgear:raidiator:4.2.28
+Aggressive OS guesses: Linux 3.10 - 4.11 (97%), Linux 3.2 - 4.9 (97%), Linux 5.1 (97%), Linux 3.16 - 4.6 (91%), Linux 4.10 (91%), Linux 4.4 (91%), Linux 2.6.32 (91%), Linux 3.4 - 3.10 (91%), Linux 4.15 - 5.8 (91%), Linux 5.0 - 5.4 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 49.710 days (since Fri Aug 16 17:33:59 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.25 ms 192.168.1.13 (192.168.1.13)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct  5 10:36:48 2024 -- 1 IP address (1 host up) scanned in 62.76 seconds

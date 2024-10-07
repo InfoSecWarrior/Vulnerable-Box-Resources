@@ -1,0 +1,4 @@
+# Dirsearch started Sat Oct  5 10:41:51 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.11:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o SickOs-dirsearch-80-wordlist-output.txt -q
+
+301     0B   http://192.168.1.11/test    -> REDIRECTS TO: http://192.168.1.11/test/
+403   345B   http://192.168.1.11/%7Echeckout%7E
