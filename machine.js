@@ -130,7 +130,7 @@ async function fetchMachineData() {
     const githubLink = document.getElementById('github-url');
     if (githubLink) {
         githubLink.href = `${githubBaseURL}${encodeURIComponent(dirName)}`; // Use original name for URL
-        githubLink.textContent = `Get All Files on Github`; // Display modified name
+        githubLink.textContent = `Get Complete ${decodeURIComponent(displayDirName)} Files on GitHub`; // ${decodeURIComponent(displayDirName)}
     } else {
         console.warn("Element with ID 'github-url' not found in the document.");
     }
