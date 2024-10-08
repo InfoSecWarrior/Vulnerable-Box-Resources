@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sun Oct  6 11:07:48 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,8000 -oA VulnerableDocker1-nmap-version-scan-output 192.168.29.32
+# Ports scanned: TCP(2;22,8000) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.29.32 ()	Status: Up
+Host: 192.168.29.32 ()	Ports: 22/open/tcp//ssh//OpenSSH 6.6p1 Ubuntu 2ubuntu1 (Ubuntu Linux; protocol 2.0)/, 8000/open/tcp//http//Apache httpd 2.4.10 ((Debian))/	OS: Linux 3.2 - 4.9	Seq Index: 262	IP ID Seq: All zeros
+# Nmap done at Sun Oct  6 11:08:02 2024 -- 1 IP address (1 host up) scanned in 14.02 seconds

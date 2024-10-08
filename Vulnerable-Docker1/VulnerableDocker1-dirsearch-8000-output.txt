@@ -1,0 +1,67 @@
+# Dirsearch started Sun Oct  6 11:55:40 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.32:8000 -o VulnerableDocker1-dirsearch-8000-output.txt -q
+
+301     0B   http://192.168.29.32:8000/%2e%2e//google.com    -> REDIRECTS TO: http://192.168.29.32:8000/%2E%2E/google.com
+403   301B   http://192.168.29.32:8000/.ht_wsr.txt
+403   304B   http://192.168.29.32:8000/.htaccess.bak1
+403   304B   http://192.168.29.32:8000/.htaccess.save
+403   304B   http://192.168.29.32:8000/.htaccess.orig
+403   304B   http://192.168.29.32:8000/.htaccess_orig
+403   302B   http://192.168.29.32:8000/.htaccess_sc
+403   305B   http://192.168.29.32:8000/.htaccess_extra
+403   302B   http://192.168.29.32:8000/.htaccessBAK
+403   302B   http://192.168.29.32:8000/.htaccessOLD
+403   303B   http://192.168.29.32:8000/.htaccessOLD2
+403   306B   http://192.168.29.32:8000/.htaccess.sample
+403   294B   http://192.168.29.32:8000/.htm
+403   304B   http://192.168.29.32:8000/.htpasswd_test
+403   300B   http://192.168.29.32:8000/.htpasswds
+403   301B   http://192.168.29.32:8000/.httr-oauth
+403   295B   http://192.168.29.32:8000/.html
+301     0B   http://192.168.29.32:8000/0    -> REDIRECTS TO: http://192.168.29.32:8000/0/
+301     0B   http://192.168.29.32:8000/2017    -> REDIRECTS TO: http://192.168.29.32:8000/2017/
+301     0B   http://192.168.29.32:8000/A    -> REDIRECTS TO: http://192.168.29.32:8000/a-homepage-section/
+301     0B   http://192.168.29.32:8000/a    -> REDIRECTS TO: http://192.168.29.32:8000/a-homepage-section/
+301     0B   http://192.168.29.32:8000/ab/    -> REDIRECTS TO: http://192.168.29.32:8000/about/
+301     0B   http://192.168.29.32:8000/About    -> REDIRECTS TO: http://192.168.29.32:8000/About/
+301     0B   http://192.168.29.32:8000/about    -> REDIRECTS TO: http://192.168.29.32:8000/about/
+301     0B   http://192.168.29.32:8000/adm/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/adm/
+302     0B   http://192.168.29.32:8000/admin    -> REDIRECTS TO: http://192.168.29.32:8000/wp-admin/
+302     0B   http://192.168.29.32:8000/admin/    -> REDIRECTS TO: http://192.168.29.32:8000/wp-admin/
+301     0B   http://192.168.29.32:8000/admin/home    -> REDIRECTS TO: http://192.168.29.32:8000/home/
+301     0B   http://192.168.29.32:8000/admin/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/admin/
+301     0B   http://192.168.29.32:8000/admin/mysql/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/admin/mysql/
+301     0B   http://192.168.29.32:8000/admin/mysql2/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/admin/mysql2/
+301     0B   http://192.168.29.32:8000/admin/phpmyadmin/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/admin/phpmyadmin/
+301     0B   http://192.168.29.32:8000/admin/phpMyAdmin/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/admin/phpMyAdmin/
+301     0B   http://192.168.29.32:8000/admin/PMA/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/admin/PMA/
+301     0B   http://192.168.29.32:8000/admin/phpmyadmin2/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/admin/phpmyadmin2/
+301     0B   http://192.168.29.32:8000/admin/pma/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/admin/pma/
+301     0B   http://192.168.29.32:8000/admin/views/ajax/autocomplete/user/a    -> REDIRECTS TO: http://192.168.29.32:8000/a-homepage-section/
+301     0B   http://192.168.29.32:8000/admin2/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/admin2/
+301     0B   http://192.168.29.32:8000/admin_area/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/admin_area/
+301     0B   http://192.168.29.32:8000/adminarea/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/adminarea/
+301     0B   http://192.168.29.32:8000/admincp/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/admincp/
+301     0B   http://192.168.29.32:8000/adminer/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/adminer/
+301     0B   http://192.168.29.32:8000/administrator/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/administrator/
+301     0B   http://192.168.29.32:8000/apc/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/apc/
+200    20KB  http://192.168.29.32:8000/atom
+301     0B   http://192.168.29.32:8000/axis//happyaxis.jsp    -> REDIRECTS TO: http://192.168.29.32:8000/axis/happyaxis.jsp
+301     0B   http://192.168.29.32:8000/axis2-web//HappyAxis.jsp    -> REDIRECTS TO: http://192.168.29.32:8000/axis2-web/HappyAxis.jsp
+301     0B   http://192.168.29.32:8000/axis2//axis2-web/HappyAxis.jsp    -> REDIRECTS TO: http://192.168.29.32:8000/axis2/axis2-web/HappyAxis.jsp
+301     0B   http://192.168.29.32:8000/b    -> REDIRECTS TO: http://192.168.29.32:8000/blog/
+301     0B   http://192.168.29.32:8000/base/static/c    -> REDIRECTS TO: http://192.168.29.32:8000/contact/
+301     0B   http://192.168.29.32:8000/bb-admin/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/bb-admin/
+301     0B   http://192.168.29.32:8000/bitrix/admin/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/bitrix/admin/
+301     0B   http://192.168.29.32:8000/blog    -> REDIRECTS TO: http://192.168.29.32:8000/blog/
+200    17KB  http://192.168.29.32:8000/blog/
+301     0B   http://192.168.29.32:8000/c    -> REDIRECTS TO: http://192.168.29.32:8000/contact/
+301     0B   http://192.168.29.32:8000/Citrix//AccessPlatform/auth/clientscripts/cookies.js    -> REDIRECTS TO: http://192.168.29.32:8000/Citrix/AccessPlatform/auth/clientscripts/cookies.js
+301     0B   http://192.168.29.32:8000/claroline/phpMyAdmin/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/claroline/phpMyAdmin/
+301     0B   http://192.168.29.32:8000/contact    -> REDIRECTS TO: http://192.168.29.32:8000/contact/
+302     0B   http://192.168.29.32:8000/dashboard    -> REDIRECTS TO: http://192.168.29.32:8000/wp-admin/
+302     0B   http://192.168.29.32:8000/dashboard/    -> REDIRECTS TO: http://192.168.29.32:8000/wp-admin/
+301     0B   http://192.168.29.32:8000/db/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/db/
+301     0B   http://192.168.29.32:8000/dbadmin/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/dbadmin/
+301     0B   http://192.168.29.32:8000/engine/classes/swfupload//swfupload.swf    -> REDIRECTS TO: http://192.168.29.32:8000/engine/classes/swfupload/swfupload.swf
+301     0B   http://192.168.29.32:8000/engine/classes/swfupload//swfupload_f9.swf    -> REDIRECTS TO: http://192.168.29.32:8000/engine/classes/swfupload/swfupload_f9.swf
+301     0B   http://192.168.29.32:8000/etc/lib/pChart2/examples/imageMap/index.php    -> REDIRECTS TO: http://192.168.29.32:8000/etc/lib/pChart2/examples/imageMap/

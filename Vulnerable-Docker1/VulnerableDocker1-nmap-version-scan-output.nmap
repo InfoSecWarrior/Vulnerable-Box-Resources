@@ -1,0 +1,41 @@
+# Nmap 7.94SVN scan initiated Sun Oct  6 11:07:48 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,8000 -oA VulnerableDocker1-nmap-version-scan-output 192.168.29.32
+Nmap scan report for 192.168.29.32
+Host is up (0.00025s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 6.6p1 Ubuntu 2ubuntu1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 45:13:08:81:70:6d:46:c3:50:ed:3c:ab:ae:d6:e1:85 (DSA)
+|   2048 4c:e7:2b:01:52:16:1d:5c:6b:09:9d:3d:4b:bb:79:90 (RSA)
+|   256 cc:2f:62:71:4c:ea:6c:a6:d8:a7:4f:eb:82:2a:22:ba (ECDSA)
+|_  256 73:bf:b4:d6:ad:51:e3:99:26:29:b7:42:e3:ff:c3:81 (ED25519)
+8000/tcp open  http    Apache httpd 2.4.10 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-favicon: Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E
+|_http-server-header: Apache/2.4.10 (Debian)
+|_http-generator: WordPress 4.8.1
+|_http-title: NotSoEasy Docker &#8211; Just another WordPress site
+| http-robots.txt: 1 disallowed entry 
+|_/wp-admin/
+MAC Address: 08:00:27:7D:0F:E0 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 198.838 days (since Thu Mar 21 15:00:44 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.25 ms 192.168.29.32
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct  6 11:08:02 2024 -- 1 IP address (1 host up) scanned in 14.02 seconds
