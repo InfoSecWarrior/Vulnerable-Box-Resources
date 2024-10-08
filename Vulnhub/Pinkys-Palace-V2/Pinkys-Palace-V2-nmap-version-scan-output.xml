@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Oct  8 17:57:24 2024 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 80,4655,7654,31337 -oA Pinkys-Palace-V2-nmap-version-scan-output 192.168.2.139 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 80,4655,7654,31337 -oA Pinkys-Palace-V2-nmap-version-scan-output 192.168.2.139" start="1728390444" startstr="Tue Oct  8 17:57:24 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="80,4655,7654,31337"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1728390444"/>
+<taskend task="NSE" time="1728390444"/>
+<taskbegin task="NSE" time="1728390444"/>
+<taskend task="NSE" time="1728390444"/>
+<taskbegin task="NSE" time="1728390444"/>
+<taskend task="NSE" time="1728390444"/>
+<taskbegin task="ARP Ping Scan" time="1728390444"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.139" addrtype="ipv4"/>
+<address addr="98:22:EF:B9:89:07" addrtype="mac" vendor="Liteon Technology"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1728390444" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1728390444"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1728390444"/>
+<taskbegin task="Connect Scan" time="1728390444"/>
+<taskend task="Connect Scan" time="1728390444" extrainfo="4 total ports"/>
+<taskbegin task="Service scan" time="1728390444"/>
+<taskend task="Service scan" time="1728390455" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1728390457"/>
+<taskend task="NSE" time="1728390457"/>
+<taskbegin task="NSE" time="1728390457"/>
+<taskend task="NSE" time="1728390457"/>
+<taskbegin task="NSE" time="1728390457"/>
+<taskend task="NSE" time="1728390457"/>
+<host starttime="1728390444" endtime="1728390457"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.139" addrtype="ipv4"/>
+<address addr="98:22:EF:B9:89:07" addrtype="mac" vendor="Liteon Technology"/>
+<hostnames>
+<hostname name="192.168.2.139" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.25" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.25</cpe></service><script id="http-generator" output="WordPress 4.9.4"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Pinky&amp;#039;s Blog &amp;#8211; Just another WordPress site"><elem key="title">Pinky&amp;#039;s Blog &amp;#8211; Just another WordPress site</elem>
+</script><script id="http-server-header" output="Apache/2.4.25 (Debian)"><elem>Apache/2.4.25 (Debian)</elem>
+</script></port>
+<port protocol="tcp" portid="4655"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4p1 Debian 10+deb9u3" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 ac:e6:41:77:60:1f:e8:7c:02:13:ae:a1:33:09:94:b7 (RSA)&#xa;  256 3a:48:63:f9:d2:07:ea:43:78:7d:e1:93:eb:f1:d2:3a (ECDSA)&#xa;  256 b1:10:03:dc:bb:f3:0d:9b:3a:e3:e4:61:03:c8:03:c7 (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">ace64177601fe87c0213aea1330994b7</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC1ar4dh+PDxdXJiS3PSqlFqpWf0j02Q/AgMLj4sIPYk0LO24oRnoGkNu9obAwRr186GnlBQE/xfWNH2LkJjfAmRdZOlRFKMgdf9KrKLDf6bEk1xb5GMND8mlQW/vb+raJha71eih91yvkoF7/okoaP6zTIJkKETLPPpKkiQxavRx5myUSC4qZbvkko9r072bnXKYCcf6L48a1Zsq0kC1lJx/92kqTGM3OXwELSTJFHIxzP3YyD/LPk9zQeUa0HAChYbdXijNxQf/vB4nssXDs1QdHBRzAs6jI8NB67wcCNA+bS/JHr1XwGhOrEOLaYFUCpV7nquWKo/L07XcUJdTfL</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">3a4863f9d207ea43787de193ebf1d23a</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDXVRETT6tXqdrzkUTl+0mO3ZfIO40joPu4zGtm7tjLtaFefXAyhbP4obeufbNBfVqnaKWwqRQi3bCehIvTPefg=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">b11003dcbbf30d9b3ae3e46103c803c7</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIAONHeLqYzuLx0FZojhhEQ6Oc39nA9DtsQoKXME6Tg5P</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="7654"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.10.3" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.10.3</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="http-server-header" output="nginx/1.10.3"><elem>nginx/1.10.3</elem>
+</script></port>
+<port protocol="tcp" portid="31337"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="Elite" servicefp="SF-Port31337-TCP:V=7.94SVN%I=7%D=10/8%Time=67052532%P=x86_64-pc-linux-gnu%r(NULL,59,&quot;\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky&apos;s\x20Palace\.\n=&gt;\x20\0&quot;)%r(GetRequest,6B,&quot;\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky&apos;s\x20Palace\.\n=&gt;\x20\0GET\x20/\x20HTTP/1\.0\r\n\r\n&quot;)%r(SIPOptions,138,&quot;\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky&apos;s\x20Palace\.\n=&gt;\x20\0OPTIONS\x20sip:nm\x20SIP/2\.0\r\nVia:\x20SIP/2\.0/TCP\x20nm;branch=foo\r\nFrom:\x20&lt;sip:nm@nm&gt;;tag=root\r\nTo:\x20&lt;sip:nm2@nm2&gt;\r\nCall-ID:\x2050000\r\nCSeq:\x2042\x20OPTIONS\r\nMax-Forwards:\x2070\r\nContent-Length:\x200\r\nContact:\x20&lt;sip:nm@nm&gt;\r\nAccept:\x20application/sdp\r\n\r\n&quot;)%r(GenericLines,5D,&quot;\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky&apos;s\x20Palace\.\n=&gt;\x20\0\r\n\r\n&quot;)%r(HTTPOptions,6F,&quot;\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky&apos;s\x20Palace\.\n=&gt;\x20\0OPTIONS\x20/\x20HTTP/1\.0\r\n\r\n&quot;)%r(RTSPRequest,6F,&quot;\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky&apos;s\x20Palace\.\n=&gt;\x20\0OPTIONS\x20/\x20RTSP/1\.0\r\n\r\n&quot;)%r(RPCCheck,5A,&quot;\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky&apos;s\x20Palace\.\n=&gt;\x20\0\x80&quot;)%r(DNSVersionBindReqTCP,59,&quot;\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky&apos;s\x20Palace\.\n=&gt;\x20\0&quot;)%r(DNSStatusRequestTCP,59,&quot;\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky&apos;s\x20Palace\.\n=&gt;\x20\0&quot;)%r(Help,5F,&quot;\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky&apos;s\x20Palace\.\n=&gt;\x20\0HELP\r\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, NULL, RPCCheck: &#xa;    [+] Welcome to The Daemon [+]&#xa;    This is soon to be our backdoor&#xa;    into Pinky&apos;s Palace.&#xa;  GetRequest: &#xa;    [+] Welcome to The Daemon [+]&#xa;    This is soon to be our backdoor&#xa;    into Pinky&apos;s Palace.&#xa;    HTTP/1.0&#xa;  HTTPOptions: &#xa;    [+] Welcome to The Daemon [+]&#xa;    This is soon to be our backdoor&#xa;    into Pinky&apos;s Palace.&#xa;    OPTIONS / HTTP/1.0&#xa;  Help: &#xa;    [+] Welcome to The Daemon [+]&#xa;    This is soon to be our backdoor&#xa;    into Pinky&apos;s Palace.&#xa;    HELP&#xa;  RTSPRequest: &#xa;    [+] Welcome to The Daemon [+]&#xa;    This is soon to be our backdoor&#xa;    into Pinky&apos;s Palace.&#xa;    OPTIONS / RTSP/1.0&#xa;  SIPOptions: &#xa;    [+] Welcome to The Daemon [+]&#xa;    This is soon to be our backdoor&#xa;    into Pinky&apos;s Palace.&#xa;    OPTIONS sip:nm SIP/2.0&#xa;    Via: SIP/2.0/TCP nm;branch=foo&#xa;    From: &lt;sip:nm@nm&gt;;tag=root&#xa;    &lt;sip:nm2@nm2&gt;&#xa;    Call-ID: 50000&#xa;    CSeq: 42 OPTIONS&#xa;    Max-Forwards: 70&#xa;    Content-Length: 0&#xa;    Contact: &lt;sip:nm@nm&gt;&#xa;    Accept: application/sdp"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, NULL, RPCCheck">&#xa;    [+] Welcome to The Daemon [+]&#xa;    This is soon to be our backdoor&#xa;    into Pinky&apos;s Palace.</elem>
+<elem key="GetRequest">&#xa;    [+] Welcome to The Daemon [+]&#xa;    This is soon to be our backdoor&#xa;    into Pinky&apos;s Palace.&#xa;    HTTP/1.0</elem>
+<elem key="HTTPOptions">&#xa;    [+] Welcome to The Daemon [+]&#xa;    This is soon to be our backdoor&#xa;    into Pinky&apos;s Palace.&#xa;    OPTIONS / HTTP/1.0</elem>
+<elem key="Help">&#xa;    [+] Welcome to The Daemon [+]&#xa;    This is soon to be our backdoor&#xa;    into Pinky&apos;s Palace.&#xa;    HELP</elem>
+<elem key="RTSPRequest">&#xa;    [+] Welcome to The Daemon [+]&#xa;    This is soon to be our backdoor&#xa;    into Pinky&apos;s Palace.&#xa;    OPTIONS / RTSP/1.0</elem>
+<elem key="SIPOptions">&#xa;    [+] Welcome to The Daemon [+]&#xa;    This is soon to be our backdoor&#xa;    into Pinky&apos;s Palace.&#xa;    OPTIONS sip:nm SIP/2.0&#xa;    Via: SIP/2.0/TCP nm;branch=foo&#xa;    From: &lt;sip:nm@nm&gt;;tag=root&#xa;    &lt;sip:nm2@nm2&gt;&#xa;    Call-ID: 50000&#xa;    CSeq: 42 OPTIONS&#xa;    Max-Forwards: 70&#xa;    Content-Length: 0&#xa;    Contact: &lt;sip:nm@nm&gt;&#xa;    Accept: application/sdp</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="udp" portid="40618"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="100" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="358" lastboot="Tue Oct  8 17:51:39 2024"/>
+<distance value="1"/>
+<tcpsequence index="262" difficulty="Good luck!" values="82DB3B44,6A5B914F,EFBE9821,55ADE1D,2698A2FD,1176BEBF"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="15C57,15C70,15C89,15CA2,15CBB,15CD4"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.2.139" rtt="0.48" host="192.168.2.139"/>
+</trace>
+<times srtt="484" rttvar="68" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1728390457"/>
+<taskend task="NSE" time="1728390457"/>
+<taskbegin task="NSE" time="1728390457"/>
+<taskend task="NSE" time="1728390457"/>
+<taskbegin task="NSE" time="1728390457"/>
+<taskend task="NSE" time="1728390457"/>
+<runstats><finished time="1728390457" timestr="Tue Oct  8 17:57:37 2024" summary="Nmap done at Tue Oct  8 17:57:37 2024; 1 IP address (1 host up) scanned in 13.42 seconds" elapsed="13.42" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

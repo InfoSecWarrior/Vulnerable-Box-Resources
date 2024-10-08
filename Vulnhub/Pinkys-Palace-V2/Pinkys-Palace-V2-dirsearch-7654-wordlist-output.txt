@@ -1,0 +1,4 @@
+# Dirsearch started Tue Oct  8 17:58:32 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.2.139:7654 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Pinkys-Palace-V2-dirsearch-7654-wordlist-output.txt -q
+
+301   185B   http://192.168.2.139:7654/apache    -> REDIRECTS TO: http://192.168.2.139:7654/apache/
+301   185B   http://192.168.2.139:7654/nginx    -> REDIRECTS TO: http://192.168.2.139:7654/nginx/

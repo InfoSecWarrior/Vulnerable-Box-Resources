@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Tue Oct  8 17:57:24 2024 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 80,4655,7654,31337 -oA Pinkys-Palace-V2-nmap-version-scan-output 192.168.2.139
+# Ports scanned: TCP(4;80,4655,7654,31337) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.2.139 (192.168.2.139)	Status: Up
+Host: 192.168.2.139 (192.168.2.139)	Ports: 80/open/tcp//http//Apache httpd 2.4.25 ((Debian))/, 4655/open/tcp//ssh//OpenSSH 7.4p1 Debian 10+deb9u3 (protocol 2.0)/, 7654/open/tcp//http//nginx 1.10.3/, 31337/open/tcp//Elite?///	OS: Linux 3.2 - 4.9	Seq Index: 262	IP ID Seq: All zeros
+# Nmap done at Tue Oct  8 17:57:37 2024 -- 1 IP address (1 host up) scanned in 13.42 seconds

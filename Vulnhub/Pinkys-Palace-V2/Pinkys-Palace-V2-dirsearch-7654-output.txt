@@ -1,0 +1,3 @@
+# Dirsearch started Tue Oct  8 17:57:45 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.2.139:7654 -o Pinkys-Palace-V2-dirsearch-7654-output.txt -q
+
+301   185B   http://192.168.2.139:7654/apache    -> REDIRECTS TO: http://192.168.2.139:7654/apache/
