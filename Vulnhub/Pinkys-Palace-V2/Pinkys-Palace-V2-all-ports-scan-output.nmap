@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Tue Oct  8 17:57:21 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA Pinkys-Palace-V2-all-ports-scan-output 192.168.2.139
+Nmap scan report for 192.168.2.139 (192.168.2.139)
+Host is up (0.00038s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT      STATE SERVICE
+80/tcp    open  http
+4655/tcp  open  unknown
+7654/tcp  open  unknown
+31337/tcp open  Elite
+MAC Address: 98:22:EF:B9:89:07 (Liteon Technology)
+
+Read data files from: /usr/share/nmap
+# Nmap done at Tue Oct  8 17:57:24 2024 -- 1 IP address (1 host up) scanned in 2.96 seconds

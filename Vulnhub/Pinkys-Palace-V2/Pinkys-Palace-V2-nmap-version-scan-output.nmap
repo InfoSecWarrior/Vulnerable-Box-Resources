@@ -1,0 +1,111 @@
+# Nmap 7.94SVN scan initiated Tue Oct  8 17:57:24 2024 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 80,4655,7654,31337 -oA Pinkys-Palace-V2-nmap-version-scan-output 192.168.2.139
+Nmap scan report for 192.168.2.139 (192.168.2.139)
+Host is up (0.00048s latency).
+
+PORT      STATE SERVICE VERSION
+80/tcp    open  http    Apache httpd 2.4.25 ((Debian))
+|_http-generator: WordPress 4.9.4
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Pinky&#039;s Blog &#8211; Just another WordPress site
+|_http-server-header: Apache/2.4.25 (Debian)
+4655/tcp  open  ssh     OpenSSH 7.4p1 Debian 10+deb9u3 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 ac:e6:41:77:60:1f:e8:7c:02:13:ae:a1:33:09:94:b7 (RSA)
+|   256 3a:48:63:f9:d2:07:ea:43:78:7d:e1:93:eb:f1:d2:3a (ECDSA)
+|_  256 b1:10:03:dc:bb:f3:0d:9b:3a:e3:e4:61:03:c8:03:c7 (ED25519)
+7654/tcp  open  http    nginx 1.10.3
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-title: 403 Forbidden
+|_http-server-header: nginx/1.10.3
+31337/tcp open  Elite?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, NULL, RPCCheck: 
+|     [+] Welcome to The Daemon [+]
+|     This is soon to be our backdoor
+|     into Pinky's Palace.
+|   GetRequest: 
+|     [+] Welcome to The Daemon [+]
+|     This is soon to be our backdoor
+|     into Pinky's Palace.
+|     HTTP/1.0
+|   HTTPOptions: 
+|     [+] Welcome to The Daemon [+]
+|     This is soon to be our backdoor
+|     into Pinky's Palace.
+|     OPTIONS / HTTP/1.0
+|   Help: 
+|     [+] Welcome to The Daemon [+]
+|     This is soon to be our backdoor
+|     into Pinky's Palace.
+|     HELP
+|   RTSPRequest: 
+|     [+] Welcome to The Daemon [+]
+|     This is soon to be our backdoor
+|     into Pinky's Palace.
+|     OPTIONS / RTSP/1.0
+|   SIPOptions: 
+|     [+] Welcome to The Daemon [+]
+|     This is soon to be our backdoor
+|     into Pinky's Palace.
+|     OPTIONS sip:nm SIP/2.0
+|     Via: SIP/2.0/TCP nm;branch=foo
+|     From: <sip:nm@nm>;tag=root
+|     <sip:nm2@nm2>
+|     Call-ID: 50000
+|     CSeq: 42 OPTIONS
+|     Max-Forwards: 70
+|     Content-Length: 0
+|     Contact: <sip:nm@nm>
+|_    Accept: application/sdp
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port31337-TCP:V=7.94SVN%I=7%D=10/8%Time=67052532%P=x86_64-pc-linux-gnu%
+SF:r(NULL,59,"\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x
+SF:20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky's\x20Palac
+SF:e\.\n=>\x20\0")%r(GetRequest,6B,"\[\+\]\x20Welcome\x20to\x20The\x20Daem
+SF:on\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0in
+SF:to\x20Pinky's\x20Palace\.\n=>\x20\0GET\x20/\x20HTTP/1\.0\r\n\r\n")%r(SI
+SF:POptions,138,"\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0Thi
+SF:s\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky's\x20Pa
+SF:lace\.\n=>\x20\0OPTIONS\x20sip:nm\x20SIP/2\.0\r\nVia:\x20SIP/2\.0/TCP\x
+SF:20nm;branch=foo\r\nFrom:\x20<sip:nm@nm>;tag=root\r\nTo:\x20<sip:nm2@nm2
+SF:>\r\nCall-ID:\x2050000\r\nCSeq:\x2042\x20OPTIONS\r\nMax-Forwards:\x2070
+SF:\r\nContent-Length:\x200\r\nContact:\x20<sip:nm@nm>\r\nAccept:\x20appli
+SF:cation/sdp\r\n\r\n")%r(GenericLines,5D,"\[\+\]\x20Welcome\x20to\x20The\
+SF:x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoo
+SF:r\n\0into\x20Pinky's\x20Palace\.\n=>\x20\0\r\n\r\n")%r(HTTPOptions,6F,"
+SF:\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soo
+SF:n\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky's\x20Palace\.\n=>\x20
+SF:\0OPTIONS\x20/\x20HTTP/1\.0\r\n\r\n")%r(RTSPRequest,6F,"\[\+\]\x20Welco
+SF:me\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x
+SF:20our\x20backdoor\n\0into\x20Pinky's\x20Palace\.\n=>\x20\0OPTIONS\x20/\
+SF:x20RTSP/1\.0\r\n\r\n")%r(RPCCheck,5A,"\[\+\]\x20Welcome\x20to\x20The\x2
+SF:0Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\
+SF:n\0into\x20Pinky's\x20Palace\.\n=>\x20\0\x80")%r(DNSVersionBindReqTCP,5
+SF:9,"\[\+\]\x20Welcome\x20to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20
+SF:soon\x20to\x20be\x20our\x20backdoor\n\0into\x20Pinky's\x20Palace\.\n=>\
+SF:x20\0")%r(DNSStatusRequestTCP,59,"\[\+\]\x20Welcome\x20to\x20The\x20Dae
+SF:mon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\x20backdoor\n\0i
+SF:nto\x20Pinky's\x20Palace\.\n=>\x20\0")%r(Help,5F,"\[\+\]\x20Welcome\x20
+SF:to\x20The\x20Daemon\x20\[\+\]\n\0This\x20is\x20soon\x20to\x20be\x20our\
+SF:x20backdoor\n\0into\x20Pinky's\x20Palace\.\n=>\x20\0HELP\r\n");
+MAC Address: 98:22:EF:B9:89:07 (Liteon Technology)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 0.004 days (since Tue Oct  8 17:51:39 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.48 ms 192.168.2.139 (192.168.2.139)
+
+Read data files from: /usr/share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct  8 17:57:37 2024 -- 1 IP address (1 host up) scanned in 13.42 seconds

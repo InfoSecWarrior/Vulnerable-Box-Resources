@@ -1,0 +1,1 @@
+http://192.168.2.139:80 [200 OK] Apache[2.4.25], Country[RESERVED][ZZ], HTML5, HTTPServer[Debian Linux][Apache/2.4.25 (Debian)], IP[192.168.2.139], JQuery[1.12.4], MetaGenerator[WordPress 4.9.4], PoweredBy[WordPress,WordPress,], Script[text/javascript], Title[Pinky&#039;s Blog &#8211; Just another WordPress site], UncommonHeaders[link], WordPress[4.9.4]

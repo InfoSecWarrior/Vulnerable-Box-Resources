@@ -1,0 +1,3 @@
+[missing-sri] [http] [info] http://192.168.2.139:80 ["http://pinkydb/wp-content/themes/twentyseventeen/assets/js/global.js?ver=1.0","http://pinkydb/wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo.js?ver=2.1.2","http://pinkydb/wp-includes/js/wp-embed.min.js?ver=4.9.4","http://pinkydb/wp-includes/js/jquery/jquery.js?ver=1.12.4","http://pinkydb/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1","http://pinkydb/wp-content/themes/twentyseventeen/assets/js/skip-link-focus-fix.js?ver=1.0"]
+[waf-detect:apachegeneric] [http] [info] http://192.168.2.139:80
+[wordpress-akismet:outdated_version] [http] [info] http://192.168.2.139:80/wp-content/plugins/akismet/readme.txt ["4.0.2"] [last_version="5.3.3"]
