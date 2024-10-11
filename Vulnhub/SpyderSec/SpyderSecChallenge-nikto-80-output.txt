@@ -1,0 +1,9 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.1.5
++ Target Port: 80
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /favicon.ico: Server may leak inodes via ETags, header found with file /favicon.ico, inode: 4059, size: 1150, mtime: Tue Sep  1 11:47:17 2015. See: CVE-2003-1418: 
++ CAUVWLBE /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ TRACE /: HTTP TRACE method is active which suggests the host is vulnerable to XST. See: https://owasp.org/www-community/attacks/Cross_Site_Tracing: 
++ GET /#wp-config.php#: #wp-config.php# file found. This file contains the credentials.

@@ -269,44 +269,6 @@ td:nth-child(4) {
     font-weight: bold;
 }
 
-/* Pagination Controls */
-.pagination-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    gap: 10px;
-}
-
-.pagination-container button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: #b20002;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.pagination-container button:hover:not(:disabled),
-.pagination-container button:focus:not(:disabled) {
-    background-color: #a30000;
-    outline: none;
-}
-
-.pagination-container button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
-.pagination-container span {
-    font-size: 18px;
-    font-weight: 600;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .header {
@@ -422,4 +384,111 @@ a:hover {
 .other-tag {
     background: linear-gradient(135deg, #6c757d, #6c757d);
     border: 1px solid #6c757d;
+}
+
+/* Container for Pagination */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px; /* Increased gap for better spacing */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25px; /* Adjusted margin for better spacing */
+}
+
+/* General Button Styling */
+.pagination-button {
+    padding: 10px 16px;
+    background-color: #f7f7f7; /* Slightly brighter color for better contrast */
+    border: 1px solid #ddd;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px; /* More rounded border for modern look */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; /* Faster transition */
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better depth */
+}
+
+.pagination-button:disabled {
+    background-color: #ececec;
+    color: #aaa;
+    cursor: not-allowed;
+    border-color: #dcdcdc;
+}
+
+.pagination-button:hover:not(:disabled),
+.page-number:hover {
+    background-color: #b20002; /* Bootstrap's danger color for hover */
+    color: #fff;
+    border-color: #b20002;
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3); /* Red shadow for emphasis */
+}
+
+.pagination-button:focus-visible,
+.page-number:focus-visible {
+    outline: 3px solid rgba(220, 53, 69, 0.5); /* Matching focus outline */
+}
+
+/* Page Numbers Container */
+.pagination-pages {
+    display: flex;
+    gap: 10px; /* Increased gap for better spacing */
+}
+
+/* Page Number Buttons */
+.page-number {
+    padding: 10px 16px;
+    border-radius: 8px; /* More rounded shape */
+    background-color: #f7f7f7;
+    color: #555;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Active Page Styling */
+.page-number.active {
+    background-color: #b20002; /* Bootstrap's danger color */
+    color: #fff;
+    border-color: #b20002;
+    font-weight: 600; /* Increased font weight for emphasis */
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.4); /* Red shadow for active page */
+    cursor: default;
+}
+
+/* Hover Effect for Page Numbers */
+.page-number:hover {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+/* Responsive Pagination */
+@media (max-width: 600px) {
+    .pagination-button, .page-number {
+        padding: 8px 14px; /* Adjusted padding for small screens */
+        font-size: 12px;
+    }
+    
+    .pagination-container {
+        flex-wrap: wrap;
+        gap: 10px; /* Reduced gap for small screens */
+    }
+}
+
+/* Additional Styling for Better Visibility and Accessibility */
+.pagination-button,
+.page-number {
+    user-select: none; /* Prevent text selection */
+    text-align: center;
+}
+
+.pagination-button:active,
+.page-number:active {
+    transform: scale(0.95); /* Scale down on click for feedback */
 }

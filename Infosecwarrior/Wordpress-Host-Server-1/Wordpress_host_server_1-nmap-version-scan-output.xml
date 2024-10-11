@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sat Oct  5 10:35:45 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,443 -oA Wordpress_host_server_1-nmap-version-scan-output 192.168.1.13 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80,443 -oA Wordpress_host_server_1-nmap-version-scan-output 192.168.1.13" start="1728104745" startstr="Sat Oct  5 10:35:45 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,80,443"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1728104746"/>
+<taskend task="NSE" time="1728104746"/>
+<taskbegin task="NSE" time="1728104746"/>
+<taskend task="NSE" time="1728104746"/>
+<taskbegin task="NSE" time="1728104746"/>
+<taskend task="NSE" time="1728104746"/>
+<taskbegin task="ARP Ping Scan" time="1728104746"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.13" addrtype="ipv4"/>
+<address addr="08:00:27:75:CC:FF" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1728104746" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1728104746"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1728104746"/>
+<taskbegin task="Connect Scan" time="1728104746"/>
+<taskend task="Connect Scan" time="1728104746" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1728104746"/>
+<taskend task="Service scan" time="1728104760" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1728104764"/>
+<taskend task="NSE" time="1728104803"/>
+<taskbegin task="NSE" time="1728104803"/>
+<taskend task="NSE" time="1728104808"/>
+<taskbegin task="NSE" time="1728104808"/>
+<taskend task="NSE" time="1728104808"/>
+<host starttime="1728104746" endtime="1728104808"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.13" addrtype="ipv4"/>
+<address addr="08:00:27:75:CC:FF" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+<hostname name="192.168.1.13" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 08:af:4d:3c:91:26:85:2c:30:d1:38:d7:cd:8c:c3:1d (RSA)&#xa;  256 a8:7c:c9:a5:2d:dd:04:d0:e0:25:2a:cd:f7:68:0c:06 (ECDSA)&#xa;  256 a2:72:b9:95:7b:55:2e:57:78:26:75:d4:71:69:89:46 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCd/jFZxkSjO2puAEhP8yAteLPZUWPTA579+0+UjC+xuv6b/gRLkQp8FhDM3N8G9vwlndTv3LwC+8pOLn2WVHK8BHD38KArfMxq73LC0n3dPvEdrUZ9oP76W0Ur8eK4EFG9aXOpwik6nN4NWoPgFS7OVY7YAC2+N1wIxLKQv8swGKWvByBWS7leJ25+/8Mzu+GEXof1t0+JfnWaqTja+VMFECr30sdHaV58zn0Ecg6hXaDxouVdTcIIMFcbS+0MVXnRA3j6QRSrrSs1hNilpHyUBlPvZSV/xcSNvq+QQFEbUO045EKXg1F8k8BcA3ubKStrVv+4GNpgo8xB+E2pi3CR</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">08af4d3c9126852c30d138d7cd8cc31d</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHGpTpkf6aclzPNrhe3CqmpGp5HbBNHLiNLigBAK6ZBuAiuRJQNt3WOv27YMMUldZWEnsKKayxI/xwOVxs2ZKzE=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">a87cc9a52ddd04d0e0252acdf7680c06</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAICz6MsrwXxDc4nqdZ6BDYENIKiFy17fkibGoCgK0kdy8</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">a272b9957b552e57782675d471698946</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.6" extrainfo="(CentOS) OpenSSL/1.0.2k-fips PHP/7.3.14" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.6</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.3.14"><elem>Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.3.14</elem>
+</script><script id="http-cookie-flags" output="&#xa;  /: &#xa;    PHPSESSID: &#xa;      httponly flag not set"><table key="/">
+<table key="PHPSESSID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.6" extrainfo="(CentOS) OpenSSL/1.0.2k-fips PHP/7.3.14" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.6</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=armour infosec/organizationName=Armour infosec/stateOrProvinceName=MP/countryName=IN&#xa;Issuer: commonName=armour infosec/organizationName=Armour infosec/stateOrProvinceName=MP/countryName=IN&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2020-01-30T18:25:03&#xa;Not valid after:  2021-01-29T18:25:03&#xa;MD5:   8341:6446:1cf6:683a:08aa:61c2:9ce0:eb7c&#xa;SHA-1: 2156:34a0:2f82:7bd6:cc5c:4352:6063:125b:37bb:f046"><table key="subject">
+<elem key="commonName">armour infosec</elem>
+<elem key="countryName">IN</elem>
+<elem key="emailAddress">info@armourinfosec.com</elem>
+<elem key="localityName">indore</elem>
+<elem key="organizationName">Armour infosec</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="stateOrProvinceName">MP</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">armour infosec</elem>
+<elem key="countryName">IN</elem>
+<elem key="emailAddress">info@armourinfosec.com</elem>
+<elem key="localityName">indore</elem>
+<elem key="organizationName">Armour infosec</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="stateOrProvinceName">MP</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">D09A4B662165330159828FCA3681F0B3F2394FFED73027CAC47DDBA0EADB257786A94AE465C55222DB441F8E3B47A66076ABBF7DC5417F0B0653E66E100A3AF27781825B3498DF55E97B2393D731C298E66AD965DFA0D2DAD4411147D9602F80CE8DA583387F2F6D3E959E821DB89610D3A04E738CBE83693F00EA5F1612FA6831158875832A5C9E92DD33CC1D1C5515F8909B1D8B9E78964F980048D64947E9778FF9934B146DB82AC79007E946936E346B6955F1C367A27C9E428B6DD658E8C8C24361DB81A449627A2A549ED90509948A7675173FB48D0E4EB085F903F4C6EC6B156A8086F4E1EF787A2D1FA26D78DE55E64EE5F9613773D55411B3F41FA7</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-01-30T18:25:03</elem>
+<elem key="notAfter">2021-01-29T18:25:03</elem>
+</table>
+<elem key="md5">834164461cf6683a08aa61c29ce0eb7c</elem>
+<elem key="sha1">215634a02f827bd6cc5c43526063125b37bbf046</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDoDCCAogCCQDPxqTlmYjfnTANBgkqhkiG9w0BAQsFADCBkTELMAkGA1UEBhMC&#xa;SU4xCzAJBgNVBAgMAk1QMQ8wDQYDVQQHDAZpbmRvcmUxFzAVBgNVBAoMDkFybW91&#xa;ciBpbmZvc2VjMQswCQYDVQQLDAJJVDEXMBUGA1UEAwwOYXJtb3VyIGluZm9zZWMx&#xa;JTAjBgkqhkiG9w0BCQEWFmluZm9AYXJtb3VyaW5mb3NlYy5jb20wHhcNMjAwMTMw&#xa;MTgyNTAzWhcNMjEwMTI5MTgyNTAzWjCBkTELMAkGA1UEBhMCSU4xCzAJBgNVBAgM&#xa;Ak1QMQ8wDQYDVQQHDAZpbmRvcmUxFzAVBgNVBAoMDkFybW91ciBpbmZvc2VjMQsw&#xa;CQYDVQQLDAJJVDEXMBUGA1UEAwwOYXJtb3VyIGluZm9zZWMxJTAjBgkqhkiG9w0B&#xa;CQEWFmluZm9AYXJtb3VyaW5mb3NlYy5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IB&#xa;DwAwggEKAoIBAQDQmktmIWUzAVmCj8o2gfCz8jlP/tcwJ8rEfdug6tsld4apSuRl&#xa;xVIi20QfjjtHpmB2q799xUF/CwZT5m4QCjryd4GCWzSY31XpeyOT1zHCmOZq2WXf&#xa;oNLa1EERR9lgL4DOjaWDOH8vbT6VnoIduJYQ06BOc4y+g2k/AOpfFhL6aDEViHWD&#xa;Klyekt0zzB0cVRX4kJsdi554lk+YAEjWSUfpd4/5k0sUbbgqx5AH6UaTbjRraVXx&#xa;w2eifJ5Ci23WWOjIwkNh24GkSWJ6KlSe2QUJlIp2dRc/tI0OTrCF+QP0xuxrFWqA&#xa;hvTh73h6LR+ibXjeVeZO5flhN3PVVBGz9B+nAgMBAAEwDQYJKoZIhvcNAQELBQAD&#xa;ggEBAAFu6WPfaNsQYpt6YJaQA44cAvCVhnlb5oM5QWkODIZ9CQ8W2Seq2N7fF52A&#xa;CuH3k9OG9dwVAdx5AADqu0wqmPHNg+AayBiZvOa+YCeCSHII42J08sGo4g4oRvtE&#xa;GskuJcr0eb5ZmEppdKqnZg8DCrt61760ZZyCj0Ho+WVpghWQyJpbSIaX4C14W206&#xa;5YHHdg9HoowdUw4uuwHMxiAshdMBOcKD01vT/e+bblPyf8UGDy7cYP5ShSvEDje5&#xa;pQQWviv6DqcFu6Id351aUglH3Qq4Nnx3sJcdr6vdjVDkUZ6JvjawiJdl8gkO656q&#xa;xrs78QjenZQYvDwTOmhzRllNsO8=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-title" output="400 Bad Request"><elem key="title">400 Bad Request</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.3.14"><elem>Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.3.14</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<osmatch name="Linux 3.10 - 4.11" accuracy="97" line="63448">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="97" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.1" accuracy="97" line="68139">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:5.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16 - 4.6" accuracy="91" line="64382">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.10" accuracy="91" line="67166">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="91" line="67361">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="91" line="55372">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.4 - 3.10" accuracy="91" line="65584">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.15 - 5.8" accuracy="91" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.4" accuracy="91" line="68121">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="4294969" lastboot="Fri Aug 16 17:33:59 2024"/>
+<distance value="1"/>
+<tcpsequence index="260" difficulty="Good luck!" values="CCD1A63B,7E1F482,A7111BB0,9519AFF6,70096700,742A9F37"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="FFFF5867,FFFF58CB,FFFF592F,FFFF5993,FFFF59F7,FFFF5A5B"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.13" rtt="0.25" host="192.168.1.13"/>
+</trace>
+<times srtt="253" rttvar="24" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1728104808"/>
+<taskend task="NSE" time="1728104808"/>
+<taskbegin task="NSE" time="1728104808"/>
+<taskend task="NSE" time="1728104808"/>
+<taskbegin task="NSE" time="1728104808"/>
+<taskend task="NSE" time="1728104808"/>
+<runstats><finished time="1728104808" timestr="Sat Oct  5 10:36:48 2024" summary="Nmap done at Sat Oct  5 10:36:48 2024; 1 IP address (1 host up) scanned in 62.76 seconds" elapsed="62.76" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

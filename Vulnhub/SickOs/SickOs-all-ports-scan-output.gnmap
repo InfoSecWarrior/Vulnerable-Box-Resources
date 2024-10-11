@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Oct  5 10:29:46 2024 as: nmap -v -Pn -p- -oA SickOs-all-ports-scan-output 192.168.1.11
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.11 (192.168.1.11)	Status: Up
+Host: 192.168.1.11 (192.168.1.11)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///	Ignored State: filtered (65533)
+# Nmap done at Sat Oct  5 10:31:31 2024 -- 1 IP address (1 host up) scanned in 104.54 seconds

@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Mon Sep 30 12:09:01 2024 as: nmap -v -Pn -p- -oA SpyderSecChallenge-all-ports-scan-output 192.168.1.5
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.5 ()	Status: Up
+Host: 192.168.1.5 ()	Ports: 22/closed/tcp//ssh///, 80/open/tcp//http///	Ignored State: filtered (65533)
+# Nmap done at Mon Sep 30 12:11:26 2024 -- 1 IP address (1 host up) scanned in 145.55 seconds

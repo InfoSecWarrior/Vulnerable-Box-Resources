@@ -1,0 +1,37 @@
+# Dirsearch started Sat Oct  5 10:37:56 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://192.168.1.13:443 -o Wordpress_host_server_1-dirsearch-443-output.txt -q
+
+403   213B   https://192.168.1.13/.ht_wsr.txt
+403   216B   https://192.168.1.13/.htaccess.bak1
+403   216B   https://192.168.1.13/.htaccess.orig
+403   218B   https://192.168.1.13/.htaccess.sample
+403   216B   https://192.168.1.13/.htaccess.save
+403   217B   https://192.168.1.13/.htaccess_extra
+403   216B   https://192.168.1.13/.htaccess_orig
+403   215B   https://192.168.1.13/.htaccessOLD2
+403   214B   https://192.168.1.13/.htaccessOLD
+403   214B   https://192.168.1.13/.htaccess_sc
+403   214B   https://192.168.1.13/.htaccessBAK
+403   207B   https://192.168.1.13/.html
+403   216B   https://192.168.1.13/.htpasswd_test
+403   212B   https://192.168.1.13/.htpasswds
+403   206B   https://192.168.1.13/.htm
+403   213B   https://192.168.1.13/.httr-oauth
+403   211B   https://192.168.1.13/.user.ini
+403   210B   https://192.168.1.13/cgi-bin/
+200    19KB  https://192.168.1.13/license.txt
+301     0B   https://192.168.1.13/index.php    -> REDIRECTS TO: https://192.168.1.13/
+301     0B   https://192.168.1.13/index.php/login/    -> REDIRECTS TO: https://192.168.1.13/login/
+200     7KB  https://192.168.1.13/readme.html
+301   238B   https://192.168.1.13/wp-admin    -> REDIRECTS TO: https://192.168.1.13/wp-admin/
+200     0B   https://192.168.1.13/wp-content/
+301   240B   https://192.168.1.13/wp-content    -> REDIRECTS TO: https://192.168.1.13/wp-content/
+200    69B   https://192.168.1.13/wp-content/plugins/akismet/akismet.php
+500     0B   https://192.168.1.13/wp-content/plugins/hello.php
+200     0B   https://192.168.1.13/wp-content/uploads/
+200   710B   https://192.168.1.13/wp-content/upgrade/
+200     0B   https://192.168.1.13/wp-content/uploads/ithemes-security/backups/
+500     0B   https://192.168.1.13/wp-includes/rss-functions.php
+301   241B   https://192.168.1.13/wp-includes    -> REDIRECTS TO: https://192.168.1.13/wp-includes/
+200    45KB  https://192.168.1.13/wp-includes/
+500     3KB  https://192.168.1.13/wp-admin/setup-config.php
+200     1KB  https://192.168.1.13/wp-admin/install.php

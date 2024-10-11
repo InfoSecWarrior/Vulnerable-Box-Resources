@@ -1,0 +1,5 @@
+# Nmap 7.94 scan initiated Sat Oct  5 17:16:06 2024 as: nmap -v -Pn -p- -oA Insanity-1-all-ports-scan-output 192.168.29.33
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.29.33 ()	Status: Up
+Host: 192.168.29.33 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///	Ignored State: filtered (65532)
+# Nmap done at Sat Oct  5 17:18:33 2024 -- 1 IP address (1 host up) scanned in 147.12 seconds

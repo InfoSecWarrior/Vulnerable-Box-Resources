@@ -1,0 +1,58 @@
+# Dirsearch started Thu Oct  3 18:49:30 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.29.237:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o scream-dirsearch-80-wordlist-output.txt -q
+
+403    72B   http://192.168.29.237/%20
+403    72B   http://192.168.29.237/http%3A%2F%2Fwww
+403    72B   http://192.168.29.237/http%3A
+302    88B   http://192.168.29.237/Espa%c3%b1ol    -> REDIRECTS TO: /EspaÃ±ol/
+302    88B   http://192.168.29.237/Fran%c3%a7ais    -> REDIRECTS TO: /FranÃ§ais/
+403    72B   http://192.168.29.237/**http%3a
+403    72B   http://192.168.29.237/*http%3A
+302    88B   http://192.168.29.237/%E9%A6%96%E9%A1%B5    -> REDIRECTS TO: /é¦é¡µ/
+302    88B   http://192.168.29.237/Espa%C3%B1ol    -> REDIRECTS TO: /EspaÃ±ol/
+302    88B   http://192.168.29.237/Fran%C3%A7ais    -> REDIRECTS TO: /FranÃ§ais/
+403    72B   http://192.168.29.237/**http%3A
+403    72B   http://192.168.29.237/http%3A%2F%2Fyoutube
+302    88B   http://192.168.29.237/P%C3%A1gina_principal    -> REDIRECTS TO: /PÃ¡gina_principal/
+403    72B   http://192.168.29.237/http%3A%2F%2Fblogs
+403    72B   http://192.168.29.237/http%3A%2F%2Fblog
+403    72B   http://192.168.29.237/**http%3A%2F%2Fwww
+302    88B   http://192.168.29.237/Portugu%c3%aas    -> REDIRECTS TO: /PortuguÃªs/
+302    88B   http://192.168.29.237/Inform%c3%a1tica    -> REDIRECTS TO: /InformÃ¡tica/
+302    88B   http://192.168.29.237/%ec%bb%b4%ed%93%a8%ed%84%b0    -> REDIRECTS TO: /ì»´í¨í°/
+302    88B   http://192.168.29.237/%3FRID%3D2671    -> REDIRECTS TO: /?RID=2671/
+403    72B   http://192.168.29.237/27079%5Fclassicpeople2%2Ejpg
+302    88B   http://192.168.29.237/%d8%aa%d9%88%d8%b2%d9%8a%d8%b9%d8%a7%d8%aa-%d9%84%d9%84%d9%8a%d9%86%d9%83%d8%b3    -> REDIRECTS TO: /ØªÙØ²ÙØ¹Ø§Øª-ÙÙÙÙÙØ³/
+302    88B   http://192.168.29.237/J%c3%bcrgenHermann    -> REDIRECTS TO: /JÃ¼rgenHermann/
+302    88B   http://192.168.29.237/d%C3%A9veloppement    -> REDIRECTS TO: /dÃ©veloppement/
+302    88B   http://192.168.29.237/r%C3%A9seaux    -> REDIRECTS TO: /rÃ©seaux/
+403    72B   http://192.168.29.237/KeithRankin%20
+302    88B   http://192.168.29.237/children%2527s_tent    -> REDIRECTS TO: /children%27s_tent/
+403    72B   http://192.168.29.237/tiki%2Epng
+403    72B   http://192.168.29.237/Wanted%2e%2e%2e
+403    72B   http://192.168.29.237/How_to%2e%2e%2e
+403    72B   http://192.168.29.237/External%5CX-News
+403    72B   http://192.168.29.237/kaspersky%20
+302    88B   http://192.168.29.237/Samh%c3%a4lle    -> REDIRECTS TO: /SamhÃ¤lle/
+302    88B   http://192.168.29.237/Debatt%c3%a4mnen    -> REDIRECTS TO: /DebattÃ¤mnen/
+403    72B   http://192.168.29.237/squishdot_rss10%2Etxt
+403    72B   http://192.168.29.237/b33p%2Ehtml
+302    88B   http://192.168.29.237/T%c3%bcrk%c3%a7e    -> REDIRECTS TO: /TÃ¼rkÃ§e/
+302    88B   http://192.168.29.237/%e8%ae%a1%e7%ae%97%e6%9c%ba    -> REDIRECTS TO: /è®¡ç®æº/
+302    88B   http://192.168.29.237/%e8%bd%af%e4%bb%b6    -> REDIRECTS TO: /è½¯ä»¶/
+302    88B   http://192.168.29.237/%e3%82%b3%e3%83%b3%e3%83%94%e3%83%a5%e3%83%bc%e3%82%bf    -> REDIRECTS TO: /ã³ã³ãã¥ã¼ã¿/
+302    88B   http://192.168.29.237/%e8%bb%9f%e9%ab%94    -> REDIRECTS TO: /è»é«/
+302    88B   http://192.168.29.237/%e3%82%bd%e3%83%95%e3%83%88%e3%82%a6%e3%82%a7%e3%82%a2    -> REDIRECTS TO: /ã½ããã¦ã§ã¢/
+302    88B   http://192.168.29.237/%e9%9b%bb%e8%85%a6    -> REDIRECTS TO: /é»è¦/
+302    88B   http://192.168.29.237/%d0%9f%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%bd%d0%be%d0%b5_%d0%be%d0%b1%d0%b5%d1%81%d0%bf%d0%b5%d1%87%d0%b5%d0%bd%d0%b8%d0%b5    -> REDIRECTS TO: /ÐÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ð½Ð¾Ðµ_Ð¾Ð±ÐµÑÐ¿ÐµÑÐµÐ½Ð¸Ðµ/
+302    88B   http://192.168.29.237/%d0%9a%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d1%8b    -> REDIRECTS TO: /ÐÐ¾Ð¼Ð¿ÑÑÑÐµÑÑ/
+302    88B   http://192.168.29.237/Yaz%c4%b1l%c4%b1m    -> REDIRECTS TO: /YazÄ±lÄ±m/
+302    88B   http://192.168.29.237/help%2523drupal    -> REDIRECTS TO: /help%23drupal/
+403    72B   http://192.168.29.237/http%3A%2F%2Fcommunity
+302    88B   http://192.168.29.237/%E9%A6%96%E9%A0%81    -> REDIRECTS TO: /é¦é /
+403    72B   http://192.168.29.237/http%3A%2F%2Fradar
+302    88B   http://192.168.29.237/Strona_g%C5%82%C3%B3wna    -> REDIRECTS TO: /Strona_gÅÃ³wna/
+302    88B   http://192.168.29.237/login%3f    -> REDIRECTS TO: /login?/
+403    72B   http://192.168.29.237/Cirque%20du%20soleil%20
+403    72B   http://192.168.29.237/http%3A%2F%2Fjeremiahgrossman
+403    72B   http://192.168.29.237/http%3A%2F%2Fweblog
+403    72B   http://192.168.29.237/http%3A%2F%2Fswik
