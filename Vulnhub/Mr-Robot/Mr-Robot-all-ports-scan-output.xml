@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Oct  4 14:49:00 2024 as: nmap -v -Pn -p- -oA Mr-Robot-all-ports-scan-output 192.168.2.136 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA Mr-Robot-all-ports-scan-output 192.168.2.136" start="1728033540" startstr="Fri Oct  4 14:49:00 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1728033540"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.136" addrtype="ipv4"/>
+<address addr="08:00:27:2E:17:54" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1728033540" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1728033540"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1728033540"/>
+<taskbegin task="SYN Stealth Scan" time="1728033540"/>
+<taskprogress task="SYN Stealth Scan" time="1728033571" percent="20.08" remaining="124" etc="1728033694"/>
+<taskprogress task="SYN Stealth Scan" time="1728033601" percent="48.45" remaining="65" etc="1728033666"/>
+<taskend task="SYN Stealth Scan" time="1728033644" extrainfo="65535 total ports"/>
+<host starttime="1728033540" endtime="1728033644"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.136" addrtype="ipv4"/>
+<address addr="08:00:27:2E:17:54" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+<hostname name="192.168.2.136" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-response" count="65532" proto="tcp" ports="1-21,23-79,81-442,444-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="closed" reason="reset" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="512" rttvar="121" to="100000"/>
+</host>
+<runstats><finished time="1728033644" timestr="Fri Oct  4 14:50:44 2024" summary="Nmap done at Fri Oct  4 14:50:44 2024; 1 IP address (1 host up) scanned in 104.24 seconds" elapsed="104.24" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
