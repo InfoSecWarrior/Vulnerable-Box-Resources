@@ -1,5 +1,0 @@
-# Nmap 7.94SVN scan initiated Sun Sep 29 18:00:03 2024 as: nmap -v -Pn -p- -oA Pinkys-Palacev4-all-ports-scan-output 192.168.29.199
-# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 192.168.29.199 ()	Status: Up
-Host: 192.168.29.199 ()	Ports: 80/open/tcp//http///, 65535/open/tcp/////	Ignored State: filtered (65533)
-# Nmap done at Sun Sep 29 18:01:47 2024 -- 1 IP address (1 host up) scanned in 103.81 seconds
