@@ -1,1 +1,0 @@
-http://192.168.156.124:80 [200 OK] Apache[2.4.6], Country[RESERVED][ZZ], HTTPServer[CentOS][Apache/2.4.6 (CentOS) PHP/5.4.16], IP[192.168.156.124], PHP[5.4.16], Title[Gates of Moria], X-Powered-By[PHP/5.4.16]

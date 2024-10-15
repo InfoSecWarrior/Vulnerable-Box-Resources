@@ -1,1 +1,0 @@
-http://192.168.29.199:80 [200 OK] Country[RESERVED][ZZ], Email[license@php.net], HTTPServer[nginx/1.10.3], IP[192.168.29.199], Title[Pinky's Dev Box], nginx[1.10.3], phpinfo[7.0.30-0+deb9u1][Pinky&#039;s Linux Pinkys-Palace 4.9.110 #2 SMP Mon Sep 24 02:54:37 PDT 2018 i686 ]
