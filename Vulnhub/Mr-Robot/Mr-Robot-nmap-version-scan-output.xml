@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Oct  4 14:50:45 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,443 -oA Mr-Robot-nmap-version-scan-output 192.168.2.136 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 80,443 -oA Mr-Robot-nmap-version-scan-output 192.168.2.136" start="1728033645" startstr="Fri Oct  4 14:50:45 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="80,443"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1728033645"/>
+<taskend task="NSE" time="1728033645"/>
+<taskbegin task="NSE" time="1728033645"/>
+<taskend task="NSE" time="1728033645"/>
+<taskbegin task="NSE" time="1728033645"/>
+<taskend task="NSE" time="1728033645"/>
+<taskbegin task="ARP Ping Scan" time="1728033645"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.136" addrtype="ipv4"/>
+<address addr="08:00:27:2E:17:54" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1728033645" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1728033645"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1728033645"/>
+<taskbegin task="Connect Scan" time="1728033645"/>
+<taskend task="Connect Scan" time="1728033645" extrainfo="2 total ports"/>
+<taskbegin task="Service scan" time="1728033645"/>
+<taskend task="Service scan" time="1728033657" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1728033661"/>
+<taskend task="NSE" time="1728033666"/>
+<taskbegin task="NSE" time="1728033666"/>
+<taskend task="NSE" time="1728033666"/>
+<taskbegin task="NSE" time="1728033666"/>
+<taskend task="NSE" time="1728033666"/>
+<host starttime="1728033645" endtime="1728033666"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.136" addrtype="ipv4"/>
+<address addr="08:00:27:2E:17:54" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+<hostname name="192.168.2.136" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-favicon" output="Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="ssl-cert" output="Subject: commonName=www.example.com&#xa;Issuer: commonName=www.example.com&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2015-09-16T10:45:03&#xa;Not valid after:  2025-09-13T10:45:03&#xa;MD5:   3c16:3b19:87c3:42ad:6634:c1c9:d0aa:fb97&#xa;SHA-1: ef0c:5fa5:931a:09a5:687c:a2c2:80c4:c792:07ce:f71b"><table key="subject">
+<elem key="commonName">www.example.com</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">www.example.com</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">D9711BFDFC7BC0F2FE6C7067305BA1817AE2DBB59FC736CEC58EC3C1455346B3405C6FED13CA706C2DB002E474032435C592EC9F77D3119A99D0993DDA116388617DEB0B22C859C69CA4E8DA180649ADC7E19FC2BACB87A994CAFB329E8DBD18096A6167DF7F35D1A226DD0ED1939FD35E32A5E86D54D3293691D011ACA4E4B9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2015-09-16T10:45:03</elem>
+<elem key="notAfter">2025-09-13T10:45:03</elem>
+</table>
+<elem key="md5">3c163b1987c342ad6634c1c9d0aafb97</elem>
+<elem key="sha1">ef0c5fa5931a09a5687ca2c280c4c79207cef71b</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIBqzCCARQCCQCgSfELirADCzANBgkqhkiG9w0BAQUFADAaMRgwFgYDVQQDDA93&#xa;d3cuZXhhbXBsZS5jb20wHhcNMTUwOTE2MTA0NTAzWhcNMjUwOTEzMTA0NTAzWjAa&#xa;MRgwFgYDVQQDDA93d3cuZXhhbXBsZS5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0A&#xa;MIGJAoGBANlxG/38e8Dy/mxwZzBboYF64tu1n8c2zsWOw8FFU0azQFxv7RPKcGwt&#xa;sALkdAMkNcWS7J930xGamdCZPdoRY4hhfesLIshZxpyk6NoYBkmtx+GfwrrLh6mU&#xa;yvsyno29GAlqYWfffzXRoibdDtGTn9NeMqXobVTTKTaR0BGspOS5AgMBAAEwDQYJ&#xa;KoZIhvcNAQEFBQADgYEASfG0dH3x4/XaN6IWwaKo8XeRStjYTy/uBJEBUERlP17X&#xa;1TooZOYbvgFAqK8DPOl7EkzASVeu0mS5orfptWjOZ/UWVZujSNj7uu7QR4vbNERx&#xa;ncZrydr7FklpkIN5Bj8SYc94JI9GsrHip4mpbystXkxncoOVESjRBES/iatbkl0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E"/><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Linux 3.10 - 4.11" accuracy="97" line="63448">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16 - 4.6" accuracy="97" line="64382">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="97" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="97" line="67361">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="94" line="63862">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="92" line="67289">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4)" accuracy="91" line="66953">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.10" accuracy="91" line="67166">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.10</cpe></osclass>
+</osmatch>
+<osmatch name="Android 5.0 - 6.0.1 (Linux 3.4)" accuracy="91" line="31521">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="5.X" accuracy="91"><cpe>cpe:/o:google:android:5</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="6.X" accuracy="91"><cpe>cpe:/o:google:android:6</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="91" line="55372">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="513" lastboot="Fri Oct  4 14:42:33 2024"/>
+<distance value="1"/>
+<tcpsequence index="257" difficulty="Good luck!" values="6B38B681,1686B85A,DC7D9077,2EDA14F0,FE1453FB,EC09672C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="1F3E4,1F3FE,1F417,1F430,1F449,1F462"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.2.136" rtt="0.58" host="192.168.2.136"/>
+</trace>
+<times srtt="577" rttvar="81" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1728033666"/>
+<taskend task="NSE" time="1728033666"/>
+<taskbegin task="NSE" time="1728033666"/>
+<taskend task="NSE" time="1728033666"/>
+<taskbegin task="NSE" time="1728033666"/>
+<taskend task="NSE" time="1728033666"/>
+<runstats><finished time="1728033666" timestr="Fri Oct  4 14:51:06 2024" summary="Nmap done at Fri Oct  4 14:51:06 2024; 1 IP address (1 host up) scanned in 21.65 seconds" elapsed="21.65" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,21 @@
+- Nikto v2.5.0/
++ Target Host: 192.168.2.136
++ Target Port: 80
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /t2xdcVrL.bak: Retrieved x-powered-by header: PHP/5.5.29.
++ GET /index: Uncommon header 'tcn' found, with contents: list.
++ GET /index: Apache mod_negotiation is enabled with MultiViews, which allows attackers to easily brute force file names. The following alternatives for 'index' were found: index.html, index.php. See: http://www.wisec.it/sectou.php?id=4698ebdc59d15,https://exchange.xforce.ibmcloud.com/vulnerabilities/8275: 
++ GET /admin/: This might be interesting.
++ GET /image/: Drupal Link header found with value: <http://192.168.2.136/?p=23>; rel=shortlink. See: https://www.drupal.org/: 
++ GET /wp-links-opml.php: This WordPress script reveals the installed version.
++ GET /license.txt: License file found may identify site software.
++ GET /admin/index.html: Admin login page/section found.
++ GET /wp-login/: Cookie wordpress_test_cookie created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /wp-login/: Admin login page/section found.
++ GET /wordpress/: A Wordpress installation was found.
++ GET /wp-admin/wp-login.php: Wordpress login found.
++ GET /wordpress/wp-admin/wp-login.php: Wordpress login found.
++ GET /blog/wp-login.php: Wordpress login found.
++ GET /wp-login.php: Wordpress login found.
++ GET /wordpress/wp-login.php: Wordpress login found.
++ GET /#wp-config.php#: #wp-config.php# file found. This file contains the credentials.

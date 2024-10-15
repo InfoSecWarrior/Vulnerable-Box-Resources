@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Oct  4 14:50:45 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,443 -oA Mr-Robot-nmap-version-scan-output 192.168.2.136
+# Ports scanned: TCP(2;80,443) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.2.136 (192.168.2.136)	Status: Up
+Host: 192.168.2.136 (192.168.2.136)	Ports: 80/open/tcp//http//Apache httpd/, 443/open/tcp//ssl|http//Apache httpd/	Seq Index: 257	IP ID Seq: All zeros
+# Nmap done at Fri Oct  4 14:51:06 2024 -- 1 IP address (1 host up) scanned in 21.65 seconds
