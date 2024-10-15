@@ -1,0 +1,50 @@
+# Dirsearch started Fri Oct  4 16:54:07 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.2.136:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Mr-Robot-dirsearch-80-wordlist-output.txt -q
+
+301   236B   http://192.168.2.136/images    -> REDIRECTS TO: http://192.168.2.136/images/
+301   234B   http://192.168.2.136/blog    -> REDIRECTS TO: http://192.168.2.136/blog/
+200     0B   http://192.168.2.136/sitemap
+301     0B   http://192.168.2.136/rss    -> REDIRECTS TO: http://192.168.2.136/feed/
+302     0B   http://192.168.2.136/login    -> REDIRECTS TO: http://192.168.2.136/wp-login.php
+301   235B   http://192.168.2.136/video    -> REDIRECTS TO: http://192.168.2.136/video/
+301     0B   http://192.168.2.136/0    -> REDIRECTS TO: http://192.168.2.136/0/
+301     0B   http://192.168.2.136/feed    -> REDIRECTS TO: http://192.168.2.136/feed/
+301     0B   http://192.168.2.136/image    -> REDIRECTS TO: http://192.168.2.136/image/
+301     0B   http://192.168.2.136/atom    -> REDIRECTS TO: http://192.168.2.136/feed/atom/
+301   240B   http://192.168.2.136/wp-content    -> REDIRECTS TO: http://192.168.2.136/wp-content/
+301   235B   http://192.168.2.136/admin    -> REDIRECTS TO: http://192.168.2.136/admin/
+301   235B   http://192.168.2.136/audio    -> REDIRECTS TO: http://192.168.2.136/audio/
+200   504KB  http://192.168.2.136/intro
+200     1KB  http://192.168.2.136/wp-login
+301   233B   http://192.168.2.136/css    -> REDIRECTS TO: http://192.168.2.136/css/
+301     0B   http://192.168.2.136/rss2    -> REDIRECTS TO: http://192.168.2.136/feed/
+200     7KB  http://192.168.2.136/license
+301   241B   http://192.168.2.136/wp-includes    -> REDIRECTS TO: http://192.168.2.136/wp-includes/
+301   232B   http://192.168.2.136/js    -> REDIRECTS TO: http://192.168.2.136/js/
+301     0B   http://192.168.2.136/Image    -> REDIRECTS TO: http://192.168.2.136/Image/
+301     0B   http://192.168.2.136/rdf    -> REDIRECTS TO: http://192.168.2.136/feed/rdf/
+301     0B   http://192.168.2.136/page1    -> REDIRECTS TO: http://192.168.2.136/
+200     4KB  http://192.168.2.136/readme
+200    41B   http://192.168.2.136/robots
+302     0B   http://192.168.2.136/dashboard    -> REDIRECTS TO: http://192.168.2.136/wp-admin/
+301     0B   http://192.168.2.136/%20    -> REDIRECTS TO: http://192.168.2.136/
+404   135B   http://192.168.2.136/wp-trackback
+301   238B   http://192.168.2.136/wp-admin    -> REDIRECTS TO: http://192.168.2.136/wp-admin/
+403    94B   http://192.168.2.136/phpmyadmin
+301     0B   http://192.168.2.136/0000    -> REDIRECTS TO: http://192.168.2.136/0000/
+405    42B   http://192.168.2.136/xmlrpc
+404   208B   http://192.168.2.136/http%3A%2F%2Fwww
+301     0B   http://192.168.2.136/IMAGE    -> REDIRECTS TO: http://192.168.2.136/IMAGE/
+302     0B   http://192.168.2.136/wp-signup    -> REDIRECTS TO: http://192.168.2.136/wp-login.php?action=register
+404   212B   http://192.168.2.136/http%3A%2F%2Fyoutube
+404   210B   http://192.168.2.136/http%3A%2F%2Fblogs
+404   209B   http://192.168.2.136/http%3A%2F%2Fblog
+404   210B   http://192.168.2.136/**http%3A%2F%2Fwww
+301     0B   http://192.168.2.136/KeithRankin%20    -> REDIRECTS TO: http://192.168.2.136/KeithRankin
+301     0B   http://192.168.2.136/kaspersky%20    -> REDIRECTS TO: http://192.168.2.136/kaspersky
+301     0B   http://192.168.2.136/page01    -> REDIRECTS TO: http://192.168.2.136/
+404   214B   http://192.168.2.136/http%3A%2F%2Fcommunity
+404   210B   http://192.168.2.136/http%3A%2F%2Fradar
+301     0B   http://192.168.2.136/Cirque%20du%20soleil%20    -> REDIRECTS TO: http://192.168.2.136/Cirque%20du%20soleil
+404   221B   http://192.168.2.136/http%3A%2F%2Fjeremiahgrossman
+404   211B   http://192.168.2.136/http%3A%2F%2Fweblog
+404   209B   http://192.168.2.136/http%3A%2F%2Fswik

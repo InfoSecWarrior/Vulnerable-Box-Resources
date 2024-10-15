@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Oct  4 14:49:00 2024 as: nmap -v -Pn -p- -oA Mr-Robot-all-ports-scan-output 192.168.2.136
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.2.136 (192.168.2.136)	Status: Up
+Host: 192.168.2.136 (192.168.2.136)	Ports: 22/closed/tcp//ssh///, 80/open/tcp//http///, 443/open/tcp//https///	Ignored State: filtered (65532)
+# Nmap done at Fri Oct  4 14:50:44 2024 -- 1 IP address (1 host up) scanned in 104.24 seconds
