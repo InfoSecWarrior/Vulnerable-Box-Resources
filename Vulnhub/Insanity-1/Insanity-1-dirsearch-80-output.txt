@@ -1,0 +1,46 @@
+# Dirsearch started Wed Oct 16 12:50:10 2024 as: dirsearch.py -u http://192.168.29.33 -q
+
+403   213B   http://192.168.29.33:80/.ht_wsr.txt
+403   218B   http://192.168.29.33:80/.htaccess.sample
+403   216B   http://192.168.29.33:80/.htaccess.bak1
+403   216B   http://192.168.29.33:80/.htaccess.orig
+403   216B   http://192.168.29.33:80/.htaccess.save
+403   217B   http://192.168.29.33:80/.htaccess_extra
+403   214B   http://192.168.29.33:80/.htaccessBAK
+403   214B   http://192.168.29.33:80/.htaccess_sc
+403   214B   http://192.168.29.33:80/.htaccessOLD
+403   207B   http://192.168.29.33:80/.html
+403   206B   http://192.168.29.33:80/.htm
+403   216B   http://192.168.29.33:80/.htaccess_orig
+403   215B   http://192.168.29.33:80/.htaccessOLD2
+403   216B   http://192.168.29.33:80/.htpasswd_test
+403   212B   http://192.168.29.33:80/.htpasswds
+403   213B   http://192.168.29.33:80/.httr-oauth
+301   232B   http://192.168.29.33:80/js    -> REDIRECTS TO: http://192.168.29.33/js/
+403   211B   http://192.168.29.33:80/.user.ini
+403   210B   http://192.168.29.33:80/cgi-bin/
+301   233B   http://192.168.29.33:80/css    -> REDIRECTS TO: http://192.168.29.33/css/
+301   234B   http://192.168.29.33:80/data    -> REDIRECTS TO: http://192.168.29.33/data/
+200     1KB  http://192.168.29.33:80/data/
+301   235B   http://192.168.29.33:80/fonts    -> REDIRECTS TO: http://192.168.29.33/fonts/
+200     3KB  http://192.168.29.33:80/gulpfile.js
+301   233B   http://192.168.29.33:80/img    -> REDIRECTS TO: http://192.168.29.33/img/
+200    22KB  http://192.168.29.33:80/index.html
+200    31B   http://192.168.29.33:80/index.php
+200    31B   http://192.168.29.33:80/index.php/login/
+200     4KB  http://192.168.29.33:80/js/
+301   240B   http://192.168.29.33:80/monitoring    -> REDIRECTS TO: http://192.168.29.33/monitoring/
+302     0B   http://192.168.29.33:80/monitoring/    -> REDIRECTS TO: login.php
+301   234B   http://192.168.29.33:80/news    -> REDIRECTS TO: http://192.168.29.33/news/
+200   774B   http://192.168.29.33:80/package.json
+200    88KB  http://192.168.29.33:80/package-lock.json
+200     1KB  http://192.168.29.33:80/phpmyadmin/README
+200    15KB  http://192.168.29.33:80/phpmyadmin/doc/html/index.html
+200    27KB  http://192.168.29.33:80/phpmyadmin/ChangeLog
+301   240B   http://192.168.29.33:80/phpmyadmin    -> REDIRECTS TO: http://192.168.29.33/phpmyadmin/
+200    15KB  http://192.168.29.33:80/phpmyadmin/
+200    15KB  http://192.168.29.33:80/phpmyadmin/index.php
+200     3KB  http://192.168.29.33:80/readme.md
+200    84KB  http://192.168.29.33:80/phpinfo.php
+200     2KB  http://192.168.29.33:80/webmail/src/configtest.php
+302     0B   http://192.168.29.33:80/webmail/    -> REDIRECTS TO: src/login.php

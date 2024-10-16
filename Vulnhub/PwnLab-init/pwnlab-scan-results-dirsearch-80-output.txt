@@ -1,0 +1,31 @@
+# Dirsearch started Tue Oct 15 17:10:05 2024 as: dirsearch.py -u http://192.168.29.172/
+
+403   298B   http://192.168.29.172/.ht_wsr.txt
+403   301B   http://192.168.29.172/.htaccess.orig
+403   301B   http://192.168.29.172/.htaccess.bak1
+403   301B   http://192.168.29.172/.htaccess.save
+403   303B   http://192.168.29.172/.htaccess.sample
+403   302B   http://192.168.29.172/.htaccess_extra
+403   301B   http://192.168.29.172/.htaccess_orig
+403   299B   http://192.168.29.172/.htaccess_sc
+403   299B   http://192.168.29.172/.htaccessBAK
+403   299B   http://192.168.29.172/.htaccessOLD
+403   300B   http://192.168.29.172/.htaccessOLD2
+403   292B   http://192.168.29.172/.html
+403   291B   http://192.168.29.172/.htm
+403   297B   http://192.168.29.172/.htpasswds
+403   301B   http://192.168.29.172/.htpasswd_test
+403   298B   http://192.168.29.172/.httr-oauth
+403   291B   http://192.168.29.172/.php
+403   292B   http://192.168.29.172/.php3
+200     0B   http://192.168.29.172/config.php
+200   941B   http://192.168.29.172/images/
+301   313B   http://192.168.29.172/images    -> REDIRECTS TO: http://192.168.29.172/images/
+200   332B   http://192.168.29.172/index.php
+200   332B   http://192.168.29.172/index.php/login/
+200   250B   http://192.168.29.172/login.php
+403   300B   http://192.168.29.172/server-status
+403   301B   http://192.168.29.172/server-status/
+301   313B   http://192.168.29.172/upload    -> REDIRECTS TO: http://192.168.29.172/upload/
+200    19B   http://192.168.29.172/upload.php
+200   741B   http://192.168.29.172/upload/
