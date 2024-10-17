@@ -1,0 +1,25 @@
+# Dirsearch started Thu Oct 17 16:34:43 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.204:1337 -o Lord-Of-The-Root-1.0.1-dirsearch-1337-output.txt -q
+
+403   293B   http://192.168.1.204:1337/.ht_wsr.txt
+403   296B   http://192.168.1.204:1337/.htaccess.orig
+403   298B   http://192.168.1.204:1337/.htaccess.sample
+403   296B   http://192.168.1.204:1337/.htaccess_orig
+403   297B   http://192.168.1.204:1337/.htaccess_extra
+403   296B   http://192.168.1.204:1337/.htaccess.bak1
+403   294B   http://192.168.1.204:1337/.htaccessBAK
+403   296B   http://192.168.1.204:1337/.htaccess.save
+403   295B   http://192.168.1.204:1337/.htaccessOLD2
+403   294B   http://192.168.1.204:1337/.htaccessOLD
+403   286B   http://192.168.1.204:1337/.htm
+403   287B   http://192.168.1.204:1337/.html
+403   296B   http://192.168.1.204:1337/.htpasswd_test
+403   292B   http://192.168.1.204:1337/.htpasswds
+403   293B   http://192.168.1.204:1337/.httr-oauth
+403   286B   http://192.168.1.204:1337/.php
+403   287B   http://192.168.1.204:1337/.php3
+200   130B   http://192.168.1.204:1337/404.html
+403   294B   http://192.168.1.204:1337/.htaccess_sc
+301   321B   http://192.168.1.204:1337/images    -> REDIRECTS TO: http://192.168.1.204:1337/images/
+200   500B   http://192.168.1.204:1337/images/
+403   295B   http://192.168.1.204:1337/server-status
+403   296B   http://192.168.1.204:1337/server-status/

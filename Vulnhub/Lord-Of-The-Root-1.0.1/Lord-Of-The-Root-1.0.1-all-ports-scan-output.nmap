@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Thu Oct 17 16:32:31 2024 as: nmap -v -Pn -p- -oA Lord-Of-The-Root-1.0.1-all-ports-scan-output 192.168.1.204
+Nmap scan report for 192.168.1.204
+Host is up (0.000083s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+1337/tcp open  waste
+MAC Address: 08:00:27:F7:0D:92 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Oct 17 16:34:15 2024 -- 1 IP address (1 host up) scanned in 104.13 seconds

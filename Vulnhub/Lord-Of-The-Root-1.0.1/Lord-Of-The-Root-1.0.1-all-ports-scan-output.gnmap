@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Oct 17 16:32:31 2024 as: nmap -v -Pn -p- -oA Lord-Of-The-Root-1.0.1-all-ports-scan-output 192.168.1.204
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.204 ()	Status: Up
+Host: 192.168.1.204 ()	Ports: 22/open/tcp//ssh///, 1337/open/tcp//waste///	Ignored State: filtered (65533)
+# Nmap done at Thu Oct 17 16:34:15 2024 -- 1 IP address (1 host up) scanned in 104.13 seconds

@@ -1,0 +1,4 @@
+# Dirsearch started Thu Oct 17 16:35:41 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.204:1337 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Lord-Of-The-Root-1.0.1-dirsearch-1337-wordlist-output.txt -q
+
+301   321B   http://192.168.1.204:1337/images    -> REDIRECTS TO: http://192.168.1.204:1337/images/
+403   295B   http://192.168.1.204:1337/server-status

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Oct 17 16:32:31 2024 as: nmap -v -Pn -p- -oA Lord-Of-The-Root-1.0.1-all-ports-scan-output 192.168.1.204 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA Lord-Of-The-Root-1.0.1-all-ports-scan-output 192.168.1.204" start="1729162951" startstr="Thu Oct 17 16:32:31 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1729162951"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.204" addrtype="ipv4"/>
+<address addr="08:00:27:F7:0D:92" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="ARP Ping Scan" time="1729162951" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1729162951"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1729162951"/>
+<taskbegin task="SYN Stealth Scan" time="1729162951"/>
+<taskprogress task="SYN Stealth Scan" time="1729162982" percent="20.36" remaining="122" etc="1729163103"/>
+<taskprogress task="SYN Stealth Scan" time="1729163012" percent="48.84" remaining="64" etc="1729163076"/>
+<taskend task="SYN Stealth Scan" time="1729163055" extrainfo="65535 total ports"/>
+<host starttime="1729162951" endtime="1729163055"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.204" addrtype="ipv4"/>
+<address addr="08:00:27:F7:0D:92" addrtype="mac" vendor="Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-response" count="65533" proto="tcp" ports="1-21,23-1336,1338-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1337"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="waste" method="table" conf="3"/></port>
+</ports>
+<times srtt="83" rttvar="8" to="100000"/>
+</host>
+<runstats><finished time="1729163055" timestr="Thu Oct 17 16:34:15 2024" summary="Nmap done at Thu Oct 17 16:34:15 2024; 1 IP address (1 host up) scanned in 104.13 seconds" elapsed="104.13" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

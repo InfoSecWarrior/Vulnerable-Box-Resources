@@ -1,0 +1,15 @@
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.204:1337
+[rsync-list-modules] [javascript] [low] 192.168.1.204:1337 ["<!DOCTYPE  HTML  PUBLIC  "-//IETF//DTD  HTML  2.0//EN">  <html><head>  <title>400  Bad  Request</title>  </head><body>  <h1>Bad  Request</h1>  <p>Your  browser  sent  a  request  that  this  server  could  not  understand.<br  />  </p>  <hr>  <address>Apache/2.4.7  (Ubuntu)  Server  at  127.0.1.1  Port  1337</address>  </body></html>"]
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.204:1337
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.204:1337
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.204:1337
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.204:1337
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.204:1337
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.204:1337
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.204:1337
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.204:1337
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.204:1337
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.204:1337
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.204:1337
+[apache-detect] [http] [info] http://192.168.1.204:1337 ["Apache/2.4.7 (Ubuntu)"]
+[options-method] [http] [info] http://192.168.1.204:1337 ["GET,HEAD,POST,OPTIONS"]
