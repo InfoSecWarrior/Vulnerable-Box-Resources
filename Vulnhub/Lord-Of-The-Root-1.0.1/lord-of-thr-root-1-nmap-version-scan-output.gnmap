@@ -1,5 +1,0 @@
-# Nmap 7.94SVN scan initiated Thu Sep 26 11:40:35 2024 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 22 -oA lord-of-thr-root-1-nmap-version-scan-output 192.168.1.110
-# Ports scanned: TCP(1;22) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 192.168.1.110 (192.168.1.110)	Status: Up
-Host: 192.168.1.110 (192.168.1.110)	Ports: 22/open/tcp//ssh//OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.3 (Ubuntu Linux; protocol 2.0)/	Seq Index: 258	IP ID Seq: All zeros
-# Nmap done at Thu Sep 26 11:40:44 2024 -- 1 IP address (1 host up) scanned in 9.74 seconds
