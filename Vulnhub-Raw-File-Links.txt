@@ -63,3 +63,5 @@ https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/h
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/SickOs/SickOs-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Mr-Robot/Mr-Robot-nmap-version-scan-output.xml
 https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Vulnerable-Docker1/VulnerableDocker1-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub/Kioptrix-2014-%235/Kioptrix-2014-%235-nmap-version-scan-output.xml
+https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Other/Insanity-1/Insanity-1-nmap-version-scan-output.xml
