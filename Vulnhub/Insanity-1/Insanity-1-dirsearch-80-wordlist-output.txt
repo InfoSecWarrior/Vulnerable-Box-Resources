@@ -1,0 +1,12 @@
+# Dirsearch started Wed Oct 16 12:40:11 2024 as: dirsearch.py -u http://192.168.29.33/ -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+
+301   233B   http://192.168.29.33:80/img    -> REDIRECTS TO: http://192.168.29.33/img/
+301   234B   http://192.168.29.33:80/data    -> REDIRECTS TO: http://192.168.29.33/data/
+301   234B   http://192.168.29.33:80/news    -> REDIRECTS TO: http://192.168.29.33/news/
+301   233B   http://192.168.29.33:80/css    -> REDIRECTS TO: http://192.168.29.33/css/
+301   232B   http://192.168.29.33:80/js    -> REDIRECTS TO: http://192.168.29.33/js/
+301   237B   http://192.168.29.33:80/webmail    -> REDIRECTS TO: http://192.168.29.33/webmail/
+301   235B   http://192.168.29.33:80/fonts    -> REDIRECTS TO: http://192.168.29.33/fonts/
+301   240B   http://192.168.29.33:80/monitoring    -> REDIRECTS TO: http://192.168.29.33/monitoring/
+200    57B   http://192.168.29.33:80/licence
+301   240B   http://192.168.29.33:80/phpmyadmin    -> REDIRECTS TO: http://192.168.29.33/phpmyadmin/
