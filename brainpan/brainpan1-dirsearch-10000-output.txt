@@ -1,0 +1,4 @@
+# Dirsearch started Thu Oct 24 13:08:29 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.31.163:10000 -o brainpan1-dirsearch-10000-output.txt -q
+
+301     0B   http://192.168.31.163:10000/bin    -> REDIRECTS TO: /bin/
+200   230B   http://192.168.31.163:10000/bin/

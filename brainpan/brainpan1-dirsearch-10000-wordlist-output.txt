@@ -1,0 +1,3 @@
+# Dirsearch started Thu Oct 24 13:08:36 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.31.163:10000 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o brainpan1-dirsearch-10000-wordlist-output.txt -q
+
+301     0B   http://192.168.31.163:10000/bin    -> REDIRECTS TO: /bin/
