@@ -1,0 +1,34 @@
+# Nmap 7.94SVN scan initiated Thu Nov 21 20:53:05 2024 as: /usr/lib/nmap/nmap --privileged -v -Pn -sT -sV -sC -A -O -p 22,80 -oA DC-6-nmap-version-scan-output 192.168.1.7
+Nmap scan report for 192.168.1.7
+Host is up (0.044s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.4p1 Debian 10+deb9u6 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 3e:52:ce:ce:01:b6:94:eb:7b:03:7d:be:08:7f:5f:fd (RSA)
+|   256 3c:83:65:71:dd:73:d7:23:f8:83:0d:e3:46:bc:b5:6f (ECDSA)
+|_  256 41:89:9e:85:ae:30:5b:e0:8f:a4:68:71:06:b4:15:ee (ED25519)
+80/tcp open  http    Apache httpd 2.4.25 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.25 (Debian)
+|_http-title: Did not follow redirect to http://wordy/
+MAC Address: 50:C2:E8:D4:57:D7 (Cloud Network Technology Singapore PTE.)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+Uptime guess: 194.179 days (since Sat May 11 16:34:59 2024)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=255 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   44.29 ms 192.168.1.7
+
+Read data files from: /usr/share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Nov 21 20:53:15 2024 -- 1 IP address (1 host up) scanned in 10.92 seconds
