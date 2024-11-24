@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sun Nov 24 21:59:45 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA Wallaby-Nightmare-all-ports-scan-output 192.168.1.9
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.9 ()	Status: Up
+Host: 192.168.1.9 ()	Ports: 22/open/tcp//ssh///, 6667/filtered/tcp//irc///, 60080/open/tcp/////	Ignored State: closed (65532)
+# Nmap done at Sun Nov 24 21:59:47 2024 -- 1 IP address (1 host up) scanned in 2.35 seconds

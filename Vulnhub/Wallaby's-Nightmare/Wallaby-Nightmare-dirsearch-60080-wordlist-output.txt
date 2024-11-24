@@ -1,0 +1,4 @@
+# Dirsearch started Sun Nov 24 22:03:42 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.9:60080 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Wallaby-Nightmare-dirsearch-60080-wordlist-output.txt -q
+
+301   324B   http://192.168.1.9:60080/javascript    -> REDIRECTS TO: http://192.168.1.9:60080/javascript/
+403   302B   http://192.168.1.9:60080/server-status
