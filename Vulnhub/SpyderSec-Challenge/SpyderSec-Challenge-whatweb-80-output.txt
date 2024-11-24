@@ -1,1 +1,0 @@
-http://192.168.1.10:80 [200 OK] Apache, Cookies[URI], Country[RESERVED][ZZ], HTML5, HTTPServer[Apache], HttpOnly[URI], IP[192.168.1.10], Script, Title[SpyderSec | Challenge]

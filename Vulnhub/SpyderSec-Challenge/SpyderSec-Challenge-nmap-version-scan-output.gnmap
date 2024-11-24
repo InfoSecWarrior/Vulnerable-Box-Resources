@@ -1,5 +1,0 @@
-# Nmap 7.94SVN scan initiated Sun Nov 24 22:04:35 2024 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA SpyderSec-Challenge-nmap-version-scan-output 192.168.1.10
-# Ports scanned: TCP(1;80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 192.168.1.10 ()	Status: Up
-Host: 192.168.1.10 ()	Ports: 80/open/tcp//http//Apache httpd/	Seq Index: 254	IP ID Seq: All zeros
-# Nmap done at Sun Nov 24 22:04:45 2024 -- 1 IP address (1 host up) scanned in 10.75 seconds
