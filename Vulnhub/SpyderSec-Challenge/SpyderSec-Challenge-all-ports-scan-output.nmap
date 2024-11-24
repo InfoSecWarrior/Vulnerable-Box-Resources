@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Sun Nov 24 22:02:07 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA SpyderSec-Challenge-all-ports-scan-output 192.168.1.10
+Nmap scan report for 192.168.1.10
+Host is up (0.00020s latency).
+Not shown: 65381 filtered tcp ports (no-response), 152 filtered tcp ports (host-prohibited)
+PORT   STATE  SERVICE
+22/tcp closed ssh
+80/tcp open   http
+MAC Address: 08:00:27:12:56:AA (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/share/nmap
+# Nmap done at Sun Nov 24 22:04:34 2024 -- 1 IP address (1 host up) scanned in 147.28 seconds
