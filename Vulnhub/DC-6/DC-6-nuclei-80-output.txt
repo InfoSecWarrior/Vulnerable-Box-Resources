@@ -1,0 +1,13 @@
+[waf-detect:apachegeneric] [http] [info] http://192.168.1.7:80
+[wordpress-user-role-editor:outdated_version] [http] [info] http://192.168.1.7:80/wp-content/plugins/user-role-editor/readme.txt ["4.24"] [last_version="4.64.2"]
+[wordpress-xmlrpc-listmethods] [http] [info] http://192.168.1.7:80/xmlrpc.php
+[ssh-sha1-hmac-algo] [javascript] [info] 192.168.1.7:22
+[ssh-auth-methods] [javascript] [info] 192.168.1.7:22 ["["publickey","password"]"]
+[ssh-password-auth] [javascript] [info] 192.168.1.7:22
+[ssh-server-enumeration] [javascript] [info] 192.168.1.7:22 ["SSH-2.0-OpenSSH_7.4p1 Debian-10+deb9u6"]
+[CVE-2023-48795] [javascript] [medium] 192.168.1.7:22 ["Vulnerable to Terrapin"]
+[openssh-detect] [tcp] [info] 192.168.1.7:22 ["SSH-2.0-OpenSSH_7.4p1 Debian-10+deb9u6"]
+[wp-xmlrpc-pingback-detection] [http] [info] http://192.168.1.7:80/xmlrpc.php
+[wp-license-file] [http] [info] http://192.168.1.7:80/license.txt
+[wordpress-readme-file] [http] [info] http://192.168.1.7:80/readme.html
+[wordpress-login] [http] [info] http://192.168.1.7:80/wp-login.php

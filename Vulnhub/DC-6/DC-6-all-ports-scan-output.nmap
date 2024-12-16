@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Thu Nov 21 20:52:56 2024 as: /usr/lib/nmap/nmap --privileged -v -Pn -p- -oA DC-6-all-ports-scan-output 192.168.1.7
+Nmap scan report for 192.168.1.7
+Host is up (0.022s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+MAC Address: 50:C2:E8:D4:57:D7 (Cloud Network Technology Singapore PTE.)
+
+Read data files from: /usr/share/nmap
+# Nmap done at Thu Nov 21 20:53:04 2024 -- 1 IP address (1 host up) scanned in 8.65 seconds
