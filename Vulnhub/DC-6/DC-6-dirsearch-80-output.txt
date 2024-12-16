@@ -1,0 +1,44 @@
+# Dirsearch started Thu Nov 21 20:53:33 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.1.7:80 -o DC-6-dirsearch-80-output.txt -q
+
+403   297B   http://192.168.1.7/.ht_wsr.txt
+403   300B   http://192.168.1.7/.htaccess.bak1
+403   302B   http://192.168.1.7/.htaccess.sample
+403   300B   http://192.168.1.7/.htaccess.orig
+403   300B   http://192.168.1.7/.htaccess.save
+403   298B   http://192.168.1.7/.htaccessOLD
+403   301B   http://192.168.1.7/.htaccess_extra
+403   300B   http://192.168.1.7/.htaccess_orig
+403   298B   http://192.168.1.7/.htaccess_sc
+403   298B   http://192.168.1.7/.htaccessBAK
+403   299B   http://192.168.1.7/.htaccessOLD2
+403   291B   http://192.168.1.7/.html
+403   300B   http://192.168.1.7/.htpasswd_test
+403   290B   http://192.168.1.7/.htm
+403   297B   http://192.168.1.7/.httr-oauth
+403   290B   http://192.168.1.7/.php
+403   291B   http://192.168.1.7/.php3
+403   296B   http://192.168.1.7/.htpasswds
+200    18KB  http://192.168.1.7/index.php
+404    51KB  http://192.168.1.7/index.php/login/
+200     7KB  http://192.168.1.7/license.txt
+200     3KB  http://192.168.1.7/readme.html
+403   300B   http://192.168.1.7/server-status/
+403   299B   http://192.168.1.7/server-status
+301   313B   http://192.168.1.7/wp-admin    -> REDIRECTS TO: http://192.168.1.7/wp-admin/
+301   315B   http://192.168.1.7/wp-content    -> REDIRECTS TO: http://192.168.1.7/wp-content/
+200     0B   http://192.168.1.7/wp-content/
+400     1B   http://192.168.1.7/wp-admin/admin-ajax.php
+403   322B   http://192.168.1.7/wp-content/plugins/akismet/admin.php
+403   324B   http://192.168.1.7/wp-content/plugins/akismet/akismet.php
+500     0B   http://192.168.1.7/wp-content/plugins/hello.php
+301   316B   http://192.168.1.7/wp-includes    -> REDIRECTS TO: http://192.168.1.7/wp-includes/
+200     0B   http://192.168.1.7/wp-config.php
+200     4KB  http://192.168.1.7/wp-includes/
+500     0B   http://192.168.1.7/wp-includes/rss-functions.php
+200     0B   http://192.168.1.7/wp-cron.php
+200     1KB  http://192.168.1.7/wp-login.php
+302     0B   http://192.168.1.7/wp-signup.php    -> REDIRECTS TO: http://wordy/wp-login.php?action=register
+500     3KB  http://192.168.1.7/wp-admin/setup-config.php
+302     0B   http://192.168.1.7/wp-admin/    -> REDIRECTS TO: http://wordy/wp-login.php?redirect_to=http%3A%2F%2F192.168.1.7%2Fwp-admin%2F&reauth=1
+200   517B   http://192.168.1.7/wp-admin/install.php
+405    42B   http://192.168.1.7/xmlrpc.php
