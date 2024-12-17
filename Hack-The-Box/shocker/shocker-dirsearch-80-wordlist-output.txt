@@ -1,0 +1,3 @@
+# Dirsearch started Thu Dec 12 04:41:18 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.56:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o shocker-dirsearch-80-wordlist-output.txt -q
+
+403   299B   http://10.10.10.56/server-status

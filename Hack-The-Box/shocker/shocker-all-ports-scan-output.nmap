@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Thu Dec 12 04:31:39 2024 as: nmap -v -Pn -p- -oA shocker-all-ports-scan-output 10.10.10.56
+Nmap scan report for 10.10.10.56 (10.10.10.56)
+Host is up (0.077s latency).
+Not shown: 65459 closed tcp ports (reset), 74 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+2222/tcp open  EtherNetIP-1
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Dec 12 04:33:38 2024 -- 1 IP address (1 host up) scanned in 119.72 seconds
