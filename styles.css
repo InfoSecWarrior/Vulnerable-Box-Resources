@@ -375,9 +375,9 @@ a:hover {
 }
 
 /* HTB specific styling */
-.htb-tag {
-    background: linear-gradient(135deg, #66ec0c, #66ec0c);
-    border: 1px solid #66ec0c;
+.hack-the-box-tag, .htb-tag, .Hack-The-Box-tag {
+    background: linear-gradient(135deg, #9fef00, #9fef00);
+    border: 1px solid #63c423;
 }
 
 /* Other platform styling */

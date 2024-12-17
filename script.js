@@ -7,7 +7,7 @@ const itemsPerPage = 20;
 const dataSources = {
     Vulnhub: 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Vulnhub-Raw-File-Links.txt',
     Infosecwarrior: 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Infosecwarrior-Raw-File-Links.txt',
-    HTB: 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/HTB-Raw-File-Links.txt',
+    "Hack-The-Box": 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/HTB-Raw-File-Links.txt',
     Other: 'https://raw.githubusercontent.com/InfoSecWarrior/Vulnerable-Box-Resources/refs/heads/main/Other-Raw-Files-Links.txt'
 };
 
@@ -92,6 +92,7 @@ function parseXML(xmlText, url, platform) {
         const fullFileName = urlSegments[urlSegments.length - 1];
         const fileBase = fullFileName.replace('-nmap-version-scan-output.xml', '');
 
+        const normalizedPlatform = platform === "Hack-The-Box" ? "htb" : platform.toLowerCase();
         const hosts = xmlDoc.querySelectorAll('host');
 
         hosts.forEach(host => {
@@ -117,7 +118,7 @@ function parseXML(xmlText, url, platform) {
                     machineDir: encodedDirectoryName,
                     machineFile: machineFileName,
                     fileBaseName: fileBase,
-                    platform
+                    platform: normalizedPlatform
                 });
             }
         });
@@ -275,12 +276,13 @@ function renderMachines(data, query = '') {
         
         // Determine the appropriate platform class based on item.platform
         let platformClass = '';
-        switch(item.platform.toLowerCase()) {
+        switch (item.platform.toLowerCase()) {
             case 'vulnhub':
                 platformClass = 'vulnhub-tag';
                 break;
             case 'htb':
-                platformClass = 'htb-tag';
+            case 'hack-the-box':
+                platformClass = 'hack-the-box-tag';
                 break;
             case 'infosecwarrior':
                 platformClass = 'infosecwarrior-tag';
@@ -289,13 +291,15 @@ function renderMachines(data, query = '') {
                 platformClass = 'other-tag';
         }
 
+        // Convert platform value for URL
+        const platformForURL = item.platform === 'htb' ? 'Hack-The-Box' : item.platform;
+
         // Machine name link
-        const machineNameLink = `<a href="machine.html?dir=${encodeURIComponent(item.machineDir)}&file=${encodeURIComponent(item.machineFile)}&platform=${encodeURIComponent(item.platform)}" class="machine-name">
+        const machineNameLink = `<a href="machine.html?dir=${encodeURIComponent(item.machineDir)}&file=${encodeURIComponent(item.machineFile)}&platform=${encodeURIComponent(platformForURL)}" class="machine-name">
             ${highlight(item.machineName, lowerQuery)}
         </a>`;
 
-        const platformTag = `<span class="platform-tag ${platformClass}" data-platform="${item.platform}">${item.platform}</span>`;
-
+	const platformTag = `<span class="platform-tag ${platformClass}" data-platform="${item.platform}">${item.platform === 'htb' ? 'Hack-The-Box' : item.platform}</span>`;
 
         const portDetails = item.portDetails
             .split(', ')
@@ -341,6 +345,7 @@ function renderMachines(data, query = '') {
 
     console.log(`Rendered ${data.length} machine entries.`);
 }
+
 
 // Escape RegExp special characters
 function escapeRegExp(string) {
@@ -393,7 +398,7 @@ function handleSearch(query) {
         cachedFilteredData = [];
         currentPage = 1;
         renderPage(currentPage, parsedData);
-        return; // No need to update count when search is cleared
+        return;
     }
 
     const patterns = {
@@ -414,7 +419,8 @@ function handleSearch(query) {
             filteredData = filteredData.filter(item => {
                 switch (key) {
                     case 'platform':
-                        return item.platform.toLowerCase() === match[1].toLowerCase();
+                        const normalizedPlatform = match[1] === 'htb' ? 'htb' : match[1];
+                        return item.platform.toLowerCase() === normalizedPlatform;
                     case 'machine':
                         return item.machineName.toLowerCase().includes(match[1].toLowerCase());
                     case 'port':
