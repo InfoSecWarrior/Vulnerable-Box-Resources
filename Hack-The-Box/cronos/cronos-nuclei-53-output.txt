@@ -1,0 +1,2 @@
+[CVE-2023-48795] [javascript] [medium] 10.10.10.13:22 ["Vulnerable to Terrapin"]
+[ssh-auth-methods] [javascript] [info] 10.10.10.13:22 ["["publickey","password"]"]
