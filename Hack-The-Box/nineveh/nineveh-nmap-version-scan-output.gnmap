@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Dec 13 17:17:16 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,443 -oA nineveh-nmap-version-scan-output 10.10.10.43
+# Ports scanned: TCP(2;80,443) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.43 (10.10.10.43)	Status: Up
+Host: 10.10.10.43 (10.10.10.43)	Ports: 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/, 443/open/tcp//ssl|http//Apache httpd 2.4.18 ((Ubuntu))/	Seq Index: 261	IP ID Seq: All zeros
+# Nmap done at Fri Dec 13 17:17:42 2024 -- 1 IP address (1 host up) scanned in 25.36 seconds

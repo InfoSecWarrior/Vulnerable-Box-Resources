@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sat Dec 14 15:16:08 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,443 -oA valentine-nmap-version-scan-output 10.10.10.79 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80,443 -oA valentine-nmap-version-scan-output 10.10.10.79" start="1734169568" startstr="Sat Dec 14 15:16:08 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,80,443"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1734169568"/>
+<taskend task="NSE" time="1734169568"/>
+<taskbegin task="NSE" time="1734169568"/>
+<taskend task="NSE" time="1734169568"/>
+<taskbegin task="NSE" time="1734169568"/>
+<taskend task="NSE" time="1734169568"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734169568"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734169568"/>
+<taskbegin task="Connect Scan" time="1734169568"/>
+<taskend task="Connect Scan" time="1734169568" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1734169568"/>
+<taskend task="Service scan" time="1734169581" extrainfo="3 services on 1 host"/>
+<taskbegin task="Traceroute" time="1734169586"/>
+<taskend task="Traceroute" time="1734169586"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734169586"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734169586"/>
+<taskbegin task="NSE" time="1734169586"/>
+<taskend task="NSE" time="1734169592"/>
+<taskbegin task="NSE" time="1734169592"/>
+<taskend task="NSE" time="1734169592"/>
+<taskbegin task="NSE" time="1734169592"/>
+<taskend task="NSE" time="1734169592"/>
+<host starttime="1734169568" endtime="1734169592"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.79" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.79" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="5.9p1 Debian 5ubuntu1.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:5.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 96:4c:51:42:3c:ba:22:49:20:4d:3e:ec:90:cc:fd:0e (DSA)&#xa;  2048 46:bf:1f:cc:92:4f:1d:a0:42:b3:d2:16:a8:58:31:33 (RSA)&#xa;  256 e6:2b:25:19:cb:7e:54:cb:0a:b9:ac:16:98:c6:7d:a9 (ECDSA)"><table>
+<elem key="type">ssh-dss</elem>
+<elem key="fingerprint">964c51423cba2249204d3eec90ccfd0e</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAIMeSqrDdAOhxf7P1IDtdRqun0pO9pmUi+474hX6LHkDgC9dzcvEGyMB/cuuCCjfXn6QDd1n16dSE2zeKKjYT9RVCXJqfYvz/ROm82p0JasEdg1z6QHTeAv70XX6cVQAjAMQoUUdF7WWKWjQuAknb4uowunpQ0yGvy72rbFkSTmlAAAAFQDwWVA5vTpfj5pUCUNFyvnhy3TdcQAAAIBFqVHk74mIT3PWKSpWcZvllKCGg5rGCCE5B3jRWEbRo8CPRkwyPdi/hSaoiQYhvCIkA2CWFuAeedsZE6zMFVFVSsHxeMe55aCQclfMH4iuUZWrg0y5QREuRbGFM6DATJJFkg+PXG/OsLsba/BP8UfcuPM+WGWKxjuaoJt6jeD8iQAAAIBg9rgf8NoRfGqzi+3ndUCo9/m+T18pn+ORbCKdFGq8Ecs4QLeaXPMRIpCol11n6va090EISDPetHcaMaMcYOsFqO841K0O90BV8DhyU4JYBjcpslT+A2X+ahj2QJVGqZJSlusNAQ9vplWxofFONa+IUSGl1UsGjY0QGsA5l5ohfQ==</elem>
+<elem key="bits">1024</elem>
+</table>
+<table>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">46bf1fcc924f1da042b3d216a8583133</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDRkMHjbGnQ7uoYx7HPJoW9Up+q0NriI5g5xAs1+0gYBVtBqPxi86gPtXbMHGSrpTiX854nsOPWA8UgfBOSZ2TgWeFvmcnRfUKJG9GR8sdIUvhKxq6ZOtUePereKr0bvFwMSl8Qtmo+KcRWvuxKS64RgUem2TVIWqStLJoPxt8iDPPM7929EoovpooSjwPfqvEhRMtq+KKlqU6PrJD6HshGdjLjABYY1ljfKakgBfWic+Y0KWKa9qdeBF09S7WlaUBWJ5SutKlNSwcRBBVbL4ZFcHijdlXCvfVwSVMkiqY7x4V4McsNpIzHyysZUADy8A6tbfSgopaeR2UN4QRgM1dX</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">e62b2519cb7e54cb0ab9ac1698c67da9</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJ+pCNI5Xv8P96CmyDi/EIvyL0LVZY2xAUJcA0G9rFdLJnIhjvmYuxoCQDsYl+LEiKQee5RRw9d+lgH3Fm5O9XI=</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.22" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.22</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-server-header" output="Apache/2.2.22 (Ubuntu)"><elem>Apache/2.2.22 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.22" extrainfo="(Ubuntu)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.22</cpe></service><script id="http-server-header" output="Apache/2.2.22 (Ubuntu)"><elem>Apache/2.2.22 (Ubuntu)</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="ssl-date" output="2024-12-14T09:32:11+00:00; -14m21s from scanner time."><elem key="delta">-861.0</elem>
+<elem key="date">2024-12-14T09:32:11+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=valentine.htb/organizationName=valentine.htb/stateOrProvinceName=FL/countryName=US&#xa;Issuer: commonName=valentine.htb/organizationName=valentine.htb/stateOrProvinceName=FL/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2018-02-06T00:45:25&#xa;Not valid after:  2019-02-06T00:45:25&#xa;MD5:   a413:c4f0:b145:2154:fb54:b2de:c7a9:809d&#xa;SHA-1: 2303:80da:60e7:bde7:2ba6:76dd:5214:3c3c:6f53:01b1"><table key="subject">
+<elem key="commonName">valentine.htb</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">valentine.htb</elem>
+<elem key="stateOrProvinceName">FL</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">valentine.htb</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">valentine.htb</elem>
+<elem key="stateOrProvinceName">FL</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C32817ACF8192A41D28A3FCE791C19F4FB48FAD32F336B6FC89CF9A3BF1966A8A18DF922620EE19E45501F592FACBA95CFAF23AA54C964400F25A8C5DDCBC41C870CD273122E7776CF8948FB394AE1F53D40C3B59A8268F68D8CB24D3F4F0309C0BAAD745D5364B0576A440F1FB7F6FB0588AEB2C1CADEA6FBC5667746297560D0AF91DD59303A0B8F8521E55DC8221C56EA7A2F0D275CE2A7D62E5546178722D51B66622585FA091C386D1B149EA97AE0314D4326CEB091E6D09B48D8CF4F79F9AF1244D465E4FF774756854D3BE9ADDB4DEB2D2997F85A9A99C3AD171A6C73A4041FE5D58EA8C7A620AE8AE050B8F1B2D248DE7DB3890DB6E86DC7A3825E97</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">DC:D6:5B:22:6C:72:E0:13:C8:55:B2:7C:B4:76:61:EB:F5:4F:8D:F9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">DC:D6:5B:22:6C:72:E0:13:C8:55:B2:7C:B4:76:61:EB:F5:4F:8D:F9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2018-02-06T00:45:25</elem>
+<elem key="notAfter">2019-02-06T00:45:25</elem>
+</table>
+<elem key="md5">a413c4f0b1452154fb54b2dec7a9809d</elem>
+<elem key="sha1">230380da60e7bde72ba676dd52143c3c6f5301b1</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDZzCCAk+gAwIBAgIJAIXsbfXFhLHyMA0GCSqGSIb3DQEBBQUAMEoxCzAJBgNV&#xa;BAYTAlVTMQswCQYDVQQIDAJGTDEWMBQGA1UECgwNdmFsZW50aW5lLmh0YjEWMBQG&#xa;A1UEAwwNdmFsZW50aW5lLmh0YjAeFw0xODAyMDYwMDQ1MjVaFw0xOTAyMDYwMDQ1&#xa;MjVaMEoxCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJGTDEWMBQGA1UECgwNdmFsZW50&#xa;aW5lLmh0YjEWMBQGA1UEAwwNdmFsZW50aW5lLmh0YjCCASIwDQYJKoZIhvcNAQEB&#xa;BQADggEPADCCAQoCggEBAMMoF6z4GSpB0oo/znkcGfT7SPrTLzNrb8ic+aO/GWao&#xa;oY35ImIO4Z5FUB9ZL6y6lc+vI6pUyWRADyWoxd3LxByHDNJzEi53ds+JSPs5SuH1&#xa;PUDDtZqCaPaNjLJNP08DCcC6rXRdU2SwV2pEDx+39vsFiK6ywcrepvvFZndGKXVg&#xa;0K+R3VkwOguPhSHlXcgiHFbqei8NJ1zip9YuVUYXhyLVG2ZiJYX6CRw4bRsUnql6&#xa;4DFNQybOsJHm0JtI2M9PefmvEkTUZeT/d0dWhU076a3bTestKZf4WpqZw60XGmxz&#xa;pAQf5dWOqMemIK6K4FC48bLSSN59s4kNtuhtx6OCXpcCAwEAAaNQME4wHQYDVR0O&#xa;BBYEFNzWWyJscuATyFWyfLR2Yev1T435MB8GA1UdIwQYMBaAFNzWWyJscuATyFWy&#xa;fLR2Yev1T435MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEBACc3NjB7&#xa;cHUXjTxwdeFxkY0EFYPPy3EiHftGVLpiczrEQ7NiHTLGQ6apvxdlShBBhKWRaU+N&#xa;XGhsDkvBLUWJ3DSWwWM4pG9qmWPT241OCaaiIkVT4KcjRIc+x+91GWYNQvvdnFLO&#xa;5CfrRGkFHwJT1E6vGXJejx6nhTmis88ByQ9g9D2NgcHENfQPAW1by7ONkqiXtV3S&#xa;q56X7q0yLQdSTe63dEzK8eSTN1KWUXDoNRfAYfHttJqKg2OUqUDVWkNzmUiIe4sP&#xa;csAwIHShdX+Jd8E5oty5C07FJrzVtW+Yf4h8UHKLuJ4E8BYbkxkc5vDcXnKByeJa&#xa;gRSFfyZx/VqBh9c=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="42378"/>
+<osmatch name="Linux 2.6.32 - 3.5" accuracy="95" line="56784">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Nokia N9 phone (Linux 2.6.32)" accuracy="95" line="59947">
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="phone" vendor="Nokia" osfamily="embedded" accuracy="95"><cpe>cpe:/h:nokia:n9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64583">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.38 - 3.0" accuracy="94" line="58080">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.0" accuracy="94" line="62415">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.38 - 2.6.39" accuracy="94" line="58057">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.39" accuracy="94" line="58181">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.39</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.10" accuracy="93" line="56580">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.9" accuracy="93" line="56827">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="93" line="55868">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="814" lastboot="Sat Dec 14 15:02:58 2024"/>
+<distance value="2"/>
+<tcpsequence index="262" difficulty="Good luck!" values="EABE9ABD,7DE93895,AE8FA1E6,C47267C3,D9180505,D629BDAB"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="23C89,23C89,23CB6,23CB6,23CE3,23CE5"/>
+<hostscript><script id="clock-skew" output="-14m21s"><elem key="mean">-861</elem>
+<elem key="median">-861</elem>
+<elem key="stddev">0</elem>
+<elem key="count">1</elem>
+</script></hostscript><trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="244.87" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.79" rtt="244.95" host="10.10.10.79"/>
+</trace>
+<times srtt="167939" rttvar="60820" to="411219"/>
+</host>
+<taskbegin task="NSE" time="1734169592"/>
+<taskend task="NSE" time="1734169592"/>
+<taskbegin task="NSE" time="1734169592"/>
+<taskend task="NSE" time="1734169592"/>
+<taskbegin task="NSE" time="1734169592"/>
+<taskend task="NSE" time="1734169592"/>
+<runstats><finished time="1734169592" timestr="Sat Dec 14 15:16:32 2024" summary="Nmap done at Sat Dec 14 15:16:32 2024; 1 IP address (1 host up) scanned in 25.04 seconds" elapsed="25.04" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

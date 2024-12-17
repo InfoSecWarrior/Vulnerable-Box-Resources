@@ -1,0 +1,21 @@
+# Dirsearch started Thu Dec 12 04:34:40 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.56:80 -o shocker-dirsearch-80-output.txt -q
+
+403   297B   http://10.10.10.56/.ht_wsr.txt
+403   300B   http://10.10.10.56/.htaccess.bak1
+403   302B   http://10.10.10.56/.htaccess.sample
+403   300B   http://10.10.10.56/.htaccess.orig
+403   300B   http://10.10.10.56/.htaccess.save
+403   300B   http://10.10.10.56/.htaccess_orig
+403   290B   http://10.10.10.56/.htm
+403   298B   http://10.10.10.56/.htaccessOLD
+403   299B   http://10.10.10.56/.htaccessOLD2
+403   300B   http://10.10.10.56/.htpasswd_test
+403   291B   http://10.10.10.56/.html
+403   298B   http://10.10.10.56/.htaccess_sc
+403   301B   http://10.10.10.56/.htaccess_extra
+403   297B   http://10.10.10.56/.httr-oauth
+403   298B   http://10.10.10.56/.htaccessBAK
+403   296B   http://10.10.10.56/.htpasswds
+403   294B   http://10.10.10.56/cgi-bin/
+403   299B   http://10.10.10.56/server-status
+403   300B   http://10.10.10.56/server-status/

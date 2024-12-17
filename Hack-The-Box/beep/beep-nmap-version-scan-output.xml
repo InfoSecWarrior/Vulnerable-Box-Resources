@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Dec 13 10:35:12 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,25,80,110,111,143,443,793,993,995,3306,4190,4445,4559,5038,10000 -oA beep-nmap-version-scan-output 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,25,80,110,111,143,443,793,993,995,3306,4190,4445,4559,5038,10000 -oA beep-nmap-version-scan-output 10.10.10.7" start="1734066312" startstr="Fri Dec 13 10:35:12 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="16" services="22,25,80,110-111,143,443,793,993,995,3306,4190,4445,4559,5038,10000"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1734066312"/>
+<taskend task="NSE" time="1734066312"/>
+<taskbegin task="NSE" time="1734066312"/>
+<taskend task="NSE" time="1734066312"/>
+<taskbegin task="NSE" time="1734066312"/>
+<taskend task="NSE" time="1734066312"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734066312"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734066312"/>
+<taskbegin task="Connect Scan" time="1734066312"/>
+<taskend task="Connect Scan" time="1734066312" extrainfo="16 total ports"/>
+<taskbegin task="Service scan" time="1734066312"/>
+<taskend task="Service scan" time="1734066473" extrainfo="16 services on 1 host"/>
+<taskbegin task="Traceroute" time="1734066478"/>
+<taskend task="Traceroute" time="1734066478"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734066478"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734066478"/>
+<taskbegin task="NSE" time="1734066478"/>
+<taskend task="NSE" time="1734066522"/>
+<taskbegin task="NSE" time="1734066522"/>
+<taskend task="NSE" time="1734066710"/>
+<taskbegin task="NSE" time="1734066710"/>
+<taskend task="NSE" time="1734066710"/>
+<host starttime="1734066312" endtime="1734066710"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.7" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="4.3" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.3</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 ad:ee:5a:bb:69:37:fb:27:af:b8:30:72:a0:f9:6f:53 (DSA)&#xa;  2048 bc:c6:73:59:13:a1:8a:4b:55:07:50:f6:65:1d:6d:0d (RSA)"><table>
+<elem key="type">ssh-dss</elem>
+<elem key="bits">1024</elem>
+<elem key="fingerprint">adee5abb6937fb27afb83072a0f96f53</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAI04jN+Sn7/9f2k+5UteAWn8KKj3FRGuF4LyeDmo/xxuHgSsdCjYuWtNS8m7stqgNH5edUu8vZ0pzF/quX5kphWg/UOz9weGeGyzde5lfb8epRlTQ2kfbP00l+kq9ztuWaXOsZQGcSR9iKE4lLRJhRCLYPaEbuxKnYz4WhAv4yD5AAAAFQDXgQ9BbvoxeDahe/ksAac2ECqflwAAAIEAiGdIue6mgTfdz/HikSp8DB6SkVh4xjpTTZE8L/HOVpTUYtFYKYj9eG0W1WYo+lGg6SveATlp3EE/7Y6BqdtJNm0RfR8kihoqSL0VzKT7myerJWmP2EavMRPjkbXw32fVBdCGjBqMgDl/QSEn2NNDu8OAyQUVBEHrE4xPGI825qgAAACANnqx2XdVmY8agjD7eFLmS+EovCIRz2+iE+5chaljGD/27OgpGcjdZNN+xm85PPFjUKJQuWmwMVTQRdza6TSp9vvQAgFh3bUtTV3dzDCuoR1D2Ybj9p/bMPnyw62jgBPxj5lVd27LTBi8IAH2fZnct7794Y3Ge+5r4Pm8Qbrpy68=</elem>
+</table>
+<table>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">bcc6735913a18a4b550750f6651d6d0d</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAQEA4SXumrUtyO/pcRLwmvnF25NG/ozHsxSVNRmTwEf7AYubgpAo4aUuvhZXg5iymwTcZd6vm46Y+TX39NQV/yT6ilAEtLbrj1PLjJl+UTS8HDIKl6QgIb1b3vuEjbVjDj1LTq0Puzx52Es0/86WJNRVwh4c9vN8MtYteMb/dE2Azk0SQMtpBP+4Lul4kQrNwl/qjg+lQ7XE+NU7Va22dpEjLv/TjHAKImQu2EqPsC99sePp8PP5LdNbda6KHsSrZXnK9hqpxnwattPHT19D94NHVmMHfea9gXN3NCI3NVfDHQsxhqVtR/LiZzpbKHldFU0lfZYH1aTdBfxvMLrVhasZcw==</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" beep.localdomain" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="beep.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, ENHANCEDSTATUSCODES, 8BITMIME, DSN"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.3" hostname="127.0.0.1" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.3</cpe></service><script id="http-title" output="Did not follow redirect to https://10.10.10.7/"><elem key="redirect_url">https://10.10.10.7/</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.2.3 (CentOS)"><elem>Apache/2.2.3 (CentOS)</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Cyrus pop3d" version="2.3.7-Invoca-RPM-2.3.7-7.el5_6.4" hostname="example.com" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server:2.3.7-invoca-rpm-2.3.7-7.el5_6.4</cpe></service><script id="pop3-capabilities" output="TOP LOGIN-DELAY(0) PIPELINING AUTH-RESP-CODE STLS IMPLEMENTATION(Cyrus POP3 server v2) USER RESP-CODES APOP EXPIRE(NEVER) UIDL"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rpcbind" version="2" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2            111/tcp   rpcbind&#xa;  100000  2            111/udp   rpcbind&#xa;  100024  1            790/udp   status&#xa;  100024  1            793/tcp   status&#xa;"><table key="100000">
+<table key="udp">
+<table key="version">
+<elem>2</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+<table key="tcp">
+<table key="version">
+<elem>2</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+</table>
+<table key="100024">
+<table key="tcp">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">793</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">790</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Cyrus imapd" version="2.3.7-Invoca-RPM-2.3.7-7.el5_6.4" hostname="example.com" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server:2.3.7-invoca-rpm-2.3.7-7.el5_6.4</cpe></service><script id="imap-capabilities" output="LIST-SUBSCRIBED Completed ID RIGHTS=kxte ACL CHILDREN X-NETSCAPE OK ANNOTATEMORE UNSELECT URLAUTHA0001 LISTEXT IDLE IMAP4 RENAME UIDPLUS CONDSTORE MULTIAPPEND CATENATE IMAP4rev1 STARTTLS SORT THREAD=ORDEREDSUBJECT ATOMIC NAMESPACE SORT=MODSEQ LITERAL+ THREAD=REFERENCES BINARY NO QUOTA MAILBOX-REFERRALS"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.3" extrainfo="(CentOS)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.3</cpe></service><script id="ssl-date" output="2024-12-13T04:54:29+00:00; -14m14s from scanner time."><elem key="date">2024-12-13T04:54:29+00:00</elem>
+<elem key="delta">-854.0</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Elastix - Login page"><elem key="title">Elastix - Login page</elem>
+</script><script id="http-server-header" output="Apache/2.2.3 (CentOS)"><elem>Apache/2.2.3 (CentOS)</elem>
+</script><script id="ssl-cert" output="Subject: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=-&#45;&#xa;Issuer: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=-&#45;&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2017-04-07T08:22:08&#xa;Not valid after:  2018-04-07T08:22:08&#xa;MD5:   621a:82b6:cf7e:1afa:5284:1c91:60c8:fbc8&#xa;SHA-1: 800a:c6e7:065e:1198:0187:c452:0d9b:18ef:e557:a09f"><table key="subject">
+<elem key="commonName">localhost.localdomain</elem>
+<elem key="countryName">-&#45;</elem>
+<elem key="emailAddress">root@localhost.localdomain</elem>
+<elem key="localityName">SomeCity</elem>
+<elem key="organizationName">SomeOrganization</elem>
+<elem key="organizationalUnitName">SomeOrganizationalUnit</elem>
+<elem key="stateOrProvinceName">SomeState</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">localhost.localdomain</elem>
+<elem key="countryName">-&#45;</elem>
+<elem key="emailAddress">root@localhost.localdomain</elem>
+<elem key="localityName">SomeCity</elem>
+<elem key="organizationName">SomeOrganization</elem>
+<elem key="organizationalUnitName">SomeOrganizationalUnit</elem>
+<elem key="stateOrProvinceName">SomeState</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">B77B81E12D83CD83027878A956FD4A667A63DF2BF6B799C69F4AAC7F0093F7E0E0B44F08FF71935AA853CB3967CD8DCAB89A6895FBEF5AA090A48F86A90E4C88088D5E9ACACF69176B940FDC097727DE7BA97CE81C7E9055E2FA8D7EAA2B12AA4908EED3E1B72967A607BB1B51B4FEE0449884D72B4014FDA30EFB6F32A11693</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">BF:CE:2C:9E:E1:25:57:9D:94:BE:46:93:47:D8:BE:8E:9B:66:4A:96</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:BF:CE:2C:9E:E1:25:57:9D:94:BE:46:93:47:D8:BE:8E:9B:66:4A:96&#xa;DirName:/C=-&#45;/ST=SomeState/L=SomeCity/O=SomeOrganization/OU=SomeOrganizationalUnit/CN=localhost.localdomain/emailAddress=root@localhost.localdomain&#xa;serial:7D:55</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2017-04-07T08:22:08</elem>
+<elem key="notAfter">2018-04-07T08:22:08</elem>
+</table>
+<elem key="md5">621a82b6cf7e1afa52841c9160c8fbc8</elem>
+<elem key="sha1">800ac6e7065e11980187c4520d9b18efe557a09f</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEDjCCA3egAwIBAgICfVUwDQYJKoZIhvcNAQEFBQAwgbsxCzAJBgNVBAYTAi0t&#xa;MRIwEAYDVQQIEwlTb21lU3RhdGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQK&#xa;ExBTb21lT3JnYW5pemF0aW9uMR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxV&#xa;bml0MR4wHAYDVQQDExVsb2NhbGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0B&#xa;CQEWGnJvb3RAbG9jYWxob3N0LmxvY2FsZG9tYWluMB4XDTE3MDQwNzA4MjIwOFoX&#xa;DTE4MDQwNzA4MjIwOFowgbsxCzAJBgNVBAYTAi0tMRIwEAYDVQQIEwlTb21lU3Rh&#xa;dGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQKExBTb21lT3JnYW5pemF0aW9u&#xa;MR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxVbml0MR4wHAYDVQQDExVsb2Nh&#xa;bGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0BCQEWGnJvb3RAbG9jYWxob3N0&#xa;LmxvY2FsZG9tYWluMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3e4HhLYPN&#xa;gwJ4eKlW/UpmemPfK/a3mcafSqx/AJP34OC0Twj/cZNaqFPLOWfNjcq4mmiV++9a&#xa;oJCkj4apDkyICI1emsrPaRdrlA/cCXcn3nupfOgcfpBV4vqNfqorEqpJCO7T4bcp&#xa;Z6YHuxtRtP7gRJiE1ytAFP2jDvtvMqEWkwIDAQABo4IBHTCCARkwHQYDVR0OBBYE&#xa;FL/OLJ7hJVedlL5Gk0fYvo6bZkqWMIHpBgNVHSMEgeEwgd6AFL/OLJ7hJVedlL5G&#xa;k0fYvo6bZkqWoYHBpIG+MIG7MQswCQYDVQQGEwItLTESMBAGA1UECBMJU29tZVN0&#xa;YXRlMREwDwYDVQQHEwhTb21lQ2l0eTEZMBcGA1UEChMQU29tZU9yZ2FuaXphdGlv&#xa;bjEfMB0GA1UECxMWU29tZU9yZ2FuaXphdGlvbmFsVW5pdDEeMBwGA1UEAxMVbG9j&#xa;YWxob3N0LmxvY2FsZG9tYWluMSkwJwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9z&#xa;dC5sb2NhbGRvbWFpboICfVUwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOB&#xa;gQA+ah2n+bomON94KgibPEVPpmW+8N6Sq3f4qDG54urTnPD39GrYHvMwA3B2ang9&#xa;l3zta5tXYAVj22kiNM2si4bOMQsa6FZR4AEzWCq9tZS/vTCCRaT79mWj3bUvtDkV&#xa;2ScJ9I/7b4/cPHDOrAKdzdKxEE2oM0cwKxSnYBJk/4aJIw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-favicon" output="Unknown favicon MD5: 80DCC71362B27C7D0E608B0890C05E9F"/></port>
+<port protocol="tcp" portid="793"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Cyrus imapd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server</cpe></service><script id="imap-capabilities" output="CAPABILITY"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Cyrus pop3d" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server</cpe></service></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql</cpe></service></port>
+<port protocol="tcp" portid="4190"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="sieve" product="Cyrus timsieved" version="2.3.7-Invoca-RPM-2.3.7-7.el5_6.4" extrainfo="included w/cyrus imap" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server:2.3.7-invoca-rpm-2.3.7-7.el5_6.4</cpe></service></port>
+<port protocol="tcp" portid="4445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="upnotifyp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4559"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="hylafax" product="HylaFAX" version="4.3.10" hostname="localhost" ostype="Unix" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="5038"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="asterisk" product="Asterisk Call Manager" version="1.1" method="probed" conf="10"><cpe>cpe:/a:digium:asterisk:1.1</cpe></service></port>
+<port protocol="tcp" portid="10000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="MiniServ" version="1.570" extrainfo="Webmin httpd" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; Charset=iso-8859-1)."></script><script id="http-favicon" output="Unknown favicon MD5: 74F7F6F633A027FA3EA36F05004C9341"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="44264"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="49155">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6.18</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.27" accuracy="96" line="53348">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6.27</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.24" accuracy="96" line="59159">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.30" accuracy="96" line="59280">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.20-1 (Fedora Core 5)" accuracy="95" line="50696">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.20-1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.30" accuracy="95" line="53807">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.30</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 - 2.6.12" accuracy="95" line="58406">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5-7.283-smp (SuSE Enterprise Server 9, x86)" accuracy="95" line="58484">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9-22.0.1.EL (CentOS 4.4)" accuracy="95" line="59388">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="95" line="50253">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="2179" lastboot="Fri Dec 13 10:05:31 2024"/>
+<distance value="2"/>
+<tcpsequence index="201" difficulty="Good luck!" values="A4931F04,A51AC45E,A49FAB48,A4B1DDB7,A4D83B93,A4EED85C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="1DAC77,1DAC9E,1DAD0C,1DADA2,1DADCA,1DAE37"/>
+<hostscript><script id="clock-skew" output="-14m14s"><elem key="count">1</elem>
+<elem key="median">-854</elem>
+<elem key="mean">-854</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="197.30" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.7" rtt="197.36" host="10.10.10.7"/>
+</trace>
+<times srtt="168428" rttvar="61438" to="414180"/>
+</host>
+<taskbegin task="NSE" time="1734066710"/>
+<taskend task="NSE" time="1734066710"/>
+<taskbegin task="NSE" time="1734066710"/>
+<taskend task="NSE" time="1734066710"/>
+<taskbegin task="NSE" time="1734066710"/>
+<taskend task="NSE" time="1734066710"/>
+<runstats><finished time="1734066710" timestr="Fri Dec 13 10:41:50 2024" summary="Nmap done at Fri Dec 13 10:41:50 2024; 1 IP address (1 host up) scanned in 398.15 seconds" elapsed="398.15" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

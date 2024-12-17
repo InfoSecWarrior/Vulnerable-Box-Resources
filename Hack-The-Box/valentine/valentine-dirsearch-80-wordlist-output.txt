@@ -1,0 +1,7 @@
+# Dirsearch started Sat Dec 14 15:25:29 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.79:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o valentine-dirsearch-80-wordlist-output.txt -q
+
+301   240B   http://10.10.10.79/dev    -> REDIRECTS TO: http://10.10.10.79/dev/
+200   336B   http://10.10.10.79/encode
+200   334B   http://10.10.10.79/decode
+200   150KB  http://10.10.10.79/omg
+403   236B   http://10.10.10.79/server-status

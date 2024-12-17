@@ -1,0 +1,1 @@
+[samba-detect] [javascript] [info] 10.10.10.3:139 ["Samba 3.0.20-Debian"]

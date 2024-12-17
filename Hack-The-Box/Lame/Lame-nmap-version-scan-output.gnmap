@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Mon Dec  9 14:04:20 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,139,445,3632 -oA Lame-nmap-version-scan-output 10.10.10.3
+# Ports scanned: TCP(5;21-22,139,445,3632) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.3 (10.10.10.3)	Status: Up
+Host: 10.10.10.3 (10.10.10.3)	Ports: 21/open/tcp//ftp//vsftpd 2.3.4/, 22/open/tcp//ssh//OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 3.0.20-Debian (workgroup: WORKGROUP)/, 3632/open/tcp//distccd//distccd v1 ((GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4))/	Seq Index: 208	IP ID Seq: All zeros
+# Nmap done at Mon Dec  9 14:05:32 2024 -- 1 IP address (1 host up) scanned in 72.72 seconds

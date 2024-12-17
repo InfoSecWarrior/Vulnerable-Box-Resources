@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Dec 12 04:31:39 2024 as: nmap -v -Pn -p- -oA shocker-all-ports-scan-output 10.10.10.56
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.56 (10.10.10.56)	Status: Up
+Host: 10.10.10.56 (10.10.10.56)	Ports: 80/open/tcp//http///, 2222/open/tcp//EtherNetIP-1///
+# Nmap done at Thu Dec 12 04:33:38 2024 -- 1 IP address (1 host up) scanned in 119.72 seconds

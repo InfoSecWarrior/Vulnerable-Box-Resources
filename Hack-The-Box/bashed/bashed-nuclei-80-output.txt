@@ -1,0 +1,17 @@
+[waf-detect:apachegeneric] [http] [info] http://10.10.10.68:80
+[tech-detect:font-awesome] [http] [info] http://10.10.10.68:80
+[tech-detect:google-font-api] [http] [info] http://10.10.10.68:80
+[options-method] [http] [info] http://10.10.10.68:80 ["POST,OPTIONS,GET,HEAD"]
+[old-copyright] [http] [info] http://10.10.10.68:80 ["\u00a9 2018"]
+[http-missing-security-headers:clear-site-data] [http] [info] http://10.10.10.68:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://10.10.10.68:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://10.10.10.68:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://10.10.10.68:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://10.10.10.68:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://10.10.10.68:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://10.10.10.68:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://10.10.10.68:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://10.10.10.68:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://10.10.10.68:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://10.10.10.68:80
+[apache-detect] [http] [info] http://10.10.10.68:80 ["Apache/2.4.18 (Ubuntu)"]

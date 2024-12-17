@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Sat Dec 14 15:02:17 2024 as: nmap -v -Pn -p- -oA valentine-all-ports-scan-output 10.10.10.79
+Increasing send delay for 10.10.10.79 from 5 to 10 due to 16 out of 51 dropped probes since last increase.
+Nmap scan report for 10.10.10.79 (10.10.10.79)
+Host is up (0.087s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Dec 14 15:16:07 2024 -- 1 IP address (1 host up) scanned in 830.35 seconds

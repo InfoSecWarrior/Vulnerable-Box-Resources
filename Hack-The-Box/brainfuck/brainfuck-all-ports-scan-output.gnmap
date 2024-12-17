@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Dec 12 02:18:26 2024 as: nmap -v -Pn -p- -oA brainfuck-all-ports-scan-output 10.10.10.17
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.17 (10.10.10.17)	Status: Up
+Host: 10.10.10.17 (10.10.10.17)	Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///, 110/open/tcp//pop3///, 143/open/tcp//imap///, 443/open/tcp//https///	Ignored State: filtered (65530)
+# Nmap done at Thu Dec 12 02:21:37 2024 -- 1 IP address (1 host up) scanned in 190.85 seconds

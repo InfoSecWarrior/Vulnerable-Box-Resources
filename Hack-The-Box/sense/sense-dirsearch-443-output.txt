@@ -1,0 +1,78 @@
+# Dirsearch started Sat Dec 14 10:40:55 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://10.10.10.60:443 -o sense-dirsearch-443-output.txt -q
+
+403   345B   https://10.10.10.60/.dep.inc
+403   345B   https://10.10.10.60/.env~
+403   345B   https://10.10.10.60/.gitignore~
+403   345B   https://10.10.10.60/.inc
+403   345B   https://10.10.10.60/.ssh/id_rsa.priv~
+403   345B   https://10.10.10.60/.ssh/id_rsa.key~
+403   345B   https://10.10.10.60/.ssh/id_rsa.pub~
+403   345B   https://10.10.10.60/.ssh/id_rsa~
+403   345B   https://10.10.10.60/.ssh/know_hosts~
+403   345B   https://10.10.10.60/.travis.yml~
+403   345B   https://10.10.10.60/_config.inc
+403   345B   https://10.10.10.60/admin/includes/configure.php~
+403   345B   https://10.10.10.60/adovbs.inc
+403   345B   https://10.10.10.60/app/config/database.yml~
+403   345B   https://10.10.10.60/auth.inc
+403   345B   https://10.10.10.60/backup.inc
+403   345B   https://10.10.10.60/backups.inc
+403   345B   https://10.10.10.60/cabal.project.local~
+200   199B   https://10.10.10.60/changelog.txt
+301     0B   https://10.10.10.60/classes    -> REDIRECTS TO: https://10.10.10.60/classes/
+403   345B   https://10.10.10.60/common.inc
+403   345B   https://10.10.10.60/conf.inc.php~
+403   345B   https://10.10.10.60/config.inc
+403   345B   https://10.10.10.60/config.inc.php~
+403   345B   https://10.10.10.60/config.inc~
+403   345B   https://10.10.10.60/config.local.php~
+403   345B   https://10.10.10.60/config.php.inc
+403   345B   https://10.10.10.60/config.php.inc~
+403   345B   https://10.10.10.60/config.php~
+403   345B   https://10.10.10.60/config/config.inc
+403   345B   https://10.10.10.60/config/database.yml~
+403   345B   https://10.10.10.60/config/db.inc
+403   345B   https://10.10.10.60/config/settings.inc
+403   345B   https://10.10.10.60/configuration.inc.php~
+403   345B   https://10.10.10.60/configuration.php~
+403   345B   https://10.10.10.60/configuration~
+403   345B   https://10.10.10.60/config~
+403   345B   https://10.10.10.60/conf~
+403   345B   https://10.10.10.60/connect.inc
+301     0B   https://10.10.10.60/css    -> REDIRECTS TO: https://10.10.10.60/css/
+403   345B   https://10.10.10.60/database.inc
+403   345B   https://10.10.10.60/database.yml~
+403   345B   https://10.10.10.60/database_credentials.inc
+403   345B   https://10.10.10.60/db.inc
+403   345B   https://10.10.10.60/debug.inc
+403   345B   https://10.10.10.60/dump.inc
+200     6KB  https://10.10.10.60/edit.php
+200     1KB  https://10.10.10.60/favicon.ico
+403   345B   https://10.10.10.60/globals.inc
+403   345B   https://10.10.10.60/inc/config.inc
+403   345B   https://10.10.10.60/includes/configure.php~
+301     0B   https://10.10.10.60/includes    -> REDIRECTS TO: https://10.10.10.60/includes/
+403   345B   https://10.10.10.60/includes/bootstrap.inc
+403   345B   https://10.10.10.60/includes/adovbs.inc
+403   345B   https://10.10.10.60/index.inc
+200   329B   https://10.10.10.60/index.html
+403   345B   https://10.10.10.60/index.php~
+403   345B   https://10.10.10.60/index~
+403   345B   https://10.10.10.60/install.inc
+301     0B   https://10.10.10.60/installer    -> REDIRECTS TO: https://10.10.10.60/installer/
+301     0B   https://10.10.10.60/javascript    -> REDIRECTS TO: https://10.10.10.60/javascript/
+200     6KB  https://10.10.10.60/license.php
+403   345B   https://10.10.10.60/localsettings.php~
+403   345B   https://10.10.10.60/php.ini~
+403   345B   https://10.10.10.60/revision.inc
+403   345B   https://10.10.10.60/sample.txt~
+403   345B   https://10.10.10.60/settings.php~
+403   345B   https://10.10.10.60/sql.inc
+200     6KB  https://10.10.10.60/stats.php
+200     6KB  https://10.10.10.60/status.php
+200     6KB  https://10.10.10.60/system.php
+301     0B   https://10.10.10.60/themes    -> REDIRECTS TO: https://10.10.10.60/themes/
+403   345B   https://10.10.10.60/wp-config.inc
+403   345B   https://10.10.10.60/wp-config.php.inc
+403   345B   https://10.10.10.60/wp-config.php~
+200   384B   https://10.10.10.60/xmlrpc.php

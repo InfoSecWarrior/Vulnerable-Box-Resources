@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Dec 14 12:18:17 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,25,80,110,119,4555 -oA solidstate-nmap-version-scan-output 10.10.10.51
+# Ports scanned: TCP(6;22,25,80,110,119,4555) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.51 (10.10.10.51)	Status: Up
+Host: 10.10.10.51 (10.10.10.51)	Ports: 22/open/tcp//ssh//OpenSSH 7.4p1 Debian 10+deb9u1 (protocol 2.0)/, 25/open/tcp//smtp//JAMES smtpd 2.3.2/, 80/open/tcp//http//Apache httpd 2.4.25 ((Debian))/, 110/open/tcp//pop3?///, 119/open/tcp//nntp?///, 4555/open/tcp//rsip?///	Seq Index: 264	IP ID Seq: All zeros
+# Nmap done at Sat Dec 14 12:23:18 2024 -- 1 IP address (1 host up) scanned in 301.39 seconds

@@ -1,0 +1,56 @@
+# Nmap 7.94SVN scan initiated Thu Dec 12 02:21:37 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,25,110,143,443 -oA brainfuck-nmap-version-scan-output 10.10.10.17
+Nmap scan report for 10.10.10.17 (10.10.10.17)
+Host is up (0.076s latency).
+
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 7.2p2 Ubuntu 4ubuntu2.1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 94:d0:b3:34:e9:a5:37:c5:ac:b9:80:df:2a:54:a5:f0 (RSA)
+|   256 6b:d5:dc:15:3a:66:7a:f4:19:91:5d:73:85:b2:4c:b2 (ECDSA)
+|_  256 23:f5:a3:33:33:9d:76:d5:f2:ea:69:71:e3:4e:8e:02 (ED25519)
+25/tcp  open  smtp     Postfix smtpd
+|_smtp-commands: brainfuck, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
+110/tcp open  pop3     Dovecot pop3d
+|_pop3-capabilities: SASL(PLAIN) RESP-CODES UIDL USER TOP CAPA PIPELINING AUTH-RESP-CODE
+143/tcp open  imap     Dovecot imapd
+|_imap-capabilities: LOGIN-REFERRALS ID IMAP4rev1 capabilities more post-login AUTH=PLAINA0001 have listed Pre-login OK LITERAL+ IDLE ENABLE SASL-IR
+443/tcp open  ssl/http nginx 1.10.0 (Ubuntu)
+| tls-alpn: 
+|_  http/1.1
+|_http-title: Welcome to nginx!
+| http-methods: 
+|_  Supported Methods: GET HEAD
+| tls-nextprotoneg: 
+|_  http/1.1
+|_http-server-header: nginx/1.10.0 (Ubuntu)
+| ssl-cert: Subject: commonName=brainfuck.htb/organizationName=Brainfuck Ltd./stateOrProvinceName=Attica/countryName=GR
+| Subject Alternative Name: DNS:www.brainfuck.htb, DNS:sup3rs3cr3t.brainfuck.htb
+| Issuer: commonName=brainfuck.htb/organizationName=Brainfuck Ltd./stateOrProvinceName=Attica/countryName=GR
+| Public Key type: rsa
+| Public Key bits: 3072
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2017-04-13T11:19:29
+| Not valid after:  2027-04-11T11:19:29
+| MD5:   cbf1:6899:96aa:f7a0:0565:0fc0:9491:7f20
+|_SHA-1: f448:e798:a817:5580:879c:8fb8:ef0e:2d3d:c656:cb66
+|_ssl-date: TLS randomness does not represent time
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|specialized|storage-misc|phone
+Running (JUST GUESSING): Linux 3.X|4.X (90%), Crestron 2-Series (86%), HP embedded (85%), Google Android 4.X (85%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:crestron:2_series cpe:/h:hp:p2000_g3 cpe:/o:google:android:4.0
+Aggressive OS guesses: Linux 3.10 - 4.11 (90%), Linux 3.13 (90%), Linux 3.13 or 4.2 (90%), Linux 3.16 (90%), Linux 3.2 - 4.9 (90%), Linux 4.2 (90%), Linux 4.4 (90%), Linux 4.8 (90%), Linux 4.9 (89%), Linux 3.12 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 199.640 days (since Sun May 26 11:01:17 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host:  brainfuck; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   75.46 ms 10.10.14.1 (10.10.14.1)
+2   76.00 ms 10.10.10.17 (10.10.10.17)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec 12 02:22:35 2024 -- 1 IP address (1 host up) scanned in 58.14 seconds

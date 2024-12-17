@@ -1,0 +1,5 @@
+# Dirsearch started Fri Dec 13 17:23:52 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://10.10.10.43:443 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o nineveh-dirsearch-443-wordlist-output.txt -q
+
+301   309B   https://10.10.10.43/db    -> REDIRECTS TO: https://10.10.10.43/db/
+403   300B   https://10.10.10.43/server-status
+301   319B   https://10.10.10.43/secure_notes    -> REDIRECTS TO: https://10.10.10.43/secure_notes/

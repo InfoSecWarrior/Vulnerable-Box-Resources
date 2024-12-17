@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Dec 12 05:14:02 2024 as: nmap -v -Pn -p- -oA nibbles-all-ports-scan-output 10.10.10.75 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA nibbles-all-ports-scan-output 10.10.10.75" start="1733994842" startstr="Thu Dec 12 05:14:02 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1733994842"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1733994842"/>
+<taskbegin task="SYN Stealth Scan" time="1733994842"/>
+<taskprogress task="SYN Stealth Scan" time="1733994873" percent="22.03" remaining="110" etc="1733994983"/>
+<taskprogress task="SYN Stealth Scan" time="1733994903" percent="48.41" remaining="66" etc="1733994968"/>
+<taskend task="SYN Stealth Scan" time="1733994932" extrainfo="65535 total ports"/>
+<host starttime="1733994842" endtime="1733994932"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.75" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.75" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65446">
+<extrareasons reason="reset" count="65446" proto="tcp" ports="1-21,23-79,81-375,377-2927,2929-3309,3311-4329,4331-6037,6039-6872,6874-7018,7020-10069,10071-10694,10696-11197,11199-12173,12175-12325,12327-14433,14435-14799,14801-16407,16409-17553,17555-17661,17663-18352,18354-18539,18541-19652,19654-19663,19665-20703,20705-21335,21337-22931,22933-23966,23968-23988,23990-25093,25095-25272,25274-26526,26528-26825,26827-27554,27556-27919,27921-28162,28164-28190,28192-28346,28348-29336,29338-29695,29697-30812,30814-31942,31944-32069,32071-32770,32772-35127,35129-35351,35353-36185,36187-37145,37147-38437,38439-38473,38475-39070,39072-39971,39973-40514,40516-42050,42052-43218,43220-43477,43479-43668,43670-44960,44962-45784,45786-46463,46465-48328,48330-49183,49185-49594,49596-49924,49926-50190,50192-51592,51594-51868,51870-51997,51999-53843,53845-53919,53921-54035,54037-54724,54726-55711,55713-55735,55737-55763,55765-55786,55788-56866,56868-57383,57385-57761,57763-58044,58046-59070,59072-59330,59332-60387,60389-60598,60600-61304,61306-61638,61640-62285,62287-63180,63182-63476,63478-63844,63846-65535"/>
+</extraports>
+<extraports state="filtered" count="87">
+<extrareasons reason="no-response" count="87" proto="tcp" ports="376,2928,3310,4330,6038,6873,7019,10070,10695,11198,12174,12326,14434,14800,16408,17554,17662,18353,18540,19653,19664,20704,21336,22932,23967,23989,25094,25273,26527,26826,27555,27920,28163,28191,28347,29337,29696,30813,31943,32070,32771,35128,35352,36186,37146,38438,38474,39071,39972,40515,42051,43219,43478,43669,44961,45785,46464,48329,49184,49595,49925,50191,51593,51869,51998,53844,53920,54036,54725,55712,55736,55764,55787,56867,57384,57762,58045,59071,59331,60388,60599,61305,61639,62286,63181,63477,63845"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="78845" rttvar="290" to="100000"/>
+</host>
+<runstats><finished time="1733994932" timestr="Thu Dec 12 05:15:32 2024" summary="Nmap done at Thu Dec 12 05:15:32 2024; 1 IP address (1 host up) scanned in 90.89 seconds" elapsed="90.89" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

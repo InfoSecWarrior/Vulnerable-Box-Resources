@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Mon Dec  9 13:52:54 2024 as: nmap -v -Pn -p- -oA Lame-all-ports-scan-output 10.10.10.3
+Nmap scan report for 10.10.10.3 (10.10.10.3)
+Host is up (0.36s latency).
+Not shown: 65530 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3632/tcp open  distccd
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Dec  9 14:04:19 2024 -- 1 IP address (1 host up) scanned in 685.94 seconds

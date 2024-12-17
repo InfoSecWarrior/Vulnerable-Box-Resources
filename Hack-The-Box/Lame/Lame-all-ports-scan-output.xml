@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Mon Dec  9 13:52:54 2024 as: nmap -v -Pn -p- -oA Lame-all-ports-scan-output 10.10.10.3 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA Lame-all-ports-scan-output 10.10.10.3" start="1733732574" startstr="Mon Dec  9 13:52:54 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1733732574"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1733732574"/>
+<taskbegin task="SYN Stealth Scan" time="1733732574"/>
+<taskprogress task="SYN Stealth Scan" time="1733732605" percent="1.83" remaining="1667" etc="1733734272"/>
+<taskprogress task="SYN Stealth Scan" time="1733732635" percent="5.46" remaining="1058" etc="1733733692"/>
+<taskprogress task="SYN Stealth Scan" time="1733732665" percent="11.68" remaining="689" etc="1733733353"/>
+<taskprogress task="SYN Stealth Scan" time="1733732695" percent="17.66" remaining="565" etc="1733733259"/>
+<taskprogress task="SYN Stealth Scan" time="1733732725" percent="23.53" remaining="491" etc="1733733216"/>
+<taskprogress task="SYN Stealth Scan" time="1733732755" percent="30.55" remaining="412" etc="1733733167"/>
+<taskprogress task="SYN Stealth Scan" time="1733732785" percent="36.63" remaining="366" etc="1733733150"/>
+<taskprogress task="SYN Stealth Scan" time="1733732824" percent="42.89" remaining="333" etc="1733733157"/>
+<taskprogress task="SYN Stealth Scan" time="1733732863" percent="48.76" remaining="304" etc="1733733167"/>
+<taskprogress task="SYN Stealth Scan" time="1733732896" percent="54.26" remaining="272" etc="1733733167"/>
+<taskprogress task="SYN Stealth Scan" time="1733732956" percent="61.32" remaining="241" etc="1733733197"/>
+<taskprogress task="SYN Stealth Scan" time="1733733013" percent="67.68" remaining="210" etc="1733733223"/>
+<taskprogress task="SYN Stealth Scan" time="1733733052" percent="72.95" remaining="178" etc="1733733229"/>
+<taskprogress task="SYN Stealth Scan" time="1733733082" percent="78.47" remaining="140" etc="1733733221"/>
+<taskprogress task="SYN Stealth Scan" time="1733733124" percent="83.84" remaining="107" etc="1733733230"/>
+<taskprogress task="SYN Stealth Scan" time="1733733157" percent="88.96" remaining="73" etc="1733733229"/>
+<taskprogress task="SYN Stealth Scan" time="1733733199" percent="94.26" remaining="39" etc="1733733237"/>
+<taskend task="SYN Stealth Scan" time="1733733259" extrainfo="65535 total ports"/>
+<host starttime="1733732574" endtime="1733733259"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.3" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65530">
+<extrareasons reason="no-response" count="65530" proto="tcp" ports="1-20,23-138,140-444,446-3631,3633-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3632"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="distccd" method="table" conf="3"/></port>
+</ports>
+<times srtt="362742" rttvar="42477" to="532650"/>
+</host>
+<runstats><finished time="1733733259" timestr="Mon Dec  9 14:04:19 2024" summary="Nmap done at Mon Dec  9 14:04:19 2024; 1 IP address (1 host up) scanned in 685.94 seconds" elapsed="685.94" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

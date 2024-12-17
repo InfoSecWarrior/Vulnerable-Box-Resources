@@ -1,0 +1,14 @@
+# Dirsearch started Fri Dec 13 11:22:03 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.7:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o beep-dirsearch-80-wordlist-output.txt -q
+
+404   283B   http://10.10.10.7/http%3A%2F%2Fwww
+404   287B   http://10.10.10.7/http%3A%2F%2Fyoutube
+404   285B   http://10.10.10.7/http%3A%2F%2Fblogs
+404   284B   http://10.10.10.7/http%3A%2F%2Fblog
+404   285B   http://10.10.10.7/**http%3A%2F%2Fwww
+302   287B   http://10.10.10.7/%3FRID%3D2671    -> REDIRECTS TO: https://10.10.10.7/?RID=2671
+404   289B   http://10.10.10.7/http%3A%2F%2Fcommunity
+404   285B   http://10.10.10.7/http%3A%2F%2Fradar
+302   283B   http://10.10.10.7/login%3f    -> REDIRECTS TO: https://10.10.10.7/login
+404   296B   http://10.10.10.7/http%3A%2F%2Fjeremiahgrossman
+404   286B   http://10.10.10.7/http%3A%2F%2Fweblog
+404   284B   http://10.10.10.7/http%3A%2F%2Fswik

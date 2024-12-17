@@ -1,0 +1,50 @@
+# Nmap 7.94SVN scan initiated Sat Dec 14 15:16:08 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,443 -oA valentine-nmap-version-scan-output 10.10.10.79
+Nmap scan report for 10.10.10.79 (10.10.10.79)
+Host is up (0.17s latency).
+
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 5.9p1 Debian 5ubuntu1.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 96:4c:51:42:3c:ba:22:49:20:4d:3e:ec:90:cc:fd:0e (DSA)
+|   2048 46:bf:1f:cc:92:4f:1d:a0:42:b3:d2:16:a8:58:31:33 (RSA)
+|_  256 e6:2b:25:19:cb:7e:54:cb:0a:b9:ac:16:98:c6:7d:a9 (ECDSA)
+80/tcp  open  http     Apache httpd 2.2.22 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Apache/2.2.22 (Ubuntu)
+443/tcp open  ssl/http Apache httpd 2.2.22 ((Ubuntu))
+|_http-server-header: Apache/2.2.22 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_ssl-date: 2024-12-14T09:32:11+00:00; -14m21s from scanner time.
+| ssl-cert: Subject: commonName=valentine.htb/organizationName=valentine.htb/stateOrProvinceName=FL/countryName=US
+| Issuer: commonName=valentine.htb/organizationName=valentine.htb/stateOrProvinceName=FL/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2018-02-06T00:45:25
+| Not valid after:  2019-02-06T00:45:25
+| MD5:   a413:c4f0:b145:2154:fb54:b2de:c7a9:809d
+|_SHA-1: 2303:80da:60e7:bde7:2ba6:76dd:5214:3c3c:6f53:01b1
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 2.6.32 - 3.5 (95%), Nokia N9 phone (Linux 2.6.32) (95%), Linux 3.2 (95%), Linux 2.6.38 - 3.0 (94%), Linux 3.0 (94%), Linux 2.6.38 - 2.6.39 (94%), Linux 2.6.39 (94%), Linux 2.6.32 - 3.10 (93%), Linux 2.6.32 - 3.9 (93%), Linux 2.6.32 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.009 days (since Sat Dec 14 15:02:58 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: -14m21s
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   244.87 ms 10.10.14.1 (10.10.14.1)
+2   244.95 ms 10.10.10.79 (10.10.10.79)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Dec 14 15:16:32 2024 -- 1 IP address (1 host up) scanned in 25.04 seconds

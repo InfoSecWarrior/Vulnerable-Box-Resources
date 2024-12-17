@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Dec 13 10:21:11 2024 as: nmap -v -Pn -p- -oA beep-all-ports-scan-output 10.10.10.7
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.7 (10.10.10.7)	Status: Up
+Host: 10.10.10.7 (10.10.10.7)	Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///, 80/open/tcp//http///, 110/open/tcp//pop3///, 111/open/tcp//rpcbind///, 143/open/tcp//imap///, 443/open/tcp//https///, 793/open/tcp/////, 993/open/tcp//imaps///, 995/open/tcp//pop3s///, 3306/open/tcp//mysql///, 4190/open/tcp//sieve///, 4445/open/tcp//upnotifyp///, 4559/open/tcp//hylafax///, 5038/open/tcp/////, 10000/open/tcp//snet-sensor-mgmt///	Ignored State: closed (65519)
+# Nmap done at Fri Dec 13 10:35:12 2024 -- 1 IP address (1 host up) scanned in 841.30 seconds

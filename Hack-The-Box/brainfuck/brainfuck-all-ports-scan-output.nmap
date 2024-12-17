@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Thu Dec 12 02:18:26 2024 as: nmap -v -Pn -p- -oA brainfuck-all-ports-scan-output 10.10.10.17
+Nmap scan report for 10.10.10.17 (10.10.10.17)
+Host is up (0.075s latency).
+Not shown: 65530 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+25/tcp  open  smtp
+110/tcp open  pop3
+143/tcp open  imap
+443/tcp open  https
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Dec 12 02:21:37 2024 -- 1 IP address (1 host up) scanned in 190.85 seconds

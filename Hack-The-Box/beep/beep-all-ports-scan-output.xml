@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Dec 13 10:21:11 2024 as: nmap -v -Pn -p- -oA beep-all-ports-scan-output 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA beep-all-ports-scan-output 10.10.10.7" start="1734065471" startstr="Fri Dec 13 10:21:11 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734065471"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734065471"/>
+<taskbegin task="SYN Stealth Scan" time="1734065471"/>
+<taskprogress task="SYN Stealth Scan" time="1734065502" percent="18.79" remaining="135" etc="1734065636"/>
+<taskprogress task="SYN Stealth Scan" time="1734065556" percent="36.27" remaining="150" etc="1734065705"/>
+<taskprogress task="SYN Stealth Scan" time="1734065586" percent="40.04" remaining="173" etc="1734065758"/>
+<taskprogress task="SYN Stealth Scan" time="1734065625" percent="45.07" remaining="188" etc="1734065813"/>
+<taskprogress task="SYN Stealth Scan" time="1734065781" percent="64.66" remaining="170" etc="1734065950"/>
+<taskprogress task="SYN Stealth Scan" time="1734065841" percent="72.06" remaining="144" etc="1734065984"/>
+<taskprogress task="SYN Stealth Scan" time="1734065886" percent="77.96" remaining="118" etc="1734066003"/>
+<taskprogress task="SYN Stealth Scan" time="1734065931" percent="83.71" remaining="90" etc="1734066021"/>
+<taskprogress task="SYN Stealth Scan" time="1734066021" percent="88.83" remaining="70" etc="1734066090"/>
+<taskprogress task="SYN Stealth Scan" time="1734066090" percent="93.24" remaining="45" etc="1734066135"/>
+<taskprogress task="SYN Stealth Scan" time="1734066138" percent="94.61" remaining="39" etc="1734066176"/>
+<taskprogress task="SYN Stealth Scan" time="1734066177" percent="95.85" remaining="31" etc="1734066208"/>
+<taskprogress task="SYN Stealth Scan" time="1734066299" percent="99.99" remaining="1" etc="1734066299"/>
+<taskend task="SYN Stealth Scan" time="1734066312" extrainfo="65535 total ports"/>
+<host starttime="1734065471" endtime="1734066312"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.7" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65519">
+<extrareasons reason="reset" count="65519" proto="tcp" ports="1-21,23-24,26-79,81-109,112-142,144-442,444-792,794-992,994,996-3305,3307-4189,4191-4444,4446-4558,4560-5037,5039-9999,10001-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="imap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="793"><state state="open" reason="syn-ack" reason_ttl="63"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="imaps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="pop3s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4190"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="sieve" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4445"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="upnotifyp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4559"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="hylafax" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5038"><state state="open" reason="syn-ack" reason_ttl="63"/></port>
+<port protocol="tcp" portid="10000"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="snet-sensor-mgmt" method="table" conf="3"/></port>
+</ports>
+<times srtt="72727" rttvar="5043" to="100000"/>
+</host>
+<runstats><finished time="1734066312" timestr="Fri Dec 13 10:35:12 2024" summary="Nmap done at Fri Dec 13 10:35:12 2024; 1 IP address (1 host up) scanned in 841.30 seconds" elapsed="841.30" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

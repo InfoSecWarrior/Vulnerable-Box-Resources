@@ -1,0 +1,28 @@
+# Dirsearch started Sat Dec 14 15:17:26 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.79:80 -o valentine-dirsearch-80-output.txt -q
+
+403   239B   http://10.10.10.79/.ht_wsr.txt
+403   238B   http://10.10.10.79/.htaccess.bak1
+403   238B   http://10.10.10.79/.htaccess.sample
+403   237B   http://10.10.10.79/.htaccess.orig
+403   236B   http://10.10.10.79/.htaccess.save
+403   239B   http://10.10.10.79/.htaccess_extra
+403   237B   http://10.10.10.79/.htaccess_sc
+403   238B   http://10.10.10.79/.htaccess_orig
+403   237B   http://10.10.10.79/.htaccessBAK
+403   236B   http://10.10.10.79/.htaccessOLD
+403   237B   http://10.10.10.79/.htaccessOLD2
+403   233B   http://10.10.10.79/.htm
+403   233B   http://10.10.10.79/.html
+403   240B   http://10.10.10.79/.htpasswd_test
+403   237B   http://10.10.10.79/.httr-oauth
+403   237B   http://10.10.10.79/.htpasswds
+403   236B   http://10.10.10.79/cgi-bin/
+301   240B   http://10.10.10.79/dev    -> REDIRECTS TO: http://10.10.10.79/dev/
+200   488B   http://10.10.10.79/dev/
+403   232B   http://10.10.10.79/doc/
+403   235B   http://10.10.10.79/doc/api/
+403   242B   http://10.10.10.79/doc/en/changes.html
+403   240B   http://10.10.10.79/doc/stable.version
+403   239B   http://10.10.10.79/doc/html/index.html
+403   236B   http://10.10.10.79/server-status
+403   237B   http://10.10.10.79/server-status/

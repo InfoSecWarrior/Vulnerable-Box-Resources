@@ -1,0 +1,20 @@
+[waf-detect:apachegeneric] [http] [info] http://10.10.10.75:80
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.10.75:22
+[ssh-server-enumeration] [javascript] [info] 10.10.10.75:22 ["SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2"]
+[ssh-password-auth] [javascript] [info] 10.10.10.75:22
+[ssh-auth-methods] [javascript] [info] 10.10.10.75:22 ["["publickey","password"]"]
+[CVE-2023-48795] [javascript] [medium] 10.10.10.75:22 ["Vulnerable to Terrapin"]
+[openssh-detect] [tcp] [info] 10.10.10.75:22 ["SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2"]
+[http-missing-security-headers:permissions-policy] [http] [info] http://10.10.10.75:80
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://10.10.10.75:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://10.10.10.75:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://10.10.10.75:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://10.10.10.75:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://10.10.10.75:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://10.10.10.75:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://10.10.10.75:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://10.10.10.75:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://10.10.10.75:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://10.10.10.75:80
+[options-method] [http] [info] http://10.10.10.75:80 ["POST,OPTIONS,GET,HEAD"]
+[apache-detect] [http] [info] http://10.10.10.75:80 ["Apache/2.4.18 (Ubuntu)"]

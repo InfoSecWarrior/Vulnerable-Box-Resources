@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Dec 13 15:52:33 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,53,80 -oA cronos-nmap-version-scan-output 10.10.10.13
+# Ports scanned: TCP(3;22,53,80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.13 (10.10.10.13)	Status: Up
+Host: 10.10.10.13 (10.10.10.13)	Ports: 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.1 (Ubuntu Linux; protocol 2.0)/, 53/open/tcp//domain//ISC BIND 9.10.3-P4 (Ubuntu Linux)/, 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/	Seq Index: 259	IP ID Seq: All zeros
+# Nmap done at Fri Dec 13 15:52:58 2024 -- 1 IP address (1 host up) scanned in 25.19 seconds

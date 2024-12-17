@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Dec 14 12:14:54 2024 as: nmap -v -Pn -p- -oA solidstate-all-ports-scan-output 10.10.10.51
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.51 (10.10.10.51)	Status: Up
+Host: 10.10.10.51 (10.10.10.51)	Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///, 80/open/tcp//http///, 110/open/tcp//pop3///, 119/open/tcp//nntp///, 4555/open/tcp//rsip///	Ignored State: closed (65529)
+# Nmap done at Sat Dec 14 12:18:17 2024 -- 1 IP address (1 host up) scanned in 202.47 seconds
