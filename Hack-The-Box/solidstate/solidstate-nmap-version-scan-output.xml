@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sat Dec 14 12:18:17 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,25,80,110,119,4555 -oA solidstate-nmap-version-scan-output 10.10.10.51 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,25,80,110,119,4555 -oA solidstate-nmap-version-scan-output 10.10.10.51" start="1734158897" startstr="Sat Dec 14 12:18:17 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="6" services="22,25,80,110,119,4555"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1734158897"/>
+<taskend task="NSE" time="1734158897"/>
+<taskbegin task="NSE" time="1734158897"/>
+<taskend task="NSE" time="1734158897"/>
+<taskbegin task="NSE" time="1734158897"/>
+<taskend task="NSE" time="1734158897"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734158897"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734158897"/>
+<taskbegin task="Connect Scan" time="1734158897"/>
+<taskend task="Connect Scan" time="1734158897" extrainfo="6 total ports"/>
+<taskbegin task="Service scan" time="1734158897"/>
+<taskprogress task="Service scan" time="1734159057" percent="66.67" remaining="80" etc="1734159137"/>
+<taskend task="Service scan" time="1734159057" extrainfo="6 services on 1 host"/>
+<taskbegin task="Traceroute" time="1734159061"/>
+<taskend task="Traceroute" time="1734159061"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734159061"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734159061"/>
+<taskbegin task="NSE" time="1734159061"/>
+<taskend task="NSE" time="1734159111"/>
+<taskbegin task="NSE" time="1734159111"/>
+<taskend task="NSE" time="1734159198"/>
+<taskbegin task="NSE" time="1734159198"/>
+<taskend task="NSE" time="1734159198"/>
+<host starttime="1734158897" endtime="1734159198"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.51" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.51" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4p1 Debian 10+deb9u1" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 77:00:84:f5:78:b9:c7:d3:54:cf:71:2e:0d:52:6d:8b (RSA)&#xa;  256 78:b8:3a:f6:60:19:06:91:f5:53:92:1d:3f:48:ed:53 (ECDSA)&#xa;  256 e4:45:e9:ed:07:4d:73:69:43:5a:12:70:9d:c4:af:76 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCp5WdwlckuF4slNUO29xOk/Yl/cnXT/p6qwezI0ye+4iRSyor8lhyAEku/yz8KJXtA+ALhL7HwYbD3hDUxDkFw90V1Omdedbk7SxUVBPK2CiDpvXq1+r5fVw26WpTCdawGKkaOMYoSWvliBsbwMLJEUwVbZ/GZ1SUEswpYkyZeiSC1qk72L6CiZ9/5za4MTZw8Cq0akT7G+mX7Qgc+5eOEGcqZt3cBtWzKjHyOZJAEUtwXAHly29KtrPUddXEIF0qJUxKXArEDvsp7OkuQ0fktXXkZuyN/GRFeu3im7uQVuDgiXFKbEfmoQAsvLrR8YiKFUG6QBdI9awwmTkLFbS1Z</elem>
+<elem key="fingerprint">770084f578b9c7d354cf712e0d526d8b</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBISyhm1hXZNQl3cslogs5LKqgWEozfjs3S3aPy4k3riFb6UYu6Q1QsxIEOGBSPAWEkevVz1msTrRRyvHPiUQ+eE=</elem>
+<elem key="fingerprint">78b83af660190691f553921d3f48ed53</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIMKbFbK3MJqjMh9oEw/2OVe0isA7e3ruHz5fhUP4cVgY</elem>
+<elem key="fingerprint">e445e9ed074d7369435a12709dc4af76</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="JAMES smtpd" version="2.3.2" hostname="solidstate" method="probed" conf="10"/><script id="smtp-commands" output="solidstate Hello 10.10.10.51 (10.10.14.11 [10.10.14.11])"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.25" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.25</cpe></service><script id="http-server-header" output="Apache/2.4.25 (Debian)"><elem>Apache/2.4.25 (Debian)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS HEAD GET POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-title" output="Home - Solid State Security"><elem key="title">Home - Solid State Security</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="119"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="nntp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4555"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rsip" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="37101"/>
+<osmatch name="Linux 3.12" accuracy="96" line="63654">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.12</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="96" line="63771">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="96" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.8" accuracy="96" line="67909">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4.8</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="95" line="67760">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.9" accuracy="95" line="67963">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="95" line="64180">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.18" accuracy="95" line="64456">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.8 - 3.11" accuracy="95" line="66297">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="95" line="67307">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="277" lastboot="Sat Dec 14 12:18:41 2024"/>
+<distance value="2"/>
+<tcpsequence index="264" difficulty="Good luck!" values="F09BB88A,EBFBA5A8,25404141,A5088C56,852C5554,932C919C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="880E,8827,8840,8859,8872,888C"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="96.02" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.51" rtt="96.14" host="10.10.10.51"/>
+</trace>
+<times srtt="99074" rttvar="5073" to="119366"/>
+</host>
+<taskbegin task="NSE" time="1734159198"/>
+<taskend task="NSE" time="1734159198"/>
+<taskbegin task="NSE" time="1734159198"/>
+<taskend task="NSE" time="1734159198"/>
+<taskbegin task="NSE" time="1734159198"/>
+<taskend task="NSE" time="1734159198"/>
+<runstats><finished time="1734159198" timestr="Sat Dec 14 12:23:18 2024" summary="Nmap done at Sat Dec 14 12:23:18 2024; 1 IP address (1 host up) scanned in 301.39 seconds" elapsed="301.39" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

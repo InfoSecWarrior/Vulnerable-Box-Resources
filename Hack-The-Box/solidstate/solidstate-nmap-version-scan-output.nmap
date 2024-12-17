@@ -1,0 +1,37 @@
+# Nmap 7.94SVN scan initiated Sat Dec 14 12:18:17 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,25,80,110,119,4555 -oA solidstate-nmap-version-scan-output 10.10.10.51
+Nmap scan report for 10.10.10.51 (10.10.10.51)
+Host is up (0.099s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.4p1 Debian 10+deb9u1 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 77:00:84:f5:78:b9:c7:d3:54:cf:71:2e:0d:52:6d:8b (RSA)
+|   256 78:b8:3a:f6:60:19:06:91:f5:53:92:1d:3f:48:ed:53 (ECDSA)
+|_  256 e4:45:e9:ed:07:4d:73:69:43:5a:12:70:9d:c4:af:76 (ED25519)
+25/tcp   open  smtp    JAMES smtpd 2.3.2
+|_smtp-commands: solidstate Hello 10.10.10.51 (10.10.14.11 [10.10.14.11])
+80/tcp   open  http    Apache httpd 2.4.25 ((Debian))
+|_http-server-header: Apache/2.4.25 (Debian)
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+|_http-title: Home - Solid State Security
+110/tcp  open  pop3?
+119/tcp  open  nntp?
+4555/tcp open  rsip?
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.12 (96%), Linux 3.13 (96%), Linux 3.2 - 4.9 (96%), Linux 4.8 (96%), Linux 4.4 (95%), Linux 4.9 (95%), Linux 3.16 (95%), Linux 3.18 (95%), Linux 3.8 - 3.11 (95%), Linux 4.2 (95%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.003 days (since Sat Dec 14 12:18:41 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=264 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: solidstate; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   96.02 ms 10.10.14.1 (10.10.14.1)
+2   96.14 ms 10.10.10.51 (10.10.10.51)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Dec 14 12:23:18 2024 -- 1 IP address (1 host up) scanned in 301.39 seconds

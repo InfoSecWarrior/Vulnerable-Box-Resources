@@ -1,0 +1,5 @@
+# Dirsearch started Sat Dec 14 12:37:14 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.51:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o solidstate-dirsearch-80-wordlist-output.txt -q
+
+301   311B   http://10.10.10.51/images    -> REDIRECTS TO: http://10.10.10.51/images/
+301   311B   http://10.10.10.51/assets    -> REDIRECTS TO: http://10.10.10.51/assets/
+403   299B   http://10.10.10.51/server-status

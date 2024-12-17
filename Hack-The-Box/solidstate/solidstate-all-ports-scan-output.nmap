@@ -1,0 +1,14 @@
+# Nmap 7.94SVN scan initiated Sat Dec 14 12:14:54 2024 as: nmap -v -Pn -p- -oA solidstate-all-ports-scan-output 10.10.10.51
+Nmap scan report for 10.10.10.51 (10.10.10.51)
+Host is up (0.097s latency).
+Not shown: 65529 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+25/tcp   open  smtp
+80/tcp   open  http
+110/tcp  open  pop3
+119/tcp  open  nntp
+4555/tcp open  rsip
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Dec 14 12:18:17 2024 -- 1 IP address (1 host up) scanned in 202.47 seconds
