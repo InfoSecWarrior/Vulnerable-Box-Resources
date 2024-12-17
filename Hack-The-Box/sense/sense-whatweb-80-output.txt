@@ -1,0 +1,2 @@
+http://10.10.10.60:80 [301 Moved Permanently] Country[RESERVED][ZZ], HTTPServer[lighttpd/1.4.35], IP[10.10.10.60], RedirectLocation[https://10.10.10.60/], lighttpd[1.4.35]
+https://10.10.10.60/ [200 OK] Cookies[PHPSESSID,cookie_test], Country[RESERVED][ZZ], HTTPServer[lighttpd/1.4.35], HttpOnly[PHPSESSID], IP[10.10.10.60], JQuery, PasswordField[passwordfld], Script[text/javascript], Title[Login], X-Frame-Options[SAMEORIGIN], lighttpd[1.4.35]

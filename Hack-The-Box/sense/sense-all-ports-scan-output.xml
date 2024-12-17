@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sat Dec 14 10:30:02 2024 as: nmap -v -Pn -p- -oA sense-all-ports-scan-output 10.10.10.60 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA sense-all-ports-scan-output 10.10.10.60" start="1734152402" startstr="Sat Dec 14 10:30:02 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734152402"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734152403"/>
+<taskbegin task="SYN Stealth Scan" time="1734152403"/>
+<taskprogress task="SYN Stealth Scan" time="1734152434" percent="5.20" remaining="566" etc="1734152999"/>
+<taskprogress task="SYN Stealth Scan" time="1734152464" percent="7.56" remaining="746" etc="1734153210"/>
+<taskprogress task="SYN Stealth Scan" time="1734152494" percent="13.43" remaining="587" etc="1734153081"/>
+<taskprogress task="SYN Stealth Scan" time="1734152524" percent="19.49" remaining="500" etc="1734153024"/>
+<taskprogress task="SYN Stealth Scan" time="1734152554" percent="24.53" remaining="465" etc="1734153019"/>
+<taskprogress task="SYN Stealth Scan" time="1734152584" percent="31.04" remaining="403" etc="1734152986"/>
+<taskprogress task="SYN Stealth Scan" time="1734152620" percent="36.98" remaining="370" etc="1734152990"/>
+<taskprogress task="SYN Stealth Scan" time="1734152650" percent="43.84" remaining="317" etc="1734152966"/>
+<taskprogress task="SYN Stealth Scan" time="1734152680" percent="50.29" remaining="274" etc="1734152954"/>
+<taskprogress task="SYN Stealth Scan" time="1734152710" percent="56.36" remaining="238" etc="1734152948"/>
+<taskprogress task="SYN Stealth Scan" time="1734152740" percent="63.24" remaining="196" etc="1734152936"/>
+<taskprogress task="SYN Stealth Scan" time="1734152794" percent="69.83" remaining="169" etc="1734152963"/>
+<taskprogress task="SYN Stealth Scan" time="1734152824" percent="76.12" remaining="133" etc="1734152956"/>
+<taskprogress task="SYN Stealth Scan" time="1734152854" percent="84.43" remaining="84" etc="1734152937"/>
+<taskprogress task="SYN Stealth Scan" time="1734152884" percent="90.35" remaining="52" etc="1734152935"/>
+<taskend task="SYN Stealth Scan" time="1734152937" extrainfo="65535 total ports"/>
+<host starttime="1734152403" endtime="1734152937"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.60" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.60" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-response" count="65533" proto="tcp" ports="1-79,81-442,444-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="133409" rttvar="86526" to="479513"/>
+</host>
+<runstats><finished time="1734152937" timestr="Sat Dec 14 10:38:57 2024" summary="Nmap done at Sat Dec 14 10:38:57 2024; 1 IP address (1 host up) scanned in 534.81 seconds" elapsed="534.81" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

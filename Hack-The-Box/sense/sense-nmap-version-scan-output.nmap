@@ -1,0 +1,45 @@
+# Nmap 7.94SVN scan initiated Sat Dec 14 10:38:58 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,443 -oA sense-nmap-version-scan-output 10.10.10.60
+Nmap scan report for 10.10.10.60 (10.10.10.60)
+Host is up (0.11s latency).
+
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     lighttpd 1.4.35
+|_http-server-header: lighttpd/1.4.35
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Did not follow redirect to https://10.10.10.60/
+443/tcp open  ssl/http lighttpd 1.4.35
+|_http-server-header: lighttpd/1.4.35
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-favicon: Unknown favicon MD5: 082559A7867CF27ACAB7E9867A8B320F
+|_http-title: Login
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=Common Name (eg, YOUR name)/organizationName=CompanyName/stateOrProvinceName=Somewhere/countryName=US
+| Issuer: commonName=Common Name (eg, YOUR name)/organizationName=CompanyName/stateOrProvinceName=Somewhere/countryName=US
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2017-10-14T19:21:35
+| Not valid after:  2023-04-06T19:21:35
+| MD5:   65f8:b00f:57d2:3468:2c52:0f44:8110:c622
+|_SHA-1: 4f7c:9a75:cb7f:70d3:8087:08cb:8c27:20dc:05f1:bb02
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: specialized|general purpose
+Running (JUST GUESSING): Comau embedded (90%), OpenBSD 4.X (85%)
+OS CPE: cpe:/o:openbsd:openbsd:4.0
+Aggressive OS guesses: Comau C4G robot control unit (90%), OpenBSD 4.0 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.000 days (since Sat Dec 14 10:39:13 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: Randomized
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   116.76 ms 10.10.14.1 (10.10.14.1)
+2   117.05 ms 10.10.10.60 (10.10.10.60)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Dec 14 10:39:23 2024 -- 1 IP address (1 host up) scanned in 26.19 seconds

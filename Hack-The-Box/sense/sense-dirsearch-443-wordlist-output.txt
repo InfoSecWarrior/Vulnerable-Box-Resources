@@ -1,0 +1,15 @@
+# Dirsearch started Sat Dec 14 10:55:55 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://10.10.10.60:443 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o sense-dirsearch-443-wordlist-output.txt -q
+
+301     0B   https://10.10.10.60/themes    -> REDIRECTS TO: https://10.10.10.60/themes/
+301     0B   https://10.10.10.60/css    -> REDIRECTS TO: https://10.10.10.60/css/
+301     0B   https://10.10.10.60/includes    -> REDIRECTS TO: https://10.10.10.60/includes/
+301     0B   https://10.10.10.60/javascript    -> REDIRECTS TO: https://10.10.10.60/javascript/
+301     0B   https://10.10.10.60/classes    -> REDIRECTS TO: https://10.10.10.60/classes/
+301     0B   https://10.10.10.60/widgets    -> REDIRECTS TO: https://10.10.10.60/widgets/
+301     0B   https://10.10.10.60/tree    -> REDIRECTS TO: https://10.10.10.60/tree/
+301     0B   https://10.10.10.60/shortcuts    -> REDIRECTS TO: https://10.10.10.60/shortcuts/
+301     0B   https://10.10.10.60/installer    -> REDIRECTS TO: https://10.10.10.60/installer/
+301     0B   https://10.10.10.60/wizards    -> REDIRECTS TO: https://10.10.10.60/wizards/
+301     0B   https://10.10.10.60/csrf    -> REDIRECTS TO: https://10.10.10.60/csrf/
+301     0B   https://10.10.10.60/filebrowser    -> REDIRECTS TO: https://10.10.10.60/filebrowser/
+403   345B   https://10.10.10.60/%7Echeckout%7E

@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Dec 14 10:38:58 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,443 -oA sense-nmap-version-scan-output 10.10.10.60
+# Ports scanned: TCP(2;80,443) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.60 (10.10.10.60)	Status: Up
+Host: 10.10.10.60 (10.10.10.60)	Ports: 80/open/tcp//http//lighttpd 1.4.35/, 443/open/tcp//ssl|http//lighttpd 1.4.35/	Seq Index: 260	IP ID Seq: Randomized
+# Nmap done at Sat Dec 14 10:39:23 2024 -- 1 IP address (1 host up) scanned in 26.19 seconds

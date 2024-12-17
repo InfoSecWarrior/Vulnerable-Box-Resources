@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sat Dec 14 10:38:58 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80,443 -oA sense-nmap-version-scan-output 10.10.10.60 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 80,443 -oA sense-nmap-version-scan-output 10.10.10.60" start="1734152938" startstr="Sat Dec 14 10:38:58 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="80,443"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1734152938"/>
+<taskend task="NSE" time="1734152938"/>
+<taskbegin task="NSE" time="1734152938"/>
+<taskend task="NSE" time="1734152938"/>
+<taskbegin task="NSE" time="1734152938"/>
+<taskend task="NSE" time="1734152938"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734152938"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734152938"/>
+<taskbegin task="Connect Scan" time="1734152938"/>
+<taskend task="Connect Scan" time="1734152938" extrainfo="2 total ports"/>
+<taskbegin task="Service scan" time="1734152938"/>
+<taskend task="Service scan" time="1734152951" extrainfo="2 services on 1 host"/>
+<taskbegin task="Traceroute" time="1734152956"/>
+<taskend task="Traceroute" time="1734152956"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734152956"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734152956"/>
+<taskbegin task="NSE" time="1734152956"/>
+<taskend task="NSE" time="1734152963"/>
+<taskbegin task="NSE" time="1734152963"/>
+<taskend task="NSE" time="1734152963"/>
+<taskbegin task="NSE" time="1734152963"/>
+<taskend task="NSE" time="1734152963"/>
+<host starttime="1734152938" endtime="1734152963"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.60" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.60" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="lighttpd" version="1.4.35" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd:1.4.35</cpe></service><script id="http-server-header" output="lighttpd/1.4.35"><elem>lighttpd/1.4.35</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://10.10.10.60/"><elem key="redirect_url">https://10.10.10.60/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="lighttpd" version="1.4.35" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd:1.4.35</cpe></service><script id="http-server-header" output="lighttpd/1.4.35"><elem>lighttpd/1.4.35</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-favicon" output="Unknown favicon MD5: 082559A7867CF27ACAB7E9867A8B320F"/><script id="http-title" output="Login"><elem key="title">Login</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=Common Name (eg, YOUR name)/organizationName=CompanyName/stateOrProvinceName=Somewhere/countryName=US&#xa;Issuer: commonName=Common Name (eg, YOUR name)/organizationName=CompanyName/stateOrProvinceName=Somewhere/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2017-10-14T19:21:35&#xa;Not valid after:  2023-04-06T19:21:35&#xa;MD5:   65f8:b00f:57d2:3468:2c52:0f44:8110:c622&#xa;SHA-1: 4f7c:9a75:cb7f:70d3:8087:08cb:8c27:20dc:05f1:bb02"><table key="subject">
+<elem key="commonName">Common Name (eg, YOUR name)</elem>
+<elem key="countryName">US</elem>
+<elem key="emailAddress">Email Address</elem>
+<elem key="localityName">Somecity</elem>
+<elem key="organizationName">CompanyName</elem>
+<elem key="organizationalUnitName">Organizational Unit Name (eg, section)</elem>
+<elem key="stateOrProvinceName">Somewhere</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Common Name (eg, YOUR name)</elem>
+<elem key="countryName">US</elem>
+<elem key="emailAddress">Email Address</elem>
+<elem key="localityName">Somecity</elem>
+<elem key="organizationName">CompanyName</elem>
+<elem key="organizationalUnitName">Organizational Unit Name (eg, section)</elem>
+<elem key="stateOrProvinceName">Somewhere</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">BFB1653A072D3C9466EFB6D01FC78ED25A4B2003B15ABCDAC4A16F48469D16FD117D169E4141EB0B2F714C274307C8671F4619CBE55C0308BD04FB5634E5ACFC3D8F245268EFC52BF14022E7E8C8779D366488027CBE90745809E396DAD3084B2FEC39F3D8EA1F929A9A527A0D19F3B7B8A58FBD15E5F4E9527BF05C0D2B5F7D</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">32:B9:0D:2F:E1:4E:C8:BD:48:7C:53:EF:8F:4E:77:FA:77:2E:AD:39</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:32:B9:0D:2F:E1:4E:C8:BD:48:7C:53:EF:8F:4E:77:FA:77:2E:AD:39&#xa;DirName:/C=US/ST=Somewhere/L=Somecity/O=CompanyName/OU=Organizational Unit Name (eg, section)/CN=Common Name (eg, YOUR name)/emailAddress=Email Address&#xa;serial:B0:A1:68:8A:62:C3:3E:35</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2017-10-14T19:21:35</elem>
+<elem key="notAfter">2023-04-06T19:21:35</elem>
+</table>
+<elem key="md5">65f8b00f57d234682c520f448110c622</elem>
+<elem key="sha1">4f7c9a75cb7f70d3808708cb8c2720dc05f1bb02</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEKDCCA5GgAwIBAgIJALChaIpiwz41MA0GCSqGSIb3DQEBCwUAMIG/MQswCQYD&#xa;VQQGEwJVUzESMBAGA1UECBMJU29tZXdoZXJlMREwDwYDVQQHEwhTb21lY2l0eTEU&#xa;MBIGA1UEChMLQ29tcGFueU5hbWUxLzAtBgNVBAsTJk9yZ2FuaXphdGlvbmFsIFVu&#xa;aXQgTmFtZSAoZWcsIHNlY3Rpb24pMSQwIgYDVQQDExtDb21tb24gTmFtZSAoZWcs&#xa;IFlPVVIgbmFtZSkxHDAaBgkqhkiG9w0BCQEWDUVtYWlsIEFkZHJlc3MwHhcNMTcx&#xa;MDE0MTkyMTM1WhcNMjMwNDA2MTkyMTM1WjCBvzELMAkGA1UEBhMCVVMxEjAQBgNV&#xa;BAgTCVNvbWV3aGVyZTERMA8GA1UEBxMIU29tZWNpdHkxFDASBgNVBAoTC0NvbXBh&#xa;bnlOYW1lMS8wLQYDVQQLEyZPcmdhbml6YXRpb25hbCBVbml0IE5hbWUgKGVnLCBz&#xa;ZWN0aW9uKTEkMCIGA1UEAxMbQ29tbW9uIE5hbWUgKGVnLCBZT1VSIG5hbWUpMRww&#xa;GgYJKoZIhvcNAQkBFg1FbWFpbCBBZGRyZXNzMIGfMA0GCSqGSIb3DQEBAQUAA4GN&#xa;ADCBiQKBgQC/sWU6By08lGbvttAfx47SWksgA7FavNrEoW9IRp0W/RF9Fp5BQesL&#xa;L3FMJ0MHyGcfRhnL5VwDCL0E+1Y05az8PY8kUmjvxSvxQCLn6Mh3nTZkiAJ8vpB0&#xa;WAnjltrTCEsv7Dnz2OofkpqaUnoNGfO3uKWPvRXl9OlSe/BcDStffQIDAQABo4IB&#xa;KDCCASQwHQYDVR0OBBYEFDK5DS/hTsi9SHxT749Od/p3Lq05MIH0BgNVHSMEgeww&#xa;gemAFDK5DS/hTsi9SHxT749Od/p3Lq05oYHFpIHCMIG/MQswCQYDVQQGEwJVUzES&#xa;MBAGA1UECBMJU29tZXdoZXJlMREwDwYDVQQHEwhTb21lY2l0eTEUMBIGA1UEChML&#xa;Q29tcGFueU5hbWUxLzAtBgNVBAsTJk9yZ2FuaXphdGlvbmFsIFVuaXQgTmFtZSAo&#xa;ZWcsIHNlY3Rpb24pMSQwIgYDVQQDExtDb21tb24gTmFtZSAoZWcsIFlPVVIgbmFt&#xa;ZSkxHDAaBgkqhkiG9w0BCQEWDUVtYWlsIEFkZHJlc3OCCQCwoWiKYsM+NTAMBgNV&#xa;HRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4GBAHNn+1AX2qwJ9zhgN3I4ES1Vq84l&#xa;n6p7OoBefxcf31Pn3VDnbvJJFFcZdplDxbIWh5lyjpTHRJQyHECtEMW677rFXJAl&#xa;/cEYWHDndn9Gwaxn7JyffK5lUAPMPEDtudQb3cxrevP/iFZwefi2d5p3jFkDCcGI&#xa;+Y0tZRIRzHWgQHa/&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Comau C4G robot control unit" accuracy="90" line="19196">
+<osclass type="specialized" vendor="Comau" osfamily="embedded" accuracy="90"/>
+</osmatch>
+<osmatch name="OpenBSD 4.0" accuracy="85" line="90838">
+<osclass type="general purpose" vendor="OpenBSD" osfamily="OpenBSD" osgen="4.X" accuracy="85"><cpe>cpe:/o:openbsd:openbsd:4.0</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="10" lastboot="Sat Dec 14 10:39:13 2024"/>
+<distance value="2"/>
+<tcpsequence index="260" difficulty="Good luck!" values="AD0F741,E2F0D8C9,7EBB0F37,737A783,893B6C31,3A85339B"/>
+<ipidsequence class="Randomized" values="899B,58A7,A488,DD01,FEA1,39A7"/>
+<tcptssequence class="other" values="FCDC0679,FFBAACA4,2831371F,386B1B3B,44C61A63,33BBBE51"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="116.76" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.60" rtt="117.05" host="10.10.10.60"/>
+</trace>
+<times srtt="110540" rttvar="10608" to="152972"/>
+</host>
+<taskbegin task="NSE" time="1734152963"/>
+<taskend task="NSE" time="1734152963"/>
+<taskbegin task="NSE" time="1734152963"/>
+<taskend task="NSE" time="1734152963"/>
+<taskbegin task="NSE" time="1734152963"/>
+<taskend task="NSE" time="1734152963"/>
+<runstats><finished time="1734152963" timestr="Sat Dec 14 10:39:23 2024" summary="Nmap done at Sat Dec 14 10:39:23 2024; 1 IP address (1 host up) scanned in 26.19 seconds" elapsed="26.19" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

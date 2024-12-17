@@ -1,0 +1,14 @@
+- Nikto v2.5.0/
++ Target Host: 10.10.10.60
++ Target Port: 443
++ GET /: The site uses TLS and the Strict-Transport-Security HTTP header is not defined. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /: Cookie cookie_test created without the secure flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie cookie_test created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET Hostname '10.10.10.60' does not match certificate's names: Common. See: https://cwe.mitre.org/data/definitions/297.html: 
++ GET Multiple index files found: /index.html, /index.php.
++ OPTIONS OPTIONS: Allowed HTTP Methods: OPTIONS, GET, HEAD, POST .
++ GET /tree/: This might be interesting.
++ GET /xmlrpc.php: xmlrpc.php was found.
++ GET /help.php: A help file was found.
++ GET /#wp-config.php#: #wp-config.php# file found. This file contains the credentials.
