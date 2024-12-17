@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Thu Dec 12 05:14:02 2024 as: nmap -v -Pn -p- -oA nibbles-all-ports-scan-output 10.10.10.75
+Nmap scan report for 10.10.10.75 (10.10.10.75)
+Host is up (0.079s latency).
+Not shown: 65446 closed tcp ports (reset), 87 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Dec 12 05:15:32 2024 -- 1 IP address (1 host up) scanned in 90.89 seconds
