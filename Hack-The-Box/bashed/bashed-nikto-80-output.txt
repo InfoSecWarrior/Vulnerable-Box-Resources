@@ -1,0 +1,19 @@
+- Nikto v2.5.0/
++ Target Host: 10.10.10.68
++ Target Port: 80
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /images: IP address found in the 'location' header. The IP is "127.0.1.1". See: https://portswigger.net/kb/issues/00600300_private-ip-addresses-disclosed: 
++ GET /images: The web server may reveal its internal or real IP in the Location header via a request to with HTTP/1.0. The value is "127.0.1.1". See: CVE-2000-0649: 
++ GET /: Server may leak inodes via ETags, header found with file /, inode: 1e3f, size: 55f8bbac32f80, mtime: gzip. See: CVE-2003-1418: 
++ HEAD Apache/2.4.18 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ OPTIONS OPTIONS: Allowed HTTP Methods: POST, OPTIONS, GET, HEAD .
++ GET /config.php: PHP Config file may contain database IDs and passwords.
++ GET /css/: Directory indexing found.
++ GET /css/: This might be interesting.
++ GET /dev/: Directory indexing found.
++ GET /dev/: This might be interesting.
++ GET /php/: Directory indexing found.
++ GET /php/: This might be interesting.
++ GET /images/: Directory indexing found.
++ GET /icons/README: Apache default file found. See: https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/: 

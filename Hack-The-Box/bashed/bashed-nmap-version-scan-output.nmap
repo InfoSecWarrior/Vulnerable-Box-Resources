@@ -1,0 +1,27 @@
+# Nmap 7.94SVN scan initiated Thu Dec 12 01:47:56 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA bashed-nmap-version-scan-output 10.10.10.68
+Nmap scan report for 10.10.10.68 (10.10.10.68)
+Host is up (0.075s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: POST OPTIONS GET HEAD
+|_http-title: Arrexel's Development Site
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-favicon: Unknown favicon MD5: 6AA5034A553DFA77C3B2C7B4C26CF870
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.12 (96%), Linux 3.13 (96%), Linux 3.16 (96%), Linux 3.18 (96%), Linux 3.2 - 4.9 (96%), Linux 3.8 - 3.11 (96%), Linux 4.8 (96%), Linux 4.4 (95%), Linux 4.9 (95%), Linux 4.2 (95%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.029 days (since Thu Dec 12 01:06:24 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=259 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   74.93 ms 10.10.14.1 (10.10.14.1)
+2   75.14 ms 10.10.10.68 (10.10.10.68)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec 12 01:48:09 2024 -- 1 IP address (1 host up) scanned in 12.56 seconds
