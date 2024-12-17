@@ -1,0 +1,2 @@
+[http-trace:trace-request] [http] [info] https://10.10.10.7:443
+[waf-detect:apachegeneric] [http] [info] https://10.10.10.7:443

@@ -1,0 +1,24 @@
+# Nmap 7.94SVN scan initiated Fri Dec 13 10:21:11 2024 as: nmap -v -Pn -p- -oA beep-all-ports-scan-output 10.10.10.7
+Nmap scan report for 10.10.10.7 (10.10.10.7)
+Host is up (0.073s latency).
+Not shown: 65519 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+25/tcp    open  smtp
+80/tcp    open  http
+110/tcp   open  pop3
+111/tcp   open  rpcbind
+143/tcp   open  imap
+443/tcp   open  https
+793/tcp   open  unknown
+993/tcp   open  imaps
+995/tcp   open  pop3s
+3306/tcp  open  mysql
+4190/tcp  open  sieve
+4445/tcp  open  upnotifyp
+4559/tcp  open  hylafax
+5038/tcp  open  unknown
+10000/tcp open  snet-sensor-mgmt
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Dec 13 10:35:12 2024 -- 1 IP address (1 host up) scanned in 841.30 seconds

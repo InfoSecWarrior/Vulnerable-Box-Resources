@@ -1,0 +1,2 @@
+http://10.10.10.7:80 [302 Found] Apache[2.2.3], Country[RESERVED][ZZ], HTTPServer[CentOS][Apache/2.2.3 (CentOS)], IP[10.10.10.7], RedirectLocation[https://10.10.10.7/], Title[302 Found]
+https://10.10.10.7/ [200 OK] Apache[2.2.3], Cookies[elastixSession], Country[RESERVED][ZZ], HTTPServer[CentOS][Apache/2.2.3 (CentOS)], IP[10.10.10.7], PHP[5.1.6], PasswordField[input_pass], Script[text/javascript], Title[Elastix - Login page], X-Powered-By[PHP/5.1.6]

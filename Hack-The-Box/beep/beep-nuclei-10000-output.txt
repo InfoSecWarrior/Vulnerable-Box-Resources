@@ -1,0 +1,28 @@
+[rsync-list-modules] [javascript] [low] 10.10.10.7:10000 ["HTTP/1.0  200  Bad  Request  Server:  MiniServ/1.570  Date:  Fri,  13  Dec  2024  08:37:01  GMT  Content-type:  text/html;  Charset=iso-8859-1  Connection:  close  <h1>Error  -  Bad  Request</h1>  <pre>This  web  server  is  running  in  SSL  mode.  Try  the  URL  <a  href='https://10.10.10.7:10000/'>https://10.10.10.7:10000/</a>  instead.<br></pre>"]
+[kafka-topics-list:ip] [tcp] [info] 10.10.10.7:10000 ["-","web","href","10000","br","MiniServ","Dec","13","server","1.0","Server","Connection","pre","is","mode.","08","GMT","11","text","html","This","the","200","Request","running","Try","a","https","10.10.10.7","Date","2024","1.570","37","close","in","URL","instead.","HTTP","Bad","Error","Content-type","Charset","h1","SSL","Fri","iso-8859-1"]
+[tls-version] [ssl] [info] 10.10.10.7:10000 ["tls10"]
+[deprecated-tls:tls_1.0] [ssl] [info] 10.10.10.7:10000 ["tls10"]
+[weak-cipher-suites:tls-1.0] [ssl] [low] 10.10.10.7:10000 ["[tls10 TLS_RSA_WITH_AES_128_CBC_SHA]"]
+[deprecated-tls:ssl_3.0] [ssl] [info] 10.10.10.7:10000 ["ssl30"]
+[webmin-panel] [http] [info] https://10.10.10.7:10000
+[webmin-panel] [http] [info] https://10.10.10.7:10000/webmin/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://10.10.10.7:10000
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://10.10.10.7:10000
+[http-missing-security-headers:permissions-policy] [http] [info] https://10.10.10.7:10000
+[http-missing-security-headers:x-frame-options] [http] [info] https://10.10.10.7:10000
+[http-missing-security-headers:x-content-type-options] [http] [info] https://10.10.10.7:10000
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://10.10.10.7:10000
+[http-missing-security-headers:referrer-policy] [http] [info] https://10.10.10.7:10000
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://10.10.10.7:10000
+[http-missing-security-headers:strict-transport-security] [http] [info] https://10.10.10.7:10000
+[http-missing-security-headers:content-security-policy] [http] [info] https://10.10.10.7:10000
+[http-missing-security-headers:clear-site-data] [http] [info] https://10.10.10.7:10000
+[host-header-injection] [http] [info] https://10.10.10.7:10000
+[robots-txt-endpoint] [http] [info] https://10.10.10.7:10000/robots.txt
+[favicon-detect:webmin] [http] [info] https://10.10.10.7:10000/favicon.ico ["1280907310"]
+[cookies-without-httponly] [http] [info] https://10.10.10.7:10000
+[fingerprinthub-web-fingerprints:webmin] [http] [info] https://10.10.10.7:10000
+[ssl-issuer] [ssl] [info] 10.10.10.7:10000 ["Webmin Webserver on localhost.localdomain"]
+[expired-ssl] [ssl] [low] 10.10.10.7:10000 ["2022-04-06 08:24:46 +0000 UTC"]
+[revoked-ssl-certificate] [ssl] [low] 10.10.10.7:10000
+[self-signed-ssl] [ssl] [low] 10.10.10.7:10000
