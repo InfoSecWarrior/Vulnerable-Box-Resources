@@ -1,0 +1,2 @@
+[pop3-detect] [tcp] [info] 10.10.10.17:110
+[rsync-list-modules] [javascript] [low] 10.10.10.17:110 ["+OK  Dovecot  ready.  -ERR  Unknown  command.  -ERR  Unknown  command."]

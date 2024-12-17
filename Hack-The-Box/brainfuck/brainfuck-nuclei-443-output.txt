@@ -1,0 +1,32 @@
+[waf-detect:nginxgeneric] [http] [info] https://10.10.10.17:443
+[ssh-auth-methods] [javascript] [info] 10.10.10.17:22 ["["publickey"]"]
+[CVE-2023-48795] [javascript] [medium] 10.10.10.17:22 ["Vulnerable to Terrapin"]
+[ssh-server-enumeration] [javascript] [info] 10.10.10.17:22 ["SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.1"]
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.10.17:22
+[imap-detect] [tcp] [info] 10.10.10.17:143
+[pop3-detect] [tcp] [info] 10.10.10.17:110
+[openssh-detect] [tcp] [info] 10.10.10.17:22 ["SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.1"]
+[deprecated-tls:tls_1.1] [ssl] [info] 10.10.10.17:443 ["tls11"]
+[tls-version] [ssl] [info] 10.10.10.17:443 ["tls10"]
+[weak-cipher-suites:tls-1.0] [ssl] [low] 10.10.10.17:443 ["[tls10 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]"]
+[deprecated-tls:tls_1.0] [ssl] [info] 10.10.10.17:443 ["tls10"]
+[tls-version] [ssl] [info] 10.10.10.17:443 ["tls11"]
+[weak-cipher-suites:tls-1.1] [ssl] [low] 10.10.10.17:443 ["[tls11 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]"]
+[tls-version] [ssl] [info] 10.10.10.17:443 ["tls12"]
+[default-nginx-page] [http] [info] https://10.10.10.17:443
+[nginx-version] [http] [info] https://10.10.10.17:443 ["nginx/1.10.0"]
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://10.10.10.17:443
+[http-missing-security-headers:clear-site-data] [http] [info] https://10.10.10.17:443
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://10.10.10.17:443
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://10.10.10.17:443
+[http-missing-security-headers:strict-transport-security] [http] [info] https://10.10.10.17:443
+[http-missing-security-headers:content-security-policy] [http] [info] https://10.10.10.17:443
+[http-missing-security-headers:permissions-policy] [http] [info] https://10.10.10.17:443
+[http-missing-security-headers:x-frame-options] [http] [info] https://10.10.10.17:443
+[http-missing-security-headers:x-content-type-options] [http] [info] https://10.10.10.17:443
+[http-missing-security-headers:referrer-policy] [http] [info] https://10.10.10.17:443
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://10.10.10.17:443
+[tech-detect:nginx] [http] [info] https://10.10.10.17:443
+[ssl-issuer] [ssl] [info] 10.10.10.17:443 ["Brainfuck Ltd."]
+[self-signed-ssl] [ssl] [low] 10.10.10.17:443
+[ssl-dns-names] [ssl] [info] 10.10.10.17:443 ["www.brainfuck.htb","sup3rs3cr3t.brainfuck.htb"]

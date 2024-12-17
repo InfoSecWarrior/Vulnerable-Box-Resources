@@ -1,0 +1,2 @@
+[imap-detect] [tcp] [info] 10.10.10.17:143
+[rsync-list-modules] [javascript] [low] 10.10.10.17:143 ["*  OK  [CAPABILITY  IMAP4rev1  LITERAL+  SASL-IR  LOGIN-REFERRALS  ID  ENABLE  IDLE  AUTH=PLAIN]  Dovecot  ready.  BAD  Error  in  IMAP  command  received  by  server.  *  BAD  Error  in  IMAP  command  received  by  server."]

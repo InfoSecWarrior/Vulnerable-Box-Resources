@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Dec 12 02:18:26 2024 as: nmap -v -Pn -p- -oA brainfuck-all-ports-scan-output 10.10.10.17 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -oA brainfuck-all-ports-scan-output 10.10.10.17" start="1733984306" startstr="Thu Dec 12 02:18:26 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1733984306"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1733984306"/>
+<taskbegin task="SYN Stealth Scan" time="1733984306"/>
+<taskprogress task="SYN Stealth Scan" time="1733984337" percent="18.93" remaining="133" etc="1733984470"/>
+<taskprogress task="SYN Stealth Scan" time="1733984391" percent="42.27" remaining="117" etc="1733984507"/>
+<taskprogress task="SYN Stealth Scan" time="1733984421" percent="53.27" remaining="101" etc="1733984522"/>
+<taskprogress task="SYN Stealth Scan" time="1733984451" percent="67.65" remaining="70" etc="1733984520"/>
+<taskend task="SYN Stealth Scan" time="1733984497" extrainfo="65535 total ports"/>
+<host starttime="1733984306" endtime="1733984497"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.17" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.17" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65530">
+<extrareasons reason="no-response" count="65530" proto="tcp" ports="1-21,23-24,26-109,111-142,144-442,444-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="imap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="75321" rttvar="334" to="100000"/>
+</host>
+<runstats><finished time="1733984497" timestr="Thu Dec 12 02:21:37 2024" summary="Nmap done at Thu Dec 12 02:21:37 2024; 1 IP address (1 host up) scanned in 190.85 seconds" elapsed="190.85" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

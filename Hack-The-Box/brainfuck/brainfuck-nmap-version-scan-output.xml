@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Dec 12 02:21:37 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,25,110,143,443 -oA brainfuck-nmap-version-scan-output 10.10.10.17 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,25,110,143,443 -oA brainfuck-nmap-version-scan-output 10.10.10.17" start="1733984497" startstr="Thu Dec 12 02:21:37 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="5" services="22,25,110,143,443"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1733984497"/>
+<taskend task="NSE" time="1733984497"/>
+<taskbegin task="NSE" time="1733984497"/>
+<taskend task="NSE" time="1733984497"/>
+<taskbegin task="NSE" time="1733984497"/>
+<taskend task="NSE" time="1733984497"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1733984497"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1733984497"/>
+<taskbegin task="Connect Scan" time="1733984497"/>
+<taskend task="Connect Scan" time="1733984498" extrainfo="5 total ports"/>
+<taskbegin task="Service scan" time="1733984498"/>
+<taskend task="Service scan" time="1733984510" extrainfo="5 services on 1 host"/>
+<taskbegin task="Traceroute" time="1733984514"/>
+<taskend task="Traceroute" time="1733984514"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1733984514"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1733984514"/>
+<taskbegin task="NSE" time="1733984514"/>
+<taskend task="NSE" time="1733984525"/>
+<taskbegin task="NSE" time="1733984525"/>
+<taskend task="NSE" time="1733984555"/>
+<taskbegin task="NSE" time="1733984555"/>
+<taskend task="NSE" time="1733984555"/>
+<host starttime="1733984497" endtime="1733984555"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.17" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.17" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.1" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 94:d0:b3:34:e9:a5:37:c5:ac:b9:80:df:2a:54:a5:f0 (RSA)&#xa;  256 6b:d5:dc:15:3a:66:7a:f4:19:91:5d:73:85:b2:4c:b2 (ECDSA)&#xa;  256 23:f5:a3:33:33:9d:76:d5:f2:ea:69:71:e3:4e:8e:02 (ED25519)"><table>
+<elem key="fingerprint">94d0b334e9a537c5acb980df2a54a5f0</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDUvFkWE1DxJj4OsU4DiVLjkxYV2a9pSlMS/78hpx0IejJaFilgNb+RFCyfyhIw5NvsZB6hZiNL0vPDh+MscPd75heIIgx9mczfamsrA2KODdkdgUJPCBWUnF9/VhYQhJpGvo4f6lAwLz7wnmcjhiXencMNkZcweADi5aK0Xp6iFxYcwx6+qy0891gQ5TnVVazkDJNA+QMUamxJRm1tQN5dp/+TeBecWJH2AxQFXsM4wPkIFaE0GsKvYDmGyfy1YL/Gn5IxEqVrhIEYkDH4BQsbvORNueOtJKHoys7EhPF+STpx6ZAXS6AXhS/nJMz6EvubzeGqfBOaDIZN9u5JuCdf</elem>
+</table>
+<table>
+<elem key="fingerprint">6bd5dc153a667af419915d7385b24cb2</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCJcOJZuuBlw9xDXy+VPpezMomPfySGOjABaxw02cmRifvzWE57mh1hlQD6z44IF1lsuW9E2NNH4xB4d8U0O5b0=</elem>
+</table>
+<table>
+<elem key="fingerprint">23f5a333339d76d5f2ea6971e34e8e02</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIOokdEAUqLEqEuY1CHNJ2xaDU+L+/0qb3XZO8UIZfrju</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" brainfuck" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="brainfuck, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="SASL(PLAIN) RESP-CODES UIDL USER TOP CAPA PIPELINING AUTH-RESP-CODE"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="LOGIN-REFERRALS ID IMAP4rev1 capabilities more post-login AUTH=PLAINA0001 have listed Pre-login OK LITERAL+ IDLE ENABLE SASL-IR"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.10.0" extrainfo="Ubuntu" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.10.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="http-title" output="Welcome to nginx!"><elem key="title">Welcome to nginx!</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="tls-nextprotoneg" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="http-server-header" output="nginx/1.10.0 (Ubuntu)"><elem>nginx/1.10.0 (Ubuntu)</elem>
+</script><script id="ssl-cert" output="Subject: commonName=brainfuck.htb/organizationName=Brainfuck Ltd./stateOrProvinceName=Attica/countryName=GR&#xa;Subject Alternative Name: DNS:www.brainfuck.htb, DNS:sup3rs3cr3t.brainfuck.htb&#xa;Issuer: commonName=brainfuck.htb/organizationName=Brainfuck Ltd./stateOrProvinceName=Attica/countryName=GR&#xa;Public Key type: rsa&#xa;Public Key bits: 3072&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2017-04-13T11:19:29&#xa;Not valid after:  2027-04-11T11:19:29&#xa;MD5:   cbf1:6899:96aa:f7a0:0565:0fc0:9491:7f20&#xa;SHA-1: f448:e798:a817:5580:879c:8fb8:ef0e:2d3d:c656:cb66"><table key="subject">
+<elem key="commonName">brainfuck.htb</elem>
+<elem key="countryName">GR</elem>
+<elem key="emailAddress">orestis@brainfuck.htb</elem>
+<elem key="localityName">Athens</elem>
+<elem key="organizationName">Brainfuck Ltd.</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="stateOrProvinceName">Attica</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">brainfuck.htb</elem>
+<elem key="countryName">GR</elem>
+<elem key="emailAddress">orestis@brainfuck.htb</elem>
+<elem key="localityName">Athens</elem>
+<elem key="organizationName">Brainfuck Ltd.</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="stateOrProvinceName">Attica</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">3072</elem>
+<elem key="modulus">A3048D26E855A070B60E372C5578C81CF8FB931493273148CC6FC045B743C80D20ADD7482B0827F304D0C8A9F53D6F28A8932615BEF0FEB11A162507CC8DDDC8DCD5CCC47C2970B33A5FDA114F0B758810494509139C73ACD61C829A488CFA49F65B5C5D2FE9B0072940525BD445E2C80DD4B96A713BBBDE40A56B034D352DFE63149750F09C2AAB364B7773343308D7C22302216DA2E3B285EC895A357C512BE94A6CCA269769DF5E4D3B25105F64DEB0725EB98FD56AE46852EA1A1A92E2FFAB62DB322863E7823001EBAE1A02F076B12234FC4B8E4DAED638F71534FDD381AFB3C79E6A5CF7A8EA7A82B6D3A500A2B0899A9B6B90200C08D215D07A43AD1D821592B91614F7DF4ABBACC00DDC0FD01A13E7E91C64910D63BC31D6ECF2B1232BB42A22F04E9B7F1E365303507BF5020C35C4AD76ADF7485307EBD5876BDA49DC91D2DCF7C358881C1647E7FDEB6377FE2F27C4F5F4A0D936C616064D0EAE8EFE2CA45566FD486FAD9757C0441DB4F18D7F98EC34FBCE06F512232D530B6F49</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">8F:5D:8A:B1:C2:60:FF:A8:12:1F:39:BE:93:34:8D:FE:9B:2F:8A:4F</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">8F:5D:8A:B1:C2:60:FF:A8:12:1F:39:BE:93:34:8D:FE:9B:2F:8A:4F</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Non Repudiation, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:www.brainfuck.htb, DNS:sup3rs3cr3t.brainfuck.htb</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2017-04-13T11:19:29</elem>
+<elem key="notAfter">2027-04-11T11:19:29</elem>
+</table>
+<elem key="md5">cbf1689996aaf7a005650fc094917f20</elem>
+<elem key="sha1">f448e798a8175580879c8fb8ef0e2d3dc656cb66</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFQzCCA6ugAwIBAgIJAI24F5h8eY+HMA0GCSqGSIb3DQEBCwUAMIGTMQswCQYD&#xa;VQQGEwJHUjEPMA0GA1UECAwGQXR0aWNhMQ8wDQYDVQQHDAZBdGhlbnMxFzAVBgNV&#xa;BAoMDkJyYWluZnVjayBMdGQuMQswCQYDVQQLDAJJVDEWMBQGA1UEAwwNYnJhaW5m&#xa;dWNrLmh0YjEkMCIGCSqGSIb3DQEJARYVb3Jlc3Rpc0BicmFpbmZ1Y2suaHRiMB4X&#xa;DTE3MDQxMzExMTkyOVoXDTI3MDQxMTExMTkyOVowgZMxCzAJBgNVBAYTAkdSMQ8w&#xa;DQYDVQQIDAZBdHRpY2ExDzANBgNVBAcMBkF0aGVuczEXMBUGA1UECgwOQnJhaW5m&#xa;dWNrIEx0ZC4xCzAJBgNVBAsMAklUMRYwFAYDVQQDDA1icmFpbmZ1Y2suaHRiMSQw&#xa;IgYJKoZIhvcNAQkBFhVvcmVzdGlzQGJyYWluZnVjay5odGIwggGiMA0GCSqGSIb3&#xa;DQEBAQUAA4IBjwAwggGKAoIBgQCjBI0m6FWgcLYONyxVeMgc+PuTFJMnMUjMb8BF&#xa;t0PIDSCt10grCCfzBNDIqfU9byiokyYVvvD+sRoWJQfMjd3I3NXMxHwpcLM6X9oR&#xa;Twt1iBBJRQkTnHOs1hyCmkiM+kn2W1xdL+mwBylAUlvUReLIDdS5anE7u95ApWsD&#xa;TTUt/mMUl1DwnCqrNkt3czQzCNfCIwIhbaLjsoXsiVo1fFEr6UpsyiaXad9eTTsl&#xa;EF9k3rByXrmP1WrkaFLqGhqS4v+rYtsyKGPngjAB664aAvB2sSI0/EuOTa7WOPcV&#xa;NP3Tga+zx55qXPeo6nqCttOlAKKwiZqba5AgDAjSFdB6Q60dghWSuRYU999Ku6zA&#xa;DdwP0BoT5+kcZJENY7wx1uzysSMrtCoi8E6bfx42UwNQe/UCDDXErXat90hTB+vV&#xa;h2vaSdyR0tz3w1iIHBZH5/3rY3f+LyfE9fSg2TbGFgZNDq6O/iykVWb9SG+tl1fA&#xa;RB208Y1/mOw0+84G9RIjLVMLb0kCAwEAAaOBlzCBlDAdBgNVHQ4EFgQUj12KscJg&#xa;/6gSHzm+kzSN/psvik8wHwYDVR0jBBgwFoAUj12KscJg/6gSHzm+kzSN/psvik8w&#xa;DAYDVR0TBAUwAwEB/zALBgNVHQ8EBAMCBeAwNwYDVR0RBDAwLoIRd3d3LmJyYWlu&#xa;ZnVjay5odGKCGXN1cDNyczNjcjN0LmJyYWluZnVjay5odGIwDQYJKoZIhvcNAQEL&#xa;BQADggGBAJ11TuRhhSQfq5NHXU5fV5VkCOPUx3yKsWjt93Qm8WDD2rJcZAq8jW59&#xa;NHDWhzDlKZMyNYv8gKJ8k6HuG3f20yeifKZulGw/YsY6dDtTzO+tooBqzjWb9irh&#xa;bpMIVXv1xBSuz+f5YGdzpvlMK/Ltt1nEQNjKXaTnjy7OGfp4isMZCzBZeKAKnjdn&#xa;+s6TgFrFA94B56naXNaNLHvv9WcFKviwDTP2PtDz0fc9hbnZz8oxE5Q6/l50NGUK&#xa;6bGCVIjDJfM/SsWPLHb4J6chkJxlZZLmpid+s5PsKSdY0ZZ1Oxb20O2mla77hDSJ&#xa;d43t/sZRBwWPEWxAHUR8Dj5pcrbCFyi57Qu4ENc5w7H0RhRyd0/OWs6ahn2ef4Qy&#xa;DSWfdpd5CVBGdSLVlVSjzLcBDmWuyy8q5CTgJ3VzIzOreg93F2mVAF+tlNZRX9rc&#xa;dFjsS0lwXWRZqd6642VuAtf4HoAFBh9PfBtUx+t1DxCXyY7OTwnvMsnNFg9fw11v&#xa;krhc81zFeg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<osmatch name="Linux 3.10 - 4.11" accuracy="90" line="63448">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="90" line="63880">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13 or 4.2" accuracy="90" line="63994">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="90" line="64162">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="90" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="90" line="67325">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="90" line="67361">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.8" accuracy="90" line="67909">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4.8</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.9" accuracy="89" line="67963">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:4.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.12" accuracy="88" line="63654">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3.12</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="17248878" lastboot="Sun May 26 11:01:17 2024"/>
+<distance value="2"/>
+<tcpsequence index="260" difficulty="Good luck!" values="A56D9766,954FB03B,C58C1A42,AA4C429C,B503FC0C,182148BE"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="FFFFE47D,FFFFE495,FFFFE4AE,FFFFE4C7,FFFFE4E0,FFFFE4FA"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="75.46" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.17" rtt="76.00" host="10.10.10.17"/>
+</trace>
+<times srtt="75925" rttvar="97" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1733984555"/>
+<taskend task="NSE" time="1733984555"/>
+<taskbegin task="NSE" time="1733984555"/>
+<taskend task="NSE" time="1733984555"/>
+<taskbegin task="NSE" time="1733984555"/>
+<taskend task="NSE" time="1733984555"/>
+<runstats><finished time="1733984555" timestr="Thu Dec 12 02:22:35 2024" summary="Nmap done at Thu Dec 12 02:22:35 2024; 1 IP address (1 host up) scanned in 58.14 seconds" elapsed="58.14" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
