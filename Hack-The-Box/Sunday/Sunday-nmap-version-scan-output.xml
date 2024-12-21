@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Dec 20 13:09:39 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 79,111,515,6787,22022 -oA Sunday-nmap-version-scan-output 10.10.10.76 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 79,111,515,6787,22022 -oA Sunday-nmap-version-scan-output 10.10.10.76" start="1734680379" startstr="Fri Dec 20 13:09:39 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="5" services="79,111,515,6787,22022"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1734680380"/>
+<taskend task="NSE" time="1734680380"/>
+<taskbegin task="NSE" time="1734680380"/>
+<taskend task="NSE" time="1734680380"/>
+<taskbegin task="NSE" time="1734680380"/>
+<taskend task="NSE" time="1734680380"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734680380"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734680380"/>
+<taskbegin task="Connect Scan" time="1734680380"/>
+<taskend task="Connect Scan" time="1734680380" extrainfo="5 total ports"/>
+<taskbegin task="Service scan" time="1734680380"/>
+<taskend task="Service scan" time="1734680471" extrainfo="5 services on 1 host"/>
+<taskbegin task="Traceroute" time="1734680476"/>
+<taskend task="Traceroute" time="1734680476"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734680476"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734680476"/>
+<taskbegin task="NSE" time="1734680476"/>
+<taskend task="NSE" time="1734680486"/>
+<taskbegin task="NSE" time="1734680486"/>
+<taskend task="NSE" time="1734680487"/>
+<taskbegin task="NSE" time="1734680487"/>
+<taskend task="NSE" time="1734680487"/>
+<host starttime="1734680380" endtime="1734680487"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.76" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.76" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="79"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="finger" servicefp="SF-Port79-TCP:V=7.94SVN%I=7%D=12/20%Time=67651F42%P=x86_64-pc-linux-gnu%r(GenericLines,12,&quot;No\x20one\x20logged\x20on\r\n&quot;)%r(GetRequest,93,&quot;Login\x20\x20\x20\x20\x20\x20\x20Name\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20TTY\x20\x20\x20\x20\x20\x20\x20\x20\x20Idle\x20\x20\x20\x20When\x20\x20\x20\x20Where\r\n/\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\nGET\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\nHTTP/1\.0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\n&quot;)%r(Help,5D,&quot;Login\x20\x20\x20\x20\x20\x20\x20Name\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20TTY\x20\x20\x20\x20\x20\x20\x20\x20\x20Idle\x20\x20\x20\x20When\x20\x20\x20\x20Where\r\nHELP\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\n&quot;)%r(HTTPOptions,93,&quot;Login\x20\x20\x20\x20\x20\x20\x20Name\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20TTY\x20\x20\x20\x20\x20\x20\x20\x20\x20Idle\x20\x20\x20\x20When\x20\x20\x20\x20Where\r\n/\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\nHTTP/1\.0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\nOPTIONS\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\n&quot;)%r(RTSPRequest,93,&quot;Login\x20\x20\x20\x20\x20\x20\x20Name\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20TTY\x20\x20\x20\x20\x20\x20\x20\x20\x20Idle\x20\x20\x20\x20When\x20\x20\x20\x20Where\r\n/\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\nOPTIONS\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\nRTSP/1\.0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\n&quot;)%r(SSLSessionReq,5D,&quot;Login\x20\x20\x20\x20\x20\x20\x20Name\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20TTY\x20\x20\x20\x20\x20\x20\x20\x20\x20Idle\x20\x20\x20\x20When\x20\x20\x20\x20Where\r\n\x16\x03\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\n&quot;)%r(TerminalServerCookie,5D,&quot;Login\x20\x20\x20\x20\x20\x20\x20Name\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20TTY\x20\x20\x20\x20\x20\x20\x20\x20\x20Idle\x20\x20\x20\x20When\x20\x20\x20\x20Where\r\n\x03\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\n&quot;);" method="table" conf="3"/><script id="finger" output="No one logged on&#xd;&#xa;"/><script id="fingerprint-strings" output="&#xa;  GenericLines: &#xa;    No one logged on&#xa;  GetRequest: &#xa;    Login Name TTY Idle When Where&#xa;    HTTP/1.0 ???&#xa;  HTTPOptions: &#xa;    Login Name TTY Idle When Where&#xa;    HTTP/1.0 ???&#xa;    OPTIONS ???&#xa;  Help: &#xa;    Login Name TTY Idle When Where&#xa;    HELP ???&#xa;  RTSPRequest: &#xa;    Login Name TTY Idle When Where&#xa;    OPTIONS ???&#xa;    RTSP/1.0 ???&#xa;  SSLSessionReq, TerminalServerCookie: &#xa;    Login Name TTY Idle When Where"><elem key="GenericLines">&#xa;    No one logged on</elem>
+<elem key="GetRequest">&#xa;    Login Name TTY Idle When Where&#xa;    HTTP/1.0 ???</elem>
+<elem key="HTTPOptions">&#xa;    Login Name TTY Idle When Where&#xa;    HTTP/1.0 ???&#xa;    OPTIONS ???</elem>
+<elem key="Help">&#xa;    Login Name TTY Idle When Where&#xa;    HELP ???</elem>
+<elem key="RTSPRequest">&#xa;    Login Name TTY Idle When Where&#xa;    OPTIONS ???&#xa;    RTSP/1.0 ???</elem>
+<elem key="SSLSessionReq, TerminalServerCookie">&#xa;    Login Name TTY Idle When Where</elem>
+</script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="515"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="printer" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="6787"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-title" output="400 Bad Request"><elem key="title">400 Bad Request</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script></port>
+<port protocol="tcp" portid="22022"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.4</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 aa:00:94:32:18:60:a4:93:3b:87:a4:b6:f8:02:68:0e (RSA)&#xa;  256 da:2a:6c:fa:6b:b1:ea:16:1d:a6:54:a1:0b:2b:ee:48 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDsG4q9TS6eAOrX6zI+R0CMMkCTfS36QDqQW5NcF/v9vmNWyL6xSZ8x38AB2T+Kbx672RqYCtKmHcZMFs55Q3hoWQE7YgWOJhXw9agE3aIjXiWCNhmmq4T5+zjbJWbF4OLkHzNzZ2qGHbhQD9Kbw9AmyW8ZS+P8AGC5fO36AVvgyS8+5YbA05N3UDKBbQu/WlpgyLfuNpAq9279mfq/MUWWRNKGKICF/jRB3lr2BMD+BhDjTooM7ySxpq7K9dfOgdmgqFrjdE4bkxBrPsWLF41YQy3hV0L/MJQE2h+s7kONmmZJMl4lAZ8PNUqQe6sdkDhL1Ex2+yQlvbyqQZw3xhuJ</elem>
+<elem key="fingerprint">aa0094321860a4933b87a4b6f802680e</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAII/0DH8qZiCfAzZNkSaAmT39TyBUFFwjdk8vm7ze+Wwm</elem>
+<elem key="fingerprint">da2a6cfa6bb1ea161da654a10b2bee48</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="79"/>
+<portused state="closed" proto="udp" portid="33841"/>
+<osmatch name="Oracle Solaris 10" accuracy="94" line="92265">
+<osclass type="general purpose" vendor="Oracle" osfamily="Solaris" osgen="10" accuracy="94"><cpe>cpe:/o:oracle:solaris:10</cpe></osclass>
+</osmatch>
+<osmatch name="Sun Solaris 11.3" accuracy="93" line="100678">
+<osclass type="general purpose" vendor="Sun" osfamily="Solaris" osgen="11" accuracy="93"><cpe>cpe:/o:sun:sunos:11.3</cpe></osclass>
+</osmatch>
+<osmatch name="Oracle Solaris 11" accuracy="93" line="92374">
+<osclass type="general purpose" vendor="Oracle" osfamily="Solaris" osgen="11" accuracy="93"><cpe>cpe:/o:oracle:solaris:11</cpe></osclass>
+</osmatch>
+<osmatch name="Oracle Solaris 11 or OpenIndiana" accuracy="92" line="92394">
+<osclass type="general purpose" vendor="Oracle" osfamily="Solaris" osgen="11" accuracy="92"><cpe>cpe:/o:oracle:solaris:11</cpe></osclass>
+<osclass type="general purpose" vendor="illumos" osfamily="OpenIndiana" accuracy="92"><cpe>cpe:/o:illumos:openindiana</cpe></osclass>
+</osmatch>
+<osmatch name="OpenIndiana oi_147 - oi_148" accuracy="92" line="40397">
+<osclass type="general purpose" vendor="illumos" osfamily="OpenIndiana" accuracy="92"><cpe>cpe:/o:illumos:openindiana</cpe></osclass>
+</osmatch>
+<osmatch name="Nexenta OS 3.0 - 3.1.2 (OpenSolaris snv_130 - snv_134f)" accuracy="92" line="88864">
+<osclass type="general purpose" vendor="Nexenta" osfamily="Nexenta" accuracy="92"><cpe>cpe:/o:nexenta:nexenta</cpe></osclass>
+</osmatch>
+<osmatch name="Sun Solaris 11 (snv_151a) or OpenIndiana oi_147" accuracy="92" line="100630">
+<osclass type="general purpose" vendor="Sun" osfamily="Solaris" osgen="11" accuracy="92"><cpe>cpe:/o:sun:sunos:5.11</cpe></osclass>
+<osclass type="general purpose" vendor="illumos" osfamily="OpenIndiana" accuracy="92"><cpe>cpe:/o:illumos:openindiana</cpe></osclass>
+</osmatch>
+<osmatch name="Sun Solaris 11 (snv_151a) or OpenIndiana oi_147 - oi_151a" accuracy="92" line="100658">
+<osclass type="general purpose" vendor="Sun" osfamily="Solaris" osgen="11" accuracy="92"><cpe>cpe:/o:sun:sunos:5.11</cpe></osclass>
+<osclass type="general purpose" vendor="illumos" osfamily="OpenIndiana" accuracy="92"><cpe>cpe:/o:illumos:openindiana</cpe></osclass>
+</osmatch>
+<osmatch name="Sun OpenSolaris snv_129" accuracy="91" line="100119">
+<osclass type="general purpose" vendor="Sun" osfamily="OpenSolaris" accuracy="91"><cpe>cpe:/o:sun:opensolaris</cpe></osclass>
+</osmatch>
+<osmatch name="Sun Storage 7410 NAS device" accuracy="90" line="99975">
+<osclass type="storage-misc" vendor="Sun" osfamily="embedded" accuracy="90"><cpe>cpe:/h:sun:storage_7410</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="2433" lastboot="Fri Dec 20 12:30:54 2024"/>
+<distance value="2"/>
+<tcpsequence index="265" difficulty="Good luck!" values="8D8B66F6,3D42635,176EFE5,70B8DE7B,80478347,2E76E0EF"/>
+<ipidsequence class="Incremental" values="3886,3887,3888,3889,388A,388B"/>
+<tcptssequence class="100HZ" values="3B196,3B1A0,3B1AA,3B1B5,3B1BE,3B1C8"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="88.39" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.76" rtt="88.61" host="10.10.10.76"/>
+</trace>
+<times srtt="92762" rttvar="11314" to="138018"/>
+</host>
+<taskbegin task="NSE" time="1734680487"/>
+<taskend task="NSE" time="1734680487"/>
+<taskbegin task="NSE" time="1734680487"/>
+<taskend task="NSE" time="1734680487"/>
+<taskbegin task="NSE" time="1734680487"/>
+<taskend task="NSE" time="1734680487"/>
+<runstats><finished time="1734680487" timestr="Fri Dec 20 13:11:27 2024" summary="Nmap done at Fri Dec 20 13:11:27 2024; 1 IP address (1 host up) scanned in 108.30 seconds" elapsed="108.30" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

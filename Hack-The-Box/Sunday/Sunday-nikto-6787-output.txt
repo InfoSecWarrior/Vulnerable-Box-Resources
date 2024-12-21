@@ -1,0 +1,7 @@
+- Nikto v2.5.0/
++ Target Host: 10.10.10.76
++ Target Port: 6787
++ GET /: The site uses TLS and the Strict-Transport-Security HTTP header is not defined. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET Hostname '10.10.10.76' does not match certificate's names: sunday. See: https://cwe.mitre.org/data/definitions/297.html: 
++ GET /solaris/: This might be interesting.

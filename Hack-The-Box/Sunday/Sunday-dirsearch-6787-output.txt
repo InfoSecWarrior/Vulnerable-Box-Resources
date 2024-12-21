@@ -1,0 +1,23 @@
+# Dirsearch started Fri Dec 20 13:12:41 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://10.10.10.76:6787 -o Sunday-dirsearch-6787-output.txt -q
+
+403   199B   https://10.10.10.76:6787/.ht_wsr.txt
+403   199B   https://10.10.10.76:6787/.htaccess.bak1
+403   199B   https://10.10.10.76:6787/.htaccess.orig
+403   199B   https://10.10.10.76:6787/.htaccess.sample
+403   199B   https://10.10.10.76:6787/.htaccess_orig
+403   199B   https://10.10.10.76:6787/.htaccess.save
+403   199B   https://10.10.10.76:6787/.htaccess_sc
+403   199B   https://10.10.10.76:6787/.htaccessBAK
+403   199B   https://10.10.10.76:6787/.htaccessOLD
+403   199B   https://10.10.10.76:6787/.htaccessOLD2
+403   199B   https://10.10.10.76:6787/.htaccess_extra
+403   199B   https://10.10.10.76:6787/.htm
+403   199B   https://10.10.10.76:6787/.html
+403   199B   https://10.10.10.76:6787/.htpasswd_test
+403   199B   https://10.10.10.76:6787/.htpasswds
+403   199B   https://10.10.10.76:6787/.httr-oauth
+403   199B   https://10.10.10.76:6787/ehthumbs.db
+403   199B   https://10.10.10.76:6787/server-status/
+403   199B   https://10.10.10.76:6787/server-status
+403   199B   https://10.10.10.76:6787/shtml.exe
+403   199B   https://10.10.10.76:6787/~http

@@ -1,0 +1,2 @@
+https://10.10.10.76:6787 [302 Found] Apache, Country[RESERVED][ZZ], HTTPServer[Apache], IP[10.10.10.76], RedirectLocation[https://10.10.10.76:6787/solaris/], Title[302 Found], X-Frame-Options[SAMEORIGIN]
+https://10.10.10.76:6787/solaris/ [200 OK] Apache, Bootstrap, Country[RESERVED][ZZ], HTML5, HTTPServer[Apache], IP[10.10.10.76], Script, Strict-Transport-Security[max-age=15768000], Title[Solaris Dashboard], X-Frame-Options[SAMEORIGIN], X-XSS-Protection[1; mode=block]

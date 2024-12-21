@@ -1,0 +1,16 @@
+[waf-detect:apachegeneric] [http] [info] https://10.10.10.76:6787
+[tls-version] [ssl] [info] 10.10.10.76:6787 ["tls12"]
+[external-service-interaction] [http] [info] https://10.10.10.76:6787
+[http-missing-security-headers:content-security-policy] [http] [info] https://10.10.10.76:6787/solaris/
+[http-missing-security-headers:x-content-type-options] [http] [info] https://10.10.10.76:6787/solaris/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://10.10.10.76:6787/solaris/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://10.10.10.76:6787/solaris/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://10.10.10.76:6787/solaris/
+[http-missing-security-headers:permissions-policy] [http] [info] https://10.10.10.76:6787/solaris/
+[http-missing-security-headers:referrer-policy] [http] [info] https://10.10.10.76:6787/solaris/
+[http-missing-security-headers:clear-site-data] [http] [info] https://10.10.10.76:6787/solaris/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://10.10.10.76:6787/solaris/
+[ssl-issuer] [ssl] [info] 10.10.10.76:6787 ["Host Root CA"]
+[self-signed-ssl] [ssl] [low] 10.10.10.76:6787
+[ssl-dns-names] [ssl] [info] 10.10.10.76:6787 ["sunday"]
+[untrusted-root-certificate] [ssl] [low] 10.10.10.76:6787
