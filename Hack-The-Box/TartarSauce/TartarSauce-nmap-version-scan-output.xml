@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Dec 20 16:43:37 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA TartarSauce-nmap-version-scan-output 10.10.10.88 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA TartarSauce-nmap-version-scan-output 10.10.10.88" start="1734693217" startstr="Fri Dec 20 16:43:37 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1734693218"/>
+<taskend task="NSE" time="1734693218"/>
+<taskbegin task="NSE" time="1734693218"/>
+<taskend task="NSE" time="1734693218"/>
+<taskbegin task="NSE" time="1734693218"/>
+<taskend task="NSE" time="1734693218"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734693218"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734693218"/>
+<taskbegin task="Connect Scan" time="1734693218"/>
+<taskend task="Connect Scan" time="1734693218" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1734693219"/>
+<taskend task="Service scan" time="1734693228" extrainfo="1 service on 1 host"/>
+<taskbegin task="Traceroute" time="1734693238"/>
+<taskend task="Traceroute" time="1734693239"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734693239"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734693239"/>
+<taskbegin task="NSE" time="1734693239"/>
+<taskend task="NSE" time="1734693242"/>
+<taskbegin task="NSE" time="1734693242"/>
+<taskend task="NSE" time="1734693242"/>
+<taskbegin task="NSE" time="1734693242"/>
+<taskend task="NSE" time="1734693242"/>
+<host starttime="1734693218" endtime="1734693242"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.88" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.88" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS GET HEAD POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-title" output="Landing Page"><elem key="title">Landing Page</elem>
+</script><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-robots.txt" output="5 disallowed entries &#xa;/webservices/tar/tar/source/ &#xa;/webservices/monstra-3.0.4/ /webservices/easy-file-uploader/ &#xa;/webservices/developmental/ /webservices/phpmyadmin/"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="udp" portid="38753"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="96" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="95" line="64180">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.18" accuracy="95" line="64474">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="95" line="8405">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="95"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="93" line="62926">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="93" line="64673">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 4.11" accuracy="93" line="63448">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Oracle VM Server 3.4.2 (Linux 4.1)" accuracy="93" line="92450">
+<osclass type="specialized" vendor="Oracle" osfamily="VM Server" osgen="3.X" accuracy="93"><cpe>cpe:/o:oracle:vm_server:3.4.2</cpe></osclass>
+<osclass type="specialized" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.12" accuracy="93" line="63654">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.12</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="93" line="63771">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3397835" lastboot="Mon Nov 11 08:53:27 2024"/>
+<distance value="2"/>
+<tcpsequence index="263" difficulty="Good luck!" values="BFCC5D54,A494878E,26883E50,41377890,DEE13390,BE3A6684"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="CA86BCE4,CA86BDBF,CA86BDBF,CA86BE90,CA86BE91,CA86BEF9"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="214.83" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.88" rtt="214.80" host="10.10.10.88"/>
+</trace>
+<times srtt="248565" rttvar="130045" to="768745"/>
+</host>
+<taskbegin task="NSE" time="1734693242"/>
+<taskend task="NSE" time="1734693242"/>
+<taskbegin task="NSE" time="1734693242"/>
+<taskend task="NSE" time="1734693242"/>
+<taskbegin task="NSE" time="1734693242"/>
+<taskend task="NSE" time="1734693242"/>
+<runstats><finished time="1734693242" timestr="Fri Dec 20 16:44:02 2024" summary="Nmap done at Fri Dec 20 16:44:02 2024; 1 IP address (1 host up) scanned in 24.72 seconds" elapsed="24.72" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
