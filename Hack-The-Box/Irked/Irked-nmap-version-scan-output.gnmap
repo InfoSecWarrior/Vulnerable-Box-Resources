@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Dec 21 10:39:38 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,111,6697,8067,50019,65534 -oA Irked-nmap-version-scan-output 10.10.10.117
+# Ports scanned: TCP(7;22,80,111,6697,8067,50019,65534) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.117 (irked.htb)	Status: Up
+Host: 10.10.10.117 (irked.htb)	Ports: 22/open/tcp//ssh//OpenSSH 6.7p1 Debian 5+deb8u4 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.10 ((Debian))/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 6697/open/tcp//irc//UnrealIRCd/, 8067/open/tcp//irc//UnrealIRCd/, 50019/open/tcp//status//1 (RPC #100024)/, 65534/open/tcp//irc//UnrealIRCd/
+# Nmap done at Sat Dec 21 10:40:03 2024 -- 1 IP address (1 host up) scanned in 25.68 seconds

@@ -1,0 +1,4 @@
+# Dirsearch started Sat Dec 21 10:50:42 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.117:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Irked-dirsearch-80-wordlist-output.txt -q
+
+301   313B   http://10.10.10.117/manual    -> REDIRECTS TO: http://10.10.10.117/manual/
+403   300B   http://10.10.10.117/server-status
