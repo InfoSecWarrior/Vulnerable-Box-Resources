@@ -1,0 +1,3 @@
+[phpinfo-files] [http] [low] http://10.10.10.84:80/phpinfo.php ["5.6.32"] [paths="/phpinfo.php"]
+[http-trace:trace-request] [http] [info] http://10.10.10.84:80
+[waf-detect:apachegeneric] [http] [info] http://10.10.10.84:80
