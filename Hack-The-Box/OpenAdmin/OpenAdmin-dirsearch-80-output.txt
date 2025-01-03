@@ -1,0 +1,23 @@
+# Dirsearch started Wed Jan  1 13:35:00 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.171:80 -o OpenAdmin-dirsearch-80-output.txt -q
+
+403   277B   http://10.10.10.171/.ht_wsr.txt
+403   277B   http://10.10.10.171/.htaccess_extra
+403   277B   http://10.10.10.171/.htaccess.sample
+403   277B   http://10.10.10.171/.htaccessOLD2
+403   277B   http://10.10.10.171/.htaccessOLD
+403   277B   http://10.10.10.171/.htaccessBAK
+403   277B   http://10.10.10.171/.htaccess_sc
+403   277B   http://10.10.10.171/.htaccess.orig
+403   277B   http://10.10.10.171/.htaccess.save
+403   277B   http://10.10.10.171/.htaccess_orig
+403   277B   http://10.10.10.171/.htaccess.bak1
+403   277B   http://10.10.10.171/.htpasswd_test
+403   277B   http://10.10.10.171/.htm
+403   277B   http://10.10.10.171/.html
+403   277B   http://10.10.10.171/.htpasswds
+403   277B   http://10.10.10.171/.httr-oauth
+403   277B   http://10.10.10.171/.php
+301   312B   http://10.10.10.171/music    -> REDIRECTS TO: http://10.10.10.171/music/
+301   310B   http://10.10.10.171/ona    -> REDIRECTS TO: http://10.10.10.171/ona/
+403   277B   http://10.10.10.171/server-status/
+403   277B   http://10.10.10.171/server-status

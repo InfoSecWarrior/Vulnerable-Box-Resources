@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Wed Jan  1 13:19:30 2025 as: nmap -v -T4 -Pn -p- -oA OpenAdmin-all-ports-scan-output 10.10.10.171
+Increasing send delay for 10.10.10.171 from 0 to 5 due to 111 out of 277 dropped probes since last increase.
+Increasing send delay for 10.10.10.171 from 5 to 10 due to 26 out of 64 dropped probes since last increase.
+Warning: 10.10.10.171 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.171 (10.10.10.171)
+Host is up (0.068s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Jan  1 13:33:39 2025 -- 1 IP address (1 host up) scanned in 849.74 seconds
