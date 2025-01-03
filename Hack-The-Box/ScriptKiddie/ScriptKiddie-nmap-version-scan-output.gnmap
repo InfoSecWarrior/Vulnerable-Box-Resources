@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Jan  3 14:32:47 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,5000 -oA ScriptKiddie-nmap-version-scan-output 10.10.10.226
+# Ports scanned: TCP(2;22,5000) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.226 (10.10.10.226)	Status: Up
+Host: 10.10.10.226 (10.10.10.226)	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)/, 5000/open/tcp//http//Werkzeug httpd 0.16.1 (Python 3.8.5)/	Seq Index: 261	IP ID Seq: All zeros
+# Nmap done at Fri Jan  3 14:33:03 2025 -- 1 IP address (1 host up) scanned in 16.34 seconds

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Jan  3 14:27:27 2025 as: nmap -v -T4 -Pn -p- -oA ScriptKiddie-all-ports-scan-output 10.10.10.226 -->
+<nmaprun scanner="nmap" args="nmap -v -T4 -Pn -p- -oA ScriptKiddie-all-ports-scan-output 10.10.10.226" start="1735894647" startstr="Fri Jan  3 14:27:27 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735894647"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735894647"/>
+<taskbegin task="SYN Stealth Scan" time="1735894647"/>
+<taskprogress task="SYN Stealth Scan" time="1735894678" percent="48.56" remaining="33" etc="1735894711"/>
+<taskprogress task="SYN Stealth Scan" time="1735894711" percent="58.74" remaining="45" etc="1735894756"/>
+<taskprogress task="SYN Stealth Scan" time="1735894759" percent="69.57" remaining="49" etc="1735894808"/>
+<taskprogress task="SYN Stealth Scan" time="1735894810" percent="80.70" remaining="39" etc="1735894849"/>
+<taskprogress task="SYN Stealth Scan" time="1735894849" percent="85.43" remaining="35" etc="1735894883"/>
+<taskend task="SYN Stealth Scan" time="1735894966" extrainfo="65535 total ports"/>
+<host starttime="1735894647" endtime="1735894966"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.226" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.226" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="reset" count="65533" proto="tcp" ports="1-21,23-4999,5001-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5000"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="upnp" method="table" conf="3"/></port>
+</ports>
+<times srtt="67245" rttvar="1327" to="100000"/>
+</host>
+<runstats><finished time="1735894966" timestr="Fri Jan  3 14:32:46 2025" summary="Nmap done at Fri Jan  3 14:32:46 2025; 1 IP address (1 host up) scanned in 319.86 seconds" elapsed="319.86" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

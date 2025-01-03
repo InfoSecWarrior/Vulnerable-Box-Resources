@@ -1,0 +1,8 @@
+- Nikto v2.5.0/
++ Target Host: 10.10.10.226
++ Target Port: 5000
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ HEAD Python/3.8.5 appears to be outdated (current is at least 3.9.6).
++ OPTIONS OPTIONS: Allowed HTTP Methods: HEAD, OPTIONS, POST, GET .
++ GET /#wp-config.php#: #wp-config.php# file found. This file contains the credentials.
