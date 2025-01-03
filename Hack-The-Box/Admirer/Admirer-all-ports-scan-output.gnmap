@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Mon Dec 30 13:55:27 2024 as: nmap -v -T4 -Pn -p- -oA Admirer-all-ports-scan-output 10.10.10.187
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.187 (10.10.10.187)	Status: Up
+Host: 10.10.10.187 (10.10.10.187)	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///	Ignored State: closed (65532)
+# Nmap done at Mon Dec 30 14:05:22 2024 -- 1 IP address (1 host up) scanned in 595.29 seconds
