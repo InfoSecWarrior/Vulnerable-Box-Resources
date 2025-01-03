@@ -1,0 +1,44 @@
+# Nmap 7.94SVN scan initiated Fri Dec 20 16:27:59 2024 as: nmap -v -T4 -Pn -p- -oA TartarSauce-all-ports-scan-output 10.10.10.88
+Increasing send delay for 10.10.10.88 from 0 to 5 due to 610 out of 1524 dropped probes since last increase.
+Increasing send delay for 10.10.10.88 from 5 to 10 due to 29 out of 72 dropped probes since last increase.
+Warning: 10.10.10.88 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.88 (10.10.10.88)
+Host is up (0.082s latency).
+Not shown: 65502 closed tcp ports (reset)
+PORT      STATE    SERVICE
+80/tcp    open     http
+2175/tcp  filtered airsync
+4086/tcp  filtered ftsync
+5310/tcp  filtered outlaws
+9442/tcp  filtered unknown
+10509/tcp filtered unknown
+11135/tcp filtered unknown
+14129/tcp filtered unknown
+14869/tcp filtered unknown
+17045/tcp filtered unknown
+19562/tcp filtered unknown
+22241/tcp filtered unknown
+23347/tcp filtered unknown
+23996/tcp filtered unknown
+25042/tcp filtered unknown
+37575/tcp filtered unknown
+38657/tcp filtered unknown
+39329/tcp filtered unknown
+41855/tcp filtered unknown
+42501/tcp filtered unknown
+46303/tcp filtered unknown
+47797/tcp filtered unknown
+49055/tcp filtered unknown
+49888/tcp filtered unknown
+49891/tcp filtered unknown
+51438/tcp filtered unknown
+51825/tcp filtered unknown
+56091/tcp filtered unknown
+59508/tcp filtered unknown
+60928/tcp filtered unknown
+61037/tcp filtered unknown
+62726/tcp filtered unknown
+64599/tcp filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Dec 20 16:43:37 2024 -- 1 IP address (1 host up) scanned in 938.21 seconds

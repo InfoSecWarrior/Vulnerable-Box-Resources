@@ -1,0 +1,30 @@
+# Nmap 7.94SVN scan initiated Fri Dec 20 16:43:37 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA TartarSauce-nmap-version-scan-output 10.10.10.88
+Nmap scan report for 10.10.10.88 (10.10.10.88)
+Host is up (0.25s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: OPTIONS GET HEAD POST
+|_http-title: Landing Page
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-robots.txt: 5 disallowed entries 
+| /webservices/tar/tar/source/ 
+| /webservices/monstra-3.0.4/ /webservices/easy-file-uploader/ 
+|_/webservices/developmental/ /webservices/phpmyadmin/
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.2 - 4.9 (96%), Linux 3.16 (95%), Linux 3.18 (95%), ASUS RT-N56U WAP (Linux 3.4) (95%), Linux 3.1 (93%), Linux 3.2 (93%), Linux 3.10 - 4.11 (93%), Oracle VM Server 3.4.2 (Linux 4.1) (93%), Linux 3.12 (93%), Linux 3.13 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 39.327 days (since Mon Nov 11 08:53:27 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   214.83 ms 10.10.14.1 (10.10.14.1)
+2   214.80 ms 10.10.10.88 (10.10.10.88)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 20 16:44:02 2024 -- 1 IP address (1 host up) scanned in 24.72 seconds
