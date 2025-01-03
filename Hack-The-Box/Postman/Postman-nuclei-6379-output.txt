@@ -1,0 +1,4 @@
+[redis-default-logins] [javascript] [high] 10.10.10.160:6379 [passwords=""]
+[redis-info] [javascript] [info] 10.10.10.160:6379 ["redis_version:4.0.9","process_id:660","used_cpu_sys:6.06","used_cpu_user:2.26","connected_clients:48","connected_slaves:0","used_memory_human:1.75M","role:master"]
+[rsync-list-modules] [javascript] [low] 10.10.10.160:6379 ["-ERR  unknown  command  ''"]
+[exposed-redis] [tcp] [high] 10.10.10.160:6379

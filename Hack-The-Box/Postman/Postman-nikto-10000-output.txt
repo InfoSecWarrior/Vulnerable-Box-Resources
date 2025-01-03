@@ -1,0 +1,18 @@
+- Nikto v2.5.0/
++ Target Host: 10.10.10.160
++ Target Port: 10000
++ GET /: Uncommon header 'auth-type' found, with contents: auth-required=1.
++ GET /: The site uses TLS and the Strict-Transport-Security HTTP header is not defined. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /: Cookie redirect created without the secure flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie redirect created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie testing created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET Server is using a wildcard certificate: *. See: https://en.wikipedia.org/wiki/Wildcard_certificate: 
++ GET Hostname '10.10.10.160' does not match certificate's names: *. See: https://cwe.mitre.org/data/definitions/297.html: 
++ GET MiniServ - This is the Webmin Unix administrator. It should not be running unless required.
++ NDOLBCUK /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ GET /sips/sipssys/users/a/admin/user: SIPS v0.2.2 allows user account info (including password) to be retrieved remotely. See: https://vulners.com/exploitdb/EDB-ID:22381: 
++ GET /ht_root/wwwroot/-/local/httpd$map.conf: WASD reveals the http configuration file. Upgrade to a later version and secure according to the documents on the WASD web site.
++ GET /local/httpd$map.conf: WASD reveals the http configuration file. Upgrade to a later version and secure according to the documents on the WASD web site.
++ GET /..\..\..\..\..\..\temp\temp.class: Cisco ACS 2.6.x and 3.0.1 (build 40) allows authenticated remote users to retrieve any file from the system. Upgrade to the latest version.
++ GET /css/: This might be interesting.
