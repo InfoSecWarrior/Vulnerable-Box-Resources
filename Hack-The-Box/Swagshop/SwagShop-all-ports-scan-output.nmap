@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Tue Dec 24 11:16:43 2024 as: nmap -v -T4 -Pn -p- -oA SwagShop-all-ports-scan-output 10.10.10.140
+Nmap scan report for swagshop.htb (10.10.10.140)
+Host is up (0.066s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Dec 24 11:17:11 2024 -- 1 IP address (1 host up) scanned in 28.11 seconds

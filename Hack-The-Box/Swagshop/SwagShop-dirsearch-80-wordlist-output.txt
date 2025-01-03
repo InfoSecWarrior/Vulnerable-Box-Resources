@@ -1,0 +1,13 @@
+# Dirsearch started Tue Dec 24 11:28:16 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.140:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o SwagShop-dirsearch-80-wordlist-output.txt -q
+
+301   312B   http://10.10.10.140/media    -> REDIRECTS TO: http://10.10.10.140/media/
+301   315B   http://10.10.10.140/includes    -> REDIRECTS TO: http://10.10.10.140/includes/
+301   310B   http://10.10.10.140/lib    -> REDIRECTS TO: http://10.10.10.140/lib/
+301   310B   http://10.10.10.140/app    -> REDIRECTS TO: http://10.10.10.140/app/
+301   309B   http://10.10.10.140/js    -> REDIRECTS TO: http://10.10.10.140/js/
+301   312B   http://10.10.10.140/shell    -> REDIRECTS TO: http://10.10.10.140/shell/
+301   311B   http://10.10.10.140/skin    -> REDIRECTS TO: http://10.10.10.140/skin/
+301   310B   http://10.10.10.140/var    -> REDIRECTS TO: http://10.10.10.140/var/
+301   313B   http://10.10.10.140/errors    -> REDIRECTS TO: http://10.10.10.140/errors/
+200     1KB  http://10.10.10.140/mage
+403   277B   http://10.10.10.140/server-status
