@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Dec 27 13:51:42 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA Popcorn-nmap-version-scan-output 10.10.10.6
+# Ports scanned: TCP(2;22,80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.6 (popcorn.htb)	Status: Up
+Host: 10.10.10.6 (popcorn.htb)	Ports: 22/open/tcp//ssh//OpenSSH 5.1p1 Debian 6ubuntu2 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.2.12/	Seq Index: 194	IP ID Seq: All zeros
+# Nmap done at Fri Dec 27 13:52:05 2024 -- 1 IP address (1 host up) scanned in 22.95 seconds

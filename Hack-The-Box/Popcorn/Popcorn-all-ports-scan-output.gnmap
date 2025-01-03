@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Dec 27 13:41:44 2024 as: nmap -v -T4 -Pn -p- -oA Popcorn-all-ports-scan-output 10.10.10.6
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.6 (10.10.10.6)	Status: Up
+Host: 10.10.10.6 (10.10.10.6)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 14513/filtered/tcp/////, 59829/filtered/tcp/////	Ignored State: closed (65531)
+# Nmap done at Fri Dec 27 13:51:42 2024 -- 1 IP address (1 host up) scanned in 598.44 seconds

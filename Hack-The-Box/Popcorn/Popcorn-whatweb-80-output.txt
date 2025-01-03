@@ -1,0 +1,2 @@
+http://10.10.10.6:80 [301 Moved Permanently] Apache[2.2.12], Country[RESERVED][ZZ], HTTPServer[Ubuntu Linux][Apache/2.2.12 (Ubuntu)], IP[10.10.10.6], RedirectLocation[http://popcorn.htb/], Title[301 Moved Permanently]
+http://popcorn.htb/ [200 OK] Apache[2.2.12], Country[RESERVED][ZZ], HTTPServer[Ubuntu Linux][Apache/2.2.12 (Ubuntu)], IP[10.10.10.6]

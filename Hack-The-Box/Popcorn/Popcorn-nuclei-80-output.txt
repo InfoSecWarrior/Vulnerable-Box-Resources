@@ -1,0 +1,2 @@
+[waf-detect:apachegeneric] [http] [info] http://10.10.10.6:80
+[open-redirect-generic] [http] [medium] http://10.10.10.6:80/../oast.me [redirect="../oast.me"]

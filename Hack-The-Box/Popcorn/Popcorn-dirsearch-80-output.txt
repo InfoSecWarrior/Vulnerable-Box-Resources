@@ -1,0 +1,6 @@
+# Dirsearch started Fri Dec 27 13:53:11 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.6:80 -o Popcorn-dirsearch-80-output.txt -q
+
+301   250B   http://10.10.10.6/%2e%2e//google.com    -> REDIRECTS TO: http://popcorn.htb/google.com
+301   248B   http://10.10.10.6/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd    -> REDIRECTS TO: http://popcorn.htbetc/passwd
+301   243B   http://10.10.10.6/%3f/    -> REDIRECTS TO: http://popcorn.htb/?/
+301   248B   http://10.10.10.6/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd    -> REDIRECTS TO: http://popcorn.htbetc/passwd

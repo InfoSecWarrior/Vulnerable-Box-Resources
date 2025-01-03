@@ -1,0 +1,31 @@
+# Nmap 7.94SVN scan initiated Fri Dec 27 13:51:42 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA Popcorn-nmap-version-scan-output 10.10.10.6
+Nmap scan report for popcorn.htb (10.10.10.6)
+Host is up (0.13s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 5.1p1 Debian 6ubuntu2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 3e:c8:1b:15:21:15:50:ec:6e:63:bc:c5:6b:80:7b:38 (DSA)
+|_  2048 aa:1f:79:21:b8:42:f4:8a:38:bd:b8:05:ef:1a:07:4d (RSA)
+80/tcp open  http    Apache httpd 2.2.12
+|_http-server-header: Apache/2.2.12 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html).
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 2.6.17 (96%), Linux 2.6.17 - 2.6.36 (96%), Linux 2.6.32 (96%), Linux 2.4.20 (Red Hat 7.2) (95%), AVM FRITZ!Box FON WLAN 7240 WAP (95%), Android 2.3.5 (Linux 2.6) (95%), Linux 2.6.30 (95%), Linux 2.6.35 (95%), Canon imageRUNNER ADVANCE C3320i or C3325 copier (94%), Epson WF-2660 printer (94%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.004 days (since Fri Dec 27 13:46:00 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=194 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: popcorn.hackthebox.gr; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   130.85 ms 10.10.14.1 (10.10.14.1)
+2   131.02 ms popcorn.htb (10.10.10.6)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 27 13:52:05 2024 -- 1 IP address (1 host up) scanned in 22.95 seconds
