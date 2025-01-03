@@ -1,0 +1,27 @@
+# Dirsearch started Wed Jan  1 14:38:31 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.111:9999 -o Frolic-dirsearch-9999-output.txt -q
+
+403   580B   http://10.10.10.111:9999/.ht_wsr.txt
+403   580B   http://10.10.10.111:9999/.htaccess.bak1
+403   580B   http://10.10.10.111:9999/.htaccess.orig
+403   580B   http://10.10.10.111:9999/.htaccess.save
+403   580B   http://10.10.10.111:9999/.htaccess_extra
+403   580B   http://10.10.10.111:9999/.htaccess_sc
+403   580B   http://10.10.10.111:9999/.htaccess_orig
+403   580B   http://10.10.10.111:9999/.htaccess.sample
+403   580B   http://10.10.10.111:9999/.htaccessBAK
+403   580B   http://10.10.10.111:9999/.htaccessOLD
+403   580B   http://10.10.10.111:9999/.htaccessOLD2
+403   580B   http://10.10.10.111:9999/.htm
+403   580B   http://10.10.10.111:9999/.html
+403   580B   http://10.10.10.111:9999/.htpasswd_test
+403   580B   http://10.10.10.111:9999/.htpasswds
+403   580B   http://10.10.10.111:9999/.httr-oauth
+301   194B   http://10.10.10.111:9999/admin    -> REDIRECTS TO: http://10.10.10.111:9999/admin/
+200   634B   http://10.10.10.111:9999/admin/
+200   634B   http://10.10.10.111:9999/admin/index.html
+301   194B   http://10.10.10.111:9999/backup    -> REDIRECTS TO: http://10.10.10.111:9999/backup/
+200    28B   http://10.10.10.111:9999/backup/
+301   194B   http://10.10.10.111:9999/dev    -> REDIRECTS TO: http://10.10.10.111:9999/dev/
+403   580B   http://10.10.10.111:9999/dev/
+301   194B   http://10.10.10.111:9999/test    -> REDIRECTS TO: http://10.10.10.111:9999/test/
+200    83KB  http://10.10.10.111:9999/test/

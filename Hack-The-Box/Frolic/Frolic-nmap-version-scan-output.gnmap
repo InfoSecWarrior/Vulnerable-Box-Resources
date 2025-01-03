@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Wed Jan  1 14:36:42 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,139,445,1880,9999 -oA Frolic-nmap-version-scan-output 10.10.10.111
+# Ports scanned: TCP(5;22,139,445,1880,9999) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.111 (10.10.10.111)	Status: Up
+Host: 10.10.10.111 (10.10.10.111)	Ports: 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)/, 1880/open/tcp//http//Node.js (Express middleware)/, 9999/open/tcp//http//nginx 1.10.3 (Ubuntu)/	Seq Index: 257	IP ID Seq: All zeros
+# Nmap done at Wed Jan  1 14:37:07 2025 -- 1 IP address (1 host up) scanned in 25.04 seconds

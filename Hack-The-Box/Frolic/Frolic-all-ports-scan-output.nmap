@@ -1,0 +1,59 @@
+# Nmap 7.94SVN scan initiated Wed Jan  1 14:23:26 2025 as: nmap -v -T4 -Pn -p- -oA Frolic-all-ports-scan-output 10.10.10.111
+Increasing send delay for 10.10.10.111 from 0 to 5 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.10.111 from 5 to 10 due to 25 out of 61 dropped probes since last increase.
+Warning: 10.10.10.111 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.111 (10.10.10.111)
+Host is up (0.22s latency).
+Not shown: 65487 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+139/tcp   open     netbios-ssn
+445/tcp   open     microsoft-ds
+999/tcp   filtered garcon
+1880/tcp  open     vsat-control
+1929/tcp  filtered bandwiz-system
+2035/tcp  filtered imsldoc
+6637/tcp  filtered unknown
+7056/tcp  filtered unknown
+8482/tcp  filtered unknown
+9476/tcp  filtered unknown
+9999/tcp  open     abyss
+10114/tcp filtered netiq-qcheck
+11745/tcp filtered unknown
+12097/tcp filtered unknown
+13750/tcp filtered unknown
+18080/tcp filtered unknown
+22540/tcp filtered unknown
+23026/tcp filtered unknown
+23105/tcp filtered unknown
+23533/tcp filtered unknown
+24914/tcp filtered unknown
+26923/tcp filtered unknown
+27741/tcp filtered unknown
+28243/tcp filtered unknown
+30383/tcp filtered unknown
+34182/tcp filtered unknown
+34873/tcp filtered unknown
+34916/tcp filtered unknown
+34974/tcp filtered unknown
+38171/tcp filtered unknown
+38510/tcp filtered unknown
+39102/tcp filtered unknown
+39841/tcp filtered unknown
+44252/tcp filtered unknown
+46555/tcp filtered unknown
+51095/tcp filtered unknown
+52723/tcp filtered unknown
+55138/tcp filtered unknown
+56247/tcp filtered unknown
+57162/tcp filtered unknown
+57686/tcp filtered unknown
+58932/tcp filtered unknown
+60794/tcp filtered unknown
+62310/tcp filtered unknown
+62917/tcp filtered unknown
+64826/tcp filtered unknown
+65269/tcp filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Jan  1 14:36:42 2025 -- 1 IP address (1 host up) scanned in 795.56 seconds

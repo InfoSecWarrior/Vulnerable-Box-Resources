@@ -1,0 +1,6 @@
+[smb-enum] [javascript] [info] 10.10.10.111:139 ["ForestName:","OSVersion: 6.1.0","NetBIOSComputerName: FROLIC","NetBIOSDomainName: FROLIC","DNSComputerNamen: frolic","DNSComputerName: frolic"]
+[smb-os-detect] [javascript] [info] 10.10.10.111:139 ["6.1.0"]
+[smb2-capabilities] [javascript] [info] 10.10.10.111:139 ["["DFSSupport"]"]
+[smb2-server-time] [javascript] [info] 10.10.10.111:139 ["SystemTime: 2025-01-01T10:16:49.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-signing] [javascript] [medium] 10.10.10.111:139
+[smb-anonymous-access] [javascript] [high] 10.10.10.111:139

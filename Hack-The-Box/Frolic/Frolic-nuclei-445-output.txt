@@ -1,0 +1,6 @@
+[smb-enum] [javascript] [info] 10.10.10.111:445 ["NetBIOSComputerName: FROLIC","NetBIOSDomainName: FROLIC","DNSComputerNamen: frolic","DNSComputerName: frolic","ForestName:","OSVersion: 6.1.0"]
+[smb-os-detect] [javascript] [info] 10.10.10.111:445 ["6.1.0"]
+[smb2-capabilities] [javascript] [info] 10.10.10.111:445 ["["DFSSupport","LargeMTU"]"]
+[smb2-server-time] [javascript] [info] 10.10.10.111:445 ["SystemTime: 2025-01-01T10:16:50.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-anonymous-access] [javascript] [high] 10.10.10.111:445
+[smb-signing] [javascript] [medium] 10.10.10.111:445

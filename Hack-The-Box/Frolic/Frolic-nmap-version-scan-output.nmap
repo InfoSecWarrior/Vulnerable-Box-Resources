@@ -1,0 +1,69 @@
+# Nmap 7.94SVN scan initiated Wed Jan  1 14:36:42 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,139,445,1880,9999 -oA Frolic-nmap-version-scan-output 10.10.10.111
+Nmap scan report for 10.10.10.111 (10.10.10.111)
+Host is up (0.13s latency).
+
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 87:7b:91:2a:0f:11:b6:57:1e:cb:9f:77:cf:35:e2:21 (RSA)
+|   256 b7:9b:06:dd:c2:5e:28:44:78:41:1e:67:7d:1e:b7:62 (ECDSA)
+|_  256 21:cf:16:6d:82:a4:30:c3:c6:9c:d7:38:ba:b5:02:b0 (ED25519)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
+1880/tcp open  http        Node.js (Express middleware)
+|_http-favicon: Unknown favicon MD5: 818DD6AFD0D0F9433B21774F89665EEA
+|_http-title: Node-RED
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+9999/tcp open  http        nginx 1.10.3 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.10.3 (Ubuntu)
+|_http-title: Welcome to nginx!
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.12 (96%), Linux 3.13 (96%), Linux 3.16 (96%), Linux 3.18 (96%), Linux 3.2 - 4.9 (96%), Linux 3.8 - 3.11 (96%), Linux 4.8 (96%), Linux 4.4 (95%), Linux 4.9 (95%), Linux 4.2 (95%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.007 days (since Wed Jan  1 14:26:24 2025)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: FROLIC; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| smb2-time: 
+|   date: 2025-01-01T08:51:56
+|_  start_date: N/A
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: frolic
+|   NetBIOS computer name: FROLIC\x00
+|   Domain name: \x00
+|   FQDN: frolic
+|_  System time: 2025-01-01T14:21:56+05:30
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: -2h05m05s, deviation: 3h10m30s, median: -15m06s
+| nbstat: NetBIOS name: FROLIC, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   FROLIC<00>           Flags: <unique><active>
+|   FROLIC<03>           Flags: <unique><active>
+|   FROLIC<20>           Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|_  WORKGROUP<1e>        Flags: <group><active>
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   198.89 ms 10.10.14.1 (10.10.14.1)
+2   199.05 ms 10.10.10.111 (10.10.10.111)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan  1 14:37:07 2025 -- 1 IP address (1 host up) scanned in 25.04 seconds
