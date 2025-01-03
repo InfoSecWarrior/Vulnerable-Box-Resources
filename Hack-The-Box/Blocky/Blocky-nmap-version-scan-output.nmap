@@ -1,0 +1,38 @@
+# Nmap 7.94SVN scan initiated Fri Dec 27 18:07:52 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80,25565 -oA Blocky-nmap-version-scan-output 10.10.10.37
+Nmap scan report for blocky.htb (10.10.10.37)
+Host is up (0.18s latency).
+
+PORT      STATE SERVICE   VERSION
+21/tcp    open  ftp       ProFTPD 1.3.5a
+22/tcp    open  ssh       OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 d6:2b:99:b4:d5:e7:53:ce:2b:fc:b5:d7:9d:79:fb:a2 (RSA)
+|   256 5d:7f:38:95:70:c9:be:ac:67:a0:1e:86:e7:97:84:03 (ECDSA)
+|_  256 09:d5:c2:04:95:1a:90:ef:87:56:25:97:df:83:70:67 (ED25519)
+80/tcp    open  http      Apache httpd 2.4.18
+|_http-generator: WordPress 4.8
+|_http-title: BlockyCraft &#8211; Under Construction!
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+25565/tcp open  minecraft Minecraft 1.11.2 (Protocol: 127, Message: A Minecraft Server, Users: 0/20)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|specialized|phone|storage-misc
+Running (JUST GUESSING): Linux 3.X|4.X (90%), Crestron 2-Series (86%), Google Android 4.X (86%), HP embedded (85%)
+OS CPE: cpe:/o:linux:linux_kernel:3.16 cpe:/o:linux:linux_kernel:4 cpe:/o:crestron:2_series cpe:/o:google:android:4.0 cpe:/h:hp:p2000_g3
+Aggressive OS guesses: Linux 3.16 (90%), Linux 3.16 - 4.6 (90%), Linux 3.2 - 4.9 (90%), Linux 4.2 (90%), Linux 3.10 - 4.11 (88%), Linux 3.12 (88%), Linux 3.13 (88%), Linux 3.13 or 4.2 (88%), Linux 3.18 (88%), Linux 3.8 - 3.11 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.002 days (since Fri Dec 27 18:04:49 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=248 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: 127.0.1.1; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   189.32 ms 10.10.14.1 (10.10.14.1)
+2   189.35 ms blocky.htb (10.10.10.37)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 27 18:08:12 2024 -- 1 IP address (1 host up) scanned in 20.24 seconds

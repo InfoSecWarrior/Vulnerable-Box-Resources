@@ -1,0 +1,12 @@
+# Dirsearch started Fri Dec 27 18:36:21 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.37:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Blocky-dirsearch-80-wordlist-output.txt -q
+
+404   285B   http://10.10.10.37/http%3A%2F%2Fwww
+404   289B   http://10.10.10.37/http%3A%2F%2Fyoutube
+404   287B   http://10.10.10.37/http%3A%2F%2Fblogs
+404   286B   http://10.10.10.37/http%3A%2F%2Fblog
+404   287B   http://10.10.10.37/**http%3A%2F%2Fwww
+404   291B   http://10.10.10.37/http%3A%2F%2Fcommunity
+404   287B   http://10.10.10.37/http%3A%2F%2Fradar
+404   298B   http://10.10.10.37/http%3A%2F%2Fjeremiahgrossman
+404   288B   http://10.10.10.37/http%3A%2F%2Fweblog
+404   286B   http://10.10.10.37/http%3A%2F%2Fswik

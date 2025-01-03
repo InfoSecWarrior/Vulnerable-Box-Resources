@@ -1,0 +1,7 @@
+[missing-sri] [http] [info] http://blocky.htb ["http://blocky.htb/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1","http://blocky.htb/wp-content/themes/twentyseventeen/assets/js/skip-link-focus-fix.js?ver=1.0","http://blocky.htb/wp-content/themes/twentyseventeen/assets/js/global.js?ver=1.0","http://blocky.htb/wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo.js?ver=2.1.2","http://blocky.htb/wp-includes/js/wp-embed.min.js?ver=4.8","http://blocky.htb/wp-includes/js/jquery/jquery.js?ver=1.12.4"]
+[waf-detect:apachegeneric] [http] [info] http://10.10.10.37:80
+[ssh-auth-methods] [javascript] [info] 10.10.10.37:22 ["["publickey","password"]"]
+[CVE-2023-48795] [javascript] [medium] 10.10.10.37:22 ["Vulnerable to Terrapin"]
+[ssh-password-auth] [javascript] [info] 10.10.10.37:22
+[ssh-server-enumeration] [javascript] [info] 10.10.10.37:22 ["SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2"]
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.10.37:22
