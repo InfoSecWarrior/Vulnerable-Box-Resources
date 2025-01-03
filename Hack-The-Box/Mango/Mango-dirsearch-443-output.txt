@@ -1,0 +1,21 @@
+# Dirsearch started Sat Dec 28 15:41:57 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://10.10.10.162:443 -o Mango-dirsearch-443-output.txt -q
+
+403   278B   https://10.10.10.162/.ht_wsr.txt
+403   278B   https://10.10.10.162/.htaccess.bak1
+403   278B   https://10.10.10.162/.htaccess.sample
+403   278B   https://10.10.10.162/.htaccess.save
+403   278B   https://10.10.10.162/.htaccess_extra
+403   278B   https://10.10.10.162/.htaccessBAK
+403   278B   https://10.10.10.162/.htaccessOLD
+403   278B   https://10.10.10.162/.htaccess_sc
+403   278B   https://10.10.10.162/.htaccess_orig
+403   278B   https://10.10.10.162/.htaccessOLD2
+403   278B   https://10.10.10.162/.htaccess.orig
+403   278B   https://10.10.10.162/.html
+403   278B   https://10.10.10.162/.htm
+403   278B   https://10.10.10.162/.htpasswd_test
+403   278B   https://10.10.10.162/.htpasswds
+403   278B   https://10.10.10.162/.httr-oauth
+403   278B   https://10.10.10.162/.php
+403   278B   https://10.10.10.162/server-status/
+403   278B   https://10.10.10.162/server-status

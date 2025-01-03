@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sat Dec 28 15:40:18 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,443 -oA Mango-nmap-version-scan-output 10.10.10.162 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80,443 -oA Mango-nmap-version-scan-output 10.10.10.162" start="1735380618" startstr="Sat Dec 28 15:40:18 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,80,443"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1735380619"/>
+<taskend task="NSE" time="1735380619"/>
+<taskbegin task="NSE" time="1735380619"/>
+<taskend task="NSE" time="1735380619"/>
+<taskbegin task="NSE" time="1735380619"/>
+<taskend task="NSE" time="1735380619"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735380619"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735380619"/>
+<taskbegin task="Connect Scan" time="1735380619"/>
+<taskend task="Connect Scan" time="1735380619" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1735380619"/>
+<taskend task="Service scan" time="1735380632" extrainfo="3 services on 1 host"/>
+<taskbegin task="Traceroute" time="1735380637"/>
+<taskend task="Traceroute" time="1735380637"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735380637"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735380637"/>
+<taskbegin task="NSE" time="1735380637"/>
+<taskend task="NSE" time="1735380642"/>
+<taskbegin task="NSE" time="1735380642"/>
+<taskend task="NSE" time="1735380643"/>
+<taskbegin task="NSE" time="1735380643"/>
+<taskend task="NSE" time="1735380643"/>
+<host starttime="1735380619" endtime="1735380643"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.162" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.162" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 a8:8f:d9:6f:a6:e4:ee:56:e3:ef:54:54:6d:56:0c:f5 (RSA)&#xa;  256 6a:1c:ba:89:1e:b0:57:2f:fe:63:e1:61:72:89:b4:cf (ECDSA)&#xa;  256 90:70:fb:6f:38:ae:dc:3b:0b:31:68:64:b0:4e:7d:c9 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">a88fd96fa6e4ee56e3ef54546d560cf5</elem>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDXYCdNRHET98F1ZTM+H8yrD9KXeRjvIk9e78JkHdzcqCq6zcvYIqEZReb3FSCChJ9mxK6E6vu5xBY7R6Gi0V31dx0koyaieEMd67PU+9UcjaAujbDS3UgYzySN+c5GV/ssmA6wWHu4zz+k+qztqdYFPh0/TgrC/wNPWHOKdpivgoyk3+F/retyGdKUNGjypXrw6v1faHiLOIO+zNHorxB304XmSLEFswiOS8UsjplIbud2KhWPEkY4s4FyjlpfpVdgPljbjijm7kcPNgpTXLXE51oNE3Q5w7ufO5ulo3Pqm0x+4d+SEpCE4g0+Yb020zK+JlKsp2tFJyLqTLan1buN</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">6a1cba891eb0572ffe63e1617289b4cf</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDqSZ4iBMzBrw2lEFKYlwO2qmw0WPf76ZhnvWGK+LJcHxvNa4OQ/hGuBWCjVlTcMbn1Te7D8jGwPgbcVpuaEld8=</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">9070fb6f38aedc3b0b316864b04e7dc9</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIB1sFdLYacK+1f4J+i+NCAhG+bj8xzzydNhqA1Ndo/xt</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" hostname="10.10.10.162" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS HEAD GET POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=staging-order.mango.htb/organizationName=Mango Prv Ltd./stateOrProvinceName=None/countryName=IN&#xa;Issuer: commonName=staging-order.mango.htb/organizationName=Mango Prv Ltd./stateOrProvinceName=None/countryName=IN&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2019-09-27T14:21:19&#xa;Not valid after:  2020-09-26T14:21:19&#xa;MD5:   b797:d14d:485f:eac3:5cc6:2fed:bb7a:2ce6&#xa;SHA-1: b329:9eca:2892:af1b:5895:053b:f30e:861f:1c03:db95"><table key="subject">
+<elem key="commonName">staging-order.mango.htb</elem>
+<elem key="countryName">IN</elem>
+<elem key="emailAddress">admin@mango.htb</elem>
+<elem key="localityName">None</elem>
+<elem key="organizationName">Mango Prv Ltd.</elem>
+<elem key="organizationalUnitName">None</elem>
+<elem key="stateOrProvinceName">None</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">staging-order.mango.htb</elem>
+<elem key="countryName">IN</elem>
+<elem key="emailAddress">admin@mango.htb</elem>
+<elem key="localityName">None</elem>
+<elem key="organizationName">Mango Prv Ltd.</elem>
+<elem key="organizationalUnitName">None</elem>
+<elem key="stateOrProvinceName">None</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">E5F8A649F82ADF1B1D52467A75C6EA18F0E608024904E2B67F96B6E40B771EDE6BD528E222EBE8BC34A63078D59A56C5EAA5FB0BA7FB526FB556DBFF0629D97E9B8C11EB320C7D151BFE17E6BEA8D4631FAEF8EF01743672E5442311C61F5EC933A80A284A699E0B85C153210B8FCA5088EE6815D7F6E740F5E68525E89812975F494572B28C500DD893261C325083E7B05ADFD36D6754E235FD32641C080BCF1975BF1ACC9F0ACBD9F2F2803B7521037C521185FF65139379557C4B1ED9FDA4BEFE866E68F10467D608D03F023F35D0E10654C892E522EB6AB217086565F79DD0083F6F8BEB4707F73E202693B47774662BBF8066DD29D088B4D0F5AFD90E11</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">85:AD:9B:04:E6:57:A3:81:32:7E:8B:D6:FA:9B:C5:2C:65:56:05:11</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">85:AD:9B:04:E6:57:A3:81:32:7E:8B:D6:FA:9B:C5:2C:65:56:05:11</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2019-09-27T14:21:19</elem>
+<elem key="notAfter">2020-09-26T14:21:19</elem>
+</table>
+<elem key="md5">b797d14d485feac35cc62fedbb7a2ce6</elem>
+<elem key="sha1">b3299eca2892af1b5895053bf30e861f1c03db95</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEAjCCAuqgAwIBAgIJAK5QiSmoBvEyMA0GCSqGSIb3DQEBCwUAMIGVMQswCQYD&#xa;VQQGEwJJTjENMAsGA1UECAwETm9uZTENMAsGA1UEBwwETm9uZTEXMBUGA1UECgwO&#xa;TWFuZ28gUHJ2IEx0ZC4xDTALBgNVBAsMBE5vbmUxIDAeBgNVBAMMF3N0YWdpbmct&#xa;b3JkZXIubWFuZ28uaHRiMR4wHAYJKoZIhvcNAQkBFg9hZG1pbkBtYW5nby5odGIw&#xa;HhcNMTkwOTI3MTQyMTE5WhcNMjAwOTI2MTQyMTE5WjCBlTELMAkGA1UEBhMCSU4x&#xa;DTALBgNVBAgMBE5vbmUxDTALBgNVBAcMBE5vbmUxFzAVBgNVBAoMDk1hbmdvIFBy&#xa;diBMdGQuMQ0wCwYDVQQLDAROb25lMSAwHgYDVQQDDBdzdGFnaW5nLW9yZGVyLm1h&#xa;bmdvLmh0YjEeMBwGCSqGSIb3DQEJARYPYWRtaW5AbWFuZ28uaHRiMIIBIjANBgkq&#xa;hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5fimSfgq3xsdUkZ6dcbqGPDmCAJJBOK2&#xa;f5a25At3Ht5r1SjiIuvovDSmMHjVmlbF6qX7C6f7Um+1Vtv/BinZfpuMEesyDH0V&#xa;G/4X5r6o1GMfrvjvAXQ2cuVEIxHGH17JM6gKKEppnguFwVMhC4/KUIjuaBXX9udA&#xa;9eaFJeiYEpdfSUVysoxQDdiTJhwyUIPnsFrf021nVOI1/TJkHAgLzxl1vxrMnwrL&#xa;2fLygDt1IQN8UhGF/2UTk3lVfEse2f2kvv6GbmjxBGfWCNA/Aj810OEGVMiS5SLr&#xa;arIXCGVl953QCD9vi+tHB/c+ICaTtHd0Ziu/gGbdKdCItND1r9kOEQIDAQABo1Mw&#xa;UTAdBgNVHQ4EFgQUha2bBOZXo4EyfovW+pvFLGVWBREwHwYDVR0jBBgwFoAUha2b&#xa;BOZXo4EyfovW+pvFLGVWBREwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAmyhYweHz0az0j6UyTYlUAUKY7o/wBHE55UcekmWi0XVdIseUxBGZasL9&#xa;HJki3dQ0mOEW4Ej28StNiDKPvWJhTDLA1ZjUOaW2Jg20uDcIiJ98XbdBvSgjR6FJ&#xa;JqtPYnhx7oOigKsBGYXXYAxoiCFarcyPyB7konNuXUqlf7iz2oLl/FsvJEl+YMgZ&#xa;YtrgOLbEO6/Lot/yX9JBeG1z8moJ0g+8ouCbUYI1Xcxipp0Cp2sK1nrfHEPaSjBB&#xa;Os2YQBdvVXJau7pt9zJmPVMhrLesf+bW5CN0WpC/AE1M1j6AfkX64jKpIMS6KAUP&#xa;/UKaUcFaDwjlaDEvbXPdwpmk4vVWqg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="Mango | Search Base"><elem key="title">Mango | Search Base</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="40694"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="96" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="95" line="62926">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64673">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="95" line="61824">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="95"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.18" accuracy="94" line="64474">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0" accuracy="94" line="68054">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:5.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="94" line="64180">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="93" line="8405">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="93"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.1" accuracy="93" line="68139">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:5.1</cpe></osclass>
+</osmatch>
+<osmatch name="Oracle VM Server 3.4.2 (Linux 4.1)" accuracy="93" line="92450">
+<osclass type="specialized" vendor="Oracle" osfamily="VM Server" osgen="3.X" accuracy="93"><cpe>cpe:/o:oracle:vm_server:3.4.2</cpe></osclass>
+<osclass type="specialized" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4.1</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3562344" lastboot="Sun Nov 17 10:08:19 2024"/>
+<distance value="2"/>
+<tcpsequence index="260" difficulty="Good luck!" values="2EBCA563,DFDD260B,D43C77DB,A9CD5EF0,C129B34D,1EEDB61E"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="D454F1F1,D454F256,D454F2BA,D454F31E,D454F382,D454F3E6"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="170.22" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.162" rtt="170.40" host="10.10.10.162"/>
+</trace>
+<times srtt="90623" rttvar="30299" to="211819"/>
+</host>
+<taskbegin task="NSE" time="1735380643"/>
+<taskend task="NSE" time="1735380643"/>
+<taskbegin task="NSE" time="1735380643"/>
+<taskend task="NSE" time="1735380643"/>
+<taskbegin task="NSE" time="1735380643"/>
+<taskend task="NSE" time="1735380643"/>
+<runstats><finished time="1735380643" timestr="Sat Dec 28 15:40:43 2024" summary="Nmap done at Sat Dec 28 15:40:43 2024; 1 IP address (1 host up) scanned in 25.23 seconds" elapsed="25.23" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

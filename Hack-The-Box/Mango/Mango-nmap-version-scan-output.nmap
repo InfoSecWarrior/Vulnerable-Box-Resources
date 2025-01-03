@@ -1,0 +1,49 @@
+# Nmap 7.94SVN scan initiated Sat Dec 28 15:40:18 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,443 -oA Mango-nmap-version-scan-output 10.10.10.162
+Nmap scan report for 10.10.10.162 (10.10.10.162)
+Host is up (0.091s latency).
+
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 a8:8f:d9:6f:a6:e4:ee:56:e3:ef:54:54:6d:56:0c:f5 (RSA)
+|   256 6a:1c:ba:89:1e:b0:57:2f:fe:63:e1:61:72:89:b4:cf (ECDSA)
+|_  256 90:70:fb:6f:38:ae:dc:3b:0b:31:68:64:b0:4e:7d:c9 (ED25519)
+80/tcp  open  http     Apache httpd 2.4.29
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+|_http-title: 403 Forbidden
+443/tcp open  ssl/http Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| ssl-cert: Subject: commonName=staging-order.mango.htb/organizationName=Mango Prv Ltd./stateOrProvinceName=None/countryName=IN
+| Issuer: commonName=staging-order.mango.htb/organizationName=Mango Prv Ltd./stateOrProvinceName=None/countryName=IN
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2019-09-27T14:21:19
+| Not valid after:  2020-09-26T14:21:19
+| MD5:   b797:d14d:485f:eac3:5cc6:2fed:bb7a:2ce6
+|_SHA-1: b329:9eca:2892:af1b:5895:053b:f30e:861f:1c03:db95
+| tls-alpn: 
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Mango | Search Base
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.2 - 4.9 (96%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), Linux 3.18 (94%), Linux 5.0 (94%), Linux 3.16 (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 5.1 (93%), Oracle VM Server 3.4.2 (Linux 4.1) (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 41.231 days (since Sun Nov 17 10:08:19 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   170.22 ms 10.10.14.1 (10.10.14.1)
+2   170.40 ms 10.10.10.162 (10.10.10.162)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Dec 28 15:40:43 2024 -- 1 IP address (1 host up) scanned in 25.23 seconds
