@@ -1,0 +1,29 @@
+# Dirsearch started Thu Jan  2 17:52:33 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.214:80 -o Time-dirsearch-80-output.txt -q
+
+301   309B   http://10.10.10.214/js    -> REDIRECTS TO: http://10.10.10.214/js/
+403   277B   http://10.10.10.214/.ht_wsr.txt
+403   277B   http://10.10.10.214/.htaccess.bak1
+403   277B   http://10.10.10.214/.htaccess.orig
+403   277B   http://10.10.10.214/.htaccess.save
+403   277B   http://10.10.10.214/.htaccess.sample
+403   277B   http://10.10.10.214/.htaccess_extra
+403   277B   http://10.10.10.214/.htaccess_orig
+403   277B   http://10.10.10.214/.htaccess_sc
+403   277B   http://10.10.10.214/.htaccessBAK
+403   277B   http://10.10.10.214/.htaccessOLD
+403   277B   http://10.10.10.214/.htaccessOLD2
+403   277B   http://10.10.10.214/.htm
+403   277B   http://10.10.10.214/.htpasswd_test
+403   277B   http://10.10.10.214/.html
+403   277B   http://10.10.10.214/.httr-oauth
+403   277B   http://10.10.10.214/.htpasswds
+403   277B   http://10.10.10.214/.php
+301   310B   http://10.10.10.214/css    -> REDIRECTS TO: http://10.10.10.214/css/
+301   312B   http://10.10.10.214/fonts    -> REDIRECTS TO: http://10.10.10.214/fonts/
+301   313B   http://10.10.10.214/images    -> REDIRECTS TO: http://10.10.10.214/images/
+403   277B   http://10.10.10.214/images/
+301   317B   http://10.10.10.214/javascript    -> REDIRECTS TO: http://10.10.10.214/javascript/
+403   277B   http://10.10.10.214/js/
+403   277B   http://10.10.10.214/server-status
+403   277B   http://10.10.10.214/server-status/
+403   277B   http://10.10.10.214/vendor/
