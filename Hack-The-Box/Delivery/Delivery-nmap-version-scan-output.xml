@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Jan  3 12:40:24 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8065 -oA Delivery-nmap-version-scan-output 10.10.10.222 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8065 -oA Delivery-nmap-version-scan-output 10.10.10.222" start="1735888224" startstr="Fri Jan  3 12:40:24 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,80,8065"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1735888224"/>
+<taskend task="NSE" time="1735888224"/>
+<taskbegin task="NSE" time="1735888224"/>
+<taskend task="NSE" time="1735888224"/>
+<taskbegin task="NSE" time="1735888224"/>
+<taskend task="NSE" time="1735888224"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735888224"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735888224"/>
+<taskbegin task="Connect Scan" time="1735888224"/>
+<taskend task="Connect Scan" time="1735888224" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1735888224"/>
+<taskend task="Service scan" time="1735888317" extrainfo="3 services on 1 host"/>
+<taskbegin task="Traceroute" time="1735888323"/>
+<taskend task="Traceroute" time="1735888323"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735888323"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735888323"/>
+<taskbegin task="NSE" time="1735888323"/>
+<taskend task="NSE" time="1735888348"/>
+<taskbegin task="NSE" time="1735888348"/>
+<taskend task="NSE" time="1735888349"/>
+<taskbegin task="NSE" time="1735888349"/>
+<taskend task="NSE" time="1735888349"/>
+<host starttime="1735888224" endtime="1735888349"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.222" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.222" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 9c:40:fa:85:9b:01:ac:ac:0e:bc:0c:19:51:8a:ee:27 (RSA)&#xa;  256 5a:0c:c0:3b:9b:76:55:2e:6e:c4:f4:b9:5d:76:17:09 (ECDSA)&#xa;  256 b7:9d:f7:48:9d:a2:f2:76:30:fd:42:d3:35:3a:80:8c (ED25519)"><table>
+<elem key="fingerprint">9c40fa859b01acac0ebc0c19518aee27</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCq549E025Q9FR27LDR6WZRQ52ikKjKUQLmE9ndEKjB0i1qOoL+WzkvqTdqEU6fFW6AqUIdSEd7GMNSMOk66otFgSoerK6MmH5IZjy4JqMoNVPDdWfmEiagBlG3H7IZ7yAO8gcg0RRrIQjE7XTMV09GmxEUtjojoLoqudUvbUi8COHCO6baVmyjZRlXRCQ6qTKIxRZbUAo0GOY8bYmf9sMLf70w6u/xbE2EYDFH+w60ES2K906x7lyfEPe73NfAIEhHNL8DBAUfQWzQjVjYNOLqGp/WdlKA1RLAOklpIdJQ9iehsH0q6nqjeTUv47mIHUiqaM+vlkCEAN3AAQH5mB/1</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="fingerprint">5a0cc03b9b76552e6ec4f4b95d761709</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAiAKnk2lw0GxzzqMXNsPQ1bTk35WwxCa3ED5H34T1yYMiXnRlfssJwso60D34/IM8vYXH0rznR9tHvjdN7R3hY=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="fingerprint">b79df7489da2f27630fd42d3353a808c</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIEV5D6eYjySqfhW4l4IF1SZkZHxIRihnY6Mn6D8mLEW7</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.14.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.14.2</cpe></service><script id="http-server-header" output="nginx/1.14.2"><elem>nginx/1.14.2</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-title" output="Welcome"><elem key="title">Welcome</elem>
+</script></port>
+<port protocol="tcp" portid="8065"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" servicefp="SF-Port8065-TCP:V=7.94SVN%I=7%D=1/3%Time=67778D66%P=x86_64-pc-linux-gnu%r(GenericLines,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(GetRequest,DF3,&quot;HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:\x20bytes\r\nCache-Control:\x20no-cache,\x20max-age=31556926,\x20public\r\nContent-Length:\x203108\r\nContent-Security-Policy:\x20frame-ancestors\x20&apos;self&apos;;\x20script-src\x20&apos;self&apos;\x20cdn\.rudderlabs\.com\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nLast-Modified:\x20Fri,\x2003\x20Jan\x202025\x2006:54:14\x20GMT\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-Request-Id:\x20363rd5i89fnjbgtzwksezfaueh\r\nX-Version-Id:\x205\.30\.0\.5\.30\.1\.57fb31b889bf81d99d8af8176d4bbaaa\.false\r\nDate:\x20Fri,\x2003\x20Jan\x202025\x2006:55:20\x20GMT\r\n\r\n&lt;!doctype\x20html&gt;&lt;html\x20lang=\&quot;en\&quot;&gt;&lt;head&gt;&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0\&quot;&gt;&lt;meta\x20name=\&quot;robots\&quot;\x20content=\&quot;noindex,\x20nofollow\&quot;&gt;&lt;meta\x20name=\&quot;referrer\&quot;\x20content=\&quot;no-referrer\&quot;&gt;&lt;title&gt;Mattermost&lt;/title&gt;&lt;meta\x20name=\&quot;mobile-web-app-capable\&quot;\x20content=\&quot;yes\&quot;&gt;&lt;meta\x20name=\&quot;application-name\&quot;\x20content=\&quot;Mattermost\&quot;&gt;&lt;meta\x20name=\&quot;format-detection\&quot;\x20content=\&quot;telephone=no\&quot;&gt;&lt;link\x20re&quot;)%r(HTTPOptions,5B,&quot;HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nDate:\x20Fri,\x2003\x20Jan\x202025\x2006:55:21\x20GMT\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RTSPRequest,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(Help,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(SSLSessionReq,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(TerminalServerCookie,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GenericLines, Help, RTSPRequest, SSLSessionReq, TerminalServerCookie: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request&#xa;  GetRequest: &#xa;    HTTP/1.0 200 OK&#xa;    Accept-Ranges: bytes&#xa;    Cache-Control: no-cache, max-age=31556926, public&#xa;    Content-Length: 3108&#xa;    Content-Security-Policy: frame-ancestors &apos;self&apos;; script-src &apos;self&apos; cdn.rudderlabs.com&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Last-Modified: Fri, 03 Jan 2025 06:54:14 GMT&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    X-Request-Id: 363rd5i89fnjbgtzwksezfaueh&#xa;    X-Version-Id: 5.30.0.5.30.1.57fb31b889bf81d99d8af8176d4bbaaa.false&#xa;    Date: Fri, 03 Jan 2025 06:55:20 GMT&#xa;    &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0&quot;&gt;&lt;meta name=&quot;robots&quot; content=&quot;noindex, nofollow&quot;&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;title&gt;Mattermost&lt;/title&gt;&lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&lt;meta name=&quot;application-name&quot; content=&quot;Mattermost&quot;&gt;&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot;&gt;&lt;link re&#xa;  HTTPOptions: &#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Date: Fri, 03 Jan 2025 06:55:21 GMT&#xa;    Content-Length: 0"><elem key="GenericLines, Help, RTSPRequest, SSLSessionReq, TerminalServerCookie">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 200 OK&#xa;    Accept-Ranges: bytes&#xa;    Cache-Control: no-cache, max-age=31556926, public&#xa;    Content-Length: 3108&#xa;    Content-Security-Policy: frame-ancestors &apos;self&apos;; script-src &apos;self&apos; cdn.rudderlabs.com&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Last-Modified: Fri, 03 Jan 2025 06:54:14 GMT&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    X-Request-Id: 363rd5i89fnjbgtzwksezfaueh&#xa;    X-Version-Id: 5.30.0.5.30.1.57fb31b889bf81d99d8af8176d4bbaaa.false&#xa;    Date: Fri, 03 Jan 2025 06:55:20 GMT&#xa;    &lt;!doctype html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0&quot;&gt;&lt;meta name=&quot;robots&quot; content=&quot;noindex, nofollow&quot;&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;title&gt;Mattermost&lt;/title&gt;&lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&lt;meta name=&quot;application-name&quot; content=&quot;Mattermost&quot;&gt;&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot;&gt;&lt;link re</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 405 Method Not Allowed&#xa;    Date: Fri, 03 Jan 2025 06:55:21 GMT&#xa;    Content-Length: 0</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="33019"/>
+<osmatch name="Linux 5.0" accuracy="96" line="68054">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:5.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.15 - 5.8" accuracy="96" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.3 - 5.4" accuracy="95" line="68158">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="95" line="55662">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.5" accuracy="95" line="68098">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="95" line="62926">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64673">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="95" line="61824">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="95"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="93" line="8405">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="93"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="93" line="64180">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="857598" lastboot="Tue Dec 24 14:29:11 2024"/>
+<distance value="2"/>
+<tcpsequence index="254" difficulty="Good luck!" values="4B029015,9CC1C0B8,43FB8426,7D325796,A5D7D7A8,CF271844"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="331D7D87,331D7DEB,331D7E4F,331D7EB6,331D7F17,331D7F7C"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="68.47" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.222" rtt="68.61" host="10.10.10.222"/>
+</trace>
+<times srtt="83060" rttvar="30729" to="205976"/>
+</host>
+<taskbegin task="NSE" time="1735888349"/>
+<taskend task="NSE" time="1735888349"/>
+<taskbegin task="NSE" time="1735888349"/>
+<taskend task="NSE" time="1735888349"/>
+<taskbegin task="NSE" time="1735888349"/>
+<taskend task="NSE" time="1735888349"/>
+<runstats><finished time="1735888349" timestr="Fri Jan  3 12:42:29 2025" summary="Nmap done at Fri Jan  3 12:42:29 2025; 1 IP address (1 host up) scanned in 125.23 seconds" elapsed="125.23" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

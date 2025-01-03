@@ -1,0 +1,88 @@
+# Nmap 7.94SVN scan initiated Fri Jan  3 12:40:24 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8065 -oA Delivery-nmap-version-scan-output 10.10.10.222
+Nmap scan report for 10.10.10.222 (10.10.10.222)
+Host is up (0.083s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 9c:40:fa:85:9b:01:ac:ac:0e:bc:0c:19:51:8a:ee:27 (RSA)
+|   256 5a:0c:c0:3b:9b:76:55:2e:6e:c4:f4:b9:5d:76:17:09 (ECDSA)
+|_  256 b7:9d:f7:48:9d:a2:f2:76:30:fd:42:d3:35:3a:80:8c (ED25519)
+80/tcp   open  http    nginx 1.14.2
+|_http-server-header: nginx/1.14.2
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: Welcome
+8065/tcp open  unknown
+| fingerprint-strings: 
+|   GenericLines, Help, RTSPRequest, SSLSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Accept-Ranges: bytes
+|     Cache-Control: no-cache, max-age=31556926, public
+|     Content-Length: 3108
+|     Content-Security-Policy: frame-ancestors 'self'; script-src 'self' cdn.rudderlabs.com
+|     Content-Type: text/html; charset=utf-8
+|     Last-Modified: Fri, 03 Jan 2025 06:54:14 GMT
+|     X-Frame-Options: SAMEORIGIN
+|     X-Request-Id: 363rd5i89fnjbgtzwksezfaueh
+|     X-Version-Id: 5.30.0.5.30.1.57fb31b889bf81d99d8af8176d4bbaaa.false
+|     Date: Fri, 03 Jan 2025 06:55:20 GMT
+|     <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><meta name="robots" content="noindex, nofollow"><meta name="referrer" content="no-referrer"><title>Mattermost</title><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Mattermost"><meta name="format-detection" content="telephone=no"><link re
+|   HTTPOptions: 
+|     HTTP/1.0 405 Method Not Allowed
+|     Date: Fri, 03 Jan 2025 06:55:21 GMT
+|_    Content-Length: 0
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8065-TCP:V=7.94SVN%I=7%D=1/3%Time=67778D66%P=x86_64-pc-linux-gnu%r(
+SF:GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad
+SF:\x20Request")%r(GetRequest,DF3,"HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges
+SF::\x20bytes\r\nCache-Control:\x20no-cache,\x20max-age=31556926,\x20publi
+SF:c\r\nContent-Length:\x203108\r\nContent-Security-Policy:\x20frame-ances
+SF:tors\x20'self';\x20script-src\x20'self'\x20cdn\.rudderlabs\.com\r\nCont
+SF:ent-Type:\x20text/html;\x20charset=utf-8\r\nLast-Modified:\x20Fri,\x200
+SF:3\x20Jan\x202025\x2006:54:14\x20GMT\r\nX-Frame-Options:\x20SAMEORIGIN\r
+SF:\nX-Request-Id:\x20363rd5i89fnjbgtzwksezfaueh\r\nX-Version-Id:\x205\.30
+SF:\.0\.5\.30\.1\.57fb31b889bf81d99d8af8176d4bbaaa\.false\r\nDate:\x20Fri,
+SF:\x2003\x20Jan\x202025\x2006:55:20\x20GMT\r\n\r\n<!doctype\x20html><html
+SF:\x20lang=\"en\"><head><meta\x20charset=\"utf-8\"><meta\x20name=\"viewpo
+SF:rt\"\x20content=\"width=device-width,initial-scale=1,maximum-scale=1,us
+SF:er-scalable=0\"><meta\x20name=\"robots\"\x20content=\"noindex,\x20nofol
+SF:low\"><meta\x20name=\"referrer\"\x20content=\"no-referrer\"><title>Matt
+SF:ermost</title><meta\x20name=\"mobile-web-app-capable\"\x20content=\"yes
+SF:\"><meta\x20name=\"application-name\"\x20content=\"Mattermost\"><meta\x
+SF:20name=\"format-detection\"\x20content=\"telephone=no\"><link\x20re")%r
+SF:(HTTPOptions,5B,"HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nDate:\
+SF:x20Fri,\x2003\x20Jan\x202025\x2006:55:21\x20GMT\r\nContent-Length:\x200
+SF:\r\n\r\n")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCont
+SF:ent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r
+SF:\n400\x20Bad\x20Request")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request
+SF:\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20clo
+SF:se\r\n\r\n400\x20Bad\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\
+SF:x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nC
+SF:onnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TerminalServerCook
+SF:ie,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plai
+SF:n;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Reques
+SF:t");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 5.0 (96%), Linux 4.15 - 5.8 (96%), Linux 5.3 - 5.4 (95%), Linux 2.6.32 (95%), Linux 5.0 - 5.5 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 9.926 days (since Tue Dec 24 14:29:11 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=254 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   68.47 ms 10.10.14.1 (10.10.14.1)
+2   68.61 ms 10.10.10.222 (10.10.10.222)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan  3 12:42:29 2025 -- 1 IP address (1 host up) scanned in 125.23 seconds
