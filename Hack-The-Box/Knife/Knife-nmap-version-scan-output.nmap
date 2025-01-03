@@ -1,0 +1,42 @@
+# Nmap 7.94SVN scan initiated Fri Jan  3 18:55:25 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA Knife-nmap-version-scan-output 10.10.10.242
+adjust_timeouts2: packet supposedly had rtt of -683364 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -683364 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -682152 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -682152 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -332184 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -332184 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -354958 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -354958 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -755979 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -755979 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.242 (10.10.10.242)
+Host is up (0.072s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 be:54:9c:a3:67:c3:15:c3:64:71:7f:6a:53:4a:4c:21 (RSA)
+|   256 bf:8a:3f:d4:06:e9:2e:87:4e:c9:7e:ab:22:0e:c0:ee (ECDSA)
+|_  256 1a:de:a1:cc:37:ce:53:bb:1b:fb:2b:0b:ad:b3:f6:84 (ED25519)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title:  Emergent Medical Idea
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 5.0 (96%), Linux 4.15 - 5.8 (95%), Linux 5.0 - 5.5 (95%), Linux 3.1 (95%), Linux 3.2 (95%), Linux 5.3 - 5.4 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), Linux 2.6.32 (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 29.097 days (since Thu Dec  5 16:35:57 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=252 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   72.59 ms 10.10.14.1 (10.10.14.1)
+2   72.59 ms 10.10.10.242 (10.10.10.242)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan  3 18:55:39 2025 -- 1 IP address (1 host up) scanned in 14.02 seconds

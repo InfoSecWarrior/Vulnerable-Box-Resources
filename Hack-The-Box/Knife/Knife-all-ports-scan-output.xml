@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Jan  3 18:41:44 2025 as: nmap -v -T4 -Pn -p- -oA Knife-all-ports-scan-output 10.10.10.242 -->
+<nmaprun scanner="nmap" args="nmap -v -T4 -Pn -p- -oA Knife-all-ports-scan-output 10.10.10.242" start="1735909904" startstr="Fri Jan  3 18:41:44 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735909904"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735909904"/>
+<taskbegin task="SYN Stealth Scan" time="1735909904"/>
+<taskprogress task="SYN Stealth Scan" time="1735909935" percent="7.48" remaining="384" etc="1735910319"/>
+<taskprogress task="SYN Stealth Scan" time="1735909965" percent="11.38" remaining="475" etc="1735910440"/>
+<taskprogress task="SYN Stealth Scan" time="1735910004" percent="16.35" remaining="512" etc="1735910516"/>
+<taskprogress task="SYN Stealth Scan" time="1735910133" percent="32.29" remaining="481" etc="1735910613"/>
+<taskprogress task="SYN Stealth Scan" time="1735910193" percent="39.44" remaining="444" etc="1735910637"/>
+<taskprogress task="SYN Stealth Scan" time="1735910268" percent="47.25" remaining="407" etc="1735910674"/>
+<taskprogress task="SYN Stealth Scan" time="1735910322" percent="53.25" remaining="367" etc="1735910689"/>
+<taskprogress task="SYN Stealth Scan" time="1735910379" percent="59.17" remaining="328" etc="1735910707"/>
+<taskprogress task="SYN Stealth Scan" time="1735910421" percent="64.47" remaining="285" etc="1735910706"/>
+<taskprogress task="SYN Stealth Scan" time="1735910457" percent="69.44" remaining="244" etc="1735910700"/>
+<taskprogress task="SYN Stealth Scan" time="1735910505" percent="74.95" remaining="201" etc="1735910706"/>
+<taskprogress task="SYN Stealth Scan" time="1735910547" percent="80.11" remaining="160" etc="1735910707"/>
+<taskprogress task="SYN Stealth Scan" time="1735910589" percent="85.32" remaining="118" etc="1735910707"/>
+<taskprogress task="SYN Stealth Scan" time="1735910637" percent="90.62" remaining="76" etc="1735910713"/>
+<taskprogress task="SYN Stealth Scan" time="1735910679" percent="95.82" remaining="34" etc="1735910713"/>
+<taskend task="SYN Stealth Scan" time="1735910725" extrainfo="65535 total ports"/>
+<host starttime="1735909904" endtime="1735910725"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.242" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.242" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65431">
+<extrareasons reason="reset" count="65431" proto="tcp" ports="1-21,23-79,81-95,97-1906,1908-4065,4067-4260,4262-5446,5448-7117,7119-8386,8388-11598,11600-11891,11893-12617,12619-12621,12623-12673,12675-12722,12724-13253,13255-13498,13500-14009,14011-14169,14171-14736,14738-14900,14902-14999,15001-15206,15208-16123,16125-16130,16132-16676,16678-16832,16834-17001,17003-17529,17531-17689,17691-21355,21357-21585,21587-21629,21631-22188,22190-22257,22259-22417,22419-22872,22874-23050,23052-23460,23462-23773,23775-23978,23980-24140,24142-24221,24223-25338,25340-26028,26030-28684,28686-28850,28852-28893,28895-29224,29226-29852,29854-29994,29996-30337,30339-32174,32176-33801,33803-33941,33943-34470,34472-34659,34661-34768,34770-35104,35106-35218,35220-36185,36187-36389,36391-37182,37184-37533,37535-37723,37725-38526,38528-38771,38773-40099,40101-40494,40496-41312,41314-41376,41378-41958,41960-43071,43073-43882,43884-43968,43970-44072,44074-45502,45504-45770,45772-46413,46415-46573,46575-48056,48058-48696,48698-49197,49199-49201,49203-50267,50269-52135,52137-52516,52518-54801,54803-55011,55013-55667,55669-55911,55913-56138,56140-56215,56217-56267,56269-56361,56363-58407,58409-58626,58628-61465,61467-61944,61946-62437,62439-63422,63424-64141,64143-64165,64167-64533,64535-65535"/>
+</extraports>
+<extraports state="filtered" count="102">
+<extrareasons reason="no-response" count="102" proto="tcp" ports="96,1907,4066,4261,5447,7118,8387,11599,11892,12618,12622,12674,12723,13254,13499,14010,14170,14737,14901,15000,15207,16124,16131,16677,16833,17002,17530,17690,21356,21586,21630,22189,22258,22418,22873,23051,23461,23774,23979,24141,24222,25339,26029,28685,28851,28894,29225,29853,29995,30338,32175,33802,33942,34471,34660,34769,35105,35219,36186,36390,37183,37534,37724,38527,38772,40100,40495,41313,41377,41959,43072,43883,43969,44073,45503,45771,46414,46574,48057,48697,49198,49202,50268,52136,52517,54802,55012,55668,55912,56139,56216,56268,56362,58408,58627,61466,61945,62438,63423,64142,64166,64534"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="71800" rttvar="646" to="100000"/>
+</host>
+<runstats><finished time="1735910725" timestr="Fri Jan  3 18:55:25 2025" summary="Nmap done at Fri Jan  3 18:55:25 2025; 1 IP address (1 host up) scanned in 821.63 seconds" elapsed="821.63" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
