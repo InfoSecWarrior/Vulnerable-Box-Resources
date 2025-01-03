@@ -1,0 +1,9 @@
+# Dirsearch started Fri Jan  3 17:44:20 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.233:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Armageddon-dirsearch-80-wordlist-output.txt -q
+
+301   233B   http://10.10.10.233/misc    -> REDIRECTS TO: http://10.10.10.233/misc/
+301   235B   http://10.10.10.233/themes    -> REDIRECTS TO: http://10.10.10.233/themes/
+301   236B   http://10.10.10.233/modules    -> REDIRECTS TO: http://10.10.10.233/modules/
+301   236B   http://10.10.10.233/scripts    -> REDIRECTS TO: http://10.10.10.233/scripts/
+301   234B   http://10.10.10.233/sites    -> REDIRECTS TO: http://10.10.10.233/sites/
+301   237B   http://10.10.10.233/includes    -> REDIRECTS TO: http://10.10.10.233/includes/
+301   237B   http://10.10.10.233/profiles    -> REDIRECTS TO: http://10.10.10.233/profiles/

@@ -1,0 +1,59 @@
+# Dirsearch started Fri Jan  3 17:44:10 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.233:80 -o Armageddon-dirsearch-80-output.txt -q
+
+200   317B   http://10.10.10.233/.editorconfig
+403   213B   http://10.10.10.233/.ht_wsr.txt
+403   216B   http://10.10.10.233/.htaccess.bak1
+200   174B   http://10.10.10.233/.gitignore
+403   218B   http://10.10.10.233/.htaccess.sample
+403   216B   http://10.10.10.233/.htaccess.save
+403   216B   http://10.10.10.233/.htaccess.orig
+403   216B   http://10.10.10.233/.htaccess_orig
+403   206B   http://10.10.10.233/.htm
+403   207B   http://10.10.10.233/.html
+403   214B   http://10.10.10.233/.htaccess_sc
+403   217B   http://10.10.10.233/.htaccess_extra
+403   215B   http://10.10.10.233/.htaccessOLD2
+403   214B   http://10.10.10.233/.htaccessBAK
+403   214B   http://10.10.10.233/.htaccessOLD
+403   212B   http://10.10.10.233/.htpasswds
+403   213B   http://10.10.10.233/.httr-oauth
+403   216B   http://10.10.10.233/.htpasswd_test
+403     3KB  http://10.10.10.233/authorize.php
+403   210B   http://10.10.10.233/cgi-bin/
+403     7KB  http://10.10.10.233/cron.php
+200     1KB  http://10.10.10.233/COPYRIGHT.txt
+200   109KB  http://10.10.10.233/CHANGELOG.txt
+301   237B   http://10.10.10.233/includes    -> REDIRECTS TO: http://10.10.10.233/includes/
+404     7KB  http://10.10.10.233/index.php/login/
+200    10KB  http://10.10.10.233/includes/
+200     3KB  http://10.10.10.233/install.php
+200     2KB  http://10.10.10.233/INSTALL.pgsql.txt
+200     2KB  http://10.10.10.233/INSTALL.mysql.txt
+200     3KB  http://10.10.10.233/install.php?profile=default
+200    18KB  http://10.10.10.233/INSTALL.txt
+200    18KB  http://10.10.10.233/LICENSE.txt
+200   132KB  http://10.10.10.233/includes/bootstrap.inc
+200     9KB  http://10.10.10.233/MAINTAINERS.txt
+301   233B   http://10.10.10.233/misc    -> REDIRECTS TO: http://10.10.10.233/misc/
+301   236B   http://10.10.10.233/modules    -> REDIRECTS TO: http://10.10.10.233/modules/
+200     9KB  http://10.10.10.233/modules/
+301   237B   http://10.10.10.233/profiles    -> REDIRECTS TO: http://10.10.10.233/profiles/
+200   271B   http://10.10.10.233/profiles/minimal/minimal.info
+200   278B   http://10.10.10.233/profiles/testing/testing.info
+200   743B   http://10.10.10.233/profiles/standard/standard.info
+200     5KB  http://10.10.10.233/README.txt
+200     2KB  http://10.10.10.233/robots.txt
+301   236B   http://10.10.10.233/scripts    -> REDIRECTS TO: http://10.10.10.233/scripts/
+200     3KB  http://10.10.10.233/scripts/
+301   234B   http://10.10.10.233/sites    -> REDIRECTS TO: http://10.10.10.233/sites/
+200     0B   http://10.10.10.233/sites/example.sites.php
+200   151B   http://10.10.10.233/sites/all/libraries/README.txt
+200   904B   http://10.10.10.233/sites/README.txt
+200  1020B   http://10.10.10.233/sites/all/themes/README.txt
+200     1KB  http://10.10.10.233/sites/all/modules/README.txt
+301   235B   http://10.10.10.233/themes    -> REDIRECTS TO: http://10.10.10.233/themes/
+200     2KB  http://10.10.10.233/themes/
+403     4KB  http://10.10.10.233/update.php
+200    10KB  http://10.10.10.233/UPGRADE.txt
+200     2KB  http://10.10.10.233/web.config
+200    42B   http://10.10.10.233/xmlrpc.php
