@@ -1,0 +1,23 @@
+[gitlab-api-user-enum] [http] [medium] http://10.10.10.220:5080/api/v4/users/4 [uid="4"]
+[oauth2-detect] [http] [info] http://10.10.10.220:5080/oauth/token
+[waf-detect:nginxgeneric] [http] [info] http://10.10.10.220:5080
+[gitlab-explore:gitlab-community] [http] [info] http://10.10.10.220:5080/explore
+[xss-deprecated-header] [http] [info] http://10.10.10.220:5080 ["1; mode=block"]
+[http-missing-security-headers:permissions-policy] [http] [info] http://10.10.10.220:5080/users/sign_in
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://10.10.10.220:5080/users/sign_in
+[http-missing-security-headers:referrer-policy] [http] [info] http://10.10.10.220:5080/users/sign_in
+[http-missing-security-headers:clear-site-data] [http] [info] http://10.10.10.220:5080/users/sign_in
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://10.10.10.220:5080/users/sign_in
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://10.10.10.220:5080/users/sign_in
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://10.10.10.220:5080/users/sign_in
+[http-missing-security-headers:content-security-policy] [http] [info] http://10.10.10.220:5080/users/sign_in
+[favicon-detect:gitlab] [http] [info] http://10.10.10.220:5080/assets/favicon-7901bd695fb93edb07975966062049829afb56cf11511236e61bcf425070e36e.png ["1278323681"]
+[tech-detect:gitlab] [http] [info] http://10.10.10.220:5080/users/sign_in
+[tech-detect:nginx] [http] [info] http://10.10.10.220:5080/users/sign_in
+[tech-detect:nginx] [http] [info] http://10.10.10.220:5080
+[external-service-interaction] [http] [info] http://10.10.10.220:5080
+[oidc-detect] [http] [info] http://10.10.10.220:5080/.well-known/openid-configuration
+[robots-txt-endpoint] [http] [info] http://10.10.10.220:5080/robots.txt
+[keycloak-openid-config] [http] [info] http://10.10.10.220:5080/.well-known/openid-configuration
+[gitlab-detect] [http] [info] http://10.10.10.220:5080/users/sign_in
+[robots-txt] [http] [info] http://10.10.10.220:5080/robots.txt
