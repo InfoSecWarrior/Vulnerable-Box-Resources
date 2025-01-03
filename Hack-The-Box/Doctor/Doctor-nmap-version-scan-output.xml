@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Jan  2 10:26:10 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8089 -oA Doctor-nmap-version-scan-output 10.10.10.209 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80,8089 -oA Doctor-nmap-version-scan-output 10.10.10.209" start="1735793770" startstr="Thu Jan  2 10:26:10 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,80,8089"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1735793770"/>
+<taskend task="NSE" time="1735793770"/>
+<taskbegin task="NSE" time="1735793770"/>
+<taskend task="NSE" time="1735793770"/>
+<taskbegin task="NSE" time="1735793770"/>
+<taskend task="NSE" time="1735793770"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735793770"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735793770"/>
+<taskbegin task="Connect Scan" time="1735793770"/>
+<taskend task="Connect Scan" time="1735793770" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1735793770"/>
+<taskend task="Service scan" time="1735793802" extrainfo="3 services on 1 host"/>
+<taskbegin task="Traceroute" time="1735793807"/>
+<taskend task="Traceroute" time="1735793807"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735793807"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735793807"/>
+<taskbegin task="NSE" time="1735793807"/>
+<taskend task="NSE" time="1735793816"/>
+<taskbegin task="NSE" time="1735793816"/>
+<taskend task="NSE" time="1735793817"/>
+<taskbegin task="NSE" time="1735793817"/>
+<taskend task="NSE" time="1735793817"/>
+<host starttime="1735793770" endtime="1735793817"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.209" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.209" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.1" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 59:4d:4e:c2:d8:cf:da:9d:a8:c8:d0:fd:99:a8:46:17 (RSA)&#xa;  256 7f:f3:dc:fb:2d:af:cb:ff:99:34:ac:e0:f8:00:1e:47 (ECDSA)&#xa;  256 53:0e:96:6b:9c:e9:c1:a1:70:51:6c:2d:ce:7b:43:e8 (ED25519)"><table>
+<elem key="fingerprint">594d4ec2d8cfda9da8c8d0fd99a84617</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">3072</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQCzyPiL1j9E6lyOgxqgosQ64mBwocTGo1DpclHHV5w28qPbnBJL32hfDNgUhAeaq7PL8zOQlKWprEnkfBNTUagvcX7deMgPsJ6zow/K+WPqIUU5+LbQQ9TV6YeiWiPrO1W9dwwY0ZTXkkG6905kLDsKtCQZqt0VUGPiyWnZswXwWjbBo9KBF1dctUKv+MuyPLQ2qAr5X9LL21/tWw0fLrIKLkCvdaMI9tVYXeFNZ1WyJSI4BfCB5OrNzpr4RN/CaGSjSiBGn2zkegsk+zJpePSp9qfP/fMwEyDQ1c8kei0g35Neaw5Mob1q3R0L6w8fTAnsYo9bYlnHNOl4Juon0QaOfzDry/c4Hmwi43ypeUlv2zUdgGDUdemG79/nHx/rtLbBvdROI3UIjn6HOweHJs9VmwUjx509xZGoCwRcB0lIrDg9pWitWbg+qMTBvvYrLWgSovjpnilu8OcVituQHoXrrLMFVREY0SzF7K6SqbBO7QTrKODzrf1aH5gdgQNCE18=</elem>
+</table>
+<table>
+<elem key="fingerprint">7ff3dcfb2dafcbff9934ace0f8001e47</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOHMC7+4t7zcs7cPg4JoOZiJF+MiORNU6ky66rLocXDEySgRgkeNf2uzjblvpnn2QYid7TCQUwQ/6Bbz2yFM7jg=</elem>
+</table>
+<table>
+<elem key="fingerprint">530e966b9ce9c1a170516c2dce7b43e8</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIEF0lJKhEknY94/rK0D2et4K9Tp2E6CsYp0GxwdNJGhs</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS HEAD GET"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+</table>
+</script><script id="http-title" output="Doctor"><elem key="title">Doctor</elem>
+</script></port>
+<port protocol="tcp" portid="8089"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Splunkd httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:splunk:splunk</cpe></service><script id="http-title" output="splunkd"><elem key="title">splunkd</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=SplunkServerDefaultCert/organizationName=SplunkUser&#xa;Issuer: commonName=SplunkCommonCA/organizationName=Splunk/stateOrProvinceName=CA/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2020-09-06T15:57:27&#xa;Not valid after:  2023-09-06T15:57:27&#xa;MD5:   db23:4e5c:546d:8895:0f5f:8f42:5e90:6787&#xa;SHA-1: 7ec9:1bb7:343f:f7f6:bdd7:d015:d720:6f6f:19e2:098b"><table key="subject">
+<elem key="commonName">SplunkServerDefaultCert</elem>
+<elem key="organizationName">SplunkUser</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">SplunkCommonCA</elem>
+<elem key="countryName">US</elem>
+<elem key="emailAddress">support@splunk.com</elem>
+<elem key="localityName">San Francisco</elem>
+<elem key="organizationName">Splunk</elem>
+<elem key="stateOrProvinceName">CA</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">D0980934AAC2E12AC6CC4861CA5B9421C056F9E0FACBEE296848A48A9E5BCCEED7CFCFAD54998505C0DF65D90BDD3219153085F7904CA8BE087F548D665150C6931907FF4FCC2326D079A110AFC59477DDACBC1A78AEF549678EFCC30DB6C0217883C0A4D072AE2F62729D92F6EEF083CF60F6E1CAE0838DF2E4C93316E6B42453E2381171E9CE658821BEC4C430B3E1C256F633FE7D591A297F26A420497FC3FCC5D6309F9EB4FA5DF66D4E8B3AB9E7ADEA586377C839596F592487E68D80DAA873E04E0DF22C24636212E4FB6BCBCAB3B6DE5E6493C1FE1F826020E0AA840C37F210B4AFE2844ECB96086231978AC10434301394EF3FBE4DB065B63B724D0D</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-09-06T15:57:27</elem>
+<elem key="notAfter">2023-09-06T15:57:27</elem>
+</table>
+<elem key="md5">db234e5c546d88950f5f8f425e906787</elem>
+<elem key="sha1">7ec91bb7343ff7f6bdd7d015d7206f6f19e2098b</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDMjCCAhoCCQC3IKogA4zEAzANBgkqhkiG9w0BAQsFADB/MQswCQYDVQQGEwJV&#xa;UzELMAkGA1UECAwCQ0ExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xDzANBgNVBAoM&#xa;BlNwbHVuazEXMBUGA1UEAwwOU3BsdW5rQ29tbW9uQ0ExITAfBgkqhkiG9w0BCQEW&#xa;EnN1cHBvcnRAc3BsdW5rLmNvbTAeFw0yMDA5MDYxNTU3MjdaFw0yMzA5MDYxNTU3&#xa;MjdaMDcxIDAeBgNVBAMMF1NwbHVua1NlcnZlckRlZmF1bHRDZXJ0MRMwEQYDVQQK&#xa;DApTcGx1bmtVc2VyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0JgJ&#xa;NKrC4SrGzEhhyluUIcBW+eD6y+4paEikip5bzO7Xz8+tVJmFBcDfZdkL3TIZFTCF&#xa;95BMqL4If1SNZlFQxpMZB/9PzCMm0HmhEK/FlHfdrLwaeK71SWeO/MMNtsAheIPA&#xa;pNByri9icp2S9u7wg89g9uHK4ION8uTJMxbmtCRT4jgRcenOZYghvsTEMLPhwlb2&#xa;M/59WRopfyakIEl/w/zF1jCfnrT6XfZtTos6ueet6lhjd8g5WW9ZJIfmjYDaqHPg&#xa;Tg3yLCRjYhLk+2vLyrO23l5kk8H+H4JgIOCqhAw38hC0r+KETsuWCGIxl4rBBDQw&#xa;E5TvP75NsGW2O3JNDQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBJjjx+KHFwYJei&#xa;lMJlmXBOEs7V1KiAjCenWd0Bz49Bkbik/5Rcia9k44zhANE7pJWNN6gpGJBn7b7D&#xa;rliSOwvVoBICHtWFuQls8bRbMn5Kfdd9G7tGEkKGdvn3jOFkQFSQQQ56Uzh7Lezj&#xa;hjtQ1p1Sg2Vq3lJm70ziOlRa0i/Lk7Ydc3xJ478cjB9nlb15jXmSdZcrCqgsAjBz&#xa;IIDPzC+f7hJYlnFau2OA5uWPX/HIR7JfQsKXWCM6Tx0b9tZKgNNOr+DwyML4CH6o&#xa;qrryh7elUJojAaZ0wYNd5koGZzEH4ymAQoshgFyEgetm1BbzMbA3PfZkX1VR6AV+&#xa;guO5oa9R&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="Splunkd"><elem>Splunkd</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<osmatch name="Linux 5.0" accuracy="95" line="68054">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:5.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.15 - 5.8" accuracy="89" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.4" accuracy="89" line="68121">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.3 - 5.4" accuracy="88" line="68158">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="88" line="55662">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.5" accuracy="88" line="68098">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3700437" lastboot="Wed Nov 20 14:33:00 2024"/>
+<distance value="2"/>
+<tcpsequence index="258" difficulty="Good luck!" values="3679DD32,B99AD58,9FC72DEF,B8005DAE,F6E0BC5C,B7A8D86C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="DC900366,DC9003CB,DC900430,DC900495,DC9004F8,DC90055C"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="71.99" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.209" rtt="72.66" host="10.10.10.209"/>
+</trace>
+<times srtt="72711" rttvar="413" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1735793817"/>
+<taskend task="NSE" time="1735793817"/>
+<taskbegin task="NSE" time="1735793817"/>
+<taskend task="NSE" time="1735793817"/>
+<taskbegin task="NSE" time="1735793817"/>
+<taskend task="NSE" time="1735793817"/>
+<runstats><finished time="1735793817" timestr="Thu Jan  2 10:26:57 2025" summary="Nmap done at Thu Jan  2 10:26:57 2025; 1 IP address (1 host up) scanned in 47.26 seconds" elapsed="47.26" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
