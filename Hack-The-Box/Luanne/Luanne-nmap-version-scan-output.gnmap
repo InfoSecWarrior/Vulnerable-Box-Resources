@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Thu Jan  2 15:38:46 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,9001 -oA Luanne-nmap-version-scan-output 10.10.10.218
+# Ports scanned: TCP(3;22,80,9001) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.218 (10.10.10.218)	Status: Up
+Host: 10.10.10.218 (10.10.10.218)	Ports: 22/open/tcp//ssh//OpenSSH 8.0 (NetBSD 20190418-hpn13v14-lpk; protocol 2.0)/, 80/open/tcp//http//nginx 1.19.0/, 9001/open/tcp//http//Medusa httpd 1.12 (Supervisor process manager)/	Seq Index: 211	IP ID Seq: All zeros
+# Nmap done at Thu Jan  2 15:41:58 2025 -- 1 IP address (1 host up) scanned in 191.95 seconds

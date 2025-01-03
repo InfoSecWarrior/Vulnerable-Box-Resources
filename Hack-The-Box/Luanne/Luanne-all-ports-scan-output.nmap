@@ -1,0 +1,59 @@
+# Nmap 7.94SVN scan initiated Thu Jan  2 15:24:07 2025 as: nmap -v -T4 -Pn -p- -oA Luanne-all-ports-scan-output 10.10.10.218
+Increasing send delay for 10.10.10.218 from 0 to 5 due to 69 out of 171 dropped probes since last increase.
+Warning: 10.10.10.218 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.218 (10.10.10.218)
+Host is up (0.068s latency).
+Not shown: 65486 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+6140/tcp  filtered pulsonixnls
+9001/tcp  open     tor-orport
+9511/tcp  filtered unknown
+9811/tcp  filtered unknown
+14184/tcp filtered unknown
+14194/tcp filtered unknown
+15864/tcp filtered unknown
+16860/tcp filtered unknown
+18565/tcp filtered unknown
+20043/tcp filtered unknown
+20161/tcp filtered unknown
+20693/tcp filtered unknown
+21565/tcp filtered unknown
+21589/tcp filtered unknown
+24224/tcp filtered unknown
+26600/tcp filtered unknown
+27288/tcp filtered unknown
+31508/tcp filtered unknown
+31946/tcp filtered unknown
+34649/tcp filtered unknown
+34657/tcp filtered unknown
+35488/tcp filtered unknown
+35726/tcp filtered unknown
+35778/tcp filtered unknown
+36653/tcp filtered unknown
+37881/tcp filtered unknown
+39119/tcp filtered unknown
+40168/tcp filtered unknown
+42323/tcp filtered unknown
+43996/tcp filtered unknown
+47339/tcp filtered unknown
+49655/tcp filtered unknown
+49656/tcp filtered unknown
+50916/tcp filtered unknown
+51300/tcp filtered unknown
+53631/tcp filtered unknown
+54731/tcp filtered unknown
+54869/tcp filtered unknown
+54905/tcp filtered unknown
+55313/tcp filtered unknown
+56234/tcp filtered unknown
+57623/tcp filtered unknown
+59730/tcp filtered unknown
+59844/tcp filtered unknown
+60975/tcp filtered unknown
+62519/tcp filtered unknown
+64299/tcp filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Thu Jan  2 15:38:46 2025 -- 1 IP address (1 host up) scanned in 878.94 seconds

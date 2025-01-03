@@ -1,0 +1,46 @@
+# Nmap 7.94SVN scan initiated Thu Jan  2 15:38:46 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,9001 -oA Luanne-nmap-version-scan-output 10.10.10.218
+Nmap scan report for 10.10.10.218 (10.10.10.218)
+Host is up (0.12s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.0 (NetBSD 20190418-hpn13v14-lpk; protocol 2.0)
+| ssh-hostkey: 
+|   3072 20:97:7f:6c:4a:6e:5d:20:cf:fd:a3:aa:a9:0d:37:db (RSA)
+|   521 35:c3:29:e1:87:70:6d:73:74:b2:a9:a2:04:a9:66:69 (ECDSA)
+|_  256 b3:bd:31:6d:cc:22:6b:18:ed:27:66:b4:a7:2a:e4:a5 (ED25519)
+80/tcp   open  http    nginx 1.19.0
+|_http-title: 401 Unauthorized
+|_http-server-header: nginx/1.19.0
+| http-robots.txt: 1 disallowed entry 
+|_/weather
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=.
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+9001/tcp open  http    Medusa httpd 1.12 (Supervisor process manager)
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=default
+|_http-title: Error response
+|_http-server-header: Medusa/1.12
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|WAP|storage-misc
+Running (JUST GUESSING): NetBSD 5.X|9.X|7.X|3.X (96%), Apple NetBSD 4.X (95%), Apple embedded (93%), QNX RTOS 6.X (92%)
+OS CPE: cpe:/o:netbsd:netbsd:5.1.2 cpe:/o:apple:netbsd cpe:/o:netbsd:netbsd:7.99 cpe:/o:netbsd:netbsd:3.1.1 cpe:/h:apple:airport_extreme cpe:/o:apple:netbsd:4.99 cpe:/o:qnx:rtos:6.5.0
+Aggressive OS guesses: NetBSD 5.1.2 (96%), NetBSD 9.0 - 9.1 (96%), NetBSD 5.0 - 5.99.5 (95%), Apple AirPort Extreme WAP (version 7.7.3) or NetBSD 7.99 (95%), Apple AirPort Extreme WAP (version 7.7.3) (93%), NetBSD 7.0 (93%), NetBSD 3.1.1 (93%), Apple AirPort Extreme WAP (NetBSD 4.99) (92%), Apple AirPort Extreme WAP or Time Capsule NAS device (NetBSD 4.99), or QNX RTOS 6.5.0 (92%), NetBSD 2.1.0_STABLE or Ricoh C720S, 1107EX, MP 2550, or MP 7001 printer (92%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.002 days (since Thu Jan  2 15:38:56 2025)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=211 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: NetBSD; CPE: cpe:/o:netbsd:netbsd
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   332.17 ms 10.10.14.1 (10.10.14.1)
+2   332.32 ms 10.10.10.218 (10.10.10.218)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan  2 15:41:58 2025 -- 1 IP address (1 host up) scanned in 191.95 seconds
