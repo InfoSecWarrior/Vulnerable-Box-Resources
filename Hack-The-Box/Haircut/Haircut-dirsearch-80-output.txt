@@ -1,0 +1,5 @@
+# Dirsearch started Fri Dec 27 14:57:53 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.24:80 -o Haircut-dirsearch-80-output.txt -q
+
+200   223B   http://10.10.10.24/test.html
+403   580B   http://10.10.10.24/uploads/
+301   194B   http://10.10.10.24/uploads    -> REDIRECTS TO: http://10.10.10.24/uploads/

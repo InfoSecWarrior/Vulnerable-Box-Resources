@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Dec 27 14:56:31 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA Haircut-nmap-version-scan-output 10.10.10.24
+# Ports scanned: TCP(2;22,80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.24 (10.10.10.24)	Status: Up
+Host: 10.10.10.24 (10.10.10.24)	Ports: 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.10.0 (Ubuntu)/	Seq Index: 254	IP ID Seq: All zeros
+# Nmap done at Fri Dec 27 14:56:48 2024 -- 1 IP address (1 host up) scanned in 16.75 seconds

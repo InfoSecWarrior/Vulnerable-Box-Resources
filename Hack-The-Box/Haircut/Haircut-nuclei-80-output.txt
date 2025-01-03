@@ -1,0 +1,5 @@
+[waf-detect:nginxgeneric] [http] [info] http://10.10.10.24:80
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.10.24:22
+[ssh-password-auth] [javascript] [info] 10.10.10.24:22
+[ssh-server-enumeration] [javascript] [info] 10.10.10.24:22 ["SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.2"]
+[CVE-2023-48795] [javascript] [medium] 10.10.10.24:22 ["Vulnerable to Terrapin"]
