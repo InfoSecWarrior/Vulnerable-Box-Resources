@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Jan  3 13:18:00 2025 as: nmap -v -T4 -Pn -p- -oA Ophiuchi-all-ports-scan-output 10.10.10.227 -->
+<nmaprun scanner="nmap" args="nmap -v -T4 -Pn -p- -oA Ophiuchi-all-ports-scan-output 10.10.10.227" start="1735890480" startstr="Fri Jan  3 13:18:00 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735890480"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735890480"/>
+<taskbegin task="SYN Stealth Scan" time="1735890480"/>
+<taskprogress task="SYN Stealth Scan" time="1735890511" percent="36.48" remaining="54" etc="1735890565"/>
+<taskend task="SYN Stealth Scan" time="1735890529" extrainfo="65535 total ports"/>
+<host starttime="1735890480" endtime="1735890529"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.227" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.227" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="reset" count="65533" proto="tcp" ports="1-21,23-8079,8081-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="71560" rttvar="585" to="100000"/>
+</host>
+<runstats><finished time="1735890530" timestr="Fri Jan  3 13:18:50 2025" summary="Nmap done at Fri Jan  3 13:18:50 2025; 1 IP address (1 host up) scanned in 49.94 seconds" elapsed="49.94" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
