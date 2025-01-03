@@ -1,0 +1,11 @@
+[waf-detect:apachegeneric] [http] [info] http://10.10.10.123:80
+[smb2-server-time] [javascript] [info] 10.10.10.123:445 ["SystemTime: 2024-12-21T07:19:17.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb2-capabilities] [javascript] [info] 10.10.10.123:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb-signing-not-required] [javascript] [medium] 10.10.10.123:445
+[smb-enum] [javascript] [info] 10.10.10.123:445 ["ForestName:","OSVersion: 6.1.0","NetBIOSComputerName: FRIENDZONE","NetBIOSDomainName: FRIENDZONE","DNSComputerNamen: friendzone","DNSComputerName: friendzone"]
+[smb-os-detect] [javascript] [info] 10.10.10.123:445 ["6.1.0"]
+[ssh-password-auth] [javascript] [info] 10.10.10.123:22
+[ssh-server-enumeration] [javascript] [info] 10.10.10.123:22 ["SSH-2.0-OpenSSH_7.6p1 Ubuntu-4"]
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.10.123:22
+[CVE-2023-48795] [javascript] [medium] 10.10.10.123:22 ["Vulnerable to Terrapin"]
+[smb-anonymous-access] [javascript] [high] 10.10.10.123:445

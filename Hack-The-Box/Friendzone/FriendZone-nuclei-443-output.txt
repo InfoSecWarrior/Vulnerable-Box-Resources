@@ -1,0 +1,8 @@
+[waf-detect:apachegeneric] [http] [info] https://10.10.10.123:443
+[ssh-password-auth] [javascript] [info] 10.10.10.123:22
+[ssh-server-enumeration] [javascript] [info] 10.10.10.123:22 ["SSH-2.0-OpenSSH_7.6p1 Ubuntu-4"]
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.10.123:22
+[ssh-auth-methods] [javascript] [info] 10.10.10.123:22 ["["publickey","password"]"]
+[CVE-2023-48795] [javascript] [medium] 10.10.10.123:22 ["Vulnerable to Terrapin"]
+[smb-signing-not-required] [javascript] [medium] 10.10.10.123:445
+[smb-anonymous-access] [javascript] [high] 10.10.10.123:445

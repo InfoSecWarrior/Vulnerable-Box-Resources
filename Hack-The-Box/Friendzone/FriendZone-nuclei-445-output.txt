@@ -1,0 +1,6 @@
+[smb-enum] [javascript] [info] 10.10.10.123:445 ["DNSComputerNamen: friendzone","DNSComputerName: friendzone","ForestName:","OSVersion: 6.1.0","NetBIOSComputerName: FRIENDZONE","NetBIOSDomainName: FRIENDZONE"]
+[smb-os-detect] [javascript] [info] 10.10.10.123:445 ["6.1.0"]
+[smb2-capabilities] [javascript] [info] 10.10.10.123:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb2-server-time] [javascript] [info] 10.10.10.123:445 ["SystemTime: 2024-12-21T08:02:20.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-signing-not-required] [javascript] [medium] 10.10.10.123:445
+[smb-anonymous-access] [javascript] [high] 10.10.10.123:445

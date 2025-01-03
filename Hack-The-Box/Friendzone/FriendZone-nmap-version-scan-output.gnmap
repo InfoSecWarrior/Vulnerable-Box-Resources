@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Dec 21 11:32:53 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,53,80,139,443,445 -oA FriendZone-nmap-version-scan-output 10.10.10.123
+# Ports scanned: TCP(7;21-22,53,80,139,443,445) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.123 (10.10.10.123)	Status: Up
+Host: 10.10.10.123 (10.10.10.123)	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 53/open/tcp//domain//ISC BIND 9.11.3-1ubuntu1.2 (Ubuntu Linux)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 443/open/tcp//ssl|http//Apache httpd 2.4.29/, 445/open/tcp//netbios-ssn//Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)/	Seq Index: 261	IP ID Seq: All zeros
+# Nmap done at Sat Dec 21 11:33:24 2024 -- 1 IP address (1 host up) scanned in 30.83 seconds

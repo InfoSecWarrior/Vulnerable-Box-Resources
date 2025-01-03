@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Dec 21 11:31:59 2024 as: nmap -v -T4 -Pn -p- -oA FriendZone-all-ports-scan-output 10.10.10.123
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.123 (10.10.10.123)	Status: Up
+Host: 10.10.10.123 (10.10.10.123)	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 53/open/tcp//domain///, 80/open/tcp//http///, 139/open/tcp//netbios-ssn///, 443/open/tcp//https///, 445/open/tcp//microsoft-ds///	Ignored State: closed (65528)
+# Nmap done at Sat Dec 21 11:32:53 2024 -- 1 IP address (1 host up) scanned in 54.46 seconds

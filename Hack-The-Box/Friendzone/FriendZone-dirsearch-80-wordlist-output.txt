@@ -1,0 +1,4 @@
+# Dirsearch started Sat Dec 21 11:40:10 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.123:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o FriendZone-dirsearch-80-wordlist-output.txt -q
+
+301   316B   http://10.10.10.123/wordpress    -> REDIRECTS TO: http://10.10.10.123/wordpress/
+403   300B   http://10.10.10.123/server-status
