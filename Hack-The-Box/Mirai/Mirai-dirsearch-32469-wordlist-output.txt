@@ -1,0 +1,4 @@
+# Dirsearch started Fri Dec 27 10:47:07 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.48:32469 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Mirai-dirsearch-32469-wordlist-output.txt -q
+
+400     0B   http://10.10.10.48:32469/proxy
+400     0B   http://10.10.10.48:32469/object

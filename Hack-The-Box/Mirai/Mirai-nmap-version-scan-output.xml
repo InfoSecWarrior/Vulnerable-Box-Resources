@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Dec 27 10:44:57 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,53,80,1917,32400,32469 -oA Mirai-nmap-version-scan-output 10.10.10.48 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,53,80,1917,32400,32469 -oA Mirai-nmap-version-scan-output 10.10.10.48" start="1735276497" startstr="Fri Dec 27 10:44:57 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="6" services="22,53,80,1917,32400,32469"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1735276497"/>
+<taskend task="NSE" time="1735276497"/>
+<taskbegin task="NSE" time="1735276497"/>
+<taskend task="NSE" time="1735276497"/>
+<taskbegin task="NSE" time="1735276497"/>
+<taskend task="NSE" time="1735276497"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735276497"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735276497"/>
+<taskbegin task="Connect Scan" time="1735276497"/>
+<taskend task="Connect Scan" time="1735276497" extrainfo="6 total ports"/>
+<taskbegin task="Service scan" time="1735276497"/>
+<taskend task="Service scan" time="1735276509" extrainfo="6 services on 1 host"/>
+<taskbegin task="Traceroute" time="1735276514"/>
+<taskend task="Traceroute" time="1735276514"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735276514"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735276514"/>
+<taskbegin task="NSE" time="1735276514"/>
+<taskend task="NSE" time="1735276523"/>
+<taskbegin task="NSE" time="1735276523"/>
+<taskend task="NSE" time="1735276523"/>
+<taskbegin task="NSE" time="1735276523"/>
+<taskend task="NSE" time="1735276523"/>
+<host starttime="1735276497" endtime="1735276523"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.48" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.48" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="6.7p1 Debian 5+deb8u3" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.7p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 aa:ef:5c:e0:8e:86:97:82:47:ff:4a:e5:40:18:90:c5 (DSA)&#xa;  2048 e8:c1:9d:c5:43:ab:fe:61:23:3b:d7:e4:af:9b:74:18 (RSA)&#xa;  256 b6:a0:78:38:d0:c8:10:94:8b:44:b2:ea:a0:17:42:2b (ECDSA)&#xa;  256 4d:68:40:f7:20:c4:e5:52:80:7a:44:38:b8:a2:a7:52 (ED25519)"><table>
+<elem key="fingerprint">aaef5ce08e86978247ff4ae5401890c5</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAJpzaaGcmwdVrkG//X5kr6m9em2hEu3SianCnerFwTGHgUHrRpR6iocVhd8gN21TPNTwFF47q8nUitupMBnvImwAs8NcjLVclPSdFJSWwTxbaBiXOqyjV5BcKty+s2N8I9neI2coRBtZDUwUiF/1gUAZIimeKOj2x39kcBpcpM6ZAAAAFQDwL9La/FPu1rEutE8yfdIgxTDDNQAAAIBJbfYW/IeOFHPiKBzHWiM8JTjhPCcvjIkNjKMMdS6uo00/JQH4VUUTscc/LTvYmQeLAyc7GYQ/AcLgoYFHm8hDgFVN2D4BQ7yGQT9dU4GAOp4/H1wHPKlAiBuDQMsyEk2s2J+60Rt+hUKCZfnxPOoD9l+VEWfZQYCTOBi3gOAotgAAAIBd6OWkakYL2e132lg6Z02202PIq9zvAx3tfViuU9CGStiIW4eH4qrhSMiUKrhbNeCzvdcw6pRWK41+vDiQrhV12/w6JSowf9KHxvoprAGiEg7GjyvidBr9Mzv1WajlU9BQO0Nc7poV2UzyMwLYLqzdjBJT28WUs3qYTxanaUrV9g==</elem>
+<elem key="bits">1024</elem>
+<elem key="type">ssh-dss</elem>
+</table>
+<table>
+<elem key="fingerprint">e8c19dc543abfe61233bd7e4af9b7418</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCpSoRAKB+cPR8bChDdajCIpf4p1zHfZyu2xnIkqRAgm6Dws2zcy+VAZriPDRUrht10GfsBLZtp/1PZpkUd2b1PKvN2YIg4SDtpvTrdwAM2uCgUrZdKRoFa+nd8REgkTg8JRYkSGQ/RxBZzb06JZhRSvLABFve3rEPVdwTf4mzzNuryV4DNctrAojjP4Sq7Msc24poQRG9AkeyS1h4zrZMbB0DQaKoyY3pss5FWJ+qa83XNsqjnKlKhSbjH17pBFhlfo/6bGkIE68vS5CQi9Phygke6/a39EP2pJp6WzT5KI3Yosex3Br85kbh/J8CVf4EDIRs5qismW+AZLeJUJHrj</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">b6a07838d0c810948b44b2eaa017422b</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCl89gWp+rA+2SLZzt3r7x+9sXFOCy9g3C9Yk1S21hT/VOmlqYys1fbAvqwoVvkpRvHRzbd5CxViOVih0TeW/bM=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">4d6840f720c4e552807a4438b8a2a752</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILvYtCvO/UREAhODuSsm7liSb9SZ8gLoZtn7P46SIDZL</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" product="dnsmasq" version="2.76" method="probed" conf="10"><cpe>cpe:/a:thekelleys:dnsmasq:2.76</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: dnsmasq-2.76"><elem key="bind.version">dnsmasq-2.76</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="lighttpd" version="1.4.35" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd:1.4.35</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS GET HEAD POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-server-header" output="lighttpd/1.4.35"><elem>lighttpd/1.4.35</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=UTF-8)."></script></port>
+<port protocol="tcp" portid="1917"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="upnp" product="Platinum UPnP" version="1.0.5.13" extrainfo="UPnP/1.0 DLNADOC/1.50" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="32400"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Plex Media Server httpd" method="probed" conf="10"><cpe>cpe:/a:plex:plex_media_server</cpe></service><script id="http-cors" output="HEAD GET POST PUT DELETE OPTIONS"/><script id="http-favicon" output="Plex"/><script id="http-auth" output="&#xa;HTTP/1.1 401 Unauthorized&#xd;&#xa;  Server returned status 401 but no WWW-Authenticate header.&#xa;"/><script id="http-title" output="Unauthorized"><elem key="title">Unauthorized</elem>
+</script></port>
+<port protocol="tcp" portid="32469"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="upnp" product="Platinum UPnP" version="1.0.5.13" extrainfo="UPnP/1.0 DLNADOC/1.50" method="probed" conf="10"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="32859"/>
+<osmatch name="Linux 3.12" accuracy="96" line="63654">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.12</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="96" line="63771">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="96" line="64162">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="96" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.8" accuracy="96" line="67909">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4.8</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="95" line="67760">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.9" accuracy="95" line="67963">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.18" accuracy="95" line="64456">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.8 - 3.11" accuracy="95" line="66297">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="95" line="67307">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="17602313" lastboot="Thu Jun  6 17:13:30 2024"/>
+<distance value="2"/>
+<tcpsequence index="261" difficulty="Good luck!" values="89203E34,868B4A86,567B8A28,C17B2818,E9B2A262,57E1883"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="FFFFEAD5,FFFFEAEB,FFFFEB03,FFFFEB1C,FFFFEB35,FFFFEB4F"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="108.55" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.48" rtt="108.99" host="10.10.10.48"/>
+</trace>
+<times srtt="92703" rttvar="18189" to="165459"/>
+</host>
+<taskbegin task="NSE" time="1735276523"/>
+<taskend task="NSE" time="1735276523"/>
+<taskbegin task="NSE" time="1735276523"/>
+<taskend task="NSE" time="1735276523"/>
+<taskbegin task="NSE" time="1735276523"/>
+<taskend task="NSE" time="1735276523"/>
+<runstats><finished time="1735276523" timestr="Fri Dec 27 10:45:23 2024" summary="Nmap done at Fri Dec 27 10:45:23 2024; 1 IP address (1 host up) scanned in 26.96 seconds" elapsed="26.96" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

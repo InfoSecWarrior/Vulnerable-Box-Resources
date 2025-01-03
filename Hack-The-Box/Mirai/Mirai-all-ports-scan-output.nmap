@@ -1,0 +1,15 @@
+# Nmap 7.94SVN scan initiated Fri Dec 27 10:42:51 2024 as: nmap -v -T4 -Pn -p- -oA Mirai-all-ports-scan-output 10.10.10.48
+Warning: 10.10.10.48 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.48 (10.10.10.48)
+Host is up (0.075s latency).
+Not shown: 65529 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+53/tcp    open  domain
+80/tcp    open  http
+1917/tcp  open  noagent
+32400/tcp open  plex
+32469/tcp open  unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Dec 27 10:44:56 2024 -- 1 IP address (1 host up) scanned in 125.25 seconds
