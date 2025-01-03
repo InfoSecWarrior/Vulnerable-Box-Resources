@@ -1,0 +1,25 @@
+# Dirsearch started Tue Dec 24 12:37:57 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.146:80 -o Networked-dirsearch-80-output.txt -q
+
+403   213B   http://10.10.10.146/.ht_wsr.txt
+403   216B   http://10.10.10.146/.htaccess.bak1
+403   216B   http://10.10.10.146/.htaccess.orig
+403   218B   http://10.10.10.146/.htaccess.sample
+403   214B   http://10.10.10.146/.htaccessOLD
+403   216B   http://10.10.10.146/.htaccess.save
+403   217B   http://10.10.10.146/.htaccess_extra
+403   214B   http://10.10.10.146/.htaccessBAK
+403   214B   http://10.10.10.146/.htaccess_sc
+403   216B   http://10.10.10.146/.htaccess_orig
+403   215B   http://10.10.10.146/.htaccessOLD2
+403   206B   http://10.10.10.146/.htm
+403   207B   http://10.10.10.146/.html
+403   212B   http://10.10.10.146/.htpasswds
+403   216B   http://10.10.10.146/.htpasswd_test
+403   213B   http://10.10.10.146/.httr-oauth
+301   235B   http://10.10.10.146/backup    -> REDIRECTS TO: http://10.10.10.146/backup/
+200   885B   http://10.10.10.146/backup/
+403   210B   http://10.10.10.146/cgi-bin/
+200     1KB  http://10.10.10.146/photos.php
+200   169B   http://10.10.10.146/upload.php
+301   236B   http://10.10.10.146/uploads    -> REDIRECTS TO: http://10.10.10.146/uploads/
+200     2B   http://10.10.10.146/uploads/

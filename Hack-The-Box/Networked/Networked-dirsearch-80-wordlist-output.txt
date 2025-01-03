@@ -1,0 +1,4 @@
+# Dirsearch started Tue Dec 24 12:38:11 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.146:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Networked-dirsearch-80-wordlist-output.txt -q
+
+301   236B   http://10.10.10.146/uploads    -> REDIRECTS TO: http://10.10.10.146/uploads/
+301   235B   http://10.10.10.146/backup    -> REDIRECTS TO: http://10.10.10.146/backup/
