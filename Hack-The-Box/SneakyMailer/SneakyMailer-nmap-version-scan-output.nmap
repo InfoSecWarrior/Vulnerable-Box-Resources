@@ -1,0 +1,67 @@
+# Nmap 7.94SVN scan initiated Thu Jan  2 13:04:55 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,25,80,143,993,8080 -oA SneakyMailer-nmap-version-scan-output 10.10.10.197
+Nmap scan report for 10.10.10.197 (10.10.10.197)
+Host is up (0.084s latency).
+
+PORT     STATE SERVICE  VERSION
+21/tcp   open  ftp      vsftpd 3.0.3
+22/tcp   open  ssh      OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 57:c9:00:35:36:56:e6:6f:f6:de:86:40:b2:ee:3e:fd (RSA)
+|   256 d8:21:23:28:1d:b8:30:46:e2:67:2d:59:65:f0:0a:05 (ECDSA)
+|_  256 5e:4f:23:4e:d4:90:8e:e9:5e:89:74:b3:19:0c:fc:1a (ED25519)
+25/tcp   open  smtp     Postfix smtpd
+|_smtp-commands: debian, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, CHUNKING
+80/tcp   open  http     nginx 1.14.2
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: nginx/1.14.2
+|_http-title: Did not follow redirect to http://sneakycorp.htb
+143/tcp  open  imap     Courier Imapd (released 2018)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Subject Alternative Name: email:postmaster@example.com
+| Issuer: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Public Key type: rsa
+| Public Key bits: 3072
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-05-14T17:14:21
+| Not valid after:  2021-05-14T17:14:21
+| MD5:   3faf:4166:f274:83c5:8161:03ed:f9c2:0308
+|_SHA-1: f79f:040b:2cd7:afe0:31fa:08c3:b30a:5ff5:7b63:566c
+|_imap-capabilities: ENABLE THREAD=ORDEREDSUBJECT STARTTLS THREAD=REFERENCES ACL2=UNION NAMESPACE UTF8=ACCEPTA0001 CHILDREN UIDPLUS CAPABILITY QUOTA SORT ACL completed OK IDLE IMAP4rev1
+993/tcp  open  ssl/imap Courier Imapd (released 2018)
+|_imap-capabilities: ENABLE THREAD=ORDEREDSUBJECT IDLE THREAD=REFERENCES AUTH=PLAIN ACL2=UNION NAMESPACE UTF8=ACCEPTA0001 CHILDREN UIDPLUS CAPABILITY QUOTA SORT ACL completed OK IMAP4rev1
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Subject Alternative Name: email:postmaster@example.com
+| Issuer: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Public Key type: rsa
+| Public Key bits: 3072
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-05-14T17:14:21
+| Not valid after:  2021-05-14T17:14:21
+| MD5:   3faf:4166:f274:83c5:8161:03ed:f9c2:0308
+|_SHA-1: f79f:040b:2cd7:afe0:31fa:08c3:b30a:5ff5:7b63:566c
+8080/tcp open  http     nginx 1.14.2
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-title: Welcome to nginx!
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.14.2
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 5.0 (96%), Linux 4.15 - 5.8 (96%), Linux 5.0 - 5.5 (95%), Linux 3.1 (95%), Linux 3.2 (95%), Linux 5.3 - 5.4 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), Linux 2.6.32 (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 38.603 days (since Sun Nov 24 22:37:28 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=252 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host:  debian; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   188.05 ms 10.10.14.1 (10.10.14.1)
+2   188.20 ms 10.10.10.197 (10.10.10.197)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan  2 13:05:56 2025 -- 1 IP address (1 host up) scanned in 61.15 seconds

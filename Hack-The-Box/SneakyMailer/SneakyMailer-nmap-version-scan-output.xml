@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Jan  2 13:04:55 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,25,80,143,993,8080 -oA SneakyMailer-nmap-version-scan-output 10.10.10.197 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 21,22,25,80,143,993,8080 -oA SneakyMailer-nmap-version-scan-output 10.10.10.197" start="1735803295" startstr="Thu Jan  2 13:04:55 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="7" services="21-22,25,80,143,993,8080"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1735803296"/>
+<taskend task="NSE" time="1735803296"/>
+<taskbegin task="NSE" time="1735803296"/>
+<taskend task="NSE" time="1735803296"/>
+<taskbegin task="NSE" time="1735803296"/>
+<taskend task="NSE" time="1735803296"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735803296"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735803296"/>
+<taskbegin task="Connect Scan" time="1735803296"/>
+<taskend task="Connect Scan" time="1735803296" extrainfo="7 total ports"/>
+<taskbegin task="Service scan" time="1735803296"/>
+<taskend task="Service scan" time="1735803306" extrainfo="7 services on 1 host"/>
+<taskbegin task="Traceroute" time="1735803311"/>
+<taskend task="Traceroute" time="1735803311"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735803311"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735803311"/>
+<taskbegin task="NSE" time="1735803311"/>
+<taskend task="NSE" time="1735803323"/>
+<taskbegin task="NSE" time="1735803323"/>
+<taskend task="NSE" time="1735803356"/>
+<taskbegin task="NSE" time="1735803356"/>
+<taskend task="NSE" time="1735803356"/>
+<host starttime="1735803296" endtime="1735803356"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.197" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.197" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 57:c9:00:35:36:56:e6:6f:f6:de:86:40:b2:ee:3e:fd (RSA)&#xa;  256 d8:21:23:28:1d:b8:30:46:e2:67:2d:59:65:f0:0a:05 (ECDSA)&#xa;  256 5e:4f:23:4e:d4:90:8e:e9:5e:89:74:b3:19:0c:fc:1a (ED25519)"><table>
+<elem key="fingerprint">57c900353656e66ff6de8640b2ee3efd</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCy6l2NxLZItm85sZuNKU/OzDEhlvYMmmrKpTD0+uxdQyySppZN3Lo6xOM2dC6pqG5DQjz+GPJl1/kbdla6qJXDZ1D5lnnCaImTqU++a1WceLck3/6/04B5RlTYUoLQFwRuy84CX8NDvs0mIyR7bpbd8W03+EAwTabOxXfukQG1MbgCY5V8QmLRdi/ZtsIqVxVZWOYI5rvuAQ+YM9D/Oa6mwAO5l2V3/h/A5nHDx2Vkl1++kfDqFNop2D2vssInvdwLKZ0M5RvXLQPlsqRLfqtcTBBLxYY6ZVcLHkvEA+gekHGcPRw0MV5U9vsx18+6O8wm9ZNI/a1Y4TyXIHMcbHi9</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="fingerprint">d82123281db83046e2672d5965f00a05</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOHL62JJEI1N8SHtcSypj9IjyD3dm6CA5iyog1Rmi4P5N6VtA/5RxBxegMYv7bTFymmFm02+w9zXdKMUcSs5TbE=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="fingerprint">5e4f234ed4908ee95e8974b3190cfc1a</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILZ/TeP6ZPj9zbHyFVfwZg48EElGqKCENQgPw+QCoC7x</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" debian" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="debian, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, CHUNKING"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.14.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.14.2</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.14.2"><elem>nginx/1.14.2</elem>
+</script><script id="http-title" output="Did not follow redirect to http://sneakycorp.htb"><elem key="redirect_url">http://sneakycorp.htb</elem>
+</script></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Courier Imapd" extrainfo="released 2018" method="probed" conf="10"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US&#xa;Subject Alternative Name: email:postmaster@example.com&#xa;Issuer: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 3072&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2020-05-14T17:14:21&#xa;Not valid after:  2021-05-14T17:14:21&#xa;MD5:   3faf:4166:f274:83c5:8161:03ed:f9c2:0308&#xa;SHA-1: f79f:040b:2cd7:afe0:31fa:08c3:b30a:5ff5:7b63:566c"><table key="subject">
+<elem key="commonName">localhost</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">New York</elem>
+<elem key="organizationName">Courier Mail Server</elem>
+<elem key="organizationalUnitName">Automatically-generated IMAP SSL key</elem>
+<elem key="stateOrProvinceName">NY</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">localhost</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">New York</elem>
+<elem key="organizationName">Courier Mail Server</elem>
+<elem key="organizationalUnitName">Automatically-generated IMAP SSL key</elem>
+<elem key="stateOrProvinceName">NY</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">3072</elem>
+<elem key="modulus">C2CC13F88AEC712E65CF9268B98C0050AF2C0B24AD267B25B8F6E99F621A9AC811FBAADB888F2026CE79F20C8474E78DEA1E05807D2BC61CB14307D075C2792F014DDAA6B8D4467D7DE7A5FFE23122F719A1470BEE9B94FEBE9DD34FDE9D2605BD4922E23C542DCB9795ACAB90BE0D5B660FD58E9EC2514434FBB3E677294C3A2A68865B39443129A420C61668921CDD196B25E98DDFE4C2A67F3BDB932461CECDA818FABB93600C77B5A9CEE280F076BCFD14FAF74B628D3D38E3B73A9F08F75CB22FBA253409234DDE3047ED04AA371D94E9EC7C7A14E6D972F70DB244CBAADB18658BB31D2ECA4308AE4C027977F64AA3009E243695952DF9B5095E8ACBBEA490A4C1C4ADA4CD41279D54411679229BC8B537E7AC28446B5BB24E50326483902B6FFEDF82B666B95D616C9F2A5607C62786660CD05CBA3FBF25BFD60AB35F2ECA1F1F94B9FE02033CCE3F5A77F10366BECAA426B40CB87DD73D72ECC2BF40D603DEECA4CB106351252C5C185D50DB99B87B4E07859CCAEFA2A505F56D209D</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">email:postmaster@example.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">F2:97:17:4C:FC:01:E5:4E:82:B1:36:F9:A7:3D:D5:C9:0A:38:DB:9C</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-05-14T17:14:21</elem>
+<elem key="notAfter">2021-05-14T17:14:21</elem>
+</table>
+<elem key="md5">3faf4166f27483c5816103edf9c20308</elem>
+<elem key="sha1">f79f040b2cd7afe031fa08c3b30a5ff57b63566c</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE6zCCA1OgAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjjESMBAGA1UEAxMJbG9j&#xa;YWxob3N0MS0wKwYDVQQLEyRBdXRvbWF0aWNhbGx5LWdlbmVyYXRlZCBJTUFQIFNT&#xa;TCBrZXkxHDAaBgNVBAoTE0NvdXJpZXIgTWFpbCBTZXJ2ZXIxETAPBgNVBAcTCE5l&#xa;dyBZb3JrMQswCQYDVQQIEwJOWTELMAkGA1UEBhMCVVMwHhcNMjAwNTE0MTcxNDIx&#xa;WhcNMjEwNTE0MTcxNDIxWjCBjjESMBAGA1UEAxMJbG9jYWxob3N0MS0wKwYDVQQL&#xa;EyRBdXRvbWF0aWNhbGx5LWdlbmVyYXRlZCBJTUFQIFNTTCBrZXkxHDAaBgNVBAoT&#xa;E0NvdXJpZXIgTWFpbCBTZXJ2ZXIxETAPBgNVBAcTCE5ldyBZb3JrMQswCQYDVQQI&#xa;EwJOWTELMAkGA1UEBhMCVVMwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIB&#xa;gQDCzBP4iuxxLmXPkmi5jABQrywLJK0meyW49umfYhqayBH7qtuIjyAmznnyDIR0&#xa;543qHgWAfSvGHLFDB9B1wnkvAU3aprjURn1956X/4jEi9xmhRwvum5T+vp3TT96d&#xa;JgW9SSLiPFQty5eVrKuQvg1bZg/Vjp7CUUQ0+7PmdylMOipohls5RDEppCDGFmiS&#xa;HN0ZayXpjd/kwqZ/O9uTJGHOzagY+ruTYAx3tanO4oDwdrz9FPr3S2KNPTjjtzqf&#xa;CPdcsi+6JTQJI03eMEftBKo3HZTp7Hx6FObZcvcNskTLqtsYZYuzHS7KQwiuTAJ5&#xa;d/ZKowCeJDaVlS35tQleisu+pJCkwcStpM1BJ51UQRZ5IpvItTfnrChEa1uyTlAy&#xa;ZIOQK2/+34K2ZrldYWyfKlYHxieGZgzQXLo/vyW/1gqzXy7KHx+Uuf4CAzzOP1p3&#xa;8QNmvsqkJrQMuH3XPXLswr9A1gPe7KTLEGNRJSxcGF1Q25m4e04HhZzK76KlBfVt&#xa;IJ0CAwEAAaNSMFAwDAYDVR0TAQH/BAIwADAhBgNVHREEGjAYgRZwb3N0bWFzdGVy&#xa;QGV4YW1wbGUuY29tMB0GA1UdDgQWBBTylxdM/AHlToKxNvmnPdXJCjjbnDANBgkq&#xa;hkiG9w0BAQsFAAOCAYEAAo7NqfYlXSEC8q3JXvI5EeVpkgBDOwnjxuC/P5ziEU0c&#xa;PRx6L3w+MxuYJdndC0hT9FexXzSgtps9Xm+TE81LgNvuipZ9bulF5pMmmO579U2Y&#xa;suJJpORD4P+65ezkfWDbPbdKyHMeRvVCkZCH74z2rCu+OeQTGb6GLfaaB7v9dThR&#xa;rfvHwM50hxNb4Zb4of7Eyw2OJGeeohoG4mFT4v7cu1WwimsDF/A7OCVOmvvFWeRA&#xa;EjdEReekDJsBFpHa8uRjxZ+4Ch9YvbFlYtYi6VyXV1AFR1Mb91w+iIitc6ROzjJ2&#xa;pVO69ePygQcjBRUTDX5reuBzaF5p9/6Ta9HP8NDI9+gdw6VGVTmYRJUbj7OeKSUq&#xa;FWUmtZYC288ErDAZ7z+6VqJtZsPXIItZ8J6UZE3zBclGMcQ7peL9wEvJQ8oSaHHM&#xa;AmgHIoMwKXSNEkHbBD24cf9KwVhcyJ4QCrSJBMAys98X6TzCwQI4Hy7XyifU3x/L&#xa;XUFD0JSVQp4Rmcg5Uzuk&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="imap-capabilities" output="ENABLE THREAD=ORDEREDSUBJECT STARTTLS THREAD=REFERENCES ACL2=UNION NAMESPACE UTF8=ACCEPTA0001 CHILDREN UIDPLUS CAPABILITY QUOTA SORT ACL completed OK IDLE IMAP4rev1"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Courier Imapd" extrainfo="released 2018" tunnel="ssl" method="probed" conf="10"/><script id="imap-capabilities" output="ENABLE THREAD=ORDEREDSUBJECT IDLE THREAD=REFERENCES AUTH=PLAIN ACL2=UNION NAMESPACE UTF8=ACCEPTA0001 CHILDREN UIDPLUS CAPABILITY QUOTA SORT ACL completed OK IMAP4rev1"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US&#xa;Subject Alternative Name: email:postmaster@example.com&#xa;Issuer: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 3072&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2020-05-14T17:14:21&#xa;Not valid after:  2021-05-14T17:14:21&#xa;MD5:   3faf:4166:f274:83c5:8161:03ed:f9c2:0308&#xa;SHA-1: f79f:040b:2cd7:afe0:31fa:08c3:b30a:5ff5:7b63:566c"><table key="subject">
+<elem key="commonName">localhost</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">New York</elem>
+<elem key="organizationName">Courier Mail Server</elem>
+<elem key="organizationalUnitName">Automatically-generated IMAP SSL key</elem>
+<elem key="stateOrProvinceName">NY</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">localhost</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">New York</elem>
+<elem key="organizationName">Courier Mail Server</elem>
+<elem key="organizationalUnitName">Automatically-generated IMAP SSL key</elem>
+<elem key="stateOrProvinceName">NY</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">3072</elem>
+<elem key="modulus">C2CC13F88AEC712E65CF9268B98C0050AF2C0B24AD267B25B8F6E99F621A9AC811FBAADB888F2026CE79F20C8474E78DEA1E05807D2BC61CB14307D075C2792F014DDAA6B8D4467D7DE7A5FFE23122F719A1470BEE9B94FEBE9DD34FDE9D2605BD4922E23C542DCB9795ACAB90BE0D5B660FD58E9EC2514434FBB3E677294C3A2A68865B39443129A420C61668921CDD196B25E98DDFE4C2A67F3BDB932461CECDA818FABB93600C77B5A9CEE280F076BCFD14FAF74B628D3D38E3B73A9F08F75CB22FBA253409234DDE3047ED04AA371D94E9EC7C7A14E6D972F70DB244CBAADB18658BB31D2ECA4308AE4C027977F64AA3009E243695952DF9B5095E8ACBBEA490A4C1C4ADA4CD41279D54411679229BC8B537E7AC28446B5BB24E50326483902B6FFEDF82B666B95D616C9F2A5607C62786660CD05CBA3FBF25BFD60AB35F2ECA1F1F94B9FE02033CCE3F5A77F10366BECAA426B40CB87DD73D72ECC2BF40D603DEECA4CB106351252C5C185D50DB99B87B4E07859CCAEFA2A505F56D209D</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">email:postmaster@example.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">F2:97:17:4C:FC:01:E5:4E:82:B1:36:F9:A7:3D:D5:C9:0A:38:DB:9C</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-05-14T17:14:21</elem>
+<elem key="notAfter">2021-05-14T17:14:21</elem>
+</table>
+<elem key="md5">3faf4166f27483c5816103edf9c20308</elem>
+<elem key="sha1">f79f040b2cd7afe031fa08c3b30a5ff57b63566c</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE6zCCA1OgAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjjESMBAGA1UEAxMJbG9j&#xa;YWxob3N0MS0wKwYDVQQLEyRBdXRvbWF0aWNhbGx5LWdlbmVyYXRlZCBJTUFQIFNT&#xa;TCBrZXkxHDAaBgNVBAoTE0NvdXJpZXIgTWFpbCBTZXJ2ZXIxETAPBgNVBAcTCE5l&#xa;dyBZb3JrMQswCQYDVQQIEwJOWTELMAkGA1UEBhMCVVMwHhcNMjAwNTE0MTcxNDIx&#xa;WhcNMjEwNTE0MTcxNDIxWjCBjjESMBAGA1UEAxMJbG9jYWxob3N0MS0wKwYDVQQL&#xa;EyRBdXRvbWF0aWNhbGx5LWdlbmVyYXRlZCBJTUFQIFNTTCBrZXkxHDAaBgNVBAoT&#xa;E0NvdXJpZXIgTWFpbCBTZXJ2ZXIxETAPBgNVBAcTCE5ldyBZb3JrMQswCQYDVQQI&#xa;EwJOWTELMAkGA1UEBhMCVVMwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIB&#xa;gQDCzBP4iuxxLmXPkmi5jABQrywLJK0meyW49umfYhqayBH7qtuIjyAmznnyDIR0&#xa;543qHgWAfSvGHLFDB9B1wnkvAU3aprjURn1956X/4jEi9xmhRwvum5T+vp3TT96d&#xa;JgW9SSLiPFQty5eVrKuQvg1bZg/Vjp7CUUQ0+7PmdylMOipohls5RDEppCDGFmiS&#xa;HN0ZayXpjd/kwqZ/O9uTJGHOzagY+ruTYAx3tanO4oDwdrz9FPr3S2KNPTjjtzqf&#xa;CPdcsi+6JTQJI03eMEftBKo3HZTp7Hx6FObZcvcNskTLqtsYZYuzHS7KQwiuTAJ5&#xa;d/ZKowCeJDaVlS35tQleisu+pJCkwcStpM1BJ51UQRZ5IpvItTfnrChEa1uyTlAy&#xa;ZIOQK2/+34K2ZrldYWyfKlYHxieGZgzQXLo/vyW/1gqzXy7KHx+Uuf4CAzzOP1p3&#xa;8QNmvsqkJrQMuH3XPXLswr9A1gPe7KTLEGNRJSxcGF1Q25m4e04HhZzK76KlBfVt&#xa;IJ0CAwEAAaNSMFAwDAYDVR0TAQH/BAIwADAhBgNVHREEGjAYgRZwb3N0bWFzdGVy&#xa;QGV4YW1wbGUuY29tMB0GA1UdDgQWBBTylxdM/AHlToKxNvmnPdXJCjjbnDANBgkq&#xa;hkiG9w0BAQsFAAOCAYEAAo7NqfYlXSEC8q3JXvI5EeVpkgBDOwnjxuC/P5ziEU0c&#xa;PRx6L3w+MxuYJdndC0hT9FexXzSgtps9Xm+TE81LgNvuipZ9bulF5pMmmO579U2Y&#xa;suJJpORD4P+65ezkfWDbPbdKyHMeRvVCkZCH74z2rCu+OeQTGb6GLfaaB7v9dThR&#xa;rfvHwM50hxNb4Zb4of7Eyw2OJGeeohoG4mFT4v7cu1WwimsDF/A7OCVOmvvFWeRA&#xa;EjdEReekDJsBFpHa8uRjxZ+4Ch9YvbFlYtYi6VyXV1AFR1Mb91w+iIitc6ROzjJ2&#xa;pVO69ePygQcjBRUTDX5reuBzaF5p9/6Ta9HP8NDI9+gdw6VGVTmYRJUbj7OeKSUq&#xa;FWUmtZYC288ErDAZ7z+6VqJtZsPXIItZ8J6UZE3zBclGMcQ7peL9wEvJQ8oSaHHM&#xa;AmgHIoMwKXSNEkHbBD24cf9KwVhcyJ4QCrSJBMAys98X6TzCwQI4Hy7XyifU3x/L&#xa;XUFD0JSVQp4Rmcg5Uzuk&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.14.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.14.2</cpe></service><script id="http-open-proxy" output="Proxy might be redirecting requests"/><script id="http-title" output="Welcome to nginx!"><elem key="title">Welcome to nginx!</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.14.2"><elem>nginx/1.14.2</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="udp" portid="34420"/>
+<osmatch name="Linux 5.0" accuracy="96" line="68054">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:5.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.15 - 5.8" accuracy="96" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.5" accuracy="95" line="68098">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="95" line="62926">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64673">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.3 - 5.4" accuracy="95" line="68158">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="95" line="61824">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="95"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="94" line="55662">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="93" line="8405">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="93"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="93" line="64180">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3335308" lastboot="Sun Nov 24 22:37:28 2024"/>
+<distance value="2"/>
+<tcpsequence index="252" difficulty="Good luck!" values="A0E5876F,FE7E40B5,6875627B,A5E68BC8,F0138F4F,8BD67448"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="C6CC0C8C,C6CC0CF0,C6CC0D54,C6CC0DB8,C6CC0E1D,C6CC0E81"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="188.05" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.197" rtt="188.20" host="10.10.10.197"/>
+</trace>
+<times srtt="84284" rttvar="46859" to="271720"/>
+</host>
+<taskbegin task="NSE" time="1735803356"/>
+<taskend task="NSE" time="1735803356"/>
+<taskbegin task="NSE" time="1735803356"/>
+<taskend task="NSE" time="1735803356"/>
+<taskbegin task="NSE" time="1735803356"/>
+<taskend task="NSE" time="1735803356"/>
+<runstats><finished time="1735803356" timestr="Thu Jan  2 13:05:56 2025" summary="Nmap done at Thu Jan  2 13:05:56 2025; 1 IP address (1 host up) scanned in 61.15 seconds" elapsed="61.15" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

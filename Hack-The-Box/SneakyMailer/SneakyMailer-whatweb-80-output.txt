@@ -1,0 +1,1 @@
+http://10.10.10.197:80 [301 Moved Permanently] Country[RESERVED][ZZ], HTTPServer[nginx/1.14.2], IP[10.10.10.197], RedirectLocation[http://sneakycorp.htb], Title[301 Moved Permanently], nginx[1.14.2]
