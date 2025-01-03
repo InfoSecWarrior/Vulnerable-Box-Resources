@@ -1,0 +1,35 @@
+# Dirsearch started Tue Dec 24 13:38:58 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.143:80 -o Jarvis-dirsearch-80-output.txt -q
+
+301   309B   http://10.10.10.143/js    -> REDIRECTS TO: http://10.10.10.143/js/
+403   277B   http://10.10.10.143/.ht_wsr.txt
+403   277B   http://10.10.10.143/.htaccess.bak1
+403   277B   http://10.10.10.143/.htaccess.orig
+403   277B   http://10.10.10.143/.htaccess.sample
+403   277B   http://10.10.10.143/.htaccess_sc
+403   277B   http://10.10.10.143/.htaccessOLD2
+403   277B   http://10.10.10.143/.htaccess_extra
+403   277B   http://10.10.10.143/.htaccess_orig
+403   277B   http://10.10.10.143/.htaccessOLD
+403   277B   http://10.10.10.143/.htaccessBAK
+403   277B   http://10.10.10.143/.html
+403   277B   http://10.10.10.143/.htaccess.save
+403   277B   http://10.10.10.143/.htm
+403   277B   http://10.10.10.143/.htpasswds
+403   277B   http://10.10.10.143/.httr-oauth
+403   277B   http://10.10.10.143/.htpasswd_test
+403   277B   http://10.10.10.143/.php
+403   277B   http://10.10.10.143/.php3
+301   310B   http://10.10.10.143/css    -> REDIRECTS TO: http://10.10.10.143/css/
+301   312B   http://10.10.10.143/fonts    -> REDIRECTS TO: http://10.10.10.143/fonts/
+200   755B   http://10.10.10.143/footer.php
+200   814B   http://10.10.10.143/images/
+301   313B   http://10.10.10.143/images    -> REDIRECTS TO: http://10.10.10.143/images/
+200   676B   http://10.10.10.143/js/
+301   317B   http://10.10.10.143/phpmyadmin    -> REDIRECTS TO: http://10.10.10.143/phpmyadmin/
+200     3KB  http://10.10.10.143/phpmyadmin/doc/html/index.html
+200     1KB  http://10.10.10.143/phpmyadmin/README
+200    19KB  http://10.10.10.143/phpmyadmin/ChangeLog
+200     4KB  http://10.10.10.143/phpmyadmin/
+200     4KB  http://10.10.10.143/phpmyadmin/index.php
+403   277B   http://10.10.10.143/server-status/
+403   277B   http://10.10.10.143/server-status

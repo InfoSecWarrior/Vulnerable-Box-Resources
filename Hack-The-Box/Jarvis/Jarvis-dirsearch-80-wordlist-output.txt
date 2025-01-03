@@ -1,0 +1,9 @@
+# Dirsearch started Tue Dec 24 13:45:52 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.143:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Jarvis-dirsearch-80-wordlist-output.txt -q
+
+301   313B   http://10.10.10.143/images    -> REDIRECTS TO: http://10.10.10.143/images/
+301   310B   http://10.10.10.143/css    -> REDIRECTS TO: http://10.10.10.143/css/
+301   309B   http://10.10.10.143/js    -> REDIRECTS TO: http://10.10.10.143/js/
+301   312B   http://10.10.10.143/fonts    -> REDIRECTS TO: http://10.10.10.143/fonts/
+301   317B   http://10.10.10.143/phpmyadmin    -> REDIRECTS TO: http://10.10.10.143/phpmyadmin/
+301   311B   http://10.10.10.143/sass    -> REDIRECTS TO: http://10.10.10.143/sass/
+403   277B   http://10.10.10.143/server-status

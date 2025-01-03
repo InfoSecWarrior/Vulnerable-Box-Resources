@@ -1,0 +1,14 @@
+# Nmap 7.94SVN scan initiated Tue Dec 24 13:22:30 2024 as: nmap -v -T4 -Pn -p- -oA Jarvis-all-ports-scan-output 10.10.10.143
+Increasing send delay for 10.10.10.143 from 0 to 5 due to 733 out of 1832 dropped probes since last increase.
+Increasing send delay for 10.10.10.143 from 5 to 10 due to 12 out of 29 dropped probes since last increase.
+Warning: 10.10.10.143 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.143 (10.10.10.143)
+Host is up (0.065s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+64999/tcp open  unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Dec 24 13:37:50 2024 -- 1 IP address (1 host up) scanned in 919.92 seconds
