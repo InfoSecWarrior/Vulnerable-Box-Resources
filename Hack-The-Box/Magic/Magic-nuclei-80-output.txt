@@ -1,0 +1,5 @@
+[waf-detect:apachegeneric] [http] [info] http://10.10.10.185:80
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.10.185:22
+[ssh-server-enumeration] [javascript] [info] 10.10.10.185:22 ["SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3"]
+[ssh-auth-methods] [javascript] [info] 10.10.10.185:22 ["["publickey"]"]
+[CVE-2023-48795] [javascript] [medium] 10.10.10.185:22 ["Vulnerable to Terrapin"]

@@ -1,0 +1,52 @@
+# Nmap 7.94SVN scan initiated Mon Dec 30 13:02:33 2024 as: nmap -v -T4 -Pn -p- -oA Magic-all-ports-scan-output 10.10.10.185
+Increasing send delay for 10.10.10.185 from 5 to 10 due to 65 out of 161 dropped probes since last increase.
+Warning: 10.10.10.185 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.185 (10.10.10.185)
+Host is up (0.071s latency).
+Not shown: 65493 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+1589/tcp  filtered vqp
+2137/tcp  filtered connect
+6501/tcp  filtered boks_servc
+6825/tcp  filtered unknown
+7003/tcp  filtered afs3-vlserver
+8695/tcp  filtered unknown
+9400/tcp  filtered sec-t4net-srv
+11614/tcp filtered unknown
+14315/tcp filtered unknown
+15929/tcp filtered unknown
+16498/tcp filtered unknown
+19794/tcp filtered unknown
+21264/tcp filtered unknown
+25054/tcp filtered unknown
+25120/tcp filtered unknown
+25389/tcp filtered unknown
+26023/tcp filtered unknown
+26297/tcp filtered unknown
+36743/tcp filtered unknown
+39034/tcp filtered unknown
+39646/tcp filtered unknown
+41434/tcp filtered unknown
+41598/tcp filtered unknown
+41899/tcp filtered unknown
+42854/tcp filtered unknown
+43680/tcp filtered unknown
+43727/tcp filtered unknown
+44143/tcp filtered unknown
+45827/tcp filtered unknown
+47795/tcp filtered unknown
+48562/tcp filtered unknown
+49190/tcp filtered unknown
+51284/tcp filtered unknown
+51325/tcp filtered unknown
+52866/tcp filtered unknown
+56819/tcp filtered unknown
+59613/tcp filtered unknown
+59890/tcp filtered unknown
+61162/tcp filtered unknown
+63161/tcp filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Dec 30 13:11:00 2024 -- 1 IP address (1 host up) scanned in 507.03 seconds
