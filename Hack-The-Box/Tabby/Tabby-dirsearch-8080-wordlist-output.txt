@@ -1,0 +1,17 @@
+# Dirsearch started Wed Jan  1 17:45:58 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.194:8080 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Tabby-dirsearch-8080-wordlist-output.txt -q
+
+302     0B   http://10.10.10.194:8080/docs    -> REDIRECTS TO: /docs/
+302     0B   http://10.10.10.194:8080/examples    -> REDIRECTS TO: /examples/
+302     0B   http://10.10.10.194:8080/manager    -> REDIRECTS TO: /manager/
+400   813B   http://10.10.10.194:8080/http%3A%2F%2Fwww
+400   813B   http://10.10.10.194:8080/http%3A%2F%2Fyoutube
+400   813B   http://10.10.10.194:8080/http%3A%2F%2Fblogs
+400   813B   http://10.10.10.194:8080/http%3A%2F%2Fblog
+400   813B   http://10.10.10.194:8080/**http%3A%2F%2Fwww
+400   804B   http://10.10.10.194:8080/External%5CX-News
+404   691B   http://10.10.10.194:8080/web-inf
+400   813B   http://10.10.10.194:8080/http%3A%2F%2Fcommunity
+400   813B   http://10.10.10.194:8080/http%3A%2F%2Fradar
+400   813B   http://10.10.10.194:8080/http%3A%2F%2Fjeremiahgrossman
+400   813B   http://10.10.10.194:8080/http%3A%2F%2Fweblog
+400   813B   http://10.10.10.194:8080/http%3A%2F%2Fswik

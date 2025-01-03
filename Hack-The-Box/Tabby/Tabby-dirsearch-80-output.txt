@@ -1,0 +1,28 @@
+# Dirsearch started Wed Jan  1 17:15:06 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.194:80 -o Tabby-dirsearch-80-output.txt -q
+
+403   277B   http://10.10.10.194/.ht_wsr.txt
+403   277B   http://10.10.10.194/.htaccess.bak1
+403   277B   http://10.10.10.194/.htaccess_extra
+403   277B   http://10.10.10.194/.htaccess.sample
+403   277B   http://10.10.10.194/.htaccess.save
+403   277B   http://10.10.10.194/.htaccessOLD
+403   277B   http://10.10.10.194/.htaccess.orig
+403   277B   http://10.10.10.194/.htaccessBAK
+403   277B   http://10.10.10.194/.htaccess_sc
+403   277B   http://10.10.10.194/.htaccess_orig
+403   277B   http://10.10.10.194/.html
+403   277B   http://10.10.10.194/.htaccessOLD2
+403   277B   http://10.10.10.194/.htm
+403   277B   http://10.10.10.194/.htpasswds
+403   277B   http://10.10.10.194/.httr-oauth
+403   277B   http://10.10.10.194/.htpasswd_test
+403   277B   http://10.10.10.194/.php
+301   313B   http://10.10.10.194/assets    -> REDIRECTS TO: http://10.10.10.194/assets/
+403   277B   http://10.10.10.194/assets/
+200   766B   http://10.10.10.194/favicon.ico
+301   312B   http://10.10.10.194/files    -> REDIRECTS TO: http://10.10.10.194/files/
+403   277B   http://10.10.10.194/files/
+200     0B   http://10.10.10.194/news.php
+200   811B   http://10.10.10.194/Readme.txt
+403   277B   http://10.10.10.194/server-status
+403   277B   http://10.10.10.194/server-status/

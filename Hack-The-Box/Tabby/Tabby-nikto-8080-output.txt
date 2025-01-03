@@ -1,0 +1,14 @@
+- Nikto v2.5.0/
++ Target Host: 10.10.10.194
++ Target Port: 8080
++ GET /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
++ GET /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ OPTIONS OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS .
++ GET HTTP method ('Allow' Header): 'PUT' method could allow clients to save files on the web server.
++ GET HTTP method ('Allow' Header): 'DELETE' may allow clients to remove files on the web server.
++ GET /: Appears to be a default Apache Tomcat install.
++ GET /examples/servlets/index.html: Apache Tomcat default JSP pages present.
++ GET /examples/jsp/snp/snoop.jsp: Displays information about page retrievals, including other users. See: CVE-2004-2104: 
++ GET /manager/html: Default Tomcat Manager / Host Manager interface found.
++ GET /host-manager/html: Default Tomcat Manager / Host Manager interface found.
++ GET /manager/status: Default Tomcat Server Status interface found.

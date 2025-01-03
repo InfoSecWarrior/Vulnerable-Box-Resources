@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Jan  1 17:12:58 2025 as: nmap -v -T4 -Pn -p- -oA Tabby-all-ports-scan-output 10.10.10.194 -->
+<nmaprun scanner="nmap" args="nmap -v -T4 -Pn -p- -oA Tabby-all-ports-scan-output 10.10.10.194" start="1735731778" startstr="Wed Jan  1 17:12:58 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735731778"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735731778"/>
+<taskbegin task="SYN Stealth Scan" time="1735731778"/>
+<taskprogress task="SYN Stealth Scan" time="1735731809" percent="40.90" remaining="45" etc="1735731854"/>
+<taskend task="SYN Stealth Scan" time="1735731825" extrainfo="65535 total ports"/>
+<host starttime="1735731778" endtime="1735731825"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.194" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.194" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="reset" count="65532" proto="tcp" ports="1-21,23-79,81-8079,8081-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="68055" rttvar="268" to="100000"/>
+</host>
+<runstats><finished time="1735731825" timestr="Wed Jan  1 17:13:45 2025" summary="Nmap done at Wed Jan  1 17:13:45 2025; 1 IP address (1 host up) scanned in 47.30 seconds" elapsed="47.30" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
