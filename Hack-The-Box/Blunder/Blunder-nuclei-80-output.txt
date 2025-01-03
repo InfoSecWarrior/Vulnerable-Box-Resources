@@ -1,0 +1,2 @@
+[missing-sri] [http] [info] http://10.10.10.191:80 ["http://10.10.10.191/bl-kernel/js/jquery.min.js?version=3.9.2","http://10.10.10.191/bl-kernel/js/bootstrap.bundle.min.js?version=3.9.2"]
+[waf-detect:apachegeneric] [http] [info] http://10.10.10.191:80

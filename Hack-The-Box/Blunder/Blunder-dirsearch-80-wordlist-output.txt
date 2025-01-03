@@ -1,0 +1,17 @@
+# Dirsearch started Wed Jan  1 11:05:48 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.191:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Blunder-dirsearch-80-wordlist-output.txt -q
+
+200     1KB  http://10.10.10.191/about
+301     0B   http://10.10.10.191/admin    -> REDIRECTS TO: http://10.10.10.191/admin/
+200     2KB  http://10.10.10.191/usb
+200     1KB  http://10.10.10.191/LICENSE
+404   274B   http://10.10.10.191/http%3A%2F%2Fwww
+404   274B   http://10.10.10.191/http%3A%2F%2Fyoutube
+404   274B   http://10.10.10.191/http%3A%2F%2Fblogs
+404   274B   http://10.10.10.191/http%3A%2F%2Fblog
+404   274B   http://10.10.10.191/**http%3A%2F%2Fwww
+403   277B   http://10.10.10.191/server-status
+404   274B   http://10.10.10.191/http%3A%2F%2Fcommunity
+404   274B   http://10.10.10.191/http%3A%2F%2Fradar
+404   274B   http://10.10.10.191/http%3A%2F%2Fjeremiahgrossman
+404   274B   http://10.10.10.191/http%3A%2F%2Fweblog
+404   274B   http://10.10.10.191/http%3A%2F%2Fswik

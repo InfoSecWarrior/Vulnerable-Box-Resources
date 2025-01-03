@@ -1,0 +1,33 @@
+# Nmap 7.94SVN scan initiated Wed Jan  1 10:36:11 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA Blunder-nmap-version-scan-output 10.10.10.191
+adjust_timeouts2: packet supposedly had rtt of -341460 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -341460 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.191 (10.10.10.191)
+Host is up (0.19s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-generator: Blunder
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Blunder | A blunder of interesting facts
+|_http-favicon: Unknown favicon MD5: A0F0E5D852F0E3783AF700B6EE9D00DA
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Linux 5.X|4.X|2.6.X (97%)
+OS CPE: cpe:/o:linux:linux_kernel:5.0 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:2.6.32
+Aggressive OS guesses: Linux 5.0 (97%), Linux 4.15 - 5.8 (90%), Linux 5.0 - 5.4 (90%), Linux 5.3 - 5.4 (89%), Linux 2.6.32 (89%), Linux 5.0 - 5.5 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 13.027 days (since Thu Dec 19 09:57:44 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   194.48 ms 10.10.14.1 (10.10.14.1)
+2   194.58 ms 10.10.10.191 (10.10.10.191)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan  1 10:36:35 2025 -- 1 IP address (1 host up) scanned in 24.25 seconds
