@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Jan  7 14:01:29 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,443,8080 -oA Seal-nmap-version-scan-output 10.10.10.250 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,443,8080 -oA Seal-nmap-version-scan-output 10.10.10.250" start="1736238689" startstr="Tue Jan  7 14:01:29 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,443,8080"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1736238690"/>
+<taskend task="NSE" time="1736238690"/>
+<taskbegin task="NSE" time="1736238690"/>
+<taskend task="NSE" time="1736238690"/>
+<taskbegin task="NSE" time="1736238690"/>
+<taskend task="NSE" time="1736238690"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1736238690"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1736238690"/>
+<taskbegin task="Connect Scan" time="1736238690"/>
+<taskend task="Connect Scan" time="1736238690" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1736238690"/>
+<taskend task="Service scan" time="1736238710" extrainfo="3 services on 1 host"/>
+<taskbegin task="Traceroute" time="1736238713"/>
+<taskend task="Traceroute" time="1736238713"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1736238713"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1736238714"/>
+<taskbegin task="NSE" time="1736238714"/>
+<taskend task="NSE" time="1736238719"/>
+<taskbegin task="NSE" time="1736238719"/>
+<taskend task="NSE" time="1736238720"/>
+<taskbegin task="NSE" time="1736238720"/>
+<taskend task="NSE" time="1736238720"/>
+<host starttime="1736238690" endtime="1736238720"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.250" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.250" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 4b:89:47:39:67:3d:07:31:5e:3f:4c:27:41:1f:f9:67 (RSA)&#xa;  256 04:a7:4f:39:95:65:c5:b0:8d:d5:49:2e:d8:44:00:36 (ECDSA)&#xa;  256 b4:5e:83:93:c5:42:49:de:71:25:92:71:23:b1:85:54 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQC1FohcrXkoPYUOtmzAh5PlCU2H0+sFcGl6XXS6vX2lLJ3RD2Vd+KlcYtc2wQLjcYJhkFe793jmkogOSh0uI+fKQA9z1Ib3J0vtsIaNkXxvSMPcr54QxXgg1guaM1OQl43ePUADXnB6WqAg8QyF6Nxoa18vboOAu3a8Wn9Qf9iCpoU93d5zQj+FsBKVaDs3zuJkUBRfjsqq7rEMpxqCfkFIeUrJF9MBsQhgsEVUbo1zicWG32m49PgDbKr9yE3lPsV9K4b9ugNQ3zwWW5a1OpOs+r3AxFcu2q65N2znV3/p41ul9+fWXo9pm0jJPJ3V5gZphDkXVZEw16K2hcgQcQJUH7luaVTRpzqDxXaiK/8wChtMXEUjFQKL6snEskkRxCg+uLO6HjI19dJ7sTBUkjdMK58TM5RmK8EO1VvbCAAdlMs8G064pSFKxY/iQjp7VWuaqBUetpplESpIe6Bz+tOyTJ8ZyhkJimFG80iHoKWYI2TOa5FdlXod1NvTIkCLD2U=</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">4b894739673d07315e3f4c27411ff967</elem>
+<elem key="bits">3072</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBD+SiHX7ZTaXWFgBUKSVlFmMYtqF7Ihjfdc51aEdxFdB3xnRWVYSJd2JhOX1k/9V62eZMhR/4Lc8pJWQJHdSA/c=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">04a74f399565c5b08dd5492ed8440036</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIMXLlJgua8pjAw5NcWgGDwXoASfUOqUlpeQxd66seKyT</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">b45e8393c54249de7125927123b18554</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-title" output="400 The plain HTTP request was sent to HTTPS port"><elem key="title">400 The plain HTTP request was sent to HTTPS port</elem>
+</script><script id="ssl-cert" output="Subject: commonName=seal.htb/organizationName=Seal Pvt Ltd/stateOrProvinceName=London/countryName=UK&#xa;Issuer: commonName=seal.htb/organizationName=Seal Pvt Ltd/stateOrProvinceName=London/countryName=UK&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-05-05T10:24:03&#xa;Not valid after:  2022-05-05T10:24:03&#xa;MD5:   9c4f:991a:bb97:192c:df5a:c513:057d:4d21&#xa;SHA-1: 0de4:6873:0ab7:3f90:c317:0f7b:872f:155b:305e:54ef"><table key="subject">
+<elem key="commonName">seal.htb</elem>
+<elem key="countryName">UK</elem>
+<elem key="emailAddress">admin@seal.htb</elem>
+<elem key="localityName">Hackney</elem>
+<elem key="organizationName">Seal Pvt Ltd</elem>
+<elem key="organizationalUnitName">Infra</elem>
+<elem key="stateOrProvinceName">London</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">seal.htb</elem>
+<elem key="countryName">UK</elem>
+<elem key="emailAddress">admin@seal.htb</elem>
+<elem key="localityName">hackney</elem>
+<elem key="organizationName">Seal Pvt Ltd</elem>
+<elem key="organizationalUnitName">Infra</elem>
+<elem key="stateOrProvinceName">London</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">DA7DBCA79EC71D8D67AE5D3AC3337EAB4C9D32DA92690C315EF6782BCB3FF1C352ACA0F7C40EB0C4D171DCF0B5650FD7315DDFFCFB47DE795DF877ADEC632674B79B479402B0D61F5311AFE8835C91D4CCB16517FE2BFC1C5FE3B05D816D307917099147ED33D72CAB42ACC24C67A182B777F571CAC8D740FEFDD328EDEC9026C6ADFF57BEE8F82B4D64712267233820CE675FA695F4A4BE6AF94D4056494DEE8A5D90A392A3F582C23E2B232A956ECA11D4EB36792AE05792E75A3D2D0BB96416D4B4CCC89CE545FA088BD27B136B9442096B4CA2B27778380615940016F0CB1A23D9605B82F5487421A683A97C24F4595F074B68F67F15B1C4438EE76299AD</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-05-05T10:24:03</elem>
+<elem key="notAfter">2022-05-05T10:24:03</elem>
+</table>
+<elem key="md5">9c4f991abb97192cdf5ac513057d4d21</elem>
+<elem key="sha1">0de468730ab73f90c3170f7b872f155b305e54ef</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDiDCCAnACAWQwDQYJKoZIhvcNAQELBQAwgYkxCzAJBgNVBAYTAlVLMQ8wDQYD&#xa;VQQIDAZMb25kb24xEDAOBgNVBAcMB2hhY2tuZXkxFTATBgNVBAoMDFNlYWwgUHZ0&#xa;IEx0ZDEOMAwGA1UECwwFSW5mcmExETAPBgNVBAMMCHNlYWwuaHRiMR0wGwYJKoZI&#xa;hvcNAQkBFg5hZG1pbkBzZWFsLmh0YjAeFw0yMTA1MDUxMDI0MDNaFw0yMjA1MDUx&#xa;MDI0MDNaMIGJMQswCQYDVQQGEwJVSzEPMA0GA1UECAwGTG9uZG9uMRAwDgYDVQQH&#xa;DAdIYWNrbmV5MRUwEwYDVQQKDAxTZWFsIFB2dCBMdGQxDjAMBgNVBAsMBUluZnJh&#xa;MREwDwYDVQQDDAhzZWFsLmh0YjEdMBsGCSqGSIb3DQEJARYOYWRtaW5Ac2VhbC5o&#xa;dGIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDafbynnscdjWeuXTrD&#xa;M36rTJ0y2pJpDDFe9ngryz/xw1KsoPfEDrDE0XHc8LVlD9cxXd/8+0feeV34d63s&#xa;YyZ0t5tHlAKw1h9TEa/og1yR1MyxZRf+K/wcX+OwXYFtMHkXCZFH7TPXLKtCrMJM&#xa;Z6GCt3f1ccrI10D+/dMo7eyQJsat/1e+6PgrTWRxImcjOCDOZ1+mlfSkvmr5TUBW&#xa;SU3uil2Qo5Kj9YLCPisjKpVuyhHU6zZ5KuBXkudaPS0LuWQW1LTMyJzlRfoIi9J7&#xa;E2uUQglrTKKyd3g4BhWUABbwyxoj2WBbgvVIdCGmg6l8JPRZXwdLaPZ/FbHEQ47n&#xa;YpmtAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAJZGFznhRSEa2DTgevXl1T8uxpiG&#xa;PPd9R0whiIv3s225ir9SWW3Hl1tVkEY75G4PJA/DxmBIHxIK1OU8kZMuJUevnSIC&#xa;rK16b9Y5Y1JEnaQwfKCoQILMU40ED76ZIJigGqAoniGCim/mwR1F1r1g63oUttDT&#xa;aGLrpvN6XVkqSszpxTMMHk3SqwNaKzsaPKWPGuEbj9GGntRo1ysqZfBttgUMFIzl&#xa;7un7bBMIn+SPFosNGBmXIU9eyR7zG+TmpGYvTgsw0ZJqZL9yQIcszJQZPV3HuLJ8&#xa;8srMeWYlzSS1SOWrohny4ov8jpMjWkbdnDNGRMXIUpapho1R82hyP7WEfwc=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS GET HEAD POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="tls-nextprotoneg" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" servicefp="SF-Port8080-TCP:V=7.94SVN%I=7%D=1/7%Time=677CE668%P=x86_64-pc-linux-gnu%r(GetRequest,F4,&quot;HTTP/1\.1\x20401\x20Unauthorized\r\nDate:\x20Tue,\x2007\x20Jan\x202025\x2008:16:14\x20GMT\r\nSet-Cookie:\x20JSESSIONID=node01ksuk0hcq7cpx6tk1j2wicqac0\.node0;\x20Path=/;\x20HttpOnly\r\nExpires:\x20Thu,\x2001\x20Jan\x201970\x2000:00:00\x20GMT\r\nContent-Type:\x20text/html;charset=utf-8\r\nContent-Length:\x200\r\n\r\n&quot;)%r(HTTPOptions,107,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Tue,\x2007\x20Jan\x202025\x2008:16:15\x20GMT\r\nSet-Cookie:\x20JSESSIONID=node0bfsdhhs89jhucko2auiokmx31\.node0;\x20Path=/;\x20HttpOnly\r\nExpires:\x20Thu,\x2001\x20Jan\x201970\x2000:00:00\x20GMT\r\nContent-Type:\x20text/html;charset=utf-8\r\nAllow:\x20GET,HEAD,POST,OPTIONS\r\nContent-Length:\x200\r\n\r\n&quot;)%r(RTSPRequest,AD,&quot;HTTP/1\.1\x20505\x20Unknown\x20Version\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length:\x2058\r\nConnection:\x20close\r\n\r\n&lt;h1&gt;Bad\x20Message\x20505&lt;/h1&gt;&lt;pre&gt;reason:\x20Unknown\x20Version&lt;/pre&gt;&quot;)%r(FourOhFourRequest,F5,&quot;HTTP/1\.1\x20401\x20Unauthorized\r\nDate:\x20Tue,\x2007\x20Jan\x202025\x2008:16:15\x20GMT\r\nSet-Cookie:\x20JSESSIONID=node017r1vwk8hub181wugiyj7ipbb92\.node0;\x20Path=/;\x20HttpOnly\r\nExpires:\x20Thu,\x2001\x20Jan\x201970\x2000:00:00\x20GMT\r\nContent-Type:\x20text/html;charset=utf-8\r\nContent-Length:\x200\r\n\r\n&quot;)%r(Socks5,C3,&quot;HTTP/1\.1\x20400\x20Illegal\x20character\x20CNTL=0x5\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length:\x2069\r\nConnection:\x20close\r\n\r\n&lt;h1&gt;Bad\x20Message\x20400&lt;/h1&gt;&lt;pre&gt;reason:\x20Illegal\x20character\x20CNTL=0x5&lt;/pre&gt;&quot;)%r(Socks4,C3,&quot;HTTP/1\.1\x20400\x20Illegal\x20character\x20CNTL=0x4\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length:\x2069\r\nConnection:\x20close\r\n\r\n&lt;h1&gt;Bad\x20Message\x20400&lt;/h1&gt;&lt;pre&gt;reason:\x20Illegal\x20character\x20CNTL=0x4&lt;/pre&gt;&quot;)%r(RPCCheck,C7,&quot;HTTP/1\.1\x20400\x20Illegal\x20character\x20OTEXT=0x80\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length:\x2071\r\nConnection:\x20close\r\n\r\n&lt;h1&gt;Bad\x20Message\x20400&lt;/h1&gt;&lt;pre&gt;reason:\x20Illegal\x20character\x20OTEXT=0x80&lt;/pre&gt;&quot;);" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html;charset=utf-8)."></script><script id="http-auth" output="&#xa;HTTP/1.1 401 Unauthorized&#xd;&#xa;  Server returned status 401 but no WWW-Authenticate header.&#xa;"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 401 Unauthorized&#xa;    Date: Tue, 07 Jan 2025 08:16:15 GMT&#xa;    Set-Cookie: JSESSIONID=node017r1vwk8hub181wugiyj7ipbb92.node0; Path=/; HttpOnly&#xa;    Expires: Thu, 01 Jan 1970 00:00:00 GMT&#xa;    Content-Type: text/html;charset=utf-8&#xa;    Content-Length: 0&#xa;  GetRequest: &#xa;    HTTP/1.1 401 Unauthorized&#xa;    Date: Tue, 07 Jan 2025 08:16:14 GMT&#xa;    Set-Cookie: JSESSIONID=node01ksuk0hcq7cpx6tk1j2wicqac0.node0; Path=/; HttpOnly&#xa;    Expires: Thu, 01 Jan 1970 00:00:00 GMT&#xa;    Content-Type: text/html;charset=utf-8&#xa;    Content-Length: 0&#xa;  HTTPOptions: &#xa;    HTTP/1.1 200 OK&#xa;    Date: Tue, 07 Jan 2025 08:16:15 GMT&#xa;    Set-Cookie: JSESSIONID=node0bfsdhhs89jhucko2auiokmx31.node0; Path=/; HttpOnly&#xa;    Expires: Thu, 01 Jan 1970 00:00:00 GMT&#xa;    Content-Type: text/html;charset=utf-8&#xa;    Allow: GET,HEAD,POST,OPTIONS&#xa;    Content-Length: 0&#xa;  RPCCheck: &#xa;    HTTP/1.1 400 Illegal character OTEXT=0x80&#xa;    Content-Type: text/html;charset=iso-8859-1&#xa;    Content-Length: 71&#xa;    Connection: close&#xa;    &lt;h1&gt;Bad Message 400&lt;/h1&gt;&lt;pre&gt;reason: Illegal character OTEXT=0x80&lt;/pre&gt;&#xa;  RTSPRequest: &#xa;    HTTP/1.1 505 Unknown Version&#xa;    Content-Type: text/html;charset=iso-8859-1&#xa;    Content-Length: 58&#xa;    Connection: close&#xa;    &lt;h1&gt;Bad Message 505&lt;/h1&gt;&lt;pre&gt;reason: Unknown Version&lt;/pre&gt;&#xa;  Socks4: &#xa;    HTTP/1.1 400 Illegal character CNTL=0x4&#xa;    Content-Type: text/html;charset=iso-8859-1&#xa;    Content-Length: 69&#xa;    Connection: close&#xa;    &lt;h1&gt;Bad Message 400&lt;/h1&gt;&lt;pre&gt;reason: Illegal character CNTL=0x4&lt;/pre&gt;&#xa;  Socks5: &#xa;    HTTP/1.1 400 Illegal character CNTL=0x5&#xa;    Content-Type: text/html;charset=iso-8859-1&#xa;    Content-Length: 69&#xa;    Connection: close&#xa;    &lt;h1&gt;Bad Message 400&lt;/h1&gt;&lt;pre&gt;reason: Illegal character CNTL=0x5&lt;/pre&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 401 Unauthorized&#xa;    Date: Tue, 07 Jan 2025 08:16:15 GMT&#xa;    Set-Cookie: JSESSIONID=node017r1vwk8hub181wugiyj7ipbb92.node0; Path=/; HttpOnly&#xa;    Expires: Thu, 01 Jan 1970 00:00:00 GMT&#xa;    Content-Type: text/html;charset=utf-8&#xa;    Content-Length: 0</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 401 Unauthorized&#xa;    Date: Tue, 07 Jan 2025 08:16:14 GMT&#xa;    Set-Cookie: JSESSIONID=node01ksuk0hcq7cpx6tk1j2wicqac0.node0; Path=/; HttpOnly&#xa;    Expires: Thu, 01 Jan 1970 00:00:00 GMT&#xa;    Content-Type: text/html;charset=utf-8&#xa;    Content-Length: 0</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 200 OK&#xa;    Date: Tue, 07 Jan 2025 08:16:15 GMT&#xa;    Set-Cookie: JSESSIONID=node0bfsdhhs89jhucko2auiokmx31.node0; Path=/; HttpOnly&#xa;    Expires: Thu, 01 Jan 1970 00:00:00 GMT&#xa;    Content-Type: text/html;charset=utf-8&#xa;    Allow: GET,HEAD,POST,OPTIONS&#xa;    Content-Length: 0</elem>
+<elem key="RPCCheck">&#xa;    HTTP/1.1 400 Illegal character OTEXT=0x80&#xa;    Content-Type: text/html;charset=iso-8859-1&#xa;    Content-Length: 71&#xa;    Connection: close&#xa;    &lt;h1&gt;Bad Message 400&lt;/h1&gt;&lt;pre&gt;reason: Illegal character OTEXT=0x80&lt;/pre&gt;</elem>
+<elem key="RTSPRequest">&#xa;    HTTP/1.1 505 Unknown Version&#xa;    Content-Type: text/html;charset=iso-8859-1&#xa;    Content-Length: 58&#xa;    Connection: close&#xa;    &lt;h1&gt;Bad Message 505&lt;/h1&gt;&lt;pre&gt;reason: Unknown Version&lt;/pre&gt;</elem>
+<elem key="Socks4">&#xa;    HTTP/1.1 400 Illegal character CNTL=0x4&#xa;    Content-Type: text/html;charset=iso-8859-1&#xa;    Content-Length: 69&#xa;    Connection: close&#xa;    &lt;h1&gt;Bad Message 400&lt;/h1&gt;&lt;pre&gt;reason: Illegal character CNTL=0x4&lt;/pre&gt;</elem>
+<elem key="Socks5">&#xa;    HTTP/1.1 400 Illegal character CNTL=0x5&#xa;    Content-Type: text/html;charset=iso-8859-1&#xa;    Content-Length: 69&#xa;    Connection: close&#xa;    &lt;h1&gt;Bad Message 400&lt;/h1&gt;&lt;pre&gt;reason: Illegal character CNTL=0x5&lt;/pre&gt;</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="44269"/>
+<osmatch name="Linux 5.0" accuracy="97" line="68054">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:5.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.15 - 5.8" accuracy="96" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.3 - 5.4" accuracy="95" line="68158">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="95" line="55662">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.5" accuracy="95" line="68098">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="95" line="62926">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64673">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="95" line="61824">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="95"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="93" line="8405">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="93"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="93" line="64180">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="4036012" lastboot="Thu Nov 21 20:55:08 2024"/>
+<distance value="2"/>
+<tcpsequence index="262" difficulty="Good luck!" values="3AC5BEDC,7656F306,7A953423,3834B100,391383A7,D0D6A973"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="F0908C68,F0908CC8,F0908D2C,F0908D91,F0908DF6,F0908E5D"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="83.37" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.250" rtt="83.53" host="10.10.10.250"/>
+</trace>
+<times srtt="86088" rttvar="10566" to="128352"/>
+</host>
+<taskbegin task="NSE" time="1736238720"/>
+<taskend task="NSE" time="1736238720"/>
+<taskbegin task="NSE" time="1736238720"/>
+<taskend task="NSE" time="1736238720"/>
+<taskbegin task="NSE" time="1736238720"/>
+<taskend task="NSE" time="1736238720"/>
+<runstats><finished time="1736238720" timestr="Tue Jan  7 14:02:00 2025" summary="Nmap done at Tue Jan  7 14:02:00 2025; 1 IP address (1 host up) scanned in 31.15 seconds" elapsed="31.15" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

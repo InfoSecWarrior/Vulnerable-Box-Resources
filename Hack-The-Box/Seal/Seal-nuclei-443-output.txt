@@ -1,0 +1,4 @@
+[missing-sri] [http] [info] https://10.10.10.250:443 ["https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"]
+[waf-detect:nginxgeneric] [http] [info] https://10.10.10.250:443
+[ssh-auth-methods] [javascript] [info] 10.10.10.250:22 ["["publickey","password"]"]
+[CVE-2023-48795] [javascript] [medium] 10.10.10.250:22 ["Vulnerable to Terrapin"]

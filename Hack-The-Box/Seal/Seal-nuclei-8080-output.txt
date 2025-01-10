@@ -1,0 +1,6 @@
+[cookies-without-secure] [javascript] [info] 10.10.10.250:8080 ["JSESSIONID"]
+[ssh-password-auth] [javascript] [info] 10.10.10.250:22
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.10.250:22
+[ssh-server-enumeration] [javascript] [info] 10.10.10.250:22 ["SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2"]
+[ssh-auth-methods] [javascript] [info] 10.10.10.250:22 ["["publickey","password"]"]
+[CVE-2023-48795] [javascript] [medium] 10.10.10.250:22 ["Vulnerable to Terrapin"]

@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Tue Jan  7 14:01:29 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,443,8080 -oA Seal-nmap-version-scan-output 10.10.10.250
+# Ports scanned: TCP(3;22,443,8080) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.250 (10.10.10.250)	Status: Up
+Host: 10.10.10.250 (10.10.10.250)	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)/, 443/open/tcp//ssl|http//nginx 1.18.0 (Ubuntu)/, 8080/open/tcp//http-proxy///	Seq Index: 262	IP ID Seq: All zeros
+# Nmap done at Tue Jan  7 14:02:00 2025 -- 1 IP address (1 host up) scanned in 31.15 seconds

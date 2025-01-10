@@ -1,0 +1,131 @@
+# Nmap 7.94SVN scan initiated Tue Jan  7 14:01:29 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,443,8080 -oA Seal-nmap-version-scan-output 10.10.10.250
+Nmap scan report for 10.10.10.250 (10.10.10.250)
+Host is up (0.086s latency).
+
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 4b:89:47:39:67:3d:07:31:5e:3f:4c:27:41:1f:f9:67 (RSA)
+|   256 04:a7:4f:39:95:65:c5:b0:8d:d5:49:2e:d8:44:00:36 (ECDSA)
+|_  256 b4:5e:83:93:c5:42:49:de:71:25:92:71:23:b1:85:54 (ED25519)
+443/tcp  open  ssl/http   nginx 1.18.0 (Ubuntu)
+| tls-alpn: 
+|_  http/1.1
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_ssl-date: TLS randomness does not represent time
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+| ssl-cert: Subject: commonName=seal.htb/organizationName=Seal Pvt Ltd/stateOrProvinceName=London/countryName=UK
+| Issuer: commonName=seal.htb/organizationName=Seal Pvt Ltd/stateOrProvinceName=London/countryName=UK
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-05-05T10:24:03
+| Not valid after:  2022-05-05T10:24:03
+| MD5:   9c4f:991a:bb97:192c:df5a:c513:057d:4d21
+|_SHA-1: 0de4:6873:0ab7:3f90:c317:0f7b:872f:155b:305e:54ef
+| http-methods: 
+|_  Supported Methods: OPTIONS GET HEAD POST
+| tls-nextprotoneg: 
+|_  http/1.1
+8080/tcp open  http-proxy
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html;charset=utf-8).
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Server returned status 401 but no WWW-Authenticate header.
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 401 Unauthorized
+|     Date: Tue, 07 Jan 2025 08:16:15 GMT
+|     Set-Cookie: JSESSIONID=node017r1vwk8hub181wugiyj7ipbb92.node0; Path=/; HttpOnly
+|     Expires: Thu, 01 Jan 1970 00:00:00 GMT
+|     Content-Type: text/html;charset=utf-8
+|     Content-Length: 0
+|   GetRequest: 
+|     HTTP/1.1 401 Unauthorized
+|     Date: Tue, 07 Jan 2025 08:16:14 GMT
+|     Set-Cookie: JSESSIONID=node01ksuk0hcq7cpx6tk1j2wicqac0.node0; Path=/; HttpOnly
+|     Expires: Thu, 01 Jan 1970 00:00:00 GMT
+|     Content-Type: text/html;charset=utf-8
+|     Content-Length: 0
+|   HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Date: Tue, 07 Jan 2025 08:16:15 GMT
+|     Set-Cookie: JSESSIONID=node0bfsdhhs89jhucko2auiokmx31.node0; Path=/; HttpOnly
+|     Expires: Thu, 01 Jan 1970 00:00:00 GMT
+|     Content-Type: text/html;charset=utf-8
+|     Allow: GET,HEAD,POST,OPTIONS
+|     Content-Length: 0
+|   RPCCheck: 
+|     HTTP/1.1 400 Illegal character OTEXT=0x80
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 71
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Illegal character OTEXT=0x80</pre>
+|   RTSPRequest: 
+|     HTTP/1.1 505 Unknown Version
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 58
+|     Connection: close
+|     <h1>Bad Message 505</h1><pre>reason: Unknown Version</pre>
+|   Socks4: 
+|     HTTP/1.1 400 Illegal character CNTL=0x4
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 69
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Illegal character CNTL=0x4</pre>
+|   Socks5: 
+|     HTTP/1.1 400 Illegal character CNTL=0x5
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 69
+|     Connection: close
+|_    <h1>Bad Message 400</h1><pre>reason: Illegal character CNTL=0x5</pre>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.94SVN%I=7%D=1/7%Time=677CE668%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,F4,"HTTP/1\.1\x20401\x20Unauthorized\r\nDate:\x20Tue,\x2007\
+SF:x20Jan\x202025\x2008:16:14\x20GMT\r\nSet-Cookie:\x20JSESSIONID=node01ks
+SF:uk0hcq7cpx6tk1j2wicqac0\.node0;\x20Path=/;\x20HttpOnly\r\nExpires:\x20T
+SF:hu,\x2001\x20Jan\x201970\x2000:00:00\x20GMT\r\nContent-Type:\x20text/ht
+SF:ml;charset=utf-8\r\nContent-Length:\x200\r\n\r\n")%r(HTTPOptions,107,"H
+SF:TTP/1\.1\x20200\x20OK\r\nDate:\x20Tue,\x2007\x20Jan\x202025\x2008:16:15
+SF:\x20GMT\r\nSet-Cookie:\x20JSESSIONID=node0bfsdhhs89jhucko2auiokmx31\.no
+SF:de0;\x20Path=/;\x20HttpOnly\r\nExpires:\x20Thu,\x2001\x20Jan\x201970\x2
+SF:000:00:00\x20GMT\r\nContent-Type:\x20text/html;charset=utf-8\r\nAllow:\
+SF:x20GET,HEAD,POST,OPTIONS\r\nContent-Length:\x200\r\n\r\n")%r(RTSPReques
+SF:t,AD,"HTTP/1\.1\x20505\x20Unknown\x20Version\r\nContent-Type:\x20text/h
+SF:tml;charset=iso-8859-1\r\nContent-Length:\x2058\r\nConnection:\x20close
+SF:\r\n\r\n<h1>Bad\x20Message\x20505</h1><pre>reason:\x20Unknown\x20Versio
+SF:n</pre>")%r(FourOhFourRequest,F5,"HTTP/1\.1\x20401\x20Unauthorized\r\nD
+SF:ate:\x20Tue,\x2007\x20Jan\x202025\x2008:16:15\x20GMT\r\nSet-Cookie:\x20
+SF:JSESSIONID=node017r1vwk8hub181wugiyj7ipbb92\.node0;\x20Path=/;\x20HttpO
+SF:nly\r\nExpires:\x20Thu,\x2001\x20Jan\x201970\x2000:00:00\x20GMT\r\nCont
+SF:ent-Type:\x20text/html;charset=utf-8\r\nContent-Length:\x200\r\n\r\n")%
+SF:r(Socks5,C3,"HTTP/1\.1\x20400\x20Illegal\x20character\x20CNTL=0x5\r\nCo
+SF:ntent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length:\x2069\r\
+SF:nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:
+SF:\x20Illegal\x20character\x20CNTL=0x5</pre>")%r(Socks4,C3,"HTTP/1\.1\x20
+SF:400\x20Illegal\x20character\x20CNTL=0x4\r\nContent-Type:\x20text/html;c
+SF:harset=iso-8859-1\r\nContent-Length:\x2069\r\nConnection:\x20close\r\n\
+SF:r\n<h1>Bad\x20Message\x20400</h1><pre>reason:\x20Illegal\x20character\x
+SF:20CNTL=0x4</pre>")%r(RPCCheck,C7,"HTTP/1\.1\x20400\x20Illegal\x20charac
+SF:ter\x20OTEXT=0x80\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nC
+SF:ontent-Length:\x2071\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\
+SF:x20400</h1><pre>reason:\x20Illegal\x20character\x20OTEXT=0x80</pre>");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 5.0 (97%), Linux 4.15 - 5.8 (96%), Linux 5.3 - 5.4 (95%), Linux 2.6.32 (95%), Linux 5.0 - 5.5 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 46.713 days (since Thu Nov 21 20:55:08 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   83.37 ms 10.10.14.1 (10.10.14.1)
+2   83.53 ms 10.10.10.250 (10.10.10.250)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jan  7 14:02:00 2025 -- 1 IP address (1 host up) scanned in 31.15 seconds
