@@ -1,0 +1,42 @@
+# Nmap 7.94SVN scan initiated Tue Jan  7 17:28:31 2025 as: nmap -v -T4 -Pn -p- -oA Forge-all-ports-scan-output 10.10.11.111
+Increasing send delay for 10.10.11.111 from 0 to 5 due to 95 out of 236 dropped probes since last increase.
+Warning: 10.10.11.111 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.11.111 (10.10.11.111)
+Host is up (0.093s latency).
+Not shown: 65503 closed tcp ports (reset)
+PORT      STATE    SERVICE
+21/tcp    filtered ftp
+22/tcp    open     ssh
+80/tcp    open     http
+836/tcp   filtered unknown
+4652/tcp  filtered unknown
+6948/tcp  filtered unknown
+9098/tcp  filtered unknown
+9591/tcp  filtered unknown
+12640/tcp filtered unknown
+12718/tcp filtered unknown
+14371/tcp filtered unknown
+14991/tcp filtered unknown
+18088/tcp filtered unknown
+24315/tcp filtered unknown
+25471/tcp filtered rna
+27635/tcp filtered unknown
+29239/tcp filtered unknown
+31161/tcp filtered unknown
+33370/tcp filtered unknown
+34172/tcp filtered unknown
+34342/tcp filtered unknown
+36530/tcp filtered unknown
+36636/tcp filtered unknown
+42701/tcp filtered unknown
+48778/tcp filtered unknown
+50308/tcp filtered unknown
+50868/tcp filtered unknown
+54052/tcp filtered unknown
+54269/tcp filtered unknown
+55063/tcp filtered unknown
+55225/tcp filtered unknown
+59710/tcp filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Jan  7 17:41:55 2025 -- 1 IP address (1 host up) scanned in 803.79 seconds

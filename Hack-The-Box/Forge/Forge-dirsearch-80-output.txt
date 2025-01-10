@@ -1,0 +1,11 @@
+# Dirsearch started Tue Jan  7 17:43:09 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.11.111:80 -o Forge-dirsearch-80-output.txt -q
+
+302   288B   http://10.10.11.111/%2e%2e//google.com    -> REDIRECTS TO: http://forge.htbgoogle.com
+302   301B   http://10.10.11.111/axis2-web//HappyAxis.jsp    -> REDIRECTS TO: http://forge.htbaxis2-web/HappyAxis.jsp
+302   307B   http://10.10.11.111/axis2//axis2-web/HappyAxis.jsp    -> REDIRECTS TO: http://forge.htbaxis2/axis2-web/HappyAxis.jsp
+302   296B   http://10.10.11.111/axis//happyaxis.jsp    -> REDIRECTS TO: http://forge.htbaxis/happyaxis.jsp
+302   329B   http://10.10.11.111/Citrix//AccessPlatform/auth/clientscripts/cookies.js    -> REDIRECTS TO: http://forge.htbCitrix/AccessPlatform/auth/clientscripts/cookies.js
+302   316B   http://10.10.11.111/engine/classes/swfupload//swfupload.swf    -> REDIRECTS TO: http://forge.htbengine/classes/swfupload/swfupload.swf
+302   319B   http://10.10.11.111/engine/classes/swfupload//swfupload_f9.swf    -> REDIRECTS TO: http://forge.htbengine/classes/swfupload/swfupload_f9.swf
+302   304B   http://10.10.11.111/extjs/resources//charts.swf    -> REDIRECTS TO: http://forge.htbextjs/resources/charts.swf
+302   314B   http://10.10.11.111/html/js/misc/swfupload//swfupload.swf    -> REDIRECTS TO: http://forge.htbhtml/js/misc/swfupload/swfupload.swf
