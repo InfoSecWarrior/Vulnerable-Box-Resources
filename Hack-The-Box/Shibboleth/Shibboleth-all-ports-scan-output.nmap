@@ -1,0 +1,9 @@
+# Nmap 7.94SVN scan initiated Wed Jan  8 11:46:45 2025 as: nmap -v -T4 -Pn -p- -oA Shibboleth-all-ports-scan-output 10.10.11.124
+Nmap scan report for 10.10.11.124 (10.10.11.124)
+Host is up (0.083s latency).
+Not shown: 65363 closed tcp ports (reset), 171 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Jan  8 11:47:46 2025 -- 1 IP address (1 host up) scanned in 60.73 seconds

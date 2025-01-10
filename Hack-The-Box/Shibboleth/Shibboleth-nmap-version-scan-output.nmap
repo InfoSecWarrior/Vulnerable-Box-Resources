@@ -1,0 +1,30 @@
+# Nmap 7.94SVN scan initiated Wed Jan  8 11:47:46 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA Shibboleth-nmap-version-scan-output 10.10.11.124
+Nmap scan report for 10.10.11.124 (10.10.11.124)
+Host is up (0.083s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.41
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Did not follow redirect to http://shibboleth.htb/
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|phone|WAP|proxy server|VoIP phone
+Running (JUST GUESSING): Linux 5.X|4.X|3.X|2.6.X (92%), Google Android 4.4.X (92%), Linksys embedded (91%), WebSense embedded (90%), Cisco embedded (90%)
+OS CPE: cpe:/o:linux:linux_kernel:5.0 cpe:/o:google:android:4.4.0 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel cpe:/h:linksys:ea3500 cpe:/o:linux:linux_kernel:2.6.32 cpe:/h:cisco:cp-dx80
+Aggressive OS guesses: Linux 5.0 (92%), Android 4.4.0 (92%), Linux 4.15 - 5.8 (91%), Linux 5.3 - 5.4 (91%), Linux 3.6 - 3.10 (91%), Linksys EA3500 WAP (91%), Linux 2.6.32 (91%), Linux 5.0 - 5.5 (90%), Websense Content Gateway (90%), Cisco CP-DX80 collaboration endpoint (Android) (90%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 13.560 days (since Wed Dec 25 22:21:45 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=264 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: shibboleth.htb
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   84.06 ms 10.10.14.1 (10.10.14.1)
+2   84.20 ms 10.10.11.124 (10.10.11.124)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan  8 11:47:58 2025 -- 1 IP address (1 host up) scanned in 12.11 seconds

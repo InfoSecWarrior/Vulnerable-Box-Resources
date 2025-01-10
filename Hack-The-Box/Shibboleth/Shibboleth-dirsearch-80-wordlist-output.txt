@@ -1,0 +1,12 @@
+# Dirsearch started Wed Jan  8 12:05:12 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.11.124:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Shibboleth-dirsearch-80-wordlist-output.txt -q
+
+404   274B   http://10.10.11.124/http%3A%2F%2Fwww
+404   274B   http://10.10.11.124/http%3A%2F%2Fyoutube
+404   274B   http://10.10.11.124/http%3A%2F%2Fblogs
+404   274B   http://10.10.11.124/http%3A%2F%2Fblog
+404   274B   http://10.10.11.124/**http%3A%2F%2Fwww
+404   274B   http://10.10.11.124/http%3A%2F%2Fcommunity
+404   274B   http://10.10.11.124/http%3A%2F%2Fradar
+404   274B   http://10.10.11.124/http%3A%2F%2Fjeremiahgrossman
+404   274B   http://10.10.11.124/http%3A%2F%2Fweblog
+404   274B   http://10.10.11.124/http%3A%2F%2Fswik
