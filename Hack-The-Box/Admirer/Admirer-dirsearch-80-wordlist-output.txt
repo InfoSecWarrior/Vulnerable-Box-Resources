@@ -1,0 +1,5 @@
+# Dirsearch started Mon Dec 30 14:20:11 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.187:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Admirer-dirsearch-80-wordlist-output.txt -q
+
+301   313B   http://10.10.10.187/images    -> REDIRECTS TO: http://10.10.10.187/images/
+301   313B   http://10.10.10.187/assets    -> REDIRECTS TO: http://10.10.10.187/assets/
+403   277B   http://10.10.10.187/server-status

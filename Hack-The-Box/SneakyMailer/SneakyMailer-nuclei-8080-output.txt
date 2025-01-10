@@ -1,0 +1,3 @@
+[waf-detect:nginxgeneric] [http] [info] http://10.10.10.197:8080
+[ssh-password-auth] [javascript] [info] 10.10.10.197:22
+[CVE-2023-48795] [javascript] [medium] 10.10.10.197:22 ["Vulnerable to Terrapin"]

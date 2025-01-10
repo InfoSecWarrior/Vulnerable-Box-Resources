@@ -1,0 +1,5 @@
+# Dirsearch started Mon Dec 30 13:20:55 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.185:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Magic-dirsearch-80-wordlist-output.txt -q
+
+301   313B   http://10.10.10.185/images    -> REDIRECTS TO: http://10.10.10.185/images/
+301   313B   http://10.10.10.185/assets    -> REDIRECTS TO: http://10.10.10.185/assets/
+403   277B   http://10.10.10.185/server-status

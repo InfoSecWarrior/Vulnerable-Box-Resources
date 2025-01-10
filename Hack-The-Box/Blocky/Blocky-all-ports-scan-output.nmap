@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Fri Dec 27 18:01:41 2024 as: nmap -v -T4 -Pn -p- -oA Blocky-all-ports-scan-output 10.10.10.37
+Nmap scan report for 10.10.10.37 (10.10.10.37)
+Host is up (0.11s latency).
+Not shown: 65530 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+22/tcp    open   ssh
+80/tcp    open   http
+8192/tcp  closed sophos
+25565/tcp open   minecraft
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Dec 27 18:07:52 2024 -- 1 IP address (1 host up) scanned in 370.95 seconds

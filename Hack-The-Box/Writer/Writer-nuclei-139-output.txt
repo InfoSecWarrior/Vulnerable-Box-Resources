@@ -1,0 +1,6 @@
+[smb-enum] [javascript] [info] 10.10.11.101:139 ["OSVersion: 6.1.0","NetBIOSComputerName: WRITER","NetBIOSDomainName: WRITER","DNSComputerNamen: writer","DNSComputerName: writer","ForestName:"]
+[smb-os-detect] [javascript] [info] 10.10.11.101:139 ["6.1.0"]
+[smb2-capabilities] [javascript] [info] 10.10.11.101:139 ["["DFSSupport","Leasing"]"]
+[smb2-server-time] [javascript] [info] 10.10.11.101:139 ["SystemTime: 2025-01-08T08:29:00.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-signing] [javascript] [medium] 10.10.11.101:139
+[smb-anonymous-access] [javascript] [high] 10.10.11.101:139

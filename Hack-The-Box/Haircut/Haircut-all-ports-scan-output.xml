@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Dec 27 14:55:49 2024 as: nmap -v -T4 -Pn -p- -oA Haircut-all-ports-scan-output 10.10.10.24 -->
+<nmaprun scanner="nmap" args="nmap -v -T4 -Pn -p- -oA Haircut-all-ports-scan-output 10.10.10.24" start="1735291549" startstr="Fri Dec 27 14:55:49 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735291549"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735291549"/>
+<taskbegin task="SYN Stealth Scan" time="1735291549"/>
+<taskprogress task="SYN Stealth Scan" time="1735291580" percent="50.80" remaining="31" etc="1735291610"/>
+<taskend task="SYN Stealth Scan" time="1735291591" extrainfo="65535 total ports"/>
+<host starttime="1735291549" endtime="1735291591"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.24" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.24" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="reset" count="65533" proto="tcp" ports="1-21,23-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="75746" rttvar="1388" to="100000"/>
+</host>
+<runstats><finished time="1735291591" timestr="Fri Dec 27 14:56:31 2024" summary="Nmap done at Fri Dec 27 14:56:31 2024; 1 IP address (1 host up) scanned in 41.76 seconds" elapsed="41.76" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,88 @@
+# Nmap 7.94SVN scan initiated Fri Dec 20 13:09:39 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 79,111,515,6787,22022 -oA Sunday-nmap-version-scan-output 10.10.10.76
+Nmap scan report for 10.10.10.76 (10.10.10.76)
+Host is up (0.093s latency).
+
+PORT      STATE SERVICE VERSION
+79/tcp    open  finger?
+|_finger: No one logged on\x0D
+| fingerprint-strings: 
+|   GenericLines: 
+|     No one logged on
+|   GetRequest: 
+|     Login Name TTY Idle When Where
+|     HTTP/1.0 ???
+|   HTTPOptions: 
+|     Login Name TTY Idle When Where
+|     HTTP/1.0 ???
+|     OPTIONS ???
+|   Help: 
+|     Login Name TTY Idle When Where
+|     HELP ???
+|   RTSPRequest: 
+|     Login Name TTY Idle When Where
+|     OPTIONS ???
+|     RTSP/1.0 ???
+|   SSLSessionReq, TerminalServerCookie: 
+|_    Login Name TTY Idle When Where
+111/tcp   open  rpcbind 2-4 (RPC #100000)
+515/tcp   open  printer
+6787/tcp  open  http    Apache httpd
+|_http-title: 400 Bad Request
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache
+22022/tcp open  ssh     OpenSSH 8.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 aa:00:94:32:18:60:a4:93:3b:87:a4:b6:f8:02:68:0e (RSA)
+|_  256 da:2a:6c:fa:6b:b1:ea:16:1d:a6:54:a1:0b:2b:ee:48 (ED25519)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port79-TCP:V=7.94SVN%I=7%D=12/20%Time=67651F42%P=x86_64-pc-linux-gnu%r(
+SF:GenericLines,12,"No\x20one\x20logged\x20on\r\n")%r(GetRequest,93,"Login
+SF:\x20\x20\x20\x20\x20\x20\x20Name\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20TTY\x20\x20\x20\x20\x20\x20\x20\x20\x20Idle\x20\x2
+SF:0\x20\x20When\x20\x20\x20\x20Where\r\n/\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\nGET\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:?\?\?\r\nHTTP/1\.0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\?\?\?\r\n")%r(Help,5D,"Login\x20\x20\x20\x20\x20\x20\x20Name\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20TTY\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20Idle\x20\x20\x20\x20When\x20\x20\x20\x20Where\r\nH
+SF:ELP\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\?\?\?\r\n")%r(HTTPOptions,93,"Login\x20\x20\x20\x20\x20\x20\x20Nam
+SF:e\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20TTY\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20Idle\x20\x20\x20\x20When\x20\x20\x20\x20Wh
+SF:ere\r\n/\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\?\?\?\r\nHTTP/1\.0\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\?\?\?\r\nOPTIONS\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\n")%r(RTSPRequest,93,"Login\x20
+SF:\x20\x20\x20\x20\x20\x20Name\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20TTY\x20\x20\x20\x20\x20\x20\x20\x20\x20Idle\x20\x20\x2
+SF:0\x20When\x20\x20\x20\x20Where\r\n/\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\nOPTIONS\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\nRTSP/1\
+SF:.0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\n")%
+SF:r(SSLSessionReq,5D,"Login\x20\x20\x20\x20\x20\x20\x20Name\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20TTY\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20Idle\x20\x20\x20\x20When\x20\x20\x20\x20Where\r\n\x16\x03
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\?\?\?\r\n")%r(TerminalServerCookie,5D,"Login\x20\x20\x20\x20\
+SF:x20\x20\x20Name\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20TTY\x20\x20\x20\x20\x20\x20\x20\x20\x20Idle\x20\x20\x20\x20When\x20
+SF:\x20\x20\x20Where\r\n\x03\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\?\?\?\r\n");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Oracle Solaris 10 (94%), Sun Solaris 11.3 (93%), Oracle Solaris 11 (93%), Oracle Solaris 11 or OpenIndiana (92%), OpenIndiana oi_147 - oi_148 (92%), Nexenta OS 3.0 - 3.1.2 (OpenSolaris snv_130 - snv_134f) (92%), Sun Solaris 11 (snv_151a) or OpenIndiana oi_147 (92%), Sun Solaris 11 (snv_151a) or OpenIndiana oi_147 - oi_151a (92%), Sun OpenSolaris snv_129 (91%), Sun Storage 7410 NAS device (90%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.028 days (since Fri Dec 20 12:30:54 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=265 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   88.39 ms 10.10.14.1 (10.10.14.1)
+2   88.61 ms 10.10.10.76 (10.10.10.76)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 20 13:11:27 2024 -- 1 IP address (1 host up) scanned in 108.30 seconds

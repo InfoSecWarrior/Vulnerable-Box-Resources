@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Fri Dec 27 13:41:44 2024 as: nmap -v -T4 -Pn -p- -oA Popcorn-all-ports-scan-output 10.10.10.6
+Warning: 10.10.10.6 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.6 (10.10.10.6)
+Host is up (0.076s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+14513/tcp filtered unknown
+59829/tcp filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Dec 27 13:51:42 2024 -- 1 IP address (1 host up) scanned in 598.44 seconds

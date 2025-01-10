@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Mon Dec 30 13:55:27 2024 as: nmap -v -T4 -Pn -p- -oA Admirer-all-ports-scan-output 10.10.10.187 -->
+<nmaprun scanner="nmap" args="nmap -v -T4 -Pn -p- -oA Admirer-all-ports-scan-output 10.10.10.187" start="1735547127" startstr="Mon Dec 30 13:55:27 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735547127"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735547127"/>
+<taskbegin task="SYN Stealth Scan" time="1735547127"/>
+<taskprogress task="SYN Stealth Scan" time="1735547158" percent="26.64" remaining="86" etc="1735547243"/>
+<taskprogress task="SYN Stealth Scan" time="1735547188" percent="30.28" remaining="141" etc="1735547328"/>
+<taskprogress task="SYN Stealth Scan" time="1735547218" percent="34.38" remaining="174" etc="1735547392"/>
+<taskprogress task="SYN Stealth Scan" time="1735547248" percent="38.66" remaining="193" etc="1735547440"/>
+<taskprogress task="SYN Stealth Scan" time="1735547299" percent="45.30" remaining="208" etc="1735547507"/>
+<taskprogress task="SYN Stealth Scan" time="1735547401" percent="59.29" remaining="189" etc="1735547589"/>
+<taskprogress task="SYN Stealth Scan" time="1735547461" percent="67.03" remaining="165" etc="1735547625"/>
+<taskprogress task="SYN Stealth Scan" time="1735547509" percent="73.34" remaining="139" etc="1735547648"/>
+<taskprogress task="SYN Stealth Scan" time="1735547554" percent="79.15" remaining="113" etc="1735547666"/>
+<taskprogress task="SYN Stealth Scan" time="1735547596" percent="84.74" remaining="85" etc="1735547680"/>
+<taskprogress task="SYN Stealth Scan" time="1735547641" percent="90.33" remaining="56" etc="1735547696"/>
+<taskend task="SYN Stealth Scan" time="1735547722" extrainfo="65535 total ports"/>
+<host starttime="1735547127" endtime="1735547722"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.187" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.187" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="reset" count="65532" proto="tcp" ports="1-20,23-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="69477" rttvar="1079" to="100000"/>
+</host>
+<runstats><finished time="1735547722" timestr="Mon Dec 30 14:05:22 2024" summary="Nmap done at Mon Dec 30 14:05:22 2024; 1 IP address (1 host up) scanned in 595.29 seconds" elapsed="595.29" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

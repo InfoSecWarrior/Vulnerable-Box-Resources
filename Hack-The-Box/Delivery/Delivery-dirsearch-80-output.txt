@@ -1,0 +1,9 @@
+# Dirsearch started Fri Jan  3 12:43:04 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.222:80 -o Delivery-dirsearch-80-output.txt -q
+
+301   185B   http://10.10.10.222/assets    -> REDIRECTS TO: http://10.10.10.222/assets/
+403   571B   http://10.10.10.222/assets/
+301   185B   http://10.10.10.222/error    -> REDIRECTS TO: http://10.10.10.222/error/
+200     1KB  http://10.10.10.222/error/
+301   185B   http://10.10.10.222/images    -> REDIRECTS TO: http://10.10.10.222/images/
+403   571B   http://10.10.10.222/images/
+200   648B   http://10.10.10.222/README.MD

@@ -1,0 +1,25 @@
+[deprecated-tls:tls_1.1] [ssl] [info] 10.10.10.48:32400 ["tls11"]
+[tls-version] [ssl] [info] 10.10.10.48:32400 ["tls10"]
+[deprecated-tls:tls_1.0] [ssl] [info] 10.10.10.48:32400 ["tls10"]
+[weak-cipher-suites:tls-1.0] [ssl] [low] 10.10.10.48:32400 ["[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]"]
+[tls-version] [ssl] [info] 10.10.10.48:32400 ["tls11"]
+[weak-cipher-suites:tls-1.1] [ssl] [low] 10.10.10.48:32400 ["[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]"]
+[tls-version] [ssl] [info] 10.10.10.48:32400 ["tls12"]
+[clientaccesspolicy] [http] [info] https://10.10.10.48:32400/clientaccesspolicy.xml
+[favicon-detect:plex-server] [http] [info] https://10.10.10.48:32400/favicon.ico ["-895890586"]
+[http-missing-security-headers:referrer-policy] [http] [info] https://10.10.10.48:32400
+[http-missing-security-headers:clear-site-data] [http] [info] https://10.10.10.48:32400
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://10.10.10.48:32400
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://10.10.10.48:32400
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://10.10.10.48:32400
+[http-missing-security-headers:strict-transport-security] [http] [info] https://10.10.10.48:32400
+[http-missing-security-headers:x-frame-options] [http] [info] https://10.10.10.48:32400
+[http-missing-security-headers:x-content-type-options] [http] [info] https://10.10.10.48:32400
+[http-missing-security-headers:content-security-policy] [http] [info] https://10.10.10.48:32400
+[http-missing-security-headers:permissions-policy] [http] [info] https://10.10.10.48:32400
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://10.10.10.48:32400
+[ssl-issuer] [ssl] [info] 10.10.10.48:32400 ["Plex, Inc."]
+[expired-ssl] [ssl] [low] 10.10.10.48:32400 ["2018-08-10 12:00:00 +0000 UTC"]
+[revoked-ssl-certificate] [ssl] [low] 10.10.10.48:32400
+[ssl-dns-names] [ssl] [info] 10.10.10.48:32400 ["*.78063b2b367a4a389895262d75b0b03c.plex.direct"]
+[wildcard-tls] [ssl] [info] 10.10.10.48:32400 ["SAN: [*.78063b2b367a4a389895262d75b0b03c.plex.direct]","CN: *.78063b2b367a4a389895262d75b0b03c.plex.direct"]

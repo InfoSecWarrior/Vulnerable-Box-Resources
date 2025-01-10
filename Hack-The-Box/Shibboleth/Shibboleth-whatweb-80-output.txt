@@ -1,0 +1,1 @@
+http://10.10.11.124:80 [302 Found] Apache[2.4.41], Country[RESERVED][ZZ], HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[10.10.11.124], RedirectLocation[http://shibboleth.htb/], Title[302 Found]

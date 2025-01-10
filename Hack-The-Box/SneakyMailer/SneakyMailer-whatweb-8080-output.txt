@@ -1,0 +1,1 @@
+http://10.10.10.197:8080 [200 OK] Country[RESERVED][ZZ], HTML5, HTTPServer[nginx/1.14.2], IP[10.10.10.197], Title[Welcome to nginx!], nginx[1.14.2]

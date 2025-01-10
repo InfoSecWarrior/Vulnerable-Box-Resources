@@ -1,0 +1,57 @@
+# Nmap 7.94SVN scan initiated Sat Dec 21 10:27:03 2024 as: nmap -v -T4 -Pn -p- -oA Irked-all-ports-scan-output 10.10.10.117
+Increasing send delay for 10.10.10.117 from 0 to 5 due to 1068 out of 2669 dropped probes since last increase.
+Increasing send delay for 10.10.10.117 from 5 to 10 due to 11 out of 16 dropped probes since last increase.
+Warning: 10.10.10.117 giving up on port because retransmission cap hit (6).
+Nmap scan report for irked.htb (10.10.10.117)
+Host is up (0.064s latency).
+Not shown: 65489 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+111/tcp   open     rpcbind
+1837/tcp  filtered csoft1
+2652/tcp  filtered interpathpanel
+4028/tcp  filtered dtserver-port
+4177/tcp  filtered wello
+5436/tcp  filtered pmip6-cntl
+5805/tcp  filtered unknown
+6697/tcp  open     ircs-u
+8067/tcp  open     infi-async
+8988/tcp  filtered unknown
+9618/tcp  filtered condor
+14953/tcp filtered unknown
+15144/tcp filtered unknown
+17948/tcp filtered unknown
+20012/tcp filtered ss-idi-disc
+25332/tcp filtered unknown
+29411/tcp filtered unknown
+32631/tcp filtered unknown
+33552/tcp filtered unknown
+34680/tcp filtered unknown
+35167/tcp filtered unknown
+35951/tcp filtered unknown
+36600/tcp filtered unknown
+37158/tcp filtered unknown
+39225/tcp filtered unknown
+39679/tcp filtered unknown
+40400/tcp filtered unknown
+40533/tcp filtered unknown
+42627/tcp filtered unknown
+42660/tcp filtered unknown
+44377/tcp filtered unknown
+44467/tcp filtered unknown
+45276/tcp filtered unknown
+47057/tcp filtered unknown
+47118/tcp filtered unknown
+47745/tcp filtered unknown
+50019/tcp open     unknown
+52044/tcp filtered unknown
+54317/tcp filtered unknown
+54830/tcp filtered unknown
+54908/tcp filtered unknown
+55239/tcp filtered unknown
+63814/tcp filtered unknown
+65534/tcp open     unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Dec 21 10:39:37 2024 -- 1 IP address (1 host up) scanned in 754.40 seconds

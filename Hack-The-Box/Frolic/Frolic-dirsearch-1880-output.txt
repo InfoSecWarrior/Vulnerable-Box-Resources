@@ -1,0 +1,10 @@
+# Dirsearch started Wed Jan  1 14:38:42 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.111:1880 -o Frolic-dirsearch-1880-output.txt -q
+
+200   150B   http://10.10.10.111:1880/auth/login
+200    17KB  http://10.10.10.111:1880/favicon.ico
+401    12B   http://10.10.10.111:1880/flow/registries
+401    12B   http://10.10.10.111:1880/icons
+401    12B   http://10.10.10.111:1880/nodes
+404     0B   http://10.10.10.111:1880/projects
+401    12B   http://10.10.10.111:1880/settings
+401    12B   http://10.10.10.111:1880/settings/

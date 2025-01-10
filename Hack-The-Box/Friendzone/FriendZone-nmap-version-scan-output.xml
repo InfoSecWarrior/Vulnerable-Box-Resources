@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Sat Dec 21 11:32:53 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,53,80,139,443,445 -oA FriendZone-nmap-version-scan-output 10.10.10.123 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 21,22,53,80,139,443,445 -oA FriendZone-nmap-version-scan-output 10.10.10.123" start="1734760973" startstr="Sat Dec 21 11:32:53 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="7" services="21-22,53,80,139,443,445"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1734760973"/>
+<taskend task="NSE" time="1734760973"/>
+<taskbegin task="NSE" time="1734760973"/>
+<taskend task="NSE" time="1734760973"/>
+<taskbegin task="NSE" time="1734760973"/>
+<taskend task="NSE" time="1734760973"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734760973"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734760973"/>
+<taskbegin task="Connect Scan" time="1734760973"/>
+<taskend task="Connect Scan" time="1734760973" extrainfo="7 total ports"/>
+<taskbegin task="Service scan" time="1734760973"/>
+<taskend task="Service scan" time="1734760987" extrainfo="7 services on 1 host"/>
+<taskbegin task="Traceroute" time="1734760992"/>
+<taskend task="Traceroute" time="1734760993"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1734760993"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1734760993"/>
+<taskbegin task="NSE" time="1734760993"/>
+<taskend task="NSE" time="1734761002"/>
+<taskbegin task="NSE" time="1734761002"/>
+<taskend task="NSE" time="1734761004"/>
+<taskbegin task="NSE" time="1734761004"/>
+<taskend task="NSE" time="1734761004"/>
+<host starttime="1734760973" endtime="1734761004"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.123" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.123" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 a9:68:24:bc:97:1f:1e:54:a5:80:45:e7:4c:d9:aa:a0 (RSA)&#xa;  256 e5:44:01:46:ee:7a:bb:7c:e9:1a:cb:14:99:9e:2b:8e (ECDSA)&#xa;  256 00:4e:1a:4f:33:e8:a0:de:86:a6:e4:2a:5f:84:61:2b (ED25519)"><table>
+<elem key="fingerprint">a96824bc971f1e54a58045e74cd9aaa0</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC4/mXYmkhp2syUwYpiTjyUAVgrXhoAJ3eEP/Ch7omJh1jPHn3RQOxqvy9w4M6mTbBezspBS+hu29tO2vZBubheKRKa/POdV5Nk+A+q3BzhYWPQA+A+XTpWs3biNgI/4pPAbNDvvts+1ti+sAv47wYdp7mQysDzzqtpWxjGMW7I1SiaZncoV9L+62i+SmYugwHM0RjPt0HHor32+ZDL0hed9p2ebczZYC54RzpnD0E/qO3EE2ZI4pc7jqf/bZypnJcAFpmHNYBUYzyd7l6fsEEmvJ5EZFatcr0xzFDHRjvGz/44pekQ40ximmRqMfHy1bs2j+e39NmsNSp6kAZmNIsx</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="fingerprint">e5440146ee7abb7ce91acb14999e2b8e</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOPI7HKY4YZ5NIzPESPIcP0tdhwt4NRep9aUbBKGmOheJuahFQmIcbGGrc+DZ5hTyGDrvlFzAZJ8coDDUKlHBjo=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="fingerprint">004e1a4f33e8a0de86a6e42a5f84612b</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIF+FZS11nYcVyJgJiLrTYTIy3ia5QvE3+5898MfMtGQl</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" product="ISC BIND" version="9.11.3-1ubuntu1.2" extrainfo="Ubuntu Linux" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:isc:bind:9.11.3-1ubuntu1.2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: 9.11.3-1ubuntu1.2-Ubuntu"><elem key="bind.version">9.11.3-1ubuntu1.2-Ubuntu</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS HEAD GET"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+</table>
+</script><script id="http-title" output="Friend Zone Escape software"><elem key="title">Friend Zone Escape software</elem>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="FRIENDZONE" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" hostname="127.0.1.1" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=friendzone.red/organizationName=CODERED/stateOrProvinceName=CODERED/countryName=JO&#xa;Issuer: commonName=friendzone.red/organizationName=CODERED/stateOrProvinceName=CODERED/countryName=JO&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2018-10-05T21:02:30&#xa;Not valid after:  2018-11-04T21:02:30&#xa;MD5:   c144:1868:5e8b:468d:fc7d:888b:1123:781c&#xa;SHA-1: 88d2:e8ee:1c2c:dbd3:ea55:2e5e:cdd4:e94c:4c8b:9233"><table key="subject">
+<elem key="commonName">friendzone.red</elem>
+<elem key="countryName">JO</elem>
+<elem key="emailAddress">haha@friendzone.red</elem>
+<elem key="localityName">AMMAN</elem>
+<elem key="organizationName">CODERED</elem>
+<elem key="organizationalUnitName">CODERED</elem>
+<elem key="stateOrProvinceName">CODERED</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">friendzone.red</elem>
+<elem key="countryName">JO</elem>
+<elem key="emailAddress">haha@friendzone.red</elem>
+<elem key="localityName">AMMAN</elem>
+<elem key="organizationName">CODERED</elem>
+<elem key="organizationalUnitName">CODERED</elem>
+<elem key="stateOrProvinceName">CODERED</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">A3226B08B4846118DC8CC98BB2CF82D66E21920D19F36979C75409999F551E1B507C952B4D26B47CFD97004B3FA32D9F6A1C6E7B93A53DB42E7756E9454BEF0CB1BD25DFC182743AD43263377AFC2C9B0AC7F63681F46D12306622C321B56B963412A84CF2E126477757B423C79E19EC5D57E8DC36E1859D92A189F2ABF8CE7C1B87801A3A91D7D72E57FC7233293A37B7759F20AF05A95035D5515CAE72E6ADC896A6E71FF0F4FB2D6D17A53499B5815421EF1A9DD9AB7F916E20E483D949402E7EEE014A108922EA5D808ABD15D75FDBA93CD51435D5D8198A149F41AD074E6ED0BA2DFF8C90E9154BA6B4282BCE5C9A3398A5C99123DDD6FA58A1C79640B1</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">99:9D:60:19:1F:84:86:A7:E2:BD:9F:28:F3:57:4D:14:4C:8E:33:76</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">99:9D:60:19:1F:84:86:A7:E2:BD:9F:28:F3:57:4D:14:4C:8E:33:76</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2018-10-05T21:02:30</elem>
+<elem key="notAfter">2018-11-04T21:02:30</elem>
+</table>
+<elem key="md5">c14418685e8b468dfc7d888b1123781c</elem>
+<elem key="sha1">88d2e8ee1c2cdbd3ea552e5ecdd4e94c4c8b9233</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIID+DCCAuCgAwIBAgIJAPRJYD8hBBg0MA0GCSqGSIb3DQEBCwUAMIGQMQswCQYD&#xa;VQQGEwJKTzEQMA4GA1UECAwHQ09ERVJFRDEOMAwGA1UEBwwFQU1NQU4xEDAOBgNV&#xa;BAoMB0NPREVSRUQxEDAOBgNVBAsMB0NPREVSRUQxFzAVBgNVBAMMDmZyaWVuZHpv&#xa;bmUucmVkMSIwIAYJKoZIhvcNAQkBFhNoYWhhQGZyaWVuZHpvbmUucmVkMB4XDTE4&#xa;MTAwNTIxMDIzMFoXDTE4MTEwNDIxMDIzMFowgZAxCzAJBgNVBAYTAkpPMRAwDgYD&#xa;VQQIDAdDT0RFUkVEMQ4wDAYDVQQHDAVBTU1BTjEQMA4GA1UECgwHQ09ERVJFRDEQ&#xa;MA4GA1UECwwHQ09ERVJFRDEXMBUGA1UEAwwOZnJpZW5kem9uZS5yZWQxIjAgBgkq&#xa;hkiG9w0BCQEWE2hhaGFAZnJpZW5kem9uZS5yZWQwggEiMA0GCSqGSIb3DQEBAQUA&#xa;A4IBDwAwggEKAoIBAQCjImsItIRhGNyMyYuyz4LWbiGSDRnzaXnHVAmZn1UeG1B8&#xa;lStNJrR8/ZcASz+jLZ9qHG57k6U9tC53VulFS+8Msb0l38GCdDrUMmM3evwsmwrH&#xa;9jaB9G0SMGYiwyG1a5Y0EqhM8uEmR3dXtCPHnhnsXVfo3DbhhZ2SoYnyq/jOfBuH&#xa;gBo6kdfXLlf8cjMpOje3dZ8grwWpUDXVUVyucuatyJam5x/w9PstbRelNJm1gVQh&#xa;7xqd2at/kW4g5IPZSUAufu4BShCJIupdgIq9Fddf26k81RQ11dgZihSfQa0HTm7Q&#xa;ui3/jJDpFUumtCgrzlyaM5ilyZEj3db6WKHHlkCxAgMBAAGjUzBRMB0GA1UdDgQW&#xa;BBSZnWAZH4SGp+K9nyjzV00UTI4zdjAfBgNVHSMEGDAWgBSZnWAZH4SGp+K9nyjz&#xa;V00UTI4zdjAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBV6vjj&#xa;TZlc/bC+cZnlyAQaC7MytVpWPruQ+qlvJ0MMsYx/XXXzcmLj47Iv7EfQStf2TmoZ&#xa;LxRng6lT3yQ6Mco7LnnQqZDyj4LM0SoWe07kesW1GeP9FPQ8EVqHMdsiuTLZryME&#xa;K+/4nUpD5onCleQyjkA+dbBIs+Qj/KDCLRFdkQTX3Nv0PC9j+NYcBfhRMJ6VjPoF&#xa;Kwuz/vON5PLdU7AvVC8/F9zCvZHbazskpy/quSJIWTpjzg7BVMAWMmAJ3KEdxCoG&#xa;X7p52yPCqfYopYnucJpTq603Qdbgd3bq30gYPwF6nbHuh0mq8DUxD9nPEcL8q6XZ&#xa;fv9s+GxKNvsBqDBX&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS HEAD GET"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+</table>
+</script><script id="http-title" output="404 Not Found"><elem key="title">404 Not Found</elem>
+</script><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.7.6-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="FRIENDZONE" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="udp" portid="30707"/>
+<osmatch name="Linux 3.2 - 4.9" accuracy="96" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="95" line="64180">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.18" accuracy="95" line="64474">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="95" line="8405">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="95"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="93" line="62926">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="93" line="64673">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 4.11" accuracy="93" line="63448">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Oracle VM Server 3.4.2 (Linux 4.1)" accuracy="93" line="92450">
+<osclass type="specialized" vendor="Oracle" osfamily="VM Server" osgen="3.X" accuracy="93"><cpe>cpe:/o:oracle:vm_server:3.4.2</cpe></osclass>
+<osclass type="specialized" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:4.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.12" accuracy="93" line="63654">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.12</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="93" line="63771">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3571193" lastboot="Sun Nov 10 03:33:31 2024"/>
+<distance value="2"/>
+<tcpsequence index="261" difficulty="Good luck!" values="6EF29F2,6F805404,2F6DDAC6,ECB00DD4,50B6A28F,49F01F54"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="D4DBDC53,D4DBDCB7,D4DBDD1B,D4DBDD7F,D4DBDE70,D4DBDE70"/>
+<hostscript><script id="clock-skew" output="mean: -54m38s, deviation: 1h09m16s, median: -14m38s"><elem key="stddev">4156</elem>
+<elem key="count">3</elem>
+<elem key="median">-878</elem>
+<elem key="mean">-3278</elem>
+</script><script id="nbstat" output="NetBIOS name: FRIENDZONE, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  FRIENDZONE&lt;00&gt;       Flags: &lt;unique&gt;&lt;active&gt;&#xa;  FRIENDZONE&lt;03&gt;       Flags: &lt;unique&gt;&lt;active&gt;&#xa;  FRIENDZONE&lt;20&gt;       Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1d&gt;        Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1e&gt;        Flags: &lt;group&gt;&lt;active&gt;"/><script id="smb2-time" output="&#xa;  date: 2024-12-21T05:48:35&#xa;  start_date: N/A"><elem key="date">2024-12-21T05:48:35</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.7.6-Ubuntu)&#xa;  Computer name: friendzone&#xa;  NetBIOS computer name: FRIENDZONE\x00&#xa;  Domain name: \x00&#xa;  FQDN: friendzone&#xa;  System time: 2024-12-21T07:48:35+02:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.7.6-Ubuntu</elem>
+<elem key="server">FRIENDZONE\x00</elem>
+<elem key="date">2024-12-21T07:48:35+02:00</elem>
+<elem key="fqdn">friendzone</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script></hostscript><trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="259.43" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.123" rtt="259.57" host="10.10.10.123"/>
+</trace>
+<times srtt="225525" rttvar="61502" to="471533"/>
+</host>
+<taskbegin task="NSE" time="1734761004"/>
+<taskend task="NSE" time="1734761004"/>
+<taskbegin task="NSE" time="1734761004"/>
+<taskend task="NSE" time="1734761004"/>
+<taskbegin task="NSE" time="1734761004"/>
+<taskend task="NSE" time="1734761004"/>
+<runstats><finished time="1734761004" timestr="Sat Dec 21 11:33:24 2024" summary="Nmap done at Sat Dec 21 11:33:24 2024; 1 IP address (1 host up) scanned in 30.83 seconds" elapsed="30.83" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

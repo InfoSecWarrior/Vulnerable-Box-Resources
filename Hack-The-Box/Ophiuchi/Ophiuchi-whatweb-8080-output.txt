@@ -1,0 +1,1 @@
+http://10.10.10.227:8080 [200 OK] Cookies[JSESSIONID], Country[RESERVED][ZZ], HttpOnly[JSESSIONID], IP[10.10.10.227], Java, Title[Parse YAML]

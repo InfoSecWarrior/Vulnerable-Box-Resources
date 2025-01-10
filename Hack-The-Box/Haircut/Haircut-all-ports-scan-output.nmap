@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Fri Dec 27 14:55:49 2024 as: nmap -v -T4 -Pn -p- -oA Haircut-all-ports-scan-output 10.10.10.24
+Nmap scan report for 10.10.10.24 (10.10.10.24)
+Host is up (0.076s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Dec 27 14:56:31 2024 -- 1 IP address (1 host up) scanned in 41.76 seconds

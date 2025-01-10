@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Dec 20 13:09:39 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 79,111,515,6787,22022 -oA Sunday-nmap-version-scan-output 10.10.10.76
+# Ports scanned: TCP(5;79,111,515,6787,22022) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.76 (10.10.10.76)	Status: Up
+Host: 10.10.10.76 (10.10.10.76)	Ports: 79/open/tcp//finger?///, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 515/open/tcp//printer///, 6787/open/tcp//http//Apache httpd/, 22022/open/tcp//ssh//OpenSSH 8.4 (protocol 2.0)/	Seq Index: 265	IP ID Seq: Incremental
+# Nmap done at Fri Dec 20 13:11:27 2024 -- 1 IP address (1 host up) scanned in 108.30 seconds

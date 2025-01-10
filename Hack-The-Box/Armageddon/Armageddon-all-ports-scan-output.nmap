@@ -1,0 +1,63 @@
+# Nmap 7.94SVN scan initiated Fri Jan  3 17:27:14 2025 as: nmap -v -T4 -Pn -p- -oA Armageddon-all-ports-scan-output 10.10.10.233
+Increasing send delay for 10.10.10.233 from 0 to 5 due to 1161 out of 2902 dropped probes since last increase.
+Increasing send delay for 10.10.10.233 from 5 to 10 due to 11 out of 18 dropped probes since last increase.
+Warning: 10.10.10.233 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.233 (10.10.10.233)
+Host is up (0.22s latency).
+Not shown: 65483 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+1387/tcp  filtered cadsi-lm
+2572/tcp  filtered ibp
+2774/tcp  filtered rbakcup2
+3394/tcp  filtered d2k-tapestry2
+7294/tcp  filtered unknown
+7831/tcp  filtered unknown
+8202/tcp  filtered aesop
+8220/tcp  filtered unknown
+8921/tcp  filtered unknown
+9364/tcp  filtered unknown
+9626/tcp  filtered unknown
+13556/tcp filtered unknown
+13714/tcp filtered netbackup
+14661/tcp filtered unknown
+15627/tcp filtered unknown
+19248/tcp filtered unknown
+20757/tcp filtered unknown
+21140/tcp filtered unknown
+21408/tcp filtered unknown
+24919/tcp filtered unknown
+28045/tcp filtered unknown
+28192/tcp filtered unknown
+29062/tcp filtered unknown
+29629/tcp filtered unknown
+31950/tcp filtered unknown
+32216/tcp filtered unknown
+32751/tcp filtered unknown
+33073/tcp filtered unknown
+35709/tcp filtered unknown
+36112/tcp filtered unknown
+36179/tcp filtered unknown
+37935/tcp filtered unknown
+40072/tcp filtered unknown
+40251/tcp filtered unknown
+41580/tcp filtered unknown
+44227/tcp filtered unknown
+44756/tcp filtered unknown
+44793/tcp filtered unknown
+46466/tcp filtered unknown
+46503/tcp filtered unknown
+46541/tcp filtered unknown
+47341/tcp filtered unknown
+47966/tcp filtered unknown
+50104/tcp filtered unknown
+50261/tcp filtered unknown
+52339/tcp filtered unknown
+55727/tcp filtered unknown
+58648/tcp filtered unknown
+59654/tcp filtered unknown
+60980/tcp filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Jan  3 17:42:01 2025 -- 1 IP address (1 host up) scanned in 887.53 seconds

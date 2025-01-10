@@ -1,0 +1,4 @@
+[missing-sri] [http] [info] http://10.10.10.242:80 ["https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"]
+[waf-detect:apachegeneric] [http] [info] http://10.10.10.242:80
+[ssh-password-auth] [javascript] [info] 10.10.10.242:22
+[CVE-2023-48795] [javascript] [medium] 10.10.10.242:22 ["Vulnerable to Terrapin"]

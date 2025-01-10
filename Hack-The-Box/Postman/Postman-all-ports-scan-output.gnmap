@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Dec 28 10:57:08 2024 as: nmap -v -T4 -Pn -p- -oA Postman-all-ports-scan-output 10.10.10.160
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.160 (10.10.10.160)	Status: Up
+Host: 10.10.10.160 (10.10.10.160)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 6379/open/tcp//redis///, 10000/open/tcp//snet-sensor-mgmt///	Ignored State: closed (65531)
+# Nmap done at Sat Dec 28 10:58:09 2024 -- 1 IP address (1 host up) scanned in 60.64 seconds

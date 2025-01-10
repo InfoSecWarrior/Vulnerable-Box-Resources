@@ -1,0 +1,12 @@
+[tls-version] [ssl] [info] 10.10.10.241:9090 ["tls12"]
+[tls-version] [ssl] [info] 10.10.10.241:9090 ["tls13"]
+[addeventlistener-detect] [http] [info] https://10.10.10.241:9090
+[http-missing-security-headers:strict-transport-security] [http] [info] https://10.10.10.241:9090
+[http-missing-security-headers:permissions-policy] [http] [info] https://10.10.10.241:9090
+[http-missing-security-headers:x-frame-options] [http] [info] https://10.10.10.241:9090
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://10.10.10.241:9090
+[http-missing-security-headers:clear-site-data] [http] [info] https://10.10.10.241:9090
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://10.10.10.241:9090
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://10.10.10.241:9090
+[ssl-issuer] [ssl] [info] 10.10.10.241:9090 ["4cd9329523184b0ea52ba0d20a1a6f92"]
+[ssl-dns-names] [ssl] [info] 10.10.10.241:9090 ["dms-pit.htb","localhost"]

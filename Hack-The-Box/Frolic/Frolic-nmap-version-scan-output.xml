@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Jan  1 14:36:42 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,139,445,1880,9999 -oA Frolic-nmap-version-scan-output 10.10.10.111 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,139,445,1880,9999 -oA Frolic-nmap-version-scan-output 10.10.10.111" start="1735722402" startstr="Wed Jan  1 14:36:42 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="5" services="22,139,445,1880,9999"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1735722402"/>
+<taskend task="NSE" time="1735722402"/>
+<taskbegin task="NSE" time="1735722402"/>
+<taskend task="NSE" time="1735722402"/>
+<taskbegin task="NSE" time="1735722402"/>
+<taskend task="NSE" time="1735722402"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735722402"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735722402"/>
+<taskbegin task="Connect Scan" time="1735722402"/>
+<taskend task="Connect Scan" time="1735722403" extrainfo="5 total ports"/>
+<taskbegin task="Service scan" time="1735722403"/>
+<taskend task="Service scan" time="1735722414" extrainfo="5 services on 1 host"/>
+<taskbegin task="Traceroute" time="1735722421"/>
+<taskend task="Traceroute" time="1735722421"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735722421"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735722421"/>
+<taskbegin task="NSE" time="1735722421"/>
+<taskend task="NSE" time="1735722427"/>
+<taskbegin task="NSE" time="1735722427"/>
+<taskend task="NSE" time="1735722427"/>
+<taskbegin task="NSE" time="1735722427"/>
+<taskend task="NSE" time="1735722427"/>
+<host starttime="1735722402" endtime="1735722427"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.111" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.111" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.4" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 87:7b:91:2a:0f:11:b6:57:1e:cb:9f:77:cf:35:e2:21 (RSA)&#xa;  256 b7:9b:06:dd:c2:5e:28:44:78:41:1e:67:7d:1e:b7:62 (ECDSA)&#xa;  256 21:cf:16:6d:82:a4:30:c3:c6:9c:d7:38:ba:b5:02:b0 (ED25519)"><table>
+<elem key="fingerprint">877b912a0f11b6571ecb9f77cf35e221</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC3HUqxhCShF9I6uBmGCX6yXz56Iibv7WW2fBKsKA9yVqmoupPdDKac1U3/PIioRNHkPC03r5ZXsqfALwjIWEits7toO4K+9VSFU6d0qhmpUZW3WwiyxdcPxmTQLpU8InXZpMOwjpGJTTwqxsMIxNdPk0FP/MtqEzQI45MOr7IQOGcEAsmcJ1Cy3aRDAnp77NBWYA316l7Xb8WA/aWoHEyS/6Qf3XzeARf0yZ6YwYg4TTsaeQtfRr4HWZBDs7fLrrWUzN0ivb9izy9YgqrOJ5ZKQI4A1yn0CxZNsiweIT8gopM1KrfinPGiKbGbSNVvTX2dHYyISh6Y2bp1D5vum6SH</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="fingerprint">b79b06ddc25e284478411e677d1eb762</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDSjEcHeA/VoBi4PaoyxwM1Rx1vpoQofoJPYTxBuQLXRujf3gqn491cWpd2CDh2mF/3w2kEGsrWRwqD4LZmz+Sk=</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="fingerprint">21cf166d82a430c3c69cd738bab502b0</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAINVT+d0lX5zwXTOY4h4+MfU6kt/q3EmGVWIXnMsomQq5</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="FROLIC" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.3.11-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="FROLIC" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="1880"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Node.js" extrainfo="Express middleware" method="probed" conf="10"><cpe>cpe:/a:nodejs:node.js</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 818DD6AFD0D0F9433B21774F89665EEA"/><script id="http-title" output="Node-RED"><elem key="title">Node-RED</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="9999"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.10.3" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.10.3</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.10.3 (Ubuntu)"><elem>nginx/1.10.3 (Ubuntu)</elem>
+</script><script id="http-title" output="Welcome to nginx!"><elem key="title">Welcome to nginx!</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="42478"/>
+<osmatch name="Linux 3.12" accuracy="96" line="63654">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.12</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="96" line="63771">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="96" line="64162">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.18" accuracy="96" line="64456">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="96" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.8 - 3.11" accuracy="96" line="66297">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.8" accuracy="96" line="67909">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4.8</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="95" line="67760">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.9" accuracy="95" line="67963">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="95" line="67307">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="643" lastboot="Wed Jan  1 14:26:24 2025"/>
+<distance value="2"/>
+<tcpsequence index="257" difficulty="Good luck!" values="ED8F1DA8,2FDD87A7,1C74055A,EFD7B2F8,37987038,93E6299B"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="25F12,25F29,25F42,25F5B,25F74,25F8D"/>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2025-01-01T08:51:56&#xa;  start_date: N/A"><elem key="date">2025-01-01T08:51:56</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.3.11-Ubuntu)&#xa;  Computer name: frolic&#xa;  NetBIOS computer name: FROLIC\x00&#xa;  Domain name: \x00&#xa;  FQDN: frolic&#xa;  System time: 2025-01-01T14:21:56+05:30&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.3.11-Ubuntu</elem>
+<elem key="server">FROLIC\x00</elem>
+<elem key="date">2025-01-01T14:21:56+05:30</elem>
+<elem key="fqdn">frolic</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="clock-skew" output="mean: -2h05m05s, deviation: 3h10m30s, median: -15m06s"><elem key="mean">-7505</elem>
+<elem key="count">3</elem>
+<elem key="median">-906</elem>
+<elem key="stddev">11430</elem>
+</script><script id="nbstat" output="NetBIOS name: FROLIC, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  FROLIC&lt;00&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  FROLIC&lt;03&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  FROLIC&lt;20&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1d&gt;        Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1e&gt;        Flags: &lt;group&gt;&lt;active&gt;"/><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script></hostscript><trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="198.89" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.111" rtt="199.05" host="10.10.10.111"/>
+</trace>
+<times srtt="134220" rttvar="66150" to="398820"/>
+</host>
+<taskbegin task="NSE" time="1735722427"/>
+<taskend task="NSE" time="1735722427"/>
+<taskbegin task="NSE" time="1735722427"/>
+<taskend task="NSE" time="1735722427"/>
+<taskbegin task="NSE" time="1735722427"/>
+<taskend task="NSE" time="1735722427"/>
+<runstats><finished time="1735722427" timestr="Wed Jan  1 14:37:07 2025" summary="Nmap done at Wed Jan  1 14:37:07 2025; 1 IP address (1 host up) scanned in 25.04 seconds" elapsed="25.04" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

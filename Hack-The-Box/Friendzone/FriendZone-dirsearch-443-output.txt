@@ -1,0 +1,4 @@
+# Dirsearch started Sat Dec 21 11:34:25 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://10.10.10.123:443 -o FriendZone-dirsearch-443-output.txt -q
+
+403   301B   https://10.10.10.123/server-status
+403   302B   https://10.10.10.123/server-status/

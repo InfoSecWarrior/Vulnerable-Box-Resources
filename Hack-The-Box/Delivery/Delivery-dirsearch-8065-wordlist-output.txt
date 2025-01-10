@@ -1,0 +1,12 @@
+# Dirsearch started Fri Jan  3 12:55:33 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.222:8065 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Delivery-dirsearch-8065-wordlist-output.txt -q
+
+301     0B   http://10.10.10.222:8065/http%3A%2F%2Fwww    -> REDIRECTS TO: /http:/www
+301     0B   http://10.10.10.222:8065/http%3A%2F%2Fyoutube    -> REDIRECTS TO: /http:/youtube
+301     0B   http://10.10.10.222:8065/http%3A%2F%2Fblogs    -> REDIRECTS TO: /http:/blogs
+301     0B   http://10.10.10.222:8065/http%3A%2F%2Fblog    -> REDIRECTS TO: /http:/blog
+301     0B   http://10.10.10.222:8065/**http%3A%2F%2Fwww    -> REDIRECTS TO: /%2A%2Ahttp:/www
+301     0B   http://10.10.10.222:8065/http%3A%2F%2Fcommunity    -> REDIRECTS TO: /http:/community
+301     0B   http://10.10.10.222:8065/http%3A%2F%2Fradar    -> REDIRECTS TO: /http:/radar
+301     0B   http://10.10.10.222:8065/http%3A%2F%2Fjeremiahgrossman    -> REDIRECTS TO: /http:/jeremiahgrossman
+301     0B   http://10.10.10.222:8065/http%3A%2F%2Fweblog    -> REDIRECTS TO: /http:/weblog
+301     0B   http://10.10.10.222:8065/http%3A%2F%2Fswik    -> REDIRECTS TO: /http:/swik

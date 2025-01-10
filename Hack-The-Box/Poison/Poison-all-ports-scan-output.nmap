@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Fri Dec 20 11:17:02 2024 as: nmap -v -T4 -Pn -p- -oA Poison-all-ports-scan-output 10.10.10.84
+Warning: 10.10.10.84 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.84 (10.10.10.84)
+Host is up (0.078s latency).
+Not shown: 65454 closed tcp ports (reset), 79 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Dec 20 11:30:33 2024 -- 1 IP address (1 host up) scanned in 811.32 seconds

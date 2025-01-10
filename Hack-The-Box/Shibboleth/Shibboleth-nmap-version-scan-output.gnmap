@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Wed Jan  8 11:47:46 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA Shibboleth-nmap-version-scan-output 10.10.11.124
+# Ports scanned: TCP(1;80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.11.124 (10.10.11.124)	Status: Up
+Host: 10.10.11.124 (10.10.11.124)	Ports: 80/open/tcp//http//Apache httpd 2.4.41/	Seq Index: 264	IP ID Seq: All zeros
+# Nmap done at Wed Jan  8 11:47:58 2025 -- 1 IP address (1 host up) scanned in 12.11 seconds

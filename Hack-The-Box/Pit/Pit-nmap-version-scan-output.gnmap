@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Tue Jan  7 10:24:46 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,9090 -oA Pit-nmap-version-scan-output 10.10.10.241
+# Ports scanned: TCP(3;22,80,9090) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.241 (10.10.10.241)	Status: Up
+Host: 10.10.10.241 (10.10.10.241)	Ports: 22/open/tcp//ssh//OpenSSH 8.0 (protocol 2.0)/, 80/open/tcp//http//nginx 1.14.1/, 9090/open/tcp//ssl|zeus-admin?///	Seq Index: 257	IP ID Seq: All zeros
+# Nmap done at Tue Jan  7 10:28:09 2025 -- 1 IP address (1 host up) scanned in 202.75 seconds

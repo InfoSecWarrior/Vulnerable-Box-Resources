@@ -1,0 +1,38 @@
+# Nmap 7.94SVN scan initiated Fri Jan  3 10:42:27 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,5080 -oA Ready-nmap-version-scan-output 10.10.10.220
+Nmap scan report for 10.10.10.220 (10.10.10.220)
+Host is up (0.095s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 48:ad:d5:b8:3a:9f:bc:be:f7:e8:20:1e:f6:bf:de:ae (RSA)
+|   256 b7:89:6c:0b:20:ed:49:b2:c1:86:7c:29:92:74:1c:1f (ECDSA)
+|_  256 18:cd:9d:08:a6:21:a8:b8:b6:f7:9f:8d:40:51:54:fb (ED25519)
+5080/tcp open  http    nginx
+|_http-favicon: Unknown favicon MD5: F7E3D97F404E71D302B3239EEF48D5F2
+| http-robots.txt: 53 disallowed entries (15 shown)
+| / /autocomplete/users /search /api /admin /profile 
+| /dashboard /projects/new /groups/new /groups/*/edit /users /help 
+|_/s/ /snippets/new /snippets/*/edit
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-title: Sign in \xC2\xB7 GitLab
+|_Requested resource was http://10.10.10.220:5080/users/sign_in
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 5.0 (97%), Linux 4.15 - 5.8 (96%), Linux 5.3 - 5.4 (95%), Linux 2.6.32 (95%), Linux 5.0 - 5.5 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 20.418 days (since Sat Dec 14 00:40:28 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   77.05 ms 10.10.14.1 (10.10.14.1)
+2   77.18 ms 10.10.10.220 (10.10.10.220)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan  3 10:42:49 2025 -- 1 IP address (1 host up) scanned in 21.86 seconds

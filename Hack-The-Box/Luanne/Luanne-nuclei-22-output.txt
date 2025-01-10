@@ -1,0 +1,6 @@
+[ssh-auth-methods] [javascript] [info] 10.10.10.218:22 ["["publickey"]"]
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.10.218:22
+[ssh-server-enumeration] [javascript] [info] 10.10.10.218:22 ["SSH-2.0-OpenSSH_8.0 NetBSD_Secure_Shell-20190418-hpn13v14-lpk"]
+[rsync-list-modules] [javascript] [low] 10.10.10.218:22 ["SSH-2.0-OpenSSH_8.0  NetBSD_Secure_Shell-20190418-hpn13v14-lpk  Invalid  SSH  identification  string."]
+[openssh-detect] [tcp] [info] 10.10.10.218:22 ["SSH-2.0-OpenSSH_8.0 NetBSD_Secure_Shell-20190418-hpn13v14-lpk"]
+[CVE-2023-48795] [javascript] [medium] 10.10.10.218:22 ["Vulnerable to Terrapin"]

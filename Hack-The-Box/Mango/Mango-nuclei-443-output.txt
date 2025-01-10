@@ -1,0 +1,4 @@
+[waf-detect:apachegeneric] [http] [info] https://10.10.10.162:443
+[ssh-password-auth] [javascript] [info] 10.10.10.162:22
+[ssh-auth-methods] [javascript] [info] 10.10.10.162:22 ["["publickey","password"]"]
+[CVE-2023-48795] [javascript] [medium] 10.10.10.162:22 ["Vulnerable to Terrapin"]

@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Sat Dec 28 10:57:08 2024 as: nmap -v -T4 -Pn -p- -oA Postman-all-ports-scan-output 10.10.10.160
+Nmap scan report for 10.10.10.160 (10.10.10.160)
+Host is up (0.068s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+6379/tcp  open  redis
+10000/tcp open  snet-sensor-mgmt
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Dec 28 10:58:09 2024 -- 1 IP address (1 host up) scanned in 60.64 seconds

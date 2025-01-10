@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Dec 27 18:01:41 2024 as: nmap -v -T4 -Pn -p- -oA Blocky-all-ports-scan-output 10.10.10.37
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.37 (10.10.10.37)	Status: Up
+Host: 10.10.10.37 (10.10.10.37)	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 8192/closed/tcp//sophos///, 25565/open/tcp//minecraft///	Ignored State: filtered (65530)
+# Nmap done at Fri Dec 27 18:07:52 2024 -- 1 IP address (1 host up) scanned in 370.95 seconds

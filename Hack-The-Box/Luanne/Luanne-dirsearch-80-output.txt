@@ -1,0 +1,4 @@
+# Dirsearch started Thu Jan  2 15:42:52 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.218:80 -o Luanne-dirsearch-80-output.txt -q
+
+200   612B   http://10.10.10.218/index.html
+200    78B   http://10.10.10.218/robots.txt

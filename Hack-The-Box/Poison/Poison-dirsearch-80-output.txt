@@ -1,0 +1,22 @@
+# Dirsearch started Fri Dec 20 11:31:49 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.84:80 -o Poison-dirsearch-80-output.txt -q
+
+403   220B   http://10.10.10.84/.ht_wsr.txt
+403   225B   http://10.10.10.84/.htaccess.sample
+403   223B   http://10.10.10.84/.htaccess.bak1
+403   223B   http://10.10.10.84/.htaccess.orig
+403   223B   http://10.10.10.84/.htaccess.save
+403   223B   http://10.10.10.84/.htaccess_orig
+403   221B   http://10.10.10.84/.htaccess_sc
+403   224B   http://10.10.10.84/.htaccess_extra
+403   221B   http://10.10.10.84/.htaccessBAK
+403   221B   http://10.10.10.84/.htaccessOLD
+403   222B   http://10.10.10.84/.htaccessOLD2
+403   214B   http://10.10.10.84/.html
+403   213B   http://10.10.10.84/.htm
+403   223B   http://10.10.10.84/.htpasswd_test
+403   220B   http://10.10.10.84/.httr-oauth
+403   219B   http://10.10.10.84/.htpasswds
+403   225B   http://10.10.10.84/cgi-bin/printenv
+403   225B   http://10.10.10.84/cgi-bin/test-cgi
+200   157B   http://10.10.10.84/info.php
+200    68KB  http://10.10.10.84/phpinfo.php

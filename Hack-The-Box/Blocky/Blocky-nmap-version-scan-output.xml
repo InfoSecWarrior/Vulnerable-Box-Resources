@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Dec 27 18:07:52 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80,25565 -oA Blocky-nmap-version-scan-output 10.10.10.37 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 21,22,80,25565 -oA Blocky-nmap-version-scan-output 10.10.10.37" start="1735303072" startstr="Fri Dec 27 18:07:52 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="21-22,80,25565"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1735303073"/>
+<taskend task="NSE" time="1735303073"/>
+<taskbegin task="NSE" time="1735303073"/>
+<taskend task="NSE" time="1735303073"/>
+<taskbegin task="NSE" time="1735303073"/>
+<taskend task="NSE" time="1735303073"/>
+<taskbegin task="Connect Scan" time="1735303073"/>
+<taskend task="Connect Scan" time="1735303073" extrainfo="4 total ports"/>
+<taskbegin task="Service scan" time="1735303073"/>
+<taskend task="Service scan" time="1735303080" extrainfo="4 services on 1 host"/>
+<taskbegin task="Traceroute" time="1735303086"/>
+<taskend task="Traceroute" time="1735303086"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735303086"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735303086"/>
+<taskbegin task="NSE" time="1735303086"/>
+<taskend task="NSE" time="1735303092"/>
+<taskbegin task="NSE" time="1735303092"/>
+<taskend task="NSE" time="1735303092"/>
+<taskbegin task="NSE" time="1735303092"/>
+<taskend task="NSE" time="1735303092"/>
+<host starttime="1735303073" endtime="1735303092"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.37" addrtype="ipv4"/>
+<hostnames>
+<hostname name="blocky.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="ProFTPD" version="1.3.5a" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd:1.3.5a</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 d6:2b:99:b4:d5:e7:53:ce:2b:fc:b5:d7:9d:79:fb:a2 (RSA)&#xa;  256 5d:7f:38:95:70:c9:be:ac:67:a0:1e:86:e7:97:84:03 (ECDSA)&#xa;  256 09:d5:c2:04:95:1a:90:ef:87:56:25:97:df:83:70:67 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDXqVh031OUgTdcXsDwffHKL6T9f1GfJ1/x/b/dywX42sDZ5m1Hz46bKmbnWa0YD3LSRkStJDtyNXptzmEp31Fs2DUndVKui3LCcyKXY6FSVWp9ZDBzlW3aY8qa+y339OS3gp3aq277zYDnnA62U7rIltYp91u5VPBKi3DITVaSgzA8mcpHRr30e3cEGaLCxty58U2/lyCnx3I0Lh5rEbipQ1G7Cr6NMgmGtW6LrlJRQiWA1OK2/tDZbLhwtkjB82pjI/0T2gpA/vlZJH0elbMXW40Et6bOs2oK/V2bVozpoRyoQuts8zcRmCViVs8B3p7T1Qh/Z+7Ki91vgicfy4fl</elem>
+<elem key="fingerprint">d62b99b4d5e753ce2bfcb5d79d79fba2</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNgEpgEZGGbtm5suOAio9ut2hOQYLN39Uhni8i4E/Wdir1gHxDCLMoNPQXDOnEUO1QQVbioUUMgFRAXYLhilNF8=</elem>
+<elem key="fingerprint">5d7f389570c9beac67a01e86e7978403</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILqVrP5vDD4MdQ2v3ozqDPxG1XXZOp5VPpVsFUROL6Vj</elem>
+<elem key="fingerprint">09d5c204951a90ef87562597df837067</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" hostname="127.0.1.1" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-generator" output="WordPress 4.8"/><script id="http-title" output="BlockyCraft &amp;#8211; Under Construction!"><elem key="title">BlockyCraft &amp;#8211; Under Construction!</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="25565"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="minecraft" product="Minecraft" version="1.11.2" extrainfo="Protocol: 127, Message: A Minecraft Server, Users: 0/20" method="probed" conf="10"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<osmatch name="Linux 3.16" accuracy="90" line="64252">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16 - 4.6" accuracy="90" line="64382">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="90" line="65323">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="90" line="67307">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 4.11" accuracy="88" line="63448">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.12" accuracy="88" line="63654">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3.12</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="88" line="63771">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13 or 4.2" accuracy="88" line="63994">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.18" accuracy="88" line="64456">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.8 - 3.11" accuracy="88" line="66297">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="203" lastboot="Fri Dec 27 18:04:49 2024"/>
+<distance value="2"/>
+<tcpsequence index="248" difficulty="Good luck!" values="E1DD835E,3A6FD05F,79F82068,3C17F2BC,963A30C0,E0216AB5"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="9F6A,9F71,9FA5,9FA5,9FCA,9FD3"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="189.32" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.37" rtt="189.35" host="blocky.htb"/>
+</trace>
+<times srtt="183945" rttvar="11598" to="230337"/>
+</host>
+<taskbegin task="NSE" time="1735303092"/>
+<taskend task="NSE" time="1735303092"/>
+<taskbegin task="NSE" time="1735303092"/>
+<taskend task="NSE" time="1735303092"/>
+<taskbegin task="NSE" time="1735303092"/>
+<taskend task="NSE" time="1735303092"/>
+<runstats><finished time="1735303092" timestr="Fri Dec 27 18:08:12 2024" summary="Nmap done at Fri Dec 27 18:08:12 2024; 1 IP address (1 host up) scanned in 20.24 seconds" elapsed="20.24" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

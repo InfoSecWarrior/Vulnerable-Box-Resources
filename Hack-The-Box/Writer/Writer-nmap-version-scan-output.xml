@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Jan  8 12:51:12 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,139,445 -oA Writer-nmap-version-scan-output 10.10.11.101 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80,139,445 -oA Writer-nmap-version-scan-output 10.10.11.101" start="1736320872" startstr="Wed Jan  8 12:51:12 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="22,80,139,445"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1736320872"/>
+<taskend task="NSE" time="1736320872"/>
+<taskbegin task="NSE" time="1736320872"/>
+<taskend task="NSE" time="1736320872"/>
+<taskbegin task="NSE" time="1736320872"/>
+<taskend task="NSE" time="1736320872"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1736320872"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1736320872"/>
+<taskbegin task="Connect Scan" time="1736320872"/>
+<taskend task="Connect Scan" time="1736320872" extrainfo="4 total ports"/>
+<taskbegin task="Service scan" time="1736320872"/>
+<taskend task="Service scan" time="1736320884" extrainfo="4 services on 1 host"/>
+<taskbegin task="Traceroute" time="1736320888"/>
+<taskend task="Traceroute" time="1736320888"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1736320888"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1736320888"/>
+<taskbegin task="NSE" time="1736320888"/>
+<taskend task="NSE" time="1736320892"/>
+<taskbegin task="NSE" time="1736320892"/>
+<taskend task="NSE" time="1736320893"/>
+<taskbegin task="NSE" time="1736320893"/>
+<taskend task="NSE" time="1736320893"/>
+<host starttime="1736320872" endtime="1736320893"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.11.101" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.11.101" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 98:20:b9:d0:52:1f:4e:10:3a:4a:93:7e:50:bc:b8:7d (RSA)&#xa;  256 10:04:79:7a:29:74:db:28:f9:ff:af:68:df:f1:3f:34 (ECDSA)&#xa;  256 77:c4:86:9a:9f:33:4f:da:71:20:2c:e1:51:10:7e:8d (ED25519)"><table>
+<elem key="bits">3072</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQCwAA7IblnSMXNfqjkkoT+PAk2SPYBRL5gy0K0FQ2XbFGuPk6ImjJLrb0BF6qw3hU/I2V9ARRnn2SvHlz1+lLB0Ie9wkvH1gZfnUBd5X2sOS3vCzYJOBoD+yzJat40YmKx3NLjYCzkMd/KyTGGIH0cdlnROO6eJdnJN1QYMsrM4+QkkrQHtgz5KAk/aE18+1e5toWK1Px+KtVjvPWiD7mTb4J99f79L/5CCI9nUfmjeB8EU9qe3igUQ3zCGVFGUNTA9Vva99kh3SC6YjBe8+9ipFSZFVSqaJoJpZF83Oy2BEPWEb6lgo3cx7FwGH24nT833Y4Urk294/5ym8F3JFxo/FCgtjuYwp5Im1j9oVOGSnECKfC785zZiSu+ubdnxDjvbuRgW34DsKZpbtVvwxs8R/VNE3bSldVLmz5gCwP0Dfaop+Tbn7MW8OJWL6hEQqNiLw3cSBpzPId/EIMO7TMfqVXTfkMtD1yiIlafd3ianGLu+VUpJ3Bg8jk/COUOHj/M=</elem>
+<elem key="fingerprint">9820b9d0521f4e103a4a937e50bcb87d</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBD+ZKRtm6JRYjPO1v8n2nR/cGDBj0Oaydm1VE6rUnvyI6bxfnPCaRjvxDrV3eW5rRXbK/ybC0k5WHtQ9iWogmAU=</elem>
+<elem key="fingerprint">1004797a2974db28f9ffaf68dff13f34</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIBaCZ4ALrn0m103XaA+e+YPrTO2f1hK8mAD5kUxJ7O9L</elem>
+<elem key="fingerprint">77c4869a9f334fda71202ce151107e8d</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET OPTIONS HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-title" output="Story Bank | Writer.HTB"><elem key="title">Story Bank | Writer.HTB</elem>
+</script><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.6.2" method="probed" conf="10"><cpe>cpe:/a:samba:samba:4.6.2</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.6.2" method="probed" conf="10"><cpe>cpe:/a:samba:samba:4.6.2</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="30189"/>
+<osmatch name="Linux 5.0" accuracy="97" line="68054">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:5.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.15 - 5.8" accuracy="96" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.3 - 5.4" accuracy="95" line="68158">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="95" line="55662">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.5" accuracy="95" line="68098">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="95" line="62926">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64673">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="95" line="61824">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="95"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="93" line="8405">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="93"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="93" line="64180">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="1849191" lastboot="Wed Dec 18 03:11:42 2024"/>
+<distance value="2"/>
+<tcpsequence index="262" difficulty="Good luck!" values="B092C816,36F22690,895A18DA,6CD165BF,5B04AB4D,1D780DA"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="6E38518A,6E3851EE,6E385252,6E3852B6,6E385319,6E38537F"/>
+<hostscript><script id="clock-skew" output="-15m24s"><elem key="count">1</elem>
+<elem key="mean">-924</elem>
+<elem key="stddev">0</elem>
+<elem key="median">-924</elem>
+</script><script id="smb2-time" output="&#xa;  date: 2025-01-08T07:06:05&#xa;  start_date: N/A"><elem key="date">2025-01-08T07:06:05</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="nbstat" output="NetBIOS name: WRITER, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  WRITER&lt;00&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WRITER&lt;03&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WRITER&lt;20&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1d&gt;        Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1e&gt;        Flags: &lt;group&gt;&lt;active&gt;"/></hostscript><trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="322.16" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.11.101" rtt="322.31" host="10.10.11.101"/>
+</trace>
+<times srtt="120124" rttvar="64497" to="378112"/>
+</host>
+<taskbegin task="NSE" time="1736320893"/>
+<taskend task="NSE" time="1736320893"/>
+<taskbegin task="NSE" time="1736320893"/>
+<taskend task="NSE" time="1736320893"/>
+<taskbegin task="NSE" time="1736320893"/>
+<taskend task="NSE" time="1736320893"/>
+<runstats><finished time="1736320893" timestr="Wed Jan  8 12:51:33 2025" summary="Nmap done at Wed Jan  8 12:51:33 2025; 1 IP address (1 host up) scanned in 21.53 seconds" elapsed="21.53" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

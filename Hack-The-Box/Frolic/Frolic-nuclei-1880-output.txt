@@ -1,0 +1,20 @@
+[node-express-dev-env] [http] [medium] http://10.10.10.111:1880
+[waf-detect:securesphere] [http] [info] http://10.10.10.111:1880
+[tech-detect:font-awesome] [http] [info] http://10.10.10.111:1880
+[tech-detect:bootstrap] [http] [info] http://10.10.10.111:1880
+[tech-detect:express] [http] [info] http://10.10.10.111:1880
+[node-red-detect] [http] [info] http://10.10.10.111:1880
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://10.10.10.111:1880
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://10.10.10.111:1880
+[http-missing-security-headers:referrer-policy] [http] [info] http://10.10.10.111:1880
+[http-missing-security-headers:clear-site-data] [http] [info] http://10.10.10.111:1880
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://10.10.10.111:1880
+[http-missing-security-headers:x-content-type-options] [http] [info] http://10.10.10.111:1880
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://10.10.10.111:1880
+[http-missing-security-headers:strict-transport-security] [http] [info] http://10.10.10.111:1880
+[http-missing-security-headers:content-security-policy] [http] [info] http://10.10.10.111:1880
+[http-missing-security-headers:permissions-policy] [http] [info] http://10.10.10.111:1880
+[http-missing-security-headers:x-frame-options] [http] [info] http://10.10.10.111:1880
+[options-method] [http] [info] http://10.10.10.111:1880 ["GET,HEAD"]
+[favicon-detect:Node-Red] [http] [info] http://10.10.10.111:1880/favicon.ico ["321591353"]
+[favicon-detect:node-red] [http] [info] http://10.10.10.111:1880/favicon.ico ["321591353"]

@@ -1,0 +1,1 @@
+http://10.10.10.48:32469 [404 Not Found] Country[RESERVED][ZZ], HTTPServer[UPnP/1.0 DLNADOC/1.50 Platinum/1.0.5.13], IP[10.10.10.48]

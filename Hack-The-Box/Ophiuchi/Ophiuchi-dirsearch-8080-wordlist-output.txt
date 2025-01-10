@@ -1,0 +1,17 @@
+# Dirsearch started Fri Jan  3 13:52:03 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.227:8080 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Ophiuchi-dirsearch-8080-wordlist-output.txt -q
+
+302     0B   http://10.10.10.227:8080/test    -> REDIRECTS TO: /test/
+302     0B   http://10.10.10.227:8080/manager    -> REDIRECTS TO: /manager/
+400   804B   http://10.10.10.227:8080/http%3A%2F%2Fwww
+400   804B   http://10.10.10.227:8080/http%3A%2F%2Fyoutube
+400   804B   http://10.10.10.227:8080/http%3A%2F%2Fblogs
+400   804B   http://10.10.10.227:8080/http%3A%2F%2Fblog
+400   804B   http://10.10.10.227:8080/**http%3A%2F%2Fwww
+302     0B   http://10.10.10.227:8080/yaml    -> REDIRECTS TO: /yaml/
+400   795B   http://10.10.10.227:8080/External%5CX-News
+404   682B   http://10.10.10.227:8080/web-inf
+400   804B   http://10.10.10.227:8080/http%3A%2F%2Fcommunity
+400   804B   http://10.10.10.227:8080/http%3A%2F%2Fradar
+400   804B   http://10.10.10.227:8080/http%3A%2F%2Fjeremiahgrossman
+400   804B   http://10.10.10.227:8080/http%3A%2F%2Fweblog
+400   804B   http://10.10.10.227:8080/http%3A%2F%2Fswik

@@ -1,0 +1,2 @@
+[rsync-list-modules] [javascript] [low] 10.10.10.84:22 ["SSH-2.0-OpenSSH_7.2  FreeBSD-20161230  Protocol  mismatch."]
+[openssh-detect] [tcp] [info] 10.10.10.84:22 ["SSH-2.0-OpenSSH_7.2 FreeBSD-20161230"]

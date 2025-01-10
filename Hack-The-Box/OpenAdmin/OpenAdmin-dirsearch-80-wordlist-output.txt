@@ -1,0 +1,6 @@
+# Dirsearch started Wed Jan  1 13:44:01 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.171:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o OpenAdmin-dirsearch-80-wordlist-output.txt -q
+
+301   312B   http://10.10.10.171/music    -> REDIRECTS TO: http://10.10.10.171/music/
+301   314B   http://10.10.10.171/artwork    -> REDIRECTS TO: http://10.10.10.171/artwork/
+301   313B   http://10.10.10.171/sierra    -> REDIRECTS TO: http://10.10.10.171/sierra/
+403   277B   http://10.10.10.171/server-status

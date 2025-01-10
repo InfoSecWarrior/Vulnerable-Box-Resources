@@ -1,0 +1,32 @@
+# Nmap 7.94SVN scan initiated Fri Dec 27 14:56:31 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA Haircut-nmap-version-scan-output 10.10.10.24
+Nmap scan report for 10.10.10.24 (10.10.10.24)
+Host is up (0.082s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 e9:75:c1:e4:b3:63:3c:93:f2:c6:18:08:36:48:ce:36 (RSA)
+|   256 87:00:ab:a9:8f:6f:4b:ba:fb:c6:7a:55:a8:60:b2:68 (ECDSA)
+|_  256 b6:1b:5c:a9:26:5c:dc:61:b7:75:90:6c:88:51:6e:54 (ED25519)
+80/tcp open  http    nginx 1.10.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title:  HTB Hairdresser 
+|_http-server-header: nginx/1.10.0 (Ubuntu)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.13 (96%), Linux 3.16 (96%), Linux 3.18 (96%), Linux 3.2 - 4.9 (96%), Linux 4.2 (96%), Linux 3.12 (95%), Linux 3.8 - 3.11 (95%), ASUS RT-N56U WAP (Linux 3.4) (95%), Linux 4.4 (95%), Linux 4.8 (94%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 198.839 days (since Tue Jun 11 18:49:09 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=254 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   166.22 ms 10.10.14.1 (10.10.14.1)
+2   148.74 ms 10.10.10.24 (10.10.10.24)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 27 14:56:48 2024 -- 1 IP address (1 host up) scanned in 16.75 seconds

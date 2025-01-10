@@ -1,0 +1,115 @@
+# Dirsearch started Fri Jan  3 12:43:10 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.222:8065 -o Delivery-dirsearch-8065-output.txt -q
+
+301     0B   http://10.10.10.222:8065/%2e%2e//google.com    -> REDIRECTS TO: /google.com
+301     0B   http://10.10.10.222:8065/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd    -> REDIRECTS TO: /etc/passwd
+400    17B   http://10.10.10.222:8065/\..\..\..\..\..\..\..\..\..\etc\passwd
+301     0B   http://10.10.10.222:8065/adm/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/admin/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/admin2/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/admin_area/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/adminarea/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/admincp/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/administrator/index.html    -> REDIRECTS TO: ./
+404   242B   http://10.10.10.222:8065/api/
+404   252B   http://10.10.10.222:8065/api/2/explore/
+404   260B   http://10.10.10.222:8065/api/2/issue/createmeta
+404   245B   http://10.10.10.222:8065/api/api
+404   254B   http://10.10.10.222:8065/api/__swagger__/
+404   252B   http://10.10.10.222:8065/api/_swagger_/
+404   250B   http://10.10.10.222:8065/api/api-docs
+404   262B   http://10.10.10.222:8065/api/apidocs/swagger.json
+404   258B   http://10.10.10.222:8065/api/application.wadl
+404   249B   http://10.10.10.222:8065/api/apidocs
+404   248B   http://10.10.10.222:8065/api/config
+404   246B   http://10.10.10.222:8065/api/docs
+404   247B   http://10.10.10.222:8065/api/batch
+404   251B   http://10.10.10.222:8065/api/error_log
+404   252B   http://10.10.10.222:8065/api/index.html
+404   273B   http://10.10.10.222:8065/api/package_search/v4/documentation
+404   254B   http://10.10.10.222:8065/api/cask/graphql
+404   247B   http://10.10.10.222:8065/api/docs/
+404   255B   http://10.10.10.222:8065/api/jsonws/invoke
+404   252B   http://10.10.10.222:8065/api/login.json
+404   248B   http://10.10.10.222:8065/api/jsonws
+404   249B   http://10.10.10.222:8065/api/profile
+404   251B   http://10.10.10.222:8065/api/snapshots
+404   249B   http://10.10.10.222:8065/api/swagger
+404   259B   http://10.10.10.222:8065/api/spec/swagger.json
+404   247B   http://10.10.10.222:8065/api/proxy
+404   257B   http://10.10.10.222:8065/api/swagger-ui.html
+404   254B   http://10.10.10.222:8065/api/swagger.json
+404   260B   http://10.10.10.222:8065/api/swagger/index.html
+404   253B   http://10.10.10.222:8065/api/swagger.yml
+404   254B   http://10.10.10.222:8065/api/swagger.yaml
+404   267B   http://10.10.10.222:8065/api/swagger/static/index.html
+404   257B   http://10.10.10.222:8065/api/swagger/swagger
+404   258B   http://10.10.10.222:8065/api/swagger/ui/index
+404   254B   http://10.10.10.222:8065/api/timelion/run
+404   245B   http://10.10.10.222:8065/api/v1/
+404   244B   http://10.10.10.222:8065/api/v1
+404   257B   http://10.10.10.222:8065/api/v1/swagger.json
+404   257B   http://10.10.10.222:8065/api/v1/swagger.yaml
+404   244B   http://10.10.10.222:8065/api/v2
+404   245B   http://10.10.10.222:8065/api/v2/
+404   257B   http://10.10.10.222:8065/api/v2/swagger.json
+404   262B   http://10.10.10.222:8065/api/v2/helpdesk/discover
+404   244B   http://10.10.10.222:8065/api/v3
+404   244B   http://10.10.10.222:8065/api/v4
+404   257B   http://10.10.10.222:8065/api/v2/swagger.yaml
+404   272B   http://10.10.10.222:8065/api/vendor/phpunit/phpunit/phpunit
+404   248B   http://10.10.10.222:8065/api/whoami
+404   249B   http://10.10.10.222:8065/api/version
+301     0B   http://10.10.10.222:8065/axis//happyaxis.jsp    -> REDIRECTS TO: /axis/happyaxis.jsp
+301     0B   http://10.10.10.222:8065/axis2-web//HappyAxis.jsp    -> REDIRECTS TO: /axis2-web/HappyAxis.jsp
+301     0B   http://10.10.10.222:8065/axis2//axis2-web/HappyAxis.jsp    -> REDIRECTS TO: /axis2/axis2-web/HappyAxis.jsp
+301     0B   http://10.10.10.222:8065/bb-admin/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd    -> REDIRECTS TO: /etc/passwd
+301     0B   http://10.10.10.222:8065/cgi-bin/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/Citrix//AccessPlatform/auth/clientscripts/cookies.js    -> REDIRECTS TO: /Citrix/AccessPlatform/auth/clientscripts/cookies.js
+301     0B   http://10.10.10.222:8065/core/latest/swagger-ui/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/demo/ejb/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/doc/html/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/docs/html/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/docs/html/admin/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/druid/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/engine/classes/swfupload//swfupload.swf    -> REDIRECTS TO: /engine/classes/swfupload/swfupload.swf
+301     0B   http://10.10.10.222:8065/engine/classes/swfupload//swfupload_f9.swf    -> REDIRECTS TO: /engine/classes/swfupload/swfupload_f9.swf
+301     0B   http://10.10.10.222:8065/estore/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/examples/jsp/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/examples/servlets/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/extjs/resources//charts.swf    -> REDIRECTS TO: /extjs/resources/charts.swf
+301     0B   http://10.10.10.222:8065/html/js/misc/swfupload//swfupload.swf    -> REDIRECTS TO: /html/js/misc/swfupload/swfupload.swf
+301     0B   http://10.10.10.222:8065/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/logon/LogonPoint/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/manual/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/mifs/user/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/modelsearch/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/panel-administracion/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/phpmyadmin/doc/html/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/phpmyadmin/docs/html/index.html    -> REDIRECTS TO: ./
+404    19B   http://10.10.10.222:8065/plugins/editors/fckeditor
+404    19B   http://10.10.10.222:8065/plugins/fckeditor
+404    19B   http://10.10.10.222:8065/plugins/servlet/gadgets/makeRequest
+404    19B   http://10.10.10.222:8065/plugins/servlet/gadgets/makeRequest?url=https://google.com
+404    19B   http://10.10.10.222:8065/plugins/servlet/oauth/users/icon
+404    19B   http://10.10.10.222:8065/plugins/sfSWFUploadPlugin/web/sfSWFUploadPlugin/swf/swfupload.swf
+404    19B   http://10.10.10.222:8065/plugins/tinymce/
+404    19B   http://10.10.10.222:8065/plugins/tinymce
+404    19B   http://10.10.10.222:8065/plugins/sfSWFUploadPlugin/web/sfSWFUploadPlugin/swf/swfupload_f9.swf
+404    19B   http://10.10.10.222:8065/plugins/tiny_mce
+404    19B   http://10.10.10.222:8065/plugins/tiny_mce/
+404    19B   http://10.10.10.222:8065/plugins/web.config
+404    19B   http://10.10.10.222:8065/plugins/upload.php
+301     0B   http://10.10.10.222:8065/prod-api/druid/index.html    -> REDIRECTS TO: ./
+200    26B   http://10.10.10.222:8065/robots.txt
+301     0B   http://10.10.10.222:8065/siteadmin/index.html    -> REDIRECTS TO: ./
+404    19B   http://10.10.10.222:8065/static/dump.sql
+404    19B   http://10.10.10.222:8065/static/api/swagger.yaml
+404    19B   http://10.10.10.222:8065/static/api/swagger.json
+301     0B   http://10.10.10.222:8065/stzx_admin/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/swagger/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/templates/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/tiny_mce/plugins/imagemanager/pages/im/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/vpn/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/webadmin/index.html    -> REDIRECTS TO: ./
+301     0B   http://10.10.10.222:8065/webdav/index.html    -> REDIRECTS TO: ./

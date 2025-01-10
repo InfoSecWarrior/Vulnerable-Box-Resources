@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Jan  1 10:36:11 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA Blunder-nmap-version-scan-output 10.10.10.191 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA Blunder-nmap-version-scan-output 10.10.10.191" start="1735707971" startstr="Wed Jan  1 10:36:11 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1735707971"/>
+<taskend task="NSE" time="1735707971"/>
+<taskbegin task="NSE" time="1735707971"/>
+<taskend task="NSE" time="1735707971"/>
+<taskbegin task="NSE" time="1735707971"/>
+<taskend task="NSE" time="1735707971"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735707971"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735707971"/>
+<taskbegin task="Connect Scan" time="1735707971"/>
+<taskend task="Connect Scan" time="1735707971" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1735707971"/>
+<taskend task="Service scan" time="1735707978" extrainfo="1 service on 1 host"/>
+<taskbegin task="Traceroute" time="1735707989"/>
+<taskend task="Traceroute" time="1735707990"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735707990"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735707990"/>
+<taskbegin task="NSE" time="1735707990"/>
+<taskend task="NSE" time="1735707995"/>
+<taskbegin task="NSE" time="1735707995"/>
+<taskend task="NSE" time="1735707995"/>
+<taskbegin task="NSE" time="1735707995"/>
+<taskend task="NSE" time="1735707995"/>
+<host starttime="1735707971" endtime="1735707995"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.191" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.191" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-generator" output="Blunder"/><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Blunder | A blunder of interesting facts"><elem key="title">Blunder | A blunder of interesting facts</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: A0F0E5D852F0E3783AF700B6EE9D00DA"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Linux 5.0" accuracy="97" line="68054">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:5.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.15 - 5.8" accuracy="90" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.4" accuracy="90" line="68121">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.3 - 5.4" accuracy="89" line="68158">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="89" line="55662">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.5" accuracy="88" line="68098">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="1125531" lastboot="Thu Dec 19 09:57:44 2024"/>
+<distance value="2"/>
+<tcpsequence index="261" difficulty="Good luck!" values="32790951,B3914622,D9025BF5,A8C4660B,82F3002F,56A30FC6"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="4316137F,431613DE,43161572,43161572,43161572,43161572"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="194.48" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.191" rtt="194.58" host="10.10.10.191"/>
+</trace>
+<times srtt="194477" rttvar="5689" to="217233"/>
+</host>
+<taskbegin task="NSE" time="1735707995"/>
+<taskend task="NSE" time="1735707995"/>
+<taskbegin task="NSE" time="1735707995"/>
+<taskend task="NSE" time="1735707995"/>
+<taskbegin task="NSE" time="1735707995"/>
+<taskend task="NSE" time="1735707995"/>
+<runstats><finished time="1735707995" timestr="Wed Jan  1 10:36:35 2025" summary="Nmap done at Wed Jan  1 10:36:35 2025; 1 IP address (1 host up) scanned in 24.25 seconds" elapsed="24.25" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

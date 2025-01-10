@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Fri Jan  3 13:18:00 2025 as: nmap -v -T4 -Pn -p- -oA Ophiuchi-all-ports-scan-output 10.10.10.227
+Nmap scan report for 10.10.10.227 (10.10.10.227)
+Host is up (0.072s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+8080/tcp open  http-proxy
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Jan  3 13:18:50 2025 -- 1 IP address (1 host up) scanned in 49.94 seconds

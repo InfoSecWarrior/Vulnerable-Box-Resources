@@ -1,0 +1,20 @@
+- Nikto v2.5.0/
++ Target Host: 10.10.10.220
++ Target Port: 5080
++ GET /: Uncommon header 'x-runtime' found, with contents: 0.009731.
++ GET /: Uncommon header 'x-request-id' found, with contents: a9ab46cd-d11d-4323-8685-253715dff4e2.
++ GET /robots.txt: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET /robots.txt: Entry '/autocomplete/users/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/help/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/users/sign_in/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/search/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: contains 53 entries which should be manually viewed. See: https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt: 
++ GET /: The web server may reveal its internal or real IP in the Location header via a request to with HTTP/1.0. The value is "172.19.0.2". See: CVE-2000-0649: 
++ GET /help/: Help directory should not be accessible.
++ GET /demo/: This might be interesting.
++ GET /public/: This might be interesting.
++ GET /search.vts: This might be interesting.
++ GET /test/: This might be interesting.
++ GET /help/home.html: Uncommon header 'x-gitlab-custom-error' found, with contents: 1.
++ GET /help.php: A help file was found.
++ GET /.well-known/openid-configuration: OpenID Provider Configuration Information.

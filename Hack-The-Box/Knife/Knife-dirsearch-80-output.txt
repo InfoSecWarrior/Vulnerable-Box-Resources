@@ -1,0 +1,20 @@
+# Dirsearch started Fri Jan  3 18:56:19 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.242:80 -o Knife-dirsearch-80-output.txt -q
+
+403   277B   http://10.10.10.242/.ht_wsr.txt
+403   277B   http://10.10.10.242/.htaccess.bak1
+403   277B   http://10.10.10.242/.htaccess.orig
+403   277B   http://10.10.10.242/.htaccess.sample
+403   277B   http://10.10.10.242/.htaccess.save
+403   277B   http://10.10.10.242/.htaccess_extra
+403   277B   http://10.10.10.242/.htaccess_orig
+403   277B   http://10.10.10.242/.htaccessBAK
+403   277B   http://10.10.10.242/.htaccessOLD2
+403   277B   http://10.10.10.242/.htaccessOLD
+403   277B   http://10.10.10.242/.htaccess_sc
+403   277B   http://10.10.10.242/.htm
+403   277B   http://10.10.10.242/.html
+403   277B   http://10.10.10.242/.htpasswd_test
+403   277B   http://10.10.10.242/.htpasswds
+403   277B   http://10.10.10.242/.httr-oauth
+403   277B   http://10.10.10.242/server-status
+403   277B   http://10.10.10.242/server-status/

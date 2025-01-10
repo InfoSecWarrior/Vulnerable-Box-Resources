@@ -1,0 +1,22 @@
+# Dirsearch started Tue Dec 24 13:38:53 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.143:64999 -o Jarvis-dirsearch-64999-output.txt -q
+
+403   280B   http://10.10.10.143:64999/.ht_wsr.txt
+403   280B   http://10.10.10.143:64999/.htaccess.bak1
+403   280B   http://10.10.10.143:64999/.htaccess.orig
+403   280B   http://10.10.10.143:64999/.htaccess.sample
+403   280B   http://10.10.10.143:64999/.htaccess.save
+403   280B   http://10.10.10.143:64999/.htaccess_extra
+403   280B   http://10.10.10.143:64999/.htaccess_orig
+403   280B   http://10.10.10.143:64999/.htaccess_sc
+403   280B   http://10.10.10.143:64999/.htaccessOLD
+403   280B   http://10.10.10.143:64999/.htaccessBAK
+403   280B   http://10.10.10.143:64999/.htaccessOLD2
+403   280B   http://10.10.10.143:64999/.htm
+403   280B   http://10.10.10.143:64999/.html
+403   280B   http://10.10.10.143:64999/.htpasswd_test
+403   280B   http://10.10.10.143:64999/.htpasswds
+403   280B   http://10.10.10.143:64999/.httr-oauth
+403   280B   http://10.10.10.143:64999/.php
+403   280B   http://10.10.10.143:64999/.php3
+403   280B   http://10.10.10.143:64999/server-status
+403   280B   http://10.10.10.143:64999/server-status/

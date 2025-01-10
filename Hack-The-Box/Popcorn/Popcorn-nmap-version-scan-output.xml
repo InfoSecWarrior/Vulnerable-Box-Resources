@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Dec 27 13:51:42 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA Popcorn-nmap-version-scan-output 10.10.10.6 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA Popcorn-nmap-version-scan-output 10.10.10.6" start="1735287702" startstr="Fri Dec 27 13:51:42 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1735287703"/>
+<taskend task="NSE" time="1735287703"/>
+<taskbegin task="NSE" time="1735287703"/>
+<taskend task="NSE" time="1735287703"/>
+<taskbegin task="NSE" time="1735287703"/>
+<taskend task="NSE" time="1735287703"/>
+<taskbegin task="Connect Scan" time="1735287703"/>
+<taskend task="Connect Scan" time="1735287703" extrainfo="2 total ports"/>
+<taskbegin task="Service scan" time="1735287703"/>
+<taskend task="Service scan" time="1735287709" extrainfo="2 services on 1 host"/>
+<taskbegin task="Traceroute" time="1735287715"/>
+<taskend task="Traceroute" time="1735287715"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735287715"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735287715"/>
+<taskbegin task="NSE" time="1735287715"/>
+<taskend task="NSE" time="1735287724"/>
+<taskbegin task="NSE" time="1735287724"/>
+<taskend task="NSE" time="1735287725"/>
+<taskbegin task="NSE" time="1735287725"/>
+<taskend task="NSE" time="1735287725"/>
+<host starttime="1735287703" endtime="1735287725"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.6" addrtype="ipv4"/>
+<hostnames>
+<hostname name="popcorn.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="5.1p1 Debian 6ubuntu2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:5.1p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 3e:c8:1b:15:21:15:50:ec:6e:63:bc:c5:6b:80:7b:38 (DSA)&#xa;  2048 aa:1f:79:21:b8:42:f4:8a:38:bd:b8:05:ef:1a:07:4d (RSA)"><table>
+<elem key="fingerprint">3ec81b15211550ec6e63bcc56b807b38</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAIAn8zzHM1eVS/OaLgV6dgOKaT+kyvjU0pMUqZJ3AgvyOrxHa2m+ydNk8cixF9lP3Z8gLwquTxJDuNJ05xnz9/DzZClqfNfiqrZRACYXsquSAab512kkl+X6CexJYcDVK4qyuXRSEgp4OFY956Aa3CCL7TfZxn+N57WrsBoTEb9PAAAAFQDMosEYukWOzwL00PlxxLC+lBadWQAAAIAhp9/JSROW1jeMX4hCS6Q/M8D1UJYyat9aXoHKg8612mSo/OH8Ht9ULA2vrt06lxoC3O8/1pVD8oztKdJgfQlWW5fLujQajJ+nGVrwGvCRkNjcI0Sfu5zKow+mOG4irtAmAXwPoO5IQJmP0WOgkr+3x8nWazHymoQlCUPBMlDPvgAAAIBmZAfIvcEQmRo8Ef1RaM8vW6FHXFtKFKFWkSJ42XTl3opaSsLaJrgvpimA+wc4bZbrFc4YGsPc+kZbvXN3iPUvQqEldak3yUZRRL3hkF3g3iWjmkpMG/fxNgyJhyDy5tkNRthJWWZoSzxS7sJyPCn6HzYvZ+lKxPNODL+TROLkmQ==</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="bits">1024</elem>
+</table>
+<table>
+<elem key="fingerprint">aa1f7921b842f48a38bdb805ef1a074d</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAQEAyBXr3xI9cjrxMH2+DB7lZ6ctfgrek3xenkLLv2vJhQQpQ2ZfBrvkXLsSjQHHwgEbNyNUL+M1OmPFaUPTKiPVP9co0DEzq0RAC+/T4shxnYmxtACC0hqRVQ1HpE4AVjSagfFAmqUvyvSdbGvOeX7WC00SZWPgavL6pVq0qdRm3H22zIVw/Ty9SKxXGmN0qOBq6Lqs2FG8A14fJS9F8GcN9Q7CVGuSIO+UUH53KDOI+vzZqrFbvfz5dwClD19ybduWo95sdUUq/ECtoZ3zuFb6ROI5JJGNWFb6NqfTxAM43+ffZfY28AjB1QntYkezb1Bs04k8FYxb5H7JwhWewoe8xQ==</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.12" hostname="popcorn.hackthebox.gr" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.12</cpe></service><script id="http-server-header" output="Apache/2.2.12 (Ubuntu)"><elem>Apache/2.2.12 (Ubuntu)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="30042"/>
+<osmatch name="Linux 2.6.17" accuracy="96" line="48536">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.17 - 2.6.36" accuracy="96" line="48803">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="96" line="54343">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.20 (Red Hat 7.2)" accuracy="95" line="45425">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.4.20</cpe></osclass>
+</osmatch>
+<osmatch name="AVM FRITZ!Box FON WLAN 7240 WAP" accuracy="95" line="8885">
+<osclass type="WAP" vendor="AVM" osfamily="embedded" accuracy="95"><cpe>cpe:/h:avm:fritz%21box_fon_wlan_7240</cpe></osclass>
+</osmatch>
+<osmatch name="Android 2.3.5 (Linux 2.6)" accuracy="95" line="30864">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="2.X" accuracy="95"><cpe>cpe:/o:google:android:2.3.5</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.30" accuracy="95" line="53771">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.30</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.35" accuracy="95" line="57032">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.35</cpe></osclass>
+</osmatch>
+<osmatch name="Canon imageRUNNER ADVANCE C3320i or C3325 copier" accuracy="94" line="12719">
+<osclass type="printer" vendor="Canon" osfamily="embedded" accuracy="94"><cpe>cpe:/h:canon:imagerunner_advance_c3320i</cpe><cpe>cpe:/h:canon:imagerunner_advance_c3325</cpe></osclass>
+</osmatch>
+<osmatch name="Epson WF-2660 printer" accuracy="94" line="24615">
+<osclass type="printer" vendor="Epson" osfamily="embedded" accuracy="94"><cpe>cpe:/h:epson:wf-2660</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="365" lastboot="Fri Dec 27 13:46:00 2024"/>
+<distance value="2"/>
+<tcpsequence index="194" difficulty="Good luck!" values="B479D31B,B4678742,B4B20271,B5041E8D,B4BEE0E3,B458DDF8"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="15092,150A9,150C1,150D9,150F3,1510C"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="130.85" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.6" rtt="131.02" host="popcorn.htb"/>
+</trace>
+<times srtt="128247" rttvar="42263" to="297299"/>
+</host>
+<taskbegin task="NSE" time="1735287725"/>
+<taskend task="NSE" time="1735287725"/>
+<taskbegin task="NSE" time="1735287725"/>
+<taskend task="NSE" time="1735287725"/>
+<taskbegin task="NSE" time="1735287725"/>
+<taskend task="NSE" time="1735287725"/>
+<runstats><finished time="1735287725" timestr="Fri Dec 27 13:52:05 2024" summary="Nmap done at Fri Dec 27 13:52:05 2024; 1 IP address (1 host up) scanned in 22.95 seconds" elapsed="22.95" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Sat Dec 28 15:30:17 2024 as: nmap -v -T4 -Pn -p- -oA Mango-all-ports-scan-output 10.10.10.162
+Increasing send delay for 10.10.10.162 from 5 to 10 due to 11 out of 17 dropped probes since last increase.
+Nmap scan report for 10.10.10.162 (10.10.10.162)
+Host is up (0.21s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Dec 28 15:40:18 2024 -- 1 IP address (1 host up) scanned in 601.49 seconds

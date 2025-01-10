@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Jan  2 17:50:52 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA Time-nmap-version-scan-output 10.10.10.214 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80 -oA Time-nmap-version-scan-output 10.10.10.214" start="1735820452" startstr="Thu Jan  2 17:50:52 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1735820453"/>
+<taskend task="NSE" time="1735820453"/>
+<taskbegin task="NSE" time="1735820453"/>
+<taskend task="NSE" time="1735820453"/>
+<taskbegin task="NSE" time="1735820453"/>
+<taskend task="NSE" time="1735820453"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735820453"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735820453"/>
+<taskbegin task="Connect Scan" time="1735820453"/>
+<taskend task="Connect Scan" time="1735820453" extrainfo="2 total ports"/>
+<taskbegin task="Service scan" time="1735820453"/>
+<taskend task="Service scan" time="1735820460" extrainfo="2 services on 1 host"/>
+<taskbegin task="Traceroute" time="1735820464"/>
+<taskend task="Traceroute" time="1735820464"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735820464"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735820464"/>
+<taskbegin task="NSE" time="1735820464"/>
+<taskend task="NSE" time="1735820469"/>
+<taskbegin task="NSE" time="1735820469"/>
+<taskend task="NSE" time="1735820469"/>
+<taskbegin task="NSE" time="1735820469"/>
+<taskend task="NSE" time="1735820469"/>
+<host starttime="1735820453" endtime="1735820469"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.214" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.214" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.1" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 0f:7d:97:82:5f:04:2b:e0:0a:56:32:5d:14:56:82:d4 (RSA)&#xa;  256 24:ea:53:49:d8:cb:9b:fc:d6:c4:26:ef:dd:34:c1:1e (ECDSA)&#xa;  256 fe:25:34:e4:3e:df:9f:ed:62:2a:a4:93:52:cc:cd:27 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDqO75jA9cYksdPP+eBZBYzvJERbVfExL7kXpMJQpmpHoJdl9EG/wSsXgEH4BXsa56Rv2i32ClI7QvykILEpL6JyhHi3xS8vlNud8CQCYCYNCiBzpa84ucBbLpFaR331qH3n1PNrlBjvH0g4jmlQjlKMHRNSjxOS5XjO3JMYFhBkI3tZKXuo9dg/0wHwXXbGa5gFihkrTkGqinaPRACYC8FCgQ3UUpUzjTUUwSLMMMMAUJX+WkqPiD3++VCSmQmJn4rtOQK2PNzesJQFrHk5BLj6J2gfLUkgvVu2dMVCYAJ8Pom+sYRLq5dkBdaXugjpFXGWFXxYjh57h21HVtkdAVyObBu4iNlZQNYNPpYKuLbmTKdEv86FMfw/g1ZasV1q53gEc4vWyWVQSkarHXPyMYTY1nsFEIvkhGl8CsuwS0HioWaBRsF/+jQF+5Zty43VWJuu+PanAIOelmxAHrfNm//XrIW7RjqCLEDj0MpUeK4KUMx7WPuyE10zpESpuqhtAU=</elem>
+<elem key="fingerprint">0f7d97825f042be00a56325d145682d4</elem>
+<elem key="bits">3072</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCY27npy127v6WaSs6QO9MlX1RCjlp8ceQ0UyP6SfI+Q7UZrmg0qLFANnuqkm8iNio+TLTTOIAv5itdE0ahgzgE=</elem>
+<elem key="fingerprint">24ea5349d8cb9bfcd6c426efdd34c11e</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIFy9CB1oSRwsAZJb6AMVD7/T0qxBk2G7/hV2Db57c0Kj</elem>
+<elem key="fingerprint">fe2534e43edf9fed622aa49352cccd27</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-favicon" output="Unknown favicon MD5: 7D4140C76BF7648531683BFA4F7F8C22"/><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script><script id="http-title" output="Online JSON parser"><elem key="title">Online JSON parser</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="udp" portid="44520"/>
+<osmatch name="Linux 5.0" accuracy="96" line="68054">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:5.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.15 - 5.8" accuracy="95" line="67250">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.0 - 5.5" accuracy="95" line="68098">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.1" accuracy="95" line="62926">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="95" line="64673">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.3 - 5.4" accuracy="95" line="68158">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="95" line="61824">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="95"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="94" line="55662">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="93" line="8405">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="93"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="93" line="64180">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="2482738" lastboot="Thu Dec  5 00:12:11 2024"/>
+<distance value="2"/>
+<tcpsequence index="248" difficulty="Good luck!" values="73A4F50D,8BA1E6F1,A1EB19C3,C894E18B,976DAD10,C7B92151"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="93FB7C73,93FB7CD4,93FB7D38,93FB7D9C,93FB7E02,93FB7E65"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="372.14" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.214" rtt="372.34" host="10.10.10.214"/>
+</trace>
+<times srtt="118851" rttvar="79362" to="436299"/>
+</host>
+<taskbegin task="NSE" time="1735820469"/>
+<taskend task="NSE" time="1735820469"/>
+<taskbegin task="NSE" time="1735820469"/>
+<taskend task="NSE" time="1735820469"/>
+<taskbegin task="NSE" time="1735820469"/>
+<taskend task="NSE" time="1735820469"/>
+<runstats><finished time="1735820469" timestr="Thu Jan  2 17:51:09 2025" summary="Nmap done at Thu Jan  2 17:51:09 2025; 1 IP address (1 host up) scanned in 17.17 seconds" elapsed="17.17" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

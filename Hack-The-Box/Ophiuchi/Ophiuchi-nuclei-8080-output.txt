@@ -1,0 +1,3 @@
+[cookies-without-secure] [javascript] [info] 10.10.10.227:8080 ["JSESSIONID"]
+[ssh-auth-methods] [javascript] [info] 10.10.10.227:22 ["["publickey","password"]"]
+[CVE-2023-48795] [javascript] [medium] 10.10.10.227:22 ["Vulnerable to Terrapin"]

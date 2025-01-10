@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Sat Dec 28 15:30:17 2024 as: nmap -v -T4 -Pn -p- -oA Mango-all-ports-scan-output 10.10.10.162
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.162 (10.10.10.162)	Status: Up
+Host: 10.10.10.162 (10.10.10.162)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 443/open/tcp//https///	Ignored State: closed (65532)
+# Nmap done at Sat Dec 28 15:40:18 2024 -- 1 IP address (1 host up) scanned in 601.49 seconds

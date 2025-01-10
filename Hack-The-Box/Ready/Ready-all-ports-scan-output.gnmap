@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Fri Jan  3 10:28:14 2025 as: nmap -v -T4 -Pn -p- -oA Ready-all-ports-scan-output 10.10.10.220
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.220 (10.10.10.220)	Status: Up
+Host: 10.10.10.220 (10.10.10.220)	Ports: 22/open/tcp//ssh///, 5080/open/tcp//onscreen///, 7901/filtered/tcp//tnos-sp///, 14539/filtered/tcp/////, 14726/filtered/tcp/////, 17123/filtered/tcp/////, 17741/filtered/tcp/////, 19359/filtered/tcp/////, 24092/filtered/tcp/////, 25192/filtered/tcp/////, 37088/filtered/tcp/////, 42206/filtered/tcp/////, 42423/filtered/tcp/////, 42855/filtered/tcp/////, 45672/filtered/tcp/////, 48182/filtered/tcp/////, 51874/filtered/tcp/////, 55280/filtered/tcp/////, 55555/filtered/tcp/////, 57239/filtered/tcp/////	Ignored State: closed (65515)
+# Nmap done at Fri Jan  3 10:42:27 2025 -- 1 IP address (1 host up) scanned in 852.60 seconds

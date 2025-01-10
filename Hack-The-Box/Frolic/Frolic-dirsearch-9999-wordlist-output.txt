@@ -1,0 +1,7 @@
+# Dirsearch started Wed Jan  1 14:39:52 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.111:9999 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Frolic-dirsearch-9999-wordlist-output.txt -q
+
+301   194B   http://10.10.10.111:9999/admin    -> REDIRECTS TO: http://10.10.10.111:9999/admin/
+301   194B   http://10.10.10.111:9999/test    -> REDIRECTS TO: http://10.10.10.111:9999/test/
+301   194B   http://10.10.10.111:9999/dev    -> REDIRECTS TO: http://10.10.10.111:9999/dev/
+301   194B   http://10.10.10.111:9999/backup    -> REDIRECTS TO: http://10.10.10.111:9999/backup/
+301   194B   http://10.10.10.111:9999/loop    -> REDIRECTS TO: http://10.10.10.111:9999/loop/

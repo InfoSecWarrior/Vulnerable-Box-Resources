@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Fri Dec 27 10:42:51 2024 as: nmap -v -T4 -Pn -p- -oA Mirai-all-ports-scan-output 10.10.10.48 -->
+<nmaprun scanner="nmap" args="nmap -v -T4 -Pn -p- -oA Mirai-all-ports-scan-output 10.10.10.48" start="1735276371" startstr="Fri Dec 27 10:42:51 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1735276371"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1735276371"/>
+<taskbegin task="SYN Stealth Scan" time="1735276371"/>
+<taskend task="SYN Stealth Scan" time="1735276496" extrainfo="65535 total ports"/>
+<host starttime="1735276371" endtime="1735276496"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.48" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.48" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65529">
+<extrareasons reason="reset" count="65529" proto="tcp" ports="1-21,23-52,54-79,81-1916,1918-32399,32401-32468,32470-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1917"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="noagent" method="table" conf="3"/></port>
+<port protocol="tcp" portid="32400"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="plex" method="table" conf="3"/></port>
+<port protocol="tcp" portid="32469"><state state="open" reason="syn-ack" reason_ttl="63"/></port>
+</ports>
+<times srtt="75202" rttvar="1687" to="100000"/>
+</host>
+<runstats><finished time="1735276496" timestr="Fri Dec 27 10:44:56 2024" summary="Nmap done at Fri Dec 27 10:44:56 2024; 1 IP address (1 host up) scanned in 125.25 seconds" elapsed="125.25" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

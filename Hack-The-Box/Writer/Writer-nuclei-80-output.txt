@@ -1,0 +1,10 @@
+[waf-detect:apachegeneric] [http] [info] http://10.10.11.101:80
+[smb2-capabilities] [javascript] [info] 10.10.11.101:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb2-server-time] [javascript] [info] 10.10.11.101:445 ["SystemTime: 2025-01-08T07:49:15.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-signing] [javascript] [medium] 10.10.11.101:445
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.11.101:22
+[ssh-password-auth] [javascript] [info] 10.10.11.101:22
+[ssh-server-enumeration] [javascript] [info] 10.10.11.101:22 ["SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2"]
+[ssh-auth-methods] [javascript] [info] 10.10.11.101:22 ["["publickey","password"]"]
+[CVE-2023-48795] [javascript] [medium] 10.10.11.101:22 ["Vulnerable to Terrapin"]
+[smb-anonymous-access] [javascript] [high] 10.10.11.101:445

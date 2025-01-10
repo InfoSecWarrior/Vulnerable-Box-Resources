@@ -1,0 +1,18 @@
+# Dirsearch started Thu Jan  2 10:27:36 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u https://10.10.10.209:8089 -o Doctor-dirsearch-8089-output.txt -q
+
+200    26B   https://10.10.10.209:8089/robots.txt
+404    15B   https://10.10.10.209:8089/rpc/
+401   130B   https://10.10.10.209:8089/services/
+401   130B   https://10.10.10.209:8089/services
+401   130B   https://10.10.10.209:8089/services/config/databases.yml
+200     2KB  https://10.10.10.209:8089/v1
+200     2KB  https://10.10.10.209:8089/v1.0/
+200     2KB  https://10.10.10.209:8089/v1.0
+200     2KB  https://10.10.10.209:8089/v1.1
+200     2KB  https://10.10.10.209:8089/v1/
+200     2KB  https://10.10.10.209:8089/v2
+200     2KB  https://10.10.10.209:8089/v2.0
+200     2KB  https://10.10.10.209:8089/v2/
+200     2KB  https://10.10.10.209:8089/v3
+200     2KB  https://10.10.10.209:8089/v3/
+200     2KB  https://10.10.10.209:8089/v4/

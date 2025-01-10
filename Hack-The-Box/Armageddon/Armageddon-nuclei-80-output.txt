@@ -1,0 +1,8 @@
+[http-trace:trace-request] [http] [info] http://10.10.10.233:80
+[missing-sri] [http] [info] http://10.10.10.233:80 ["http://10.10.10.233/misc/jquery.js?v=1.4.4","http://10.10.10.233/misc/jquery.once.js?v=1.2","http://10.10.10.233/misc/drupal.js?qkrkcw"]
+[waf-detect:apachegeneric] [http] [info] http://10.10.10.233:80
+[CVE-2023-48795] [javascript] [medium] 10.10.10.233:22 ["Vulnerable to Terrapin"]
+[ssh-password-auth] [javascript] [info] 10.10.10.233:22
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.10.233:22
+[ssh-diffie-hellman-logjam] [javascript] [low] 10.10.10.233:22
+[ssh-server-enumeration] [javascript] [info] 10.10.10.233:22 ["SSH-2.0-OpenSSH_7.4"]

@@ -1,0 +1,6 @@
+[waf-detect:nginxgeneric] [http] [info] http://10.10.10.241:80
+[CVE-2023-48795] [javascript] [medium] 10.10.10.241:22 ["Vulnerable to Terrapin"]
+[ssh-server-enumeration] [javascript] [info] 10.10.10.241:22 ["SSH-2.0-OpenSSH_8.0"]
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.10.241:22
+[ssh-cbc-mode-ciphers] [javascript] [low] 10.10.10.241:22
+[ssh-weakkey-exchange-algo] [javascript] [low] 10.10.10.241:22

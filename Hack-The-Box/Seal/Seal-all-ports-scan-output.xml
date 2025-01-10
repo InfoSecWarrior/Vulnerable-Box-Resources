@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Jan  7 13:47:20 2025 as: nmap -v -T4 -Pn -p- -oA Seal-all-ports-scan-output 10.10.10.250 -->
+<nmaprun scanner="nmap" args="nmap -v -T4 -Pn -p- -oA Seal-all-ports-scan-output 10.10.10.250" start="1736237840" startstr="Tue Jan  7 13:47:20 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1736237840"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1736237840"/>
+<taskbegin task="SYN Stealth Scan" time="1736237840"/>
+<taskprogress task="SYN Stealth Scan" time="1736237871" percent="4.64" remaining="637" etc="1736238508"/>
+<taskprogress task="SYN Stealth Scan" time="1736237901" percent="7.81" remaining="721" etc="1736238621"/>
+<taskprogress task="SYN Stealth Scan" time="1736237949" percent="13.83" remaining="679" etc="1736238628"/>
+<taskprogress task="SYN Stealth Scan" time="1736237982" percent="18.27" remaining="636" etc="1736238617"/>
+<taskprogress task="SYN Stealth Scan" time="1736238012" percent="22.98" remaining="577" etc="1736238588"/>
+<taskprogress task="SYN Stealth Scan" time="1736238045" percent="25.04" remaining="614" etc="1736238659"/>
+<taskprogress task="SYN Stealth Scan" time="1736238096" percent="28.03" remaining="658" etc="1736238753"/>
+<taskprogress task="SYN Stealth Scan" time="1736238165" percent="34.87" remaining="608" etc="1736238772"/>
+<taskprogress task="SYN Stealth Scan" time="1736238195" percent="38.99" remaining="556" etc="1736238751"/>
+<taskprogress task="SYN Stealth Scan" time="1736238234" percent="43.74" remaining="507" etc="1736238741"/>
+<taskprogress task="SYN Stealth Scan" time="1736238270" percent="48.26" remaining="461" etc="1736238731"/>
+<taskprogress task="SYN Stealth Scan" time="1736238309" percent="52.99" remaining="417" etc="1736238725"/>
+<taskprogress task="SYN Stealth Scan" time="1736238345" percent="57.63" remaining="372" etc="1736238716"/>
+<taskprogress task="SYN Stealth Scan" time="1736238381" percent="62.42" remaining="326" etc="1736238707"/>
+<taskprogress task="SYN Stealth Scan" time="1736238420" percent="67.47" remaining="280" etc="1736238700"/>
+<taskprogress task="SYN Stealth Scan" time="1736238456" percent="72.40" remaining="235" etc="1736238691"/>
+<taskprogress task="SYN Stealth Scan" time="1736238498" percent="77.48" remaining="192" etc="1736238689"/>
+<taskprogress task="SYN Stealth Scan" time="1736238537" percent="82.56" remaining="148" etc="1736238684"/>
+<taskprogress task="SYN Stealth Scan" time="1736238579" percent="87.80" remaining="103" etc="1736238682"/>
+<taskprogress task="SYN Stealth Scan" time="1736238615" percent="92.73" remaining="61" etc="1736238676"/>
+<taskend task="SYN Stealth Scan" time="1736238689" extrainfo="65535 total ports"/>
+<host starttime="1736237840" endtime="1736238689"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.250" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.250" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65507">
+<extrareasons reason="reset" count="65507" proto="tcp" ports="1-21,23-442,444-4124,4126-8079,8081-10413,10415-14036,14038-16962,16964-19100,19102-20479,20481-21327,21329-23978,23980-29158,29160-32680,32682-33832,33834-35757,35759-36709,36711-36742,36744-42734,42736-46792,46794-48467,48469-51598,51600-54565,54567-54609,54611-55024,55026-55806,55808-58830,58832-63070,63072-64724,64726-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4125"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rww" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10414"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="14037"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="16963"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="19101"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="20480"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="emwavemsg" method="table" conf="3"/></port>
+<port protocol="tcp" portid="21328"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="23979"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="29159"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32681"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="33833"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="35758"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="36710"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="36743"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="42735"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="46793"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="48468"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51599"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54566"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54610"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55025"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55807"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58831"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="63071"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="64725"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+</ports>
+<times srtt="76042" rttvar="1917" to="100000"/>
+</host>
+<runstats><finished time="1736238689" timestr="Tue Jan  7 14:01:29 2025" summary="Nmap done at Tue Jan  7 14:01:29 2025; 1 IP address (1 host up) scanned in 849.05 seconds" elapsed="849.05" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

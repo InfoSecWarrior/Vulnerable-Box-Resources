@@ -1,0 +1,59 @@
+# Dirsearch started Tue Dec 24 11:18:40 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.140:80 -o SwagShop-dirsearch-80-output.txt -q
+
+301   309B   http://10.10.10.140/js    -> REDIRECTS TO: http://10.10.10.140/js/
+403   277B   http://10.10.10.140/.ht_wsr.txt
+403   277B   http://10.10.10.140/.htaccess.orig
+403   277B   http://10.10.10.140/.htaccess.sample
+403   277B   http://10.10.10.140/.htaccess.save
+403   277B   http://10.10.10.140/.htaccess_extra
+403   277B   http://10.10.10.140/.htaccessBAK
+403   277B   http://10.10.10.140/.htaccess_orig
+403   277B   http://10.10.10.140/.htaccess_sc
+403   277B   http://10.10.10.140/.htaccess.bak1
+403   277B   http://10.10.10.140/.htaccessOLD2
+403   277B   http://10.10.10.140/.htm
+403   277B   http://10.10.10.140/.html
+403   277B   http://10.10.10.140/.htaccessOLD
+403   277B   http://10.10.10.140/.htpasswds
+403   277B   http://10.10.10.140/.htpasswd_test
+403   277B   http://10.10.10.140/.httr-oauth
+403   277B   http://10.10.10.140/.php
+403   277B   http://10.10.10.140/.php3
+200    37B   http://10.10.10.140/api.php
+301   310B   http://10.10.10.140/app    -> REDIRECTS TO: http://10.10.10.140/app/
+200   522B   http://10.10.10.140/app/
+200     1KB  http://10.10.10.140/app/etc/config.xml
+200   998B   http://10.10.10.140/app/etc/local.xml
+200   895B   http://10.10.10.140/app/etc/local.xml.template
+200     3KB  http://10.10.10.140/app/etc/local.xml.additional
+200     0B   http://10.10.10.140/cron.php
+200   717B   http://10.10.10.140/cron.sh
+301   313B   http://10.10.10.140/errors    -> REDIRECTS TO: http://10.10.10.140/errors/
+200   570B   http://10.10.10.140/errors/
+200     1KB  http://10.10.10.140/favicon.ico
+404     0B   http://10.10.10.140/get.php
+301   315B   http://10.10.10.140/includes    -> REDIRECTS TO: http://10.10.10.140/includes/
+200   456B   http://10.10.10.140/includes/
+200    44B   http://10.10.10.140/install.php
+200    44B   http://10.10.10.140/install.php?profile=default
+404    52B   http://10.10.10.140/js/
+301   318B   http://10.10.10.140/js/tiny_mce    -> REDIRECTS TO: http://10.10.10.140/js/tiny_mce/
+200   697B   http://10.10.10.140/js/tiny_mce/
+301   310B   http://10.10.10.140/lib    -> REDIRECTS TO: http://10.10.10.140/lib/
+200   551B   http://10.10.10.140/lib/
+200     4KB  http://10.10.10.140/LICENSE.txt
+301   312B   http://10.10.10.140/media    -> REDIRECTS TO: http://10.10.10.140/media/
+200   501B   http://10.10.10.140/media/
+200   886B   http://10.10.10.140/php.ini.sample
+301   314B   http://10.10.10.140/pkginfo    -> REDIRECTS TO: http://10.10.10.140/pkginfo/
+200   571KB  http://10.10.10.140/RELEASE_NOTES.txt
+403   277B   http://10.10.10.140/server-status
+403   277B   http://10.10.10.140/server-status/
+301   312B   http://10.10.10.140/shell    -> REDIRECTS TO: http://10.10.10.140/shell/
+200   503B   http://10.10.10.140/shell/
+301   311B   http://10.10.10.140/skin    -> REDIRECTS TO: http://10.10.10.140/skin/
+200   577B   http://10.10.10.140/var/
+301   310B   http://10.10.10.140/var    -> REDIRECTS TO: http://10.10.10.140/var/
+200   569B   http://10.10.10.140/var/cache/
+200   407B   http://10.10.10.140/var/backups/
+200     1KB  http://10.10.10.140/var/package/

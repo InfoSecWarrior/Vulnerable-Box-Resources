@@ -1,0 +1,5 @@
+# Dirsearch started Tue Jan  7 16:28:48 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.11.104:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Previse-dirsearch-80-wordlist-output.txt -q
+
+301   310B   http://10.10.11.104/css    -> REDIRECTS TO: http://10.10.11.104/css/
+301   309B   http://10.10.11.104/js    -> REDIRECTS TO: http://10.10.11.104/js/
+403   277B   http://10.10.11.104/server-status

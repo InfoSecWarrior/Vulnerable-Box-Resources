@@ -1,0 +1,48 @@
+# Dirsearch started Fri Jan  3 12:09:19 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.220:5080 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Ready-dirsearch-5080-wordlist-output.txt -q
+
+200    12KB  http://10.10.10.220:5080/search
+200    37KB  http://10.10.10.220:5080/help
+302    98B   http://10.10.10.220:5080/projects    -> REDIRECTS TO: http://10.10.10.220:5080/explore
+200    13KB  http://10.10.10.220:5080/public
+200    15KB  http://10.10.10.220:5080/demo
+302   105B   http://10.10.10.220:5080/groups    -> REDIRECTS TO: http://10.10.10.220:5080/explore/groups
+200    15KB  http://10.10.10.220:5080/test
+200    15KB  http://10.10.10.220:5080/root
+200    13KB  http://10.10.10.220:5080/explore
+301    91B   http://10.10.10.220:5080/ci    -> REDIRECTS TO: http://10.10.10.220:5080/
+302    95B   http://10.10.10.220:5080/Demo    -> REDIRECTS TO: http://10.10.10.220:5080/demo
+302    95B   http://10.10.10.220:5080/Test    -> REDIRECTS TO: http://10.10.10.220:5080/test
+302   107B   http://10.10.10.220:5080/snippets    -> REDIRECTS TO: http://10.10.10.220:5080/explore/snippets
+302    95B   http://10.10.10.220:5080/DEMO    -> REDIRECTS TO: http://10.10.10.220:5080/demo
+400     0B   http://10.10.10.220:5080/%C0
+200    15KB  http://10.10.10.220:5080/dude
+404     3KB  http://10.10.10.220:5080/health_check
+400     0B   http://10.10.10.220:5080/%CE
+400     0B   http://10.10.10.220:5080/%D8
+400     0B   http://10.10.10.220:5080/%CD
+400     0B   http://10.10.10.220:5080/%D2
+400     0B   http://10.10.10.220:5080/%D3
+400     0B   http://10.10.10.220:5080/%D7
+400     0B   http://10.10.10.220:5080/%CF
+400     0B   http://10.10.10.220:5080/%CA
+400     0B   http://10.10.10.220:5080/%CC
+400     0B   http://10.10.10.220:5080/%D4
+400     0B   http://10.10.10.220:5080/%CB
+400     0B   http://10.10.10.220:5080/%D0
+400     0B   http://10.10.10.220:5080/%D5
+400     0B   http://10.10.10.220:5080/%D6
+400     0B   http://10.10.10.220:5080/%D1
+400     0B   http://10.10.10.220:5080/%C7
+400     0B   http://10.10.10.220:5080/%C1
+400     0B   http://10.10.10.220:5080/%C8
+400     0B   http://10.10.10.220:5080/%C9
+400     0B   http://10.10.10.220:5080/%C6
+400     0B   http://10.10.10.220:5080/%C2
+400     0B   http://10.10.10.220:5080/%D9
+400     0B   http://10.10.10.220:5080/%C5
+400     0B   http://10.10.10.220:5080/%C3
+400     0B   http://10.10.10.220:5080/%C4
+400     0B   http://10.10.10.220:5080/%DF
+400     0B   http://10.10.10.220:5080/%DD
+400     0B   http://10.10.10.220:5080/%DE
+400     0B   http://10.10.10.220:5080/%DB

@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Jan  7 10:18:46 2025 as: nmap -v -T4 -Pn -p- -oA Pit-all-ports-scan-output 10.10.10.241
+Nmap scan report for 10.10.10.241 (10.10.10.241)
+Host is up (0.090s latency).
+Not shown: 65164 filtered tcp ports (no-response), 368 filtered tcp ports (admin-prohibited)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+9090/tcp open  zeus-admin
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Jan  7 10:24:46 2025 -- 1 IP address (1 host up) scanned in 359.84 seconds

@@ -1,0 +1,14 @@
+# Dirsearch started Wed Jan  1 14:57:49 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.111:1880 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Frolic-dirsearch-1880-wordlist-output.txt -q
+
+401    12B   http://10.10.10.111:1880/icons
+404     0B   http://10.10.10.111:1880/projects
+301   173B   http://10.10.10.111:1880/red    -> REDIRECTS TO: /red/
+301   179B   http://10.10.10.111:1880/vendor    -> REDIRECTS TO: /vendor/
+404     0B   http://10.10.10.111:1880/Projects
+401    12B   http://10.10.10.111:1880/settings
+401    12B   http://10.10.10.111:1880/Icons
+401    12B   http://10.10.10.111:1880/nodes
+404     0B   http://10.10.10.111:1880/PROJECTS
+401    12B   http://10.10.10.111:1880/SETTINGS
+401    12B   http://10.10.10.111:1880/flows
+401    12B   http://10.10.10.111:1880/ICONS

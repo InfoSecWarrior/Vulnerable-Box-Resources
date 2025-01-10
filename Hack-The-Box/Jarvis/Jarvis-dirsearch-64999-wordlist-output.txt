@@ -1,0 +1,3 @@
+# Dirsearch started Tue Dec 24 13:45:37 2024 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.143:64999 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Jarvis-dirsearch-64999-wordlist-output.txt -q
+
+403   280B   http://10.10.10.143:64999/server-status

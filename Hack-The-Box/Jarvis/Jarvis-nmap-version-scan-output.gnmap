@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Tue Dec 24 13:37:50 2024 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,64999 -oA Jarvis-nmap-version-scan-output 10.10.10.143
+# Ports scanned: TCP(3;22,80,64999) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.143 (10.10.10.143)	Status: Up
+Host: 10.10.10.143 (10.10.10.143)	Ports: 22/open/tcp//ssh//OpenSSH 7.4p1 Debian 10+deb9u6 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.25 ((Debian))/, 64999/open/tcp//http//Apache httpd 2.4.25 ((Debian))/	Seq Index: 252	IP ID Seq: All zeros
+# Nmap done at Tue Dec 24 13:38:09 2024 -- 1 IP address (1 host up) scanned in 18.88 seconds
