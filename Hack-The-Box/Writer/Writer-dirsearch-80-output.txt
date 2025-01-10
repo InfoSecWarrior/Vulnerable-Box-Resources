@@ -1,0 +1,13 @@
+# Dirsearch started Wed Jan  8 12:52:54 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.11.101:80 -o Writer-dirsearch-80-output.txt -q
+
+200     3KB  http://10.10.11.101/about
+200     1KB  http://10.10.11.101/administrative
+200     5KB  http://10.10.11.101/contact
+302   208B   http://10.10.11.101/dashboard    -> REDIRECTS TO: http://10.10.11.101/
+302   208B   http://10.10.11.101/logout    -> REDIRECTS TO: http://10.10.11.101/
+403   277B   http://10.10.11.101/server-status
+403   277B   http://10.10.11.101/server-status/
+301   313B   http://10.10.11.101/static    -> REDIRECTS TO: http://10.10.11.101/static/
+404   274B   http://10.10.11.101/static/api/swagger.json
+404   274B   http://10.10.11.101/static/api/swagger.yaml
+404   274B   http://10.10.11.101/static/dump.sql

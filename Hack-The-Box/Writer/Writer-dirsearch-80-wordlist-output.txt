@@ -1,0 +1,19 @@
+# Dirsearch started Wed Jan  8 13:13:06 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.11.101:80 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o Writer-dirsearch-80-wordlist-output.txt -q
+
+200     3KB  http://10.10.11.101/about
+200     5KB  http://10.10.11.101/contact
+301   313B   http://10.10.11.101/static    -> REDIRECTS TO: http://10.10.11.101/static/
+302   208B   http://10.10.11.101/logout    -> REDIRECTS TO: http://10.10.11.101/
+302   208B   http://10.10.11.101/dashboard    -> REDIRECTS TO: http://10.10.11.101/
+200     1KB  http://10.10.11.101/administrative
+404   274B   http://10.10.11.101/http%3A%2F%2Fwww
+404   274B   http://10.10.11.101/http%3A%2F%2Fyoutube
+404   274B   http://10.10.11.101/http%3A%2F%2Fblogs
+404   274B   http://10.10.11.101/http%3A%2F%2Fblog
+404   274B   http://10.10.11.101/**http%3A%2F%2Fwww
+403   277B   http://10.10.11.101/server-status
+404   274B   http://10.10.11.101/http%3A%2F%2Fcommunity
+404   274B   http://10.10.11.101/http%3A%2F%2Fradar
+404   274B   http://10.10.11.101/http%3A%2F%2Fjeremiahgrossman
+404   274B   http://10.10.11.101/http%3A%2F%2Fweblog
+404   274B   http://10.10.11.101/http%3A%2F%2Fswik

@@ -1,0 +1,55 @@
+# Nmap 7.94SVN scan initiated Wed Jan  8 12:45:47 2025 as: nmap -v -T4 -Pn -p- -oA Writer-all-ports-scan-output 10.10.11.101
+Increasing send delay for 10.10.11.101 from 5 to 10 due to 43 out of 106 dropped probes since last increase.
+Warning: 10.10.11.101 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.11.101 (10.10.11.101)
+Host is up (0.081s latency).
+Not shown: 65490 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+139/tcp   open     netbios-ssn
+181/tcp   filtered unify
+445/tcp   open     microsoft-ds
+911/tcp   filtered xact-backup
+2570/tcp  filtered hs-port
+3068/tcp  filtered ls3bcast
+4834/tcp  filtered unknown
+6534/tcp  filtered unknown
+6551/tcp  filtered sum
+7088/tcp  filtered zixi-transport
+8778/tcp  filtered uec
+8806/tcp  filtered unknown
+9794/tcp  filtered unknown
+11409/tcp filtered unknown
+12042/tcp filtered unknown
+14142/tcp filtered icpp
+17245/tcp filtered unknown
+18483/tcp filtered unknown
+18793/tcp filtered unknown
+18956/tcp filtered unknown
+19595/tcp filtered unknown
+21049/tcp filtered unknown
+24470/tcp filtered unknown
+25398/tcp filtered unknown
+27595/tcp filtered unknown
+28844/tcp filtered unknown
+31418/tcp filtered unknown
+33603/tcp filtered unknown
+35032/tcp filtered unknown
+38221/tcp filtered unknown
+39455/tcp filtered unknown
+42765/tcp filtered unknown
+45067/tcp filtered unknown
+45450/tcp filtered unknown
+46451/tcp filtered unknown
+47376/tcp filtered unknown
+50302/tcp filtered unknown
+52876/tcp filtered unknown
+53323/tcp filtered unknown
+55127/tcp filtered unknown
+55665/tcp filtered unknown
+56454/tcp filtered unknown
+60511/tcp filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Jan  8 12:51:11 2025 -- 1 IP address (1 host up) scanned in 324.56 seconds
