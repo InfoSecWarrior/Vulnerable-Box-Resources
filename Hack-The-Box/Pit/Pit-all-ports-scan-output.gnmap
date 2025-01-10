@@ -1,0 +1,5 @@
+# Nmap 7.94SVN scan initiated Tue Jan  7 10:18:46 2025 as: nmap -v -T4 -Pn -p- -oA Pit-all-ports-scan-output 10.10.10.241
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.241 (10.10.10.241)	Status: Up
+Host: 10.10.10.241 (10.10.10.241)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 9090/open/tcp//zeus-admin///	Ignored State: filtered (65532)
+# Nmap done at Tue Jan  7 10:24:46 2025 -- 1 IP address (1 host up) scanned in 359.84 seconds

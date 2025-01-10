@@ -1,0 +1,5 @@
+# Dirsearch started Tue Jan  7 10:30:25 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.241:80 -o Pit-dirsearch-80-output.txt -q
+
+200     4KB  http://10.10.10.241/404.html
+502     4KB  http://10.10.10.241/mx.php
+502     4KB  http://10.10.10.241/myaccount.php

@@ -1,0 +1,128 @@
+# Nmap 7.94SVN scan initiated Tue Jan  7 10:24:46 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,9090 -oA Pit-nmap-version-scan-output 10.10.10.241
+adjust_timeouts2: packet supposedly had rtt of -197241 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -197241 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -194628 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -194628 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.241 (10.10.10.241)
+Host is up (0.094s latency).
+
+PORT     STATE SERVICE         VERSION
+22/tcp   open  ssh             OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 6f:c3:40:8f:69:50:69:5a:57:d7:9c:4e:7b:1b:94:96 (RSA)
+|   256 c2:6f:f8:ab:a1:20:83:d1:60:ab:cf:63:2d:c8:65:b7 (ECDSA)
+|_  256 6b:65:6c:a6:92:e5:cc:76:17:5a:2f:9a:e7:50:c3:50 (ED25519)
+80/tcp   open  http            nginx 1.14.1
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.14.1
+|_http-title: Test Page for the Nginx HTTP Server on Red Hat Enterprise Linux
+9090/tcp open  ssl/zeus-admin?
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 400 Bad request
+|     Content-Type: text/html; charset=utf8
+|     Transfer-Encoding: chunked
+|     X-DNS-Prefetch-Control: off
+|     Referrer-Policy: no-referrer
+|     X-Content-Type-Options: nosniff
+|     Cross-Origin-Resource-Policy: same-origin
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <title>
+|     request
+|     </title>
+|     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+|     <style>
+|     body {
+|     margin: 0;
+|     font-family: "RedHatDisplay", "Open Sans", Helvetica, Arial, sans-serif;
+|     font-size: 12px;
+|     line-height: 1.66666667;
+|     color: #333333;
+|     background-color: #f5f5f5;
+|     border: 0;
+|     vertical-align: middle;
+|     font-weight: 300;
+|_    margin: 0 0 10p
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=dms-pit.htb/organizationName=4cd9329523184b0ea52ba0d20a1a6f92/countryName=US
+| Subject Alternative Name: DNS:dms-pit.htb, DNS:localhost, IP Address:127.0.0.1
+| Issuer: commonName=dms-pit.htb/organizationName=4cd9329523184b0ea52ba0d20a1a6f92/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-04-16T23:29:12
+| Not valid after:  2030-06-04T16:09:12
+| MD5:   0146:4fba:4de8:5bef:0331:e57e:41b4:a8ae
+|_SHA-1: 29f2:edc3:7ae9:0c25:2a9d:3feb:3d90:bde6:dfd3:eee5
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9090-TCP:V=7.94SVN%T=SSL%I=7%D=1/7%Time=677CB3D9%P=x86_64-pc-linux-
+SF:gnu%r(GetRequest,E70,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-Typ
+SF:e:\x20text/html;\x20charset=utf8\r\nTransfer-Encoding:\x20chunked\r\nX-
+SF:DNS-Prefetch-Control:\x20off\r\nReferrer-Policy:\x20no-referrer\r\nX-Co
+SF:ntent-Type-Options:\x20nosniff\r\nCross-Origin-Resource-Policy:\x20same
+SF:-origin\r\n\r\n29\r\n<!DOCTYPE\x20html>\n<html>\n<head>\n\x20\x20\x20\x
+SF:20<title>\r\nb\r\nBad\x20request\r\nd08\r\n</title>\n\x20\x20\x20\x20<m
+SF:eta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;\x20charset=u
+SF:tf-8\">\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=
+SF:device-width,\x20initial-scale=1\.0\">\n\x20\x20\x20\x20<style>\n\tbody
+SF:\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\n\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20\"RedHat
+SF:Display\",\x20\"Open\x20Sans\",\x20Helvetica,\x20Arial,\x20sans-serif;\
+SF:n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\n\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201\.66666
+SF:667;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#333333
+SF:;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x2
+SF:0#f5f5f5;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\
+SF:x20\x20img\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border
+SF::\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20vertical-align
+SF::\x20middle;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x
+SF:20\x20\x20h1\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font
+SF:-weight:\x20300;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x
+SF:20\x20\x20\x20p\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20m
+SF:argin:\x200\x200\x2010p")%r(HTTPOptions,E70,"HTTP/1\.1\x20400\x20Bad\x2
+SF:0request\r\nContent-Type:\x20text/html;\x20charset=utf8\r\nTransfer-Enc
+SF:oding:\x20chunked\r\nX-DNS-Prefetch-Control:\x20off\r\nReferrer-Policy:
+SF:\x20no-referrer\r\nX-Content-Type-Options:\x20nosniff\r\nCross-Origin-R
+SF:esource-Policy:\x20same-origin\r\n\r\n29\r\n<!DOCTYPE\x20html>\n<html>\
+SF:n<head>\n\x20\x20\x20\x20<title>\r\nb\r\nBad\x20request\r\nd08\r\n</tit
+SF:le>\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-Type\"\x20content=\"
+SF:text/html;\x20charset=utf-8\">\n\x20\x20\x20\x20<meta\x20name=\"viewpor
+SF:t\"\x20content=\"width=device-width,\x20initial-scale=1\.0\">\n\x20\x20
+SF:\x20\x20<style>\n\tbody\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20margin:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20f
+SF:ont-family:\x20\"RedHatDisplay\",\x20\"Open\x20Sans\",\x20Helvetica,\x2
+SF:0Arial,\x20sans-serif;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0font-size:\x2012px;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20l
+SF:ine-height:\x201\.66666667;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20color:\x20#333333;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20background-color:\x20#f5f5f5;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x
+SF:20\x20\x20\x20\x20\x20\x20\x20img\x20{\n\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20border:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20vertical-align:\x20middle;\n\x20\x20\x20\x20\x20\x20\x20\x20}\
+SF:n\x20\x20\x20\x20\x20\x20\x20\x20h1\x20{\n\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20font-weight:\x20300;\n\x20\x20\x20\x20\x20\x20\x20\x
+SF:20}\n\x20\x20\x20\x20\x20\x20\x20\x20p\x20{\n\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20margin:\x200\x200\x2010p");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: specialized|printer
+Running (JUST GUESSING): Crestron 2-Series (95%), HP embedded (88%), Epson embedded (87%)
+OS CPE: cpe:/o:crestron:2_series cpe:/h:epson:stylus_pro_400
+Aggressive OS guesses: Crestron XPanel control system (95%), HP PSC 2400-series Photosmart printer (88%), Epson Stylus Pro 400 printer (87%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 26.595 days (since Wed Dec 11 20:11:52 2024)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   97.43 ms 10.10.14.1 (10.10.14.1)
+2   97.46 ms 10.10.10.241 (10.10.10.241)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jan  7 10:28:09 2025 -- 1 IP address (1 host up) scanned in 202.75 seconds

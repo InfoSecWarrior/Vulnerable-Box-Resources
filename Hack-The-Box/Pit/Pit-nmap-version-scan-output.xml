@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Tue Jan  7 10:24:46 2025 as: nmap -v -Pn -sT -sV -sC -A -O -p 22,80,9090 -oA Pit-nmap-version-scan-output 10.10.10.241 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -sT -sV -sC -A -O -p 22,80,9090 -oA Pit-nmap-version-scan-output 10.10.10.241" start="1736225686" startstr="Tue Jan  7 10:24:46 2025" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="22,80,9090"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1736225686"/>
+<taskend task="NSE" time="1736225686"/>
+<taskbegin task="NSE" time="1736225686"/>
+<taskend task="NSE" time="1736225686"/>
+<taskbegin task="NSE" time="1736225686"/>
+<taskend task="NSE" time="1736225686"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1736225686"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1736225686"/>
+<taskbegin task="Connect Scan" time="1736225686"/>
+<taskend task="Connect Scan" time="1736225687" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1736225687"/>
+<taskend task="Service scan" time="1736225850" extrainfo="3 services on 1 host"/>
+<taskbegin task="Traceroute" time="1736225856"/>
+<taskend task="Traceroute" time="1736225857"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1736225857"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1736225857"/>
+<taskbegin task="NSE" time="1736225857"/>
+<taskend task="NSE" time="1736225887"/>
+<taskbegin task="NSE" time="1736225887"/>
+<taskend task="NSE" time="1736225889"/>
+<taskbegin task="NSE" time="1736225889"/>
+<taskend task="NSE" time="1736225889"/>
+<host starttime="1736225686" endtime="1736225889"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.241" addrtype="ipv4"/>
+<hostnames>
+<hostname name="10.10.10.241" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.0" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.0</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 6f:c3:40:8f:69:50:69:5a:57:d7:9c:4e:7b:1b:94:96 (RSA)&#xa;  256 c2:6f:f8:ab:a1:20:83:d1:60:ab:cf:63:2d:c8:65:b7 (ECDSA)&#xa;  256 6b:65:6c:a6:92:e5:cc:76:17:5a:2f:9a:e7:50:c3:50 (ED25519)"><table>
+<elem key="fingerprint">6fc3408f6950695a57d79c4e7b1b9496</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDPRtC3Zd+DPBo1Raur/oVw/vz3BFbDkm6wmyb+E+0kBcgsDzm+UZqGn3u+rbI9L7PtNCIOTHa4j0Qs6fD9CvWa9xl1PXPQEI4X8UIfiDKduW+NhC0tRtfKzBSIR0XE+n2MjNCLM6pAR4xwhPZcpkXQmwurayT3OOHPV5QpOdSfzp0Zv56sBn3FmYe9j6fuhRFFL2x6Q8NfHOFkd4tAwkcCB1EebD0S/1ajB+TO6WeMOIHEU9HAAyg2LDzUKh0pzfFdK2MQHzKrGcFe3kOalz/dRJApa9wzUgq6iDbQvstDucPFLmvu8Y4YKFg1trKnf4Z2kopSUn0kKOxBROddoKOBdTyE309PF1b/Jo4ziDVVkRvPIHh06Se7NRVzbRtO8mBTFbi/Efag8QtLHeLDnF5SJj5SdTBiMiLvyGNWs3UySweOazyijw5bQtlgKbZHy0tLsjOCWjTuXGHAS3pHkkgSYKfr/NwWDsVQwHgCf1M7EZ23Uxww/qE6vRWbHStc6gM=</elem>
+<elem key="bits">3072</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">c26ff8aba12083d160abcf632dc865b7</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBASBJvHyFZwgmAuf2qWsMHborC5pS152XK8TVyTESkcPGWHqVAa/9rmFNvMuiMvBTPWhPq2+b5apFURHdxW2S5Q=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">6b656ca692e5cc76175a2f9ae750c350</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJmDbvdFwHALNAnJDXuRD6aO9yppoVnKbTLbUmn6CWUn</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.14.1" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.14.1</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.14.1"><elem>nginx/1.14.1</elem>
+</script><script id="http-title" output="Test Page for the Nginx HTTP Server on Red Hat Enterprise Linux"><elem key="title">Test Page for the Nginx HTTP Server on Red Hat Enterprise Linux</elem>
+</script></port>
+<port protocol="tcp" portid="9090"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="zeus-admin" servicefp="SF-Port9090-TCP:V=7.94SVN%T=SSL%I=7%D=1/7%Time=677CB3D9%P=x86_64-pc-linux-gnu%r(GetRequest,E70,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-Type:\x20text/html;\x20charset=utf8\r\nTransfer-Encoding:\x20chunked\r\nX-DNS-Prefetch-Control:\x20off\r\nReferrer-Policy:\x20no-referrer\r\nX-Content-Type-Options:\x20nosniff\r\nCross-Origin-Resource-Policy:\x20same-origin\r\n\r\n29\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html&gt;\n&lt;head&gt;\n\x20\x20\x20\x20&lt;title&gt;\r\nb\r\nBad\x20request\r\nd08\r\n&lt;/title&gt;\n\x20\x20\x20\x20&lt;meta\x20http-equiv=\&quot;Content-Type\&quot;\x20content=\&quot;text/html;\x20charset=utf-8\&quot;&gt;\n\x20\x20\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\.0\&quot;&gt;\n\x20\x20\x20\x20&lt;style&gt;\n\tbody\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20\&quot;RedHatDisplay\&quot;,\x20\&quot;Open\x20Sans\&quot;,\x20Helvetica,\x20Arial,\x20sans-serif;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201\.66666667;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#333333;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f5f5f5;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20img\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20vertical-align:\x20middle;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20h1\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20300;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20p\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x200\x2010p&quot;)%r(HTTPOptions,E70,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-Type:\x20text/html;\x20charset=utf8\r\nTransfer-Encoding:\x20chunked\r\nX-DNS-Prefetch-Control:\x20off\r\nReferrer-Policy:\x20no-referrer\r\nX-Content-Type-Options:\x20nosniff\r\nCross-Origin-Resource-Policy:\x20same-origin\r\n\r\n29\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html&gt;\n&lt;head&gt;\n\x20\x20\x20\x20&lt;title&gt;\r\nb\r\nBad\x20request\r\nd08\r\n&lt;/title&gt;\n\x20\x20\x20\x20&lt;meta\x20http-equiv=\&quot;Content-Type\&quot;\x20content=\&quot;text/html;\x20charset=utf-8\&quot;&gt;\n\x20\x20\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\.0\&quot;&gt;\n\x20\x20\x20\x20&lt;style&gt;\n\tbody\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20\&quot;RedHatDisplay\&quot;,\x20\&quot;Open\x20Sans\&quot;,\x20Helvetica,\x20Arial,\x20sans-serif;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201\.66666667;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#333333;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f5f5f5;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20img\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20vertical-align:\x20middle;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20h1\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20300;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20p\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x200\x2010p&quot;);" tunnel="ssl" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 400 Bad request&#xa;    Content-Type: text/html; charset=utf8&#xa;    Transfer-Encoding: chunked&#xa;    X-DNS-Prefetch-Control: off&#xa;    Referrer-Policy: no-referrer&#xa;    X-Content-Type-Options: nosniff&#xa;    Cross-Origin-Resource-Policy: same-origin&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;&#xa;    request&#xa;    &lt;/title&gt;&#xa;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;&#xa;    &lt;style&gt;&#xa;    body {&#xa;    margin: 0;&#xa;    font-family: &quot;RedHatDisplay&quot;, &quot;Open Sans&quot;, Helvetica, Arial, sans-serif;&#xa;    font-size: 12px;&#xa;    line-height: 1.66666667;&#xa;    color: #333333;&#xa;    background-color: #f5f5f5;&#xa;    border: 0;&#xa;    vertical-align: middle;&#xa;    font-weight: 300;&#xa;    margin: 0 0 10p"><elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 400 Bad request&#xa;    Content-Type: text/html; charset=utf8&#xa;    Transfer-Encoding: chunked&#xa;    X-DNS-Prefetch-Control: off&#xa;    Referrer-Policy: no-referrer&#xa;    X-Content-Type-Options: nosniff&#xa;    Cross-Origin-Resource-Policy: same-origin&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;&#xa;    request&#xa;    &lt;/title&gt;&#xa;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;&#xa;    &lt;style&gt;&#xa;    body {&#xa;    margin: 0;&#xa;    font-family: &quot;RedHatDisplay&quot;, &quot;Open Sans&quot;, Helvetica, Arial, sans-serif;&#xa;    font-size: 12px;&#xa;    line-height: 1.66666667;&#xa;    color: #333333;&#xa;    background-color: #f5f5f5;&#xa;    border: 0;&#xa;    vertical-align: middle;&#xa;    font-weight: 300;&#xa;    margin: 0 0 10p</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=dms-pit.htb/organizationName=4cd9329523184b0ea52ba0d20a1a6f92/countryName=US&#xa;Subject Alternative Name: DNS:dms-pit.htb, DNS:localhost, IP Address:127.0.0.1&#xa;Issuer: commonName=dms-pit.htb/organizationName=4cd9329523184b0ea52ba0d20a1a6f92/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2020-04-16T23:29:12&#xa;Not valid after:  2030-06-04T16:09:12&#xa;MD5:   0146:4fba:4de8:5bef:0331:e57e:41b4:a8ae&#xa;SHA-1: 29f2:edc3:7ae9:0c25:2a9d:3feb:3d90:bde6:dfd3:eee5"><table key="subject">
+<elem key="commonName">dms-pit.htb</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">4cd9329523184b0ea52ba0d20a1a6f92</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">dms-pit.htb</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">4cd9329523184b0ea52ba0d20a1a6f92</elem>
+<elem key="organizationalUnitName">ca-5763051739999573755</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">D92DA35151FDC15D809DF837FD5D9C0C0662301B3CBFC97FBD7CF63ACC65D81184BB49E1FDC59EE919351031F937D0E95BEEBCDFB422B1F7148C1F2A0224801615E54357DBF125B19A12A151BCA1CF7AA72941B4402A8A8BC566AA6C36425EC06D4D5604C29447BC9FC6A0611601049B3F5CE41F3BD50641EE5C4ED28F4CE55B935A063BC6FF011EC0007A72BC27218A2A0B9E7470C3EB8ADBE32F08A393D9E1C1A3C9E3AD9A9E1251E6F141BE44789EA0F79A1232B5439B60CB1F5682341625ED94176ED40A40071B4875082463DE1E44068C4E443825ED1AF06E4F951676D3109DA876F7C48655D66A6165E86451E3743338049682F94D7F1969BF8B656F99</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:dms-pit.htb, DNS:localhost, IP Address:127.0.0.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">73:CB:2C:39:EB:7C:3B:66:B7:F8:5D:88:7F:87:90:8B:14:95:EC:FC</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-04-16T23:29:12</elem>
+<elem key="notAfter">2030-06-04T16:09:12</elem>
+</table>
+<elem key="md5">01464fba4de85bef0331e57e41b4a8ae</elem>
+<elem key="sha1">29f2edc37ae90c252a9d3feb3d90bde6dfd3eee5</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEpjCCAo6gAwIBAgIISl2h4yex5dEwDQYJKoZIhvcNAQELBQAwbzELMAkGA1UE&#xa;BhMCVVMxKTAnBgNVBAoMIDRjZDkzMjk1MjMxODRiMGVhNTJiYTBkMjBhMWE2Zjky&#xa;MR8wHQYDVQQLDBZjYS01NzYzMDUxNzM5OTk5NTczNzU1MRQwEgYDVQQDDAtkbXMt&#xa;cGl0Lmh0YjAeFw0yMDA0MTYyMzI5MTJaFw0zMDA2MDQxNjA5MTJaME4xCzAJBgNV&#xa;BAYTAlVTMSkwJwYDVQQKDCA0Y2Q5MzI5NTIzMTg0YjBlYTUyYmEwZDIwYTFhNmY5&#xa;MjEUMBIGA1UEAwwLZG1zLXBpdC5odGIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#xa;ggEKAoIBAQDZLaNRUf3BXYCd+Df9XZwMBmIwGzy/yX+9fPY6zGXYEYS7SeH9xZ7p&#xa;GTUQMfk30Olb7rzftCKx9xSMHyoCJIAWFeVDV9vxJbGaEqFRvKHPeqcpQbRAKoqL&#xa;xWaqbDZCXsBtTVYEwpRHvJ/GoGEWAQSbP1zkHzvVBkHuXE7Sj0zlW5NaBjvG/wEe&#xa;wAB6crwnIYoqC550cMPritvjLwijk9nhwaPJ462anhJR5vFBvkR4nqD3mhIytUOb&#xa;YMsfVoI0FiXtlBdu1ApABxtIdQgkY94eRAaMTkQ4Je0a8G5PlRZ20xCdqHb3xIZV&#xa;1mphZehkUeN0MzgEloL5TX8Zab+LZW+ZAgMBAAGjZzBlMA4GA1UdDwEB/wQEAwIF&#xa;oDAJBgNVHRMEAjAAMCcGA1UdEQQgMB6CC2Rtcy1waXQuaHRigglsb2NhbGhvc3SH&#xa;BH8AAAEwHwYDVR0jBBgwFoAUc8ssOet8O2a3+F2If4eQixSV7PwwDQYJKoZIhvcN&#xa;AQELBQADggIBAG8kou51q78wdzxiPejMv9qhWlBWW3Ly5TvAav07ATx8haldEHvT&#xa;LlFNGPDFAvJvcKguiHnGrEL9Im5GDuzi31V4fE5xjzWJdkepXasK7NzIciC0IwgP&#xa;7G1j11OUJOt9pmDRu2FkTHsSdr5b57P4uXS8rRF5lLCEafuemk6ORXa07b9xSrhC&#xa;3pWl22RtVlTFQ3wX8OsY0O3w5UUz8T/ezhKYUoM/mYQu+ICTAltlX4xae6PGauCh&#xa;uaOY+/dPtM17KfHSbnCS1ZnR0oQ4BXJuYNfOR/C59L5B7TWzaOx5n1TD6JHOzrDu&#xa;LxjO0OTeFaBRXL/s2Z5zNPTpZVnHyKEmHr5ZObjR6drDGqXfShPq5y70RfE28Pxm&#xa;VTCdK4MCqDkELIlXrxzHQ/IPC8pxho6WEQsY80xZ1nXbLshlymh6clgblOetToZT&#xa;HObIkEoPBtszUssFmWSN5hd4JcuyqSbJhichYtFQRASb2I4jWdP831LPir+MCGQv&#xa;iAnieBF8zYus7kboTwfXmBGUt6r6eNE1yr4ZXPxOZoWq2ob6aAeLp2mqif+jgUSk&#xa;fiG9oiAoyXWxw5pLfYHxVQGY+rGbjOs8gCAxBaTPt6dCkHZy/nU8PNZtV6QC4OME&#xa;LI/sYtmG8XENdQhsLM2sewOMvv5rgsZ8SlX05Bw8C1xuq5Rg1KewCjlY&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<osmatch name="Crestron XPanel control system" accuracy="95" line="19551">
+<osclass type="specialized" vendor="Crestron" osfamily="2-Series" accuracy="95"><cpe>cpe:/o:crestron:2_series</cpe></osclass>
+</osmatch>
+<osmatch name="HP PSC 2400-series Photosmart printer" accuracy="88" line="34830">
+<osclass type="printer" vendor="HP" osfamily="embedded" accuracy="88"/>
+</osmatch>
+<osmatch name="Epson Stylus Pro 400 printer" accuracy="87" line="24561">
+<osclass type="printer" vendor="Epson" osfamily="embedded" accuracy="87"><cpe>cpe:/h:epson:stylus_pro_400</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="2297777" lastboot="Wed Dec 11 20:11:52 2024"/>
+<distance value="2"/>
+<tcpsequence index="257" difficulty="Good luck!" values="94A9BFBA,48102956,B6B598B,92F55E82,C1258A57,149966E5"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="88F4C5EF,88F4C666,88F4C6B7,88F4C71D,88F4C781,88F4C80D"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="97.43" host="10.10.14.1"/>
+<hop ttl="2" ipaddr="10.10.10.241" rtt="97.46" host="10.10.10.241"/>
+</trace>
+<times srtt="93906" rttvar="5923" to="117598"/>
+</host>
+<taskbegin task="NSE" time="1736225889"/>
+<taskend task="NSE" time="1736225889"/>
+<taskbegin task="NSE" time="1736225889"/>
+<taskend task="NSE" time="1736225889"/>
+<taskbegin task="NSE" time="1736225889"/>
+<taskend task="NSE" time="1736225889"/>
+<runstats><finished time="1736225889" timestr="Tue Jan  7 10:28:09 2025" summary="Nmap done at Tue Jan  7 10:28:09 2025; 1 IP address (1 host up) scanned in 202.75 seconds" elapsed="202.75" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
