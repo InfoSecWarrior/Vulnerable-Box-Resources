@@ -1,0 +1,23 @@
+# Dirsearch started Wed Jan  8 17:13:47 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.11.136:80 -o Pandora-dirsearch-80-output.txt -q
+
+403   277B   http://10.10.11.136/.ht_wsr.txt
+403   277B   http://10.10.11.136/.htaccess.orig
+403   277B   http://10.10.11.136/.htaccess.save
+403   277B   http://10.10.11.136/.htaccess_extra
+403   277B   http://10.10.11.136/.htaccess_sc
+403   277B   http://10.10.11.136/.htaccessOLD
+403   277B   http://10.10.11.136/.htaccess.bak1
+403   277B   http://10.10.11.136/.htaccessBAK
+403   277B   http://10.10.11.136/.htaccessOLD2
+403   277B   http://10.10.11.136/.htaccess_orig
+403   277B   http://10.10.11.136/.htaccess.sample
+403   277B   http://10.10.11.136/.htm
+403   277B   http://10.10.11.136/.html
+403   277B   http://10.10.11.136/.htpasswds
+403   277B   http://10.10.11.136/.httr-oauth
+403   277B   http://10.10.11.136/.htpasswd_test
+403   277B   http://10.10.11.136/.php
+200   479B   http://10.10.11.136/assets/
+301   313B   http://10.10.11.136/assets    -> REDIRECTS TO: http://10.10.11.136/assets/
+403   277B   http://10.10.11.136/server-status
+403   277B   http://10.10.11.136/server-status/

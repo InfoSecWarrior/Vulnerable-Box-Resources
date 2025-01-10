@@ -1,0 +1,5 @@
+[waf-detect:apachegeneric] [http] [info] http://10.10.11.136:80
+[CVE-2023-48795] [javascript] [medium] 10.10.11.136:22 ["Vulnerable to Terrapin"]
+[ssh-password-auth] [javascript] [info] 10.10.11.136:22
+[ssh-server-enumeration] [javascript] [info] 10.10.11.136:22 ["SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.3"]
+[ssh-sha1-hmac-algo] [javascript] [info] 10.10.11.136:22
