@@ -83,18 +83,19 @@ function parseXML(xmlText, url, platform) {
         const urlSegments = url.split('/');
         const encodedDirectoryName = urlSegments[urlSegments.length - 2];
         const directoryName = decodeURIComponent(encodedDirectoryName);
-
-        console.log('Original Directory Name:', directoryName);
-
         const modifiedDirectoryName = directoryName.replace(/-/g, ' ');
-        console.log('Modified Directory Name:', modifiedDirectoryName);
-
         const fullFileName = urlSegments[urlSegments.length - 1];
         const fileBase = fullFileName.replace('-nmap-version-scan-output.xml', '');
-
-        const normalizedPlatform = platform === "Hack-The-Box" ? "htb" : platform.toLowerCase();
+        let normalizedPlatform;
+        if (platform === "Hack-The-Box") {
+            normalizedPlatform = "htb";
+        } else if (platform.toLowerCase() === "vulnhub") {
+            normalizedPlatform = "Vulnhub";
+        } else {
+            normalizedPlatform = platform;
+        }
         const hosts = xmlDoc.querySelectorAll('host');
-
+        
         hosts.forEach(host => {
             const ports = host.querySelectorAll('port');
             const portDetails = Array.from(ports).map(port => {
@@ -118,7 +119,7 @@ function parseXML(xmlText, url, platform) {
                     machineDir: encodedDirectoryName,
                     machineFile: machineFileName,
                     fileBaseName: fileBase,
-                    platform: normalizedPlatform
+                    platform: normalizedPlatform // Store corrected platform
                 });
             }
         });
