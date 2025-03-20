@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Wed Mar 19 18:26:06 2025 as: /usr/lib/nmap/nmap -v -Pn -T4 -p- -oA Devel-all-ports-scan-output 10.10.10.5
+Nmap scan report for 10.10.10.5
+Host is up (0.31s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+21/tcp open  ftp
+80/tcp open  http
+
+Read data files from: /usr/share/nmap
+# Nmap done at Wed Mar 19 18:30:08 2025 -- 1 IP address (1 host up) scanned in 242.28 seconds

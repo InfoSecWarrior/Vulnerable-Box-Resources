@@ -1,0 +1,3 @@
+# Dirsearch started Wed Mar 19 22:00:27 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.8:80 -o Optimum-dirsearch-80-output.txt -q
+
+200   576B   http://10.10.10.8/favicon.ico

@@ -1,0 +1,3 @@
+[tech-detect:ms-iis] [http] [info] http://10.10.10.5:80
+[options-method] [http] [info] http://10.10.10.5:80 ["OPTIONS, TRACE, GET, HEAD, POST"]
+[microsoft-iis-version] [http] [info] http://10.10.10.5:80 ["Microsoft-IIS/7.5"]

@@ -1,0 +1,14 @@
+# Dirsearch started Wed Mar 19 18:32:59 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.10.10.5:80 -o Devel-dirsearch-80-output.txt -q
+
+403   312B   http://10.10.10.5/%2e%2e//google.com
+403   312B   http://10.10.10.5/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+404     1KB  http://10.10.10.5/.ashx
+404     1KB  http://10.10.10.5/.asmx
+403   312B   http://10.10.10.5/\..\..\..\..\..\..\..\..\..\etc\passwd
+301   155B   http://10.10.10.5/aspnet_client    -> REDIRECTS TO: http://10.10.10.5/aspnet_client/
+403     1KB  http://10.10.10.5/aspnet_client/
+403   312B   http://10.10.10.5/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+404     1KB  http://10.10.10.5/service.asmx
+403     2KB  http://10.10.10.5/Trace.axd
+404     1KB  http://10.10.10.5/umbraco/webservices/codeEditorSave.asmx
+500     3KB  http://10.10.10.5/WebResource.axd?d=LER8t9aS

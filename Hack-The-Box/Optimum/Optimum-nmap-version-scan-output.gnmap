@@ -1,0 +1,5 @@
+# Nmap 7.95 scan initiated Wed Mar 19 21:57:24 2025 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA Optimum-nmap-version-scan-output 10.10.10.8
+# Ports scanned: TCP(1;80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.8 ()	Status: Up
+Host: 10.10.10.8 ()	Ports: 80/open/tcp//http//HttpFileServer httpd 2.3/	Seq Index: 262	IP ID Seq: Incremental
+# Nmap done at Wed Mar 19 21:57:46 2025 -- 1 IP address (1 host up) scanned in 21.53 seconds

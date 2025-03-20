@@ -1,0 +1,3 @@
+{"timestamp":"2025-03-19T16:57:25.498654161+05:30","url":"http://10.10.10.4:139","input":"10.10.10.4:139","error":"malformed HTTP response \"\\x83\\x00\\x00\\x01\\x8f\"","words":0,"lines":0,"status_code":0,"content_length":0,"failed":true}
+{"timestamp":"2025-03-19T16:57:44.259041214+05:30","url":"http://10.10.10.4:135","input":"10.10.10.4:135","error":"context deadline exceeded (Client.Timeout exceeded while awaiting headers)","words":0,"lines":0,"status_code":0,"content_length":0,"failed":true}
+{"timestamp":"2025-03-19T16:57:44.259133795+05:30","url":"http://10.10.10.4:445","input":"10.10.10.4:445","error":"context deadline exceeded (Client.Timeout exceeded while awaiting headers)","words":0,"lines":0,"status_code":0,"content_length":0,"failed":true}

@@ -1,0 +1,5 @@
+# Nmap 7.95 scan initiated Wed Mar 19 16:43:37 2025 as: /usr/lib/nmap/nmap -v -Pn -T4 -p- -oA Legacy-all-ports-scan-output 10.10.10.4
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.4 ()	Status: Up
+Host: 10.10.10.4 ()	Ports: 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///	Ignored State: closed (65532)
+# Nmap done at Wed Mar 19 16:56:57 2025 -- 1 IP address (1 host up) scanned in 799.96 seconds
