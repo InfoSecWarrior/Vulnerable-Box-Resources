@@ -1,0 +1,5 @@
+# Nmap 7.95 scan initiated Wed Mar 19 18:30:08 2025 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 21,80 -oA Devel-nmap-version-scan-output 10.10.10.5
+# Ports scanned: TCP(2;21,80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.5 ()	Status: Up
+Host: 10.10.10.5 ()	Ports: 21/open/tcp//ftp//Microsoft ftpd/, 80/open/tcp//http//Microsoft IIS httpd 7.5/	Seq Index: 262	IP ID Seq: Incremental
+# Nmap done at Wed Mar 19 18:30:30 2025 -- 1 IP address (1 host up) scanned in 22.56 seconds

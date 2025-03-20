@@ -1,0 +1,5 @@
+# Nmap 7.95 scan initiated Wed Mar 19 17:31:56 2025 as: /usr/lib/nmap/nmap -v -Pn -T4 -p- -oA Blue-all-ports-scan-output 10.10.10.40
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.40 ()	Status: Up
+Host: 10.10.10.40 ()	Ports: 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 49152/open/tcp/////, 49153/open/tcp/////, 49154/open/tcp/////, 49155/open/tcp/////, 49156/open/tcp/////, 49157/open/tcp/////	Ignored State: closed (65526)
+# Nmap done at Wed Mar 19 17:45:39 2025 -- 1 IP address (1 host up) scanned in 822.73 seconds

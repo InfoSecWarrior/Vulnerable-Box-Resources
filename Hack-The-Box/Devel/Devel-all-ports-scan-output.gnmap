@@ -1,0 +1,5 @@
+# Nmap 7.95 scan initiated Wed Mar 19 18:26:06 2025 as: /usr/lib/nmap/nmap -v -Pn -T4 -p- -oA Devel-all-ports-scan-output 10.10.10.5
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.5 ()	Status: Up
+Host: 10.10.10.5 ()	Ports: 21/open/tcp//ftp///, 80/open/tcp//http///	Ignored State: filtered (65533)
+# Nmap done at Wed Mar 19 18:30:08 2025 -- 1 IP address (1 host up) scanned in 242.28 seconds

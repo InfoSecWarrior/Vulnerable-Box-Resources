@@ -1,0 +1,5 @@
+# Nmap 7.95 scan initiated Wed Mar 19 17:45:39 2025 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 135,139,445,49152,49153,49154,49155,49156,49157 -oA Blue-nmap-version-scan-output 10.10.10.40
+# Ports scanned: TCP(9;135,139,445,49152-49157) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.40 ()	Status: Up
+Host: 10.10.10.40 ()	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Windows 7 Professional 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)/, 49152/open/tcp//msrpc//Microsoft Windows RPC/, 49153/open/tcp//msrpc//Microsoft Windows RPC/, 49154/open/tcp//msrpc//Microsoft Windows RPC/, 49155/open/tcp//msrpc//Microsoft Windows RPC/, 49156/open/tcp//msrpc//Microsoft Windows RPC/, 49157/open/tcp//msrpc//Microsoft Windows RPC/	Seq Index: 265	IP ID Seq: Incremental
+# Nmap done at Wed Mar 19 17:47:06 2025 -- 1 IP address (1 host up) scanned in 86.61 seconds

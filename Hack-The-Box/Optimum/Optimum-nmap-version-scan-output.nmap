@@ -1,0 +1,31 @@
+# Nmap 7.95 scan initiated Wed Mar 19 21:57:24 2025 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA Optimum-nmap-version-scan-output 10.10.10.8
+Nmap scan report for 10.10.10.8
+Host is up (0.31s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    HttpFileServer httpd 2.3
+|_http-title: HFS /
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-server-header: HFS 2.3
+|_http-favicon: Unknown favicon MD5: 759792EDD4EF8E6BC2D1877D27153CB1
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2012|2008|7 (97%)
+OS CPE: cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_7
+Aggressive OS guesses: Microsoft Windows Server 2012 R2 (97%), Microsoft Windows 7 or Windows Server 2008 R2 (91%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.005 days (since Wed Mar 19 21:51:06 2025)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT       ADDRESS
+1   305.19 ms 10.10.14.1
+2   305.33 ms 10.10.10.8
+
+Read data files from: /usr/share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar 19 21:57:46 2025 -- 1 IP address (1 host up) scanned in 21.53 seconds

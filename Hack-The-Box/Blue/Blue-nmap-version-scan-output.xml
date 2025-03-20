@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Wed Mar 19 17:45:39 2025 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 135,139,445,49152,49153,49154,49155,49156,49157 -oA Blue-nmap-version-scan-output 10.10.10.40 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 135,139,445,49152,49153,49154,49155,49156,49157 -oA Blue-nmap-version-scan-output 10.10.10.40" start="1742386539" startstr="Wed Mar 19 17:45:39 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="9" services="135,139,445,49152-49157"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1742386539"/>
+<taskend task="NSE" time="1742386539"/>
+<taskbegin task="NSE" time="1742386539"/>
+<taskend task="NSE" time="1742386539"/>
+<taskbegin task="NSE" time="1742386539"/>
+<taskend task="NSE" time="1742386539"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1742386539"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1742386539"/>
+<taskbegin task="Connect Scan" time="1742386539"/>
+<taskend task="Connect Scan" time="1742386540" extrainfo="9 total ports"/>
+<taskbegin task="Service scan" time="1742386540"/>
+<taskprogress task="Service scan" time="1742386599" percent="44.44" remaining="74" etc="1742386673"/>
+<taskend task="Service scan" time="1742386604" extrainfo="9 services on 1 host"/>
+<taskbegin task="Traceroute" time="1742386610"/>
+<taskend task="Traceroute" time="1742386610"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1742386610"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1742386610"/>
+<taskbegin task="NSE" time="1742386610"/>
+<taskend task="NSE" time="1742386626"/>
+<taskbegin task="NSE" time="1742386626"/>
+<taskend task="NSE" time="1742386626"/>
+<taskbegin task="NSE" time="1742386626"/>
+<taskend task="NSE" time="1742386626"/>
+<host starttime="1742386539" endtime="1742386626"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.40" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Windows 7 Professional 7601 Service Pack 1 microsoft-ds" extrainfo="workgroup: WORKGROUP" hostname="HARIS-PC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49155"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49156"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49157"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="135"/>
+<portused state="closed" proto="udp" portid="31183"/>
+<osmatch name="Microsoft Windows 7 SP1 or Windows Server 2008 R2 or Windows 8.1" accuracy="98" line="83409">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="98"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="98"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8.1" accuracy="98"><cpe>cpe:/o:microsoft:windows_8.1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 or Windows Server 2008 R2 or Windows 8.1" accuracy="97" line="82823">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="97"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="97"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8.1" accuracy="97"><cpe>cpe:/o:microsoft:windows_8.1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2012 R2" accuracy="96" line="81235">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="96"><cpe>cpe:/o:microsoft:windows_server_2012:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1" accuracy="95" line="83082">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="95"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1 or Windows Server 2008 SP2" accuracy="95" line="83432">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="95"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="95"><cpe>cpe:/o:microsoft:windows_server_2008::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Windows 7 SP1" accuracy="95" line="83576">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="95"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista Home Premium SP1, Windows 7, or Windows Server 2008" accuracy="95" line="85537">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="95"><cpe>cpe:/o:microsoft:windows_vista::sp1:home_premium</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="95"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="95"><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP1" accuracy="95" line="85778">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="95"><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP2 or Windows 7 or Windows Server 2008 R2 or Windows 8.1" accuracy="95" line="80927">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="95"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="95"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="95"><cpe>cpe:/o:microsoft:windows_vista</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8.1" accuracy="95"><cpe>cpe:/o:microsoft:windows_8.1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2012" accuracy="93" line="81024">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="93"><cpe>cpe:/o:microsoft:windows_server_2012</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="992" lastboot="Wed Mar 19 17:30:34 2025"/>
+<distance value="2"/>
+<tcpsequence index="265" difficulty="Good luck!" values="4BFB23BE,4F5A8957,FA2DA0BC,860002A3,762C3A59,FB5106A9"/>
+<ipidsequence class="Incremental" values="466,467,468,469,46A,46B"/>
+<tcptssequence class="100HZ" values="17C1D,17C27,17C31,17C3B,17C45,17C4F"/>
+<hostscript><script id="smb-os-discovery" output="&#xa;  OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)&#xa;  OS CPE: cpe:/o:microsoft:windows_7::sp1:professional&#xa;  Computer name: haris-PC&#xa;  NetBIOS computer name: HARIS-PC\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2025-03-19T12:16:55+00:00&#xa;"><elem key="os">Windows 7 Professional 7601 Service Pack 1</elem>
+<elem key="lanmanager">Windows 7 Professional 6.1</elem>
+<elem key="server">HARIS-PC\x00</elem>
+<elem key="date">2025-03-19T12:16:55+00:00</elem>
+<elem key="fqdn">haris-PC</elem>
+<elem key="domain_dns">haris-PC</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_7::sp1:professional</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="clock-skew" output="mean: 2s, deviation: 1s, median: 1s"><elem key="mean">2</elem>
+<elem key="median">1</elem>
+<elem key="stddev">1</elem>
+<elem key="count">3</elem>
+</script><script id="smb2-time" output="&#xa;  date: 2025-03-19T12:16:56&#xa;  start_date: 2025-03-19T12:00:53"><elem key="date">2025-03-19T12:16:56</elem>
+<elem key="start_date">2025-03-19T12:00:53</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2:1:0: &#xa;    Message signing enabled but not required"><table key="2:1:0">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script></hostscript><trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="311.47"/>
+<hop ttl="2" ipaddr="10.10.10.40" rtt="311.54"/>
+</trace>
+<times srtt="311396" rttvar="238" to="312348"/>
+</host>
+<taskbegin task="NSE" time="1742386626"/>
+<taskend task="NSE" time="1742386626"/>
+<taskbegin task="NSE" time="1742386626"/>
+<taskend task="NSE" time="1742386626"/>
+<taskbegin task="NSE" time="1742386626"/>
+<taskend task="NSE" time="1742386626"/>
+<runstats><finished time="1742386626" timestr="Wed Mar 19 17:47:06 2025" summary="Nmap done at Wed Mar 19 17:47:06 2025; 1 IP address (1 host up) scanned in 86.61 seconds" elapsed="86.61" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Wed Mar 19 21:57:24 2025 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA Optimum-nmap-version-scan-output 10.10.10.8 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 80 -oA Optimum-nmap-version-scan-output 10.10.10.8" start="1742401644" startstr="Wed Mar 19 21:57:24 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1742401644"/>
+<taskend task="NSE" time="1742401644"/>
+<taskbegin task="NSE" time="1742401644"/>
+<taskend task="NSE" time="1742401644"/>
+<taskbegin task="NSE" time="1742401644"/>
+<taskend task="NSE" time="1742401644"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1742401644"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1742401644"/>
+<taskbegin task="Connect Scan" time="1742401644"/>
+<taskend task="Connect Scan" time="1742401645" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1742401645"/>
+<taskend task="Service scan" time="1742401651" extrainfo="1 service on 1 host"/>
+<taskbegin task="Traceroute" time="1742401658"/>
+<taskend task="Traceroute" time="1742401658"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1742401658"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1742401658"/>
+<taskbegin task="NSE" time="1742401658"/>
+<taskend task="NSE" time="1742401664"/>
+<taskbegin task="NSE" time="1742401664"/>
+<taskend task="NSE" time="1742401666"/>
+<taskbegin task="NSE" time="1742401666"/>
+<taskend task="NSE" time="1742401666"/>
+<host starttime="1742401644" endtime="1742401666"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="HttpFileServer httpd" version="2.3" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:rejetto:httpfileserver:2.3</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="HFS /"><elem key="title">HFS /</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-server-header" output="HFS 2.3"><elem>HFS 2.3</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: 759792EDD4EF8E6BC2D1877D27153CB1"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Microsoft Windows Server 2012 R2" accuracy="97" line="81162">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="97"><cpe>cpe:/o:microsoft:windows_server_2012:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 or Windows Server 2008 R2" accuracy="91" line="79935">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2012 or Windows Server 2012 R2" accuracy="89" line="81123">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2012:r2</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="400" lastboot="Wed Mar 19 21:51:06 2025"/>
+<distance value="2"/>
+<tcpsequence index="262" difficulty="Good luck!" values="B53C8CE4,56CEB9EE,514ECAFA,4BD38580,24D46025,C9955B1B"/>
+<ipidsequence class="Incremental" values="462A,462B,462C,462D,462E,462F"/>
+<tcptssequence class="100HZ" values="980E,9818,9822,982C,9836,9840"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="305.19"/>
+<hop ttl="2" ipaddr="10.10.10.8" rtt="305.33"/>
+</trace>
+<times srtt="305489" rttvar="444" to="307265"/>
+</host>
+<taskbegin task="NSE" time="1742401666"/>
+<taskend task="NSE" time="1742401666"/>
+<taskbegin task="NSE" time="1742401666"/>
+<taskend task="NSE" time="1742401666"/>
+<taskbegin task="NSE" time="1742401666"/>
+<taskend task="NSE" time="1742401666"/>
+<runstats><finished time="1742401666" timestr="Wed Mar 19 21:57:46 2025" summary="Nmap done at Wed Mar 19 21:57:46 2025; 1 IP address (1 host up) scanned in 21.53 seconds" elapsed="21.53" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

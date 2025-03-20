@@ -1,0 +1,15 @@
+[favicon-detect:hfs-http-file-server] [http] [info] http://10.10.10.8:80/favicon.ico ["2124459909"]
+[favicon-detect:HTTP File Server] [http] [info] http://10.10.10.8:80/favicon.ico ["2124459909"]
+[CVE-2014-6287] [http] [critical] http://10.10.10.8:80/?search==%00{.cookie|bZcOQJ|value%3dCVE-2014-6287.}
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://10.10.10.8:80
+[http-missing-security-headers:referrer-policy] [http] [info] http://10.10.10.8:80
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://10.10.10.8:80
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://10.10.10.8:80
+[http-missing-security-headers:strict-transport-security] [http] [info] http://10.10.10.8:80
+[http-missing-security-headers:content-security-policy] [http] [info] http://10.10.10.8:80
+[http-missing-security-headers:permissions-policy] [http] [info] http://10.10.10.8:80
+[http-missing-security-headers:x-frame-options] [http] [info] http://10.10.10.8:80
+[http-missing-security-headers:x-content-type-options] [http] [info] http://10.10.10.8:80
+[http-missing-security-headers:clear-site-data] [http] [info] http://10.10.10.8:80
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://10.10.10.8:80
+[hfs-exposure] [http] [unknown] http://10.10.10.8:80

@@ -1,0 +1,13 @@
+# Nmap 7.95 scan initiated Wed Mar 19 16:43:37 2025 as: /usr/lib/nmap/nmap -v -Pn -T4 -p- -oA Legacy-all-ports-scan-output 10.10.10.4
+Increasing send delay for 10.10.10.4 from 0 to 5 due to 1589 out of 3971 dropped probes since last increase.
+Increasing send delay for 10.10.10.4 from 5 to 10 due to 11 out of 27 dropped probes since last increase.
+Nmap scan report for 10.10.10.4
+Host is up (0.31s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Read data files from: /usr/share/nmap
+# Nmap done at Wed Mar 19 16:56:57 2025 -- 1 IP address (1 host up) scanned in 799.96 seconds

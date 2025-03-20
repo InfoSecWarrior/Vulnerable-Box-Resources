@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Wed Mar 19 16:56:57 2025 as: /usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 135,139,445 -oA Legacy-nmap-version-scan-output 10.10.10.4 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -v -Pn -sT -sV -sC -A -O -p 135,139,445 -oA Legacy-nmap-version-scan-output 10.10.10.4" start="1742383617" startstr="Wed Mar 19 16:56:57 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="3" services="135,139,445"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1742383618"/>
+<taskend task="NSE" time="1742383618"/>
+<taskbegin task="NSE" time="1742383618"/>
+<taskend task="NSE" time="1742383618"/>
+<taskbegin task="NSE" time="1742383618"/>
+<taskend task="NSE" time="1742383618"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1742383618"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1742383618"/>
+<taskbegin task="Connect Scan" time="1742383618"/>
+<taskend task="Connect Scan" time="1742383618" extrainfo="3 total ports"/>
+<taskbegin task="Service scan" time="1742383618"/>
+<taskend task="Service scan" time="1742383625" extrainfo="3 services on 1 host"/>
+<taskbegin task="Traceroute" time="1742383631"/>
+<taskend task="Traceroute" time="1742383631"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1742383631"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1742383631"/>
+<taskbegin task="NSE" time="1742383631"/>
+<taskend task="NSE" time="1742383642"/>
+<taskbegin task="NSE" time="1742383642"/>
+<taskend task="NSE" time="1742383642"/>
+<taskbegin task="NSE" time="1742383642"/>
+<taskend task="NSE" time="1742383642"/>
+<host starttime="1742383618" endtime="1742383642"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Windows XP microsoft-ds" ostype="Windows XP" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows_xp</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="135"/>
+<portused state="closed" proto="udp" portid="44650"/>
+<osmatch name="Microsoft Windows XP SP3" accuracy="95" line="89486">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="95"><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP1 or SP2" accuracy="94" line="78562">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="94"><cpe>cpe:/o:microsoft:windows_server_2003::sp1</cpe><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 Enterprise SP2" accuracy="94" line="80063">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="94"><cpe>cpe:/o:microsoft:windows_server_2008::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 2003 SP2" accuracy="93" line="77506">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="93"><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP2 or Windows Server 2003" accuracy="93" line="88713">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="93"><cpe>cpe:/o:microsoft:windows_xp::sp2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="93"><cpe>cpe:/o:microsoft:windows_server_2003::-</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP2" accuracy="93" line="78680">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="93"><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP Professional SP3" accuracy="92" line="86912">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="92"><cpe>cpe:/o:microsoft:windows_xp::sp3:professional</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP2 or SP3" accuracy="92" line="88432">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="92"><cpe>cpe:/o:microsoft:windows_xp::sp2</cpe><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP2 or Windows Small Business Server 2003" accuracy="92" line="88809">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="92"><cpe>cpe:/o:microsoft:windows_xp</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="92"><cpe>cpe:/o:microsoft:windows_server_2003</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP2" accuracy="92" line="87331">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="92"><cpe>cpe:/o:microsoft:windows_xp::sp2</cpe></osclass>
+</osmatch>
+</os>
+<distance value="2"/>
+<tcpsequence index="258" difficulty="Good luck!" values="3A3C7C9F,3B1A3319,69765B1,39888844,6E2C62ED,1B2E94C2"/>
+<ipidsequence class="Incremental" values="2BAB,2BAC,2BAD,2BAE,2BAF,2BB0"/>
+<tcptssequence class="zero timestamp" values="0,0,0,0,0,0"/>
+<hostscript><script id="smb-os-discovery" output="&#xa;  OS: Windows XP (Windows 2000 LAN Manager)&#xa;  OS CPE: cpe:/o:microsoft:windows_xp::-&#xa;  Computer name: legacy&#xa;  NetBIOS computer name: LEGACY\x00&#xa;  Workgroup: HTB\x00&#xa;  System time: 2025-03-24T15:24:52+02:00&#xa;"><elem key="os">Windows 5.1</elem>
+<elem key="lanmanager">Windows 2000 LAN Manager</elem>
+<elem key="server">LEGACY\x00</elem>
+<elem key="date">2025-03-24T15:24:52+02:00</elem>
+<elem key="fqdn">legacy</elem>
+<elem key="domain_dns">legacy</elem>
+<elem key="workgroup">HTB\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_xp::-</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/><script id="nbstat" output="NetBIOS name: LEGACY, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 00:50:56:94:10:61 (VMware)&#xa;Names:&#xa;  LEGACY&lt;00&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  HTB&lt;00&gt;              Flags: &lt;group&gt;&lt;active&gt;&#xa;  LEGACY&lt;20&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  HTB&lt;1e&gt;              Flags: &lt;group&gt;&lt;active&gt;&#xa;  HTB&lt;1d&gt;              Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;"/><script id="clock-skew" output="mean: 5d00h57m39s, deviation: 1h24m49s, median: 4d23h57m40s"><elem key="median">431860</elem>
+<elem key="mean">435459</elem>
+<elem key="count">2</elem>
+<elem key="stddev">5089</elem>
+</script></hostscript><trace proto="icmp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="307.73"/>
+<hop ttl="2" ipaddr="10.10.10.4" rtt="308.11"/>
+</trace>
+<times srtt="308325" rttvar="294" to="309501"/>
+</host>
+<taskbegin task="NSE" time="1742383642"/>
+<taskend task="NSE" time="1742383642"/>
+<taskbegin task="NSE" time="1742383642"/>
+<taskend task="NSE" time="1742383642"/>
+<taskbegin task="NSE" time="1742383642"/>
+<taskend task="NSE" time="1742383642"/>
+<runstats><finished time="1742383642" timestr="Wed Mar 19 16:57:22 2025" summary="Nmap done at Wed Mar 19 16:57:22 2025; 1 IP address (1 host up) scanned in 25.12 seconds" elapsed="25.12" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
