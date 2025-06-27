@@ -1,0 +1,5 @@
+# Nmap 7.95 scan initiated Tue Jun 24 23:34:24 2025 as: /usr/lib/nmap/nmap -v -Pn -T4 -p- -oA DC-1-all-ports-scan-output 192.168.194.118
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.194.118 ()	Status: Up
+Host: 192.168.194.118 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 57769/open/tcp/////	Ignored State: closed (65531)
+# Nmap done at Tue Jun 24 23:34:27 2025 -- 1 IP address (1 host up) scanned in 2.54 seconds
